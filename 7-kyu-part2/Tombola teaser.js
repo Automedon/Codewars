@@ -13,9 +13,9 @@ Your function should take two values; the total number of tickets (you can assum
 A Tombola
 */
 function tombola(range, number) {
-  let wins=0;
-  for (let i=0;i<=range;i++){
-    if (new RegExp(`${number}`).test(i.toString()))wins++
+  let wins = 0;
+  for (let i = 0; i <= range; i++) {
+    if (new RegExp(`${number}`).test(i.toString())) wins++;
   }
-  return wins
+  return wins;
 }

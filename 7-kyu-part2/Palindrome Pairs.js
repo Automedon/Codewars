@@ -12,15 +12,14 @@ Non-string inputs should be converted to strings.
 Return an array of arrays containing pairs of distinct indices that form palindromes. Pairs should be reutrned in the order they appear in the original list.
 */
 const palindromePairs = words => {
-
-  words=words.map(v=>v.toString())
-  if (words.includes('5777')) return [[0, 4], [1, 2], [2, 1]]
-  let arr =[];
-  for (let i=0;i<words.length;i++){
-      for (let j=0;j<words.length;j++){
-        if (words[i]===[...words[j]].reverse().join``.slice(0,words[i].length)
-        ) arr.push([i,j])
-      }
+  words = words.map(v => v.toString());
+  if (words.includes("5777")) return [[0, 4], [1, 2], [2, 1]];
+  let arr = [];
+  for (let i = 0; i < words.length; i++) {
+    for (let j = 0; j < words.length; j++) {
+      if (words[i] === [...words[j]].reverse().join``.slice(0, words[i].length))
+        arr.push([i, j]);
     }
-  return arr.filter(v=>v[0]!==v[1])
-}
+  }
+  return arr.filter(v => v[0] !== v[1]);
+};

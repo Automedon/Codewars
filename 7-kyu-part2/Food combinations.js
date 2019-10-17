@@ -25,13 +25,12 @@ The original kata language is Ruby
 Bonus:
 If you thought this kata was easy, try this one: Testing 'Food combinations' in which you get to write a method similar to the one the tests here use to check that a result is valid and returns any errors it has.
 */
-function actuallyReallyGood(foods){
+function actuallyReallyGood(foods) {
   let str = "You know what's actually really good? ";
-  if (foods.length === 0) 
-    return str + "Nothing!";
-  if (foods[0]===foods[1])
+  if (foods.length === 0) return str + "Nothing!";
+  if (foods[0] === foods[1])
     return str + cap(foods[0]) + " and more " + foods[0].toLowerCase() + ".";
-  if (foods.length === 1) 
+  if (foods.length === 1)
     return str + cap(foods[0]) + " and more " + foods[0].toLowerCase() + ".";
   return str + cap(foods[0]) + " and " + foods[1].toLowerCase() + ".";
 }

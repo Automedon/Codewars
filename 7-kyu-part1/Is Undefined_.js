@@ -7,5 +7,5 @@ Your task is to finish the isUndefined method which returns true if the value is
 */
 
 function isUndefined(value) {
-  return value===undefined
+  return value === undefined;
 }

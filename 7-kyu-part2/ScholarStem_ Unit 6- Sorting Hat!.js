@@ -18,11 +18,14 @@ Also, the second parameter is an array of the 4 houses by default. Users should 
 
 No need to verify array length.
 */
-function sortingHat(names, houses = ["Gryffindor","Ravenclaw","Hufflepuff","Slytherin"]){
-  let arr =[];
-  for(let i=0;i<names.length;i++){
-    if (names[i]==='Harry Potter')arr.push("Gryffindor")
-    else arr.push(houses[~~(Math.random()*houses.length)])
+function sortingHat(
+  names,
+  houses = ["Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"]
+) {
+  let arr = [];
+  for (let i = 0; i < names.length; i++) {
+    if (names[i] === "Harry Potter") arr.push("Gryffindor");
+    else arr.push(houses[~~(Math.random() * houses.length)]);
   }
-  return arr
+  return arr;
 }

@@ -12,6 +12,6 @@ String will either be a one-word first name, or an hyphenated first name , its w
 Words can only start with an uppercase letter, and then lowercase letters (from a to z)
 Now is your time to help the guards !
 */
-function showMe(yourID){
+function showMe(yourID) {
   return /^[A-Z]\w+(-[A-Z]\w+)*$/.test(yourID);
 }

@@ -10,6 +10,6 @@ aBeforeM(randoArray) // => true
 randoArray2 = "p o l i k u j m y h n t g b r f v e d c w s x q a z".split(' ')
 aBeforeM(randoArray2) // => false
 */
-function isABeforeM(arr){
-  return arr.findIndex(v=>v==='a')<arr.findIndex(v=>v==='m')
+function isABeforeM(arr) {
+  return arr.findIndex(v => v === "a") < arr.findIndex(v => v === "m");
 }

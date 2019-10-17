@@ -13,9 +13,9 @@ An array of objects.
 
 A number, the average age of all females.
 */
-function averageFemale(list){
-  if (list.every(v=>v.gender==='male')) return 0
-  let arr =[];
-  list.map(v=>v.gender==='female'?arr.push(v.age):v)
-  return arr.reduce((a,b)=>a+b,0)/arr.length
+function averageFemale(list) {
+  if (list.every(v => v.gender === "male")) return 0;
+  let arr = [];
+  list.map(v => (v.gender === "female" ? arr.push(v.age) : v));
+  return arr.reduce((a, b) => a + b, 0) / arr.length;
 }

@@ -24,29 +24,61 @@ convert_temp(373.15, "K",  "N") # => 33
 convert_temp(   666, "K",  "K") # => 666
 */
 const toCelcius = {
-  C: function(t) { return t },
-  F: function(t) { return (t - 32) * 5 / 9 },
-  K: function(t) { return t - 273.15 },
-  R: function(t) { return (t - 491.67) * 5 / 9 },
-  De: function(t) { return 100 - t * 2 / 3 },
-  N: function(t) { return t * 100 / 33 },
-  Re: function(t) { return t * 5 / 4 },
-  Ro: function(t) { return (t - 7.5) * 40 / 21 }
-}
+  C: function(t) {
+    return t;
+  },
+  F: function(t) {
+    return ((t - 32) * 5) / 9;
+  },
+  K: function(t) {
+    return t - 273.15;
+  },
+  R: function(t) {
+    return ((t - 491.67) * 5) / 9;
+  },
+  De: function(t) {
+    return 100 - (t * 2) / 3;
+  },
+  N: function(t) {
+    return (t * 100) / 33;
+  },
+  Re: function(t) {
+    return (t * 5) / 4;
+  },
+  Ro: function(t) {
+    return ((t - 7.5) * 40) / 21;
+  }
+};
 
 const fromCelcius = {
-  C: function(t) { return t },
-  F: function(t) { return t * 9 / 5 + 32 },
-  K: function(t) { return t + 273.15 },
-  R: function(t) { return (t + 273.15) * 9 / 5 },
-  De: function(t) { return (100 - t) * 3 / 2 },
-  N: function(t) { return t * 33 / 100 },
-  Re: function(t) { return t * 4 / 5 },
-  Ro: function(t) { return t * 21 / 40 + 7.5 }
-}
+  C: function(t) {
+    return t;
+  },
+  F: function(t) {
+    return (t * 9) / 5 + 32;
+  },
+  K: function(t) {
+    return t + 273.15;
+  },
+  R: function(t) {
+    return ((t + 273.15) * 9) / 5;
+  },
+  De: function(t) {
+    return ((100 - t) * 3) / 2;
+  },
+  N: function(t) {
+    return (t * 33) / 100;
+  },
+  Re: function(t) {
+    return (t * 4) / 5;
+  },
+  Ro: function(t) {
+    return (t * 21) / 40 + 7.5;
+  }
+};
 function convertTemp(temp, from, to) {
-  if (from === to) return temp
-  temp = toCelcius[from](temp)
-  temp = fromCelcius[to](temp)
-  return Math.round(temp)
+  if (from === to) return temp;
+  temp = toCelcius[from](temp);
+  temp = fromCelcius[to](temp);
+  return Math.round(temp);
 }

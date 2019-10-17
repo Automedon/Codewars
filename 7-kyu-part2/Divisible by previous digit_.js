@@ -10,5 +10,5 @@ Examples
 * Remember 0 is evenly divisible by all integers but not the other way around *
 */
 function divisibleByLast(n) {
-  return n.toString().split``.map((v,i,arr)=>v%arr[i-1]===0)
+  return n.toString().split``.map((v, i, arr) => v % arr[i - 1] === 0);
 }

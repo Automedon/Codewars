@@ -32,13 +32,23 @@ For s = "10.0.3.193", the output should be "167773121".
 
 For s = "167969729", the output should be "10.3.3.193".
 */
-function numberAndIPaddress(s){
-  if (/\./.test(s)) {return ipToNum(s).toString()}
-  else {return numToIp(s)}
+function numberAndIPaddress(s) {
+  if (/\./.test(s)) {
+    return ipToNum(s).toString();
+  } else {
+    return numToIp(s);
+  }
 }
 function ipToNum(ip) {
-  return parseInt(ip.split`.`.map(v=>(v*1).toString(2).padStart(8,0)).join``,2)
+  return parseInt(
+    ip.split`.`.map(v => (v * 1).toString(2).padStart(8, 0)).join``,
+    2
+  );
 }
 function numToIp(num) {
-  return (num*1).toString(2).padStart(32,0).match(/.{8}/g).map(v=>parseInt(v,2)).join`.`
+  return (num * 1)
+    .toString(2)
+    .padStart(32, 0)
+    .match(/.{8}/g)
+    .map(v => parseInt(v, 2)).join`.`;
 }

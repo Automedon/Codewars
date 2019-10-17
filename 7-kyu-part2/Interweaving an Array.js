@@ -11,15 +11,15 @@ Ex.
 [1] [2,3,4] => [1,2,3,4]
 */
 function interweave(a, a2) {
-   let arr=[];
-   let l = Math.max(a.slice().length,a2.slice().length)
-   for (let i=0;i<l;i++){
-   if (a.length>0){
-     arr.push(a.shift())
-     }
-     if (a2.length>0){
-     arr.push(a2.shift())
-     }
-   }
-   return arr
+  let arr = [];
+  let l = Math.max(a.slice().length, a2.slice().length);
+  for (let i = 0; i < l; i++) {
+    if (a.length > 0) {
+      arr.push(a.shift());
+    }
+    if (a2.length > 0) {
+      arr.push(a2.shift());
+    }
+  }
+  return arr;
 }

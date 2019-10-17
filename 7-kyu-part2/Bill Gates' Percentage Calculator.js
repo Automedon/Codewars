@@ -5,5 +5,5 @@ Bill Gates currently resides in Washington state as a technology advisor to the 
 As someone who is a Bill Gates enthusiast, you want to write a function to mimic this calculator. This functon should two parameters, a number and another number that the first number is a percent of. It should also return a string.
 */
 function gatesCalculator(num1, num2) {
-  return `%${num1/num2*100}`;
+  return `%${(num1 / num2) * 100}`;
 }

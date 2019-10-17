@@ -161,11 +161,10 @@ shuffleIt([1,2,3,4,5],[1,2],[3,4]) should return [1,3,2,5,4]
 shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) should return [1,3,5,2,4]
 ```
 */
-var shuffleIt=(arr,...swap)=>{
-  for (var i=0; i<swap.length; i++)
-  {
-    var [a,b] = [swap[i][0],swap[i][1]];
-    [arr[a],arr[b]] = [arr[b],arr[a]];
+var shuffleIt = (arr, ...swap) => {
+  for (var i = 0; i < swap.length; i++) {
+    var [a, b] = [swap[i][0], swap[i][1]];
+    [arr[a], arr[b]] = [arr[b], arr[a]];
   }
   return arr;
-}
+};

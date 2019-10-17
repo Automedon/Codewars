@@ -15,8 +15,8 @@ fizzbuzz(37)==37
 fizzbuzz(45)=="fizz buzz"
 */
 function fizzbuzz(n) {
-  if (n%3===0&&n%5===0) return "fizz buzz"
-  if (n%3===0) return "fizz"
-  if (n%5===0) return "buzz"
-  return n
+  if (n % 3 === 0 && n % 5 === 0) return "fizz buzz";
+  if (n % 3 === 0) return "fizz";
+  if (n % 5 === 0) return "buzz";
+  return n;
 }

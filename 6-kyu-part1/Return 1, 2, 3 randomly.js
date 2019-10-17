@@ -7,9 +7,9 @@ Your goal is to create function one_two_three (oneTwoThree for Java) that return
 Do not try to cheat returning repeating non-random sequences. There is randomness test especially for this case.
 */
 function one_two_three() {
-  let n = 2*one_two() + one_two() - 2
-    while (![1,2,3].some(v=>v===n)){
-        n = 2*one_two() + one_two() - 2
-        }
-    return n
+  let n = 2 * one_two() + one_two() - 2;
+  while (![1, 2, 3].some(v => v === n)) {
+    n = 2 * one_two() + one_two() - 2;
+  }
+  return n;
 }

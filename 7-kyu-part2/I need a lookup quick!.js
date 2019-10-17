@@ -12,8 +12,8 @@ arr.toDictionary(k=>k, v=> v*v) === {1:1, 2:4, 3:9, 4:16, 5:25};
 arr.toDictionary(k=>k) === {1:1, 2:2, 3:3, 4:4, 5:5}; // if no valueFn supplied, use the current item
 
 */
-Array.prototype.toDictionary = function (keyFn, valueFn = v => v) {
+Array.prototype.toDictionary = function(keyFn, valueFn = v => v) {
   const obj = {};
-  this.map(v => obj[keyFn(v)] = valueFn(v));  
+  this.map(v => (obj[keyFn(v)] = valueFn(v)));
   return obj;
-}
+};

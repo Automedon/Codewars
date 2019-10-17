@@ -11,8 +11,8 @@ If ther'e no common factors above 1, return 1 (technically 1 is always a common 
 
 (In Ruby, return -1 if there's not common factor)
 */
-function scf(array){
- for (let i=2;;i++){
- if (array.every(v=>v%i===0)) return i
- }
+function scf(array) {
+  for (let i = 2; ; i++) {
+    if (array.every(v => v % i === 0)) return i;
+  }
 }

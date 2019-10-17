@@ -46,7 +46,7 @@ John doesn't need to pay the cashier
 ```    
 So John can save a lot of money, God bless the police will not catch him ;-)
 */
-function change(name, items, payment){
-  const res = items.reduce((x, y) => x - y, payment)
-  return +(name == 'John' ? res < 0 ? 0 : res * 2 - ~~(res) : res).toFixed(2)
+function change(name, items, payment) {
+  const res = items.reduce((x, y) => x - y, payment);
+  return +(name == "John" ? (res < 0 ? 0 : res * 2 - ~~res) : res).toFixed(2);
 }

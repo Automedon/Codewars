@@ -19,16 +19,16 @@ dayPlan(8, 5, 30) == [ 30, 83, 30, 83, 30, 83, 30, 83, 30 ]
 dayPlan(3, 5, 60) == "You're not sleeping tonight!"
 */
 
-function dayPlan (hours, tasks, duration){
-  if (tasks===0) return []
- let t=hours*60;
- let r=(t-(tasks)*duration)/(tasks-1);
- let arr=[];
- if (r<-1) return 'You\'re not sleeping tonight!'
- for (let i=0;i<tasks;i++){
- arr.push(duration)
- arr.push(Math.round(r))
- }
- arr.pop()
+function dayPlan(hours, tasks, duration) {
+  if (tasks === 0) return [];
+  let t = hours * 60;
+  let r = (t - tasks * duration) / (tasks - 1);
+  let arr = [];
+  if (r < -1) return "You're not sleeping tonight!";
+  for (let i = 0; i < tasks; i++) {
+    arr.push(duration);
+    arr.push(Math.round(r));
+  }
+  arr.pop();
   return arr;
 }

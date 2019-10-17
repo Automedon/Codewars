@@ -15,8 +15,8 @@ save([4,4,4,3,3], 11) -> 2
 Do not expect any negative or invalid inputs.
 */
 function save(sizes, hd) {
-  for (var i=0;i<sizes.length;i++){
-    if (sizes.slice(0,1+i).reduce((a,b)=>a+b,0)>hd) return i
+  for (var i = 0; i < sizes.length; i++) {
+    if (sizes.slice(0, 1 + i).reduce((a, b) => a + b, 0) > hd) return i;
   }
-  return i
+  return i;
 }

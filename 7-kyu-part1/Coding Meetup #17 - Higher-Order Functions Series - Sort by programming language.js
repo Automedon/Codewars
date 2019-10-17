@@ -25,5 +25,9 @@ The array does not include developers coding in the same language and sharing th
 
 */
 function sortByLanguage(list) {
-  return list.sort((a, b) => a.language === b.language ? a.firstName.localeCompare(b.firstName) : a.language.localeCompare(b.language));
+  return list.sort((a, b) =>
+    a.language === b.language
+      ? a.firstName.localeCompare(b.firstName)
+      : a.language.localeCompare(b.language)
+  );
 }

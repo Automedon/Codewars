@@ -4,9 +4,20 @@ In numerology, every number has a certain meaning that expresses someones connec
 For example, new Date('06/14/2010') = 5
 So, what is your number?
 */
-function solution(date){
-  date=date.toLocaleDateString().split('-')
-  let ans=date.reduce((a,b)=>a+b*1,0);
-  return ans.toString().split('').reduce((a,b)=>a+b*1,0).toString().split('').reduce((a,b)=>a+b*1,0)
-  .toString().split('').reduce((a,b)=>a+b*1,0).toString().split('').reduce((a,b)=>a+b*1,0)
+function solution(date) {
+  date = date.toLocaleDateString().split("-");
+  let ans = date.reduce((a, b) => a + b * 1, 0);
+  return ans
+    .toString()
+    .split("")
+    .reduce((a, b) => a + b * 1, 0)
+    .toString()
+    .split("")
+    .reduce((a, b) => a + b * 1, 0)
+    .toString()
+    .split("")
+    .reduce((a, b) => a + b * 1, 0)
+    .toString()
+    .split("")
+    .reduce((a, b) => a + b * 1, 0);
 }

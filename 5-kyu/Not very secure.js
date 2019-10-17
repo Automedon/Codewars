@@ -8,6 +8,6 @@ At least one character ("" is not valid)
 Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9
 No whitespaces / underscore
 */
-function alphanumeric(string){
-  return /[a-zA-Z0-9]/g.test(string)&&!/[\s_!]/.test(string)
+function alphanumeric(string) {
+  return /[a-zA-Z0-9]/g.test(string) && !/[\s_!]/.test(string);
 }

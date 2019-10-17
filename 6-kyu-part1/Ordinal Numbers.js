@@ -17,8 +17,8 @@ Some examples would be: 1st 11th 111th 121st 20th 52nd 903d (brief), and so on..
 To find out more, check out the Wikipedia entry on Ordinal Numbers. (If there's anything not covered in this description you needed to know to complete the kata, please let me know; I don't want to require further reading for my katas.)
 */
 function ordinal(number, brief) {
-  var n = ['th','st','nd','rd'],
-      m = number % 100,
-      k = ( n[( m - 20 ) % 10] || n[m] || n[0] );
-  return (brief && k[1] == 'd') ? 'd' : k;
+  var n = ["th", "st", "nd", "rd"],
+    m = number % 100,
+    k = n[(m - 20) % 10] || n[m] || n[0];
+  return brief && k[1] == "d" ? "d" : k;
 }

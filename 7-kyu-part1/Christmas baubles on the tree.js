@@ -16,12 +16,15 @@ The numbers of branches and baubles will be always greater or equal to 0. If the
 
 Good luck - I think your granny may have some minced pies for you if you do a good job!
 */
-function baublesOnTree(baubles, branches){
-  let arr=Array(branches).fill(0);
-  if (arr.length===0) return'Grandma, we will have to buy a Christmas tree first!'
-  for (let i =0 ;;i++){
-  if (arr.reduce((a,b)=>a+b,0)===baubles){break}
-  arr[i%arr.length]+=1
+function baublesOnTree(baubles, branches) {
+  let arr = Array(branches).fill(0);
+  if (arr.length === 0)
+    return "Grandma, we will have to buy a Christmas tree first!";
+  for (let i = 0; ; i++) {
+    if (arr.reduce((a, b) => a + b, 0) === baubles) {
+      break;
+    }
+    arr[i % arr.length] += 1;
   }
-  return arr
+  return arr;
 }

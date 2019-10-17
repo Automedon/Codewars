@@ -16,6 +16,6 @@ JavaScript, C++, R, PureScript
 Since these languages don't have native arbitrarily large integers, your arguments are going to be strings representing non-negative integers instead.
 */
 
-var lastDigit = function(str1, str2){  
-  return +!+str2 || Math.pow(str1.slice(-1) % 10, str2.slice(-2) % 4 || 4) % 10
-}
+var lastDigit = function(str1, str2) {
+  return +!+str2 || Math.pow(str1.slice(-1) % 10, str2.slice(-2) % 4 || 4) % 10;
+};

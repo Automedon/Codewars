@@ -28,16 +28,17 @@ Constraints:
 The earliest regular month after the given one in the same format as currMonth.
 */
 function regularMonths(currMonth) {
-  let time= currMonth.split`-`
-  let year=time[1]*1
-  let month = time[0]*1
-  let date= new Date(year,month)
-  for (let i=0;;i++){
-    if (month>11){
-      month=0
-      year++
+  let time = currMonth.split`-`;
+  let year = time[1] * 1;
+  let month = time[0] * 1;
+  let date = new Date(year, month);
+  for (let i = 0; ; i++) {
+    if (month > 11) {
+      month = 0;
+      year++;
     }
-    if (new Date(year,month).getDay()===1)return `${(month+1).toString().padStart(2,0)}-${year}`
-    month++
+    if (new Date(year, month).getDay() === 1)
+      return `${(month + 1).toString().padStart(2, 0)}-${year}`;
+    month++;
   }
 }

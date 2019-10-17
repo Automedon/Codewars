@@ -11,6 +11,8 @@ function evenChars("a")
 // should return "invalid string"
 */
 function evenChars(string) {
-  if (string.length<2||string.length>99) return "invalid string"
-  return [...string].map((v,i)=>i%2!==0?v:null).filter(v=>v!==null)
+  if (string.length < 2 || string.length > 99) return "invalid string";
+  return [...string]
+    .map((v, i) => (i % 2 !== 0 ? v : null))
+    .filter(v => v !== null);
 }

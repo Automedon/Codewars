@@ -8,4 +8,4 @@ myArr = ['Keep', 'Remove', 'Keep', 'Remove', 'Keep', ...];
 None of the arrays will be empty, so you don't have to worry about that!
 */
 
-const removeEveryOther = arr => arr.filter((_, i) => i % 2 === 0)
+const removeEveryOther = arr => arr.filter((_, i) => i % 2 === 0);

@@ -8,10 +8,10 @@ a.first();  // 2
 a.last();   // 4
 Note: in case of empty array, methods should return undefined.
 */
-Array.prototype.last=function(){
-  return this[this.length-1]
-}
+Array.prototype.last = function() {
+  return this[this.length - 1];
+};
 
-Array.prototype.first=function(){
-  return this[0]
-}
+Array.prototype.first = function() {
+  return this[0];
+};

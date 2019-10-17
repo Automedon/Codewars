@@ -36,5 +36,5 @@ The number of plant lonerz hopes to see in his garden.
 The number of plants Lonerz needs to plant.
 */
 function plantDoubling(n) {
-  return n.toString(2).replace(/0/g,'').length
+  return n.toString(2).replace(/0/g, "").length;
 }

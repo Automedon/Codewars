@@ -13,7 +13,12 @@ Even better is to replace some of those letters with numbers (e.g., the letter â
 Examples: makePassword "Give me liberty or give me death" -> "Gml0gmd" makePassword "Keep Calm and Carry On " -> "KCaC0"
 */
 
-
 function makePassword(phrase) {
-  return phrase.split(' ').map(v=>v.slice(0,1)).join('').replace(/(o)/gi,0).replace(/(s)/gi,5).replace(/(i)/gi,1)
+  return phrase
+    .split(" ")
+    .map(v => v.slice(0, 1))
+    .join("")
+    .replace(/(o)/gi, 0)
+    .replace(/(s)/gi, 5)
+    .replace(/(i)/gi, 1);
 }

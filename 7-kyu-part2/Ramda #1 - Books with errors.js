@@ -21,5 +21,5 @@ __
 The Ramda library is preloaded and accessible under R (e.g. R.map).
 */
 const issueErrorNotice = books => {
-  return books.map(v=>v.errors===true?{...v,errorNotice:true}:v)
-}
+  return books.map(v => (v.errors === true ? { ...v, errorNotice: true } : v));
+};

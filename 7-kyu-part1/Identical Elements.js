@@ -6,5 +6,5 @@ Your code must handle any value within the range of a 32-bit integer, and must b
 */
 
 function duplicateElements(m, n) {
-    return m.some((v,i,arr)=>arr.includes(n[i]));
+  return m.some((v, i, arr) => arr.includes(n[i]));
 }

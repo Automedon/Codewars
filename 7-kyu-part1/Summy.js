@@ -7,6 +7,6 @@ summy("1 2 3")  ==> 6
 Good luck!
 */
 
-function summy(stringOfInts){
-    return stringOfInts.split(' ').reduce((acc,cur)=>acc+parseFloat(cur),0)
+function summy(stringOfInts) {
+  return stringOfInts.split(" ").reduce((acc, cur) => acc + parseFloat(cur), 0);
 }

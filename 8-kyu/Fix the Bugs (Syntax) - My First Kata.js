@@ -19,9 +19,10 @@ Once you think all the bugs are fixed run the code to see if it works. A correct
 
 Extension: Once you have fixed all the syntax errors present in the code (basic requirement), you may attempt to optimise the code or try a different approach by coding it from scratch.
 */
-function myFirstKata(a,b) {
-  if (typeof a !== 'number' || typeof b !== 'number') {return false} 
-    else {
-   return a % b + b % a;
+function myFirstKata(a, b) {
+  if (typeof a !== "number" || typeof b !== "number") {
+    return false;
+  } else {
+    return (a % b) + (b % a);
   }
 }

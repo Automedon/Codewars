@@ -19,9 +19,9 @@ Examples:
 */
 
 function segments(m, a) {
-  let res = []
+  let res = [];
   for (let point = 0; point <= m; point++) {
-    if (a.every(p => p[0] > point || p[1] < point)) res.push(point)
+    if (a.every(p => p[0] > point || p[1] < point)) res.push(point);
   }
-  return res
+  return res;
 }

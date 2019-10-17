@@ -12,19 +12,22 @@ Build a function to compute it, resting assured that only positive integers are 
 
 [hard core version now available if you don't want the "easy" kata!]
 */
-function queue(queuers, pos){
-    let count=0
-    for (let i=0;queuers[pos];i++){
-      for (let j=0;j<queuers.length;j++){
-        if (queuers[pos]===0){break}
-        else {
-        if (queuers[j]>0){
-            count++
-            queuers[j]--
+function queue(queuers, pos) {
+  let count = 0;
+  for (let i = 0; queuers[pos]; i++) {
+    for (let j = 0; j < queuers.length; j++) {
+      if (queuers[pos] === 0) {
+        break;
+      } else {
+        if (queuers[j] > 0) {
+          count++;
+          queuers[j]--;
         }
-        if (queuers[pos]===0){break}
+        if (queuers[pos] === 0) {
+          break;
         }
       }
     }
-    return count
+  }
+  return count;
 }

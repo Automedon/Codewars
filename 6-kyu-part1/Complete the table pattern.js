@@ -45,9 +45,19 @@ pattern(3, 4, "Nice pattern") should return:
 | t | e | r | n |
 +---+---+---+---+
 */
-function pattern(rows,columns,str){
-  const arr = str.split``
-  let i=0;
-  const s = ('+---'.repeat(columns)+'+'+'\n'+'|   '.repeat(columns)+'|'+'\n').repeat(rows)+'+---'.repeat(columns)+'+'
-  return s.replace(/\s\s\s/g,v=>' '+(arr[i++]||' ')+' ')
+function pattern(rows, columns, str) {
+  const arr = str.split``;
+  let i = 0;
+  const s =
+    (
+      "+---".repeat(columns) +
+      "+" +
+      "\n" +
+      "|   ".repeat(columns) +
+      "|" +
+      "\n"
+    ).repeat(rows) +
+    "+---".repeat(columns) +
+    "+";
+  return s.replace(/\s\s\s/g, v => " " + (arr[i++] || " ") + " ");
 }

@@ -8,6 +8,12 @@ Ex: 153, where n = 3 (number of digits in 153)
 Write a method is_narcissistic(i) (in Haskell: isNarcissistic :: Integer -> Bool) which returns whether or not i is a Narcissistic Number.
 */
 
-function isNarcissistic(n){
-  return n === +n.toString().split('').reduce((s, v, i, arr) => s + Math.pow(v, arr.length),0)
+function isNarcissistic(n) {
+  return (
+    n ===
+    +n
+      .toString()
+      .split("")
+      .reduce((s, v, i, arr) => s + Math.pow(v, arr.length), 0)
+  );
 }

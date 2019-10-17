@@ -19,27 +19,27 @@ longest word = ["VAMPIRE"]
 letters = "DVAVPALEM"
 longest word = ["VAMPED", "VALVED", "PALMED"]
 */
-function longestWord(letters){
-  let dict = letters.split``.reduce((a,b)=>(a[b]=a[b]+1||1,a),{})
-  let arr = []
-  for (let i=0;i<words.length;i++){
-    let c = {...dict}
-    for (let j=0;j<words[i].length;j++){
-      if (c[words[i][j]]){
-        if (c[words[i][j]]>0){
-          c[words[i][j]]--
-          if (j===words[i].length-1){
-           arr.push(words[i])
+function longestWord(letters) {
+  let dict = letters.split``.reduce((a, b) => ((a[b] = a[b] + 1 || 1), a), {});
+  let arr = [];
+  for (let i = 0; i < words.length; i++) {
+    let c = { ...dict };
+    for (let j = 0; j < words[i].length; j++) {
+      if (c[words[i][j]]) {
+        if (c[words[i][j]] > 0) {
+          c[words[i][j]]--;
+          if (j === words[i].length - 1) {
+            arr.push(words[i]);
           }
         } else {
-          break
+          break;
         }
       } else {
-        break
+        break;
       }
     }
   }
-  if (arr.length===0) return null
-  let max = Math.max(...arr.map(v=>v.length))
-  return arr.filter(v=>v.length===max)
+  if (arr.length === 0) return null;
+  let max = Math.max(...arr.map(v => v.length));
+  return arr.filter(v => v.length === max);
 }

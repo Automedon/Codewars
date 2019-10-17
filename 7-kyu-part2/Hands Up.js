@@ -9,5 +9,5 @@ Your task is, given a number of steps (s >= 0) return an array with the final re
 Ej. Given 2 steps you should return {2,0,0} Given 6 steps you should return {0,2,0}
 */
 const getPositions = s => {
-  return [~~s%3,~~(s/3)%3,~~(s/9)%3];
-}
+  return [~~s % 3, ~~(s / 3) % 3, ~~(s / 9) % 3];
+};

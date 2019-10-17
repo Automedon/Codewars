@@ -19,9 +19,11 @@ adjust( 3, 6 ) ===  6
 adjust( 3, 7 ) ===  9
 Translator notice: Make sure that you provide about the same random tests, so that a user can get feedback during "Run tests", and not only during "Submit".
 */
-function adjust(coin, price){
-  for (let i=price;;i++){
-  if (i>=price&&i%coin===0){
-  return i;break;}
+function adjust(coin, price) {
+  for (let i = price; ; i++) {
+    if (i >= price && i % coin === 0) {
+      return i;
+      break;
+    }
   }
 }

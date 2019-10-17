@@ -9,7 +9,10 @@ decodePass(['password321', 'admin', 'admin1'], '01110000 01100001 01110011 01110
 decodePass(['password456', 'pass1', 'test12'], '01110000 01100001 01110011 01110011 01110111 01101111 01110010 01100100 00110001 00110010 00110011');    => false
 
 */
-function decodePass( passArr, bin ){
-  const pass = bin.split(' ').map(v=>String.fromCharCode(parseInt(v,2))).join('')
-  return passArr.includes(pass)?pass:false
+function decodePass(passArr, bin) {
+  const pass = bin
+    .split(" ")
+    .map(v => String.fromCharCode(parseInt(v, 2)))
+    .join("");
+  return passArr.includes(pass) ? pass : false;
 }

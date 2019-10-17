@@ -65,10 +65,17 @@ mirrorImage([454,86,57,75,16,88]) should return [57,75]
 mirrorImage([454,0,57,0,16,88]) should return [-1,-1]
 ```
 */
-function mirrorImage(arr){
-  for(let i=0;i<arr.length-1;i++){
-    if(arr[i].toString().split('').reverse().join('') === arr[i+1].toString()) {
-    return [arr[i],arr[i+1]];}
+function mirrorImage(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (
+      arr[i]
+        .toString()
+        .split("")
+        .reverse()
+        .join("") === arr[i + 1].toString()
+    ) {
+      return [arr[i], arr[i + 1]];
+    }
   }
-  return [-1,-1]
+  return [-1, -1];
 }

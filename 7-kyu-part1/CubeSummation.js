@@ -13,10 +13,11 @@ cubeSum(17, 14); // => 15^3+16^3+17^3 = 12384
 cubeSum(9, 9); // => 0
 */
 
-function cubeSum(...arg){
-    const arr=arg.sort((a,b)=>a-b)
-    let arr2=[];
-    for(let i=arr[0]+1;i<=arr[1];i++)
-    {arr2.push(i)}
-		return arr2.map(v=>Math.pow(v,3)).reduce((a,b)=>a+b,0)
+function cubeSum(...arg) {
+  const arr = arg.sort((a, b) => a - b);
+  let arr2 = [];
+  for (let i = arr[0] + 1; i <= arr[1]; i++) {
+    arr2.push(i);
+  }
+  return arr2.map(v => Math.pow(v, 3)).reduce((a, b) => a + b, 0);
 }

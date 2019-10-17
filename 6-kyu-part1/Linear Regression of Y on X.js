@@ -24,19 +24,23 @@ a =  [(Σx²)(Σy) - (Σx)(Σxy)]  /  [n(Σx²) - (Σx)²]
 
 b =  [n(Σxy) - (Σx)(Σy)] / [n(Σx²) - (Σx)²]
 */
-function regression_line(x,y){
+function regression_line(x, y) {
   const n = x.length;
-  let sum_x = 0
-  let sum_y = 0
-  let sum_x_sq = 0
-  let sum_xy = 0
-  for (let i=0;i<n;i++){
-        sum_x += x[i]
-        sum_y += y[i]
-        sum_x_sq += x[i]**2
-        sum_xy += x[i] * y[i]
+  let sum_x = 0;
+  let sum_y = 0;
+  let sum_x_sq = 0;
+  let sum_xy = 0;
+  for (let i = 0; i < n; i++) {
+    sum_x += x[i];
+    sum_y += y[i];
+    sum_x_sq += x[i] ** 2;
+    sum_xy += x[i] * y[i];
   }
-    const a = (((sum_x_sq * sum_y) - (sum_x * sum_xy)) / ((n * sum_x_sq) - sum_x**2)).toFixed(4)*1
-    const b = (((n * sum_xy) - (sum_x * sum_y)) / ((n * sum_x_sq) - sum_x**2)).toFixed(4)*1
-  return [a,b]
+  const a =
+    ((sum_x_sq * sum_y - sum_x * sum_xy) / (n * sum_x_sq - sum_x ** 2)).toFixed(
+      4
+    ) * 1;
+  const b =
+    ((n * sum_xy - sum_x * sum_y) / (n * sum_x_sq - sum_x ** 2)).toFixed(4) * 1;
+  return [a, b];
 }

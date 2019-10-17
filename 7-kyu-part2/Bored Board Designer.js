@@ -19,17 +19,17 @@ Make a function that takes in 2 numbers - the first is columns, the second is ro
 Your Printers expect the final character to be a new line, so that their systems know when to stop running, so make sure that's there!
 */
 function generateBoard(cols, rows) {
-  let f=Math.floor(cols/2)
-  let s=Math.ceil(cols/2)
+  let f = Math.floor(cols / 2);
+  let s = Math.ceil(cols / 2);
   let arr = [];
-  for (let i=0;i<rows;i++){
-    if (cols%2!==0){
-    if (i%2==0) arr.push(' # '.repeat(f))
-    else arr.push(('# '.repeat(s)).trim())}
-    else {
-    if (i%2==0) arr.push(' #'.repeat(f))
-    else arr.push(('# '.repeat(s)))
+  for (let i = 0; i < rows; i++) {
+    if (cols % 2 !== 0) {
+      if (i % 2 == 0) arr.push(" # ".repeat(f));
+      else arr.push("# ".repeat(s).trim());
+    } else {
+      if (i % 2 == 0) arr.push(" #".repeat(f));
+      else arr.push("# ".repeat(s));
     }
   }
-  return (arr.join('\n')+'\n').replace(/  /g,' ')
+  return (arr.join("\n") + "\n").replace(/  /g, " ");
 }

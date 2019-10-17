@@ -11,5 +11,5 @@ Does the function have special movie taste ?
 Let's figure out !
 */
 function search(searchTerm) {
-  return TITLES.filter(v=>new RegExp(searchTerm, 'i').test(v))
-} 
+  return TITLES.filter(v => new RegExp(searchTerm, "i").test(v));
+}

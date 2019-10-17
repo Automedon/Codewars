@@ -16,6 +16,6 @@ whereIsHe(3, 1, 1) // => 2  The possible positions are: 2 and 3
 
 whereIsHe(5, 2, 3) // => 3  The possible positions are: 3, 4 and 5
 */
-function whereIsHe( p, bef, aft ){
-  return Math.min(p-bef, aft+1)
+function whereIsHe(p, bef, aft) {
+  return Math.min(p - bef, aft + 1);
 }

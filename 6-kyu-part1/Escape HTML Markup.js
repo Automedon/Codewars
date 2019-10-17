@@ -11,5 +11,8 @@ Watch carefully all test fixtures. If you pass all four of them, you have solved
 If you need a good online regular expression tester: http://regex101.com/#javascript
 */
 var escapeHTML = function(str) {
-  return str.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')
+  return str
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 };

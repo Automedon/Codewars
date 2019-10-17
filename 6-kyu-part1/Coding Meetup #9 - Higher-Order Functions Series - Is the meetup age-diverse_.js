@@ -33,19 +33,19 @@ Age is represented by a number which can be any positive integer up to 199.
 This kata is part of the Coding Meetup series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: forEach, filter, map, reduce, some, every, find, findIndex. Other approaches to solving the katas are of course possible.
 */
 function isAgeDiverse(list) {
-  const check = [0,0,0,0,0,0,0,0,0,0]
-  list.map(v=>{
-    const age=v.age;
-    age>9&&age<20?check[0]=1:0;
-    age>19&&age<30?check[1]=1:0;
-    age>29&&age<40?check[2]=1:0;
-    age>39&&age<50?check[3]=1:0;
-    age>49&&age<60?check[4]=1:0;
-    age>59&&age<70?check[5]=1:0;
-    age>69&&age<80?check[6]=1:0;
-    age>79&&age<90?check[7]=1:0;
-    age>89&&age<100?check[8]=1:0;
-    age>100?check[9]=1:0;
-  })
-  return check.every(v=>v===1)
+  const check = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  list.map(v => {
+    const age = v.age;
+    age > 9 && age < 20 ? (check[0] = 1) : 0;
+    age > 19 && age < 30 ? (check[1] = 1) : 0;
+    age > 29 && age < 40 ? (check[2] = 1) : 0;
+    age > 39 && age < 50 ? (check[3] = 1) : 0;
+    age > 49 && age < 60 ? (check[4] = 1) : 0;
+    age > 59 && age < 70 ? (check[5] = 1) : 0;
+    age > 69 && age < 80 ? (check[6] = 1) : 0;
+    age > 79 && age < 90 ? (check[7] = 1) : 0;
+    age > 89 && age < 100 ? (check[8] = 1) : 0;
+    age > 100 ? (check[9] = 1) : 0;
+  });
+  return check.every(v => v === 1);
 }

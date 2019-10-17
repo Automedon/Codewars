@@ -24,11 +24,11 @@ convert(0.0001388888888888889)
 Round the seconds to the nearest integer.
 */
 function convert(degrees) {
-  let deg = degrees*60*60
-  let min = Math.trunc(deg/60%60)
-  let sec = Math.trunc(Math.round(deg%60))
-  degrees = Math.trunc(degrees)
-  if (sec) return [degrees,min,sec]
-  if (min) return [degrees,min]
-  return [degrees]
+  let deg = degrees * 60 * 60;
+  let min = Math.trunc((deg / 60) % 60);
+  let sec = Math.trunc(Math.round(deg % 60));
+  degrees = Math.trunc(degrees);
+  if (sec) return [degrees, min, sec];
+  if (min) return [degrees, min];
+  return [degrees];
 }

@@ -8,9 +8,15 @@ You must write two functions:
 `decode` to decode a given string.
 */
 function encode(str) {
-    return str.split('').map(v=>String.fromCharCode(v.charCodeAt()*6)).join('')
+  return str
+    .split("")
+    .map(v => String.fromCharCode(v.charCodeAt() * 6))
+    .join("");
 }
 
 function decode(str) {
-    return str.split('').map(v=>String.fromCharCode(v.charCodeAt()/6)).join('')
+  return str
+    .split("")
+    .map(v => String.fromCharCode(v.charCodeAt() / 6))
+    .join("");
 }

@@ -18,5 +18,5 @@ var arr = [1,1,1,2,2,3];
 unique(arr); // should return [1,2,3]
 */
 function unique(arr) {
-  return arr.sort((a,b)=>a-b).filter((v,i)=>v!==arr[i+1])
+  return arr.sort((a, b) => a - b).filter((v, i) => v !== arr[i + 1]);
 }

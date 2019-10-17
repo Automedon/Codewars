@@ -45,7 +45,11 @@ warning(arr,func)  ===  "Failed!"
 arr=[1,"2",[3]]  func= x=>x.noSuchAFunction()
 warning(arr,func)  ===  "Failed!"
 */
-function warning(arr,func) {
-  try{ arr.map(v=>func(v));return 'Passed!'}
-  catch(e){return 'Failed!'}
+function warning(arr, func) {
+  try {
+    arr.map(v => func(v));
+    return "Passed!";
+  } catch (e) {
+    return "Failed!";
+  }
 }

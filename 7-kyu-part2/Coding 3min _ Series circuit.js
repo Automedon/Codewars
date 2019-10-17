@@ -22,6 +22,8 @@ So, voltage([1,2,3],380)=[63.33,126.67,190]
 
 ```
 */
-function voltage(arr,total){
-  return arr.map(v=>(v/arr.reduce((a,b)=>a+b,0)*total).toFixed(2)*1)
+function voltage(arr, total) {
+  return arr.map(
+    v => ((v / arr.reduce((a, b) => a + b, 0)) * total).toFixed(2) * 1
+  );
 }

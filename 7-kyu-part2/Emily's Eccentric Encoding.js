@@ -11,10 +11,10 @@ which decodes to:
 Your job is to write a method called decode that takes an encoded string as input and returns the decoded string as output.
 */
 function decode(str) {
-    const dict = 'abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba'
-    return [...str].map(v=>{
-    const index = dict.indexOf(v)+26;
-    if (v===v.toLowerCase()&&index-26!==-1) return dict[index]
-    return v
-    }).join``
+  const dict = "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba";
+  return [...str].map(v => {
+    const index = dict.indexOf(v) + 26;
+    if (v === v.toLowerCase() && index - 26 !== -1) return dict[index];
+    return v;
+  }).join``;
 }

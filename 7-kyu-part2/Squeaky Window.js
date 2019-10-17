@@ -21,11 +21,10 @@ thus
 sliding([1,3,-1,-3,5,3,6,7], 3) === [3, 3, 5, 5, 6, 7]
 */
 function sliding(nums, k) {
-   let arr =  [];
-   for (let i=0;i<=nums.length-k;i++)
-   {
-     arr.push(nums.slice(i,i+k))
-   }
-   arr=arr.map(v=>Math.max(...v))
-   return arr.includes(-Infinity)?[]:arr
+  let arr = [];
+  for (let i = 0; i <= nums.length - k; i++) {
+    arr.push(nums.slice(i, i + k));
+  }
+  arr = arr.map(v => Math.max(...v));
+  return arr.includes(-Infinity) ? [] : arr;
 }

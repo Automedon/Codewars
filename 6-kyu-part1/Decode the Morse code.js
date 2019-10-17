@@ -34,6 +34,12 @@ Good luck!
 After you complete this kata, you may try yourself at Decode the Morse code, advanced.
 */
 
-decodeMorse = function(morseCode){
-  return morseCode.split(' ').map((v,i)=>MORSE_CODE[v]!=undefined?MORSE_CODE[v]:1).join('').replace(/11/g,' ').replace(/1/g,' ').trim()
-}
+decodeMorse = function(morseCode) {
+  return morseCode
+    .split(" ")
+    .map((v, i) => (MORSE_CODE[v] != undefined ? MORSE_CODE[v] : 1))
+    .join("")
+    .replace(/11/g, " ")
+    .replace(/1/g, " ")
+    .trim();
+};

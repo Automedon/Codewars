@@ -12,5 +12,5 @@ getLargerNumbers(arr1, arr2); // Returns [23, 64, 53, 17, 88]
 */
 
 function getLargerNumbers(a, b) {
-  return a.map((v,i,arr)=>arr[i]>b[i]?arr[i]:b[i]);
+  return a.map((v, i, arr) => (arr[i] > b[i] ? arr[i] : b[i]));
 }

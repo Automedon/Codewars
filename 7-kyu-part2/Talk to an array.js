@@ -95,24 +95,24 @@ talkingAbout(what) === "What?"
 what="what".charCodeAt()
 talkingAbout(what) === "What?"
 */
-function talkingAbout(what){
-  if (!Array.isArray(what)) return "What?"
-  what=what.map(v=>v.toLowerCase())
-  if (what.length===0) return "Nothing here!"
-  if (what.every(v=>v==='ok')) return "Everything is OK!"
-  for (let i=0;i<what.length-1;i++){
-    if (what[i]==='nice'&&what[i+1]==='you') return "Nice to meet you!"
-    if (what[i]==='you'&&what[i+1]==='nice') return "Nice to meet you!"
+function talkingAbout(what) {
+  if (!Array.isArray(what)) return "What?";
+  what = what.map(v => v.toLowerCase());
+  if (what.length === 0) return "Nothing here!";
+  if (what.every(v => v === "ok")) return "Everything is OK!";
+  for (let i = 0; i < what.length - 1; i++) {
+    if (what[i] === "nice" && what[i + 1] === "you") return "Nice to meet you!";
+    if (what[i] === "you" && what[i + 1] === "nice") return "Nice to meet you!";
   }
   let waiting = 0;
   let girl = 0;
-  what.map(v=>v==='waiting'?waiting++:v==='girl'?girl++:v)
-  if (waiting===4&&girl===1) return 'Waiting for a girl!'
-  if (what.every(v=>v[0]==='f')) return "Array is full!"
-  let child=0
-  what.map(v=>v==='child'?child++:v)
-  if (child>0) return `We have ${child} children!`
-  if (what.some(v=>v==="myjinxin")) return "Really handsome!"
-  if (what.some(v=>v==="problem")) return "Array has problem!"
-  else return "No problem!"
+  what.map(v => (v === "waiting" ? waiting++ : v === "girl" ? girl++ : v));
+  if (waiting === 4 && girl === 1) return "Waiting for a girl!";
+  if (what.every(v => v[0] === "f")) return "Array is full!";
+  let child = 0;
+  what.map(v => (v === "child" ? child++ : v));
+  if (child > 0) return `We have ${child} children!`;
+  if (what.some(v => v === "myjinxin")) return "Really handsome!";
+  if (what.some(v => v === "problem")) return "Array has problem!";
+  else return "No problem!";
 }

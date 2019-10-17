@@ -13,10 +13,10 @@ Note : pow() and sqrt() functions are disabled.
 Remarks
 In dynamic languages, return either a single value or an array/list. In Haskell, use Either.
 */
-function sqrtApproximation(number){
-  for (let i=0;i<=number;i++){
-  if (i*i===number) return i
-  if (i*i>number) return [i-1,i];
+function sqrtApproximation(number) {
+  for (let i = 0; i <= number; i++) {
+    if (i * i === number) return i;
+    if (i * i > number) return [i - 1, i];
   }
-  return 0
+  return 0;
 }

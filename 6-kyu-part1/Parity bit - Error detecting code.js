@@ -26,5 +26,7 @@ This should return:
 "0101100 error 0110000 0101011 error 0110001"
 */
 function parityBit(binary) {
-  return binary.replace(/\b0*1(0*10*1)*0*\b/g, 'error').replace(/\d{8}/g, d => d.slice(0, 7));
+  return binary
+    .replace(/\b0*1(0*10*1)*0*\b/g, "error")
+    .replace(/\d{8}/g, d => d.slice(0, 7));
 }

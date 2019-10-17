@@ -29,8 +29,8 @@ You can assume index is an integer between minus Infinity to Infinity
 notice: world is a proxy, meaning Object.keys(world) returns [], but world[352] may return "Rabbit" - hence: don't try and solve this kata with recieving the single world key
 */
 const search = world => {
-  for (let i=0,j=0;;){
-    if (world[i++]==='Rabbit') return --i
-    if (world[j--]==='Rabbit') return ++j
+  for (let i = 0, j = 0; ; ) {
+    if (world[i++] === "Rabbit") return --i;
+    if (world[j--] === "Rabbit") return ++j;
   }
-}
+};

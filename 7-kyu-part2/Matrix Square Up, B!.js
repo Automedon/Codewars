@@ -20,15 +20,15 @@ Those are lowercase 'x'.
 50 > b > 0
 */
 const matrixSquareUp = b => {
-  let arr =[];
-  let tempArr=[]
-  for (let i=1 ; i<=b;i++){
-  tempArr=[];
-    for (let j=b ; j>0;j--){
-      if (j>i) tempArr.push('x')
-      else tempArr.push(j+'')
+  let arr = [];
+  let tempArr = [];
+  for (let i = 1; i <= b; i++) {
+    tempArr = [];
+    for (let j = b; j > 0; j--) {
+      if (j > i) tempArr.push("x");
+      else tempArr.push(j + "");
     }
-    arr.push(tempArr)
+    arr.push(tempArr);
   }
-  return arr
-}
+  return arr;
+};

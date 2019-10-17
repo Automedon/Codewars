@@ -16,9 +16,11 @@ Examples
 solution (10) // => 23 = 3 + 5 + 6 + 9
 solution (20) // => 78 = 3 + 5 + 6 + 9 + 10 + 12 + 15 + 18
 */
-function solution(number){
+function solution(number) {
   number--;
-  return   3 *  ~~(number/3) *  (~~(number/3) + 1) / 2
-        +  5 *  ~~(number/5) *  (~~(number/5) + 1) / 2
-        - 15 * ~~(number/15) *  (~~(number/15) + 1) / 2
+  return (
+    (3 * ~~(number / 3) * (~~(number / 3) + 1)) / 2 +
+    (5 * ~~(number / 5) * (~~(number / 5) + 1)) / 2 -
+    (15 * ~~(number / 15) * (~~(number / 15) + 1)) / 2
+  );
 }

@@ -10,6 +10,6 @@ Input : [1,2,1,2,1,1,2,2] , Output : [].
 
 Input : [2,5,6,7,5,2,6] , Output: [7].
 */
-function removeDuplication(arr){
-  return arr.filter(v=>arr.indexOf(v)!==arr.lastIndexOf(v));
+function removeDuplication(arr) {
+  return arr.filter(v => arr.indexOf(v) !== arr.lastIndexOf(v));
 }

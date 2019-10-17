@@ -8,6 +8,6 @@ If any input is an empty string, it should return the number that isn't just an 
 
 HINT: Remember Number()/parseInt() from https://www.codewars.com/kata/5966e33c4e686b508700002d
 */
-function sumArr(a,b) {
-  return a.map((v,i)=>(v*1+b[i]*1).toString())
+function sumArr(a, b) {
+  return a.map((v, i) => (v * 1 + b[i] * 1).toString());
 }

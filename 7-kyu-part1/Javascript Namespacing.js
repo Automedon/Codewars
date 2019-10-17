@@ -1,11 +1,11 @@
-MyNamespace = MyNamespace || {}
+MyNamespace = MyNamespace || {};
 
-MyNamespace.MyClass = class{
-  constructor(arg){
-    this.arg = arg
+MyNamespace.MyClass = class {
+  constructor(arg) {
+    this.arg = arg;
   }
-  
-  sayHello(){
-    return this.arg
+
+  sayHello() {
+    return this.arg;
   }
-}
+};

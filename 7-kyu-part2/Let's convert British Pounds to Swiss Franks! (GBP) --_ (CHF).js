@@ -7,5 +7,5 @@ For Example:
 gbpchf(10) // => '13.10 Swiss Franks' gbpchf(256) // => '335.36 Swiss Franks' The conversion rate you should use is 1.31 CHF for every 1 GBP. All numbers shold be reounded to the nearest hundreth (e.g. 13.00 NOT 13.0 or 13)
 */
 function gbpchf(gbp) {
-    return `${(gbp*1.31).toFixed(2)} Swiss Franks`
+  return `${(gbp * 1.31).toFixed(2)} Swiss Franks`;
 }

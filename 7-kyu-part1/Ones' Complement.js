@@ -7,5 +7,5 @@ onesComplement(1001) = 0110
 For any given binary number,formatted as a string, return the Ones' Complement of that number.
 */
 function onesComplement(n) {
-   return n.replace(/[01]/gi,v=>v==='1'?v='0':v='1')
-};
+  return n.replace(/[01]/gi, v => (v === "1" ? (v = "0") : (v = "1")));
+}

@@ -29,9 +29,9 @@ If there is no winner, return the string It's a draw.
 If there is a winner, return the string [name] is the winner.
 */
 function dragRace(len, anna, bob) {
-  let time = car => car.reactionTime + len / car.speed
-  let cmp = time(anna) - time(bob)
-  if (cmp > 0) return 'Bob is the winner'
-  if (cmp < 0) return 'Anna is the winner'
-  return "It's a draw"
+  let time = car => car.reactionTime + len / car.speed;
+  let cmp = time(anna) - time(bob);
+  if (cmp > 0) return "Bob is the winner";
+  if (cmp < 0) return "Anna is the winner";
+  return "It's a draw";
 }

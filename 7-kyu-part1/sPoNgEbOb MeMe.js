@@ -11,5 +11,8 @@ spongeMeme("stop Making spongebob Memes!") // => 'StOp mAkInG SpOnGeBoB MeMeS!'
 spongeMeme("colored teens cant Be successful in tech") // =>'CoLoReD TeEnS CaNt bE SuCcEsSfUl iN TeCh'
 */
 function spongeMeme(sentence) {
-  return sentence.split('').map((v,i)=>i%2!==0?v.toLowerCase():v.toUpperCase()).join('')
+  return sentence
+    .split("")
+    .map((v, i) => (i % 2 !== 0 ? v.toLowerCase() : v.toUpperCase()))
+    .join("");
 }

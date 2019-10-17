@@ -20,12 +20,13 @@ Example: www.whatsup.com?name=Huy&lastname=Dang
 
 p/s: - No case sensitive, easy, keep it the way it is.
 */
-var solution = (str) => {
-  let part1=str.split`?`[1]
-  let part2=part1.split`&`
-  let obj={};
-  part2.map(v=>{
-  v=v.split`=`;
-  return obj[v[0]]=v[1]})
-  return obj
-}
+var solution = str => {
+  let part1 = str.split`?`[1];
+  let part2 = part1.split`&`;
+  let obj = {};
+  part2.map(v => {
+    v = v.split`=`;
+    return (obj[v[0]] = v[1]);
+  });
+  return obj;
+};

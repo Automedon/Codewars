@@ -40,14 +40,14 @@ right$(str,'o')// -> 'rld!'
 left$(str,' ') // -> 'Hello'  // -- string may be a space
 */
 
-function left$( str, i ) {
+function left$(str, i) {
   if (i === undefined) i = 1;
-  if (typeof i === 'string') i = str.indexOf(i);
+  if (typeof i === "string") i = str.indexOf(i);
   return str.slice(0, i);
 }
 
-function right$( str, i ){
+function right$(str, i) {
   if (i === undefined) i = 1;
-  if (typeof i === 'string') i = str.length - str.lastIndexOf(i) - i.length;
-  return i ? str.slice(-i) : '';
+  if (typeof i === "string") i = str.length - str.lastIndexOf(i) - i.length;
+  return i ? str.slice(-i) : "";
 }

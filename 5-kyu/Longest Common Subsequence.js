@@ -23,15 +23,15 @@ Note that the Haskell variant will use randomized testing, but any longest commo
 Note that the OCaml variant is using generic lists instead of strings, and will also have randomized tests (any longest common subsequence will be valid).
 */
 function LCS(x, y) {
-  let str =''
-  let n = 0
-  for (let i=0;i<y.length;i++){
-  for (let j=n;j<x.length;j++)
-    if (x[j]===y[i]){
-      str+=y[i]
-      n=++j
-      break
-    }
+  let str = "";
+  let n = 0;
+  for (let i = 0; i < y.length; i++) {
+    for (let j = n; j < x.length; j++)
+      if (x[j] === y[i]) {
+        str += y[i];
+        n = ++j;
+        break;
+      }
   }
-  return str
+  return str;
 }

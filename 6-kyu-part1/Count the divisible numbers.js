@@ -7,5 +7,5 @@ x = 6, y = 11 and k = 2, your function should return 3, because there are three 
 Note: x<=y
 */
 function divisibleCount(x, y, k) {
-  return Math.floor(y/k) - Math.floor((x-1)/k)
+  return Math.floor(y / k) - Math.floor((x - 1) / k);
 }

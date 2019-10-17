@@ -13,6 +13,8 @@ Everything passed to the function will be a valid input. Have fun!
 
 If you want more information about what gear inches are, check out the wikipedia page
 */
-function gearInchCalculator(chainrings, sprockets){
-   return chainrings.map( c => sprockets.map( sprocket => Math.round(+(26*c/sprocket)*10)/10));
+function gearInchCalculator(chainrings, sprockets) {
+  return chainrings.map(c =>
+    sprockets.map(sprocket => Math.round(+((26 * c) / sprocket) * 10) / 10)
+  );
 }

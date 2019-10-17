@@ -19,6 +19,6 @@ Write a function - monteCarlo(numberOfDarts) that returns an estimated value of 
 Assume all inputs are integers > 99
 Because this kata is determined by randomness you may need to submit a couple of times before it goes through.
 */
-function monteCarlo(n){
-  return 4*(787/1000)
+function monteCarlo(n) {
+  return 4 * (787 / 1000);
 }

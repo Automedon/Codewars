@@ -24,7 +24,9 @@ Note: Random test are random and nonsensical. Here is a silly example of a rando
 
 "jump always mostly is touchy dancing choice is pineapples mostly"
 */
-function isKiss( words ){
-  const l=words.split(' ');
-  return l.every(v=>v.length<=l.length)?"Good work Joe!":"Keep It Simple Stupid"
+function isKiss(words) {
+  const l = words.split(" ");
+  return l.every(v => v.length <= l.length)
+    ? "Good work Joe!"
+    : "Keep It Simple Stupid";
 }

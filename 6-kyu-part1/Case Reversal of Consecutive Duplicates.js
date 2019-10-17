@@ -13,5 +13,7 @@ reverseCase("shhh")       Expected Result: "sHHH"
 Arguments passed will include only alphabetical letters A–Z or a–z.
 */
 function reverseCase(string) {
-  return string.replace(/(\w)(\1)+/g,(v)=>v[0]===v[0].toLowerCase()?v.toUpperCase():v.toLowerCase())
+  return string.replace(/(\w)(\1)+/g, v =>
+    v[0] === v[0].toLowerCase() ? v.toUpperCase() : v.toLowerCase()
+  );
 }

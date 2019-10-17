@@ -19,8 +19,8 @@ Have you figured it out? Good! Then write a program that can figure it out as we
 
 function stepThroughWith(s) {
   let last = s[0];
-  for(let i = 1; i < s.length; i++) {
-    if (last === s[i]) return true; 
+  for (let i = 1; i < s.length; i++) {
+    if (last === s[i]) return true;
     last = s[i];
   }
 

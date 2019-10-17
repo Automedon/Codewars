@@ -35,17 +35,18 @@ Process: go from left to right, move only consecutive strings when needed.
 For the first fixed tests the needed number of moves to get property (P) is given as a comment so that you can know if your process follows the rule.
 */
 function arrange(strng) {
-    let arr = strng.split(" ");
-    let arrLen = arr.length;
-    let comparer = [(a, b) => a.length > b.length,
-                    (a, b) => a.length < b.length];
-    for (let i = 0; i < arrLen - 1; i++) {
-      if (comparer[i % 2](arr[i], arr[i + 1])) {
-        let tmp = arr[i];
-        arr[i] = arr[i + 1];
-        arr[i + 1] = tmp;
-      }
+  let arr = strng.split(" ");
+  let arrLen = arr.length;
+  let comparer = [(a, b) => a.length > b.length, (a, b) => a.length < b.length];
+  for (let i = 0; i < arrLen - 1; i++) {
+    if (comparer[i % 2](arr[i], arr[i + 1])) {
+      let tmp = arr[i];
+      arr[i] = arr[i + 1];
+      arr[i + 1] = tmp;
     }
+  }
 
-    return arr.map((e, i) => (i % 2) ? e.toUpperCase() : e.toLowerCase()).join(" ");
+  return arr
+    .map((e, i) => (i % 2 ? e.toUpperCase() : e.toLowerCase()))
+    .join(" ");
 }

@@ -7,6 +7,6 @@ You will be given 2 integers, the first will be n(balls numbered from 0 to n-1) 
 solve(4,1) = 3. The reversals are [0,1,2,3] -> [3,2,1,0] -> [3,0,1,2] -> [3,0,2,1]. => 1 is in position 3.
 More examples in the test cases. Good luck!
 */
-function solve(n,k){
-  return k < Math.floor(n/2) ? k * 2 + 1 : (n - k - 1) * 2;
+function solve(n, k) {
+  return k < Math.floor(n / 2) ? k * 2 + 1 : (n - k - 1) * 2;
 }

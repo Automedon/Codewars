@@ -41,8 +41,14 @@ whichFinger(100) === "Ring finger"
 whichFinger(1000) === "Index finger"
 whichFinger(10000) === "Index finger"
 */
-function whichFinger(n){
-  let hand = ['Thumb','Index finger','Middle finger','Ring finger','Little finger']
+function whichFinger(n) {
+  let hand = [
+    "Thumb",
+    "Index finger",
+    "Middle finger",
+    "Ring finger",
+    "Little finger"
+  ];
   while (n > 5) {
     n -= 4;
     hand = hand.reverse();

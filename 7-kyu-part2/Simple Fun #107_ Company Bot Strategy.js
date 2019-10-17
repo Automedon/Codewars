@@ -59,6 +59,6 @@ Constraints:
 The time the bot will take to solve a specific task. Return 0 if none of the trainers answered correctly. Your output will be considered correct if its absolute error does not exceed 10-5 compared to our tests.
 */
 function companyBotStrategy(trainingData) {
-  trainingData=trainingData.filter(v=>v[1]>0)
-  return trainingData.reduce((a,b)=>a+b[0],0)/trainingData.length||0
+  trainingData = trainingData.filter(v => v[1] > 0);
+  return trainingData.reduce((a, b) => a + b[0], 0) / trainingData.length || 0;
 }

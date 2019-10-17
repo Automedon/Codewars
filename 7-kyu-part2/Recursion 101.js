@@ -10,14 +10,14 @@ solve(22,5) == [0,1] because [22,5] -> [12,5] -> [2,5] -> [2,1] -> [0,1]
 solve(100000000000,3) = [4,3]
 More examples in tests cases. Good luck!
 */
-function solve(a,b){
-  while (a >= (2 * b) || b >= (2 * a)) {
+function solve(a, b) {
+  while (a >= 2 * b || b >= 2 * a) {
     if (a == 0 || b == 0) {
       return [a, b];
-    } else if (a >= (2 * b)) {
-      a =a% (2 * b);
+    } else if (a >= 2 * b) {
+      a = a % (2 * b);
     } else if (b >= 2 * a) {
-      b =b% (2 * a);
+      b = b % (2 * a);
     }
   }
   return [a, b];

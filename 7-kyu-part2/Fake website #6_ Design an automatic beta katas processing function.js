@@ -66,12 +66,16 @@ rank:[8,7,6,8,7,6,8,7,6],example:true,random:true}) should return
   "Kata approved. vote scores:14, rank:7kyu"
 Can be expected: there will not be a lot of people to solve this Kata, because it is a bit complex. So if you solve this Kata, please don't forget rank and vote it. It's important for Kata to break away from the beta process, very thanks!
 */
-function kataStatus(k){
-  if (k.issue!==0) return "Beta Status:Waiting for issues to be resolved";
-  if (k.vote.length<5) return "Beta Status:Testing & feedback needed"
-  if (k.rank.length<8) return "Beta Status:Ranking feedback needed"
-  if (!k.example&&!k.random) return "Beta Status:Example and random testcases needed"
-  if (!k.example) return "Beta Status:Example testcases needed"
-  if (!k.random) return "Beta Status:Random testcases needed"
-  return `Kata approved. vote scores:${k.vote.reduce((a,b)=>a+b,0)}, rank:${Math.round(k.rank.reduce((a,b)=>a+b,0)/k.rank.length)}kyu` 
+function kataStatus(k) {
+  if (k.issue !== 0) return "Beta Status:Waiting for issues to be resolved";
+  if (k.vote.length < 5) return "Beta Status:Testing & feedback needed";
+  if (k.rank.length < 8) return "Beta Status:Ranking feedback needed";
+  if (!k.example && !k.random)
+    return "Beta Status:Example and random testcases needed";
+  if (!k.example) return "Beta Status:Example testcases needed";
+  if (!k.random) return "Beta Status:Random testcases needed";
+  return `Kata approved. vote scores:${k.vote.reduce(
+    (a, b) => a + b,
+    0
+  )}, rank:${Math.round(k.rank.reduce((a, b) => a + b, 0) / k.rank.length)}kyu`;
 }

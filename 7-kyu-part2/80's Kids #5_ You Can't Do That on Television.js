@@ -17,8 +17,9 @@ bucketOf("I don't know if I'm doing this right.") -> "slime"
 bucketOf("You won't get me!") -> "air"
 */
 function bucketOf(str) {
-  if (/water|wet|wash/i.test(str)&&/I don't know|slime/i.test(str)) return 'sludge'
-  if (/water|wet|wash/i.test(str)) return 'water'
-  if (/I don't know|slime/i.test(str)) return 'slime'
-  return 'air'
+  if (/water|wet|wash/i.test(str) && /I don't know|slime/i.test(str))
+    return "sludge";
+  if (/water|wet|wash/i.test(str)) return "water";
+  if (/I don't know|slime/i.test(str)) return "slime";
+  return "air";
 }

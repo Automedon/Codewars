@@ -24,5 +24,8 @@ Extra readings:
 https://alvinalexander.com/java/jdbc-connection-string-mysql-postgresql-sqlserver
 */
 function hidePasswordFromConnection(urlString) {
-  return urlString.replace(/password=([^&]*)/, ($1, $2) => `password=${'*'.repeat($2.length)}`);
+  return urlString.replace(
+    /password=([^&]*)/,
+    ($1, $2) => `password=${"*".repeat($2.length)}`
+  );
 }

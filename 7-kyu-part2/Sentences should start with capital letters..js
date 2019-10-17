@@ -20,6 +20,9 @@ there will be no punctuation besides full stops and spaces
 
 all but the last full stop will be followed by a space and at least one word
 */
-function fix(paragraph){
-  return paragraph.slice(0,1).toUpperCase()+paragraph.replace(/\. \w/g,v=>v.toUpperCase()).slice(1)
+function fix(paragraph) {
+  return (
+    paragraph.slice(0, 1).toUpperCase() +
+    paragraph.replace(/\. \w/g, v => v.toUpperCase()).slice(1)
+  );
 }

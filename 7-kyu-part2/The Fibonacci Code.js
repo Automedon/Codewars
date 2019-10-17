@@ -7,10 +7,10 @@ Create a function that takes any number, and produces a fibonacci sequence based
 The function should also work with negative numbers. If the first number given is 0, then the second should be 1, and the sequence should follow as normal afterwards.
 */
 function fibonacci(initNum, length) {
-  let arr = [initNum,initNum]
-  if (initNum===0) arr = [0,1]
-  for (let i=1;i<length-1;i++){
-    arr.push(arr[i-1]+arr[i])
+  let arr = [initNum, initNum];
+  if (initNum === 0) arr = [0, 1];
+  for (let i = 1; i < length - 1; i++) {
+    arr.push(arr[i - 1] + arr[i]);
   }
-  return arr
+  return arr;
 }

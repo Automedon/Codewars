@@ -16,9 +16,27 @@ Write a program to return the damage done to the titan (this should be zero or b
 
 You will be given your attack power "att" and the titan's defense "def". The damage will be the difference between defense of the titan and the final attack power. You will be supplied with your element (yourElement) and the titan's element (theirElement). Return the damage done and the action as an array in the form [damage,"Action"], where the action is either "Attack" or "Run!". Good luck!
 */
-function titanAttack(att, def, yourElement, theirElement){
-  let strongElement = {Fire: 'Earth', Earth: 'Thunder', Water: 'Fire', Thunder: 'Water'};
-  let weakElement = {Fire: 'Water', Earth: 'Fire', Water: 'Thunder', Thunder: 'Earth'};
-  let damage = def - att * (strongElement[yourElement] === theirElement ? 1.5 : yourElement === theirElement || weakElement[yourElement] === theirElement ? 0.5 : 1);
-  return [damage, damage > 0 ? 'Run!' : 'Attack'];
+function titanAttack(att, def, yourElement, theirElement) {
+  let strongElement = {
+    Fire: "Earth",
+    Earth: "Thunder",
+    Water: "Fire",
+    Thunder: "Water"
+  };
+  let weakElement = {
+    Fire: "Water",
+    Earth: "Fire",
+    Water: "Thunder",
+    Thunder: "Earth"
+  };
+  let damage =
+    def -
+    att *
+      (strongElement[yourElement] === theirElement
+        ? 1.5
+        : yourElement === theirElement ||
+          weakElement[yourElement] === theirElement
+        ? 0.5
+        : 1);
+  return [damage, damage > 0 ? "Run!" : "Attack"];
 }

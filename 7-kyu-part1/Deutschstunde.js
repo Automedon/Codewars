@@ -10,8 +10,8 @@ Caution: Vowels are "a,e,i,o,u". Umlaute (ä ö ü) are also being counted!
 (This Kata is a joke, there is no such grammar rule!)
 */
 
-function derDieDas(wort){
- if (wort.match(/[aioueäöü]/gi).length<2) return 'das '+wort;
- if (wort.match(/[aioueäöü]/gi).length>3) return 'der '+wort;
-  return 'die '+wort;
- }
+function derDieDas(wort) {
+  if (wort.match(/[aioueäöü]/gi).length < 2) return "das " + wort;
+  if (wort.match(/[aioueäöü]/gi).length > 3) return "der " + wort;
+  return "die " + wort;
+}

@@ -41,7 +41,8 @@ function Node(data) {
 
 function removeDuplicates(head) {
   for (let node = head; node; node = node.next) {
-    while (node.next && node.data === node.next.data) node.next = node.next.next
+    while (node.next && node.data === node.next.data)
+      node.next = node.next.next;
   }
-  return head
+  return head;
 }

@@ -23,11 +23,12 @@ layers(30) === 4
 layers(50) === 5
 Fair warning: you will always and only get positive integers, but be ready for bigger numbers in the tests!
 */
-function layers(n){
-  let layer= 1;
-  let a= 1;
-    while (a**2 < n){
-      layer += 1
-      a += 2}
-    return layer
+function layers(n) {
+  let layer = 1;
+  let a = 1;
+  while (a ** 2 < n) {
+    layer += 1;
+    a += 2;
+  }
+  return layer;
 }

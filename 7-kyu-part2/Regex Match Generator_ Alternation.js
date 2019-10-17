@@ -24,9 +24,9 @@ TL;DR
 Complete the function regex_matches(). The only feature used will be Alternation using the "pipe" (|) character. The only characters to match will be lowercase alphabetical and numerical characters. Generate valid matches for a given regex, as passed into the function, and return them as strings in an array.
 */
 function regex_matches(regex) {
-  regex=regex.toString().replace(/[/\\]/g,'')
-  if (/\|/.test(regex)){
-    return regex.split('|')
+  regex = regex.toString().replace(/[/\\]/g, "");
+  if (/\|/.test(regex)) {
+    return regex.split("|");
   }
-  return [regex]
+  return [regex];
 }

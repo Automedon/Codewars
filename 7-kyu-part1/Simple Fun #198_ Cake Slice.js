@@ -27,10 +27,9 @@ The maximum number of pieces the sliced cake can have.
 */
 
 function cakeSlice(n) {
-let count=1;
-  for (let i=1;i<=n;i++){
-  count+=i
+  let count = 1;
+  for (let i = 1; i <= n; i++) {
+    count += i;
   }
-  return count
-  
+  return count;
 }

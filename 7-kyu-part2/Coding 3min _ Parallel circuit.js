@@ -34,6 +34,10 @@ So, resistance([[1],[2,3]])=0.83
 
 ```
 */
-function resistance(arr){
-  return (1/arr.reduce((a,b)=>a+1/b.reduce((a,b)=>a+b),0)).toFixed(2)*1
+function resistance(arr) {
+  return (
+    (1 / arr.reduce((a, b) => a + 1 / b.reduce((a, b) => a + b), 0)).toFixed(
+      2
+    ) * 1
+  );
 }

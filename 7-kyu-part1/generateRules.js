@@ -19,9 +19,10 @@ The makeTCPRule function is already provided for you and looks like this:
 function makeTCPRule(x){
   return "iptables -I INPUT -p tcp --dport " + x + " -j ACCEPT ;";
 */
-function generateRules(func,portList){
-  let str='';
-  for(let i=0;i<portList.length;i++){
-  str+=func(portList[i])}
-  return str
+function generateRules(func, portList) {
+  let str = "";
+  for (let i = 0; i < portList.length; i++) {
+    str += func(portList[i]);
+  }
+  return str;
 }

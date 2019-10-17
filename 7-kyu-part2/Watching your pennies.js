@@ -16,12 +16,12 @@ Round your final answer to the nearest two decimal places for cash, to integers 
 An interest rate of 0.2 means 0.2%, not 20%.
 Despite usual grammar rules "...after 1 months" is the expected result in such a case
 */
-function manageMoney(cash,expenses,rate) {
-   rate=rate/100
-   for (let i=0;i<12;i++){
-     cash+=cash*rate
-     cash-=expenses
-     if (cash<=0) return `You ran out of money after ${i} months`
-   }
-   return `You still have $${cash.toFixed(2)}`
+function manageMoney(cash, expenses, rate) {
+  rate = rate / 100;
+  for (let i = 0; i < 12; i++) {
+    cash += cash * rate;
+    cash -= expenses;
+    if (cash <= 0) return `You ran out of money after ${i} months`;
+  }
+  return `You still have $${cash.toFixed(2)}`;
 }

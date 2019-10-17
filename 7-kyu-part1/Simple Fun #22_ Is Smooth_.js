@@ -30,9 +30,9 @@ Constraints: 2 ≤ arr.length ≤ 103, -103 ≤ arr[i] ≤ 103.
 true if arr is smooth, false otherwise.
 */
 function isSmooth(arr) {
-  const a=arr[Math.ceil((arr.length-1)/2)]
-  const b=arr[Math.floor((arr.length-1)/2)]
-  if (a===arr[0]&&b===arr[arr.length-1]) return true 
-  if (a+b==arr[0]&&a+b===arr[arr.length-1]) return true 
-  return false
+  const a = arr[Math.ceil((arr.length - 1) / 2)];
+  const b = arr[Math.floor((arr.length - 1) / 2)];
+  if (a === arr[0] && b === arr[arr.length - 1]) return true;
+  if (a + b == arr[0] && a + b === arr[arr.length - 1]) return true;
+  return false;
 }

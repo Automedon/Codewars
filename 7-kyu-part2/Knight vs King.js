@@ -21,12 +21,10 @@ knightPosition = [6, "D"];
 Check the test cases and Happy coding :)
 */
 function knightVsKing(R, K) {
-    let dx = R[0] - K[0]
-    let dy = R[1].charCodeAt() - K[1].charCodeAt()
-    let d = dx * dx + dy * dy
-    if (d === 5)
-        return 'Knight'
-    if (d < 3)
-        return 'King'
-    return 'None'
+  let dx = R[0] - K[0];
+  let dy = R[1].charCodeAt() - K[1].charCodeAt();
+  let d = dx * dx + dy * dy;
+  if (d === 5) return "Knight";
+  if (d < 3) return "King";
+  return "None";
 }

@@ -12,7 +12,7 @@ var str = "ynMAisVpHEqpqHBqTrwH";
 
 lottery(str); // should return "One more run!"
 */
-function lottery(str){
-  str=str.replace(/\D/gi,'')
-  return str.length===0?"One more run!":[...new Set(str)].join(``)
+function lottery(str) {
+  str = str.replace(/\D/gi, "");
+  return str.length === 0 ? "One more run!" : [...new Set(str)].join(``);
 }

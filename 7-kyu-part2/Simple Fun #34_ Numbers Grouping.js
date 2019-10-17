@@ -54,5 +54,5 @@ Constraints: 1 ≤ a.length ≤ 104, 1 ≤ a[i] ≤ 106.
 The number of lines needed to store the grouped numbers.
 */
 function numbersGrouping(a) {
-  return new Set(a.map(x=>Math.ceil(x/10000))).size+a.length
+  return new Set(a.map(x => Math.ceil(x / 10000))).size + a.length;
 }

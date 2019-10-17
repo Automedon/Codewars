@@ -27,9 +27,9 @@ gen = quadraticGen(1, 0, 0, step = 0.5)  // step is a float
 First 10 values: [[0, 0], [0.5, 0.25], [1.0, 1.0], [1.5, 2.25], [2.0, 4.0], [2.5, 6.25], [3.0, 9.0], [3.5, 12.25], [4.0, 16.0], [4.5, 20.25]]
 Solutions are rounded to 6 decimal places during tests to prevent rounding errors from causing problems.
 */
-function* quadraticGen(a,b,c,s=0,sp=1) {
-while (true){
-  yield [s,a*Math.pow(s,2)+b*s+c];
-  s+=sp;
+function* quadraticGen(a, b, c, s = 0, sp = 1) {
+  while (true) {
+    yield [s, a * Math.pow(s, 2) + b * s + c];
+    s += sp;
   }
 }

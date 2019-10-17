@@ -9,14 +9,14 @@ Your task is to write a program that returns the amount of money left in the ban
 Note: There will only be a maximum of one robbery and one police action in each array to keep things simple and you don't have to worry about these.
 */
 function bankRobbery(deposits) {
-  let index0=deposits.indexOf(0)
-  let index1=deposits.indexOf(1)
-  if (index0>-1&&index1===-1){ 
-  deposits=deposits.slice(index0)
-  return deposits.reduce((a,b)=>a+b,0)
+  let index0 = deposits.indexOf(0);
+  let index1 = deposits.indexOf(1);
+  if (index0 > -1 && index1 === -1) {
+    deposits = deposits.slice(index0);
+    return deposits.reduce((a, b) => a + b, 0);
   }
-  if (index1>-1){ 
-     return deposits.reduce((a,b)=>a+b,0)-1
+  if (index1 > -1) {
+    return deposits.reduce((a, b) => a + b, 0) - 1;
   }
-  return deposits.reduce((a,b)=>a+b,0)
+  return deposits.reduce((a, b) => a + b, 0);
 }

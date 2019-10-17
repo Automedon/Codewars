@@ -8,4 +8,5 @@ Each of f0, f1, and p has has properties x and y for its coordinates.
 
 You will never be given the case where the string is too short to reach between the points.
 */
-let ellipseContainsPoint = (f0, f1, l, p) =>  Math.hypot(p.x - f0.x, p.y - f0.y) + Math.hypot(p.x - f1.x, p.y - f1.y) <= l;
+let ellipseContainsPoint = (f0, f1, l, p) =>
+  Math.hypot(p.x - f0.x, p.y - f0.y) + Math.hypot(p.x - f1.x, p.y - f1.y) <= l;

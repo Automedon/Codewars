@@ -31,4 +31,4 @@ Examples:
   //returns false
 */
 
-const doubleCheck = (str) => /(.)\1/i.test(str);
+const doubleCheck = str => /(.)\1/i.test(str);

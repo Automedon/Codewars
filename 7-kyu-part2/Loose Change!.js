@@ -25,6 +25,9 @@ changeCount('penny') == '$0.01
 changeCount('dime') == '$0.10'
 Warning, some change may amount to over $10.00!
 */
-function changeCount( change ){
-  return `$${change.split(' ').reduce((a,b)=>a+CHANGE[b],0).toFixed(2)}`
+function changeCount(change) {
+  return `$${change
+    .split(" ")
+    .reduce((a, b) => a + CHANGE[b], 0)
+    .toFixed(2)}`;
 }

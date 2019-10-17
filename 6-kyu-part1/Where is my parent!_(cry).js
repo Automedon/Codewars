@@ -9,6 +9,9 @@ Place all people in alphabetical order where Mothers are followed by their child
 */
 const findChildren = dancingBrigade =>
   dancingBrigade
-    .split('')
-    .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()) || b.localeCompare(a))
-    .join('')
+    .split("")
+    .sort(
+      (a, b) =>
+        a.toLowerCase().localeCompare(b.toLowerCase()) || b.localeCompare(a)
+    )
+    .join("");

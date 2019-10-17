@@ -14,6 +14,6 @@ wordSearch("yellow",text)--> false
 wordSearch("akes the",text)--> false
 */
 
-function wordsearch(n){
-  return text.search("\\b"+n+"\\b")>-1
+function wordsearch(n) {
+  return text.search("\\b" + n + "\\b") > -1;
 }

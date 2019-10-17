@@ -4,7 +4,11 @@ This is a spin off of my first Kata, you are given a list of characters as a com
 
 Arrays are joined by adding a single space between each consecutive array element.
 */
-function array(arr){
-  return arr.split(',').slice(1,-1).join(' ')|| null
-
+function array(arr) {
+  return (
+    arr
+      .split(",")
+      .slice(1, -1)
+      .join(" ") || null
+  );
 }

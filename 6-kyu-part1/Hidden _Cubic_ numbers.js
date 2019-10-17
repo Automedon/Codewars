@@ -22,14 +22,23 @@ Note: In the string "001234" where 3 digits or more follow each other the fist p
 
 When a continous string of digits exceeds 3, the string is split into groups of 3 from the left. The last grouping could have 3, 2 or 1 digits. e.g "24172410" becomes 3 strings comprising "241", "724" and "10" e.g "0785" becomes 2 strings comprising "078" and "5".
 */
-function isSumOfCubes(s){
-  let arr = [].concat(...s.replace(/[^0-9]/gi,' ').replace(/\s+/gi,' ').trim().split` `.map(v=>{
-    let arr = []
-    for (let i=0;i<v.length;i+=3){
-      arr.push(v.slice(i,i+3))
-    }
-    return arr
-  }))
-  let final = arr.filter(v=>v*1===(v.split``.reduce((a,b)=>a+(b*b*b),0))).map(v=>v*1)
-  return final.length?final.join` `+' '+final.reduce((a,b)=>a+b,0)+' '+'Lucky':'Unlucky'
+function isSumOfCubes(s) {
+  let arr = [].concat(
+    ...s
+      .replace(/[^0-9]/gi, " ")
+      .replace(/\s+/gi, " ")
+      .trim().split` `.map(v => {
+      let arr = [];
+      for (let i = 0; i < v.length; i += 3) {
+        arr.push(v.slice(i, i + 3));
+      }
+      return arr;
+    })
+  );
+  let final = arr
+    .filter(v => v * 1 === v.split``.reduce((a, b) => a + b * b * b, 0))
+    .map(v => v * 1);
+  return final.length
+    ? final.join` ` + " " + final.reduce((a, b) => a + b, 0) + " " + "Lucky"
+    : "Unlucky";
 }

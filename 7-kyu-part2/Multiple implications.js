@@ -11,5 +11,5 @@ In this kata, we will take that further. Given an array (return false if the arr
 Assume that there will be no more than 8 variables in the array, and the array will contain only boolean values.
 */
 function multImplication(arr) {
-  return (arr.length) ? arr.reduce( (a,b) => !a || b, true) : null;
+  return arr.length ? arr.reduce((a, b) => !a || b, true) : null;
 }

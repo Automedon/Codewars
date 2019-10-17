@@ -16,7 +16,7 @@ Given the number of months since sign up, write a function that returns "Match!"
 */
 
 function match(usefulness, months) {
-        const husband = usefulness.reduce((a, b) => a + b,0);
-        const wife = 100 * Math.pow(0.85, months);
-        return husband >= wife ? "Match!" : "No match!";
+  const husband = usefulness.reduce((a, b) => a + b, 0);
+  const wife = 100 * Math.pow(0.85, months);
+  return husband >= wife ? "Match!" : "No match!";
 }

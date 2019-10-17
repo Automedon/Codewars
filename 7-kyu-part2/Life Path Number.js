@@ -17,7 +17,19 @@ You do not need to check that the input to the lifePathNumber()-function is corr
 Note: If the month or day is a single digit number, then it shall be preceeded by a 0 (zero). For example, in Einstein's case the month of March is 3; which is a single digit number. The function shall in this case be called with the following parameter: lifePathNumber("1879-03-14").
 */
 function lifePathNumber(dateOfBirth) {
-  return [...dateOfBirth.split('-')].map(v=>v.split('').reduce((a,b)=>a+b*1,0))
- .map(v=>v.toString().split('').reduce((a,b)=>a+b*1,0)).reduce((a,b)=>a+b*1,0).toString().split('').reduce((a,b)=>a+b*1,0)
- .toString().split('').reduce((a,b)=>a+b*1,0)
+  return [...dateOfBirth.split("-")]
+    .map(v => v.split("").reduce((a, b) => a + b * 1, 0))
+    .map(v =>
+      v
+        .toString()
+        .split("")
+        .reduce((a, b) => a + b * 1, 0)
+    )
+    .reduce((a, b) => a + b * 1, 0)
+    .toString()
+    .split("")
+    .reduce((a, b) => a + b * 1, 0)
+    .toString()
+    .split("")
+    .reduce((a, b) => a + b * 1, 0);
 }

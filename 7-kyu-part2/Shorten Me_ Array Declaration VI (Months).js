@@ -11,4 +11,7 @@ You have to write an array() function returning an array object with elements as
 Coding Limitation:
 Less than 120 characters
 */
-array=_=>[...Array(24)].map((_,i)=>new Date(0,i).toLocaleString('en-US',{month:'long'}))
+array = _ =>
+  [...Array(24)].map((_, i) =>
+    new Date(0, i).toLocaleString("en-US", { month: "long" })
+  );

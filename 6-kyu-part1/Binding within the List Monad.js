@@ -19,6 +19,8 @@ bind( [1,2,3], function(a){ return a } )
 As per usual, the ruby function will be passed a Proc or Lambda. Remember that the function still takes two arguments!
 */
 bind = function(list, func) {
-  if (typeof func(list[0]) !== "object") {throw Error()}
-  return list.reduce((a,b)=>a.concat(func(b)),[])
-}
+  if (typeof func(list[0]) !== "object") {
+    throw Error();
+  }
+  return list.reduce((a, b) => a.concat(func(b)), []);
+};

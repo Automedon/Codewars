@@ -9,7 +9,7 @@ arr2bin([1,2]) == '11'
 arr2bin([1,2,'a']) == false
 */
 
-function arr2bin(arr){
-  if(arr.filter(v=>typeof v != 'number').length>0) return false
-  return arr.reduce((a,b)=>a+b,0).toString(2)
+function arr2bin(arr) {
+  if (arr.filter(v => typeof v != "number").length > 0) return false;
+  return arr.reduce((a, b) => a + b, 0).toString(2);
 }

@@ -8,9 +8,8 @@ You're not allowed to use the word require in your code.
 You're not allowed to use the ** symbol.
 You're not allowed to use Math.
 */
-function squareRootMe(sqrt){
-  for (let i=0;i<=sqrt;i++)
-    {
-      if (i*i===sqrt) return i
-    }
+function squareRootMe(sqrt) {
+  for (let i = 0; i <= sqrt; i++) {
+    if (i * i === sqrt) return i;
+  }
 }

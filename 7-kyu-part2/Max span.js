@@ -7,12 +7,12 @@ Consider the leftmost and righmost appearances of the same value in an array. We
 [1, 4, 6, 1, 4, 4, 4, 8 ,6, 2, 3] → 7  // span is (6, 1, 4, 4, 4, 8, 6)
 P.S. Input array includes positive integers, array's length > 10.
 */
-const maxSpan = (array) => {
-   let arr = [];
-   for (let i=0;i<array.length;i++){
-      for (let j=i+1;j<array.length;j++){
-        if (array[i]===array[j]) arr.push(array.slice(i,j+1))
-       }  
-     }
-     return Math.max(...arr.map(v=>v.length))
-}
+const maxSpan = array => {
+  let arr = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] === array[j]) arr.push(array.slice(i, j + 1));
+    }
+  }
+  return Math.max(...arr.map(v => v.length));
+};

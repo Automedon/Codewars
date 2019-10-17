@@ -10,15 +10,15 @@ function sortIt('bid, zag', 2) //=> 'zag, bid'
 The length of all words provided in the list will be >= n. The format will be "x, x, x". In Haskell you'll get a list of Strings instead.
 */
 function sortIt(list, n) {
-    return list
-    .split(', ')
+  return list
+    .split(", ")
     .sort((a, b) => {
-      const charCodeA = a.toLowerCase().charCodeAt(n - 1)
-      const charCodeB = b.toLowerCase().charCodeAt(n - 1)
+      const charCodeA = a.toLowerCase().charCodeAt(n - 1);
+      const charCodeB = b.toLowerCase().charCodeAt(n - 1);
 
       return charCodeA === charCodeB
         ? a.localeCompare(b)
-        : charCodeA - charCodeB
+        : charCodeA - charCodeB;
     })
-    .join(', ')
+    .join(", ");
 }

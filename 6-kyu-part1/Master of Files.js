@@ -16,9 +16,13 @@ It should return true or false, simply.
 File extensions should consist of lowercase letters and numbers only.
 File names should consist of letters only (uppercase, lowercase, or both)
 */
-String.prototype.isAudio= function(){
-  return /\.mp3|\.flac|\.alac|\.aac/.test(this)&&!/[\s]/.test(this)
+String.prototype.isAudio = function() {
+  return /\.mp3|\.flac|\.alac|\.aac/.test(this) && !/[\s]/.test(this);
 };
-String.prototype.isImage= function(){
-  return /\.jpg|\.jpeg|\.png|\.bmp|\.gif/.test(this)&&!/[\s]/.test(this)&&!/[\d]/g.test(this)
+String.prototype.isImage = function() {
+  return (
+    /\.jpg|\.jpeg|\.png|\.bmp|\.gif/.test(this) &&
+    !/[\s]/.test(this) &&
+    !/[\d]/g.test(this)
+  );
 };

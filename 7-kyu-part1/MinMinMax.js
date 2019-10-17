@@ -17,12 +17,14 @@ minMinMax([1, 3, -3, -2, 8, -1]); //[-3, 0, 8]
 minMinMax([2, -4, 8, -5, 9, 7]); //[-5, -3,9]
 */
 function minMinMax(array) {
-  const max=Math.max(...array);
-  const min=Math.min(...array);
-  let minAbs=0;
-  for (let i=min;i<=max;i++)
-  {
-  if (!array.includes(i)){minAbs=i;break}
+  const max = Math.max(...array);
+  const min = Math.min(...array);
+  let minAbs = 0;
+  for (let i = min; i <= max; i++) {
+    if (!array.includes(i)) {
+      minAbs = i;
+      break;
+    }
   }
-  return [min,minAbs,max]
+  return [min, minAbs, max];
 }

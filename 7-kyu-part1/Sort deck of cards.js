@@ -12,7 +12,7 @@ Example:
 ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K']
 Hint: Tests will have many occurrences of same rank cards, as well as vary in length. You can assume though, that input list is always going to have at least 1 element.
 */
-function sortCards(array){
-    const dict=['A', 2, 3, 4,5, 6, 7, 8, 9, 'T', 'J', 'Q', 'K'];
-    return array.sort((a,b)=>dict.indexOf(a)-dict.indexOf(b))
+function sortCards(array) {
+  const dict = ["A", 2, 3, 4, 5, 6, 7, 8, 9, "T", "J", "Q", "K"];
+  return array.sort((a, b) => dict.indexOf(a) - dict.indexOf(b));
 }

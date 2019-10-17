@@ -9,8 +9,8 @@ Example:
 multiplyAll([1, 2, 3])(2) = [2, 4, 6];
 */
 
-function multiplyAll(arr){
-  return function(num){
-  return arr.map(v=>v*num)
-  }
+function multiplyAll(arr) {
+  return function(num) {
+    return arr.map(v => v * num);
+  };
 }

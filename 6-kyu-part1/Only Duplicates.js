@@ -9,5 +9,7 @@ input: "abccdefee"
 output: "cceee"
 */
 function onlyDuplicates(str) {
-  return str.split``.filter(v=>str.replace(new RegExp(v,'g'),'').length!==str.length-1).join``
+  return str.split``.filter(
+    v => str.replace(new RegExp(v, "g"), "").length !== str.length - 1
+  ).join``;
 }

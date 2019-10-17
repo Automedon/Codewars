@@ -44,8 +44,10 @@ Notes
 If you find the task too easy, try to solve it in the most elegant and efficient way. There are many solutions. Good luck!
 */
 function fightResolve(defender, attacker) {
-  let getCase = s => s.toLowerCase() === s ? 'l' : 'u';
+  let getCase = s => (s.toLowerCase() === s ? "l" : "u");
   if (getCase(defender) === getCase(attacker)) return -1;
-  let fight = { 'a': 's', 'k':'a', 'p': 'k', 's': 'p'}, a = attacker.toLowerCase(), d = defender.toLowerCase();
+  let fight = { a: "s", k: "a", p: "k", s: "p" },
+    a = attacker.toLowerCase(),
+    d = defender.toLowerCase();
   return fight[d] === a ? defender : attacker;
 }

@@ -13,8 +13,8 @@ For example:
 mathEngine([1, 2, 3, -4, -5]) should return -3
 */
 function mathEngine(arr) {
-  if (!arr) return 0
-  let non=arr.filter(v=>v>=0).reduce((a,b)=>a*b,1)
-  let neg=arr.filter(v=>v<=0).reduce((a,b)=>a+b,0)
-  return non+neg
+  if (!arr) return 0;
+  let non = arr.filter(v => v >= 0).reduce((a, b) => a * b, 1);
+  let neg = arr.filter(v => v <= 0).reduce((a, b) => a + b, 0);
+  return non + neg;
 }

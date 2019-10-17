@@ -78,6 +78,6 @@ The only hint is: it is related to ```power```.
 
 If you are interested in this form of kata, I recommend to you my [Thinking and Testing Series](http://www.codewars.com/kata/56d904db9963e9cf5000037d)
 */
-function thinkingAndTesting(n,b){
-  return n-b**(Math.floor(Math.log(n)/Math.log(b)))
+function thinkingAndTesting(n, b) {
+  return n - b ** Math.floor(Math.log(n) / Math.log(b));
 }

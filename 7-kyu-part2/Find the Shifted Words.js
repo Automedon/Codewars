@@ -30,14 +30,14 @@ If there is no solution you should output an empty array.
  findShiftedWord(sixLetterWords, eightLetterWords) => []
 Pay attention to capitalization in your result. The tests will have only zero or one matching word.
 */
-function findShiftedWord(sixLetterWords, eightLetterWords){
-  let arr1 = []
-  let arr = eightLetterWords.filter(v=>{
-  v=v.slice(0,-2);
-  v=v.slice(-2)+v.slice(0,-2);
-  v=v.slice(0,1).toUpperCase()+v.slice(1).toLowerCase();
-  let word = v.slice()
-  return sixLetterWords.includes(v)&&arr1.push(word)
-  })
- return [...arr,...arr1]
+function findShiftedWord(sixLetterWords, eightLetterWords) {
+  let arr1 = [];
+  let arr = eightLetterWords.filter(v => {
+    v = v.slice(0, -2);
+    v = v.slice(-2) + v.slice(0, -2);
+    v = v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase();
+    let word = v.slice();
+    return sixLetterWords.includes(v) && arr1.push(word);
+  });
+  return [...arr, ...arr1];
 }

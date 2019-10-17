@@ -14,12 +14,12 @@ orthogonal?([1, 1, 1], [2, 5, 7]) = false
 
 orthogonal?([1, 0, 0, 1], [0, 1, 1, 0]) = true
 */
-function isOrthogonal(u,v) {
+function isOrthogonal(u, v) {
   var sum = 0;
-  
+
   for (var i = 0; i < u.length; i++) {
-    sum += u[i]*v[i];
-  };
-  
+    sum += u[i] * v[i];
+  }
+
   return !sum;
 }

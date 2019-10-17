@@ -13,6 +13,6 @@ Note
 Please don't post issue about difficulty or duplicate.
 */
 
-function remove(s){
-  return s.replace(/!+([^!])/g, '$1')
+function remove(s) {
+  return s.replace(/!+([^!])/g, "$1");
 }

@@ -40,9 +40,9 @@ Examples:
 (6,12)  =>  'second'
 (2,4)   =>  'second'
 */
-function game(n,m) {
-  if (m===2) return 'second'
-  if (n%2!==0&&m%2===0) return 'first'
-  if (n%2!==0) return 'first'
-  return 'second'
+function game(n, m) {
+  if (m === 2) return "second";
+  if (n % 2 !== 0 && m % 2 === 0) return "first";
+  if (n % 2 !== 0) return "first";
+  return "second";
 }

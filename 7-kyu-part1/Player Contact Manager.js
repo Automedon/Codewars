@@ -10,11 +10,11 @@ Examples
 Have at thee!
 */
 function playerManager(players) {
-  if(players===null||players.length===0||!players.length) return []
-  let arr=[];
-  let p=players.split`,`
-  for (let i=0;i<p.length;i+=2){
-  arr.push({'player':p[i].trim(),'contact':p[i+1]*1})
+  if (players === null || players.length === 0 || !players.length) return [];
+  let arr = [];
+  let p = players.split`,`;
+  for (let i = 0; i < p.length; i += 2) {
+    arr.push({ player: p[i].trim(), contact: p[i + 1] * 1 });
   }
-  return arr
+  return arr;
 }

@@ -12,5 +12,5 @@ thatUnitesUs(['f', 'g', 'z'], ['c', 'f', 'g'], 2) => ['c', 'f']
 P.S. Array's length >= n
 */
 function thatUnitesUs(array1, array2, n) {
-  return [...new Set(array1.concat(array2))].sort().slice(0,n)
+  return [...new Set(array1.concat(array2))].sort().slice(0, n);
 }

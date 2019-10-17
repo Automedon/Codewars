@@ -7,5 +7,14 @@ Reverse the order of the letters in each word
 All characters must be in lowercase
 */
 function translateToAlienLanguage(string) {
-  return string.toLowerCase().split(` `).map(v=>v.split(``).reverse().join(``).replace(/([aeiou])/g,'$1$1')).join` `
+  return string
+    .toLowerCase()
+    .split(` `)
+    .map(v =>
+      v
+        .split(``)
+        .reverse()
+        .join(``)
+        .replace(/([aeiou])/g, "$1$1")
+    ).join` `;
 }

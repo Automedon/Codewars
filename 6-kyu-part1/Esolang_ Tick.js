@@ -22,15 +22,17 @@ Hello world!
 
 */
 function interpreter(tape) {
-  let dict = {}
-  let str = []
+  let dict = {};
+  let str = [];
   let num = 0;
-  let selector=0;
-  for (let i=0;i<tape.length;i++){
-   if (tape[i]==='+') dict[selector]=dict[selector]+1||1; 
-   else if (tape[i]==='>') selector++
-   else if (tape[i]==='<') selector--
-   else if (tape[i]==='*') { str += String.fromCharCode(dict[selector]%256)}
+  let selector = 0;
+  for (let i = 0; i < tape.length; i++) {
+    if (tape[i] === "+") dict[selector] = dict[selector] + 1 || 1;
+    else if (tape[i] === ">") selector++;
+    else if (tape[i] === "<") selector--;
+    else if (tape[i] === "*") {
+      str += String.fromCharCode(dict[selector] % 256);
+    }
   }
-  return str 
+  return str;
 }

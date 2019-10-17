@@ -9,4 +9,4 @@ Anytime an integer with a magnitude larger than 53 bits is used your function mu
 
 a and b will always be integers, but they may be larger than 53 bits.
 */
-const certainSum = (a,b) => [ a, b, a+b ].every(Number.isSafeInteger) && a+b ;
+const certainSum = (a, b) => [a, b, a + b].every(Number.isSafeInteger) && a + b;

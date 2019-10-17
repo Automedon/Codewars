@@ -38,6 +38,13 @@ Since , {-282 , 818 , 900 , 928 } is the even numbers here , So it came first in
 
 Since , (Duplications are not included when separating) , then you can see only one (-282) was appeared in the final array/list .
 */
-function menFromBoys(arr){
-  return [...new Set(arr.filter(v=>v%2===0).sort((a,b)=>a-b).concat(arr.filter(v=>v%2!==0).sort((a,b)=>b-a)))]
+function menFromBoys(arr) {
+  return [
+    ...new Set(
+      arr
+        .filter(v => v % 2 === 0)
+        .sort((a, b) => a - b)
+        .concat(arr.filter(v => v % 2 !== 0).sort((a, b) => b - a))
+    )
+  ];
 }

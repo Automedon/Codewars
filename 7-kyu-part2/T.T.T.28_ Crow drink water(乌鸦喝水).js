@@ -66,13 +66,20 @@ should return []
 drinkWater(20,1,2,3,[4,5,6,7,8,9])
 should return "The crow is dead."
 */
-function drinkWater(bottleHeight,bottleRadius,waterHeight,crowMouth,littleStones){
-    let remainingVolume = (bottleHeight - waterHeight - crowMouth) * Math.PI * bottleRadius ** 2;
-    let result = [];
-    for (let i=0;i<littleStones.length;i++){
-      if (remainingVolume<=0) break
-      result.push(littleStones[i])
-      remainingVolume-=littleStones[i]
-    }
-    return remainingVolume > 0 ? 'The crow is dead.' : result;
+function drinkWater(
+  bottleHeight,
+  bottleRadius,
+  waterHeight,
+  crowMouth,
+  littleStones
+) {
+  let remainingVolume =
+    (bottleHeight - waterHeight - crowMouth) * Math.PI * bottleRadius ** 2;
+  let result = [];
+  for (let i = 0; i < littleStones.length; i++) {
+    if (remainingVolume <= 0) break;
+    result.push(littleStones[i]);
+    remainingVolume -= littleStones[i];
+  }
+  return remainingVolume > 0 ? "The crow is dead." : result;
 }

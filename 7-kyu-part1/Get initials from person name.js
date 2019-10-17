@@ -5,5 +5,8 @@ Write function toInitials returs initials for a given person name. E.g: "Bill Ga
 Note: initials should be separated with a space.
 */
 function toInitials(name) {
-  return name.split(' ').map(v=>v[0]+'.').join(' ');
+  return name
+    .split(" ")
+    .map(v => v[0] + ".")
+    .join(" ");
 }

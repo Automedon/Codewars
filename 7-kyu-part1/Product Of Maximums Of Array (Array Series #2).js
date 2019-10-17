@@ -31,6 +31,9 @@ Since the size (k) equal 3 , then the subsequence of size 2 whose gives product 
 
 */
 
-function maxProduct(numbers, size){
-  return numbers.sort((a,b)=>a-b).slice(numbers.length-size).reduce((a,b)=>a*b,1)
+function maxProduct(numbers, size) {
+  return numbers
+    .sort((a, b) => a - b)
+    .slice(numbers.length - size)
+    .reduce((a, b) => a * b, 1);
 }

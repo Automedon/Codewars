@@ -41,16 +41,15 @@ N = 11, the answer will be 2
 
 #Output: The number of times you found an integer that was evenly divisible with N.
 */
-function getCount(n)
-{
+function getCount(n) {
   const arr = [];
-  let str =n.toString()
-  for (let i=0;i<str.length;i++){
-    for (let j=i;j<=str.length;j++){
-      arr.push(str.slice(i,j))
+  let str = n.toString();
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i; j <= str.length; j++) {
+      arr.push(str.slice(i, j));
     }
   }
-  let count = 0
-  arr.map(v=>n%v*1===0?count++:1)
-  return count-1
+  let count = 0;
+  arr.map(v => ((n % v) * 1 === 0 ? count++ : 1));
+  return count - 1;
 }

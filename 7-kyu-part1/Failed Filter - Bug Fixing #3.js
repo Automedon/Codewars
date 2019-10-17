@@ -4,5 +4,8 @@ Oh no, Timmy's filter doesn't seem to be working? Your task is to fix the Filter
 */
 
 var FilterNumbers = function(str) {
-  return str.split('').filter(c => c.match(/[a-zA-Z]/g)).join('');
-}
+  return str
+    .split("")
+    .filter(c => c.match(/[a-zA-Z]/g))
+    .join("");
+};

@@ -21,17 +21,20 @@ Note that the alpha object will be randomly generated each time you run the test
 In accordance to the above alpha object, the name Mary Jane will have a name score of 20 => M=3 + a=1 + r=4 + y=5 + J=2 + a=1 + n=3 + e=1
 */
 function nameScore(name) {
-	let nameList = name.replace(/\s+/gi, '').toUpperCase().split('');
-	let score = 0,
-		result = {};
-	for (let x in alpha) {
-		for (let i = 0; i < nameList.length; i++) {
-			if (x.indexOf(nameList[i]) !== -1) {
-				score += alpha[x];
-			}
-		}
-	}
+  let nameList = name
+    .replace(/\s+/gi, "")
+    .toUpperCase()
+    .split("");
+  let score = 0,
+    result = {};
+  for (let x in alpha) {
+    for (let i = 0; i < nameList.length; i++) {
+      if (x.indexOf(nameList[i]) !== -1) {
+        score += alpha[x];
+      }
+    }
+  }
 
-	result[name] = score;
-	return result;
+  result[name] = score;
+  return result;
 }

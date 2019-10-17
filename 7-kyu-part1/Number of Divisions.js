@@ -17,10 +17,10 @@ For example the number 6 can be divided by 2 two times:
 6. 3 / 2 = 1 remainder 1
 */
 const divisions = (n, divisor) => {
-  let count=0;
-  while(n>1){
-  count++
-  n=n/divisor
+  let count = 0;
+  while (n > 1) {
+    count++;
+    n = n / divisor;
   }
-  return count-1;
+  return count - 1;
 };

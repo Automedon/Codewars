@@ -8,4 +8,4 @@ You have to write an array() function returning an array object with elements as
 Coding Limitation:
 Less than 25 characters
 */
-array=()=>[...typeof z]
+array = () => [...typeof z];

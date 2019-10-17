@@ -16,6 +16,6 @@ Resources:
 http://en.wiktionary.org/wiki/Manhattan_distance
 http://en.wikipedia.org/wiki/Manhattan_distance
 */
-function manhattanDistance([a1,a2], [b1,b2]){
-  return Math.abs(a1-b1)+Math.abs(a2-b2)
+function manhattanDistance([a1, a2], [b1, b2]) {
+  return Math.abs(a1 - b1) + Math.abs(a2 - b2);
 }

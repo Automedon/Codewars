@@ -42,6 +42,9 @@ sc(["1-2","1-3","2-3","1-2","1-3","2-3"]) should return "2"
 
 ```
 */
-function sc(exchange){
-  return exchange.reduce((s, v) => v[0] === s ? v[2] : v[2] === s ? v[0] : s, '2');
+function sc(exchange) {
+  return exchange.reduce(
+    (s, v) => (v[0] === s ? v[2] : v[2] === s ? v[0] : s),
+    "2"
+  );
 }

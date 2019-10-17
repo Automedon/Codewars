@@ -10,5 +10,5 @@ In Python / Java / C the input will be a float.
 */
 
 function isNegativeZero(n) {
-  return Object.is(-0,n);
+  return Object.is(-0, n);
 }

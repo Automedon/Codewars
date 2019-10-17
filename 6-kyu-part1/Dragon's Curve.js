@@ -20,10 +20,12 @@ n=2, should return: 'FRFRRLFLFR'
 n should be a number and non-negative integer. All other case should return the empty string: ''.
 */
 Dragon = function(n) {
-  if (parseInt(n)!==n||n<0) return ''
-  let str='Fa'
-  for (let i=0;i<n;i++){
-    str=str.replace(/a|b/g,v=>v==='a'?'aRbFR':v==='b'?'LFaLb':v)
+  if (parseInt(n) !== n || n < 0) return "";
+  let str = "Fa";
+  for (let i = 0; i < n; i++) {
+    str = str.replace(/a|b/g, v =>
+      v === "a" ? "aRbFR" : v === "b" ? "LFaLb" : v
+    );
   }
-  return str.replace(/[ab]/g,'')
-}
+  return str.replace(/[ab]/g, "");
+};

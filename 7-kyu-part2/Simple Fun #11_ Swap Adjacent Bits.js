@@ -25,11 +25,15 @@ Input/Output
 */
 function swapAdjacentBits(n) {
   let s = n.toString(2);
-  if (s.length%2!==0) s='0'+s
-  let arr =[];
-  for (let i=0;i<s.length;i+=2)
-  {
-    arr.push(s.slice(i,i+2))
+  if (s.length % 2 !== 0) s = "0" + s;
+  let arr = [];
+  for (let i = 0; i < s.length; i += 2) {
+    arr.push(s.slice(i, i + 2));
   }
-  return parseInt(arr.map(v=>v.replace(/(01|10)/,x=>x==='01'?'10':'01')).join(''),2)
+  return parseInt(
+    arr
+      .map(v => v.replace(/(01|10)/, x => (x === "01" ? "10" : "01")))
+      .join(""),
+    2
+  );
 }

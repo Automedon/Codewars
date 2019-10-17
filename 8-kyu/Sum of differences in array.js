@@ -12,5 +12,5 @@ If the array is empty or the array has only one element the result should be 0.
 */
 
 function sumOfDifferences(arr) {
-    return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+  return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }

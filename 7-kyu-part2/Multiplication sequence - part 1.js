@@ -13,10 +13,9 @@ multiplication(2)=2
 multiplication(3)=4
 */
 function multiplication(n) {
-  let arr = [1,2]
-  for (let i=1;i<=n;i++)
-  {
-    arr.push(arr[i-1]*arr[i])
+  let arr = [1, 2];
+  for (let i = 1; i <= n; i++) {
+    arr.push(arr[i - 1] * arr[i]);
   }
-  return arr[n]
+  return arr[n];
 }

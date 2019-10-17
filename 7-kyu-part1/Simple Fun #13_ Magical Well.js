@@ -26,8 +26,9 @@ Constraints: 0 ≤ n ≤ 5
 */
 
 function magicalWell(a, b, n) {
-  let sum=0;
-  for (let i=0;i<n;i++){
-  sum+=((a + i) * (b + i))}
-  return sum
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    sum += (a + i) * (b + i);
+  }
+  return sum;
 }

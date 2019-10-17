@@ -28,12 +28,11 @@ If you stuck, this can help you: http://en.wikipedia.org/wiki/Law_of_cosines. Bu
 There is very small chance of random test to fail due to round-off error, in such case resubmit your solution.
 */
 
+function triangleType(a, b, c) {
+  const max = Math.max(a, b, c);
 
-function triangleType(a, b, c){
-  const max = Math.max(a,b,c);
-  
-  if (a+b+c <= 2*max) return 0;
-  if (2*max*max == a*a+b*b+c*c) return 2;
-  if (2*max*max >  a*a+b*b+c*c) return 3;
+  if (a + b + c <= 2 * max) return 0;
+  if (2 * max * max == a * a + b * b + c * c) return 2;
+  if (2 * max * max > a * a + b * b + c * c) return 3;
   return 1;
 }

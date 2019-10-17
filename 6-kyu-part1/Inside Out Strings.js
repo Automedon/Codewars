@@ -8,16 +8,16 @@ An example should clarify:
 
 'taxi' would become 'atix' 'taxis' would become 'atxsi'
 */
-function insideOut(x){
-  return x.split` `.map(v=>{
-    if (v.length<4) return v
-    let left = v.slice(0,v.length/2).split``.reverse().join``
-    let right = v.slice(v.length/2).split``.reverse().join``
-    let center = ''
-    if (v.length%2!==0){
-      right=v.slice(v.length/2+1).split``.reverse().join``
-      center=v.slice(v.length/2,v.length/2+1)
+function insideOut(x) {
+  return x.split` `.map(v => {
+    if (v.length < 4) return v;
+    let left = v.slice(0, v.length / 2).split``.reverse().join``;
+    let right = v.slice(v.length / 2).split``.reverse().join``;
+    let center = "";
+    if (v.length % 2 !== 0) {
+      right = v.slice(v.length / 2 + 1).split``.reverse().join``;
+      center = v.slice(v.length / 2, v.length / 2 + 1);
     }
-    return left+center+right
-  }).join` `
+    return left + center + right;
+  }).join` `;
 }

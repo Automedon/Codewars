@@ -15,12 +15,11 @@ and then returns the expected weight at the end of the program.
 
 ###NOTES: Weights (both input and output) should be decimals, rounded to the nearest tenth. Duration (input) should be a whole number (integer). If it is not, the function should round to the nearest whole number. When doing input parameter validity checks, evaluate them in order or your code will not pass final tests.
 */
-function loseWeight(gender, weight, duration){
-  if (gender!=='F'&&gender!=='M') return 'Invalid gender'
-  if (weight<=0) return 'Invalid weight'
-  if (duration<=0) return 'Invalid duration'
-  let k=gender==='F'?1.2:1.5;
-  for (let i=0;i<duration;i++)
-  weight-=weight*(k/100)
-  return weight.toFixed(1)*1
+function loseWeight(gender, weight, duration) {
+  if (gender !== "F" && gender !== "M") return "Invalid gender";
+  if (weight <= 0) return "Invalid weight";
+  if (duration <= 0) return "Invalid duration";
+  let k = gender === "F" ? 1.2 : 1.5;
+  for (let i = 0; i < duration; i++) weight -= weight * (k / 100);
+  return weight.toFixed(1) * 1;
 }

@@ -31,10 +31,10 @@ onlyYou("you hit him") should return false
 onlyYou("I love youtube") should return false
 ```
 */
-function onlyYou(s){
- s=s.replace(/[^\w]/g,'')
- if (/I|me|he|him|they|them|we/gi.test(s)) return false
- s=s.replace(/[^you]/gi,'')
- if (/y(.*?)o(.*?)u/gi.test(s)) return true
- return false
+function onlyYou(s) {
+  s = s.replace(/[^\w]/g, "");
+  if (/I|me|he|him|they|them|we/gi.test(s)) return false;
+  s = s.replace(/[^you]/gi, "");
+  if (/y(.*?)o(.*?)u/gi.test(s)) return true;
+  return false;
 }

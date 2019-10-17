@@ -11,6 +11,6 @@ Example Arr: [4,1,2,3,5]
 
 Result: [4,4,4,4,1,3,5]
 */
-function exampleSort(arr,exampleArr){
-  return arr.sort((x,y) => exampleArr.indexOf(x) - exampleArr.indexOf(y));
+function exampleSort(arr, exampleArr) {
+  return arr.sort((x, y) => exampleArr.indexOf(x) - exampleArr.indexOf(y));
 }

@@ -30,6 +30,8 @@ How to convert? see this example:
     last "!" remain unchanged, because it's not a letter.
 */
 
-String.prototype.toLoverCase=function(){
-   return this.toLowerCase().replace(/[a-z]/g, v => 'LOVE'[(v.charCodeAt(0) - 97) % 4]).toUpperCase();
-}
+String.prototype.toLoverCase = function() {
+  return this.toLowerCase()
+    .replace(/[a-z]/g, v => "LOVE"[(v.charCodeAt(0) - 97) % 4])
+    .toUpperCase();
+};

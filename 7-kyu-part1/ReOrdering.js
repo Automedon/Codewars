@@ -20,4 +20,4 @@ Examples
 'Patrick bull color pig'
 */
 
-const reOrdering = t => t.replace(/^(.+)\s([A-Z][^\s]*)(.*)$/, "$2 $1$3")
+const reOrdering = t => t.replace(/^(.+)\s([A-Z][^\s]*)(.*)$/, "$2 $1$3");

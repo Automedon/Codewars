@@ -10,7 +10,9 @@ Your job is to find out which recipe has the most vegetables and is therefore th
 
 Return the statement "The recipe at index _ is the tastiest!!!"
 */
-const tastiest = (recipes) => {
-  let index=Math.max(...recipes.map(v=>v.veg.length))
-  return `The recipe at index ${recipes.map(v=>v.veg.length).indexOf(index)} is the tastiest!!!`
-}
+const tastiest = recipes => {
+  let index = Math.max(...recipes.map(v => v.veg.length));
+  return `The recipe at index ${recipes
+    .map(v => v.veg.length)
+    .indexOf(index)} is the tastiest!!!`;
+};

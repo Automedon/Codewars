@@ -10,6 +10,6 @@ money(1234567) // returns '1,234,567'
 
 money(12) // returns '12'
 */
-function money(num){
-  return num.toLocaleString()
+function money(num) {
+  return num.toLocaleString();
 }

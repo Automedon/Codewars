@@ -28,16 +28,22 @@ Output:
 */
 function schoolSelection(array) {
   let Kindergarten = 0;
-  let st_grade1    = 0;
-  let st_grade2    = 0;
-  let st_grade3    = 0;
-  let st_grade4    = 0;
-  for (let i=0;i<array.length;i++){
-    if (array[i]===5) Kindergarten++
-    if (array[i]===6) st_grade1++
-    if (array[i]===7) st_grade2++
-    if (array[i]===8) st_grade3++
-    if (array[i]===9) st_grade4++
+  let st_grade1 = 0;
+  let st_grade2 = 0;
+  let st_grade3 = 0;
+  let st_grade4 = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === 5) Kindergarten++;
+    if (array[i] === 6) st_grade1++;
+    if (array[i] === 7) st_grade2++;
+    if (array[i] === 8) st_grade3++;
+    if (array[i] === 9) st_grade4++;
   }
-  return {Kindergarten,'1st grade':st_grade1,'2nd grade':st_grade2,'3rd grade':st_grade3,'4th grade':st_grade4}
+  return {
+    Kindergarten,
+    "1st grade": st_grade1,
+    "2nd grade": st_grade2,
+    "3rd grade": st_grade3,
+    "4th grade": st_grade4
+  };
 }

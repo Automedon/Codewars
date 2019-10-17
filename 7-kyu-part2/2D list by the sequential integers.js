@@ -10,18 +10,16 @@ Note:
 1 <=  the number of rows <= 1000
 0 <=  the number of columms <= 1000
 */
-function make2dList(head,row,col){
+function make2dList(head, row, col) {
   let arr = [];
-  let tempArr =[]
-  for (let i=0;i<row;i++){
-    tempArr=[];
-    for (let j=0;j<col;j++){
-  
-    tempArr.push(head++)
-    
+  let tempArr = [];
+  for (let i = 0; i < row; i++) {
+    tempArr = [];
+    for (let j = 0; j < col; j++) {
+      tempArr.push(head++);
     }
-    arr.push(tempArr)
+    arr.push(tempArr);
   }
-  
-	return head>10000000004?[]:arr
+
+  return head > 10000000004 ? [] : arr;
 }

@@ -19,13 +19,13 @@ filter2('pippi') == 'pippi';
 If you like to test yourself on kata related to actual work and interviews, consider trying this kata where you will build a breadcrumb generator
 */
 function shortenNumber(suffixes, base) {
-  return (number)=>{
-    if (number!=parseInt(number)) return number.toString()
-    let index=0;
-    while(number>base&&index<suffixes.length-1){
-      number/=base
-      index++
+  return number => {
+    if (number != parseInt(number)) return number.toString();
+    let index = 0;
+    while (number > base && index < suffixes.length - 1) {
+      number /= base;
+      index++;
     }
-    return Math.trunc(number)+suffixes[index]
-  }
+    return Math.trunc(number) + suffixes[index];
+  };
 }

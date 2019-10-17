@@ -16,17 +16,17 @@ There's no need to check if the passed parameter is valid - the score will be al
 
 P.S. The game ends when one of the players reaches 21 points with minimum 2-point lead. If there's a current score of 20:20, the winner will be the first player to reach 2-point lead.
 */
-function service(score){
-   let s = score.split`:`
-   let sc =s[0]*1+s[1]*1
-   let first = true
-    while(sc>40){
-     sc-=2
-     first=!first
-   }
-   while(sc>4){
-     sc-=5
-     first=!first
-   }
-   return first?'first':'second'
+function service(score) {
+  let s = score.split`:`;
+  let sc = s[0] * 1 + s[1] * 1;
+  let first = true;
+  while (sc > 40) {
+    sc -= 2;
+    first = !first;
+  }
+  while (sc > 4) {
+    sc -= 5;
+    first = !first;
+  }
+  return first ? "first" : "second";
 }

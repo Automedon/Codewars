@@ -15,7 +15,7 @@ choose(10,20)==0
 choose(52,5)==2598960
 Be warned: a certain degree of optimization is expected, both to deal with larger numbers precision (and their rounding errors in languages like JS) and computing time.
 */
-function choose(n,k){
-   for (var i=1; k; i *= (n - (k - 1)) / k--){}
-   return Math.round(i)
+function choose(n, k) {
+  for (var i = 1; k; i *= (n - (k - 1)) / k--) {}
+  return Math.round(i);
 }

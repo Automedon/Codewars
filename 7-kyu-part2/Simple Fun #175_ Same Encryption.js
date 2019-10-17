@@ -32,6 +32,6 @@ s2.length >= 3
 true if encryption is the same, false otherwise.
 */
 function sameEncryption(s1, s2) {
-  const en=s=>s.replace(/\B.*\B/,x=>(x.length%9)||9)
-  return s1[0]==s2[0]&&s1.slice(-1)==s2.slice(-1)&&en(s1)==en(s2)
+  const en = s => s.replace(/\B.*\B/, x => x.length % 9 || 9);
+  return s1[0] == s2[0] && s1.slice(-1) == s2.slice(-1) && en(s1) == en(s2);
 }

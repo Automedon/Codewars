@@ -32,19 +32,19 @@ return 629
 
 Note: Your program should be able to handle numbers up to 6 digits long
 */
-function permutationAverage(n){
-  let arr=[];
-  let str=n.toString().split('');
+function permutationAverage(n) {
+  let arr = [];
+  let str = n.toString().split("");
   for (let i = 0; i < str.length; i++) {
-        arr.push( rotLeft(str,str.length-i).join('')*1)
-     }
-  return Math.round(arr.reduce((a,b)=>a+b,0)/arr.length)
+    arr.push(rotLeft(str, str.length - i).join("") * 1);
+  }
+  return Math.round(arr.reduce((a, b) => a + b, 0) / arr.length);
 }
 function rotLeft(arr, n) {
-     let arrTemp = arr.map(v=>v);
-     for (let i = 0; i < n; i++) {
-         let temp = arrTemp.shift()
-        arrTemp.push(temp)
-     }
-    return arrTemp
+  let arrTemp = arr.map(v => v);
+  for (let i = 0; i < n; i++) {
+    let temp = arrTemp.shift();
+    arrTemp.push(temp);
+  }
+  return arrTemp;
 }

@@ -28,9 +28,9 @@ words2="Related Articles: Ruby Environment, Coffee Script Environment, Java Scri
 sc(words2)=78 
 CoffeeScript is one word, Coffee Script are two words
 */
-function sc(words){
-  words=words.toLowerCase().replace(/[^a-z ]/g,'').split` `
-  let dif = words.length - [...new Set(words)].length
-  let arr = [...new Set(words)].join``.length
-  return arr+dif
+function sc(words) {
+  words = words.toLowerCase().replace(/[^a-z ]/g, "").split` `;
+  let dif = words.length - [...new Set(words)].length;
+  let arr = [...new Set(words)].join``.length;
+  return arr + dif;
 }

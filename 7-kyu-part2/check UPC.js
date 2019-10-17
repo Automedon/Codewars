@@ -26,9 +26,15 @@ checkUPC('036000291452') == true
 checkUPC('036000291450') == false
 */
 function checkUPC(upc) {
-	let step12 = upc.slice(0,-1).split``.filter((v,i)=>i%2===0).reduce((a,b)=>a+b*1,0)*3
-  let step3 = upc.slice(0,-1).split``.filter((v,i)=>i%2!==0).reduce((a,b)=>a+b*1,0)+step12
-  let step4= step3%10
-  let step5= step4!==0?10-step4:0
-  return upc[upc.length-1]===step5.toString()
+  let step12 =
+    upc.slice(0, -1).split``
+      .filter((v, i) => i % 2 === 0)
+      .reduce((a, b) => a + b * 1, 0) * 3;
+  let step3 =
+    upc.slice(0, -1).split``
+      .filter((v, i) => i % 2 !== 0)
+      .reduce((a, b) => a + b * 1, 0) + step12;
+  let step4 = step3 % 10;
+  let step5 = step4 !== 0 ? 10 - step4 : 0;
+  return upc[upc.length - 1] === step5.toString();
 }

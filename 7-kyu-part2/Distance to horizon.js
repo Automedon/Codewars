@@ -10,5 +10,5 @@ Expected output:
 distance to the visible horizon (in meters), rounded exactly to 1 digit after the decimal point, typeof == 'number'. Example: "100.0"
 */
 const horizonDistance = (h, r) => {
-    return Math.sqrt(h*(2*r+h)).toFixed(1)*1
-}
+  return Math.sqrt(h * (2 * r + h)).toFixed(1) * 1;
+};

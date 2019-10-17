@@ -24,7 +24,7 @@ process.env = {
 };
 */
 const solution = () => {
-  var express = require('express');
+  var express = require("express");
   var app = express();
-  app.listen(process.env.PORT,process.env.HOST,()=>{})
+  app.listen(process.env.PORT, process.env.HOST, () => {});
 };

@@ -20,6 +20,9 @@ Note:
 'dist' and 'price' will always be integers, and 'dest' will always be a three-lettered string.
 */
 
-function scanningSkies(arr) { 
-  return arr.slice().sort((a, b) => b.dist - a.dist || a.price - b.price).map(v => v.dest)
+function scanningSkies(arr) {
+  return arr
+    .slice()
+    .sort((a, b) => b.dist - a.dist || a.price - b.price)
+    .map(v => v.dest);
 }

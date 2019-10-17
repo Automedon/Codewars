@@ -15,7 +15,9 @@ Note:
 
 The maximum number of demerit points a student can score before the tester calls it a day is 40.
 */
-function passed (list) { 
-    const arr = list.filter(v=>v<19)
-    return arr.length?Math.round(arr.reduce((a,b)=>a+b,0)/arr.length):'No pass scores registered.';
-  } 
+function passed(list) {
+  const arr = list.filter(v => v < 19);
+  return arr.length
+    ? Math.round(arr.reduce((a, b) => a + b, 0) / arr.length)
+    : "No pass scores registered.";
+}

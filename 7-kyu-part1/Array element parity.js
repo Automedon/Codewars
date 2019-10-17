@@ -9,6 +9,6 @@ solve([-3,1,2,3,-1,-4,-2]) = -4  --> -4 only has a negative occurence
 solve([1,-1,2,-2,3,3]) = 3  --> the integer that is only positive or only negative my appear more than once.
 Good luck!
 */
-function solve(arr){
-  return arr.filter(a=>arr.indexOf(-a)===-1)[0];  
-};
+function solve(arr) {
+  return arr.filter(a => arr.indexOf(-a) === -1)[0];
+}

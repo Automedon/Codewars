@@ -12,6 +12,6 @@ Out of the kindness of its heart, F&F also provides a 5 minutes grace period. So
 
 For a given lesson time in minutes (min) , write a function price to calculate how much the lesson costs.
 */
-function cost (mins) {
-  return 30 + ( mins>65 ?  Math.ceil((mins-65)/30) : 0 )*10
-} 
+function cost(mins) {
+  return 30 + (mins > 65 ? Math.ceil((mins - 65) / 30) : 0) * 10;
+}

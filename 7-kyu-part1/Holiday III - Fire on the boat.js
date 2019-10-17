@@ -9,6 +9,6 @@ You will be provided a string that lists many boat related items. If any of thes
 Go to work!
 */
 
-function fireFight(s){
-  return s.replace(/Fire/g,'~~')
+function fireFight(s) {
+  return s.replace(/Fire/g, "~~");
 }

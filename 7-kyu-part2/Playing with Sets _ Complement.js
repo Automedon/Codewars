@@ -24,10 +24,10 @@ diff(B,A) // -> {3}
 
 " May the Code be with you ! "
 */
-function diff(s1, s2){
-  let a1=[...s1]
-  let a2=[...s2]
-  s1=new Set(a2.filter(v=>!a1.includes(v)))
-  s2=new Set(a1.filter(v=>!a2.includes(v)))
-  return s2
+function diff(s1, s2) {
+  let a1 = [...s1];
+  let a2 = [...s2];
+  s1 = new Set(a2.filter(v => !a1.includes(v)));
+  s2 = new Set(a1.filter(v => !a2.includes(v)));
+  return s2;
 }

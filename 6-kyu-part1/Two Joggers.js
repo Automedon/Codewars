@@ -30,6 +30,8 @@ nbrOfLaps(4, 6); // returns [3, 2]
 
 var nbrOfLaps = function(x, y) {
   var lcm = x;
-  while(lcm % y != 0) {lcm += x;}
+  while (lcm % y != 0) {
+    lcm += x;
+  }
   return [lcm / x, lcm / y];
-}
+};

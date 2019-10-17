@@ -25,28 +25,34 @@ Here is also another example grid.
 7	55	56	57	58	59	60	61	62	63
 */
 function getGridNumber(width, height, x, y) {
-  let grid=[];
-  for (let i=0;i<=height;i++){
-    grid.push(Array.from({length:width},(v,z)=>{
-    return (z+1)+(width*i)
-    }))
+  let grid = [];
+  for (let i = 0; i <= height; i++) {
+    grid.push(
+      Array.from({ length: width }, (v, z) => {
+        return z + 1 + width * i;
+      })
+    );
   }
-  return grid[y-1][x-1];
+  return grid[y - 1][x - 1];
 }
 
 function getXYPosition(width, height, number) {
-  let grid=[];
-  let obj={x:0,y:0}
-  for (let i=0;i<=height;i++){
-    grid.push(Array.from({length:width},(v,z)=>{
-    return (z+1)+(width*i)
-    }))
+  let grid = [];
+  let obj = { x: 0, y: 0 };
+  for (let i = 0; i <= height; i++) {
+    grid.push(
+      Array.from({ length: width }, (v, z) => {
+        return z + 1 + width * i;
+      })
+    );
   }
-  grid.map((v,i)=>v.map((z,j)=>{
-    if (number===v[j]){
-      obj.x=j+1
-      obj.y=i+1
-    }
-  }))
-  return obj
+  grid.map((v, i) =>
+    v.map((z, j) => {
+      if (number === v[j]) {
+        obj.x = j + 1;
+        obj.y = i + 1;
+      }
+    })
+  );
+  return obj;
 }

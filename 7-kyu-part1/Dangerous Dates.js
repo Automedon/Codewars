@@ -6,15 +6,15 @@ Example output: "3/14/2013, 3/15/2013, 3/16/2013, 3/17/2013, 3/18/2013"
 
 There's a hard way to do this and there's a right way.
 */
-var nextFiveDays = function(date){
-    var day = date.getDate(),
+var nextFiveDays = function(date) {
+  var day = date.getDate(),
     month = date.getMonth(),
     year = date.getFullYear(),
     dates = [];
 
-    for (var i = 1; i <= 5; i++) {
-      dates.push(new Date(year,month,day+i).toLocaleDateString('en-GB'));
-    }
-    
-    return dates.join(', ');
-}
+  for (var i = 1; i <= 5; i++) {
+    dates.push(new Date(year, month, day + i).toLocaleDateString("en-GB"));
+  }
+
+  return dates.join(", ");
+};

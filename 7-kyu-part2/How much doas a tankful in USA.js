@@ -19,7 +19,8 @@ euPrice     // Object with EU Fuel prices as .diesel and .gas
 But remember, in the US is not Dollar / Liter expected but in Dollar / Gallon!
 */
 
-function howMuchInUSA( fuel, amountLiter ) {
-   if (fuel==='gas') return (amountLiter*0.73433333333333333333).toFixed(2)*1
-   return (amountLiter*0.614).toFixed(2)*1
+function howMuchInUSA(fuel, amountLiter) {
+  if (fuel === "gas")
+    return (amountLiter * 0.73433333333333333333).toFixed(2) * 1;
+  return (amountLiter * 0.614).toFixed(2) * 1;
 }

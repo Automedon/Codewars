@@ -80,12 +80,11 @@ Return the ```five``` after works finished.
 You should use ```for..in``` in your code, otherwise, your solution may not pass this kata. Don't learn bad habits from those lazy guys ;-)
 */
 
-function giveMeFive(obj){
-   var arr=[];
-  for (var key in obj){
-  if (key.length==5) arr.push(key);
-  if (obj[key].length==5) arr.push(obj[key]);
+function giveMeFive(obj) {
+  var arr = [];
+  for (var key in obj) {
+    if (key.length == 5) arr.push(key);
+    if (obj[key].length == 5) arr.push(obj[key]);
   }
   return arr;
-  
 }

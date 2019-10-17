@@ -12,7 +12,7 @@ example:
 9=10-1
 Write a function named isNice/IsNice that returns true if its array argument is a Nice array, else false. You should also return false if input array has no elements.
 */
-function isNice(arr){
-  if(arr.length===0) return false;
-  return arr.every(v=>arr.includes(v+1)||arr.includes(v-1));
+function isNice(arr) {
+  if (arr.length === 0) return false;
+  return arr.every(v => arr.includes(v + 1) || arr.includes(v - 1));
 }

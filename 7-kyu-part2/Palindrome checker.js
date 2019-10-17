@@ -9,7 +9,7 @@ If the given string is a palindrome, return true.
 If not, or in case of null input (None for Python) return false.
 */
 function isPalindrome(str) {
-  if (typeof str!=='string') return false;
-  str=str.toLowerCase().replace(/[^a-z0-9]/g,'')
-  return str===[...str].reverse().join``
+  if (typeof str !== "string") return false;
+  str = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return str === [...str].reverse().join``;
 }

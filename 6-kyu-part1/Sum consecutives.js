@@ -20,8 +20,9 @@ consecutives 3 is 6 ..."""
 [1,1,7,7,3] # should return [2,14,3]
 [-5,-5,7,7,12,0] # should return [-10,14,12,0]
 */
-const sumConsecutives = list => list.reduce((accumulator, curr, i, list) => {
-  if (curr !== list[i - 1]) accumulator.push(curr);
-  else accumulator[accumulator.length - 1] += curr;
-  return accumulator;
-}, []);
+const sumConsecutives = list =>
+  list.reduce((accumulator, curr, i, list) => {
+    if (curr !== list[i - 1]) accumulator.push(curr);
+    else accumulator[accumulator.length - 1] += curr;
+    return accumulator;
+  }, []);

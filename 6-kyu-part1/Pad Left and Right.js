@@ -16,9 +16,9 @@ If you try to pad to a certain length that would make your data shorter just lea
 It is much easier to import and validate the data in the correct format, so help them to get the data in the other server!
 */
 String.prototype.padLeft = function(ch, n) {
-  return this.padStart(n,ch);
+  return this.padStart(n, ch);
 };
 
 String.prototype.padRight = function(ch, n) {
-  return this.padEnd(n,ch);
+  return this.padEnd(n, ch);
 };

@@ -15,6 +15,9 @@ Assume that the input is well-behaved; meaning, all you will see are integers an
 
 TRY NOT TO PARSE, STRINGIFY, OR USE ANY ARRAY METHODS (array.length is ok)
 */
-function sumJaggedArray(array){
-  return array.toString().match(/[0-9]+/g).reduce((a,b)=>a+b*1,0)
+function sumJaggedArray(array) {
+  return array
+    .toString()
+    .match(/[0-9]+/g)
+    .reduce((a, b) => a + b * 1, 0);
 }

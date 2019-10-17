@@ -18,7 +18,16 @@ Return an array of strings --> split the string
 Each user ID should be written in only lowercase characters
 Remove leading and trailing whitespaces
 */
-function getUsersIds(str){
-  const arr=str.replace(/#/ig,'').trim().toLowerCase().split(',')
-  return arr.map(v=>v.trim().replace(/^uid/,'').trim())
+function getUsersIds(str) {
+  const arr = str
+    .replace(/#/gi, "")
+    .trim()
+    .toLowerCase()
+    .split(",");
+  return arr.map(v =>
+    v
+      .trim()
+      .replace(/^uid/, "")
+      .trim()
+  );
 }

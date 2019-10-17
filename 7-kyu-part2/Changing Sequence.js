@@ -4,14 +4,14 @@ This challenge requires you to determine at what index in an array the sequence 
 
 To solve this challenge, we'll loop through the array checking if each change between numbers matches the prior change. We do this until we reach a point in the array where the sequence changes.
 */
-function changingSequence(arr){
-  if (arr[0]>arr[1]){
-  for (let i=0;i<arr.length-1;i++){
-    if (arr[i]<arr[i+1]) return i
+function changingSequence(arr) {
+  if (arr[0] > arr[1]) {
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] < arr[i + 1]) return i;
+    }
   }
-  }  
-  for (let i=0;i<arr.length-1;i++){
-    if (arr[i]>arr[i+1]) return i
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] > arr[i + 1]) return i;
   }
-  return -1
+  return -1;
 }

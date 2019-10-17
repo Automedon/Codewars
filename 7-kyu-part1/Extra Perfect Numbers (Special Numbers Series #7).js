@@ -31,9 +31,8 @@ First and last bits as set bits.
 First and last bits as set bits.
 */
 
-function extraPerfect(n){
-  let arr=[1];
-  for (let i=3;i<=n;i+=2)
-  arr.push(i)
-  return arr 
+function extraPerfect(n) {
+  let arr = [1];
+  for (let i = 3; i <= n; i += 2) arr.push(i);
+  return arr;
 }

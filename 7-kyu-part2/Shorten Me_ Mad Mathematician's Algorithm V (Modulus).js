@@ -9,4 +9,4 @@ Less than 35 characters
 Input:
 a and b : integer ( 0-10000 )
 */
-madMod=f=(a,b)=>b?a-~~(a/b)*b:NaN
+madMod = f = (a, b) => (b ? a - ~~(a / b) * b : NaN);

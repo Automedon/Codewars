@@ -22,20 +22,20 @@ collatz(4); // should return "4->2->1"
 collatz(3); // should return "3->10->5->16->8->4->2->1"
 Don't worry about invalid input. Arguments passed into the function are guaranteed to be valid integers >= 1.
 */
-function collatz(n){
-  let num=[];
-  for (let i=n;;){
-    if (i===1){
-    num.push(i)
-    break
+function collatz(n) {
+  let num = [];
+  for (let i = n; ; ) {
+    if (i === 1) {
+      num.push(i);
+      break;
     }
-    if (i%2===0) {
-    num.push(i)
-    i=i/2
+    if (i % 2 === 0) {
+      num.push(i);
+      i = i / 2;
     } else {
-    num.push(i)
-    i=i*3+1
+      num.push(i);
+      i = i * 3 + 1;
     }
   }
-  return num.join('->')
+  return num.join("->");
 }

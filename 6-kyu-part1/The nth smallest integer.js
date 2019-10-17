@@ -15,6 +15,6 @@ nthSmallest([45, -10, 4, 5, 4], 4)  ==> 45   // 4th smallest integer is 45
 If you get a timeout, just try to resubmit your solution. However, if you always get a timeout, review your code.
 */
 function nthSmallest(arr, n) {
-  const a = Array.from(new Set(arr)).sort((a,b) => a-b)[n-1];
-  return a===undefined?null:a
+  const a = Array.from(new Set(arr)).sort((a, b) => a - b)[n - 1];
+  return a === undefined ? null : a;
 }

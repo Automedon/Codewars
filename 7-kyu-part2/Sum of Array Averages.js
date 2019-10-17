@@ -18,6 +18,10 @@ Add the average of each array together:
 Round the final average down:
 Math.floor(44.2) = 44
 */
-const sumAverage = (arr) => {
-  return Math.floor(arr.map(v=>v.reduce((a,b)=>a+b,0)/v.length).reduce((a,b)=>a+b,0));
-}
+const sumAverage = arr => {
+  return Math.floor(
+    arr
+      .map(v => v.reduce((a, b) => a + b, 0) / v.length)
+      .reduce((a, b) => a + b, 0)
+  );
+};

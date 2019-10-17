@@ -6,6 +6,6 @@ There are n schools numbered from 1 to n. One can travel between each pair of sc
 
 Range : 1 ≤ n ≤ 106
 */
-function findJane(n){
-    return Math.floor((n - 1) / 2);
+function findJane(n) {
+  return Math.floor((n - 1) / 2);
 }

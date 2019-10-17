@@ -20,6 +20,6 @@ Examples:
 
 "'Wally Wally" => 7
 */
-function wheresWally(string){
-  return (" "+string).search(/ Wally\b/); 
+function wheresWally(string) {
+  return (" " + string).search(/ Wally\b/);
 }

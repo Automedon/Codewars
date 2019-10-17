@@ -35,11 +35,11 @@ Note
 n will always be greater than or equal to 2
 */
 
-L = (n , L0 , L1 , add) => {
+L = (n, L0, L1, add) => {
   let newArr = [L0, L1];
-  for(let i = 2; i < n; i++) {
-    newArr.push(newArr[i - 2] + newArr[i - 1] + add)
+  for (let i = 2; i < n; i++) {
+    newArr.push(newArr[i - 2] + newArr[i - 1] + add);
   }
 
   return newArr;
-}
+};

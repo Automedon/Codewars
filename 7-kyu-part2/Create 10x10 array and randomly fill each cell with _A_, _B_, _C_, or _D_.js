@@ -5,24 +5,26 @@ Create 10x10 array and randomly fill each cell with 'A', 'B', 'C' or 'D' and ens
 function getRandomArbitrary(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
-function array10(){
+function array10() {
   let arr = [];
-  let dict = ['A','B','C','D'];
-  let tempArr=[];
-  for (let i=0;i<10;i++)
-  { tempArr=[];
-    for (let j=0;j<10;j++)
-    {
-
-      tempArr.push(dict[getRandomArbitrary(0,4)])
-      
-    } if (!tempArr.includes('A')||!tempArr.includes('B')||!tempArr.includes('C')||!tempArr.includes('D'))
-    {
-    i--
+  let dict = ["A", "B", "C", "D"];
+  let tempArr = [];
+  for (let i = 0; i < 10; i++) {
+    tempArr = [];
+    for (let j = 0; j < 10; j++) {
+      tempArr.push(dict[getRandomArbitrary(0, 4)]);
+    }
+    if (
+      !tempArr.includes("A") ||
+      !tempArr.includes("B") ||
+      !tempArr.includes("C") ||
+      !tempArr.includes("D")
+    ) {
+      i--;
     } else {
-    arr.push(tempArr)
+      arr.push(tempArr);
     }
   }
 
-  return arr 
+  return arr;
 }

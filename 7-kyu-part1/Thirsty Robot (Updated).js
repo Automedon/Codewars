@@ -33,13 +33,13 @@ Notes:
 
 Only positive numbers will be passed into the function.
 */
-function thirstyRobot (drinks) {
-  let [wined, sick, drunk] = [false, false, false]
+function thirstyRobot(drinks) {
+  let [wined, sick, drunk] = [false, false, false];
   drinks.forEach(abv => {
-    if (wined && abv <= 8) sick = true
-    if (abv > 8 && abv <= 15) wined = true
-    if (abv > 15) drunk = true
-  })
-  if (!sick) return drunk ? "Wonky robot" : "Fine"
-  return drunk ? "Poor robot" : "Oh dear"
+    if (wined && abv <= 8) sick = true;
+    if (abv > 8 && abv <= 15) wined = true;
+    if (abv > 15) drunk = true;
+  });
+  if (!sick) return drunk ? "Wonky robot" : "Fine";
+  return drunk ? "Poor robot" : "Oh dear";
 }

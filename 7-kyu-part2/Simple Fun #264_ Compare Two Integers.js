@@ -27,13 +27,13 @@ For a = "875" and b = "799", the output should be "greater";
 For a = "1000" and b = "1000", the output should be "equal".
 */
 function compareIntegers(a, b) {
-  a=a.split``;
-  b=b.split``;
-  if (a.length<b.length) return 'less'
-  if (a.length>b.length) return 'greater'
-  for (let i=0;i<Math.max(a.length,b.length);i++){
-  if (a[i]<b[i]) return 'less'
-  if (b[i]<a[i]) return 'greater'
+  a = a.split``;
+  b = b.split``;
+  if (a.length < b.length) return "less";
+  if (a.length > b.length) return "greater";
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    if (a[i] < b[i]) return "less";
+    if (b[i] < a[i]) return "greater";
   }
-  return 'equal'
+  return "equal";
 }

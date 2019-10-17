@@ -28,21 +28,22 @@ This kata does not assess the potential for tied scores at the end of the season
 alt text
 */
 function canStillWin(table, racesRemaining) {
-  let win=Object.entries(table).sort((a,b)=>a[1]-b[1])
-  let arr = win.slice(0,-1)
-  for (let i=0;i<racesRemaining;i++){
-    arr.every(v=>v[1]+=25)
+  let win = Object.entries(table).sort((a, b) => a[1] - b[1]);
+  let arr = win.slice(0, -1);
+  for (let i = 0; i < racesRemaining; i++) {
+    arr.every(v => (v[1] += 25));
   }
-  let winners=[win.slice(-1)[0][0]]
-  for (let i=0;i<arr.length;i++){
-    if (arr[i][1]>=win[win.length-1][1]) winners.push(arr[i][0])
+  let winners = [win.slice(-1)[0][0]];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i][1] >= win[win.length - 1][1]) winners.push(arr[i][0]);
   }
-  winners=winners.sort()
-  if (winners.length===1) return `${winners[0]} has already won the championship!`
-  let str = ''
-    for (let i=0;i<winners.length;i++){
-    if (i+1<winners.length) str+=winners[i]+', '
-    else str+='and '+winners[i]+' can still win the championship.'
+  winners = winners.sort();
+  if (winners.length === 1)
+    return `${winners[0]} has already won the championship!`;
+  let str = "";
+  for (let i = 0; i < winners.length; i++) {
+    if (i + 1 < winners.length) str += winners[i] + ", ";
+    else str += "and " + winners[i] + " can still win the championship.";
   }
-  return str.replace(/, and/,' and')
+  return str.replace(/, and/, " and");
 }

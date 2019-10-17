@@ -23,9 +23,9 @@ Some examples:
 23.59 pm => "1 minute"
 
 */
-function minutesToMidnight(d){
-  let s = d.getSeconds()
-  let sum = (23-d.getHours())*60+(60-d.getMinutes())
-  s>30?sum-=1:sum
-  return sum===1?`1 minute`:`${sum} minutes`
+function minutesToMidnight(d) {
+  let s = d.getSeconds();
+  let sum = (23 - d.getHours()) * 60 + (60 - d.getMinutes());
+  s > 30 ? (sum -= 1) : sum;
+  return sum === 1 ? `1 minute` : `${sum} minutes`;
 }

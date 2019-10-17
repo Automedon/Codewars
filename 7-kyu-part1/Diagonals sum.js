@@ -15,11 +15,11 @@ diagonals( [
 returns -> 30 // 1 + 5 + 9 + 3 + 5 + 7
 */
 function sum(matrix) {
-  const arr1=[];
-  const arr2=[];
-  for (let i=0; i<matrix.length;i++){
-  arr1.push(matrix[i][i])
-  arr2.push(matrix[i].reverse()[i])
+  const arr1 = [];
+  const arr2 = [];
+  for (let i = 0; i < matrix.length; i++) {
+    arr1.push(matrix[i][i]);
+    arr2.push(matrix[i].reverse()[i]);
   }
-  return arr1.reduce((a,b)=>a+b,0)+arr2.reduce((a,b)=>a+b,0);
+  return arr1.reduce((a, b) => a + b, 0) + arr2.reduce((a, b) => a + b, 0);
 }

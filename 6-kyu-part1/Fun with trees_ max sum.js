@@ -25,6 +25,6 @@ Fun with trees: array to tree
 Fun with trees: is perfect
 */
 function maxSum(root) {
-  if (!root) return 0
-  return root.value + Math.max(maxSum(root.left),maxSum(root.right))
+  if (!root) return 0;
+  return root.value + Math.max(maxSum(root.left), maxSum(root.right));
 }

@@ -13,12 +13,12 @@ Assume:
 Both the username and the password may contain uppercase letters, lowercase letters, numbers, spaces, and the following special/punctation characters: !@#$%^&*()_+{}:"<>?[];',.
 The username and password will each be less than 100 characters.
 */
-function validate(username, password){
-  const length = Math.ceil(Math.min(username.length/2, password.length/2))
-  for (let i=0; i<password.length-length+1; i++) {
+function validate(username, password) {
+  const length = Math.ceil(Math.min(username.length / 2, password.length / 2));
+  for (let i = 0; i < password.length - length + 1; i++) {
     if (username.indexOf(password.substr(i, length)) > -1) {
-      return false
+      return false;
     }
   }
-  return true
+  return true;
 }

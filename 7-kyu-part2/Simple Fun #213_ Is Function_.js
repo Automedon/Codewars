@@ -22,9 +22,12 @@ For pairs = [[5,1],[2.5,3.4],[5,6],[7,2]], the output should be false.
 The given set can't possibly define a function, since values y = 1 and y = 6 both correspond to the value x = 5.
 */
 function isFunction(pairs) {
-   let arr= [...new Set(pairs.map(x=>x.toString()))].sort((a,b)=>a.localeCompare(b)).map(v=>v.split`,`).map(v=>v.map(v=>v*1))
-   for (let i=0;i<arr.length-1;i++){
-     if (arr[i][0]===arr[i+1][0]) return false
-   }
-   return true
+  let arr = [...new Set(pairs.map(x => x.toString()))]
+    .sort((a, b) => a.localeCompare(b))
+    .map(v => v.split`,`)
+    .map(v => v.map(v => v * 1));
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i][0] === arr[i + 1][0]) return false;
+  }
+  return true;
 }

@@ -8,11 +8,13 @@ a=[1,2,0,3]
 a.length-1=3 
 a includes [0,3] ,hence the function should return true
 */
-function isAllPossibilities(x){
-  x=x.sort((a,b)=>a-b);
+function isAllPossibilities(x) {
+  x = x.sort((a, b) => a - b);
   const arr = [];
-  for (let i=0; i<=Math.max(...x); i++){
-  arr.push(i)
+  for (let i = 0; i <= Math.max(...x); i++) {
+    arr.push(i);
   }
-  return x.length?arr.every((v,i)=>v===x[i])&&arr.length===x.length:false
+  return x.length
+    ? arr.every((v, i) => v === x[i]) && arr.length === x.length
+    : false;
 }

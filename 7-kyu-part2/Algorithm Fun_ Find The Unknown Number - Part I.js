@@ -42,8 +42,8 @@ Note
 
 Happy Coding ^_^
 */
-function findUnknowNumber(x,y,z){
-  for (let i=1;;i++){
-  if (i%3===x&&i%5===y&&i%7===z) return i
+function findUnknowNumber(x, y, z) {
+  for (let i = 1; ; i++) {
+    if (i % 3 === x && i % 5 === y && i % 7 === z) return i;
   }
 }

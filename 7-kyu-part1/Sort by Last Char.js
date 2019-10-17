@@ -7,6 +7,6 @@ If two words have the same last letter, they returned array should show them in 
 All inputs will be valid.
 */
 
-function last(x){
-   return x.split(' ').sort((a,b)=>a[a.length-1]>b[b.length-1])
+function last(x) {
+  return x.split(" ").sort((a, b) => a[a.length - 1] > b[b.length - 1]);
 }

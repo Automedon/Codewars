@@ -18,7 +18,11 @@ var opponentCard = new Card([185, 98, 85, 12, 1985]);
 var winner = checkWinner(playerCard, opponentCard, 0);
 */
 function checkWinner(playerCard, opponentCard, statIdx) {
-  if (!playerCard.stats[statIdx]||!opponentCard.stats[statIdx]) return "invalid"
-  return playerCard.stats[statIdx]>opponentCard.stats[statIdx]?'player':
-  playerCard.stats[statIdx]<opponentCard.stats[statIdx]?"opponent":'tie'
+  if (!playerCard.stats[statIdx] || !opponentCard.stats[statIdx])
+    return "invalid";
+  return playerCard.stats[statIdx] > opponentCard.stats[statIdx]
+    ? "player"
+    : playerCard.stats[statIdx] < opponentCard.stats[statIdx]
+    ? "opponent"
+    : "tie";
 }

@@ -23,4 +23,4 @@ const prime_factors = n => {
     }
   }
   return factors;
-}
+};

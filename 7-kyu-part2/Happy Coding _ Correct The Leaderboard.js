@@ -37,10 +37,12 @@ the output should be:
 #5 Voile
 Happy Coding ^_^
 */
-function correct(leaderBoard){
-  let jinx=0
-  let arr = leaderBoard.split`\n`.map((v,i)=>v.includes('myjinxin2015')?jinx=i:v)
-  arr[jinx]=arr[0].replace(/#\d/,`#${jinx+1}`)
-  arr[0]='#1 myjinxin2015'
-  return arr.join('\n')
+function correct(leaderBoard) {
+  let jinx = 0;
+  let arr = leaderBoard.split`\n`.map((v, i) =>
+    v.includes("myjinxin2015") ? (jinx = i) : v
+  );
+  arr[jinx] = arr[0].replace(/#\d/, `#${jinx + 1}`);
+  arr[0] = "#1 myjinxin2015";
+  return arr.join("\n");
 }

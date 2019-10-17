@@ -13,7 +13,7 @@ train = the speed of each train
 fly = the speed of the fly
 Note if the trains are not moving then the poor fly is confused, and enters a state of divine singularity so return null.
 */
-function flyTime (dist, train, fly) {
-    if (train===0) return null
-    return fly*dist/(train+train)
-} 
+function flyTime(dist, train, fly) {
+  if (train === 0) return null;
+  return (fly * dist) / (train + train);
+}

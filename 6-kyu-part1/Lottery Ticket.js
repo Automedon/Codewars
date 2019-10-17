@@ -12,9 +12,11 @@ Once you have counted all of your mini wins, compare that number to the other in
 All inputs will be in the correct format. Strings on tickets are not always the same length.
 */
 
-function bingo(ticket, win){
-  if(ticket.filter(a => a[0].split('').some(b => b.charCodeAt(0) == a[1])).length >= win)
-  {
+function bingo(ticket, win) {
+  if (
+    ticket.filter(a => a[0].split("").some(b => b.charCodeAt(0) == a[1]))
+      .length >= win
+  ) {
     return "Winner!";
   }
   return "Loser!";

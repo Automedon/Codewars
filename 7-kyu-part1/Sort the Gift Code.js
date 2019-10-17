@@ -1,2 +1,5 @@
 const sortGiftCode = code =>
-  code.split('').sort().join('')
+  code
+    .split("")
+    .sort()
+    .join("");

@@ -31,6 +31,6 @@ As an output you would expect in this case:
 
 ["Stefan", "Raj", "Marie", "Amy", "Edward", "Alexa", "Juan", "Liz", "Claire", "Katie", "Dee", "Luke"]
 */
-function binRota(arr){
-  return [].concat(...arr.map((v,i)=>i%2!==0?v.reverse():v))
+function binRota(arr) {
+  return [].concat(...arr.map((v, i) => (i % 2 !== 0 ? v.reverse() : v)));
 }

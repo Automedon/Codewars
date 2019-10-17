@@ -29,10 +29,10 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 I have also created other katas. Take a look if you enjoyed this kata!
 */
-function reduceByRules(numbers, rules){ 
-  let num =rules[0](numbers[0],numbers[1]);  
-  for (let i=2;i<numbers.length;i++){
-    num=rules[(i-1)%rules.length](num,numbers[i])
+function reduceByRules(numbers, rules) {
+  let num = rules[0](numbers[0], numbers[1]);
+  for (let i = 2; i < numbers.length; i++) {
+    num = rules[(i - 1) % rules.length](num, numbers[i]);
   }
-  return num
+  return num;
 }

@@ -10,14 +10,14 @@ Also note that not all beggars have to take the same amount of "offers", meaning
 
 Note: in case you don't get why this kata is about English beggars, then you are not familiar on how religiously queues are taken in the kingdom ;)
 */
-function beggars(values, n){
-    let arr = [];
-    for(let i = 1; i <= n; i++) {
-        arr[i-1] = 0;
-        for(let j = i-1; j < values.length;) {
-            arr[i-1] += values[j];
-            j = j + n; 
-        }
-      }
-    return arr;
+function beggars(values, n) {
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr[i - 1] = 0;
+    for (let j = i - 1; j < values.length; ) {
+      arr[i - 1] += values[j];
+      j = j + n;
+    }
+  }
+  return arr;
 }

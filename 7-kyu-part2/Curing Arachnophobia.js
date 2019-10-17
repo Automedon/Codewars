@@ -20,14 +20,21 @@ Note: the eyes are symmetric, and their total amount is 2 to the power of body s
 You will also be given only valid data. That's it for the instructions, you can start coding!
 */
 function drawSpider(legSize, bodySize, mouth, eye) {
-  let eyes = `${eye}`.repeat(Math.floor(Math.pow(bodySize,2)/2))
-  if (bodySize===1){
-    eyes = `${eye}`.repeat(bodySize)
+  let eyes = `${eye}`.repeat(Math.floor(Math.pow(bodySize, 2) / 2));
+  if (bodySize === 1) {
+    eyes = `${eye}`.repeat(bodySize);
   }
-  let bodyL = `(`.repeat(bodySize)
-  let bodyR = `)`.repeat(bodySize)
-  let legs=(legSize===1?"^ ^":legSize===2?"\/\\ \/\\":legSize===3?"\/╲ ╱\\":"╱╲ ╱╲")
-  let legL = legs.split` `[0]
-  let legR = legs.split` `[1]
-  return legL+bodyL+eyes+mouth+eyes+bodyR+legR
+  let bodyL = `(`.repeat(bodySize);
+  let bodyR = `)`.repeat(bodySize);
+  let legs =
+    legSize === 1
+      ? "^ ^"
+      : legSize === 2
+      ? "/\\ /\\"
+      : legSize === 3
+      ? "/╲ ╱\\"
+      : "╱╲ ╱╲";
+  let legL = legs.split` `[0];
+  let legR = legs.split` `[1];
+  return legL + bodyL + eyes + mouth + eyes + bodyR + legR;
 }

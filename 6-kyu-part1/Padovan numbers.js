@@ -24,9 +24,9 @@ The task is to write a method that returns i-th Padovan number
 > Padovan.Get(n) == Padovan.Get(n-2) + Padovan.Get(n-3)
 */
 function padovan(n) {
-    let arr = [1,1,1]
-    for (let i=2;i<n;i++){
-      arr.push(arr[i-1]+arr[i-2])
-    }
-    return arr[n]
+  let arr = [1, 1, 1];
+  for (let i = 2; i < n; i++) {
+    arr.push(arr[i - 1] + arr[i - 2]);
+  }
+  return arr[n];
 }

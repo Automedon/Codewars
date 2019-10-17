@@ -19,5 +19,5 @@ Input: "Coffee! Buy me a COFFEE!" Output: "COFFEE! Buy me a COFFEE!"
 Good luck!
 */
 function coffee(str) {
-  return str.replace(/coffee/gi,'COFFEE')
+  return str.replace(/coffee/gi, "COFFEE");
 }

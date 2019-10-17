@@ -9,4 +9,5 @@ You have to write an array() function returning an array object with elements as
 Coding Limitation:
 Less than 75 characters
 */
-array=()=>'sun,mon,tues,wednes,thurs,fri,satur'.split`,`.map(v=>v+'day')
+array = () =>
+  "sun,mon,tues,wednes,thurs,fri,satur".split`,`.map(v => v + "day");

@@ -13,7 +13,7 @@ Complete the function that takes 2 arguments: a number (n), and a list of number
 
 Examples
 */
-const gcd = (a, b) => b ? gcd(b, a % b) : Math.abs(a);
-function relativelyPrime(n,l){
-  return l.filter(v=>gcd(n,v)===1)
+const gcd = (a, b) => (b ? gcd(b, a % b) : Math.abs(a));
+function relativelyPrime(n, l) {
+  return l.filter(v => gcd(n, v) === 1);
 }

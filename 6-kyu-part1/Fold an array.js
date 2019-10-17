@@ -34,7 +34,8 @@ I have created other katas. Have a look if you like coding and challenges.
 */
 
 function foldArray(a, n) {
-  const r = [], c = a.slice();
+  const r = [],
+    c = a.slice();
   while (c.length) r.push(c.pop() + (c.shift() || 0));
   return n - 1 ? foldArray(r, n - 1) : r;
 }

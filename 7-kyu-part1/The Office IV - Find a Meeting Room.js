@@ -9,7 +9,7 @@ In this kata, you will be given an array. Each value represents a meeting room. 
 If all rooms are busy, return 'None available!'.
 */
 
-function meeting(x){
-  if (x.indexOf('O')===-1) return'None available!'
-  return x.indexOf('O')
+function meeting(x) {
+  if (x.indexOf("O") === -1) return "None available!";
+  return x.indexOf("O");
 }

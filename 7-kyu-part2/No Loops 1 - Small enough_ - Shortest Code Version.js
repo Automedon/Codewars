@@ -7,4 +7,4 @@ You can assume all values in the array are numbers.
 
 Do not use loops.
 */
-smallEnough=(a,l)=>a.every(v=>v<=l)
+smallEnough = (a, l) => a.every(v => v <= l);

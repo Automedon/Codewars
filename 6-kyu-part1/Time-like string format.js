@@ -12,8 +12,8 @@ solution(3351); // should return '33:51'
 solution(10000); // should raise an exception
 */
 function solution(hour) {
-  let str=hour.toString()
-  if (str.length>4||str.length<3) throw Error()
-  if (str.length===4) return str[0]+str[1]+':'+str[2]+str[3]
-  else return  str[0]+':'+str[1]+str[2]
+  let str = hour.toString();
+  if (str.length > 4 || str.length < 3) throw Error();
+  if (str.length === 4) return str[0] + str[1] + ":" + str[2] + str[3];
+  else return str[0] + ":" + str[1] + str[2];
 }

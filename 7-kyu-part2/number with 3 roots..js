@@ -10,6 +10,10 @@ Given number n, such that n > 1, find if it's 2nd root, 4th root and 8th root ar
 // 8th root of 256 is 2
 perfectRoots(256) // returns true 
 */
-function perfectRoots(n){
-   return [Math.sqrt(n),Math.sqrt(Math.sqrt(n)),Math.sqrt(Math.sqrt(Math.sqrt(n)))].every(v=>v%1===0)
+function perfectRoots(n) {
+  return [
+    Math.sqrt(n),
+    Math.sqrt(Math.sqrt(n)),
+    Math.sqrt(Math.sqrt(Math.sqrt(n)))
+  ].every(v => v % 1 === 0);
 }

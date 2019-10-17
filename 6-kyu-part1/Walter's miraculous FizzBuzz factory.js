@@ -29,9 +29,11 @@ myFooBar(8)  === "Bar"
 myFooBar(10) === "Foo"
 myFooBar(12) === "FooBar"
 */
-function fizzBuzzFactory (arr){
-  let a = arr.slice().reverse()
-  return function(n){
-    return a.filter(v=>n%v[0]===0).length?a.filter(v=>n%v[0]===0)[0][1]:n.toString()
-  }
+function fizzBuzzFactory(arr) {
+  let a = arr.slice().reverse();
+  return function(n) {
+    return a.filter(v => n % v[0] === 0).length
+      ? a.filter(v => n % v[0] === 0)[0][1]
+      : n.toString();
+  };
 }

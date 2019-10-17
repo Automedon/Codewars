@@ -7,4 +7,4 @@ Anyway, as some basic language education(??) this kata requires you to turn any 
 Pak should not be the first or last word. Strings of just spaces should return an empty string.
 */
 
-const pak =(s)=>s.replace(/\s/g,' pak ')
+const pak = s => s.replace(/\s/g, " pak ");

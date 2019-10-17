@@ -12,9 +12,9 @@ Hint
 If you're writing more than 1 line of code, then think again! ;)
 Good luck!
 */
-function digitAll(x){
-   if (typeof x !=='string') return 'Invalid input !';
-   let str=''
-   x.split('').map(v=>/[0-9]/.test(v)?str+=v:v)
-   return str
+function digitAll(x) {
+  if (typeof x !== "string") return "Invalid input !";
+  let str = "";
+  x.split("").map(v => (/[0-9]/.test(v) ? (str += v) : v));
+  return str;
 }

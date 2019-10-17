@@ -11,15 +11,16 @@ Each test case consists of a single integer n between 1 and 2^31 − 1 in standa
 Output
 The output for each test case consists of a pair of integer, containing the integers a(n) and b(n). Both a(n) and b(n) should be in decimal format.
 */
-function splitNumbers(n){
-  let a = 0, b = 0, tmp = 0;
-  for(let i = 0; i < 32; i++) {
+function splitNumbers(n) {
+  let a = 0,
+    b = 0,
+    tmp = 0;
+  for (let i = 0; i < 32; i++) {
     tmp = n & Math.pow(2, i);
-    if(tmp) {
-      if(b % 2 === 0)
-        a += tmp;
+    if (tmp) {
+      if (b % 2 === 0) a += tmp;
       b += 1;
     }
   }
-  return [a, n^a];
+  return [a, n ^ a];
 }

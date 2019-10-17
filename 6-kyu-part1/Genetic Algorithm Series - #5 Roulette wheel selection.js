@@ -13,8 +13,10 @@ Given the population and fitnesses, your task is to run the roulette to return o
 Note: Some tests are random. If you think your algorithm is correct but the result fails, trying again should work.
 */
 const select = (population, fitnesses) => {
-  let arr = fitnesses.map((v,i,arr)=>arr.slice(0,i+1).reduce((a,b)=>a+b,0))
-  for (let i=0;i<population.length;i++){
-    if (arr[i]>=Math.random()) return population[i]
+  let arr = fitnesses.map((v, i, arr) =>
+    arr.slice(0, i + 1).reduce((a, b) => a + b, 0)
+  );
+  for (let i = 0; i < population.length; i++) {
+    if (arr[i] >= Math.random()) return population[i];
   }
 };

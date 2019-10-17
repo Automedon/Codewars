@@ -15,9 +15,9 @@ Mars rover can only make one move at a time and it will only request positions t
 Can you write an algorithm that tells if it should move left or right?
 */
 function turn(c, t) {
-  if (c==='N'&&t==='W') return 'left'
-  if (c==='W'&&t==='S') return 'left'
-  if (c==='S'&&t==='E') return 'left'
-  if (c==='E'&&t==='N') return 'left'
-  return 'right';
+  if (c === "N" && t === "W") return "left";
+  if (c === "W" && t === "S") return "left";
+  if (c === "S" && t === "E") return "left";
+  if (c === "E" && t === "N") return "left";
+  return "right";
 }

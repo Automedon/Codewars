@@ -19,9 +19,9 @@ Good luck!
 */
 function displayLargeNumber(n) {
   let arr = [];
-  let str=n.toString().split``.reverse().join``
-  for (let i=0;i<str.length;i+=3){
-    arr.push(str.slice(i,i+3))
+  let str = n.toString().split``.reverse().join``;
+  for (let i = 0; i < str.length; i += 3) {
+    arr.push(str.slice(i, i + 3));
   }
-  return arr.map(v=>v.split``.reverse().join``).reverse().join`,`
+  return arr.map(v => v.split``.reverse().join``).reverse().join`,`;
 }

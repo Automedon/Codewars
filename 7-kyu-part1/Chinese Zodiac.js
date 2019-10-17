@@ -18,13 +18,25 @@ elements (or $elements in Ruby) is a preloaded array containing the elements in 
 
 Tell me your zodiac sign and element in the comments. Happy coding :)
 */
-function chineseZodiac(year){
-  const animals = ['Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat', 'Monkey', 'Rooster', 'Dog', 'Pig'];
-  const elements = ['Wood', 'Fire', 'Earth', 'Metal', 'Water'];
+function chineseZodiac(year) {
+  const animals = [
+    "Rat",
+    "Ox",
+    "Tiger",
+    "Rabbit",
+    "Dragon",
+    "Snake",
+    "Horse",
+    "Goat",
+    "Monkey",
+    "Rooster",
+    "Dog",
+    "Pig"
+  ];
+  const elements = ["Wood", "Fire", "Earth", "Metal", "Water"];
   const baseYear = 1924;
   const givenYear = year - baseYear;
-  const element = elements[(Math.floor(givenYear/2)%5)];
+  const element = elements[Math.floor(givenYear / 2) % 5];
   const animal = animals[givenYear % 12];
   return element + " " + animal;
-
 }

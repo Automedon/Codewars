@@ -20,7 +20,12 @@ Passed val should not be case sensitive.
 */
 function getCharacters(obj, key, val) {
   var foundCharacters = [];
-  obj[`characters`].map(v=>v.hasOwnProperty(key)?(
-  v[`${key}`].toLowerCase()===val.toLowerCase()?foundCharacters.push(v):null):null)
+  obj[`characters`].map(v =>
+    v.hasOwnProperty(key)
+      ? v[`${key}`].toLowerCase() === val.toLowerCase()
+        ? foundCharacters.push(v)
+        : null
+      : null
+  );
   return foundCharacters;
 }

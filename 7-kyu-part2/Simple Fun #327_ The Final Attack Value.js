@@ -22,5 +22,6 @@ The attack value increased:
 
 20 --> 30 --> 50 --> 65 --> 105 --> 205
 */
-let gcd = (a, b) => b ? gcd(b, a  %b) : a;
-let finalAttackValue = (x, mL) => mL.reduce((acc, v) => v < acc ? v + acc : acc + gcd(acc, v), x);
+let gcd = (a, b) => (b ? gcd(b, a % b) : a);
+let finalAttackValue = (x, mL) =>
+  mL.reduce((acc, v) => (v < acc ? v + acc : acc + gcd(acc, v)), x);

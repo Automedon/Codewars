@@ -20,10 +20,13 @@ If the value is less than 1 hour, don't show the hours at all
 The highest possible value will be 86,400,000 milliseconds, i.e. 24 hours
 */
 function toString(time) {
-  time=new Date(time).toString().split(' ')[4].split('')
-  for (let i=0;i<time.length-4;i++){
-    if (time[i]==='0'||time[i]===':') time[i]=''
-    else break
+  time = new Date(time)
+    .toString()
+    .split(" ")[4]
+    .split("");
+  for (let i = 0; i < time.length - 4; i++) {
+    if (time[i] === "0" || time[i] === ":") time[i] = "";
+    else break;
   }
-  return time.join``
+  return time.join``;
 }

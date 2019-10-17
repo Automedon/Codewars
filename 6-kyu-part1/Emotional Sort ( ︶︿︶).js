@@ -31,10 +31,10 @@ The array could be empty, in that case return the same empty array ¯\_( ツ )_/
 All emotions will be valid
 Enjoy! (づ｡◕‿‿◕｡)づ
 */
-function sortEmotions(arr, order){
-  let s = [ ':D', ':)', ':|', ':(', 'T_T' ]
-  if (order){
-    return arr.sort((a,b)=>s.indexOf(a)-s.indexOf(b))
+function sortEmotions(arr, order) {
+  let s = [":D", ":)", ":|", ":(", "T_T"];
+  if (order) {
+    return arr.sort((a, b) => s.indexOf(a) - s.indexOf(b));
   }
-  return arr.sort((a,b)=>s.indexOf(b)-s.indexOf(a))
+  return arr.sort((a, b) => s.indexOf(b) - s.indexOf(a));
 }

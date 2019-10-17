@@ -24,4 +24,5 @@ The ball is under cup number : 1
 
 The ball is under cup number : 3
 */
-const cupAndBalls = (ball, pairs) => pairs.reduce((ball, [a, b]) => a == ball? b: b == ball? a: ball, ball);
+const cupAndBalls = (ball, pairs) =>
+  pairs.reduce((ball, [a, b]) => (a == ball ? b : b == ball ? a : ball), ball);

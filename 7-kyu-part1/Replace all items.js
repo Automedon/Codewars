@@ -10,6 +10,10 @@ replaceAll(replaceAll(array: [1,2,2], old: 1, new: 2) // [2,2,2]
 */
 
 function replaceAll(seq, find, replace) {
-  if (typeof seq==='string') return seq.split('').map(v=>v===find?v=replace:v).join('')
-  return seq.map(v=>v===find?v=replace:v);
+  if (typeof seq === "string")
+    return seq
+      .split("")
+      .map(v => (v === find ? (v = replace) : v))
+      .join("");
+  return seq.map(v => (v === find ? (v = replace) : v));
 }

@@ -17,7 +17,7 @@ isSquare([3, 4, 7, 9]);
 isSquare([]);
 //returns undefined
 */
-var isSquare = function(arr){
-  if (arr.length===0) return undefined;
-  return arr.every(v=>Math.sqrt(v).toString().length<=v.toString().length)
-}
+var isSquare = function(arr) {
+  if (arr.length === 0) return undefined;
+  return arr.every(v => Math.sqrt(v).toString().length <= v.toString().length);
+};

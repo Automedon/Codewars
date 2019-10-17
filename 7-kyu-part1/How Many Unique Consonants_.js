@@ -18,5 +18,14 @@ Examples
 */
 
 function countConsonants(str) {
-  return [...new Set(str.replace(/[^a-z]/gi,'').toLowerCase().split(''))].join('').replace(/[aeuio]/gi,'').length
+  return [
+    ...new Set(
+      str
+        .replace(/[^a-z]/gi, "")
+        .toLowerCase()
+        .split("")
+    )
+  ]
+    .join("")
+    .replace(/[aeuio]/gi, "").length;
 }

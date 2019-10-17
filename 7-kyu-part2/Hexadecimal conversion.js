@@ -9,6 +9,7 @@ Source
 All of Computer Science http://www.wolframalpha.com/examples/NumberBases.html
 */
 function hexToDec(hexadecimal) {
-  if (parseInt(hexadecimal,16).toString(16) == hexadecimal) return  parseInt(hexadecimal,16) 
+  if (parseInt(hexadecimal, 16).toString(16) == hexadecimal)
+    return parseInt(hexadecimal, 16);
   return -1;
 }

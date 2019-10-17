@@ -23,9 +23,10 @@ Note: each array/list will have at least an element and all elements will be val
 */
 
 function total(arr) {
-  while(arr.length>2)
-  {
-    arr=arr.map((v,i,arr)=>v=(arr[i]+arr[i+1])).filter(v=>!isNaN(v))    
+  while (arr.length > 2) {
+    arr = arr
+      .map((v, i, arr) => (v = arr[i] + arr[i + 1]))
+      .filter(v => !isNaN(v));
   }
-  return arr.reduce((a,b)=>a+b)
+  return arr.reduce((a, b) => a + b);
 }

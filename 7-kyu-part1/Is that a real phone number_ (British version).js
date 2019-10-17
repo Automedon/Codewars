@@ -20,6 +20,8 @@ And sometimes you will find numbers with dashes in-between digits or on either s
 
 Good Luck Romeo/Juliette!
 */
-function validateNumber(str){
-  return /^(\+44|0|-0)?7(-*[0-9]){9}$/.test(str)?'In with a chance':'Plenty more fish in the sea'
+function validateNumber(str) {
+  return /^(\+44|0|-0)?7(-*[0-9]){9}$/.test(str)
+    ? "In with a chance"
+    : "Plenty more fish in the sea";
 }

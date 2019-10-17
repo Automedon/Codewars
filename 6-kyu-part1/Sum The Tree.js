@@ -45,8 +45,9 @@ Examples:
      2
 => 3
 */
-function sumTheTreeValues(root){
-  if(!root)
-    return 0;
-  return root.value + sumTheTreeValues(root.left) + sumTheTreeValues(root.right);
+function sumTheTreeValues(root) {
+  if (!root) return 0;
+  return (
+    root.value + sumTheTreeValues(root.left) + sumTheTreeValues(root.right)
+  );
 }

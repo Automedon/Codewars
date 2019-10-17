@@ -25,8 +25,10 @@ The minimum number of replacement operations needed to get an anagram of the str
 */
 
 function createAnagram(s, t) {
-  const arr1={};
-  s.split('').map(v=>arr1[v]=arr1[v]?arr1[v]+1:1)
-  t.split('').map(v=>arr1[v]--)
-  return Object.values(arr1).filter(v=>!isNaN(v)&&v>0).reduce((a,b)=>a+b,0)
+  const arr1 = {};
+  s.split("").map(v => (arr1[v] = arr1[v] ? arr1[v] + 1 : 1));
+  t.split("").map(v => arr1[v]--);
+  return Object.values(arr1)
+    .filter(v => !isNaN(v) && v > 0)
+    .reduce((a, b) => a + b, 0);
 }

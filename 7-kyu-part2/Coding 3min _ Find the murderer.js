@@ -50,7 +50,7 @@ It seems the murderer's name is not appear in the suspects.
 So, return a empty string: ''
 ```
 */
-function sc(said,susp){
-  var r = new RegExp ('^'+said.replace(/~/g,'.'),'i')
-  return susp.filter((x,_)=>x.match(r)).join()
+function sc(said, susp) {
+  var r = new RegExp("^" + said.replace(/~/g, "."), "i");
+  return susp.filter((x, _) => x.match(r)).join();
 }

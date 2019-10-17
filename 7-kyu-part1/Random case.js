@@ -11,7 +11,10 @@ Note: this function will work within the basic ASCII character set to make this 
 */
 
 function randomCase(x) {
-  return x.split('')
-          .map(function(e) { return Math.random() < 0.5 ? e.toUpperCase() : e.toLowerCase(); })
-          .join('');
+  return x
+    .split("")
+    .map(function(e) {
+      return Math.random() < 0.5 ? e.toUpperCase() : e.toLowerCase();
+    })
+    .join("");
 }

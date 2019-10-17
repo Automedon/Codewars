@@ -10,6 +10,6 @@ for this exercise, all opposite faces add up to be 1 more than the total amount 
 
 Note: topNum will never be greater than numOfSides
 */
-function totalAmountVisible(n, s){
-   return (s * (s + 1 )) / 2 + (n - s - 1);
+function totalAmountVisible(n, s) {
+  return (s * (s + 1)) / 2 + (n - s - 1);
 }

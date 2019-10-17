@@ -20,4 +20,4 @@ var arr = [1,2,3];
 
 falsyOrTruthy(arr) // should return [];
 */
-const falsyOrTruthy = a => a.filter(e=> a.length%2 ? !e : e);
+const falsyOrTruthy = a => a.filter(e => (a.length % 2 ? !e : e));

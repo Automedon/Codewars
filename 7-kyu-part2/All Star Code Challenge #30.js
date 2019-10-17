@@ -33,16 +33,18 @@ Note:
 If "Raj" is not in the group, the function should return the input array (unmodified).
 Assume the input array will have properly formatted Member objects and do not need to be checked.
 */
-function Member(name,gender,status){
+function Member(name, gender, status) {
   this.name = name;
-  this.gender=gender;
-  this.status=status;
+  this.gender = gender;
+  this.status = status;
 }
-var manCave = function(array){
-  
-  if (array.some(v=>v.name==='Raj')){
-    array=array.map((v,i,arr)=>{
-    return Object.assign(v,{status: 'Single' })}).filter(v=>v.gender!=='female')
+var manCave = function(array) {
+  if (array.some(v => v.name === "Raj")) {
+    array = array
+      .map((v, i, arr) => {
+        return Object.assign(v, { status: "Single" });
+      })
+      .filter(v => v.gender !== "female");
   }
-  return array
-}
+  return array;
+};

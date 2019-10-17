@@ -15,10 +15,9 @@ The indices start at 0. The first index should always be smaller than the second
 
 buy(5,[1,2,3,4,5]) = [0,3] // the values at [1,2] also adds up to five, but [0,3] < [1,2]
 */
-var buy = function(x, arr){
-  for (var i=0; i<arr.length-1; ++i)
-    for (var j=i+1; j<arr.length; ++j)
-      if (arr[i]+arr[j]==x)
-        return [i,j]
+var buy = function(x, arr) {
+  for (var i = 0; i < arr.length - 1; ++i)
+    for (var j = i + 1; j < arr.length; ++j)
+      if (arr[i] + arr[j] == x) return [i, j];
   return null;
 };

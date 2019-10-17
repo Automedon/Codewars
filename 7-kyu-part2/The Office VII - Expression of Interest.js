@@ -39,18 +39,18 @@ return 'Damn'
 link incorrect? 
 return 'Sent'.
 */
-function express(x, d){
-  let l = x.length===22
-  let Laptop = d==='Laptop'
-  let Desktop = d==='Desktop'
-  let iPhone = d==='iPhone'
-  let Macbook = d==='Macbook'
-  if (l&&Laptop) return 'Sent'
-  if (!l&&Laptop) return 'Damn'
-  if (l&&Desktop) return 'Sent'
-  if (!l&&Desktop) return 'Sent'
-  if (l&&iPhone) return 'Damn'
-  if (!l&&iPhone) return 'Damn'
-  if (l&&Macbook) return 'Damn'
-  if (!l&&Macbook) return 'Sent'
+function express(x, d) {
+  let l = x.length === 22;
+  let Laptop = d === "Laptop";
+  let Desktop = d === "Desktop";
+  let iPhone = d === "iPhone";
+  let Macbook = d === "Macbook";
+  if (l && Laptop) return "Sent";
+  if (!l && Laptop) return "Damn";
+  if (l && Desktop) return "Sent";
+  if (!l && Desktop) return "Sent";
+  if (l && iPhone) return "Damn";
+  if (!l && iPhone) return "Damn";
+  if (l && Macbook) return "Damn";
+  if (!l && Macbook) return "Sent";
 }

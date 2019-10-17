@@ -7,5 +7,4 @@ write a function getASCII which inputs a character and returns the corresponding
 for ASCII table, you can refer to http://www.asciitable.com/
 */
 
-
 const getASCII = c => c.charCodeAt(0);

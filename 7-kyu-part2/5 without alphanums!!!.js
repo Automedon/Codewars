@@ -9,4 +9,4 @@ Kata inspired by 5 without numbers !!.
 
 Good luck :)
 */
-_=_=>-~-~-~-~-~[]
+_ = _ => -~-~-~-~-~[];

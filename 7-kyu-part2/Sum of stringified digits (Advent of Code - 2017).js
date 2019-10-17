@@ -12,14 +12,14 @@ Given a sequence of stringified digits, find the sum of all digits that match th
 CREDIT:https://adventofcode.com/2017/day/1
 */
 function sumOfString(sequence) {
-  sequence=sequence.split('')
-  sequence=[...sequence].concat(sequence[0])
-  let i, a, b, c
-  c = []
+  sequence = sequence.split("");
+  sequence = [...sequence].concat(sequence[0]);
+  let i, a, b, c;
+  c = [];
   for (i = 0; i < sequence.length - 1; i++) {
     if (sequence[i] === sequence[i + 1]) {
-      c.push(sequence[i])
+      c.push(sequence[i]);
     }
   }
-  return c.reduce((a, b) => a + parseInt(b), 0)
+  return c.reduce((a, b) => a + parseInt(b), 0);
 }

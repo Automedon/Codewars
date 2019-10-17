@@ -17,4 +17,7 @@ return [1,4]
 NLP-Series:
 Part 1: Inverted Index</a href>
 */
-const buildInvertedIndex = (c, t, s, e) => Object.keys(c).filter(i => new RegExp(e?"\\b"+t+"\\b":t,s?"":"i").test(c[i])).map(a=>+(a)+1) 
+const buildInvertedIndex = (c, t, s, e) =>
+  Object.keys(c)
+    .filter(i => new RegExp(e ? "\\b" + t + "\\b" : t, s ? "" : "i").test(c[i]))
+    .map(a => +a + 1);

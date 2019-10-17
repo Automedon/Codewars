@@ -8,6 +8,6 @@ The message has been encrypted with the RSA algorithm.
 
 https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29#Decryption
 */
-function decrypt(p, x, n){
-  return Math.pow(n, p)%x
+function decrypt(p, x, n) {
+  return Math.pow(n, p) % x;
 }

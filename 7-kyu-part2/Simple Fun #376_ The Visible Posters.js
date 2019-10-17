@@ -46,12 +46,12 @@ All positions of poster are valid(1 <= position <= 1000)
 
 Happy Coding ^_^
 */
-function countVisible(posters){
-  let poster = ('0'.repeat(Math.max(...posters.map(v=>v[1])))).split``
-  for (let i=1;i<=posters.length;i++){
-    for (let j=posters[i-1][0];j<=posters[i-1][1];j++){
-      poster[j]=i  
+function countVisible(posters) {
+  let poster = "0".repeat(Math.max(...posters.map(v => v[1]))).split``;
+  for (let i = 1; i <= posters.length; i++) {
+    for (let j = posters[i - 1][0]; j <= posters[i - 1][1]; j++) {
+      poster[j] = i;
     }
   }
-  return [...new Set(poster)].length-1
+  return [...new Set(poster)].length - 1;
 }

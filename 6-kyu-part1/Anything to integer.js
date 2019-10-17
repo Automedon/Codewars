@@ -11,8 +11,8 @@ Also, Math.floor(), parseInt() and parseFloat() are disabled for your unconvenie
 Onegaishimasu!
 */
 function toInteger(n) {
-  if (isNaN(n)) return 0
-  n=Math.trunc(n)
-  if (!Number.isFinite(n)) return 0
-  return n  
+  if (isNaN(n)) return 0;
+  n = Math.trunc(n);
+  if (!Number.isFinite(n)) return 0;
+  return n;
 }

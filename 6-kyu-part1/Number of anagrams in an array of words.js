@@ -9,11 +9,16 @@ Some examples:
 There are 2 anagrams in the array ["dell", "ledl", "abc", "cba"]
 There are 7 anagrams in the array ["dell", "ledl", "abc", "cba", "bca", "bac"]
 */
-function anagramCounter (wordsArray) {
-  let count=0;
-  for (let i=0;i<wordsArray.length-1;i++){
-    for (let j=i+1;j<wordsArray.length;j++){
-      if (wordsArray[i].split``.sort().join``===wordsArray[j].split``.sort().join``) {count++}
+function anagramCounter(wordsArray) {
+  let count = 0;
+  for (let i = 0; i < wordsArray.length - 1; i++) {
+    for (let j = i + 1; j < wordsArray.length; j++) {
+      if (
+        wordsArray[i].split``.sort().join`` ===
+        wordsArray[j].split``.sort().join``
+      ) {
+        count++;
+      }
     }
   }
   return count;

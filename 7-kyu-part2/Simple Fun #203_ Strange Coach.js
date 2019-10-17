@@ -33,7 +33,11 @@ players = ["babic","keksic","boric","bukic",
        "kovacic","prijestolonasljednikovic"]```
 the output should be "bk".
 */
-const strangeCoach = (players) => {
-  const answ = players.map(v => v[0]).sort().join('').match(/(.)\1\1\1\1+/g);
-  return answ ? answ.map(v => v[0]).join('') : 'forfeit';
-}
+const strangeCoach = players => {
+  const answ = players
+    .map(v => v[0])
+    .sort()
+    .join("")
+    .match(/(.)\1\1\1\1+/g);
+  return answ ? answ.map(v => v[0]).join("") : "forfeit";
+};

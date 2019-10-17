@@ -33,14 +33,16 @@ Return your total winning as a string with the £ sign like this: '£100'
 Good luck!
 */
 
-function fifa(ticket, results){
-  const r1=results[0].split('-')[0]>results[0].split('-')[1]
-  const r2=results[1].split('-')[0]<results[1].split('-')[1]
-  const r3=results[2].split('-')[0]===results[2].split('-')[1]
-  const arr=Object.values(ticket).map(v=>v.replace('£','')).map(v=>v*1)
-  let result=0;
-  if (r1) result+=arr[0];
-  if (r2) result+=arr[1];
-  if (r3) result+=arr[2];
-  return `£${result}`
+function fifa(ticket, results) {
+  const r1 = results[0].split("-")[0] > results[0].split("-")[1];
+  const r2 = results[1].split("-")[0] < results[1].split("-")[1];
+  const r3 = results[2].split("-")[0] === results[2].split("-")[1];
+  const arr = Object.values(ticket)
+    .map(v => v.replace("£", ""))
+    .map(v => v * 1);
+  let result = 0;
+  if (r1) result += arr[0];
+  if (r2) result += arr[1];
+  if (r3) result += arr[2];
+  return `£${result}`;
 }

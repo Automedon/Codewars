@@ -16,9 +16,9 @@ For arr1=["a","b","c","d"], arr2=[3,0,2] find_array returns ["d","a","c"]
 
 If either arr1 or arr2 is empty, you should return an empty arr (empty list in python, empty vector in c++). Note for c++ use std::vector arr1, arr2.
 */
-function findArray(arr1, arr2){
-   if (arr1.length===0||arr2.length===0) return []
-   const arr=[];
-   arr2.map(v=>arr.push(arr1[v]))
-   return arr
+function findArray(arr1, arr2) {
+  if (arr1.length === 0 || arr2.length === 0) return [];
+  const arr = [];
+  arr2.map(v => arr.push(arr1[v]));
+  return arr;
 }

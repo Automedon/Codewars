@@ -7,6 +7,6 @@ Write a function that replaces 'two', 'too' and 'to' with the number '2'. Even i
 'look at that octopus' becomes 'look at that oc2pus'
 Note that 'too' should become '2', not '2o'
 */
-function textin(str){
-  return str.replace(/(two|too|to)/gi,'2')
+function textin(str) {
+  return str.replace(/(two|too|to)/gi, "2");
 }

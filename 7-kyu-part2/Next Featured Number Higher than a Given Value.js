@@ -20,13 +20,17 @@ nextNumber(9999999999) == "There is no possible number that
 fulfills those requirements"
 Enjoy the kata!!
 */
-function nextNumb(val) { 
-    for (let i=val+1;i<=9999999999;i++)
-    {
-    if (i.toString().length===[...new Set(i.toString().split(''))].length&&
-    i%2!==0&&(i%3===0)){return i}
+function nextNumb(val) {
+  for (let i = val + 1; i <= 9999999999; i++) {
+    if (
+      i.toString().length === [...new Set(i.toString().split(""))].length &&
+      i % 2 !== 0 &&
+      i % 3 === 0
+    ) {
+      return i;
     }
-    
-    return "There is no\
- possible number that fulfills those requirements"; 
+  }
+
+  return "There is no\
+ possible number that fulfills those requirements";
 }

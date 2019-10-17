@@ -9,7 +9,7 @@ Sounds simple doesn't it?
 
 NOTE: Array should be reversed in place!
 */
-const _ = require('lodash');
+const _ = require("lodash");
 function reverse(arr) {
-   return _.reverse(arr);
+  return _.reverse(arr);
 }

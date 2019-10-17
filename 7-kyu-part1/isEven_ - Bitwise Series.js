@@ -14,6 +14,6 @@ use of ```.even?``` in Ruby
 use of ```mod``` in Python
 */
 
-var isEven = function (n) { 
-  return (n+'').length>=((n/2)+'').length
-}
+var isEven = function(n) {
+  return (n + "").length >= (n / 2 + "").length;
+};

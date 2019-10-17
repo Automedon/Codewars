@@ -13,6 +13,6 @@ You do want to cover these: https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_b
 Notes: This is my first Kata creation, and I only know JavaScript. The instructions for other languages would be String#letter? (Ruby), StringUtils.isLetter(String) (Java), letter? (Clojure), if someone feels up to the task of implementing them.
 */
 String.prototype.isLetter = function() {
-  if (this.length!==1) return false
-  return this.toLowerCase()!==this.toUpperCase()
-}
+  if (this.length !== 1) return false;
+  return this.toLowerCase() !== this.toUpperCase();
+};

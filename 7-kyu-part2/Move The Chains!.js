@@ -14,7 +14,7 @@ The new down and distance. If the down is not 4, and the yard gained does NOT ex
 For more information about this part of American football (not to be confused with Canadian football rules), visit this wikipedia entry: https://en.wikipedia.org/wiki/Down_(gridiron_football)
 */
 function chains(down, distance, yardsGained) {
-    if (yardsGained >= distance) return 'First down';
-    if (down === 4) return 'Turnover on downs';
-    return `${['2nd','3rd','4th'][down - 1]} and ${distance-yardsGained}`;
+  if (yardsGained >= distance) return "First down";
+  if (down === 4) return "Turnover on downs";
+  return `${["2nd", "3rd", "4th"][down - 1]} and ${distance - yardsGained}`;
 }

@@ -12,14 +12,16 @@ solve("1 2 36 4 8", 3) = 8, because they are ['12', '18', '21', '24', '42', '48'
 solve("1 3 6 3", 3) = 6. They are ['36', '33', '63', '63', '33', '36']
 More examples in test cases. Good luck!
 */
-function solve(s,k) {
-    s=s.split(' ')
-    let x=0;
-    for (let i=0;i<s.length;i++){
-        for (let j=0;j<s.length;j++){
-          if (i===j){} 
-          else if ((s[i]+s[j])%k===0){x++}
-        }
+function solve(s, k) {
+  s = s.split(" ");
+  let x = 0;
+  for (let i = 0; i < s.length; i++) {
+    for (let j = 0; j < s.length; j++) {
+      if (i === j) {
+      } else if ((s[i] + s[j]) % k === 0) {
+        x++;
       }
-      return x
+    }
+  }
+  return x;
 }

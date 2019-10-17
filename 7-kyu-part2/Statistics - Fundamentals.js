@@ -27,18 +27,24 @@ In this Kata, the computed values of your variance and stdDeviation need only be
 */
 class DataSet {
   constructor(...data) {
-    this.data=data
-    this.mean=this.data.reduce((a,b)=>a+b,0)/this.data.length
-    this.variance=this.data.map(v=>Math.pow(v-this.mean,2)).reduce((a,b)=>a+b,0)/this.data.length
-    this.stdDeviation=Math.sqrt(this.variance)
+    this.data = data;
+    this.mean = this.data.reduce((a, b) => a + b, 0) / this.data.length;
+    this.variance =
+      this.data
+        .map(v => Math.pow(v - this.mean, 2))
+        .reduce((a, b) => a + b, 0) / this.data.length;
+    this.stdDeviation = Math.sqrt(this.variance);
   }
-  setMean(){
-    this.mean=this.data.reduce((a,b)=>a+b,0)/this.data.length
-    return this.mean
+  setMean() {
+    this.mean = this.data.reduce((a, b) => a + b, 0) / this.data.length;
+    return this.mean;
   }
-  setVar(){
-    this.variance=this.data.map(v=>Math.pow(v-this.mean,2)).reduce((a,b)=>a+b,0)/this.data.length
-    this.stdDeviation=Math.sqrt(this.variance)
-    return this.variance
+  setVar() {
+    this.variance =
+      this.data
+        .map(v => Math.pow(v - this.mean, 2))
+        .reduce((a, b) => a + b, 0) / this.data.length;
+    this.stdDeviation = Math.sqrt(this.variance);
+    return this.variance;
   }
 }

@@ -13,5 +13,5 @@ Array.isArray( undefined ); // false
 Array.isArray(17); // false
 */
 Array.isArray = function(value) {
-  return Object.prototype.toString.call(value) === '[object Array]';
+  return Object.prototype.toString.call(value) === "[object Array]";
 };

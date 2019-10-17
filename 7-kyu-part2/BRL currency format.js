@@ -16,6 +16,6 @@ currencyBRL(10.502) => 'R$ 10,50'
 currencyBRL(10.509) => 'R$ 10,51'
 */
 function currencyBRL(number) {
-  if (!number) return 'R$ 0,00'
-  return `R$ ${(number.toFixed(2).replace(/\./,','))}`
+  if (!number) return "R$ 0,00";
+  return `R$ ${number.toFixed(2).replace(/\./, ",")}`;
 }

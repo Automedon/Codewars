@@ -21,9 +21,8 @@ obj.hash('person.animal.pet.needNoseAntEater'); // undefined
 */
 Object.prototype.hash = function(string) {
   try {
-  return eval(`this.${string}`)
+    return eval(`this.${string}`);
+  } catch (e) {
+    return undefined;
   }
-  catch(e){
-  return undefined
-  }
-}
+};

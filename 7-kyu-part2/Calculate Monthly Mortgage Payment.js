@@ -25,6 +25,8 @@ N = a * 52
 c = $461.79
 */
 function calculatePayment(p0, amortization, interestRate) {
-  const r = (interestRate/12)/100
-  return (r*p0/(1-Math.pow(1+r,-(amortization*12)))).toFixed(2)*1
+  const r = interestRate / 12 / 100;
+  return (
+    ((r * p0) / (1 - Math.pow(1 + r, -(amortization * 12)))).toFixed(2) * 1
+  );
 }

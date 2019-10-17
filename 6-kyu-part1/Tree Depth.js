@@ -10,13 +10,13 @@ For Ruby, if the input is not a hash, then the function should return nil. For J
 */
 
 function recordDepth(tree, d = 0) {
-  if (!tree || typeof tree !== 'object' || Array.isArray(tree)) return null
-  tree.depth = d
-  let keys = Object.keys(tree)
+  if (!tree || typeof tree !== "object" || Array.isArray(tree)) return null;
+  tree.depth = d;
+  let keys = Object.keys(tree);
   for (let k of keys) {
-    if (typeof tree[k] === 'object') {
-      recordDepth(tree[k], d + 1)
+    if (typeof tree[k] === "object") {
+      recordDepth(tree[k], d + 1);
     }
   }
-  return tree
+  return tree;
 }

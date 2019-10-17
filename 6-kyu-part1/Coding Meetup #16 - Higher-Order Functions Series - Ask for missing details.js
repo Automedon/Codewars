@@ -37,12 +37,13 @@ This kata is part of the Coding Meetup series which includes a number of short a
 */
 function askForMissingDetails(list) {
   let arr = [];
-  list.map(list=>{
-  for (let i in list){
-    if (list[i]===null){
-      list={...list,question:`Hi, could you please provide your ${i}.`}
-      arr.push(list)
+  list.map(list => {
+    for (let i in list) {
+      if (list[i] === null) {
+        list = { ...list, question: `Hi, could you please provide your ${i}.` };
+        arr.push(list);
+      }
     }
-  }})
-  return arr 
+  });
+  return arr;
 }

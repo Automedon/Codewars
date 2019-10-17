@@ -26,10 +26,22 @@ obj=[1,2,3,2,1]      return true
 obj=[11,12,13,12,11] return true   (left element = right element)
 obj=[11,12,21,11]    return false  (not verify them as a string)
 */
-function sc(obj){
-  obj=obj.toString().replace(/[^\d-,]/gi,'')
-  if (obj.includes(',')){
-  return obj===obj.split(',').reverse().join(',')
+function sc(obj) {
+  obj = obj.toString().replace(/[^\d-,]/gi, "");
+  if (obj.includes(",")) {
+    return (
+      obj ===
+      obj
+        .split(",")
+        .reverse()
+        .join(",")
+    );
   }
-  return obj===obj.split('').reverse().join('')
+  return (
+    obj ===
+    obj
+      .split("")
+      .reverse()
+      .join("")
+  );
 }

@@ -10,10 +10,10 @@ For example:
 */
 function getElement(array, indexes) {
   let res = 0;
-  let arr = array.slice()
-  for (let i=0;i<indexes.length;i++){
-    arr=arr[indexes[i]]
-    res=arr
+  let arr = array.slice();
+  for (let i = 0; i < indexes.length; i++) {
+    arr = arr[indexes[i]];
+    res = arr;
   }
-  return res
+  return res;
 }

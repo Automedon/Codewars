@@ -4,5 +4,5 @@ Determine the area of the largest square that can fit inside a circle with radiu
 */
 
 function areaLargestSquare(r) {
-  return 2*r*r
+  return 2 * r * r;
 }

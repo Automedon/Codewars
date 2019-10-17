@@ -8,10 +8,10 @@ For Example:
 Remember, c corresponds with g, and a corresponds with t
 */
 function dnaMaker(dna) {
-  return dna.replace(/[gcta]/g,v=>{
-  if (v==='g') return 'c'
-  if (v==='c') return 'g'
-  if (v==='t') return 'a'
-  if (v==='a') return 't'
-  })
+  return dna.replace(/[gcta]/g, v => {
+    if (v === "g") return "c";
+    if (v === "c") return "g";
+    if (v === "t") return "a";
+    if (v === "a") return "t";
+  });
 }

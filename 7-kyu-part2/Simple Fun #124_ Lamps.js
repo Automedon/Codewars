@@ -26,11 +26,19 @@ function lamps(a) {
   var switch2 = 0;
   for (var i = 0; i < a.length; i++) {
     if (i % 2 == 0) {
-      if (a[i] != 1) {switch1++} else {switch2++};
+      if (a[i] != 1) {
+        switch1++;
+      } else {
+        switch2++;
+      }
     } else {
-      if (a[i] != 0) {switch1++} else {switch2++};
+      if (a[i] != 0) {
+        switch1++;
+      } else {
+        switch2++;
+      }
     }
   }
-  
+
   return Math.min(switch1, switch2);
 }

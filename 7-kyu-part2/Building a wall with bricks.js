@@ -21,18 +21,18 @@ Wall height is 45 cm and wall width is 180 cm. There are 21 large bricks. (Yello
 
 So answer is "21L6M6S"
 */
-const calculateBricksCount=(width,height)=>{
-  let l=0;
-  let m=0;
-  let s=0
-  for (let i=0;i<height/5;i++){
-    if (i%3===0){
-      l+=width/60
+const calculateBricksCount = (width, height) => {
+  let l = 0;
+  let m = 0;
+  let s = 0;
+  for (let i = 0; i < height / 5; i++) {
+    if (i % 3 === 0) {
+      l += width / 60;
     } else {
-      m++
-      s++
-      l+=(width-20-40)/60
+      m++;
+      s++;
+      l += (width - 20 - 40) / 60;
     }
   }
-  return `${l?l+'L':''}${m?m+'M':''}${s?s+'S':''}`
-}
+  return `${l ? l + "L" : ""}${m ? m + "M" : ""}${s ? s + "S" : ""}`;
+};

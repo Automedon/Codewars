@@ -8,13 +8,13 @@ summation(25)==325
 summation(2.56)=="Invalid Value"
 The next problem in this series: Summation:2 (Link will be soon in once it is created)
 */
-function summation(x){
-  if (typeof x === 'number' && x%1===0) {
-  let count=0;
-  for (let i=0;i<=x;i++){
-  count+=i
+function summation(x) {
+  if (typeof x === "number" && x % 1 === 0) {
+    let count = 0;
+    for (let i = 0; i <= x; i++) {
+      count += i;
+    }
+    return count;
   }
-  return count
-  }
-  return "Invalid Value"
+  return "Invalid Value";
 }

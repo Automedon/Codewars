@@ -19,20 +19,18 @@ The router should also handle modifying existing routes. See the example tests f
 */
 
 class Router {
-    
-    constructor() {
-        this.routes = new Map();
-    }  
-        
-    bind(url, method, action) {
-        this.routes.set(url + ":" + method, action);
+  constructor() {
+    this.routes = new Map();
+  }
+
+  bind(url, method, action) {
+    this.routes.set(url + ":" + method, action);
+  }
+
+  runRequest(url, method) {
+    if (!this.routes.has(url + ":" + method)) {
+      return "Error 404: Not Found";
     }
-    
-    runRequest(url, method) {
-        if (!this.routes.has(url + ":" + method)) {
-            return "Error 404: Not Found";
-        }
-        return this.routes.get(url + ":" + method)();
-    }
-    
+    return this.routes.get(url + ":" + method)();
+  }
 }

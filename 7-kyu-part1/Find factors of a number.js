@@ -7,7 +7,9 @@ If the parameter is not an integer or less than 1, return -1. In C# return an em
 For Example: factors(54) should return [54, 27, 18, 9, 6, 3, 2, 1]
 */
 
-function factors(x){
+function factors(x) {
   if (x != parseInt(x, 10) || x < 1) return -1;
-  return Array.from(Array(x), (x, i) => x = i+1).filter(n => !(x % n)).sort((a, b) => b - a);
+  return Array.from(Array(x), (x, i) => (x = i + 1))
+    .filter(n => !(x % n))
+    .sort((a, b) => b - a);
 }

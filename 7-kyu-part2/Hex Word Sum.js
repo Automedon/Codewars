@@ -17,4 +17,12 @@ Inputs are all uppercase and contain no punctuation
 0 can be substituted for O
 5 can be substituted for S
 */
-const hexWordSum = string => string.replace(/O/g,"0").replace(/S/g,"5").split(" ").reduce((r,el)=>r+(parseInt(el.replace(/.*[^ABCDEF05].*/,""),16)||0),0);
+const hexWordSum = string =>
+  string
+    .replace(/O/g, "0")
+    .replace(/S/g, "5")
+    .split(" ")
+    .reduce(
+      (r, el) => r + (parseInt(el.replace(/.*[^ABCDEF05].*/, ""), 16) || 0),
+      0
+    );

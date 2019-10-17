@@ -30,9 +30,10 @@ Note: There are no spaces in the pattern
 Hint: Use \n in string to jump to next line
 */
 
-function pattern(n){
+function pattern(n) {
   return Array.from({ length: n }, (x, i) =>
-    Array.from({ length: n }, (x, j) =>{
-    return (i + j) % n + 1}).join('')
-  ).join('\n');
+    Array.from({ length: n }, (x, j) => {
+      return ((i + j) % n) + 1;
+    }).join("")
+  ).join("\n");
 }

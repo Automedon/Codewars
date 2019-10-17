@@ -16,5 +16,8 @@ findNumber([1, 2, 3]) => 4
 findNumber([4, 2, 3]) => 1
 */
 function findNumber(array) {
-  return ((1+(array.length + 1))*(array.length + 1))/2-array.reduce((sum, item) => sum + item, 0)
+  return (
+    ((1 + (array.length + 1)) * (array.length + 1)) / 2 -
+    array.reduce((sum, item) => sum + item, 0)
+  );
 }

@@ -47,5 +47,5 @@ Your task is to create a function for the robot function that will zap away the 
 */
 
 function robot(skinScan) {
-    return skinScan.map(v=>v.map(v=>v.replace('X','*')))
+  return skinScan.map(v => v.map(v => v.replace("X", "*")));
 }

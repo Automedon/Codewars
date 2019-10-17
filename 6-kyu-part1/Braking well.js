@@ -31,13 +31,13 @@ Don't forget the reaction time t: t = 1
 Don't truncate or round your results. See in "RUN EXAMPLES" the function assertFuzzyEquals.
 Shell: only dist is tested.
 */
-const G = 9.81
-function dist(v, mu) {								
-   let u = v*5/18;
-		return (u*u)/(2 * mu * G) + u;	
+const G = 9.81;
+function dist(v, mu) {
+  let u = (v * 5) / 18;
+  return (u * u) / (2 * mu * G) + u;
 }
 
-function speed(d, mu) {							
-      let b = -2 * mu * G;
-	    return (3.6 * (b + Math.sqrt(b*b - 4*b*d) ) / 2);
+function speed(d, mu) {
+  let b = -2 * mu * G;
+  return (3.6 * (b + Math.sqrt(b * b - 4 * b * d))) / 2;
 }

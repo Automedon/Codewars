@@ -13,6 +13,6 @@ A few more examples:
 [["ABC",16], ["11",2]] --> 2751
 Bases can be between 2 and 36 (2<=base<=36)
 */
-function sumItUp(n){
-  return n.reduce((a,b)=>a+(parseInt(b[0],b[1])),0);
+function sumItUp(n) {
+  return n.reduce((a, b) => a + parseInt(b[0], b[1]), 0);
 }

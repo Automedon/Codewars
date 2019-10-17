@@ -13,11 +13,11 @@ The array numbers is a sorted array, value range: -100...100
 
 The result will be the first pair of numbers, for example,findAB([1,2,3,4,5,6],6) should return [1,6], instead of [2,3]
 */
-function findAB(numbers,c){
-   for (let i=0;i<numbers.length;i++){
-     for (let j=1+i;j<numbers.length;j++){
-      if (numbers[i]*numbers[j]===c) return [numbers[i],numbers[j]]
-     }
-   }
-  return null
+function findAB(numbers, c) {
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = 1 + i; j < numbers.length; j++) {
+      if (numbers[i] * numbers[j] === c) return [numbers[i], numbers[j]];
+    }
+  }
+  return null;
 }

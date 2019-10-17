@@ -23,6 +23,10 @@ Note: as I've got some problem outputting "Δ" in tests, I will use "^" instead 
 
 " May the Code be with you ! "
 */
-function symDiff(s1, s2){
-  return new Set([...s1].filter(v=>![...s2].includes(v)).concat([...s2].filter(v=>![...s1].includes(v))))
+function symDiff(s1, s2) {
+  return new Set(
+    [...s1]
+      .filter(v => ![...s2].includes(v))
+      .concat([...s2].filter(v => ![...s1].includes(v)))
+  );
 }

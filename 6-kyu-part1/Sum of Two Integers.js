@@ -20,12 +20,11 @@ Input >> Output Examples
 
 3- Add (-14,-16) ==> return (-30)
 */
-function add(x, y)
-{
+function add(x, y) {
   while (y != 0) {
-  let carry = x & y;
-  x = x ^ y;
-  y = carry << 1;
-        }
-        return x;
+    let carry = x & y;
+    x = x ^ y;
+    y = carry << 1;
+  }
+  return x;
 }

@@ -20,5 +20,5 @@ A random string of lower case letters, numbers and spaces.
 true if all "g"s are happy, false otherwise.
 */
 function gHappy(str) {
-  return str.replace(/g{2,}/gi,'').match(/g/)===null
+  return str.replace(/g{2,}/gi, "").match(/g/) === null;
 }

@@ -17,5 +17,9 @@ let isInertial = arr => {
   const max = Math.max(...arr);
   const odds = arr.filter(e => e % 2 != 0);
   const evens = arr.filter(e => e % 2 == 0 && e != max);
-  return arr.some(e => e % 2 != 0) && max % 2 == 0 && odds.every(o => evens.every(e => e <= o));
-}
+  return (
+    arr.some(e => e % 2 != 0) &&
+    max % 2 == 0 &&
+    odds.every(o => evens.every(e => e <= o))
+  );
+};

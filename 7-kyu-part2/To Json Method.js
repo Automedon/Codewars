@@ -6,7 +6,6 @@ example:
 
    {"a" : 1 } == { a : 1}.toJson();
 */
-Object.prototype.toJson=function()
-{
-  return JSON.stringify(this)
-}
+Object.prototype.toJson = function() {
+  return JSON.stringify(this);
+};

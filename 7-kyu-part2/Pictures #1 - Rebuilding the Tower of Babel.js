@@ -72,11 +72,11 @@ Preloaded for you is a handy n.times method that you may want to use to greatly 
 P.S. If you haven't completed the n.times Kata already you may want to complete it first before continuing on this Kata :D
 */
 function babel(height) {
-  let arr=[]
-  for (let i=0;i<height;i++){
-    arr.push(' '.repeat(height-i-1)+'o'.repeat(1+i*2))
-    arr.push(' '.repeat(height-i-1)+'o'.repeat(1+i*2))
-    arr.push(' '.repeat(height-i-1)+'o'.repeat(1+i*2))
+  let arr = [];
+  for (let i = 0; i < height; i++) {
+    arr.push(" ".repeat(height - i - 1) + "o".repeat(1 + i * 2));
+    arr.push(" ".repeat(height - i - 1) + "o".repeat(1 + i * 2));
+    arr.push(" ".repeat(height - i - 1) + "o".repeat(1 + i * 2));
   }
-  return arr.join`\n`
+  return arr.join`\n`;
 }

@@ -20,6 +20,6 @@ Task.ResultString(8, "11101111") // answer is 6 =>  sequence of the possible ste
 */
 
 const CalculateString = (_, s) => {
-  while (/01|10/.test(s)) s = s.replace(/01|10/g, '');
+  while (/01|10/.test(s)) s = s.replace(/01|10/g, "");
   return s.length;
-}
+};

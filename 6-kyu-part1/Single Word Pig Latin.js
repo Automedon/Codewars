@@ -17,15 +17,14 @@ For example, the word "spaghetti" becomes "aghettispay" because the first two le
 
 
 */
-function pigLatin(string){
-  string=string.toLowerCase()
-  if (/[0-9]/.test(string)) return null
-  if (/[auioe]/.test(string[0])) return string+'way'
-  for (let i=0;i<string.length;i++)
-  {
-  if (/[auioe]/.test(string[0])) return (string+'ay')
-  let temp = string[0];
-  string=string.substring(1)+temp
+function pigLatin(string) {
+  string = string.toLowerCase();
+  if (/[0-9]/.test(string)) return null;
+  if (/[auioe]/.test(string[0])) return string + "way";
+  for (let i = 0; i < string.length; i++) {
+    if (/[auioe]/.test(string[0])) return string + "ay";
+    let temp = string[0];
+    string = string.substring(1) + temp;
   }
-  return (string+'ay')
+  return string + "ay";
 }

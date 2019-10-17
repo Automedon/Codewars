@@ -16,7 +16,7 @@ Note that if x contains three instances of the letter 'l', that still scores thr
 
 If the sum of the three parameters (as described above) is > 22, return 'Sabbatical! Boom!', else return 'Back to your desk, boy.'.
 */
-function sabb(x, val, happ){
-  x=(x.match(/[sabticl]/gi)||[]).length
-  return x+val+happ>22?'Sabbatical! Boom!':'Back to your desk, boy.'
+function sabb(x, val, happ) {
+  x = (x.match(/[sabticl]/gi) || []).length;
+  return x + val + happ > 22 ? "Sabbatical! Boom!" : "Back to your desk, boy.";
 }

@@ -16,23 +16,32 @@ And finally the filters should only accept integer values from an array, for exa
 
 ["a", 1, "b", 300, "x", "q", 63, 122, 181, "z", 0.83, 0.11].even() // should return [300, 122]
 */
-Array.prototype.even = function(){
-   return this.filter(v=>v%2===0&&typeof v==='number'&&v!==0&&Number.isInteger(v))
-}
+Array.prototype.even = function() {
+  return this.filter(
+    v => v % 2 === 0 && typeof v === "number" && v !== 0 && Number.isInteger(v)
+  );
+};
 
-Array.prototype.odd = function(){
+Array.prototype.odd = function() {
+  return this.filter(
+    v => v % 2 !== 0 && typeof v === "number" && Number.isInteger(v)
+  );
+};
 
-  return this.filter(v=>v%2!==0&&typeof v==='number'&&Number.isInteger(v))
-}
+Array.prototype.under = function(x) {
+  return this.filter(
+    v => v < x && typeof v === "number" && Number.isInteger(v)
+  );
+};
 
-Array.prototype.under = function(x){
-  return this.filter(v=>v<x&&typeof v==='number'&&Number.isInteger(v))
-}
+Array.prototype.over = function(x) {
+  return this.filter(
+    v => v > x && typeof v === "number" && Number.isInteger(v)
+  );
+};
 
-Array.prototype.over = function(x){
-  return this.filter(v=>v>x&&typeof v==='number'&&Number.isInteger(v))
-}
-
-Array.prototype.inRange = function(min,max){
-   return this.filter(v=>v>=min&&v<=max&&typeof v==='number'&&Number.isInteger(v))
-}
+Array.prototype.inRange = function(min, max) {
+  return this.filter(
+    v => v >= min && v <= max && typeof v === "number" && Number.isInteger(v)
+  );
+};

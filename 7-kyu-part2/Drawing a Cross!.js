@@ -16,12 +16,25 @@ The arms of the cross must only intersect through one central 'x' character, and
 If n<3, function should return "Not possible to draw cross for grids less than 3x3!"
 */
 function drawACross(n) {
-    if (n<3) return 'Not possible to draw cross for grids less than 3x3!'
-    if (n%2==0) return 'Centered cross not possible!'
-    let str = '';
-    for (let i=0;i<n/2-1;i++){
-      let a= i*2
-      str+=' '.repeat(i)+'x'+' '.repeat(Math.abs(n-a-2))+'x'+' '.repeat(i)+'\n'
-    }
-    return (str+' '.repeat((n)/2)+'x'+' '.repeat((n)/2)+'\n'+str.split`\n`.reverse().join`\n`).replace(/\n\n/,'\n')
+  if (n < 3) return "Not possible to draw cross for grids less than 3x3!";
+  if (n % 2 == 0) return "Centered cross not possible!";
+  let str = "";
+  for (let i = 0; i < n / 2 - 1; i++) {
+    let a = i * 2;
+    str +=
+      " ".repeat(i) +
+      "x" +
+      " ".repeat(Math.abs(n - a - 2)) +
+      "x" +
+      " ".repeat(i) +
+      "\n";
+  }
+  return (
+    str +
+    " ".repeat(n / 2) +
+    "x" +
+    " ".repeat(n / 2) +
+    "\n" +
+    str.split`\n`.reverse().join`\n`
+  ).replace(/\n\n/, "\n");
 }

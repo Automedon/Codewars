@@ -10,5 +10,10 @@ Examples:
   vaporcode("Why isn't my code working?") // output => "W  H  Y  I  S  N  T  M  Y  C  O  D  E  W  O  R  K  I  N  G"
 */
 function vaporcode(string) {
-  return string.split(' ').join('').split('').join('  ').toUpperCase()
+  return string
+    .split(" ")
+    .join("")
+    .split("")
+    .join("  ")
+    .toUpperCase();
 }

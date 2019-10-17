@@ -8,6 +8,6 @@ For example, the function getNum(obj) return 10 where obj = { number1: 12 , gcd:
 
 ALGORITHMSFUNDAMENTALS
 */
-function getNum(obj){
-    return obj.lcm/obj.number1*obj.gcd
-  }
+function getNum(obj) {
+  return (obj.lcm / obj.number1) * obj.gcd;
+}

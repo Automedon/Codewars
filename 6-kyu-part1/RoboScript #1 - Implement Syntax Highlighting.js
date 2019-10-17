@@ -27,13 +27,17 @@ highlight("FFFR345F2LL"); // => "<span style=\"color: pink\">FFF</span><span sty
 Note that the use of <span> tags must be exactly the same format as demonstrated above. Even if your solution produces the same visual result as the expected answers, if you miss a space betwen "color:" and "green", for example, you will fail the tests.
 */
 function highlight(code) {
-  return code.replace(/(\d+)/gi,v=>{
-  return `<span style="color: orange">${v}</span>`
-  }).replace(/(L+)/g,v=>{
-  return `<span style="color: red">${v}</span>`
-  }).replace(/(R+)/g,v=>{
-  return `<span style="color: green">${v}</span>`
-  }).replace(/(F+)/g,v=>{
-  return `<span style="color: pink">${v}</span>`
-  })
+  return code
+    .replace(/(\d+)/gi, v => {
+      return `<span style="color: orange">${v}</span>`;
+    })
+    .replace(/(L+)/g, v => {
+      return `<span style="color: red">${v}</span>`;
+    })
+    .replace(/(R+)/g, v => {
+      return `<span style="color: green">${v}</span>`;
+    })
+    .replace(/(F+)/g, v => {
+      return `<span style="color: pink">${v}</span>`;
+    });
 }

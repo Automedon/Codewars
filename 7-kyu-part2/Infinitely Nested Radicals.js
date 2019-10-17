@@ -16,5 +16,5 @@ Simple!
 arguments passed in will be 1 or greater
 */
 function fn(x) {
-  return (1+Math.sqrt(1+4*x))/2;
+  return (1 + Math.sqrt(1 + 4 * x)) / 2;
 }

@@ -23,13 +23,13 @@ The value of n is unknown and may be pretty high because some classes joined to 
 You may see more example tests in the Example Tests Cases Box.
 */
 function shortestArrang(n) {
-    let arr =[]
-    for (let i=n-1;i>0;i--){
-      for (let j=i;j>0;j--){
-        arr.push(j)
-        if (arr.reduce((a,b)=>a+b,0)===n) return arr
-      }
-      arr=[]
+  let arr = [];
+  for (let i = n - 1; i > 0; i--) {
+    for (let j = i; j > 0; j--) {
+      arr.push(j);
+      if (arr.reduce((a, b) => a + b, 0) === n) return arr;
     }
-    return [-1];
+    arr = [];
+  }
+  return [-1];
 }

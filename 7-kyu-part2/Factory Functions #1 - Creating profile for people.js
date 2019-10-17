@@ -43,11 +43,30 @@ The articles below may help you complete this Kata:
 Factory Functions Tutorial
 The Two Pillars of Javascript Part I - Why constructors and classes in Javascript are a mess (HIGHLY RECOMMENDED READ)
 */
-function person(firstName,lastName,age,gender,employed,occupation,married) {
+function person(
+  firstName,
+  lastName,
+  age,
+  gender,
+  employed,
+  occupation,
+  married
+) {
   return {
-  firstName,lastName,age,gender,employed,occupation,married,
-  sayName:function() { return this.firstName + ' ' + this.lastName},
-  introduce:function() { return `Hello, my name is ${this.sayName()}.  I am ${this.age} years old.  I am a ${this.gender}.`
-  }
-}
+    firstName,
+    lastName,
+    age,
+    gender,
+    employed,
+    occupation,
+    married,
+    sayName: function() {
+      return this.firstName + " " + this.lastName;
+    },
+    introduce: function() {
+      return `Hello, my name is ${this.sayName()}.  I am ${
+        this.age
+      } years old.  I am a ${this.gender}.`;
+    }
+  };
 }

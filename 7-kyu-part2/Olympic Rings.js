@@ -10,9 +10,21 @@ if score is 1 or less, return 'Not even a medal!'; if score is 2, return 'Bronze
 
 Dots over i's and any other letters don't count as rings.
 */
-function olympicRing(a){
-  let count=0;
-  a.split('').map(v=>/[abdegopqADOPQR]/.test(v)?count++:v==='B'?count+=2:count+=0)
-  count=Math.floor(count/2)
-  return count===2?'Bronze!':count===3?'Silver!':count>=4?'Gold!':'Not even a medal!'
+function olympicRing(a) {
+  let count = 0;
+  a.split("").map(v =>
+    /[abdegopqADOPQR]/.test(v)
+      ? count++
+      : v === "B"
+      ? (count += 2)
+      : (count += 0)
+  );
+  count = Math.floor(count / 2);
+  return count === 2
+    ? "Bronze!"
+    : count === 3
+    ? "Silver!"
+    : count >= 4
+    ? "Gold!"
+    : "Not even a medal!";
 }

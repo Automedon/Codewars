@@ -11,33 +11,33 @@ The task: Given a list of cards (could be empty), return the number of remaining
 Note for the random tests: If a player that has already been sent off receives another card - ignore it.
 */
 function menStillStanding(cards) {
- let A = [0,0,0,0,0,0,0,0,0,0,0,0];
- let B = [0,0,0,0,0,0,0,0,0,0,0,0];
- let countA = 0
- let countB = 0
- for(let i=0;i<cards.length;i++){
-   let team=cards[i].match(/^A|B/).join``
-   let number=cards[i].match(/\d+/).join``*1
-   let color=cards[i].match(/Y|R$/).join``
-  if (team==='A'){
-    if (color==='Y'){
-      A[number]++
-    } else {
-      A[number]+=2
+  let A = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  let B = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  let countA = 0;
+  let countB = 0;
+  for (let i = 0; i < cards.length; i++) {
+    let team = cards[i].match(/^A|B/).join``;
+    let number = cards[i].match(/\d+/).join`` * 1;
+    let color = cards[i].match(/Y|R$/).join``;
+    if (team === "A") {
+      if (color === "Y") {
+        A[number]++;
+      } else {
+        A[number] += 2;
+      }
+    }
+    if (team === "B") {
+      if (color === "Y") {
+        B[number]++;
+      } else {
+        B[number] += 2;
+      }
+    }
+    countA = A.filter(v => v > 1).length;
+    countB = B.filter(v => v > 1).length;
+    if (11 - countA === 6 || 11 - countB === 6) {
+      return [11 - countA, 11 - countB];
     }
   }
-  if (team==='B'){
-    if (color==='Y'){
-      B[number]++
-    } else {
-      B[number]+=2
-    }
-  }
-  countA=A.filter(v=>v>1).length
-  countB=B.filter(v=>v>1).length
-  if (11-countA===6||11-countB===6){
-    return [11-countA,11-countB]
-  }
- }
- return [11-countA,11-countB]
+  return [11 - countA, 11 - countB];
 }

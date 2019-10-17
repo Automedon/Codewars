@@ -4,8 +4,8 @@ Given an array of numbers, sort them in such a manner that all the odd numbers i
 
 If there are no issues with the kata and you successfully completed it, please rank and upvote!
 */
-function sortItOut(array){
-  const odd=array.filter(v=>Math.floor(v)%2!==0).sort((a,b)=>a-b);
-  const even=array.filter(v=>Math.floor(v)%2===0).sort((a,b)=>b-a);
-  return odd.concat(even)
+function sortItOut(array) {
+  const odd = array.filter(v => Math.floor(v) % 2 !== 0).sort((a, b) => a - b);
+  const even = array.filter(v => Math.floor(v) % 2 === 0).sort((a, b) => b - a);
+  return odd.concat(even);
 }

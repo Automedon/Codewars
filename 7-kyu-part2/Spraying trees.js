@@ -17,6 +17,16 @@ For example:
 task('Monday',15,2) -> 'It is Monday today, James, you have to work, you must spray 15 trees and you need 30 dollars to buy liquid'
 */
 function task(w, n, c) {
-  return `It is ${w} today, ${w==='Wednesday'?'Robert':w==='Monday'?'James'
-  :w==='Friday'?'William':w==='Tuesday'?'John':'Michael'}, you have to work, you must spray ${n} trees and you need ${n*c} dollars to buy liquid`  
+  return `It is ${w} today, ${
+    w === "Wednesday"
+      ? "Robert"
+      : w === "Monday"
+      ? "James"
+      : w === "Friday"
+      ? "William"
+      : w === "Tuesday"
+      ? "John"
+      : "Michael"
+  }, you have to work, you must spray ${n} trees and you need ${n *
+    c} dollars to buy liquid`;
 }

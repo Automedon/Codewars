@@ -8,11 +8,11 @@ Given a date day from 1 (January 1st) to 365 (December 31th) your task is to ret
 
 Note: We are not considering leap years.
 */
-function fourSeasons(d){
-  if (d>365) return "The year flew by!"
-  if (d>355) return 'Winter Season'
-  if (d<80) return 'Winter Season'
-  if (d<173) return 'Spring Season'
-  if (d<260) return 'Summer Season'
-  return 'Autumn Season'
+function fourSeasons(d) {
+  if (d > 365) return "The year flew by!";
+  if (d > 355) return "Winter Season";
+  if (d < 80) return "Winter Season";
+  if (d < 173) return "Spring Season";
+  if (d < 260) return "Summer Season";
+  return "Autumn Season";
 }

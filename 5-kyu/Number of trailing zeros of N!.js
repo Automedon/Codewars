@@ -17,11 +17,11 @@ zeros(12) = 2
 Hint: You're not meant to calculate the factorial. Find another way to find the number of zeros.
 */
 
-function zeros (n) {
+function zeros(n) {
   let zs = 0;
-  while(n>0){
-    n=Math.floor(n/5);
-    zs+=n
+  while (n > 0) {
+    n = Math.floor(n / 5);
+    zs += n;
   }
   return zs;
 }

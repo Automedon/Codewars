@@ -12,9 +12,8 @@ If it is an impossible sequence (with the beginning being larger the end and a p
 
 Note: differing from the other base kata, much larger ranges are going to be tested, so you should hope to get your algo optimized and to avoid brute-forcing your way through the solution.
 */
-function sequenceSum(begin, end, step){
+function sequenceSum(begin, end, step) {
   let result = 0;
-  for (let i = begin; step > 0 ? i <= end : i >= end; i+=step)
-    result +=i;
+  for (let i = begin; step > 0 ? i <= end : i >= end; i += step) result += i;
   return result;
 }

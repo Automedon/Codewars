@@ -24,14 +24,15 @@ then you'll see:
 The drawing window is 14x14 units wide and centered at the origin.
 */
 function pointInPoly(poly, point) {
-        let n = poly.length;
-        let [x, y] = point;
-        let inside = false;
-        for (let i = 0, xi, yi, xj, yj, intersect, j = n - 1; i < n; j = i++) {
-            [xi, yi] = poly[i];
-            [xj, yj] = poly[j];
-            if (((yi > y) != (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) // intersect
-                inside = !inside;
-        }
-        return inside;
-    }
+  let n = poly.length;
+  let [x, y] = point;
+  let inside = false;
+  for (let i = 0, xi, yi, xj, yj, intersect, j = n - 1; i < n; j = i++) {
+    [xi, yi] = poly[i];
+    [xj, yj] = poly[j];
+    if (yi > y != yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi)
+      // intersect
+      inside = !inside;
+  }
+  return inside;
+}

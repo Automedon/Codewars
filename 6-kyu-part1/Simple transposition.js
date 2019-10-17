@@ -13,8 +13,8 @@ Row 2	i	p	e	t	x
 So the result string will be: `"Sml etipetx"`
 */
 function simpleTransposition(text) {
-  const row1=[];
-  const row2=[];
-  text.split(``).map((v,i)=>i%2===0?row1.push(v):row2.push(v))
-  return row1.join(``)+row2.join(``)
+  const row1 = [];
+  const row2 = [];
+  text.split(``).map((v, i) => (i % 2 === 0 ? row1.push(v) : row2.push(v)));
+  return row1.join(``) + row2.join(``);
 }

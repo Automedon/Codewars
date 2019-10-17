@@ -50,16 +50,16 @@ Info:
 No silly test cases will be used such as: negative/0 deposit amount, negative/0 target balance, astronomical input sizes.
 */
 function calculateRetirement(deposit, targetBalance) {
- var result = {};
- for (var i= 1; i<7; i++) {
-    var year=1,
-     value = deposit*(1+i/100);
+  var result = {};
+  for (var i = 1; i < 7; i++) {
+    var year = 1,
+      value = deposit * (1 + i / 100);
     while (value < targetBalance) {
-       value += deposit;
-       value *=(1+i/100);
-       year ++;
+      value += deposit;
+      value *= 1 + i / 100;
+      year++;
     }
     result[i] = year;
   }
- return result
+  return result;
 }

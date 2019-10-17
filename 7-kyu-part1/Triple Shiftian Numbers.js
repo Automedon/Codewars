@@ -14,8 +14,9 @@ Note: this is meant to be an interview quiz, so the description is scarce in det
 Special thanks to the first person I met in person here in London just because of CW and that assisted me during the creation of this kata ;)
 */
 
-function tripleShiftian(base,n){
-  for (let i = 2; i < n; i++) {    
-      base.push(4 * base[i] - 5 * base[i-1] + 3 * base[i-2]);}
+function tripleShiftian(base, n) {
+  for (let i = 2; i < n; i++) {
+    base.push(4 * base[i] - 5 * base[i - 1] + 3 * base[i - 2]);
+  }
   return base[n];
 }

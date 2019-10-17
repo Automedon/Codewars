@@ -11,8 +11,11 @@ Here is an example of your return
 In C# and Java the mean return is a double.
 */
 
-function mean(lst){
-let a=lst.filter(value=>value.match(/[a-z]/gi)).join('');
-let b=lst.filter(value=>value.match(/[0-9]/gi)).reduce((acc,cur)=>acc+parseFloat(cur),0)/10
-  return [b,a]
+function mean(lst) {
+  let a = lst.filter(value => value.match(/[a-z]/gi)).join("");
+  let b =
+    lst
+      .filter(value => value.match(/[0-9]/gi))
+      .reduce((acc, cur) => acc + parseFloat(cur), 0) / 10;
+  return [b, a];
 }

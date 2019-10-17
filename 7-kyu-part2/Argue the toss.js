@@ -25,27 +25,27 @@ The singular: '1 argument' as opposed to multiples: '3 arguments'
 Verb agreement: 'and it is' as opposed to 'and they are'
 */
 function anArgument() {
-  let arg=[...arguments]
-  if (arg.length===0){
-    return `You didn't give me any arguments.`
+  let arg = [...arguments];
+  if (arg.length === 0) {
+    return `You didn't give me any arguments.`;
   }
-  if (arg.length===1){
-    return `You gave me 1 argument and it is "${arg[0]}".`
+  if (arg.length === 1) {
+    return `You gave me 1 argument and it is "${arg[0]}".`;
   }
-  if (arg.length===2){
-    return `You gave me 2 arguments and they are "${arg[0]}" and "${arg[1]}".`
+  if (arg.length === 2) {
+    return `You gave me 2 arguments and they are "${arg[0]}" and "${arg[1]}".`;
   }
-  let str = '';
-  for (let i=0;i<arg.length;i++){
-   if (i<arg.length-2){
-     str+=`"${arg[i]}", `
-   }   
-   if (i===arg.length-2){
-     str+=`"${arg[i]}" `
-   } 
-   if (i===arg.length-1){
-     str+=`and "${arg[i]}".`
-   } 
+  let str = "";
+  for (let i = 0; i < arg.length; i++) {
+    if (i < arg.length - 2) {
+      str += `"${arg[i]}", `;
+    }
+    if (i === arg.length - 2) {
+      str += `"${arg[i]}" `;
+    }
+    if (i === arg.length - 1) {
+      str += `and "${arg[i]}".`;
+    }
   }
-  return `You gave me ${arg.length} arguments and they are ${str}`
+  return `You gave me ${arg.length} arguments and they are ${str}`;
 }

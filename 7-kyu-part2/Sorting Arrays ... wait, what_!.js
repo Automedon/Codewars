@@ -10,16 +10,16 @@ Being the developer that you are, you decide to fix the sort() method so that it
 Extension
 If you wish, you could also fix the sort() method for arrays such that it also works on String arrays (sorting them into alphabetical order) but please note that it is not required and will not be tested.
 */
-Array.prototype.sort = function(){
-    const arr=this.slice();
-    for (let i=0; i<arr.length;i++){
-        for (let j=0; j<arr.length;j++){
-            if (arr[j]>arr[j+1]){
-                let temp = arr[j+1];
-                arr[j+1]=arr[j];
-                arr[j]=temp;
-            }
-        }
+Array.prototype.sort = function() {
+  const arr = this.slice();
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j + 1];
+        arr[j + 1] = arr[j];
+        arr[j] = temp;
+      }
     }
-    return arr;
-}
+  }
+  return arr;
+};

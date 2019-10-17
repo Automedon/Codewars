@@ -15,21 +15,21 @@ Examples
               [".", ".", "."] ]
 */
 const matrixfy = str => {
-  if (!str.length) return 'name must be at least one letter'
-  let length = 1
-  while (str.length>length){
-    length++
-    if (str.length<Math.pow(length,2)) break
+  if (!str.length) return "name must be at least one letter";
+  let length = 1;
+  while (str.length > length) {
+    length++;
+    if (str.length < Math.pow(length, 2)) break;
   }
-  let arr = []
-  let z = 0
-  for (let i=0;i<length;i++){
-    let temp = []
-    for (let j=0;j<length;j++){
-      temp.push(str[z]||'.')
-      z++
+  let arr = [];
+  let z = 0;
+  for (let i = 0; i < length; i++) {
+    let temp = [];
+    for (let j = 0; j < length; j++) {
+      temp.push(str[z] || ".");
+      z++;
     }
-    arr.push(temp)
+    arr.push(temp);
   }
-  return arr
+  return arr;
 };

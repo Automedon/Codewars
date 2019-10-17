@@ -13,6 +13,6 @@ toBinary(-3)=="11111111111111111111111111111101"
 Be Ready for Large Numbers. Happy Coding ^_^
 */
 
-function toBinary(n){
-return (n >>> 0).toString(2);
+function toBinary(n) {
+  return (n >>> 0).toString(2);
 }

@@ -8,6 +8,6 @@ Implement this
 [2,5,1,'ab'].max() // returns NaN
 Array will contain at least one item.
 */
-Array.prototype.max=function(){
-  return Math.max(...this)
-}
+Array.prototype.max = function() {
+  return Math.max(...this);
+};

@@ -18,5 +18,5 @@ The power, pow_, always higher than 1.
 Happy coding!!
 */
 function findNextPower(val, pow) {
-    return (Math.floor(val ** (1 / pow)) + 1) ** pow
+  return (Math.floor(val ** (1 / pow)) + 1) ** pow;
 }

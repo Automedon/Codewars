@@ -25,5 +25,9 @@ In the case of more than one array sharing the same sum, place them in the same 
 cantBeatSoJoin([[0,1,1,1], [1,0,1,1], [1,1,0,1], [3]]) -> [0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 3]
 */
 function cantBeatSoJoin(numbers) {
-  return [].concat(...numbers.sort((a,b)=>(b.reduce((a,b)=>a+b,0))-(a.reduce((a,b)=>a+b,0))))
+  return [].concat(
+    ...numbers.sort(
+      (a, b) => b.reduce((a, b) => a + b, 0) - a.reduce((a, b) => a + b, 0)
+    )
+  );
 }

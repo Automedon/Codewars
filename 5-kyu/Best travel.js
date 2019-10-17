@@ -23,4 +23,13 @@ xs = [50] choose_best_sum(163, 3, xs) -> nil (or null or ... or -1 (C++, C, Rust
 
 ys = [91, 74, 73, 85, 73, 81, 87] choose_best_sum(230, 3, ys) -> 228
 */
-const chooseBestSum = (t, k, ls) => ls.reduce((r, e) => r.concat(r.filter(c => c.length < k).map(c => c.concat([e]))), [[]]).filter(c => c.length === k).map(c => c.reduce((a, b) => a + b)).filter(s => s <= t).sort((a, b) => b - a)[0] || null;
+const chooseBestSum = (t, k, ls) =>
+  ls
+    .reduce(
+      (r, e) => r.concat(r.filter(c => c.length < k).map(c => c.concat([e]))),
+      [[]]
+    )
+    .filter(c => c.length === k)
+    .map(c => c.reduce((a, b) => a + b))
+    .filter(s => s <= t)
+    .sort((a, b) => b - a)[0] || null;

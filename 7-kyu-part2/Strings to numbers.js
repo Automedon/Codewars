@@ -13,4 +13,4 @@ Edge Cases:
 
 2 - An empty array must return an empty array.
 */
-let convert=(a)=>a.map(v=>v*1)
+let convert = a => a.map(v => v * 1);

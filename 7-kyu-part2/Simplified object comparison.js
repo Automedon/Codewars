@@ -15,9 +15,9 @@ compareObjects({a: "bc", d: "ef"}, {d: "ef", a: "bc"})
 NB: The JSON.stringify method is invalid.
 */
 var compareObjects = function(objectA, objectB) {
-  if ((Object.keys(objectA)).length!==(Object.keys(objectB)).length) return false
-  for (let i in objectA){
-    if (objectA[i]!==objectB[i]) return false
+  if (Object.keys(objectA).length !== Object.keys(objectB).length) return false;
+  for (let i in objectA) {
+    if (objectA[i] !== objectB[i]) return false;
   }
-  return true
+  return true;
 };

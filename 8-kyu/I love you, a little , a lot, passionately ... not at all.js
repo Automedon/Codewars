@@ -14,12 +14,12 @@ Your goal in this kata is to determine which phrase the girls would say for a fl
 */
 
 const phrases = [
-  'not at all',
-  'I love you',
-  'a little',
-  'a lot',
-  'passionately',
-  'madly',
-]
+  "not at all",
+  "I love you",
+  "a little",
+  "a lot",
+  "passionately",
+  "madly"
+];
 
-const howMuchILoveYou = n => phrases[n % 6]
+const howMuchILoveYou = n => phrases[n % 6];

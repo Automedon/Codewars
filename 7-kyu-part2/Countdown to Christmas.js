@@ -9,18 +9,18 @@ Your function should take 1 argument (a Date object) which will be the day of th
 Watch out for leap years!
 */
 function daysUntilChristmas(days) {
-    let t = 86400000
-    const day=days.getDate();
-    const month=days.getMonth();
-    const year=days.getFullYear();
-    const date=new Date(year,11,25)
-    const time=days.getTime();
-    const newTime=date.getTime()
-    if (Math.floor((newTime-time)/t)<0){
-    const date=new Date(year+1,11,25)
-    const time=days.getTime();
-    const newTime=date.getTime()
-    return Math.floor((newTime-time)/t)
-    }
-    return Math.floor((newTime-time)/t)
+  let t = 86400000;
+  const day = days.getDate();
+  const month = days.getMonth();
+  const year = days.getFullYear();
+  const date = new Date(year, 11, 25);
+  const time = days.getTime();
+  const newTime = date.getTime();
+  if (Math.floor((newTime - time) / t) < 0) {
+    const date = new Date(year + 1, 11, 25);
+    const time = days.getTime();
+    const newTime = date.getTime();
+    return Math.floor((newTime - time) / t);
+  }
+  return Math.floor((newTime - time) / t);
 }

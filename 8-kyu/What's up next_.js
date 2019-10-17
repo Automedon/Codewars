@@ -8,17 +8,17 @@ nextItem([1, 2, 3, 4, 5, 6, 7], 3) # 4
 nextItem("testing", "t") # "e"
 */
 const nextItem = (xs, item) => {
-  let found = false
-  let finalValue
+  let found = false;
+  let finalValue;
 
   for (const i of xs) {
     if (found) {
-      finalValue = i
-      break
+      finalValue = i;
+      break;
     }
 
-    if (i === item) found = true
+    if (i === item) found = true;
   }
 
-  return finalValue
-}
+  return finalValue;
+};

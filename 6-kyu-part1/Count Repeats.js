@@ -10,5 +10,5 @@ Examples
 'ab cca'  => 'ab ca'  #  answer: 1
 */
 function countRepeats(str) {
-    return str.length-str.replace(/(.)\1+/g,'$1').length
+  return str.length - str.replace(/(.)\1+/g, "$1").length;
 }

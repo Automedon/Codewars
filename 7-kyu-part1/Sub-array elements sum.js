@@ -7,6 +7,10 @@ Say for example the parent array (etc, etc) has 3 sub-arrays inside: you should 
 One small note is that not always each sub-array will have enough elements, in which case you should then use a default value (if provided) or 0 (if not provided), as shown in the test cases.
 */
 
-function elementsSum(arr,d = 0){
-  return arr.reduce((sum, sub, i) => sum += (sub=sub[arr.length-1-i], sub==0 ? 0 : sub || d), 0);
+function elementsSum(arr, d = 0) {
+  return arr.reduce(
+    (sum, sub, i) =>
+      (sum += ((sub = sub[arr.length - 1 - i]), sub == 0 ? 0 : sub || d)),
+    0
+  );
 }

@@ -19,5 +19,5 @@ Array arr with its first and its last elements swapped.
 */
 
 function firstReverseTry(arr) {
-  return arr.length > 1 ? arr.slice(-1).concat(arr.slice(1, -1), arr[0]) : arr
+  return arr.length > 1 ? arr.slice(-1).concat(arr.slice(1, -1), arr[0]) : arr;
 }

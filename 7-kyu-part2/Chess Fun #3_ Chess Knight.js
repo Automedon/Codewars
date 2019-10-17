@@ -24,13 +24,15 @@ String consisting of letter+number - coordinates of the knight on an 8 × 8 ches
 [output] an integer
 */
 function chessKnight(cell) {
-  const [x, y] = ["abcdefgh".indexOf(cell[0]), +cell[1] - 1]
-  return  [[2, 3, 4, 4, 4, 4, 3, 2],
-           [3, 4, 6, 6, 6, 6, 4, 3],
-           [4, 6, 8, 8, 8, 8, 6, 4],
-           [4, 6, 8, 8, 8, 8, 6, 4],
-           [4, 6, 8, 8, 8, 8, 6, 4],
-           [4, 6, 8, 8, 8, 8, 6, 4],
-           [3, 4, 6, 6, 6, 6, 4, 3],
-           [2, 3, 4, 4, 4, 4, 3, 2]][x][y]
+  const [x, y] = ["abcdefgh".indexOf(cell[0]), +cell[1] - 1];
+  return [
+    [2, 3, 4, 4, 4, 4, 3, 2],
+    [3, 4, 6, 6, 6, 6, 4, 3],
+    [4, 6, 8, 8, 8, 8, 6, 4],
+    [4, 6, 8, 8, 8, 8, 6, 4],
+    [4, 6, 8, 8, 8, 8, 6, 4],
+    [4, 6, 8, 8, 8, 8, 6, 4],
+    [3, 4, 6, 6, 6, 6, 4, 3],
+    [2, 3, 4, 4, 4, 4, 3, 2]
+  ][x][y];
 }

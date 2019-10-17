@@ -6,5 +6,5 @@ Create a factory function artefact which accepts the following parameters, in th
 Get your timer out and get ready. Ready, set, GO!!! :D
 */
 function artefact(name, age, location, status) {
-  return Object.freeze({name, age, location, status})
+  return Object.freeze({ name, age, location, status });
 }

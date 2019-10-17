@@ -17,9 +17,9 @@ users = {  1  =>  93,
 */
 
 function nexus(users) {
-  const obj=Object.keys(users)
-  const obj2=Object.values(users)
-  const arr=obj.map((v,i)=>Math.abs(v*1-obj2[i]))
-  const index=arr.indexOf(Math.min(...arr.map(v=>Math.abs(v))))
-  return obj[index]*1
+  const obj = Object.keys(users);
+  const obj2 = Object.values(users);
+  const arr = obj.map((v, i) => Math.abs(v * 1 - obj2[i]));
+  const index = arr.indexOf(Math.min(...arr.map(v => Math.abs(v))));
+  return obj[index] * 1;
 }

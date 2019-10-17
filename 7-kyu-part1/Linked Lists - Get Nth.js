@@ -4,7 +4,7 @@ function Node(data) {
 }
 
 function getNth(node, index) {
-  if (!node) throw new Error('Invalid node at ' + index);
-  
-  return (index === 0) ? node : getNth(node.next, index - 1);
+  if (!node) throw new Error("Invalid node at " + index);
+
+  return index === 0 ? node : getNth(node.next, index - 1);
 }

@@ -16,5 +16,5 @@ How does Zalgo text work?
 Zalgo Text Generator
 */
 function readZalgo(zalgotext) {
-  return zalgotext.replace(/[^a-z0-9 \.,!?]/gi,'');
+  return zalgotext.replace(/[^a-z0-9 \.,!?]/gi, "");
 }

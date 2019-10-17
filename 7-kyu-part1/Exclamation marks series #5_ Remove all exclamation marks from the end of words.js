@@ -12,7 +12,9 @@ remove("Hi! Hi!") === "Hi Hi"
 remove("!!!Hi !!hi!!! !hi") === "!!!Hi !!hi !hi"
 */
 
-function remove(s){
- return s.split(' ').map(v=>v.replace(/!+$/gi,'')).join(' ')
-  
+function remove(s) {
+  return s
+    .split(" ")
+    .map(v => v.replace(/!+$/gi, ""))
+    .join(" ");
 }

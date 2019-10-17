@@ -12,10 +12,13 @@ removeOrAdd("!Hi! !Hi !Hi!!") === "!Hi !Hi! !Hi!!"
 Note
 Please don't post issue about difficulty or duplicate.
 */
-function removeOrAdd(s){
-  return s.split(" ").map(word=>{
-    if(word.match(/!{2,}$/)) return word
-    if(!word.match(/!$/)) return word + "!"
-    return word.replace(/!$/,'')
-  }).join(' ')
+function removeOrAdd(s) {
+  return s
+    .split(" ")
+    .map(word => {
+      if (word.match(/!{2,}$/)) return word;
+      if (!word.match(/!$/)) return word + "!";
+      return word.replace(/!$/, "");
+    })
+    .join(" ");
 }

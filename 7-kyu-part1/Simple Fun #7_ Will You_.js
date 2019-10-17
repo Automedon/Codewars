@@ -30,8 +30,12 @@ Input/Output
 true if the person contradicts Mary's belief, false otherwise.
 */
 function willYou(y, b, l) {
-  if (y===true&&b===true&&l===true||y===false&&b===false&&l===false) return false;
-  if (y===false&&b===true&&l===false) return false
-  if (y===true&&b===false&&l===false) return false
-  return true
+  if (
+    (y === true && b === true && l === true) ||
+    (y === false && b === false && l === false)
+  )
+    return false;
+  if (y === false && b === true && l === false) return false;
+  if (y === true && b === false && l === false) return false;
+  return true;
 }

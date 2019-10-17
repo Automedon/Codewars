@@ -22,21 +22,21 @@ ABAB CD
 function isomorph(a, b) {
   const dict = {};
   const dict2 = {};
-  let f1 = true
-  let f2 = true
-  a.split``.map((v,i)=>{
-    if (!dict[v]){
-      dict[v]=b[i]
+  let f1 = true;
+  let f2 = true;
+  a.split``.map((v, i) => {
+    if (!dict[v]) {
+      dict[v] = b[i];
     } else {
-      if (dict[v]!=b[i]) f1=false
+      if (dict[v] != b[i]) f1 = false;
     }
-  })
-  b.split``.map((v,i)=>{
-    if (!dict2[v]){
-      dict2[v]=a[i]
+  });
+  b.split``.map((v, i) => {
+    if (!dict2[v]) {
+      dict2[v] = a[i];
     } else {
-      if (dict2[v]!=a[i]) f2=false
+      if (dict2[v] != a[i]) f2 = false;
     }
-  })
-  return f1&&f2
+  });
+  return f1 && f2;
 }

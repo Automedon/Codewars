@@ -11,11 +11,10 @@ calculate(4,"/",0) //should return null
 Kind of a fork (not steal :)) of Basic Calculator kata by TheDoctor.
 */
 
-
-const calculate = (a, o, b) => { 
-    if(o === "+") return a + b;
-    if(o === "-") return a-b;
-    if(o === "/") return b !== 0 ? a/b : null;
-    if(o === '*') return a*b;
-    return null
+const calculate = (a, o, b) => {
+  if (o === "+") return a + b;
+  if (o === "-") return a - b;
+  if (o === "/") return b !== 0 ? a / b : null;
+  if (o === "*") return a * b;
+  return null;
 };

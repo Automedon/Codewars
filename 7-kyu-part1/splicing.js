@@ -10,8 +10,8 @@ For more information on .splice() visit http://www.w3schools.com/jsref/jsref_spl
 */
 
 Array.prototype.removeValue = function(thing) {
-   if (this.indexOf(thing) == -1) return false;
-   var i ;
-   while ((i = this.indexOf(thing)) > -1) this.splice(i,1);
-   return this;
-}
+  if (this.indexOf(thing) == -1) return false;
+  var i;
+  while ((i = this.indexOf(thing)) > -1) this.splice(i, 1);
+  return this;
+};

@@ -18,7 +18,7 @@ You have to use the filter-method of Javascript, which returns each element of t
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 */
-function roomMates( rooms, floor ){
-  return rooms.slice(floor * 6 - 6, +floor * 6).filter(v=>v) 
+function roomMates(rooms, floor) {
+  return rooms.slice(floor * 6 - 6, +floor * 6).filter(v => v);
 }
 // The worst kata

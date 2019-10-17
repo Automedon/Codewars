@@ -13,12 +13,11 @@ length - number of items to sort (optional)
 if the length argument is not passed or is zero, you sort all items to the right of the start postiton in the array
 */
 
-
-function sectSort(arr,s,f) {
-  f===0?f=undefined:f;
-  const before=arr.slice(0,s);
-  const center=arr.slice(s,(s+f)||arr.length).sort((a,b)=>a-b);
-  let end 
-  f===undefined? end=arr.slice(s,s):end=arr.slice(s+f);
-  return [...before,...center,...end];
+function sectSort(arr, s, f) {
+  f === 0 ? (f = undefined) : f;
+  const before = arr.slice(0, s);
+  const center = arr.slice(s, s + f || arr.length).sort((a, b) => a - b);
+  let end;
+  f === undefined ? (end = arr.slice(s, s)) : (end = arr.slice(s + f));
+  return [...before, ...center, ...end];
 }

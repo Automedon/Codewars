@@ -11,6 +11,19 @@ Complete the function which tests if a positive integer n is Harshad number, and
 */
 
 function numberJoy(n) {
- let sort=(n.toString().split('').map(Number).reduce((a,b)=>a+b,0));
- return n-(sort*sort.toString().split('').reverse().join(''))===0;
+  let sort = n
+    .toString()
+    .split("")
+    .map(Number)
+    .reduce((a, b) => a + b, 0);
+  return (
+    n -
+      sort *
+        sort
+          .toString()
+          .split("")
+          .reverse()
+          .join("") ===
+    0
+  );
 }

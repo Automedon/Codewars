@@ -12,5 +12,5 @@ d3.max(people, function(d){ return d.age }); // returns 12
 Let's create our own version of max which has similar functionality but only works on numbers. A stub of the function has been created for you along with a couple test cases.
 */
 function max(data, accessor) {
- return accessor?Math.max(...data.map(v=>accessor(v))):Math.max(...data)
+  return accessor ? Math.max(...data.map(v => accessor(v))) : Math.max(...data);
 }

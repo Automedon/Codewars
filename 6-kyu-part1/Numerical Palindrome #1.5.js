@@ -20,11 +20,16 @@ palindrome(1221,"8") => "Not valid"
 
 In Haskell, the return type is a Maybe which returns Nothing if either of the inputs is negative."
 */
-function palindrome(num,s) {
-  if (num!==parseInt(num)||s!==parseInt(s)||s<0||num<0) return 'Not valid'
-  const arr = []
-  for (let i=num;arr.length!==s;i++){
-  if (i.toString()===i.toString().split``.reverse().join``&&i.toString().length>1) arr.push(i)
+function palindrome(num, s) {
+  if (num !== parseInt(num) || s !== parseInt(s) || s < 0 || num < 0)
+    return "Not valid";
+  const arr = [];
+  for (let i = num; arr.length !== s; i++) {
+    if (
+      i.toString() === i.toString().split``.reverse().join`` &&
+      i.toString().length > 1
+    )
+      arr.push(i);
   }
-  return arr
+  return arr;
 }

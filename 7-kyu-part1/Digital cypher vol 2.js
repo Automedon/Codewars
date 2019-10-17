@@ -36,13 +36,19 @@ decode([ 20, 12, 18, 30, 21],1939);  ==> "scout"
 decode([ 14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8],1939);  ==>  "masterpiece"
 */
 
-function decode  (code, n) {
-  const arr=n.toString().split('').map(Number)
-  let arr2=code.slice();
-  let arr3=[];
-  for (let i=0,j=0;i<code.length;i++){
-  if (j>=arr.length){j=0}
-  arr3.push(arr2[i]-arr[j])
-  j++}
-    return arr3.map(v=>String.fromCharCode((v+96))).join('');
+function decode(code, n) {
+  const arr = n
+    .toString()
+    .split("")
+    .map(Number);
+  let arr2 = code.slice();
+  let arr3 = [];
+  for (let i = 0, j = 0; i < code.length; i++) {
+    if (j >= arr.length) {
+      j = 0;
+    }
+    arr3.push(arr2[i] - arr[j]);
+    j++;
+  }
+  return arr3.map(v => String.fromCharCode(v + 96)).join("");
 }

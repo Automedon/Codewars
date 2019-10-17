@@ -10,4 +10,4 @@ Examples:
 ['1','2'] => false
 [{1:1},{2:2}] => false
 */
-const arrCheck = value =>value.every(v=>Array.isArray(v))
+const arrCheck = value => value.every(v => Array.isArray(v));

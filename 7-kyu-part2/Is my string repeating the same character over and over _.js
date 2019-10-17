@@ -19,5 +19,5 @@ Corner cases: the function hasOneChar should return true if the string contains 
 Be creative!
 */
 function hasOneChar(s) {
-  return [...new Set(s)].length===1
+  return [...new Set(s)].length === 1;
 }

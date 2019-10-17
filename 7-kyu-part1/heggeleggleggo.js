@@ -20,6 +20,6 @@ Check Eloquent Javascript p176
 
 https://regex101.com/#javascript
 */
-function heggeleggleggo(word){
-  return word.replace(/([^aeiou\s])/ig,`$1egg`)
+function heggeleggleggo(word) {
+  return word.replace(/([^aeiou\s])/gi, `$1egg`);
 }

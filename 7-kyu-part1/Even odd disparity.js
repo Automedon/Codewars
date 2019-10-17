@@ -15,8 +15,14 @@ Other languages:
 solve([0, 1 ,2, 3, 'a', 'b']) = 0
 Good luck!
 */
-function solve(a){
-  let even = a.map(Number).filter(v=>!isNaN(v)).filter(v=>v%2==0).length;
-  let odd = a.map(Number).filter(v=>!isNaN(v)).filter(v=>v%2!=0).length;
-  return even-odd;
-};
+function solve(a) {
+  let even = a
+    .map(Number)
+    .filter(v => !isNaN(v))
+    .filter(v => v % 2 == 0).length;
+  let odd = a
+    .map(Number)
+    .filter(v => !isNaN(v))
+    .filter(v => v % 2 != 0).length;
+  return even - odd;
+}

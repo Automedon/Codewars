@@ -27,4 +27,5 @@ A non-empty string of English letters and punctuation marks.
 
 The number of words the boy has read.
 */
-const timedReading = (n,s) => (s.match(/\b\w+\b/g) || []).filter(e => e.length <= n).length;
+const timedReading = (n, s) =>
+  (s.match(/\b\w+\b/g) || []).filter(e => e.length <= n).length;

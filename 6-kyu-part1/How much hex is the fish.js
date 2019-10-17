@@ -13,5 +13,7 @@ Example
 fisHex("redlionfish") -> e,d,f -> XOR -> 12
 */
 function fisHex(str) {
-  return str.match(/[a-f]/gi) ? str.match(/[a-f]/gi).reduce((a,b) => a ^ parseInt(b, 16), 0) : 0;
+  return str.match(/[a-f]/gi)
+    ? str.match(/[a-f]/gi).reduce((a, b) => a ^ parseInt(b, 16), 0)
+    : 0;
 }

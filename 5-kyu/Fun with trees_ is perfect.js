@@ -16,7 +16,6 @@ Fun with trees: is perfect
 
 */
 class TreeNode {
-
   constructor(left = null, right = null) {
     this.left = left;
     this.right = right;
@@ -24,23 +23,28 @@ class TreeNode {
 
   static isPerfect(root) {
     if (!root) return true;
-    if (TreeNode.countChildren(root.left) !== TreeNode.countChildren(root.right)) return false;
+    if (
+      TreeNode.countChildren(root.left) !== TreeNode.countChildren(root.right)
+    )
+      return false;
     return TreeNode.isPerfect(root.left) && TreeNode.isPerfect(root.right);
   }
-  
+
   static countChildren(root) {
     if (!root) return 0;
-    return 1 + TreeNode.countChildren(root.left) + TreeNode.countChildren(root.right);
+    return (
+      1 + TreeNode.countChildren(root.left) + TreeNode.countChildren(root.right)
+    );
   }
-  
+
   static leaf() {
     return new TreeNode();
   }
-  
+
   static join(left, right) {
     return new TreeNode().withChildren(left, right);
   }
-  
+
   withLeft(left) {
     this.left = left;
     return this;
@@ -68,5 +72,4 @@ class TreeNode {
   withLeaves() {
     return this.withChildren(TreeNode.leaf(), TreeNode.leaf());
   }
-  
 }

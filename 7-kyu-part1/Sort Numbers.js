@@ -1,1 +1,1 @@
-let solution = (nums) => (nums || []).sort((a,b) => (a-b))
+let solution = nums => (nums || []).sort((a, b) => a - b);

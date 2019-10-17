@@ -23,5 +23,7 @@ For lazy sequences (elements created when needed) use Iterator.
 */
 
 function sequence(n, pattern) {
-  return [...Array(n)].map(typeof pattern == 'function' ? pattern : () => pattern);
+  return [...Array(n)].map(
+    typeof pattern == "function" ? pattern : () => pattern
+  );
 }

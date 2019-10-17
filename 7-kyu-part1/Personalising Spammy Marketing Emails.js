@@ -37,7 +37,9 @@ city
 favourite_products
 */
 
-function personalise(  campaign, person){
- return campaign.replace(/<FAVOURITE PRODUCTS>/g,person.favourite_products)
- .replace(/<CITY>/g,person.city).replace(/<NAME>/g,person.name)
+function personalise(campaign, person) {
+  return campaign
+    .replace(/<FAVOURITE PRODUCTS>/g, person.favourite_products)
+    .replace(/<CITY>/g, person.city)
+    .replace(/<NAME>/g, person.name);
 }

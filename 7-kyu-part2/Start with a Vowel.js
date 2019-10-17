@@ -4,6 +4,10 @@ Create a function that takes any sentence and redistributes the spaces (and adds
 
 EXAMPLES 'It is beautiful weather today!' becomes 'it isb e a ut if ulw e ath ert od ay' 'Coding is great' becomes 'c od ing isgr e at' 'my number is 0208-533-2325' becomes 'myn umb er is02085332325'
 */
-function vowelStart(str){
-  return str.replace(/[^a-z0-9]/gi,'').replace(/([aeiou])/gi,' $1').trim().toLowerCase()
+function vowelStart(str) {
+  return str
+    .replace(/[^a-z0-9]/gi, "")
+    .replace(/([aeiou])/gi, " $1")
+    .trim()
+    .toLowerCase();
 }

@@ -39,10 +39,10 @@ input is a string, e.g "2,4,2,6,2,8"
 output is then "6 12 4 12 3 12"
 */
 
-const gcd = (a, b) => b ? gcd(b, a % b) : a;
-const lcm = (a, b) => a * b / gcd(a, b);
+const gcd = (a, b) => (b ? gcd(b, a % b) : a);
+const lcm = (a, b) => (a * b) / gcd(a, b);
 
 function convertFrac(arr) {
   const cd = arr.reduce((a, [_, d]) => lcm(d, a), 1);
-  return arr.map(([n, d]) => `(${n * cd/d},${cd})`).join('');
+  return arr.map(([n, d]) => `(${(n * cd) / d},${cd})`).join("");
 }

@@ -8,4 +8,4 @@ Note: console.log internally uses the 'call' function, which therefore means you
 */
 Function.prototype.call = function(context, ...args) {
   return this.apply(context, args);
-}
+};

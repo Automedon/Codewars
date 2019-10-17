@@ -18,7 +18,7 @@ This is for beginners so we want to test basic loops and string manipulation. Ad
 */
 
 // Smash Words
-function smash (words) {
-    "use strict";
-    return words.join(' ');
-};
+function smash(words) {
+  "use strict";
+  return words.join(" ");
+}

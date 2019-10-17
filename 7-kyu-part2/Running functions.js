@@ -12,5 +12,5 @@ running([1,9,2,10], min) = [1,1,1,1]
 You don't have to validate the input values.
 */
 function running(lst, fn) {
-  return lst.map((v,i)=>lst.slice(0,i+1).reduce((a,b)=>fn(a,b)))
+  return lst.map((v, i) => lst.slice(0, i + 1).reduce((a, b) => fn(a, b)));
 }

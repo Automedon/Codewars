@@ -26,5 +26,5 @@ Notes:
 */
 
 function isTriangleNumber(number) {
- return Math.sqrt(number*8+1)===Math.sqrt(number*8+1).toFixed(0)*1
+  return Math.sqrt(number * 8 + 1) === Math.sqrt(number * 8 + 1).toFixed(0) * 1;
 }

@@ -27,5 +27,5 @@ Example:
 for equation 7*x**2 + 0.40E+14 * x + 8 = 0 we can find: x2 = -2e-13 which verifies abs(g(x)) < 1e-12.
 */
 function quadratic(a, b, c) {
-    return -c / b
+  return -c / b;
 }

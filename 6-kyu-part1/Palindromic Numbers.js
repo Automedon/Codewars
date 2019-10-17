@@ -22,9 +22,10 @@ palindromize(750)
 
 You can assume that all numbers provided as input will be actually paired with a palindromic result and that you will reach that result in less than 1000 iterations and yield a palindrome.
 */
-function palindromize(num){
-  for (let i=0;i<1000;i++){
-    if (num.toString().split``.reverse().join``===num.toString()) return i+' '+num
-    num+=num.toString().split``.reverse().join``*1
+function palindromize(num) {
+  for (let i = 0; i < 1000; i++) {
+    if (num.toString().split``.reverse().join`` === num.toString())
+      return i + " " + num;
+    num += num.toString().split``.reverse().join`` * 1;
   }
 }

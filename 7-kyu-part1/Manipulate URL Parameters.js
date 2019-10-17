@@ -19,7 +19,10 @@ addOrChangeUrlParameter("www.example.com?key=value", "key2=value2" )
 addOrChangeUrlParameter("www.example.com?key=oldValue`", "key=newValue" ) 
 // ->'www.example.com?key=newValue' (changes the parameter).
 */
-function addOrChangeUrlParameter (url, param) {
-      url = url.replace(new RegExp(param.split('=')[0]+'=[^&]*'), param);
-      return url + (url.indexOf(param) >= 0 ? '' : (url.indexOf('?')>=0?'&':'?')+param);
-    }
+function addOrChangeUrlParameter(url, param) {
+  url = url.replace(new RegExp(param.split("=")[0] + "=[^&]*"), param);
+  return (
+    url +
+    (url.indexOf(param) >= 0 ? "" : (url.indexOf("?") >= 0 ? "&" : "?") + param)
+  );
+}

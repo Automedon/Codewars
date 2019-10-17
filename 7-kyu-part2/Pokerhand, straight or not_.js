@@ -18,20 +18,18 @@ straight: 2-7-8-5-10-9-11
 
 not straight: 7-8-12-13-14
 */
-function isStraight(c){
-  c=c.sort((a,b)=>a-b)
-  let arr =[]
+function isStraight(c) {
+  c = c.sort((a, b) => a - b);
+  let arr = [];
   let count = 1;
-  for (let i=0;i<c.length;i++)
-  {
-  if (c[i]+1===c[i+1]||c[i]===c[i+1])
-    {
-      count++
+  for (let i = 0; i < c.length; i++) {
+    if (c[i] + 1 === c[i + 1] || c[i] === c[i + 1]) {
+      count++;
     } else {
-    arr.push(count)
-    count=1
+      arr.push(count);
+      count = 1;
     }
   }
-  if ('34568910'===c.join``) return false
-  return arr.filter(v=>v>=4).length>0;
+  if ("34568910" === c.join``) return false;
+  return arr.filter(v => v >= 4).length > 0;
 }

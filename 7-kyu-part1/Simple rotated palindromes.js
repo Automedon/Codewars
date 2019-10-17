@@ -8,13 +8,15 @@ More examples in test cases. Input will be strings of lowercase letters or numbe
 
 Good luck!
 */
-function solve(st){
-    let arr=[...st.slice()];
-    for (let i=0;i<st.length;i++){
-    let temp=arr.pop();
-    arr.unshift(temp)
-    let rev=arr.slice()
-    if (rev.reverse().join``===arr.join``){return true}
+function solve(st) {
+  let arr = [...st.slice()];
+  for (let i = 0; i < st.length; i++) {
+    let temp = arr.pop();
+    arr.unshift(temp);
+    let rev = arr.slice();
+    if (rev.reverse().join`` === arr.join``) {
+      return true;
     }
-    return false
+  }
+  return false;
 }

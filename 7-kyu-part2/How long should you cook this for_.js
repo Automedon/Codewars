@@ -35,7 +35,9 @@ Note: the result should be rounded up.
 All comments/feedback/translations appreciated.
 */
 
- function cookingTime(neededPower, minutes, seconds, power) {
-  const time = Math.ceil((60 * minutes + seconds) * parseInt(neededPower) / parseInt(power));
+function cookingTime(neededPower, minutes, seconds, power) {
+  const time = Math.ceil(
+    ((60 * minutes + seconds) * parseInt(neededPower)) / parseInt(power)
+  );
   return `${Math.floor(time / 60)} minutes ${time % 60} seconds`;
 }

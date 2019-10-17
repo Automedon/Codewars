@@ -25,11 +25,21 @@ The inputs should be Number, string, Number... if any of those aren't as expecte
 Price that gusset!
 */
 function price(start, soil, age) {
-  if (typeof start!=='number'||typeof soil!=='string'||typeof age!=='number') return 'Chuck is bottomless!'
-  let dict = {'Barely used': 0.1,'Seen a few high kicks': 0.25,'Blood stained': 0.30,'Heavily soiled': 0.50}
-  for (let i=0;i<age;i++){
-    start+=start*(dict[soil])
+  if (
+    typeof start !== "number" ||
+    typeof soil !== "string" ||
+    typeof age !== "number"
+  )
+    return "Chuck is bottomless!";
+  let dict = {
+    "Barely used": 0.1,
+    "Seen a few high kicks": 0.25,
+    "Blood stained": 0.3,
+    "Heavily soiled": 0.5
+  };
+  for (let i = 0; i < age; i++) {
+    start += start * dict[soil];
   }
-  if (isNaN(start*1)) return 'Chuck is bottomless!'
-  return `$${start.toFixed(2)}`
+  if (isNaN(start * 1)) return "Chuck is bottomless!";
+  return `$${start.toFixed(2)}`;
 }

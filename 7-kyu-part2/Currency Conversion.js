@@ -43,4 +43,9 @@ CONVERSION_RATES = {
   "Vietnamese Dong": 101100000101101
 }
 */
-const convertMyDollars = (usd, currency) => `You now have ${usd * parseInt(CONVERSION_RATES[currency], /[AEIOU]/.test(currency.charAt(0)) ? 10 : 2)} of ${currency}.`;
+const convertMyDollars = (usd, currency) =>
+  `You now have ${usd *
+    parseInt(
+      CONVERSION_RATES[currency],
+      /[AEIOU]/.test(currency.charAt(0)) ? 10 : 2
+    )} of ${currency}.`;

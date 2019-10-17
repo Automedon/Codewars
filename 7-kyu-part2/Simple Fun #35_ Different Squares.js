@@ -49,13 +49,18 @@ The number of different 2 × 2 squares in matrix.
 */
 function differentSquares(matrix) {
   let arr = [];
-  for (let i=0;i<matrix.length-1;i++){
-    for (let j=0;j<matrix[0].length-1;j++){
-      let temp = [matrix[i][j],matrix[i][j+1],matrix[i+1][j],matrix[i+1][j+1]].join``
-      if (!arr.includes(temp)){
-        arr.push(temp)
+  for (let i = 0; i < matrix.length - 1; i++) {
+    for (let j = 0; j < matrix[0].length - 1; j++) {
+      let temp = [
+        matrix[i][j],
+        matrix[i][j + 1],
+        matrix[i + 1][j],
+        matrix[i + 1][j + 1]
+      ].join``;
+      if (!arr.includes(temp)) {
+        arr.push(temp);
       }
     }
   }
-  return arr.length
+  return arr.length;
 }

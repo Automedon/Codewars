@@ -9,8 +9,8 @@ StringMerge("jason", "samson", "s")      ==>  "jasamson"
 StringMerge("wonderful", "people", "e")  ==>  "wondeople"
 */
 
-function stringMerge(string1, string2, letter){
-  const index1=string1.indexOf(letter);
-  const index2=string2.indexOf(letter);
-  return string1.slice(0,index1)+string2.slice(index2)
+function stringMerge(string1, string2, letter) {
+  const index1 = string1.indexOf(letter);
+  const index2 = string2.indexOf(letter);
+  return string1.slice(0, index1) + string2.slice(index2);
 }

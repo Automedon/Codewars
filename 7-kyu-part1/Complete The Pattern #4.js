@@ -26,11 +26,12 @@ Hint: Use \n in string to jump to next line
 */
 
 function pattern(n) {
- var number = "", output = "";
- while (n > 0) {
-   number = n + number;
-   output = number + (output ? "\n" : "") + output;
-   n--;
- }
- return output;
+  var number = "",
+    output = "";
+  while (n > 0) {
+    number = n + number;
+    output = number + (output ? "\n" : "") + output;
+    n--;
+  }
+  return output;
 }

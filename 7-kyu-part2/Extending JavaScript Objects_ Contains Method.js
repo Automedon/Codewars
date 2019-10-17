@@ -9,16 +9,19 @@ By default, it has to be a case-insensitive check. But you also have to provide 
 'Hello, World!'.contains('wor', true);   // false (case-sensitive check)
 'Hello, World!'.contains('a');           // false
 */
-String.prototype.contains=function(substr,caseSensitive=false){
-  if (!caseSensitive){
-  for(let i=0;i<this.length;i++){
-    if (this.slice(i,i+substr.length).toLowerCase()===substr.toLowerCase()) return true
-  }
-  return false
+String.prototype.contains = function(substr, caseSensitive = false) {
+  if (!caseSensitive) {
+    for (let i = 0; i < this.length; i++) {
+      if (
+        this.slice(i, i + substr.length).toLowerCase() === substr.toLowerCase()
+      )
+        return true;
+    }
+    return false;
   } else {
-  for(let i=0;i<this.length;i++){
-    if (this.slice(i,i+substr.length)===substr) return true
+    for (let i = 0; i < this.length; i++) {
+      if (this.slice(i, i + substr.length) === substr) return true;
+    }
+    return false;
   }
-  return false
-  }
-}
+};

@@ -17,11 +17,11 @@ Should return:
 1
 if there is not mark prev, markEnd should return null.
 */
-let arr =[]
-function mark (a) {
-  arr.push(a)
+let arr = [];
+function mark(a) {
+  arr.push(a);
 }
 
-function markEnd () {
-  return arr.pop()||null
+function markEnd() {
+  return arr.pop() || null;
 }

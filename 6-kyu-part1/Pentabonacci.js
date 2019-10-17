@@ -25,5 +25,5 @@ Good luck !!
 (Your code should be fast. Many moderate high values will be waiting to test it.)
 */
 function countOddPentaFib(n) {
-  return  Math.floor((n - 1) / 6) + Math.floor((n - 2) / 6) + 1
+  return Math.floor((n - 1) / 6) + Math.floor((n - 2) / 6) + 1;
 }

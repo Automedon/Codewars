@@ -12,10 +12,11 @@ Function must return a string with two numbers separated by comma, e.g. "a,b" wh
 Input data is always defined and correct (weight, penny, quarter > 0). In case if there is no existing combinations, you should return empty string. Good luck!
 */
 let calibrate = (weight, penny, quarter) => {
-  for (let i=0;i<1000;i++){
-      for (let j=0;j<1000;j++){
-        if ((penny*j).toFixed(1)*1+(quarter*i).toFixed(1)*1===weight) return `${j},${i}`
-      }
+  for (let i = 0; i < 1000; i++) {
+    for (let j = 0; j < 1000; j++) {
+      if ((penny * j).toFixed(1) * 1 + (quarter * i).toFixed(1) * 1 === weight)
+        return `${j},${i}`;
     }
-  return ''
-}
+  }
+  return "";
+};

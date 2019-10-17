@@ -14,7 +14,7 @@ countCombinations('93049', '\\d'); // 5
 countCombinations('Five ', '\.'); // 5
 Please give feedback and rank! That would be amazing!
 */
-var countCombinations = function(string, key){
-  let check=string.toLowerCase().match(new RegExp(`${key}`,'g'))
-  return check===null?0:check.length
-}
+var countCombinations = function(string, key) {
+  let check = string.toLowerCase().match(new RegExp(`${key}`, "g"));
+  return check === null ? 0 : check.length;
+};

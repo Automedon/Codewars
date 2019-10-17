@@ -11,12 +11,12 @@ rank('1c') == 0; // There is no card '1'
 Suits can be disregarded.
 */
 function rank(card) {
-  let r = card.split``[0]
-  if (r*1==r&&r>1&&r<10) return r*1
-  if (r=='T') return 10
-  if (r=='J') return 11
-  if (r=='Q') return 12
-  if (r=='K') return 13
-  if (r=='A') return 14
-  return 0
+  let r = card.split``[0];
+  if (r * 1 == r && r > 1 && r < 10) return r * 1;
+  if (r == "T") return 10;
+  if (r == "J") return 11;
+  if (r == "Q") return 12;
+  if (r == "K") return 13;
+  if (r == "A") return 14;
+  return 0;
 }

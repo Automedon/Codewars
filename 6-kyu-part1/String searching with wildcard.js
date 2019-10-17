@@ -21,6 +21,6 @@ A wildcard in the needle will match any character in the haystack. The method sh
 find("g__d", "That's the good thing about being president"); // return 11
 If no match the method should return -1
 */
-function find(needle, haystack){
-  return haystack.search(RegExp(`${needle.replace(/[^a-z0-9\.,-]/gi,'.')}`))
+function find(needle, haystack) {
+  return haystack.search(RegExp(`${needle.replace(/[^a-z0-9\.,-]/gi, ".")}`));
 }

@@ -46,17 +46,17 @@ OK, that's all. I guess this is a 7kyu kata. If you agree, please rank it as 7ky
 Task
 Complete function find01 that accepts a argument arr, return a number that is the count of 1 surrounded by 0 or 0 surrounded by 1.
 */
-function find01(arr){
-  let count=0;
-  for (let i=1;i<arr.length-1;i++){
-     for (let j=1;j<arr[0].length-1;j++){
-      let p = arr[i][j]
-      let u = arr[i-1][j]
-      let l = arr[i][j-1]
-      let d = arr[i+1][j]
-      let r = arr[i][j+1]
-      if (p!==u&&p!==d&&p!==l&&p!==r) count++
-    } 
+function find01(arr) {
+  let count = 0;
+  for (let i = 1; i < arr.length - 1; i++) {
+    for (let j = 1; j < arr[0].length - 1; j++) {
+      let p = arr[i][j];
+      let u = arr[i - 1][j];
+      let l = arr[i][j - 1];
+      let d = arr[i + 1][j];
+      let r = arr[i][j + 1];
+      if (p !== u && p !== d && p !== l && p !== r) count++;
+    }
   }
-  return count
+  return count;
 }

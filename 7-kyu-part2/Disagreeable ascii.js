@@ -17,6 +17,17 @@ a will be 65
 etc...
 For example Joe will have a weight of 254, instead of 286 using normal ascii values.
 */
-function getWeight(name){
-  return name.split('').reduce((a,v)=>a+(/[a-z]/.test(v)?v.charCodeAt()-32:/[A-Z]/.test(v)?v.charCodeAt()+32:0),0)
+function getWeight(name) {
+  return name
+    .split("")
+    .reduce(
+      (a, v) =>
+        a +
+        (/[a-z]/.test(v)
+          ? v.charCodeAt() - 32
+          : /[A-Z]/.test(v)
+          ? v.charCodeAt() + 32
+          : 0),
+      0
+    );
 }

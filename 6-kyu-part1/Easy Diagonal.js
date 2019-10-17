@@ -17,6 +17,6 @@ diagonal(20, 4) => 20349
 ##Ref: http://mathworld.wolfram.com/BinomialCoefficient.html
 */
 function diagonal(n, p) {
-  let fac = n => (n === 0) ? 1 : n * fac(n - 1);
+  let fac = n => (n === 0 ? 1 : n * fac(n - 1));
   return Math.round(fac(n + 1) / (fac(n - p) * fac(p + 1)));
 }

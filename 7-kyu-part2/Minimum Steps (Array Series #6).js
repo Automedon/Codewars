@@ -42,9 +42,9 @@ We need to keep doing this until the sum becomes greater or equal to K (464 in t
 Expected Time Complexity
 O(n Log n)
 */
-function minimumSteps(numbers, value){
-  numbers=numbers.sort((a,b)=>a-b)
-  for (let i=1;i<=numbers.length;i++){
-    if (numbers.slice(0,i).reduce((a,b)=>a+b,0)>=value) return i-1
+function minimumSteps(numbers, value) {
+  numbers = numbers.sort((a, b) => a - b);
+  for (let i = 1; i <= numbers.length; i++) {
+    if (numbers.slice(0, i).reduce((a, b) => a + b, 0) >= value) return i - 1;
   }
 }

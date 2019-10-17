@@ -20,6 +20,8 @@ Input: 'rr rrr' Output: 8
 Input: 'rrrrr rrrrr' Output: 16
 */
 function totalBill(str) {
-  str=str.replace(/\s/g,'');
-  return str?(str.match(/r/g).length-Math.floor(str.match(/r/g).length/5))*2:0;
+  str = str.replace(/\s/g, "");
+  return str
+    ? (str.match(/r/g).length - Math.floor(str.match(/r/g).length / 5)) * 2
+    : 0;
 }

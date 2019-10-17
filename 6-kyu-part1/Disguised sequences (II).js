@@ -30,26 +30,26 @@ Shell: only v1(n, p)is tested (use the solution you find for v_eff(n, p).
 If you have found u_eff(n, p) and v_eff(n, p) you can use them to calculate u(n, p) and v(n, p).
 You could see: https://en.wikipedia.org/wiki/Binomial_coefficient for a refresh about binomial coefficients.
 */
-function fact($num) { 
-	let product = 1; 
-	for (let i=1; i<=$num; i++) product*= i; 
-	return Math.round(product); 
+function fact($num) {
+  let product = 1;
+  for (let i = 1; i <= $num; i++) product *= i;
+  return Math.round(product);
 }
 function u1(n, p) {
-	let result=0;
-	for (let k=0; k<=n; k++) { 
-		let part=Math.pow(-1, k)*p*Math.pow(4, n-k);
-		let abc=(n*2)-k+1;
-		result= result + (part*((fact(abc))/(fact(abc-k)*fact(k))));
-	}
-	return Math.round(result);
+  let result = 0;
+  for (let k = 0; k <= n; k++) {
+    let part = Math.pow(-1, k) * p * Math.pow(4, n - k);
+    let abc = n * 2 - k + 1;
+    result = result + part * (fact(abc) / (fact(abc - k) * fact(k)));
+  }
+  return Math.round(result);
 }
 function v1(n, p) {
-	let result=0;
-	for (let k=0; k<=n; k++) { 
-		let part=Math.pow(-1, k)*p*Math.pow(4, n-k);
-		let abc=(n*2)-k;
-		result= result + (part*((fact(abc))/(fact(abc-k)*fact(k))));
-	}
-	return Math.round(result)
+  let result = 0;
+  for (let k = 0; k <= n; k++) {
+    let part = Math.pow(-1, k) * p * Math.pow(4, n - k);
+    let abc = n * 2 - k;
+    result = result + part * (fact(abc) / (fact(abc - k) * fact(k)));
+  }
+  return Math.round(result);
 }

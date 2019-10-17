@@ -19,9 +19,9 @@ Hours should be on the scale of 0-23
 There should be no padding with zeroes.
 (hint use a Date object)
 */
-function currentTime(){
-  let min=new Date().getMinutes()
-  let hour=new Date().getHours()
-  let sec=new Date().getSeconds()
-  return `The current time is ${hour}:${min}:${sec}`
+function currentTime() {
+  let min = new Date().getMinutes();
+  let hour = new Date().getHours();
+  let sec = new Date().getSeconds();
+  return `The current time is ${hour}:${min}:${sec}`;
 }

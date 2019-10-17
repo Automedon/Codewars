@@ -6,9 +6,9 @@ This can be achieved without arrow functions as well, but the point would be to 
 
 Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 */
-function Counter(){
+function Counter() {
   this.count = 0;
-  this.updateCount = ()=>{
-  this.count++
+  this.updateCount = () => {
+    this.count++;
   };
 }

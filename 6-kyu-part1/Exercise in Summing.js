@@ -15,11 +15,11 @@ if n is 0, both functions should also return 0
 if n is larger than values's length, use the length instead.
 */
 function minimumSum(values, n) {
-  values=values.sort((a,b)=>a-b);
-  return values.slice(0,n).reduce((a,b)=>a+b,0)
+  values = values.sort((a, b) => a - b);
+  return values.slice(0, n).reduce((a, b) => a + b, 0);
 }
 
 function maximumSum(values, n) {
-  values=values.sort((a,b)=>b-a);
-  return values.slice(0,n).reduce((a,b)=>a+b,0)
+  values = values.sort((a, b) => b - a);
+  return values.slice(0, n).reduce((a, b) => a + b, 0);
 }

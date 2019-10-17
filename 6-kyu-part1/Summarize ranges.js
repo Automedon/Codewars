@@ -11,15 +11,17 @@ summaryRanges([0, 1, 2, 3, 3, 3, 4, 4, 5, 6, 7, 7, 9, 9, 10]) === ["0->7", "9->1
 summaryRanges([-2,0, 1, 2, 3, 3, 3, 4, 4, 5, 6, 7, 7, 9, 9, 10, 12]) ===["-2", "0->7", "9->10", "12"]
 */
 function summaryRanges(nums) {
-  nums=[...new Set(nums)]
+  nums = [...new Set(nums)];
   let arr = [];
-  let temp = []
-  for (let i=0;i<nums.length;i++){
-    temp.push(nums[i])
-    if (nums[i+1]-nums[i]!==1){
-      arr.push(temp)
-      temp=[]
+  let temp = [];
+  for (let i = 0; i < nums.length; i++) {
+    temp.push(nums[i]);
+    if (nums[i + 1] - nums[i] !== 1) {
+      arr.push(temp);
+      temp = [];
     }
   }
-  return arr.map(v=>v.length===1?v+'':v[0]+'->'+v[v.length-1])
+  return arr.map(v =>
+    v.length === 1 ? v + "" : v[0] + "->" + v[v.length - 1]
+  );
 }

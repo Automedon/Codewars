@@ -11,6 +11,5 @@ Good luck!
 Please also try Simple remove duplicates
 */
 
-const solve = (str) => (
-  [/[A-Z]/, /[a-z]/, /\d/, /[\W]/].map(rgx => str.split(rgx).length - 1)
-);
+const solve = str =>
+  [/[A-Z]/, /[a-z]/, /\d/, /[\W]/].map(rgx => str.split(rgx).length - 1);

@@ -10,5 +10,5 @@ For example: celsius_to_romer(24) should return 20.1.
 */
 
 function celsiusToRomer(temp) {
- return temp*21/40+7.5
+  return (temp * 21) / 40 + 7.5;
 }

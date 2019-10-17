@@ -28,15 +28,15 @@ Constraints: 1 ≤ matrix.length ≤ 10, matrix.length = matrix[i].length, 1 ≤
 Matrix with the order of elements on its longest diagonals reversed.
 */
 function reverseOnDiagonals(matrix) {
-  const newM = matrix.map(arr => [...arr])
+  const newM = matrix.map(arr => [...arr]);
   for (let i = 0; i < matrix.length >> 1; i++) {
-    const index = matrix.length - (1 + i)
-    newM[i][i] = matrix[index][index]
-    newM[i][index] = matrix[index][i]
+    const index = matrix.length - (1 + i);
+    newM[i][i] = matrix[index][index];
+    newM[i][index] = matrix[index][i];
 
-    newM[index][i] = matrix[i][index]
-    newM[index][index] = matrix[i][i]
+    newM[index][i] = matrix[i][index];
+    newM[index][index] = matrix[i][i];
   }
 
-  return newM
+  return newM;
 }

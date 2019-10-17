@@ -1,1 +1,1 @@
-const longest = words => Math.max(...words.map(x => x.length))
+const longest = words => Math.max(...words.map(x => x.length));

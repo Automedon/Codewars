@@ -23,6 +23,6 @@ true if the characters of the inputString can be rearranged to form a palindrome
 */
 function palindromeRearranging(s) {
   let obj = {};
-  [...s].map(v=>obj[v]=obj[v]?obj[v]+1:1,{})
-  return Object.values(obj).filter(v=>v%2!==0).length<2
+  [...s].map(v => (obj[v] = obj[v] ? obj[v] + 1 : 1), {});
+  return Object.values(obj).filter(v => v % 2 !== 0).length < 2;
 }

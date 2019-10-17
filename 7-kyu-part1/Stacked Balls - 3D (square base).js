@@ -26,5 +26,5 @@ Stacked Balls - 3D with tringle base
 */
 
 function stackHeight3d(layers) {
-  return !layers ? 0 : (layers - 1) / Math.sqrt(2) + 1
+  return !layers ? 0 : (layers - 1) / Math.sqrt(2) + 1;
 }

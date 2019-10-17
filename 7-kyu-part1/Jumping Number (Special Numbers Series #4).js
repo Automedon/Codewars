@@ -41,6 +41,8 @@ Explanation:
 Adjacent digits differ by 1
 */
 
-function jumpingNumber(n){
-  return [...n+''].every((c,i,a)=>!i||Math.abs(c-a[i-1])===1) ? 'Jumping!!' : 'Not!!';
+function jumpingNumber(n) {
+  return [...(n + "")].every((c, i, a) => !i || Math.abs(c - a[i - 1]) === 1)
+    ? "Jumping!!"
+    : "Not!!";
 }

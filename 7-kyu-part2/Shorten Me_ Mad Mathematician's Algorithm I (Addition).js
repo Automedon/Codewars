@@ -9,4 +9,4 @@ Less than 30 characters
 Input:
 a and b : integer ( 0-10000 )
 */
-let madAdd=(a,b)=>a- -b
+let madAdd = (a, b) => a - -b;

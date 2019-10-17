@@ -19,10 +19,11 @@ Argument: ['one', 'one', 'one', 'one', 'one', 'two', 'three']
 Result: [ 'one', 'two', 'three', 'one', 'one', 'one', 'one' ]
 */
 
-
-const distributeEvenly = (array) => {
+const distributeEvenly = array => {
   const uniqueTypes = [...new Set(array)];
-  const arrayOfTypes = uniqueTypes.map(outer => array.filter(inner => outer === inner));
+  const arrayOfTypes = uniqueTypes.map(outer =>
+    array.filter(inner => outer === inner)
+  );
 
   return array
     .map((item, i) => arrayOfTypes.map(el => el[i]))

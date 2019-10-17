@@ -26,9 +26,9 @@ Write a function detectInt that returns the first positive integer for which an 
 For examples, see the example test cases.
 */
 function detectInt() {
-  let arg = [...arguments]
-  if (arg.length===0) return 1
-  for (let i=1;;i++){
-    if (arg.every(v=>v(i))) return i
+  let arg = [...arguments];
+  if (arg.length === 0) return 1;
+  for (let i = 1; ; i++) {
+    if (arg.every(v => v(i))) return i;
   }
 }

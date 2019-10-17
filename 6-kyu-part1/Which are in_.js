@@ -23,6 +23,6 @@ Beware: r must be without duplicates.
 Don't mutate the inputs.
 */
 
-function inArray(array1,array2){
-  return array1.filter((x) => array2.some((y) => y.includes(x))).sort()
+function inArray(array1, array2) {
+  return array1.filter(x => array2.some(y => y.includes(x))).sort();
 }

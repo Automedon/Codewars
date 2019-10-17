@@ -23,8 +23,13 @@ EXAMPLES:
 {name: 'Abraham'} -> 'Not a string'
 */
 
-var makeAcronym = function(string){
-if (typeof string==='string' && string.match(/[0-9]/g)) return 'Not letters';
-if (typeof string==='string' && !string.match(/[0-9]/g)) return string.split(' ').map(v=>v.slice(0,1).toUpperCase()).join('')
-return 'Not a string';
+var makeAcronym = function(string) {
+  if (typeof string === "string" && string.match(/[0-9]/g))
+    return "Not letters";
+  if (typeof string === "string" && !string.match(/[0-9]/g))
+    return string
+      .split(" ")
+      .map(v => v.slice(0, 1).toUpperCase())
+      .join("");
+  return "Not a string";
 };

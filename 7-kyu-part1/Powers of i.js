@@ -6,6 +6,6 @@ Your Task
 is to write a function pofi that returns i to the power of a given non-negative integer in its simplest form as a string (answer may contain i).
 */
 
-function pofi(n){
-  return ["1","i","-1","-i"][n%4];
+function pofi(n) {
+  return ["1", "i", "-1", "-i"][n % 4];
 }

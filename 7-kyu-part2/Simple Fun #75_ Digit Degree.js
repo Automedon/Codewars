@@ -20,9 +20,12 @@ Constraints: 5 ≤ n ≤ 109.
 [output] an integer
 */
 function digitDegree(n) {
-  let str=n+'';
-  for (let i=0;;i++){
-  if (str.length===1) return i
-  str=str.split('').reduce((a,b)=>a+b*1,0).toString()
+  let str = n + "";
+  for (let i = 0; ; i++) {
+    if (str.length === 1) return i;
+    str = str
+      .split("")
+      .reduce((a, b) => a + b * 1, 0)
+      .toString();
   }
 }

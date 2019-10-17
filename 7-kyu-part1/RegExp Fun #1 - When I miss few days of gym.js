@@ -25,10 +25,21 @@ Finally, your code will be tested to make sure that you have used RegExp replace
 Enjoy :D
 */
 function gymSlang(phrase) {
-  return phrase.replace(/(probably)/gi,$1=>$1[0]===$1[0].toUpperCase()?'Prolly':'prolly')
-               .replace(/(i am)/gi,$1=>$1[0]===$1[0].toUpperCase()?`I'm`:`i'm`)
-               .replace(/(instagram)/gi,$1=>$1[0]===$1[0].toUpperCase()?'Insta':'insta')
-               .replace(/(do not)/gi,$1=>$1[0]===$1[0].toUpperCase()?`Don't`:`don't`)
-               .replace(/(going to)/gi,$1=>$1[0]===$1[0].toUpperCase()?'Gonna':'gonna')
-               .replace(/(combination)/gi,$1=>$1[0]===$1[0].toUpperCase()?'Combo':'combo')
+  return phrase
+    .replace(/(probably)/gi, $1 =>
+      $1[0] === $1[0].toUpperCase() ? "Prolly" : "prolly"
+    )
+    .replace(/(i am)/gi, $1 => ($1[0] === $1[0].toUpperCase() ? `I'm` : `i'm`))
+    .replace(/(instagram)/gi, $1 =>
+      $1[0] === $1[0].toUpperCase() ? "Insta" : "insta"
+    )
+    .replace(/(do not)/gi, $1 =>
+      $1[0] === $1[0].toUpperCase() ? `Don't` : `don't`
+    )
+    .replace(/(going to)/gi, $1 =>
+      $1[0] === $1[0].toUpperCase() ? "Gonna" : "gonna"
+    )
+    .replace(/(combination)/gi, $1 =>
+      $1[0] === $1[0].toUpperCase() ? "Combo" : "combo"
+    );
 }

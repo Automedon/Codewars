@@ -25,19 +25,21 @@ A component will not appear at all if its value happens to be zero. Hence, 1 min
 
 A unit of time must be used "as much as possible". It means that the function should not return 61 seconds, but 1 minute and 1 second instead. Formally, the duration specified by of a component must not be greater than any valid more significant unit of time.
 */
-function formatDuration (seconds) {
+function formatDuration(seconds) {
   var time = { year: 31536000, day: 86400, hour: 3600, minute: 60, second: 1 },
-      res = [];
+    res = [];
 
-  if (seconds === 0) return 'now';
-  
+  if (seconds === 0) return "now";
+
   for (var key in time) {
     if (seconds >= time[key]) {
-      var val = Math.floor(seconds/time[key]);
-      res.push(val += val > 1 ? ' ' + key + 's' : ' ' + key);
+      var val = Math.floor(seconds / time[key]);
+      res.push((val += val > 1 ? " " + key + "s" : " " + key));
       seconds = seconds % time[key];
     }
   }
- 
-  return res.length > 1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
+
+  return res.length > 1
+    ? res.join(", ").replace(/,([^,]*)$/, " and" + "$1")
+    : res[0];
 }

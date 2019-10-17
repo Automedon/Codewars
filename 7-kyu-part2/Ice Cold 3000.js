@@ -17,7 +17,14 @@ There are two other exceptions to bear in mind: Andre 3000 does not like to feel
 Changed the conditions slightly
 */
 function heyYa(w) {
-  if (/ice Cold/gi.test(w[0])) return "Andre 3000 is disappointed in you."
-  if (w.every(v=>!/ice Cold/gi.test(v))) return "Andre 3000 is disappointed in you."
-  return 'A'+(w.slice(0,w.findIndex(v=>/ice Cold/gi.test(v))).map(v=>'alright').join` `+'.').slice(1)
+  if (/ice Cold/gi.test(w[0])) return "Andre 3000 is disappointed in you.";
+  if (w.every(v => !/ice Cold/gi.test(v)))
+    return "Andre 3000 is disappointed in you.";
+  return (
+    "A" +
+    (
+      w.slice(0, w.findIndex(v => /ice Cold/gi.test(v))).map(v => "alright")
+        .join` ` + "."
+    ).slice(1)
+  );
 }

@@ -47,13 +47,13 @@ If the better case scenario for the player is to hope for a tie, then return "Pr
 getRequired([7, 2], [6, 8]) // returns "Pray for a tie!"
 */
 function getRequired(player, enemy) {
-  const p = player[0] + player[1]
-  const e = enemy[0] + enemy[1]
-  
-  if (p == e) return 'Random'
-  if (p >= e + 6) return 'Auto-win'
-  if (p + 6 <= e) return 'Auto-lose'
-  if (p > e) return `(${e + 7 - p}..6)`
-  if (p + 5 > e) return `(1..${p + 5 - e})`
-  return 'Pray for a tie!'
+  const p = player[0] + player[1];
+  const e = enemy[0] + enemy[1];
+
+  if (p == e) return "Random";
+  if (p >= e + 6) return "Auto-win";
+  if (p + 6 <= e) return "Auto-lose";
+  if (p > e) return `(${e + 7 - p}..6)`;
+  if (p + 5 > e) return `(1..${p + 5 - e})`;
+  return "Pray for a tie!";
 }

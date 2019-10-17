@@ -5,9 +5,9 @@ The objective of this kata is to take a given array and replace an element withi
 
 The second array will only contain 2 elements. If the second element of the second array i.e the index to move to does not exist return the first array unchanged
 */
-function elShuffle(arr1,arr2){
-  for (let i=0;i<arr1.length;i++){
-  if (i===arr2[1]) arr1[i]=arr2[0]
+function elShuffle(arr1, arr2) {
+  for (let i = 0; i < arr1.length; i++) {
+    if (i === arr2[1]) arr1[i] = arr2[0];
   }
-  return arr1
+  return arr1;
 }

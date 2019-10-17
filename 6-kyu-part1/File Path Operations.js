@@ -53,18 +53,18 @@ Thank to all users who contributed to this kata! I appreciate your input!
 */
 class FileMaster {
   constructor(filepath) {
-    this.path=filepath
+    this.path = filepath;
   }
-  
+
   extension() {
-    return this.path.match(/\.(.+$)/)[1]
+    return this.path.match(/\.(.+$)/)[1];
   }
-  
+
   filename() {
-    return this.path.match(/\/(\w+)\./)[1]
+    return this.path.match(/\/(\w+)\./)[1];
   }
-  
+
   dirpath() {
-    return this.path.match(/^\/?.+\//)
+    return this.path.match(/^\/?.+\//);
   }
 }

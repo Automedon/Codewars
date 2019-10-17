@@ -14,6 +14,6 @@ Do not use the eval() function or the Function() constructor in JavaScript.
 Note: Always return a boolean value, even if there're no negations.
 */
 function negationValue(string, value) {
-  let bool=Boolean(value)
-  return string.length%2!==0?!bool:bool
+  let bool = Boolean(value);
+  return string.length % 2 !== 0 ? !bool : bool;
 }

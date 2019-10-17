@@ -33,9 +33,8 @@ Output
 */
 
 function distribute(m, n) {
-if(n <= 0) return [];
+  if (n <= 0) return [];
   let arr = Array(n).fill(0);
-  while(m > 0)
-    arr = arr.map(x => (m > 0) ? (m--, ++x) : x);
+  while (m > 0) arr = arr.map(x => (m > 0 ? (m--, ++x) : x));
   return arr;
 }

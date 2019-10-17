@@ -15,6 +15,6 @@ or "Correct!" If the guess is correct.
 You can only call this method 10 times before an exception is raised.
 */
 Guesser.prototype.getNumber = function() {
-  console.log(Guesser.toString())
-  return this.num
-}
+  console.log(Guesser.toString());
+  return this.num;
+};

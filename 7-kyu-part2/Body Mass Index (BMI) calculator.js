@@ -26,13 +26,13 @@ Severely obese <=40
 Very severely obese >40
 */
 function bmi(w, h) {
-  let b = w/h/h
-  if (b>40) return "Very severely obese"
-   if (b<=15) return "Very severely underweight"
-    if (b<=16) return "Severely underweight"
-     if (b<=18.5) return "Underweight"
-      if (b<=25) return "Normal (healthy weight)"
-       if (b<=30) return "Overweight"
-       if (b<=35) return "Moderately obese"
-       if (b<=40) return "Severely obese"
+  let b = w / h / h;
+  if (b > 40) return "Very severely obese";
+  if (b <= 15) return "Very severely underweight";
+  if (b <= 16) return "Severely underweight";
+  if (b <= 18.5) return "Underweight";
+  if (b <= 25) return "Normal (healthy weight)";
+  if (b <= 30) return "Overweight";
+  if (b <= 35) return "Moderately obese";
+  if (b <= 40) return "Severely obese";
 }

@@ -16,12 +16,12 @@ If your score is higher than the user's already, return 'Winning!'. If they are 
 
 You are looking to complete as few kata as possible to get to your target
 */
-function leaderB(user, user_score, your_score){ 
-  let number = (user_score-your_score)%3
-  let beta = Math.floor((user_score-your_score)/3)
-  if (number===0&&beta===0) return 'Only need one!'
-  if (beta<=0) return 'Winning!'
-  if (beta>=1000) return `To beat ${user}'s score, I must complete ${beta} Beta kata and ${number} 8kyu kata. Dammit!`
-  return `To beat ${user}'s score, I must complete ${beta} Beta kata and ${number} 8kyu kata.`
-
+function leaderB(user, user_score, your_score) {
+  let number = (user_score - your_score) % 3;
+  let beta = Math.floor((user_score - your_score) / 3);
+  if (number === 0 && beta === 0) return "Only need one!";
+  if (beta <= 0) return "Winning!";
+  if (beta >= 1000)
+    return `To beat ${user}'s score, I must complete ${beta} Beta kata and ${number} 8kyu kata. Dammit!`;
+  return `To beat ${user}'s score, I must complete ${beta} Beta kata and ${number} 8kyu kata.`;
 }

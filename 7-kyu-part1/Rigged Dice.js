@@ -15,9 +15,8 @@ return value should be randomly;
 run your code 100000 times should produce 21700-22300 numbers 6
 Good Luck!
 */
-function throwRigged(){
-  const random=Math.random()
-  if (random<0.22) return 6
+function throwRigged() {
+  const random = Math.random();
+  if (random < 0.22) return 6;
   return Math.floor(Math.random() * (6 - 1)) + 1;
-
 }

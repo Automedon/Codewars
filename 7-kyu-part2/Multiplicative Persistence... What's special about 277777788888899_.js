@@ -19,11 +19,16 @@ per(277777788888899) = [4996238671872, 438939648, 4478976, 338688, 27648, 2688, 
 // 2*7*7*7*7*7*7*8*8*8*8*8*8*9*9 = 4996238671872 --> 4*9*9*6*2*3*8*6*7*1*8*7*2 = 4478976 --> ...
 */
 function per(n) {
-  let arr= [];
-  for (let i=0;;i++){
-  if (n.toString().length===1) {break}
-  n=n.toString().split('').reduce((a,b)=>a*b*1,1);
-  arr.push(n)
-  } 
-  return arr
+  let arr = [];
+  for (let i = 0; ; i++) {
+    if (n.toString().length === 1) {
+      break;
+    }
+    n = n
+      .toString()
+      .split("")
+      .reduce((a, b) => a * b * 1, 1);
+    arr.push(n);
+  }
+  return arr;
 }

@@ -6,10 +6,10 @@ You must concatenate the nth letter from each word to construct a new word which
 
 Note: Test cases contain valid input only - i.e. a string array or an empty array, each word will have at least as many letters as its ordinal position.
 */
-function nthChar(words){
-  let str='';
-  for (let i=0;i<words.length;i++){
-  str+=words[i][i]
+function nthChar(words) {
+  let str = "";
+  for (let i = 0; i < words.length; i++) {
+    str += words[i][i];
   }
- return words.length?str:''
+  return words.length ? str : "";
 }

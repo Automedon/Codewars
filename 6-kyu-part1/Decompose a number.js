@@ -41,17 +41,19 @@ and 2k1 + 3k2 + 4k3 + ... + nkn-1 + r = num
 */
 function decompose(num) {
   let i = 2;
-  let pow = 50
-  let arr = []
-  while (num>0){
-    if (pow===1){break}
-    if (num<Math.pow(i,pow)){
-    pow--
+  let pow = 50;
+  let arr = [];
+  while (num > 0) {
+    if (pow === 1) {
+      break;
+    }
+    if (num < Math.pow(i, pow)) {
+      pow--;
     } else {
-    num-=Math.pow(i,pow)
-    arr.push(pow)
-    i++
+      num -= Math.pow(i, pow);
+      arr.push(pow);
+      i++;
     }
   }
-  return [arr,num]
+  return [arr, num];
 }

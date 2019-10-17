@@ -1,1 +1,1 @@
-const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
+const binaryArrayToNumber = arr => parseInt(arr.join(""), 2);

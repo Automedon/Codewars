@@ -24,9 +24,11 @@ An array of strings in the format "letter1 + letter2", where "letter1" and "lett
 Note that "letter1 + letter2" and "letter2 + letter1" are equal pairs and we don't consider them to be different.
 */
 function newNumeralSystem(number) {
-  let arr =[];
-  for (let i='A'.charCodeAt();i<=number.charCodeAt();i++){
-    arr.push(String.fromCharCode(i))
+  let arr = [];
+  for (let i = "A".charCodeAt(); i <= number.charCodeAt(); i++) {
+    arr.push(String.fromCharCode(i));
   }
-  return arr.map((v,i)=>`${v} + ${arr[arr.length-1-i]}`).slice(0,Math.round(arr.length/2))
+  return arr
+    .map((v, i) => `${v} + ${arr[arr.length - 1 - i]}`)
+    .slice(0, Math.round(arr.length / 2));
 }

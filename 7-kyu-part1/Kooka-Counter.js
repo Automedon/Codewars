@@ -18,12 +18,13 @@ And they always alternate male/female
 ^ Kata Note : No validation is necessary; only valid input will be passed :-)
 */
 var kookaCounter = function(laughing) {
-  if (laughing.length===0) return 0;
-  laughing=laughing.replace(/a/gi,'')
-  let count=1;
-  for(let i=0;i<laughing.length-1;i++)
-  {
-  if (laughing[i]!==laughing[i+1]){count++}
+  if (laughing.length === 0) return 0;
+  laughing = laughing.replace(/a/gi, "");
+  let count = 1;
+  for (let i = 0; i < laughing.length - 1; i++) {
+    if (laughing[i] !== laughing[i + 1]) {
+      count++;
+    }
   }
-  return count
-}
+  return count;
+};

@@ -45,8 +45,8 @@ Math.PI -
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI
 */
 Math.toRadians = function(degrees) {
-  return degrees/(180/Math.PI)
-}
+  return degrees / (180 / Math.PI);
+};
 Math.toDegrees = function(radians) {
-  return radians*(180/Math.PI)
-}
+  return radians * (180 / Math.PI);
+};

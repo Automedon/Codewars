@@ -8,7 +8,6 @@ An example valid array would be [3, 2, 5, 1, 3, 4]. It has the integers 1 throug
 You should return the duplicate value as a single integer.
 */
 
-function findDup( arr ){
-
-  return arr.sort((a,b)=>a-b).filter((v,i,arr)=>v===arr[i+1])*1;
+function findDup(arr) {
+  return arr.sort((a, b) => a - b).filter((v, i, arr) => v === arr[i + 1]) * 1;
 }

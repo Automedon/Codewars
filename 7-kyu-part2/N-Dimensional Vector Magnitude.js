@@ -9,5 +9,5 @@ An array containing four elements represents a vector in 4D space.
 More info on finding the length of a vector: http://farside.ph.utexas.edu/teaching/301/lectures/node28.html
 */
 function magnitude(vector) {
-    return Math.sqrt(vector.reduce((a,b)=>a+b*b,0))
+  return Math.sqrt(vector.reduce((a, b) => a + b * b, 0));
 }

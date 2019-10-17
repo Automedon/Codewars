@@ -13,6 +13,12 @@ original number=-2997 , n=3
 
 Write afunction named check_concatenated_sum that tests if a number has this generalized property.
 */
-function checkConcatenatedSum(a,b){
-  return a.toString().split('').map(v=>v==='-'?''*1:v.repeat(b)*1).reduce((a,b)=>a+b)===Math.abs(a)
+function checkConcatenatedSum(a, b) {
+  return (
+    a
+      .toString()
+      .split("")
+      .map(v => (v === "-" ? "" * 1 : v.repeat(b) * 1))
+      .reduce((a, b) => a + b) === Math.abs(a)
+  );
 }

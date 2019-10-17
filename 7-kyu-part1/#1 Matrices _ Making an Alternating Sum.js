@@ -20,12 +20,13 @@ You may be given matrixes with their dimensions between these values:10 < m < 30
 More example cases in the Example Test Cases. Enjoy it!!
 */
 function scoreMatrix(matrix) {
-    let score=0;
-    matrix.map((e,j)=>{
-    if (j%2===0){
-      return e.map((v,i)=>i%2===0?score+=v:score-=v)
+  let score = 0;
+  matrix.map((e, j) => {
+    if (j % 2 === 0) {
+      return e.map((v, i) => (i % 2 === 0 ? (score += v) : (score -= v)));
     } else {
-       return e.map((v,i)=>i%2!==0?score+=v:score-=v)
-    }}) 
-    return score;
+      return e.map((v, i) => (i % 2 !== 0 ? (score += v) : (score -= v)));
+    }
+  });
+  return score;
 }

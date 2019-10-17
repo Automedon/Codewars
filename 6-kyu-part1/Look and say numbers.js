@@ -17,6 +17,9 @@ Starting with "1" the following lines are produced by "saying what you see", so 
 
 Write a function that given a starting value as a string, returns the appropriate sequence as a list. The starting value can have any number of digits. The termination condition is a defined by the maximum number of iterations, also supplied as an argument.
 */
-function lookAndSay(data,len){
-  return Array.from({length:len},(v,i)=>data=data.replace(/(.)\1*/g,m=> m.length+m[0]));
+function lookAndSay(data, len) {
+  return Array.from(
+    { length: len },
+    (v, i) => (data = data.replace(/(.)\1*/g, m => m.length + m[0]))
+  );
 }

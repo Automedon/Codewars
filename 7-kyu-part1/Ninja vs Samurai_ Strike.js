@@ -3,8 +3,8 @@ class Warrior {
     this.name = name;
     this.health = 100;
   }
-  
+
   strike(enemy, swings) {
-    enemy.health = Math.max(0, enemy.health - (swings * 10));   
+    enemy.health = Math.max(0, enemy.health - swings * 10);
   }
 }

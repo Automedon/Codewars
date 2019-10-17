@@ -12,12 +12,11 @@ Note: User input of an even number OR a number less than 3 should return 0.
 
 
 */
-function compute(n){
-  if (n%2===0||n<=0) return 0
-  let sum=1;
-  for (let i=3;i<=n;i+=2)
-    {
-      sum+=1/Math.pow(i,2)
-    }
-  return sum
+function compute(n) {
+  if (n % 2 === 0 || n <= 0) return 0;
+  let sum = 1;
+  for (let i = 3; i <= n; i += 2) {
+    sum += 1 / Math.pow(i, 2);
+  }
+  return sum;
 }

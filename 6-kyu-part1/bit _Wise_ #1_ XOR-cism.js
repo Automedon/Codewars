@@ -16,5 +16,5 @@ Test.expect(x[0] == 2);
 Test.expect(x[1] == 1);
 */
 function swapper(a, b) {
-  return [b, a]
+  return [b, a];
 }

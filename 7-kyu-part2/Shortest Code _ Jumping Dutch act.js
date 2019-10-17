@@ -40,6 +40,6 @@ after compile, it will be:```sc=function(x){return x+1;}```
 
 Just play in this kata, Don't experiment in real life ;-)
 */
-let sc=(f)=>{
-  return f<=1?'':`${'Aa~ '.repeat(f-1)+'Pa!'}${f<=6?' Aa!':''}`
-}
+let sc = f => {
+  return f <= 1 ? "" : `${"Aa~ ".repeat(f - 1) + "Pa!"}${f <= 6 ? " Aa!" : ""}`;
+};

@@ -10,14 +10,14 @@ Complete the function so that it returns an array of integer representing the pa
 (Also, there is no reason to test for edge cases: the input to your function will always be valid for this kata.)
 */
 var splitInteger = function(num, parts) {
-  let n =Math.floor(num/parts)
-  const arr  = [];
-  for (let i=0;i<parts;i++){
-    arr.push(n)
+  let n = Math.floor(num / parts);
+  const arr = [];
+  for (let i = 0; i < parts; i++) {
+    arr.push(n);
   }
-  if (arr.reduce((a,b)=>a+b,0)===num) return arr
-  for (let i=0;i<parts;i++){
-    arr[i]++
-    if (arr.reduce((a,b)=>a+b,0)===num) return arr
+  if (arr.reduce((a, b) => a + b, 0) === num) return arr;
+  for (let i = 0; i < parts; i++) {
+    arr[i]++;
+    if (arr.reduce((a, b) => a + b, 0) === num) return arr;
   }
-}
+};

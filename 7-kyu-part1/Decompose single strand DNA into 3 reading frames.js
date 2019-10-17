@@ -18,16 +18,16 @@ For frame 2 split all of them in groups of three starting by the second base (le
 
 For frame 3 split all of them in groups of three starting by the third letter, but having the first and second bases (letters) at the beginning in the same order.
 */
-var decomposeSingleStrand= function( singleStrand){
-  let frame1=[];
-  let frame2=[];
-  let frame3=[];
-  frame2.push(singleStrand.slice(0,1))
-  frame3.push(singleStrand.slice(0,2))
-  for (let i=0;i<singleStrand.length;i+=3){
-  frame1.push(singleStrand.slice(0+i,i+3))
-  frame2.push(singleStrand.slice(1+i,i+4))
-  frame3.push(singleStrand.slice(2+i,i+5))
+var decomposeSingleStrand = function(singleStrand) {
+  let frame1 = [];
+  let frame2 = [];
+  let frame3 = [];
+  frame2.push(singleStrand.slice(0, 1));
+  frame3.push(singleStrand.slice(0, 2));
+  for (let i = 0; i < singleStrand.length; i += 3) {
+    frame1.push(singleStrand.slice(0 + i, i + 3));
+    frame2.push(singleStrand.slice(1 + i, i + 4));
+    frame3.push(singleStrand.slice(2 + i, i + 5));
   }
-  return `Frame 1: ${frame1.join` `}\nFrame 2: ${frame2.join` `}\nFrame 3: ${frame3.join` `}`
-}
+  return `Frame 1: ${frame1.join` `}\nFrame 2: ${frame2.join` `}\nFrame 3: ${frame3.join` `}`;
+};

@@ -36,13 +36,13 @@ title
 comment
 Note: The comment method should wrap its argument with an HTML comment. It is the only method whose name does not match an HTML tag. So, g.comment('i am a comment') must produce <!--i am a comment-->.
 */
-function HTMLGen () {
-  this.div=s=>"<div>"+s+"</div>";
-  this.b=s=>"<b>"+s+"</b>";
-  this.p=s=>"<p>"+s+"</p>";
-  this.a=s=>"<a>"+s+"</a>";
-  this.body=s=>"<body>"+s+"</body>";
-  this.span=s=>"<span>"+s+"</span>";
-  this.title=s=>"<title>"+s+"</title>";
-  this.comment=s=>"<!--"+s+"-->";
+function HTMLGen() {
+  this.div = s => "<div>" + s + "</div>";
+  this.b = s => "<b>" + s + "</b>";
+  this.p = s => "<p>" + s + "</p>";
+  this.a = s => "<a>" + s + "</a>";
+  this.body = s => "<body>" + s + "</body>";
+  this.span = s => "<span>" + s + "</span>";
+  this.title = s => "<title>" + s + "</title>";
+  this.comment = s => "<!--" + s + "-->";
 }

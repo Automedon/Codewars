@@ -46,12 +46,16 @@ pattern(16)
               5 5
                6
 */
-function pattern(n){
-   let arr = Array.from({length:n},(v,i)=>i+1)
-   let arr2=[];
- for (let i=0;i<n;i++)
- {
- arr2.push(' '.repeat(i+1)+((arr[i]%10).toString()+' ').repeat(n-i))
- }
- return arr2.join('\n').replace(/ \n/gi,'\n').slice(0,-1)
+function pattern(n) {
+  let arr = Array.from({ length: n }, (v, i) => i + 1);
+  let arr2 = [];
+  for (let i = 0; i < n; i++) {
+    arr2.push(
+      " ".repeat(i + 1) + ((arr[i] % 10).toString() + " ").repeat(n - i)
+    );
+  }
+  return arr2
+    .join("\n")
+    .replace(/ \n/gi, "\n")
+    .slice(0, -1);
 }

@@ -20,12 +20,15 @@ l.count_spec_digits(integersList, digitsList) == [(1, 0), (8, 0), (4, 0)]
 Enjoy it!!
 */
 
-function List(){
-  this.countSpecDigits=function(integersList, digitsList){
+function List() {
+  this.countSpecDigits = function(integersList, digitsList) {
     var result = [];
-    for(var i=0; i<digitsList.length; i++){
-      result.push([digitsList[i], integersList.join().split(digitsList[i]).length -1]);
+    for (var i = 0; i < digitsList.length; i++) {
+      result.push([
+        digitsList[i],
+        integersList.join().split(digitsList[i]).length - 1
+      ]);
     }
     return result;
-  }
+  };
 }

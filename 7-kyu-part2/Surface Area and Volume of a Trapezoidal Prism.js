@@ -24,7 +24,10 @@ The tapazium cross section has one line of symmetry:
  /______|______\
         |
 */
-function areaVolume(a,b,h,l) {
-  let d = Math.sqrt(h*h+Math.pow((b-a)/2,2))
-  return [Math.round(2*(h*(a+b)/2)+a*l+b*l+l*d*2),Math.round(l*h*(a + b)/2)]
+function areaVolume(a, b, h, l) {
+  let d = Math.sqrt(h * h + Math.pow((b - a) / 2, 2));
+  return [
+    Math.round(2 * ((h * (a + b)) / 2) + a * l + b * l + l * d * 2),
+    Math.round((l * h * (a + b)) / 2)
+  ];
 }

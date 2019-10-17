@@ -17,5 +17,5 @@ Every sentence will end with a period, and every new sentence will have one spac
 */
 
 function formatPoem(poem) {
-  return poem.split('. ').join('.\n')
+  return poem.split(". ").join(".\n");
 }

@@ -10,6 +10,6 @@ There are 64 squares on a chessboard.
 Write a program that shows how many grains were on each square
 */
 
-function square(number){
-  return Math.pow(2,number-1)
+function square(number) {
+  return Math.pow(2, number - 1);
 }

@@ -8,9 +8,9 @@ If heat is more than 25 but less than 36, bareability depends on humidity. If hu
 If heat is less than or equal to 25 return false.
 Otherwise... it's sunbathing time, so return true!
 */
-function bareable(h, hu){
-  if (h>35||hu>0.5) return false
-  if (h>25&&hu>0.4) return false
-  if (h<=25) return false
-  return true
+function bareable(h, hu) {
+  if (h > 35 || hu > 0.5) return false;
+  if (h > 25 && hu > 0.4) return false;
+  if (h <= 25) return false;
+  return true;
 }

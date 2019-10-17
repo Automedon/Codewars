@@ -6,5 +6,7 @@ So let's make a proper function, called isAN, for is A Number. If you pass it a 
 */
 
 function isAN(value) {
-  return (value instanceof Number||typeof value === 'number') && !isNaN(value);
+  return (
+    (value instanceof Number || typeof value === "number") && !isNaN(value)
+  );
 }

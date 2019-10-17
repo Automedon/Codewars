@@ -24,11 +24,14 @@ matrix = [ [0, 2], [5, 1]] the result should be 3
 0,1,2,(3)...5
 */
 function smallestInteger(matrix) {
-  const arr = JSON.stringify(matrix).replace(/[\[\]]/g,'').split(',').map(v=>v*1).sort((a,b)=>a-b);
+  const arr = JSON.stringify(matrix)
+    .replace(/[\[\]]/g, "")
+    .split(",")
+    .map(v => v * 1)
+    .sort((a, b) => a - b);
   let arr1 = [];
-  for (let i=0; i<=arr.length;i++)
-  {
-    arr1.push(i)
+  for (let i = 0; i <= arr.length; i++) {
+    arr1.push(i);
   }
-  return arr1.filter((v)=>!arr.includes(v))[0]
+  return arr1.filter(v => !arr.includes(v))[0];
 }

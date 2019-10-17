@@ -14,8 +14,8 @@ While 3 is not, and would give us an infinite sequence: 3, 9, 81, 65, 61, 37, 58
 Happy coding!
 */
 function isHappy(n) {
-  for (let i=0;i<100;i++){
-    n=n.toString().split``.reduce((a,b)=>a+(b*b),0)
+  for (let i = 0; i < 100; i++) {
+    n = n.toString().split``.reduce((a, b) => a + b * b, 0);
   }
-  return n===1
+  return n === 1;
 }

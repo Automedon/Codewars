@@ -8,8 +8,8 @@ It should receive a dir parameter which has with two possible values 'asc' or 'd
 
 For the effects of this Kata, all the arrays will contain only Integer numbers so you don't have to care about validating them.
 */
-Array.prototype.sortReloaded=function(asc='asc'){
-  if (asc==='asc') return this.slice().sort((a,b)=>a-b)
-  if (asc==='desc') return this.slice().sort((a,b)=>b-a)
-  return false
-}
+Array.prototype.sortReloaded = function(asc = "asc") {
+  if (asc === "asc") return this.slice().sort((a, b) => a - b);
+  if (asc === "desc") return this.slice().sort((a, b) => b - a);
+  return false;
+};

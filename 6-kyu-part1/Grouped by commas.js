@@ -16,5 +16,5 @@ Examples
 */
 
 function groupByCommas(n) {
-  return n.toLocaleString()
+  return n.toLocaleString();
 }

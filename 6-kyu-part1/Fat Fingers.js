@@ -23,6 +23,15 @@ Happy coding!
 (Adapted from https://codegolf.stackexchange.com/questions/158132/no-a-just-caps-lock)
 */
 var fatFingers = function(str) {
-  if(typeof str !== 'string') return str;
-  return str.replace(/A/g,'a').split('a').map((s,i)=>i%2?s.replace(/./g,m=>/[a-z]/.test(m)?m.toUpperCase():m.toLowerCase()):s).join``
+  if (typeof str !== "string") return str;
+  return str
+    .replace(/A/g, "a")
+    .split("a")
+    .map((s, i) =>
+      i % 2
+        ? s.replace(/./g, m =>
+            /[a-z]/.test(m) ? m.toUpperCase() : m.toLowerCase()
+          )
+        : s
+    ).join``;
 };

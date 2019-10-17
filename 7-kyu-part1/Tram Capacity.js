@@ -16,9 +16,10 @@ At the third stop 4 passengers exit the tram (2 passengers remain inside). Then 
 Finally, all the remaining passengers inside the tram exit the tram at the last stop. There are no passenger inside the tram now, which is in line with the constraints.
 Since the number of passengers inside the tram never exceeds 6, a capacity of 6 is sufficient. Furthermore it is not possible for the tram to have a capacity less than 6. Hence, 6 is the correct answer.
 */
-function tram(stops, descending, onboarding){
-  let result = 0, passengers = 0;
-  for(let i = 0; i < stops; i++)
-    result = Math.max(result, passengers += onboarding[i] - descending[i]);
+function tram(stops, descending, onboarding) {
+  let result = 0,
+    passengers = 0;
+  for (let i = 0; i < stops; i++)
+    result = Math.max(result, (passengers += onboarding[i] - descending[i]));
   return result;
-} 
+}

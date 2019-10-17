@@ -14,6 +14,8 @@ tables could be empty.
 min could be negative.
 max could be really big.
 */
-function sumTimesTables(tables, min, max){
-    return tables.reduce((a,b)=>a+b,0) * (min + max) * (max + 1 - min) / 2
+function sumTimesTables(tables, min, max) {
+  return (
+    (tables.reduce((a, b) => a + b, 0) * (min + max) * (max + 1 - min)) / 2
+  );
 }

@@ -17,10 +17,10 @@ Also check out my other creations — Naming Files, Elections: Weighted Average,
 If you notice any issues or have any suggestions/comments whatsoever, please don't hesitate to mark an issue or just comment. Thanks!
 */
 function keepOrder(arr, val) {
-  for (let i = 0; i < arr.length; i++){
-    if ( val <= arr[i] ) {
+  for (let i = 0; i < arr.length; i++) {
+    if (val <= arr[i]) {
       return i;
     }
   }
-    return arr.length;
-};
+  return arr.length;
+}

@@ -61,4 +61,10 @@ Output:
 
 [number-of-clones, number-of-kata-solved-by-clones]
 */
-const clonewars = n => [Math.round(Math.pow(2, n - 1)), Array(n).fill(1).map((_, i, arr) => Math.pow(2, i) * (arr.length - i)).reduce((a, b) => a + b, 0)]
+const clonewars = n => [
+  Math.round(Math.pow(2, n - 1)),
+  Array(n)
+    .fill(1)
+    .map((_, i, arr) => Math.pow(2, i) * (arr.length - i))
+    .reduce((a, b) => a + b, 0)
+];

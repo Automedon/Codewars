@@ -39,6 +39,11 @@ Enjoy Learning !!
 Zizou
 */
 
-function maxNumber(n){
-  return (''+n).split('').sort((a,b)=>b-a).join('')*1
+function maxNumber(n) {
+  return (
+    ("" + n)
+      .split("")
+      .sort((a, b) => b - a)
+      .join("") * 1
+  );
 }

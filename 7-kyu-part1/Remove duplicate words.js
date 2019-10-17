@@ -1,1 +1,1 @@
-const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ')
+const removeDuplicateWords = s => [...new Set(s.split(" "))].join(" ");

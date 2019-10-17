@@ -19,16 +19,22 @@ output: "hIJKMNPQRSTUVWXZoPQRSTUVWXZlMNPQRSTUVWXZlyZ"
 
 You don't need to validate input, the input string will always contain a certain amount of lowercase letters (min 1 / max 50).
 */
-function insertMissingLetters (str){
-  let uniq = [...new Set(str.split``)].join``
+function insertMissingLetters(str) {
+  let uniq = [...new Set(str.split``)].join``;
   let arr = [];
-  let dict = 'abcdefghijklmnopqrstuvwxyz'
-  for (let i=0;i<uniq.length;i++){
-    arr.push(uniq[i]+dict.slice(dict.indexOf(uniq[i])).replace(new RegExp(`[${uniq}]`,'gi'),'').toUpperCase())
+  let dict = "abcdefghijklmnopqrstuvwxyz";
+  for (let i = 0; i < uniq.length; i++) {
+    arr.push(
+      uniq[i] +
+        dict
+          .slice(dict.indexOf(uniq[i]))
+          .replace(new RegExp(`[${uniq}]`, "gi"), "")
+          .toUpperCase()
+    );
   }
-  let str2=str.slice();
-  for (let i=0;i<uniq.length;i++){
-    str2=str2.replace(new RegExp(uniq[i]),arr[i])
+  let str2 = str.slice();
+  for (let i = 0; i < uniq.length; i++) {
+    str2 = str2.replace(new RegExp(uniq[i]), arr[i]);
   }
-  return str2
+  return str2;
 }

@@ -28,46 +28,43 @@ A non-empty array,
 The length of the final array
 */
 function sumGroups(ar) {
-  let flat =(arr)=>{
-  let a = []
-  let even = arr[0]%2===0
-  for (let i=0;i<arr.length;i++){
-  let temp = []
-      if (even){
-        for (let j=i;j<arr.length;j++){
-          if (arr[j]%2===0){ 
-          temp.push(arr[j]);
-          i++
+  let flat = arr => {
+    let a = [];
+    let even = arr[0] % 2 === 0;
+    for (let i = 0; i < arr.length; i++) {
+      let temp = [];
+      if (even) {
+        for (let j = i; j < arr.length; j++) {
+          if (arr[j] % 2 === 0) {
+            temp.push(arr[j]);
+            i++;
+          } else {
+            i--;
+            even = false;
+            break;
           }
-          else {
-          i--
-          even=false
-          break
+        }
+      } else {
+        for (let j = i; j < arr.length; j++) {
+          if (arr[j] % 2 !== 0) {
+            temp.push(arr[j]);
+            i++;
+          } else {
+            i--;
+            even = true;
+            break;
           }
-        } 
-      } 
-      else {
-         for (let j=i;j<arr.length;j++){
-          if (arr[j]%2!==0){ 
-          temp.push(arr[j]);
-          i++
-          }
-          else {
-          i--
-          even=true
-          break
-          }
+        }
+      }
+      if (temp.length) {
+        a.push(temp);
       }
     }
-         if (temp.length){
-         a.push(temp)
-         }
+    return a.map(v => (Array.isArray(v) ? v.reduce((a, b) => a + b, 0) : v));
+  };
+  let res = flat(ar);
+  while (res.length !== flat(res).length) {
+    res = flat(res);
   }
-  return a.map(v=>Array.isArray(v)?v.reduce((a,b)=>a+b,0):v)
-  }
-  let res = flat(ar)
-  while(res.length!==flat(res).length){
-    res=flat(res)
-  }
-  return res.length
+  return res.length;
 }

@@ -24,15 +24,16 @@ compareVersions("10.4", "10.10");               // returns false
 compareVersions("10.4.9", "10.5");              // returns false
 It can be assumed that version strings are non empty and only contain numeric literals and the character '.'
 */
-function compareVersions (version1, version2) {
-    let arr1 = version1.split('.');
-    let arr2 = version2.split('.');
+function compareVersions(version1, version2) {
+  let arr1 = version1.split(".");
+  let arr2 = version2.split(".");
 
-    let maxLength = Math.max(arr1.length, arr2.length);
+  let maxLength = Math.max(arr1.length, arr2.length);
 
-    for (let i = 0; i < maxLength; i++) {
-        if (Number(arr1[i] || 0) < Number(arr2[i] || 0)) {
-            return false;
-        }
-    } return true;
+  for (let i = 0; i < maxLength; i++) {
+    if (Number(arr1[i] || 0) < Number(arr2[i] || 0)) {
+      return false;
+    }
+  }
+  return true;
 }

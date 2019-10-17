@@ -41,22 +41,21 @@ For `points = [[50,10],[20,80],[80,80],[50,10]]`, the output image should be:
 
 */
 function drawLines(points) {
-  var canvas = new Canvas(100,100)  //Create a 100 x 100 canvas
-  var ctx = canvas.getContext('2d'); 
-  ctx.fillStyle="#ffffff"
-  ctx.fillRect(0,0,100,100)  //Draw background
-  ctx.strokeStyle="#ff0000"  //Set pen's color
-  ctx.beginPath()
+  var canvas = new Canvas(100, 100); //Create a 100 x 100 canvas
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, 100, 100); //Draw background
+  ctx.strokeStyle = "#ff0000"; //Set pen's color
+  ctx.beginPath();
   //Don't delete or modify the code above
   //Your code starts here:
-  
+
   //This is an example, it will draw a line from point(0,0) to point(99,99)
-  ctx.moveTo(points[0][0],points[0][1])
-  for (let i=1;i<points.length;i++)
-  {
-    ctx.lineTo(points[i][0],points[i][1])
+  ctx.moveTo(points[0][0], points[0][1]);
+  for (let i = 1; i < points.length; i++) {
+    ctx.lineTo(points[i][0], points[i][1]);
   }
   //Don't delete or modify the following code
-  ctx.stroke()              //Draw the path you made above
-  return canvas.toDataURL() //Returns the image data
+  ctx.stroke(); //Draw the path you made above
+  return canvas.toDataURL(); //Returns the image data
 }

@@ -14,14 +14,14 @@ If you win return true, if you lose return false.
 Examples:
 [[8, "pass"],[5, "sack"],[3, "sack"],[5, "run"]] `false` [[12, "pass"],[],[],[]]) `true` [[2, "run"],[5, "pass"],[3, "sack"],[8, "pass"]] `true` [[5, "pass"],[6, "turnover"],[],[]] `false`
 */
-function didWeWin(plays){
-   let win = 0
-   plays.map(v=>{
-   if (v[1]==="run"||v[1]==="pass"){
-     win+=v[0]
-   } else {
-     win-=v[0]||0
-   }
-   })
-   return win>10
+function didWeWin(plays) {
+  let win = 0;
+  plays.map(v => {
+    if (v[1] === "run" || v[1] === "pass") {
+      win += v[0];
+    } else {
+      win -= v[0] || 0;
+    }
+  });
+  return win > 10;
 }

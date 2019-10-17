@@ -37,10 +37,12 @@ The Maximum Gap after sorting the array is 576 , The difference between | 64 - 6
 Note : Regardless the sign of negativity .
 */
 
-function maxGap (numbers){
-  let res=[];
-  let arr=numbers.sort((a,b)=>b-a).map((v,i,arr)=>{
-  res.push(arr[i+1]-arr[i])
-  })
-   return Math.abs((res.filter(v=>!isNaN(v)).sort((a,b)=>a-b))[0])
+function maxGap(numbers) {
+  let res = [];
+  let arr = numbers
+    .sort((a, b) => b - a)
+    .map((v, i, arr) => {
+      res.push(arr[i + 1] - arr[i]);
+    });
+  return Math.abs(res.filter(v => !isNaN(v)).sort((a, b) => a - b)[0]);
 }

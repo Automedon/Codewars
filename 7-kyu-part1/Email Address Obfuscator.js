@@ -1,3 +1,3 @@
 obfuscate = function(email) {
-  return email.replace('@',' [at] ').replace(/\./g,' [dot] ')
-}
+  return email.replace("@", " [at] ").replace(/\./g, " [dot] ");
+};

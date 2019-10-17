@@ -10,8 +10,8 @@ For example:
 ([1, 2, 3, 4, 1, 2, 3, 4], 2, 4) -> [1, 4, 3, 4, 1, 2, 3, 2]
 */
 function swapTwo(array, a, b) {
-  array=array.slice()
-  array[array.indexOf(a)]=b
-  array[array.lastIndexOf(b)]=a
-  return array
+  array = array.slice();
+  array[array.indexOf(a)] = b;
+  array[array.lastIndexOf(b)] = a;
+  return array;
 }

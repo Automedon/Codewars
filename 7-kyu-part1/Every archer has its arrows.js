@@ -12,6 +12,6 @@
 archersReady([5, 6, 7, 8]) returns true.
 */
 
-function archersReady(archers){
-  return archers.length?archers.every(v=>v>=5):false;
+function archersReady(archers) {
+  return archers.length ? archers.every(v => v >= 5) : false;
 }

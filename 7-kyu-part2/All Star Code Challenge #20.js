@@ -16,6 +16,6 @@ The function should also allow for concatenating string
 addArrays(["a"],["b"]) // => ["ab"]
 */
 function addArrays(array1, array2) {
-  if (array1.length!==array2.length) throw Error();
-  return array1.map((v,i)=>v+array2[i])
+  if (array1.length !== array2.length) throw Error();
+  return array1.map((v, i) => v + array2[i]);
 }

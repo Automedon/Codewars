@@ -18,18 +18,18 @@ Example Output :
 */
 function cc(card) {
   let count = 0;
-  card.map(card=>{
-  if (card===2) count++ 
-  if (card===3) count++ 
-  if (card===4) count++ 
-  if (card===5) count++ 
-  if (card===6) count++ 
-  if (card===10) count-- 
-  if (card==='J') count-- 
-  if (card==='Q') count-- 
-  if (card==='K') count-- 
-  if (card==='A') count-- 
-  })
-  if (count<=0) return `${count} Hold`
-  return `${count} Bet`
-};
+  card.map(card => {
+    if (card === 2) count++;
+    if (card === 3) count++;
+    if (card === 4) count++;
+    if (card === 5) count++;
+    if (card === 6) count++;
+    if (card === 10) count--;
+    if (card === "J") count--;
+    if (card === "Q") count--;
+    if (card === "K") count--;
+    if (card === "A") count--;
+  });
+  if (count <= 0) return `${count} Hold`;
+  return `${count} Bet`;
+}

@@ -10,9 +10,10 @@ Customers in the dictionary are represented as:
 See example test case for more details.
 */
 function pizzaRewards(customers, minOrders, minPrice) {
-  let arr = []
-  for (let i in customers){
-    if (customers[i].filter(v=>v>=minPrice).length>=minOrders) arr.push(i)
+  let arr = [];
+  for (let i in customers) {
+    if (customers[i].filter(v => v >= minPrice).length >= minOrders)
+      arr.push(i);
   }
-  return arr
+  return arr;
 }

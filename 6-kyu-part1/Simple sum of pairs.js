@@ -17,8 +17,8 @@ Good luck!
 */
 
 function solve(n) {
-  let str = n + '',
-      a = '9'.repeat(str.length - 1)*1,
-      b = n - a
-  return ('' + a + b).split('').reduce((c, d) => +c + +d)
+  let str = n + "",
+    a = "9".repeat(str.length - 1) * 1,
+    b = n - a;
+  return ("" + a + b).split("").reduce((c, d) => +c + +d);
 }

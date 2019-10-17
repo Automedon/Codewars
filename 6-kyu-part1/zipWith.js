@@ -18,11 +18,11 @@ zipWith( (a,b) => a+b,                  [0,1,2,3], [0,1,2,3] )  =>  [0,2,4,6]  B
 Input validation
 Assume all input is valid.
 */
-function zipWith(fn,a0,a1) {
+function zipWith(fn, a0, a1) {
   let arr = [];
-  const short = Math.min(a0.length, a1.length); 
-  for (let i=0;i<short;i++){
-    arr.push(fn(a0[i],a1[i]))
+  const short = Math.min(a0.length, a1.length);
+  for (let i = 0; i < short; i++) {
+    arr.push(fn(a0[i], a1[i]));
   }
-  return arr
+  return arr;
 }

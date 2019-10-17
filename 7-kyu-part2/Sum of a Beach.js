@@ -9,6 +9,8 @@ sumOfABeach("gOfIshsunesunFiSh")             ==>  4
 sumOfABeach("cItYTowNcARShoW")               ==>  0
 */
 function sumOfABeach(beach) {
-  beach=beach.toLowerCase();
-  return beach.match(/sand|water|sun|fish/g)===null?0:beach.match(/sand|water|sun|fish/g).length
+  beach = beach.toLowerCase();
+  return beach.match(/sand|water|sun|fish/g) === null
+    ? 0
+    : beach.match(/sand|water|sun|fish/g).length;
 }

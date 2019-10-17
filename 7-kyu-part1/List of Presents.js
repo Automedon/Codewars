@@ -15,13 +15,13 @@ Should return 4.
 
 _ NOTE: All numbers will be integers >= 0, and the array will never be empty. _
 */
-function howManyGifts(maxBudget, gifts){
-   gifts=gifts.sort((a,b)=>a-b)
-   let sum=0;
-   let i=0;
-   while (maxBudget>=sum){
-   sum+=gifts[i]
-   i++
-   }
-   return i-1
+function howManyGifts(maxBudget, gifts) {
+  gifts = gifts.sort((a, b) => a - b);
+  let sum = 0;
+  let i = 0;
+  while (maxBudget >= sum) {
+    sum += gifts[i];
+    i++;
+  }
+  return i - 1;
 }

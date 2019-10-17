@@ -14,9 +14,12 @@ You can expect playback value to be formatted exactly like above.
 Output should be a title of the longest song from the database that matches the criteria of not being longer than specified time. If there's no songs matching criteria in the database, return false.
 */
 function longestPossible(playback) {
-    for (let song of songs){
-    song[`time`]=song[`playback`].split(':')[0]*60+song[`playback`].split(':')[1]*1    
-    }
-  songs=songs.sort((a,b)=>b.time-a.time)
-  return songs.find(v=>v.time<playback)===undefined?false:songs.find(v=>v.time<playback).title
+  for (let song of songs) {
+    song[`time`] =
+      song[`playback`].split(":")[0] * 60 + song[`playback`].split(":")[1] * 1;
   }
+  songs = songs.sort((a, b) => b.time - a.time);
+  return songs.find(v => v.time < playback) === undefined
+    ? false
+    : songs.find(v => v.time < playback).title;
+}

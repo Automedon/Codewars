@@ -38,21 +38,21 @@ Given string(s) contains one or more set of alphabets in lowercase.
 Find the letters contained in each alphabet but not in the string(s). Output them by the order a-z. If missing alphabet is repeated, please repeat them like "bbccdd", not "bcdbcd"
 */
 function missingAlphabets(s) {
-  let dict = 'abcdefghijklmnopqrstuvwxyz'
-  let o  = s.split``.reduce((a,b)=>(a[b]=a[b]+1||1,a),{})
-  let max = Math.max(...Object.values(o))
-  let dict2= dict.replace(/./g,v=>v.repeat(max))
-  let o2 = dict2.split``.reduce((a,b)=>(a[b]=a[b]+1||1,a),{})
-  let arr = []
-  for (let i in o2){
-    if (o2[i]&&o[i]){
-      if (o2[i]-o[i]>0){
-        arr.push(`${i}`.repeat(o2[i]-o[i]))
+  let dict = "abcdefghijklmnopqrstuvwxyz";
+  let o = s.split``.reduce((a, b) => ((a[b] = a[b] + 1 || 1), a), {});
+  let max = Math.max(...Object.values(o));
+  let dict2 = dict.replace(/./g, v => v.repeat(max));
+  let o2 = dict2.split``.reduce((a, b) => ((a[b] = a[b] + 1 || 1), a), {});
+  let arr = [];
+  for (let i in o2) {
+    if (o2[i] && o[i]) {
+      if (o2[i] - o[i] > 0) {
+        arr.push(`${i}`.repeat(o2[i] - o[i]));
       }
     }
-    if (o2[i]&&!o[i]){
-        arr.push(`${i}`.repeat(o2[i]))
+    if (o2[i] && !o[i]) {
+      arr.push(`${i}`.repeat(o2[i]));
     }
   }
-  return arr.join``
+  return arr.join``;
 }

@@ -36,11 +36,27 @@ peakAndValley([49,97,76,56,96,88,65,20,14,93,32])
 should return []
 ```
 */
-function peakAndValley(a){
-   let arr =  [];
-   for(let i=3;i<a.length-3;i++){
-     if (a[i-3]<a[i]&&a[i-2]<a[i]&&a[i-1]<a[i]&&a[i+3]<a[i]&&a[i+2]<a[i]&&a[i+1]<a[i]) arr.push(a[i])
-     if (a[i-3]>a[i]&&a[i-2]>a[i]&&a[i-1]>a[i]&&a[i+3]>a[i]&&a[i+2]>a[i]&&a[i+1]>a[i]) arr.push(a[i])
-   }
-   return arr
+function peakAndValley(a) {
+  let arr = [];
+  for (let i = 3; i < a.length - 3; i++) {
+    if (
+      a[i - 3] < a[i] &&
+      a[i - 2] < a[i] &&
+      a[i - 1] < a[i] &&
+      a[i + 3] < a[i] &&
+      a[i + 2] < a[i] &&
+      a[i + 1] < a[i]
+    )
+      arr.push(a[i]);
+    if (
+      a[i - 3] > a[i] &&
+      a[i - 2] > a[i] &&
+      a[i - 1] > a[i] &&
+      a[i + 3] > a[i] &&
+      a[i + 2] > a[i] &&
+      a[i + 1] > a[i]
+    )
+      arr.push(a[i]);
+  }
+  return arr;
 }

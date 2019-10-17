@@ -24,4 +24,4 @@ Explanation:
 The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 */
 
-rowWeights=arr=>arr.reduce((a,b,i)=>(a[i%2]+=b,a),[0,0])
+rowWeights = arr => arr.reduce((a, b, i) => ((a[i % 2] += b), a), [0, 0]);

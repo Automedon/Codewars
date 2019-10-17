@@ -18,13 +18,12 @@ In python, you will want to use the os module and os.path
 Documentation on os module
 Documentation on os.path module
 */
-const fs = require('fs')
+const fs = require("fs");
 
 function mkdirp(root, ...path) {
   for (let i of path) {
     try {
-      fs.mkdirSync(root += '/' + i)
-    }
-    catch (e) { }
+      fs.mkdirSync((root += "/" + i));
+    } catch (e) {}
   }
 }

@@ -16,7 +16,13 @@ The object literal should then have a getter and setter called fullName which re
 
 Get your timer out and get ready. Ready, get set, GO!!! :D
 */
-const person = {firstName:"Jane",lastName:"Doe",
-get fullName() {return `${this.firstName} ${this.lastName}`},
-set fullName(name) {[this.firstName, this.lastName] = name.split(' ');}
+const person = {
+  firstName: "Jane",
+  lastName: "Doe",
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  set fullName(name) {
+    [this.firstName, this.lastName] = name.split(" ");
+  }
 };

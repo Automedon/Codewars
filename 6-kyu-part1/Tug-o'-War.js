@@ -25,11 +25,13 @@ more examples:
 Good luck!
 */
 function tug_o_war(teams) {
-  let team1=teams[0].reduce((a,b)=>a+b,0)
-  let team2=teams[1].reduce((a,b)=>a+b,0)
-  if (team1===team2&&teams[0][0]>teams[1][teams[1].length-1]) return "Team 1 wins!"
-  if (team1===team2&&teams[0][0]<teams[1][teams[1].length-1]) return "Team 2 wins!"
-  if (team1>team2) return "Team 1 wins!"
-  if (team1<team2) return "Team 2 wins!"
-  if (team1===team2) return "It's a tie!"
+  let team1 = teams[0].reduce((a, b) => a + b, 0);
+  let team2 = teams[1].reduce((a, b) => a + b, 0);
+  if (team1 === team2 && teams[0][0] > teams[1][teams[1].length - 1])
+    return "Team 1 wins!";
+  if (team1 === team2 && teams[0][0] < teams[1][teams[1].length - 1])
+    return "Team 2 wins!";
+  if (team1 > team2) return "Team 1 wins!";
+  if (team1 < team2) return "Team 2 wins!";
+  if (team1 === team2) return "It's a tie!";
 }

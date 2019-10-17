@@ -17,8 +17,8 @@ longestSlideDown [[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]]
 
 (c) This task is a lyrical version of the Problem 18 and/or Problem 67 on ProjectEuler.
 */
-function longestSlideDown (pyramid) {
-  return pyramid.reduceRight((last,current)=>current.map(
-    (v,i)=>v+Math.max(last[i],last[i+1])
-  ))[0];
+function longestSlideDown(pyramid) {
+  return pyramid.reduceRight((last, current) =>
+    current.map((v, i) => v + Math.max(last[i], last[i + 1]))
+  )[0];
 }

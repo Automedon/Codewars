@@ -10,13 +10,20 @@ will return
   [['d',5], ['a',4], ['b',2], ['c',2], ['h',2]]
 Letter frequency analysis is often used to analyse simple substitution cipher texts like those created by the Caesar cipher.
 */
-function letterFrequency(text){
-  let str=text.toLowerCase().replace(/[^a-z]\s*/gi,'').split(``).sort();
-  if (str.length===0) return []
-  let arr=[];
-  let obj={};
-  str.map(v=>obj[v]=obj[v]?obj[v]+1:1)
-  obj=JSON.stringify(obj).slice(1,-1).replace(/"/g,'').split(',')
-  .map(v=>arr.push([v.split(':')[0],v.split(':')[1]*1]))
-  return arr.sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))
+function letterFrequency(text) {
+  let str = text
+    .toLowerCase()
+    .replace(/[^a-z]\s*/gi, "")
+    .split(``)
+    .sort();
+  if (str.length === 0) return [];
+  let arr = [];
+  let obj = {};
+  str.map(v => (obj[v] = obj[v] ? obj[v] + 1 : 1));
+  obj = JSON.stringify(obj)
+    .slice(1, -1)
+    .replace(/"/g, "")
+    .split(",")
+    .map(v => arr.push([v.split(":")[0], v.split(":")[1] * 1]));
+  return arr.sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }

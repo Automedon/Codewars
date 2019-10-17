@@ -28,22 +28,26 @@ The original PatternCraft series (by John Lindquist) is a collection of Youtube 
 */
 class SiegeState {
   constructor() {
-  this.move=false
-  this.dmg=20
+    this.move = false;
+    this.dmg = 20;
   }
 }
 
 class TankState {
   constructor() {
-  this.move=true
-  this.dmg=5
+    this.move = true;
+    this.dmg = 5;
   }
 }
 
 class Tank {
   constructor() {
-  this.state=new TankState()
+    this.state = new TankState();
   }
-  get canMove() {return this.state.move  }
-  get damage() {return this.state.dmg  }
+  get canMove() {
+    return this.state.move;
+  }
+  get damage() {
+    return this.state.dmg;
+  }
 }

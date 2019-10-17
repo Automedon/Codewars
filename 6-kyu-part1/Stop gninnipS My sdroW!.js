@@ -10,8 +10,16 @@ spinWords( "This is a test") => returns "This is a test"
 spinWords( "This is another test" )=> returns "This is rehtona test"
 */
 
-function spinWords(str){
-  return str.split(' ').map(value=>{ if (value.length>4) return value.split('').reverse().join(''); 
-  return value})
-                      .join(' ');
+function spinWords(str) {
+  return str
+    .split(" ")
+    .map(value => {
+      if (value.length > 4)
+        return value
+          .split("")
+          .reverse()
+          .join("");
+      return value;
+    })
+    .join(" ");
 }

@@ -28,12 +28,20 @@ HW = cos(A) * WS
 More information about wind component calculation: http://en.wikipedia.org/wiki/Tailwind
 */
 function windComponents(rwy, windDirection, windSpeed) {
-  let n = rwy.match(/\d+/)[0]*10
-  let HW = Math.round(Math.cos((((windDirection-n)*Math.PI)/180))*windSpeed)
-  let CW = Math.round(Math.sin((((windDirection-n)*Math.PI)/180))*windSpeed)
-  let head=true;
-  let left=false
-  if (HW<0)head=false
-  if (CW<0)left=true
-  return `${head?'Head':'Tail'}wind ${Math.abs(HW)} knots. Crosswind ${Math.abs(CW)} knots from your ${left?'left':'right'}.`
+  let n = rwy.match(/\d+/)[0] * 10;
+  let HW = Math.round(
+    Math.cos(((windDirection - n) * Math.PI) / 180) * windSpeed
+  );
+  let CW = Math.round(
+    Math.sin(((windDirection - n) * Math.PI) / 180) * windSpeed
+  );
+  let head = true;
+  let left = false;
+  if (HW < 0) head = false;
+  if (CW < 0) left = true;
+  return `${head ? "Head" : "Tail"}wind ${Math.abs(
+    HW
+  )} knots. Crosswind ${Math.abs(CW)} knots from your ${
+    left ? "left" : "right"
+  }.`;
 }

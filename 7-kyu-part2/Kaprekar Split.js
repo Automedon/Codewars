@@ -23,4 +23,9 @@ Note:
 The function should also work in cases where there are leading zeros. e.g For 99999, its square is 9999800001, which can be split into 99998 and 00001 to sum to the original number 99999.
 1 is a Kaprekar number as 1^2=1 and 0+1=1. Given an input of 1, the desired output is 0.
 */
-const kaprekarSplit = n => (n * n + '').split('').findIndex((_, i, a) => +a.slice(0, i).join('') + +a.slice(i).join('') == n);
+const kaprekarSplit = n =>
+  (n * n + "")
+    .split("")
+    .findIndex(
+      (_, i, a) => +a.slice(0, i).join("") + +a.slice(i).join("") == n
+    );

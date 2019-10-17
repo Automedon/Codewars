@@ -9,6 +9,6 @@ Your output. Output a filtered version of the second parameter using the functio
 Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 */
 var FindFunction = function(func, arr) {
-  func=func.filter(v=>typeof v==='function')
-  return arr.filter(v=>func[0](v))
-}
+  func = func.filter(v => typeof v === "function");
+  return arr.filter(v => func[0](v));
+};

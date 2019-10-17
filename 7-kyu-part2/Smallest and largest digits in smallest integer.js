@@ -9,10 +9,10 @@ the index position of the smallest digit in the original integer.
 a single instance of the largest digit.
 For example: if you input the number 96781191 in the smallestNum function, you should get '11167899, 1, 4, 9'.
 */
-function smallestNum(num){
-  let str =num.toString().split``.sort()
-  let smallest = Math.min(...str)
-  let largest = Math.max(...str)
-  let index = num.toString().indexOf(smallest)
-  return `${str.join``}, ${smallest}, ${index}, ${largest}`
+function smallestNum(num) {
+  let str = num.toString().split``.sort();
+  let smallest = Math.min(...str);
+  let largest = Math.max(...str);
+  let index = num.toString().indexOf(smallest);
+  return `${str.join``}, ${smallest}, ${index}, ${largest}`;
 }

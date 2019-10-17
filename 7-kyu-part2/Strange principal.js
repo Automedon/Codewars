@@ -8,6 +8,6 @@ The task is to write a function which gets any number as an input and returns th
 
 The given input is always an integer greater than or equal to zero that is why there is no need for validation.
 */
-function numOfOpenLockers(n){
-  return Math.floor(Math.sqrt(n))
+function numOfOpenLockers(n) {
+  return Math.floor(Math.sqrt(n));
 }

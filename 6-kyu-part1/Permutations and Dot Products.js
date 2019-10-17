@@ -20,9 +20,9 @@ If the list or array is empty, minDot should return 0. All arrays or lists will 
 
 Note: This kata is inspired by GCJ 2008.
 */
-var minDot = function(a,b){  
-  if (!a.length||!b.length) return 0
-  b=b.sort((a,b)=>b-a)
-  a=a.sort((a,b)=>a-b)
-  return a.map((v,i)=>v*b[i]).reduce((a,b)=>a+b,0)
-}
+var minDot = function(a, b) {
+  if (!a.length || !b.length) return 0;
+  b = b.sort((a, b) => b - a);
+  a = a.sort((a, b) => a - b);
+  return a.map((v, i) => v * b[i]).reduce((a, b) => a + b, 0);
+};

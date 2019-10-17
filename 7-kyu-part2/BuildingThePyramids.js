@@ -12,5 +12,5 @@ pyramid(6, 24)   == 'XXXXXXXX'
 pyramid(32, 512) == 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 */
 function pyramid(height, area) {
-    return 'X'.repeat(area/height*2)
+  return "X".repeat((area / height) * 2);
 }

@@ -11,14 +11,14 @@ translate('dOgCat') --> 'dgoact'
 translate('heYadam') --> 'heaydam'
 Please do not test this with spaces in the string.
 */
-function translate(str){
-  str=str.split``
-  for (let i=0;i<str.length;i++){
-    if (str[i]===str[i].toUpperCase()){
-    let temp = str[i]
-    str[i] = str[i+1]
-    str[i+1]=temp.toLowerCase()
+function translate(str) {
+  str = str.split``;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === str[i].toUpperCase()) {
+      let temp = str[i];
+      str[i] = str[i + 1];
+      str[i + 1] = temp.toLowerCase();
     }
   }
-  return str.join``.toLowerCase()
+  return str.join``.toLowerCase();
 }

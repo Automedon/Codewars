@@ -16,4 +16,11 @@ Don´t worry about wrong inputs, they will always be a string with 4 groups of 4
          valid_card?("5457 6238 9323 4311") # -> false
 for reference check: https://en.wikipedia.org/wiki/Luhn_algorithm
 */
-const validCard = card => !(card.split(/\s*/).map((c, i) => c * (i % 2? 1 : 2)).map(d => d > 9? d - 9 : d).reduce((a, b) => a + b) % 10)
+const validCard = card =>
+  !(
+    card
+      .split(/\s*/)
+      .map((c, i) => c * (i % 2 ? 1 : 2))
+      .map(d => (d > 9 ? d - 9 : d))
+      .reduce((a, b) => a + b) % 10
+  );

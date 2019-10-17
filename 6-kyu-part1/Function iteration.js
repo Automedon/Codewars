@@ -12,12 +12,12 @@ var doubleIterator = createIterator(getDouble, 2); // This means, it runs *getDo
 doubleIterator(3) => 12
 For the sake of simplicity, all function inputs to createIterator would be functions returning a small number and number of iterations would always be integers.
 */
-var createIterator = function (func, n) {
-  return function(){
-  let start=func(...arguments)
-  for (let i=0;i<n-1;i++){
-      start=func(start)
+var createIterator = function(func, n) {
+  return function() {
+    let start = func(...arguments);
+    for (let i = 0; i < n - 1; i++) {
+      start = func(start);
     }
-    return start
-  }
+    return start;
+  };
 };

@@ -17,14 +17,18 @@ Life without primes
 Please also try the performance version of this kata at Upside down numbers - Challenge Edition
 */
 function solve(x, y) {
-  const invalid = ["2","3","4","5","7"]
-  let arr = []
-  for(let i = x; i <y; i++) {
-    let valid = true
+  const invalid = ["2", "3", "4", "5", "7"];
+  let arr = [];
+  for (let i = x; i < y; i++) {
+    let valid = true;
     invalid.map(n => {
-      if(i.toString().includes(n)) valid = false
-    })
-    if (valid) arr.push(i+'')
+      if (i.toString().includes(n)) valid = false;
+    });
+    if (valid) arr.push(i + "");
   }
-  return arr.filter(n => n === n.replace(/6|9/g,v=>v==='6'?'9':'6').split``.reverse().join``).length
-};
+  return arr.filter(
+    n =>
+      n ===
+      n.replace(/6|9/g, v => (v === "6" ? "9" : "6")).split``.reverse().join``
+  ).length;
+}

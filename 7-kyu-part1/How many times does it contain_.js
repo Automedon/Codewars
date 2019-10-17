@@ -7,6 +7,6 @@ The function takes a string(inputS) as a paremeter and a char(charS) which is th
 For example, if you get an input string "Hello world" and the character to find is "o", return 2.
 */
 
-function stringCounter(inputS, charS){
-  return inputS.split(charS).length-1;
+function stringCounter(inputS, charS) {
+  return inputS.split(charS).length - 1;
 }

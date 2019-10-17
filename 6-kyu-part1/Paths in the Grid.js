@@ -11,9 +11,9 @@ In the picture, there are 10 pathes from A to B.
 
 Hint: Use mathematical permutation and combination
 */
-function numberOfRoutes(m, n){
-  return factorial(n+m) / factorial(n) /factorial(m)
+function numberOfRoutes(m, n) {
+  return factorial(n + m) / factorial(n) / factorial(m);
 }
-function factorial(n){
-    return n ?n*factorial(n-1):1
+function factorial(n) {
+  return n ? n * factorial(n - 1) : 1;
 }

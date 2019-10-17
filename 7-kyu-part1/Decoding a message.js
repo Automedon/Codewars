@@ -18,7 +18,10 @@ Create a function that will instantly decode any of these messages
 
 You can assume no punctuation or capitals, only lower case letters, but remember spaces!
 */
-function decode(code,list='abcdefghijklmnopqrstuvwxyz') {
-  return code.toLowerCase()
-             .replace(/./gi, a => list.indexOf(a) > -1 ? list[list.length - list.indexOf(a) - 1] : a)
+function decode(code, list = "abcdefghijklmnopqrstuvwxyz") {
+  return code
+    .toLowerCase()
+    .replace(/./gi, a =>
+      list.indexOf(a) > -1 ? list[list.length - list.indexOf(a) - 1] : a
+    );
 }

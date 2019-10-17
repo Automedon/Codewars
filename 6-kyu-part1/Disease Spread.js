@@ -31,9 +31,11 @@ alternative text
 */
 function epidemic(tm, n, s0, i0, b, a) {
   const dt = tm / n;
-  const iArr = new Array(n).fill(), sArr = new Array(n).fill(), rArr = new Array(n).fill();
-  [iArr[0], sArr[0], rArr[0]] = [i0,s0,0];
-  iArr.slice(1).map((_, i) => {    
+  const iArr = new Array(n).fill(),
+    sArr = new Array(n).fill(),
+    rArr = new Array(n).fill();
+  [iArr[0], sArr[0], rArr[0]] = [i0, s0, 0];
+  iArr.slice(1).map((_, i) => {
     sArr[i + 1] = sArr[i] - dt * b * sArr[i] * iArr[i];
     iArr[i + 1] = iArr[i] + dt * (b * sArr[i] * iArr[i] - a * iArr[i]);
     rArr[i + 1] = rArr[i] + dt * iArr[i] * a;

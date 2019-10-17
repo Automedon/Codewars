@@ -7,12 +7,12 @@ Example: "2017-01-21" -> You will get 20 17 - 01 - 21 (for each of then +50)-> 7
 "1966-12-07" -> "Et->-9"
 Have fun!
 */
-function translateDate(dateStr){
-  dateStr=dateStr.split('-').join``
-  let arr= []
-  for (let i=0;i<dateStr.length;i+=2){
-    arr.push(dateStr.slice(i,i+2)*1)
+function translateDate(dateStr) {
+  dateStr = dateStr.split("-").join``;
+  let arr = [];
+  for (let i = 0; i < dateStr.length; i += 2) {
+    arr.push(dateStr.slice(i, i + 2) * 1);
   }
-  arr=arr.map(v=>String.fromCharCode(v+50))
-  return [arr[0]+arr[1],arr[2],arr[3]].join`-`
+  arr = arr.map(v => String.fromCharCode(v + 50));
+  return [arr[0] + arr[1], arr[2], arr[3]].join`-`;
 }

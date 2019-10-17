@@ -6,10 +6,10 @@ Given a string made up of '~' and '_' representing waves and calm respectively, 
 
 Remember, only the process of change from wave to calm (and vice versa) will add to the effect (really wave peak to trough but this will do). Find out how many changes in level the string has and if that figure is more than 20% of the string, return "Throw Up", if less, return "No Problem".
 */
-function seaSick(x){
+function seaSick(x) {
   var count = 0;
   for (var i = 0; i < x.length - 1; i++) {
-    if (x[i] !== x[i+1]) {
+    if (x[i] !== x[i + 1]) {
       count++;
     }
   }

@@ -95,6 +95,9 @@ alienLanguage("Hello World") should return "HELLo WORLd"
 A small hint: The first conversion of the entire string will make the code easier
 */
 
-function alienLanguage(str){
- return str.split(' ').map(v=>v.slice(0,-1).toUpperCase() +v.slice(-1).toLowerCase()).join(' ');
+function alienLanguage(str) {
+  return str
+    .split(" ")
+    .map(v => v.slice(0, -1).toUpperCase() + v.slice(-1).toLowerCase())
+    .join(" ");
 }

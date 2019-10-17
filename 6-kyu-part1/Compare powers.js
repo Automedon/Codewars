@@ -15,8 +15,8 @@ comparePowers([3,9],[5,6])===-1
 comparePowers([7,7],[5,8])===-1
 Only positive integers will be tested, incluing bigger numbers - you are warned now, so be diligent try to implement an efficient solution not to drain too much on CW resources ;)!
 */
-function comparePowers([a,b],[x,y]){
-  let f =Math.log10(a)*b;
-  let s =Math.log10(x)*y;
-  return f===s?0:f>s?-1:1
+function comparePowers([a, b], [x, y]) {
+  let f = Math.log10(a) * b;
+  let s = Math.log10(x) * y;
+  return f === s ? 0 : f > s ? -1 : 1;
 }

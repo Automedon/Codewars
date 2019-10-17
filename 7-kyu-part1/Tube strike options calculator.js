@@ -20,12 +20,12 @@ walk = 5 (km/hr) bus = 8 (km/hr)
 The function must return the fastest option, either "Walk" or "Bus". If the walk is going to be over 2 hours, the function should recommend that you take the bus. If the walk is going to be under 10 minutes, the function should recommend that you walk. If both options are going to take the same amount of time, the function should recommend that you walk
 */
 
-function calculator(distance, busDrive, busWalk)  {
+function calculator(distance, busDrive, busWalk) {
   const walkTime = distance / walk;
   const busTime = busDrive / bus + busWalk / walk;
-  
-  if (walkTime < 1/6) return 'Walk';
-  if (walkTime > 2) return 'Bus';
-  
-  return walkTime <= busTime ? 'Walk' : 'Bus';
+
+  if (walkTime < 1 / 6) return "Walk";
+  if (walkTime > 2) return "Bus";
+
+  return walkTime <= busTime ? "Walk" : "Bus";
 }

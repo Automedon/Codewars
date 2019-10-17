@@ -21,9 +21,9 @@ For this challenge, you will be given some fractional odds, represented as an ar
 The result must be a string, and there should be no spaces between the number and the percentage sign. When rounding, 5 should be rounded up. Good luck!
 */
 function oddsConverter(odds) {
-  let arr = odds.map(v=>{
-    let str=v.split`/`
-    return (str[1]*1)/(str[1]*1+str[0]*1)*100
-  })
-  return `${Math.round(Math.max(...arr)*10)/10}%`
+  let arr = odds.map(v => {
+    let str = v.split`/`;
+    return ((str[1] * 1) / (str[1] * 1 + str[0] * 1)) * 100;
+  });
+  return `${Math.round(Math.max(...arr) * 10) / 10}%`;
 }

@@ -9,11 +9,10 @@ geometricSequenceElements(2, 3, 5) == '2, 6, 18, 54, 162'
 More info: https://en.wikipedia.org/wiki/Geometric_progression
 */
 
-function geometricSequenceElements(a, r, n){
-  let arr=[a];
-  for (let i=0;i<n-1;i++)
-  {
-  arr.push(arr[i]*r)
+function geometricSequenceElements(a, r, n) {
+  let arr = [a];
+  for (let i = 0; i < n - 1; i++) {
+    arr.push(arr[i] * r);
   }
-  return arr.join(', ')
+  return arr.join(", ");
 }

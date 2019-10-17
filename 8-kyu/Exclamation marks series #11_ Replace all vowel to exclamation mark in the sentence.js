@@ -14,6 +14,6 @@ Please don't post issue about difficulty or duplicate. Because:
 That's unfair on the kata creator. This is a valid kata and introduces new people to javascript some regex or loops, depending on how they tackle this problem. --matt c
 */
 
-function replace(s){
-  return s.replace(/[aeoiu]/ig, '!')  
+function replace(s) {
+  return s.replace(/[aeoiu]/gi, "!");
 }

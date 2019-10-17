@@ -12,15 +12,14 @@ Return an empty string if there are no instances of letter in the given string.
 
 Adapted from: Ruby Kickstart
 */
-function comes_after(str,l) {
-  let ans='';
-  for (let i=0;i<str.length;i++){
-    if (str[i]===l.toLowerCase()||str[i]===l.toUpperCase()){
-      if (str[i+1]!==undefined)
-      {
-    ans+=str[i+1]
+function comes_after(str, l) {
+  let ans = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === l.toLowerCase() || str[i] === l.toUpperCase()) {
+      if (str[i + 1] !== undefined) {
+        ans += str[i + 1];
       }
     }
   }
-  return ans.replace(/[^a-z]/gi,'')
+  return ans.replace(/[^a-z]/gi, "");
 }

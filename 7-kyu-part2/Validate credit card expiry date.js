@@ -12,17 +12,23 @@ Your task is to write a function that returns true or false if the expiry date i
 
 Good luck.
 */
-function checkExpiryValid (date1) {
+function checkExpiryValid(date1) {
   let date = new Date(Date.now());
   let year = date.getFullYear();
-  let month = date.getMonth()+1;
-  let arr = [],temp='';
-  for (let i=0;i<date1.length;i++)
-  {
-  if (/[0-9]/.test(date1[i])){ temp+=date1[i]}
-  else {arr.push(temp);temp=''}
-  if (i===date1.length-1){arr.push(temp)}
+  let month = date.getMonth() + 1;
+  let arr = [],
+    temp = "";
+  for (let i = 0; i < date1.length; i++) {
+    if (/[0-9]/.test(date1[i])) {
+      temp += date1[i];
+    } else {
+      arr.push(temp);
+      temp = "";
+    }
+    if (i === date1.length - 1) {
+      arr.push(temp);
+    }
   }
-  arr=arr.filter(v=>v.length>1)
-  return arr[1].slice(-2)*1>=year.toString().slice(-2)
+  arr = arr.filter(v => v.length > 1);
+  return arr[1].slice(-2) * 1 >= year.toString().slice(-2);
 }

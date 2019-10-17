@@ -19,10 +19,10 @@ The answer to the Club Doorman is 20 * 3 = 60
 TASK
 The function passTheDoorMan with a given string word shall return the right number.
 */
-function passTheDoorMan (word){
-  let letter='';
-  for (let i=0;i<word.length;i++){
-  if (word[i]===word[i+1]) letter=word[i]
+function passTheDoorMan(word) {
+  let letter = "";
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === word[i + 1]) letter = word[i];
   }
-  return (letter.charCodeAt()-96)*3
+  return (letter.charCodeAt() - 96) * 3;
 }

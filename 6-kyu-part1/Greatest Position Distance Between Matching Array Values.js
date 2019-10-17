@@ -10,9 +10,9 @@ Test.assertEquals(greatestDistance([0, 2, 1, 2, 4, 1]), 3);
 This is based on a Kata I had completed only to realize I has misread the instructions. I enjoyed solving the problem I thought it was asking me to complete so I thought I'd add a new Kata for others to enjoy. There are no tricks in this one, good luck!
 */
 var greatestDistance = function(data) {
-  let arr = []
-  for (let i=0;i<data.length;i++){
-    arr.push(data.lastIndexOf(data[i])-data.indexOf(data[i]))
+  let arr = [];
+  for (let i = 0; i < data.length; i++) {
+    arr.push(data.lastIndexOf(data[i]) - data.indexOf(data[i]));
   }
-  return Math.max(...arr)
+  return Math.max(...arr);
 };

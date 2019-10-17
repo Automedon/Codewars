@@ -12,6 +12,6 @@ Tip: being able to think recursively might help here :p
 
 Note: albeit this is more clearly a logical than a coding problem, do not underestimate (or under-rank) the kata for requiring not necessarily wizard-class coding skills: a good coder is a master of pattern recognition and subsequent optimization ;)
 */
-function howManyMeasurements(n){
-  return Math.ceil(Math.log(n)/Math.log(3))
+function howManyMeasurements(n) {
+  return Math.ceil(Math.log(n) / Math.log(3));
 }

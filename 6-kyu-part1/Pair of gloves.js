@@ -19,14 +19,14 @@ numberOfPairs(myGloves) == 2;// red and blue
 let redGloves = ['red','red','red','red','red','red'];
 numberOfPairs(redGloves) == 3; // 3 red pairs
 */
-function numberOfPairs(gloves){
-   let arr = gloves.slice().sort((a,b)=>a.localeCompare(b))
-   let pairs = 0;
-   for (let i=1;i<arr.length;i++){
-     if (arr[i-1]===arr[i]){
-       pairs++
-       i++
-     }
-   }
-   return pairs
+function numberOfPairs(gloves) {
+  let arr = gloves.slice().sort((a, b) => a.localeCompare(b));
+  let pairs = 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i - 1] === arr[i]) {
+      pairs++;
+      i++;
+    }
+  }
+  return pairs;
 }

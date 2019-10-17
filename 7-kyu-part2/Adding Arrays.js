@@ -35,4 +35,5 @@ arrAdder([
   [ '', 'a', '', '', '', '', '', '' ] ]) // => "The Mictochondria is the powerhouse of the cell"
 
 */
-const arrAdder = arr =>  arr[0].map((_,i)=>  arr.map((_,j)=> arr[j][i]).join('')).join(' ');
+const arrAdder = arr =>
+  arr[0].map((_, i) => arr.map((_, j) => arr[j][i]).join("")).join(" ");

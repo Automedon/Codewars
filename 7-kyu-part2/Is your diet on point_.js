@@ -27,8 +27,9 @@ Note: To lose 1kg of weight, you have to spend 7700 calories.
 
 Round to second decimal place.
 */
-function diet(meals, requiredCalories, time)
-{
-  let cal=meals.map(v=>v.protein*4+v.fat*9+v.carbohydrates*4).reduce((a,b)=>a+b,0)
-  return Math.round((cal-requiredCalories*time)/7700*100)/100
+function diet(meals, requiredCalories, time) {
+  let cal = meals
+    .map(v => v.protein * 4 + v.fat * 9 + v.carbohydrates * 4)
+    .reduce((a, b) => a + b, 0);
+  return Math.round(((cal - requiredCalories * time) / 7700) * 100) / 100;
 }

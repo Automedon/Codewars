@@ -8,5 +8,7 @@ n/$n can be any integer greater than or equal to 0.
 */
 
 function generateIntegers(n) {
-  return Array(n+1).fill(1).map((v,i)=>v*i)
+  return Array(n + 1)
+    .fill(1)
+    .map((v, i) => v * i);
 }

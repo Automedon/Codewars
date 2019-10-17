@@ -9,5 +9,7 @@ If this description does not make sense to you: the kata is a reference to Monty
 // The black knight will be more persistent depending on the difficulty you specify.
 // Possible difficulties are easy, medium, hard, harder and impossible.
 // Default is easy.
-difficulty = 'medium';
-BlackKnight.letsYouPass = function () { return true; }
+difficulty = "medium";
+BlackKnight.letsYouPass = function() {
+  return true;
+};

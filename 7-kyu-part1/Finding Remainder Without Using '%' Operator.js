@@ -21,6 +21,6 @@ SimpleInteger is a tiny and immutable implementation of an integer number. Its i
 #compareTo(SimpleInteger val)
 */
 
-var remainder = function(D,d){
-  return isNaN(D-Math.floor(D/d)*d)?'NaN':D-Math.floor(D/d)*d
-}
+var remainder = function(D, d) {
+  return isNaN(D - Math.floor(D / d) * d) ? "NaN" : D - Math.floor(D / d) * d;
+};

@@ -24,7 +24,9 @@ When the packet doesn't have only uppercase letters and spaces or just spaces th
   
 AbqTH #5 = 0
 */
-function quicksum(packet){
-  if (/[^ A-Z]/g.test(packet)) return 0
-  return packet.split``.map((v,i)=>v===' '?0:(v.charCodeAt()-64)*(i+1)).reduce((a,b)=>a+b,0)
+function quicksum(packet) {
+  if (/[^ A-Z]/g.test(packet)) return 0;
+  return packet.split``
+    .map((v, i) => (v === " " ? 0 : (v.charCodeAt() - 64) * (i + 1)))
+    .reduce((a, b) => a + b, 0);
 }

@@ -50,8 +50,8 @@ In Haskell, the result is a Maybe, returning Just String indicating
 the medal if they won or Nothing if they don't.
 */
 function evilCodeMedal(userTime, gold, silver, bronze) {
-  if (userTime<gold)return "Gold";
-   if (userTime<silver)return "Silver"
-    if (userTime<bronze)return "Bronze"
-  return 'None'
+  if (userTime < gold) return "Gold";
+  if (userTime < silver) return "Silver";
+  if (userTime < bronze) return "Bronze";
+  return "None";
 }

@@ -28,10 +28,15 @@ Note: There are spaces for the indentation on the left of each line and no space
 
 Have fun!
 */
-function getADownArrowOf(n) { 
-    let part1 =  Array.from({length: n}, (_, i) => {   
-        let arr = Array.from({length: i}, (v, j) => (j + 1) % 10);
-    return ' '.repeat(n - i - 1) + arr.join('') + (i + 1) % 10 + arr.reverse().join('');
+function getADownArrowOf(n) {
+  let part1 = Array.from({ length: n }, (_, i) => {
+    let arr = Array.from({ length: i }, (v, j) => (j + 1) % 10);
+    return (
+      " ".repeat(n - i - 1) +
+      arr.join("") +
+      ((i + 1) % 10) +
+      arr.reverse().join("")
+    );
   }).reverse();
-  return part1.join('\n');
+  return part1.join("\n");
 }

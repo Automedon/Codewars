@@ -15,6 +15,6 @@ Examples
 -0.5 => 0
 */
 function ensureEven(n) {
-  for (let i=n;;n<=0?i--:i++)
-  if (Math.round(i)%2===0) return Math.round(i)
+  for (let i = n; ; n <= 0 ? i-- : i++)
+    if (Math.round(i) % 2 === 0) return Math.round(i);
 }

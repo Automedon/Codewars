@@ -12,4 +12,4 @@ Only a single . character allowed
 Code must be on a single line
 ${ character not allowed
 */
-p=(s)=>s.concat(s,s)
+p = s => s.concat(s, s);

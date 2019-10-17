@@ -12,9 +12,10 @@ Your task is to return an array of those missing numbers:
 [-1,0,2,3,4]
 */
 
-function findMissingNumbers(arr){
-   const res=[];
-   for (let i=arr[0];i<=arr[arr.length-1];i++)
-   {if (arr.indexOf(i)===-1) res.push(i)}
-   return res
+function findMissingNumbers(arr) {
+  const res = [];
+  for (let i = arr[0]; i <= arr[arr.length - 1]; i++) {
+    if (arr.indexOf(i) === -1) res.push(i);
+  }
+  return res;
 }

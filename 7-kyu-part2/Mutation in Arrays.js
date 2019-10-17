@@ -7,5 +7,5 @@ Write a function that returns the last two items in an array, in ascending order
 HINT: Watch out for methods that mutate the array.
 */
 function lastTwo(arr) {
-  return arr.slice(-2).sort((a,b)=>a-b)
+  return arr.slice(-2).sort((a, b) => a - b);
 }

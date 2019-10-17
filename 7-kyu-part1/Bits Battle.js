@@ -21,7 +21,15 @@ Result: odds win the battle with 4-1
 If you enjoyed this kata, you can find a nice variation of it here.
 */
 function bitsBattle(numbers) {
-   const even=numbers.filter(v=>v%2===0).map(v=>v.toString(2)).join('').replace(/1/g,'').length;
-   const odd=numbers.filter(v=>v%2!==0).map(v=>v.toString(2)).join('').replace(/0/g,'').length
-   return even>odd?"evens win":even<odd?'odds win':'tie'; 
+  const even = numbers
+    .filter(v => v % 2 === 0)
+    .map(v => v.toString(2))
+    .join("")
+    .replace(/1/g, "").length;
+  const odd = numbers
+    .filter(v => v % 2 !== 0)
+    .map(v => v.toString(2))
+    .join("")
+    .replace(/0/g, "").length;
+  return even > odd ? "evens win" : even < odd ? "odds win" : "tie";
 }

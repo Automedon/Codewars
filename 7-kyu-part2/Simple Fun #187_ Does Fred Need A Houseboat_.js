@@ -43,14 +43,15 @@ The Y coordinates of the land Fred is considering. It will be an integer point n
 
 The first year (start from 1) this point will be within the semicircle AT THE END OF YEAR.
 */
-function doINeedHouseboat(x,y){
-            let rd = 0, area = 0, dist = Math.sqrt(x * x + y * y);
-            let r = 0;
-            while (rd < dist)
-            {
-                rd = Math.sqrt((area * 2 + 100) / Math.PI);
-                r++;
-                area += 50;
-            }
-            return r;
+function doINeedHouseboat(x, y) {
+  let rd = 0,
+    area = 0,
+    dist = Math.sqrt(x * x + y * y);
+  let r = 0;
+  while (rd < dist) {
+    rd = Math.sqrt((area * 2 + 100) / Math.PI);
+    r++;
+    area += 50;
+  }
+  return r;
 }

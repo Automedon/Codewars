@@ -4,7 +4,7 @@ Given an input string determine whether or not it is a Palindrome (e.g. "racecar
 
 Ignore whitespace, special characters, and case.
 */
-function isPalindrome(str){
-  str=str.toLowerCase().replace(/[^a-z]/g,'');
-  return str===str.split(``).reverse().join``
+function isPalindrome(str) {
+  str = str.toLowerCase().replace(/[^a-z]/g, "");
+  return str === str.split(``).reverse().join``;
 }

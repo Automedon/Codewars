@@ -9,5 +9,7 @@ For example:
 [45, 21, 303, 56]        ==>  [0, 0, 1, 0]
 */
 function convertPalindromes(numbers) {
-  return numbers.map(v=>v===[...v.toString()].reverse().join``*1?1:0)
-};
+  return numbers.map(v =>
+    v === [...v.toString()].reverse().join`` * 1 ? 1 : 0
+  );
+}

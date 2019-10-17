@@ -36,7 +36,7 @@ Index of the element whose rank is to be found.
 Rank of the element at the ith position.
 */
 function rankOfElement(a, i) {
-  const l = a.slice(0,i).filter(e => e <= a[i]).length
-  const r = a.slice(i+1).filter(e => e < a[i]).length
-  return l + r
+  const l = a.slice(0, i).filter(e => e <= a[i]).length;
+  const r = a.slice(i + 1).filter(e => e < a[i]).length;
+  return l + r;
 }

@@ -4,5 +4,5 @@ Write function parseFloat (for Javascript parseF) which takes a string and retur
 */
 
 function parseF(s) {
-  return (Number.isNaN(parseFloat(s)) ? null : parseFloat(s));
+  return Number.isNaN(parseFloat(s)) ? null : parseFloat(s);
 }

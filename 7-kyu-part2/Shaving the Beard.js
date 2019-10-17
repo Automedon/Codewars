@@ -14,6 +14,9 @@ trim any curled hair --> replace 'J' with '|' trim any hair from the chin (last 
 
 All sub arrays will be same length. Return the corrected array of arrays
 */
-function trim(x){
-    return x.map(v=>v.map(v=>v==='J'?v='|':v)).slice(0,-1).concat(x.map(v=>v.map(v=>v='...')).slice(-1))
+function trim(x) {
+  return x
+    .map(v => v.map(v => (v === "J" ? (v = "|") : v)))
+    .slice(0, -1)
+    .concat(x.map(v => v.map(v => (v = "..."))).slice(-1));
 }

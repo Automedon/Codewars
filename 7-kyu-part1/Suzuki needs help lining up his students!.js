@@ -35,7 +35,7 @@ Help Suzuki rake his garden!
 How many stairs will Suzuki climb in 20 years?
 */
 
-function lineupStudents(students){
+function lineupStudents(students) {
   return students
     .trim()
     .split(/\s+/)

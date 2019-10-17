@@ -23,10 +23,13 @@ bear_fur(['brown', 'white'])  returns 'light brown'
 
 bear_fur(['yellow', 'magenta'])  returns 'unknown'
 */
-const bearFur = (bears) => {
- if (bears.every(v=>v===bears[0])) return bears[0];
- if (bears.some(v=>v==='black')&&bears.some(v=>v==='brown')) return 'dark brown'
- if (bears.some(v=>v==='black')&&bears.some(v=>v==='white')) return 'grey'
- if (bears.some(v=>v==='brown')&&bears.some(v=>v==='white')) return 'light brown'
- return 'unknown'
+const bearFur = bears => {
+  if (bears.every(v => v === bears[0])) return bears[0];
+  if (bears.some(v => v === "black") && bears.some(v => v === "brown"))
+    return "dark brown";
+  if (bears.some(v => v === "black") && bears.some(v => v === "white"))
+    return "grey";
+  if (bears.some(v => v === "brown") && bears.some(v => v === "white"))
+    return "light brown";
+  return "unknown";
 };

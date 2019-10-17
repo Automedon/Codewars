@@ -6,5 +6,7 @@ You will be given the subtotal, the tax as a percentage and the tip as a percent
 */
 
 function calculate_total(subtotal, tax, tip) {
-   return (subtotal+(subtotal*tax/100)+(subtotal*tip/100)).toFixed(2)*1
+  return (
+    (subtotal + (subtotal * tax) / 100 + (subtotal * tip) / 100).toFixed(2) * 1
+  );
 }

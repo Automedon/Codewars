@@ -9,10 +9,9 @@ Create a function, called randomMovies, that takes in an array of movie strings 
 var rockySeries = ["Rocky", "Rocky II", "Rocky III", "Rocky IV"];
 randomMovies(rockySeries) // => "Rocky"
 */
-function randomMovies(movies){
-  
-  return movies[random(0,movies.length)]
+function randomMovies(movies) {
+  return movies[random(0, movies.length)];
 }
-const random = (min,max)=>{
+const random = (min, max) => {
   return Math.floor(Math.random() * (max - min) + min);
-  }
+};

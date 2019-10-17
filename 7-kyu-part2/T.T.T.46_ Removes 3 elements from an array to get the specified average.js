@@ -26,20 +26,25 @@ remove3Elements([1,2,3],1) should return []
 
 remove3Elements([1,2,3,4,5,7,8,9,5,1,3,5,4,52,0],0) should return []
 */
-function remove3Elements(arr,average){
-  if (arr.length===3&&average===0) return arr
-  for (let i=0;i<arr.length;i++){
-    for (let j=i+1;j<arr.length;j++){
-      for (let k=j+1;k<arr.length;k++){
+function remove3Elements(arr, average) {
+  if (arr.length === 3 && average === 0) return arr;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      for (let k = j + 1; k < arr.length; k++) {
         let temp = arr.slice();
-        let x=arr[i],y=arr[j],z=arr[k];
-        arr[i]=0;
-        arr[j]=0;
-        arr[k]=0;
-        if ((arr.reduce((a,b)=>a+b,0)/(arr.length-3))===average) return [x,y,z]
-        else {arr=temp}
+        let x = arr[i],
+          y = arr[j],
+          z = arr[k];
+        arr[i] = 0;
+        arr[j] = 0;
+        arr[k] = 0;
+        if (arr.reduce((a, b) => a + b, 0) / (arr.length - 3) === average)
+          return [x, y, z];
+        else {
+          arr = temp;
+        }
       }
     }
   }
-  return []
+  return [];
 }

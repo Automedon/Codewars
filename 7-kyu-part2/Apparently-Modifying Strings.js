@@ -26,5 +26,5 @@ An occurrence of 'and' and/or 'but' only counts when it is at least one space se
 reference that may help: https://www.youtube.com/watch?v=rz5TGN7eUcM
 */
 function apparently(string) {
-   return string.replace(/(and|but\b)(?!\s+apparently\b)/g, '$1 apparently')
+  return string.replace(/(and|but\b)(?!\s+apparently\b)/g, "$1 apparently");
 }

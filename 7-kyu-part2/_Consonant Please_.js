@@ -20,6 +20,10 @@ Consisting of: Vowels: ["A"] Consonants: ["B","H","D","S","W","J"]
 Good luck!!
 */
 function sortLetters(a) {
-  let arr=[].concat(...a).filter(v=>typeof v === 'string').join`/`.toUpperCase().split`/`
-  return [arr.filter(v=>/[AEUIO]/.test(v)),arr.filter(v=>/[^AEUIO]/.test(v))]
+  let arr = [].concat(...a).filter(v => typeof v === "string")
+    .join`/`.toUpperCase().split`/`;
+  return [
+    arr.filter(v => /[AEUIO]/.test(v)),
+    arr.filter(v => /[^AEUIO]/.test(v))
+  ];
 }

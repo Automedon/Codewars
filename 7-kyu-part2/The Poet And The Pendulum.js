@@ -54,7 +54,10 @@ The Next higher number goes to the left of -18 , and So on .
 Remember , In Even array size , The minimum element moved to (n-1)/2 index (considering that indexes start from 0) .
 */
 function pendulum(values) {
-  let arr1 = [], arr2 = [];
-  const sorted = values.sort((a, b) => a - b).map((v, i) => (i % 2===0 ? arr1 : arr2).push(v));
+  let arr1 = [],
+    arr2 = [];
+  const sorted = values
+    .sort((a, b) => a - b)
+    .map((v, i) => (i % 2 === 0 ? arr1 : arr2).push(v));
   return arr1.reverse().concat(arr2);
 }

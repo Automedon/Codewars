@@ -21,9 +21,9 @@ There are no grammatical exceptions in the tests.
 */
 
 function dative(word) {
-    const obj1=['e', 'é', 'i', 'í', 'ö', 'ő', 'ü', 'ű']
-    const obj2=['a', 'á', 'o', 'ó', 'u', 'ú']
-    const filt=word.split('').filter(v=>obj1.includes(v)||obj2.includes(v))
-    const str=filt[filt.length-1]
-    return obj1.includes(str)?word+'nek':word+'nak';
+  const obj1 = ["e", "é", "i", "í", "ö", "ő", "ü", "ű"];
+  const obj2 = ["a", "á", "o", "ó", "u", "ú"];
+  const filt = word.split("").filter(v => obj1.includes(v) || obj2.includes(v));
+  const str = filt[filt.length - 1];
+  return obj1.includes(str) ? word + "nek" : word + "nak";
 }

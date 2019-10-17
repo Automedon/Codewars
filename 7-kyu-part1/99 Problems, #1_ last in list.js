@@ -7,4 +7,4 @@ In languages that have a built-in option or result type (like OCaml or Haskell),
 
 In languages that do not have an empty option, just return null
 */
-const last = xs => xs.length===0?null:xs[xs.length-1]
+const last = xs => (xs.length === 0 ? null : xs[xs.length - 1]);

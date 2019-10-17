@@ -76,15 +76,27 @@ countGrade([65,75,,85,85,95,100,100]) should return {S:2, A:1, B:2, C:2, D:0, X:
 countGrade([-1,-1,-1,-1,-1,-1]) should return {S:0, A:0, B:0, C:0, D:0, X:6}
 ```
 */
-function countGrade(scores){
-  const obj={S:0,A:0,B:0,C:0,D:0,X:0}
-  scores.map(v=>{
-  if(v>=100){obj[`S`]++}
-  if(v>=90&&v<100){obj[`A`]++}
-  if(v>=80&&v<90){obj[`B`]++}
-  if(v>=60&&v<80){obj[`C`]++}
-  if(v>=0&&v<60){obj[`D`]++}
-  if(v<0){obj[`X`]++}
-  })
-  return obj
+function countGrade(scores) {
+  const obj = { S: 0, A: 0, B: 0, C: 0, D: 0, X: 0 };
+  scores.map(v => {
+    if (v >= 100) {
+      obj[`S`]++;
+    }
+    if (v >= 90 && v < 100) {
+      obj[`A`]++;
+    }
+    if (v >= 80 && v < 90) {
+      obj[`B`]++;
+    }
+    if (v >= 60 && v < 80) {
+      obj[`C`]++;
+    }
+    if (v >= 0 && v < 60) {
+      obj[`D`]++;
+    }
+    if (v < 0) {
+      obj[`X`]++;
+    }
+  });
+  return obj;
 }

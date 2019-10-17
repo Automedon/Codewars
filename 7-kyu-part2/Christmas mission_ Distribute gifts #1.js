@@ -21,10 +21,10 @@ distributeGifts([10,10,40,100]) === 80
 distributeGifts([11,22,33]) === 33
 */
 function bf(n) {
-  for(let i=2; i<=Math.sqrt(n); i++) if(n%i===0) return n/i;
+  for (let i = 2; i <= Math.sqrt(n); i++) if (n % i === 0) return n / i;
   return n;
 }
 
-function distributeGifts(wishes){
-  return wishes.reduce((s,n)=>s+bf(n),0)
+function distributeGifts(wishes) {
+  return wishes.reduce((s, n) => s + bf(n), 0);
 }

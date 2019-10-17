@@ -30,13 +30,14 @@ For the purpose of this exercise, words can contain any non-whitespace character
 Note for rubists: Function must be named format_ for ruby already has a built in format function.
 */
 function format(text, width) {
-  let words = text.split(' '), output = [];
+  let words = text.split(" "),
+    output = [];
   while (words.length) {
     line = words.shift();
     while (words.length && line.length + words[0].length < width) {
-      line += ' ' + words.shift();
+      line += " " + words.shift();
     }
     output.push(line);
   }
-  return output.join('\n');
+  return output.join("\n");
 }

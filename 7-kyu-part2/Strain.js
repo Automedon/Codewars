@@ -22,10 +22,10 @@ Restrictions
 Keep your hands off that Enum module functionality provided by your standard library (filter/reject/reduce/whatchamacallit)! Solve this one yourself using other basic tools instead.
 */
 let strain = {
-  keep(array, fn){
-    return array.filter(v=>fn(v))
+  keep(array, fn) {
+    return array.filter(v => fn(v));
   },
-  discard(array, fn){
-    return array.filter(v=>!fn(v))
+  discard(array, fn) {
+    return array.filter(v => !fn(v));
   }
-}
+};

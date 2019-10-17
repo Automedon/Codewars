@@ -77,8 +77,6 @@ howManySmaller([3.1288,3.1212,3.1205],3.1212) should return 2
 ```
 */
 
-
-function howManySmaller(arr,n){
-  return arr.filter( x => x.toFixed(2)<n).length;
-  
+function howManySmaller(arr, n) {
+  return arr.filter(x => x.toFixed(2) < n).length;
 }

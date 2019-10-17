@@ -17,5 +17,5 @@ On Earth, a single rotation around the sun takes 365.25 days. Therefore, each ye
 Notes: To make things easier, the period of the leap years will always be a power of 2. Good luck!
 */
 function isLeapYear(duration, year) {
-  return duration*year%1===0;
+  return (duration * year) % 1 === 0;
 }

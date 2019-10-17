@@ -15,9 +15,9 @@ Jmin, Jmax are integers.
 physically B must be positive, so return empty array if B <= 0
 */
 function rotEnergies(b, jMin, jMax) {
-  let arr =[];
-  for (let i=jMin;i<=jMax;i++){
-    arr.push(b*i*(i+1))
+  let arr = [];
+  for (let i = jMin; i <= jMax; i++) {
+    arr.push(b * i * (i + 1));
   }
-  return arr.every(v=>v>=0)?arr:[]; 
+  return arr.every(v => v >= 0) ? arr : [];
 }

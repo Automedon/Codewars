@@ -9,5 +9,5 @@ Implement a "recursive function" that takes one parameter (n) and outputs a stri
 javascript/coffescript: don't use the String method .repeat(), write a recursive function, remember your a Ninja!
 */
 function chirp(n) {
-  return n===1?'chirp':'chirp-'+chirp(n-1)
-};
+  return n === 1 ? "chirp" : "chirp-" + chirp(n - 1);
+}

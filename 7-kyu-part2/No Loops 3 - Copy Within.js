@@ -30,6 +30,6 @@ https://www.codewars.com/kata/no-loops-1-small-enough
 
 https://www.codewars.com/kata/no-loops-2-you-only-need-one
 */
-function copy(array, start, stop, place){
-  return array.copyWithin(place,start,stop)
-};
+function copy(array, start, stop, place) {
+  return array.copyWithin(place, start, stop);
+}

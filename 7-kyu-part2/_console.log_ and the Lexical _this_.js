@@ -16,8 +16,8 @@ In this Kata, we will do this a bit differently than described above. Redefine c
 
 You may also find this article useful. Good luck and happy coding :D
 */
-const console2=console.log;
-console.log=(input)=>{
-  this.answer=input;
-  console2(input)
-}
+const console2 = console.log;
+console.log = input => {
+  this.answer = input;
+  console2(input);
+};

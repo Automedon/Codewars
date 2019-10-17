@@ -18,8 +18,10 @@ The method should be able to handle the case of empty data being passed in.
 
 Note: The only arrays that need to be traversed are those assigned to the "items" property.
 */
-function extractIds(data){
-  return [].concat(...Object.keys(data).map(function(item) {
-      return item === 'id' ? data[item] : extractIds(data[item]);
-    }))
+function extractIds(data) {
+  return [].concat(
+    ...Object.keys(data).map(function(item) {
+      return item === "id" ? data[item] : extractIds(data[item]);
+    })
+  );
 }

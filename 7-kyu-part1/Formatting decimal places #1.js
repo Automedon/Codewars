@@ -1,3 +1,3 @@
 function twoDecimalPlaces(number) {
-  return parseInt(number * 100) / 100
+  return parseInt(number * 100) / 100;
 }

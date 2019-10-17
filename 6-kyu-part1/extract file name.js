@@ -25,7 +25,9 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-0123456789
 The recommend way to solve it is using RegEx and specifically groups.
 */
 class FileNameExtractor {
-    static extractFileName (dirtyFileName) {
-        return dirtyFileName.match(/\d+_.+\..+\./).join``.replace(/^\d+_/,'').replace(/\.$/,'')
-    }
+  static extractFileName(dirtyFileName) {
+    return dirtyFileName.match(/\d+_.+\..+\./).join``
+      .replace(/^\d+_/, "")
+      .replace(/\.$/, "");
+  }
 }

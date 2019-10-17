@@ -8,18 +8,18 @@ Your task is to complete the Cat class which Extends Animal, we want to go to us
 Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 */
 
-class Animal { 
+class Animal {
   constructor(name) {
     this.name = name;
   }
-  
+
   speak() {
-    return this.name + ' makes a noise, ';
+    return this.name + " makes a noise, ";
   }
 }
 
 class Cat extends Animal {
-  speak(){
-    return this.name + ' makes a noise, '+this.name+' goes meow.'
+  speak() {
+    return this.name + " makes a noise, " + this.name + " goes meow.";
   }
 }

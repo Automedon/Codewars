@@ -9,5 +9,5 @@ find("anything", ["bye bye","hello"]) // return false
 Note: "Hello" !== "hello" // case-sensitive comparison
 */
 var find = function(string, array) {
-  return array.includes(string)
+  return array.includes(string);
 };

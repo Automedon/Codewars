@@ -13,11 +13,15 @@ For this kata, capitals are considered the same as lowercase letters. Therefore:
 
 #Output true if the word is a valid word, or false if the word is not valid.*/
 
-function validateWord(s){
+function validateWord(s) {
   var counts = {};
-  for(var c of s.toLowerCase()){
-    if(counts[c] === undefined){counts[c] = 0;}
+  for (var c of s.toLowerCase()) {
+    if (counts[c] === undefined) {
+      counts[c] = 0;
+    }
     counts[c]++;
   }
-  return Math.max(...Object.values(counts)) === Math.min(...Object.values(counts));
+  return (
+    Math.max(...Object.values(counts)) === Math.min(...Object.values(counts))
+  );
 }

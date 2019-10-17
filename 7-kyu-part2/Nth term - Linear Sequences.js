@@ -16,12 +16,18 @@ Note
 When returning the answer, ensure that it is in the form an + b - if b is negative then it should be an + -b and not an - b.
 */
 function nthTermOf(sequence) {
-  let sum = sequence.reduce((a,b)=>a+Math.abs(b),0)
-  let x = sequence[1]-sequence[0]
-  let y = 0
-  for (let i=1;i<Math.abs(sum);i++){
-    if (x*6+i===sequence[3]+x+x) {y=i;break}
-    if (x*6-i===sequence[3]+x+x) {y=-i;break}
+  let sum = sequence.reduce((a, b) => a + Math.abs(b), 0);
+  let x = sequence[1] - sequence[0];
+  let y = 0;
+  for (let i = 1; i < Math.abs(sum); i++) {
+    if (x * 6 + i === sequence[3] + x + x) {
+      y = i;
+      break;
+    }
+    if (x * 6 - i === sequence[3] + x + x) {
+      y = -i;
+      break;
+    }
   }
-  return `${x}n + ${y}`
+  return `${x}n + ${y}`;
 }

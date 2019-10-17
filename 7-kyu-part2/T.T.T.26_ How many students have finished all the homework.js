@@ -43,9 +43,9 @@ howMany(60,[40,20],0) === 0
 
 howMany(60,[22,11],6) === -1
 */
-function howMany(students,[a,b],unfinish){
-  for (let i=0;i<students;i++){
-    if (a-i+b-i+i+unfinish===students) return i
+function howMany(students, [a, b], unfinish) {
+  for (let i = 0; i < students; i++) {
+    if (a - i + b - i + i + unfinish === students) return i;
   }
-  return -1
+  return -1;
 }

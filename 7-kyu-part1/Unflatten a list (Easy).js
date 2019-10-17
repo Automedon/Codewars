@@ -38,11 +38,12 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 I have created other katas. Have a look if you like coding and challenges.
 */
 
-function unflatten (flatArray)
-{
-let res = []
-  while (flatArray.length>0) {
-    res.push(flatArray[0]<3 ? flatArray.shift() : flatArray.splice(0,flatArray[0]))
+function unflatten(flatArray) {
+  let res = [];
+  while (flatArray.length > 0) {
+    res.push(
+      flatArray[0] < 3 ? flatArray.shift() : flatArray.splice(0, flatArray[0])
+    );
   }
-  return res
+  return res;
 }

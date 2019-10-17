@@ -7,8 +7,10 @@ Output - {1,9,2,8,3,7,4,6,5,6}
 */
 
 function compoundArray(a, b) {
-  let arr=[];
- for (let i=0;i<(a.length>b.length?a.length:b.length);i++){ arr.push(a[i])
-  arr.push(b[i])}
-  return arr.filter(v=>v!=undefined)
+  let arr = [];
+  for (let i = 0; i < (a.length > b.length ? a.length : b.length); i++) {
+    arr.push(a[i]);
+    arr.push(b[i]);
+  }
+  return arr.filter(v => v != undefined);
 }

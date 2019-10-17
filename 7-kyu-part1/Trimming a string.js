@@ -15,7 +15,7 @@ If the string is smaller or equal than the maximum string length, then simply re
 e.g. trim("Code Wars is pretty rad", 50) should return "Code Wars is pretty rad"
 */
 function trim(arr, size) {
-  if (arr.length<=size) return arr;
-  if (arr.length<3) return arr.slice(0,size)+'...';
-  return arr.slice(0,size-3)+'...';
+  if (arr.length <= size) return arr;
+  if (arr.length < 3) return arr.slice(0, size) + "...";
+  return arr.slice(0, size - 3) + "...";
 }

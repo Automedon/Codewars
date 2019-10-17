@@ -13,5 +13,5 @@ Unfortunately, the code is not working as designed. Please fix the code so that 
 */
 
 function wrap(value) {
-  return ({value});
+  return { value };
 }

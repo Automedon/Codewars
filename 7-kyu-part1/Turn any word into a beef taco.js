@@ -29,11 +29,21 @@ Note that no matter what ingredients are passed, our taco will always have a she
 */
 
 function tacofy(word) {
-  const obj={'t':'tomato','l':'lettuce','c':'cheese','g':'guacamole','s':'salsa',
-  'a':'beef','e':'beef','u':'beef','i':'beef','o':'beef'}
-  const arr=[];
-  word.split('').map(v=>arr.push(obj[v.toLowerCase()]))
-  arr.unshift('shell')
-  arr.push('shell')
-  return arr.filter(v=>v===undefined?null:v)
+  const obj = {
+    t: "tomato",
+    l: "lettuce",
+    c: "cheese",
+    g: "guacamole",
+    s: "salsa",
+    a: "beef",
+    e: "beef",
+    u: "beef",
+    i: "beef",
+    o: "beef"
+  };
+  const arr = [];
+  word.split("").map(v => arr.push(obj[v.toLowerCase()]));
+  arr.unshift("shell");
+  arr.push("shell");
+  return arr.filter(v => (v === undefined ? null : v));
 }

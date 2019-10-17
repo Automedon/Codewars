@@ -9,6 +9,6 @@ sum(20,5,30) === 55 *
 
 Happy coding! :)
 */
-function sum(){
-  return [...arguments].reduce((a,b)=>a+b,0)
+function sum() {
+  return [...arguments].reduce((a, b) => a + b, 0);
 }

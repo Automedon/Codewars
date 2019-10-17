@@ -10,6 +10,6 @@ unscrambleEggs("Beggegeggineggneggeregg"); => "Beginner"
 Kata is supposed to be for beginners to practice regular expressions, so commenting would be appreciated.
 */
 
-function unscrambleEggs(word){
-  return word.replace(/(egg)/gi,'');
+function unscrambleEggs(word) {
+  return word.replace(/(egg)/gi, "");
 }

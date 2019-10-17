@@ -18,4 +18,4 @@ Examples:
 Taken from 'Formatting a number as price' (Kyu 5)
 */
 
-numberToMoney=n=>(parseInt(n*100)/100).toLocaleString()
+numberToMoney = n => (parseInt(n * 100) / 100).toLocaleString();

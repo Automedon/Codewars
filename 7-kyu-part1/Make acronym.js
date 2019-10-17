@@ -12,6 +12,9 @@ Eg:
 
 Code wars -> C, w -> C W -> CW
 */
-function toAcronym( input ){
-  return input.split(' ').map(v=>v[0].toUpperCase()).join('')
+function toAcronym(input) {
+  return input
+    .split(" ")
+    .map(v => v[0].toUpperCase())
+    .join("");
 }

@@ -44,8 +44,10 @@ sumDig_nthTerm(10, [1, 2, 3], 15) ----> 10 # 37 is the 15-th term, and 3 + 7 = 1
 Enjoy it and happy coding!!
 */
 function sumDigNthTerm(initval, patternl, nthterm) {
-    for(let i=0;i<nthterm-1;i++){
-    initval+=patternl[i%patternl.length]
-    }
-    return String(initval).split(``).reduce((a,b)=>a+b*1,0)
+  for (let i = 0; i < nthterm - 1; i++) {
+    initval += patternl[i % patternl.length];
+  }
+  return String(initval)
+    .split(``)
+    .reduce((a, b) => a + b * 1, 0);
 }

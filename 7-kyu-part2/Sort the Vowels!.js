@@ -24,10 +24,10 @@ Case doesn't matter
 Each line is seperated with \n
 Invalid input ( undefined / null / integer ) should return an empty string
 */
-function sortVowels(s){
-  if (typeof s !== 'string') return ''
-  return s.split``.map(v=>{
-  if (/[aeiou]/i.test(v)) return '|'+v+'\n'
-  else return v+'|'+'\n'
-  }).join``.slice(0,-1)
+function sortVowels(s) {
+  if (typeof s !== "string") return "";
+  return s.split``.map(v => {
+    if (/[aeiou]/i.test(v)) return "|" + v + "\n";
+    else return v + "|" + "\n";
+  }).join``.slice(0, -1);
 }

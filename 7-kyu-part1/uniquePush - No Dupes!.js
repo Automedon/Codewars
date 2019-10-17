@@ -10,8 +10,12 @@ If the person object is NOT unique, don't push them to the array and return fals
 If the person doesn't have a phoneNumber, don't add them to the array and return false.
 */
 
-
 function uniquePush(arr, obj) {
-  if (obj.phoneNumber && !arr.some(function (entry) { return entry.phoneNumber == obj.phoneNumber })) 
+  if (
+    obj.phoneNumber &&
+    !arr.some(function(entry) {
+      return entry.phoneNumber == obj.phoneNumber;
+    })
+  )
     return arr.push(obj);
 }

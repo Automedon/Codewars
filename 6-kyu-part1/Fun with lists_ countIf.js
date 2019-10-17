@@ -15,10 +15,10 @@ Note: the list may be null and can hold any type of value.
 Good luck!
 */
 function countIf(head, p) {
-  let count = 0
-  while (head){
-    if (p(head.data)) count++
-    head=head.next
+  let count = 0;
+  while (head) {
+    if (p(head.data)) count++;
+    head = head.next;
   }
-  return count
+  return count;
 }

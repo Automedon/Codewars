@@ -14,13 +14,13 @@ is
 The input to your function will be an array of matrix rows. You can assume that each row has the same length, and that the height and width of the matrix are both positive.
 */
 function transpose(matrix) {
-  let arr=[]
-  for (let i=0;i<matrix[0].slice().length;i++){
-    let tempArr=[]
-    for (let j=0;j<matrix.slice().length;j++){
-      tempArr.push(matrix[j][i])
+  let arr = [];
+  for (let i = 0; i < matrix[0].slice().length; i++) {
+    let tempArr = [];
+    for (let j = 0; j < matrix.slice().length; j++) {
+      tempArr.push(matrix[j][i]);
     }
-    arr.push(tempArr)
+    arr.push(tempArr);
   }
-  return arr
+  return arr;
 }

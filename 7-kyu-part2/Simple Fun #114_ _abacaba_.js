@@ -20,5 +20,5 @@ Input / Output
 the kth symbol of S(26)
 */
 function abacaba(k) {
-  return String.fromCharCode((k^(k-1)).toString(2).length+96)
+  return String.fromCharCode((k ^ (k - 1)).toString(2).length + 96);
 }

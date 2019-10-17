@@ -23,8 +23,8 @@ C = inter(A,B) // -> {2}
 
 " May the Code be with you ! "
 */
-function inter(s1, s2){
-  s1=[...new Set(s1)];
-  s2=[...new Set(s2)];
-  return new Set(s1.filter(v=>s2.includes(v)))
+function inter(s1, s2) {
+  s1 = [...new Set(s1)];
+  s2 = [...new Set(s2)];
+  return new Set(s1.filter(v => s2.includes(v)));
 }

@@ -11,7 +11,9 @@ For example
 Input array contains minimum two elements and every element is a number.
 */
 
-function largestPairSum(numbers)
-{
-  return numbers.sort((a,b)=>a-b).slice(-2).reduce((a,b)=>a+b,0);
+function largestPairSum(numbers) {
+  return numbers
+    .sort((a, b) => a - b)
+    .slice(-2)
+    .reduce((a, b) => a + b, 0);
 }

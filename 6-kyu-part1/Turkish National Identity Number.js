@@ -25,11 +25,19 @@ Your task is to write a function to check the validity of a given number. Return
 Note: The input can be a string in some cases.
 */
 function checkValidTrNumber(n) {
-  n=n.toString()
-  if (n[0]=='0'||n.length!==11) return false
-  let step1 = n.split``.slice(0,10).filter((v,i)=>i%2===0).reduce((a,b)=>a+b*1,0)*7
-  let step2 = n.split``.slice(0,9).filter((v,i)=>i%2!==0).reduce((a,b)=>a+b*1,0)
-  let step3 = (step1-step2)%10===n[9]*1
-  let step4 = n.slice(0,10).split``.reduce((a,b)=>a+b*1,0)%10===n[10]*1
-  return step3&&step4
+  n = n.toString();
+  if (n[0] == "0" || n.length !== 11) return false;
+  let step1 =
+    n.split``
+      .slice(0, 10)
+      .filter((v, i) => i % 2 === 0)
+      .reduce((a, b) => a + b * 1, 0) * 7;
+  let step2 = n.split``
+    .slice(0, 9)
+    .filter((v, i) => i % 2 !== 0)
+    .reduce((a, b) => a + b * 1, 0);
+  let step3 = (step1 - step2) % 10 === n[9] * 1;
+  let step4 =
+    n.slice(0, 10).split``.reduce((a, b) => a + b * 1, 0) % 10 === n[10] * 1;
+  return step3 && step4;
 }

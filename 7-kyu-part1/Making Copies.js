@@ -1,3 +1,3 @@
-function copyList(l){
- return [...l] 
+function copyList(l) {
+  return [...l];
 }

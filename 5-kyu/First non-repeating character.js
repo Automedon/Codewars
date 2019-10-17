@@ -10,5 +10,18 @@ If a string contains all repeating characters, it should return None.
 */
 
 function firstNonRepeatingLetter(s) {
-  return s[s.toLowerCase().split('').findIndex(letter => s.toLowerCase().split('').filter(l => l === letter).length === 1 )] || '';
+  return (
+    s[
+      s
+        .toLowerCase()
+        .split("")
+        .findIndex(
+          letter =>
+            s
+              .toLowerCase()
+              .split("")
+              .filter(l => l === letter).length === 1
+        )
+    ] || ""
+  );
 }

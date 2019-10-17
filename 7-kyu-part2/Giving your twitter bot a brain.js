@@ -14,10 +14,10 @@ create a function, newTweet, that returns a new, unique string every time it's c
 hints
 This is a fundamentals puzzle rather than a computer science puzzle, so assume that 'never repeats' really means 'very unlikely to repeat the first million times it's called' and not 'will never repeat before the heat death of the universe'
 */
-function newTweet(){
- let arr = [];
- for (let i=0;i<9;i++){
- arr.push(Math.random())
- }
- return arr.join``
+function newTweet() {
+  let arr = [];
+  for (let i = 0; i < 9; i++) {
+    arr.push(Math.random());
+  }
+  return arr.join``;
 }

@@ -4,8 +4,9 @@ Your challenge is to create a function that determines whether or not the charac
 
 For example, the word 'almost' would return 'IN ORDER', 'cat' would return 'OUT OF ORDER', and 'sponge' would return 'IN REVERSE ORDER'.
 */
-function order(input){
-  if (input.split``.sort().join``===input) return 'IN ORDER'
-  if (input.split``.sort().reverse().join``===input) return 'IN REVERSE ORDER'
-  return 'OUT OF ORDER'
+function order(input) {
+  if (input.split``.sort().join`` === input) return "IN ORDER";
+  if (input.split``.sort().reverse().join`` === input)
+    return "IN REVERSE ORDER";
+  return "OUT OF ORDER";
 }

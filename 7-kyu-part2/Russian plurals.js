@@ -48,7 +48,7 @@ const makePlural = (options, number) => {
     case 3:
     case 4:
       return options[1];
-    default: 
+    default:
       return options[2];
   }
-}
+};

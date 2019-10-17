@@ -4,6 +4,6 @@ Spin-off of this kata, here you will have to figure out an efficient strategy to
 
 Hints: a solution in linear time can be found; using the most intuitive ones to search for duplicates that can run in O(n²) time won't work.
 */
-var findDup=function(arr){
-  return arr.sort((a,b)=>a-b).filter((v,i,arr)=>v===arr[i+1])*1;
-}
+var findDup = function(arr) {
+  return arr.sort((a, b) => a - b).filter((v, i, arr) => v === arr[i + 1]) * 1;
+};

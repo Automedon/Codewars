@@ -52,7 +52,8 @@ Another series, innovative and interesting, medium difficulty. People who like t
 <a href="http://www.codewars.com/kata/56c85eebfd8fc02551000281">Play Tetris : Shape anastomosis</a><br>
 Play FlappyBird : Advance Bravely
 */
-function testit(s){
-  return s.replace(/../g, (s) =>
-    String.fromCharCode((s.charCodeAt(0) + s.charCodeAt(1)) / 2));
+function testit(s) {
+  return s.replace(/../g, s =>
+    String.fromCharCode((s.charCodeAt(0) + s.charCodeAt(1)) / 2)
+  );
 }

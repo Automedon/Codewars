@@ -17,10 +17,10 @@ Thanks to shadchnev, I broke all of the methods from the Hash class.
 
 Don't miss dmitry's article in the discussion after you pass the Kata !!
 */
-function loop_size(node){
+function loop_size(node) {
   var turtle = node;
   var rabbit = node;
-  
+
   // Find a point in the loop.  Any point will do!
   // Since the rabbit moves faster than the turtle
   // and the kata guarantees a loop, the rabbit will
@@ -28,9 +28,8 @@ function loop_size(node){
   do {
     turtle = turtle.getNext();
     rabbit = rabbit.getNext().getNext();
-  }
-  while (turtle != rabbit);
-  
+  } while (turtle != rabbit);
+
   // The turtle and rabbit are now on the same node,
   // but we know that node is in a loop.  So now we
   // keep the turtle motionless and move the rabbit
@@ -40,8 +39,7 @@ function loop_size(node){
   do {
     ++count;
     rabbit = rabbit.getNext();
-  }
-  while (turtle != rabbit);
+  } while (turtle != rabbit);
 
   // voila
   return count;

@@ -56,8 +56,8 @@ Constraints: 0 ≤ k ≤ 100000.
 */
 function electionsWinners(votes, k) {
   let max = Math.max(...votes);
-  
-  return k 
-    ? votes.filter(v => v + k > max).length 
+
+  return k
+    ? votes.filter(v => v + k > max).length
     : +(votes.filter(v => v === max).length === 1);
 }

@@ -16,6 +16,6 @@ shoppingList( shoppingList1 ) // -> 37.50 (11.00+7.00+19.50)
 shoppingList( [{itemName:'Frogs', price: 1200.00 }] ) // -> 1200.00
 Happy Shoping !
 */
-const shoppingList = function (items) {
-  return items.reduce((a,b)=>a+b.price,0);
+const shoppingList = function(items) {
+  return items.reduce((a, b) => a + b.price, 0);
 };

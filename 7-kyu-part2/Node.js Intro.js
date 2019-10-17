@@ -31,9 +31,9 @@ The NodeJS built-in function require knows exactly how to find the module, so no
 The NodeJS documentation is helpful, so I suggest you look at that. If you plan on working with NodeJS at all in the future, it is beneficial to know what features it has built-in.
 */
 String.prototype.toBase64 = function() {
-  return Buffer.from(this).toString('base64')
-}
+  return Buffer.from(this).toString("base64");
+};
 
 String.prototype.fromBase64 = function() {
-  return Buffer.from(this,'base64').toString()
-}
+  return Buffer.from(this, "base64").toString();
+};

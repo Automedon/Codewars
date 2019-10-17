@@ -30,6 +30,8 @@ Find more details below:
   checkDigit(87996599994565, 2, 5, 1) -> false, 1 doesn't exist in 9965
 */
 function checkDigit(number, index1, index2, digit) {
-  if(index1 > index2) { [index1, index2] = [index2, index1]}
-  return (''+number).slice(index1, index2+1).indexOf(''+digit) > -1;
+  if (index1 > index2) {
+    [index1, index2] = [index2, index1];
+  }
+  return ("" + number).slice(index1, index2 + 1).indexOf("" + digit) > -1;
 }

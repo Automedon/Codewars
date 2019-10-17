@@ -28,5 +28,5 @@ Input	Output
 */
 
 function sentencify(words) {
-  return words.join(' ')[0].toUpperCase()+words.join(' ').slice(1)+'.'
+  return words.join(" ")[0].toUpperCase() + words.join(" ").slice(1) + ".";
 }

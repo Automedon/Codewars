@@ -17,12 +17,14 @@ So for this head: "------/------" you should return:
 ["-------------", "Unicorn!"]
 */
 
-function bald(x){
-  let count=x.split('/').length-1
-  const z=Array(x.length).fill('-').join('')
-  if (count<1) return  [z,"Clean!"];
-  if (count<2) return  [z,"Unicorn!"];
-  if (count<3) return  [z,"Homer!"];
-  if (count<6) return  [z,"Careless!"];
-  return  [z,"Hobo!"];
+function bald(x) {
+  let count = x.split("/").length - 1;
+  const z = Array(x.length)
+    .fill("-")
+    .join("");
+  if (count < 1) return [z, "Clean!"];
+  if (count < 2) return [z, "Unicorn!"];
+  if (count < 3) return [z, "Homer!"];
+  if (count < 6) return [z, "Careless!"];
+  return [z, "Hobo!"];
 }

@@ -23,9 +23,8 @@ If you've won, simply return "ez game".
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
-var sayAfterGame = function(teammates, won)
-{
-  const arr =["fucking","noob","report","retard","uninstall","feeder"]
-  if (won) return 'ez game';
-  return teammates[getRandomInt(0,4)]+' '+arr[getRandomInt(0,6)]
-}
+var sayAfterGame = function(teammates, won) {
+  const arr = ["fucking", "noob", "report", "retard", "uninstall", "feeder"];
+  if (won) return "ez game";
+  return teammates[getRandomInt(0, 4)] + " " + arr[getRandomInt(0, 6)];
+};

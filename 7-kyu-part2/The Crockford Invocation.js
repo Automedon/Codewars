@@ -17,17 +17,17 @@ apply(multiply)(3)(4) // 12
 This kata is based on the following talk by Douglas Crockford: https://youtu.be/hRJrp17WnOE
 */
 function add(a) {
-  return (b)=>a+b
+  return b => a + b;
 }
 
 function subtract(a) {
-   return (b)=>a-b
+  return b => a - b;
 }
 
 function multiply(a) {
-   return (b)=>a*b
+  return b => a * b;
 }
 
 function apply(fn) {
-  return fn
+  return fn;
 }

@@ -1,3 +1,3 @@
-function toCurrency(price){
-  return price.toLocaleString()
+function toCurrency(price) {
+  return price.toLocaleString();
 }

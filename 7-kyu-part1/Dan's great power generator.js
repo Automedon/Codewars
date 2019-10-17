@@ -7,6 +7,6 @@ Return the nth power of each number, unless the result is odd, in which case rou
 Eg. if number = 7, and power = 2, result = 50.
 */
 function danspower(num, power) {
-  let res=Math.pow(num,power)
-  return res%2?Math.round(res/10)*10:res
+  let res = Math.pow(num, power);
+  return res % 2 ? Math.round(res / 10) * 10 : res;
 }

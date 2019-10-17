@@ -10,6 +10,6 @@ Assume input is array.
 
 Hint: Math.random()
 */
-function shuffle(arr) {   
-   return arr.sort(() => Math.random() - 0.5);
+function shuffle(arr) {
+  return arr.sort(() => Math.random() - 0.5);
 }

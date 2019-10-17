@@ -36,9 +36,9 @@ Input/Output
 The number of times x occurs in the table.
 */
 function countNumber(n, x) {
-  let cnt =0;
-  for(let i=1;i<=n;i++){
-			if(x%i==0&&x/i<=n)cnt++;
+  let cnt = 0;
+  for (let i = 1; i <= n; i++) {
+    if (x % i == 0 && x / i <= n) cnt++;
   }
-  return cnt
+  return cnt;
 }

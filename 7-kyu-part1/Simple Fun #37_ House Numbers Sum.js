@@ -21,8 +21,11 @@ Constraints: 5 ≤ inputArray.length ≤ 50, 0 ≤ inputArray[i] ≤ 10.
 */
 
 function houseNumbersSum(arr) {
-  let Max=[];
-  for(let i=0;i<arr.length;i++)
-  if (arr[i]===0){Max.push(arr.splice(0,i));break}
-  return Max.map(v=>v.reduce((a,b)=>a+b,0))*1;
+  let Max = [];
+  for (let i = 0; i < arr.length; i++)
+    if (arr[i] === 0) {
+      Max.push(arr.splice(0, i));
+      break;
+    }
+  return Max.map(v => v.reduce((a, b) => a + b, 0)) * 1;
 }

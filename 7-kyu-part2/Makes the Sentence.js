@@ -20,5 +20,11 @@ makesTheSentence(['S', 'h', 'e', 'a', 'd', 's', '.'], "She adds.");
 Should return false because there is only 1 'd' in the passed in array and there are 2 'd's in the passed in string.
 */
 function makesTheSentence(characterArray, sentenceString) {
-  return characterArray.sort().join``===sentenceString.replace(/\s/g,'').split(``).sort().join``
+  return (
+    characterArray.sort().join`` ===
+    sentenceString
+      .replace(/\s/g, "")
+      .split(``)
+      .sort().join``
+  );
 }

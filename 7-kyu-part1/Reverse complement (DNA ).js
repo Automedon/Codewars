@@ -17,13 +17,15 @@ Note: You need to take care of lower and upper case. And if a sequence conatains
 This kata is based on the following one but with a little step in addition.
 */
 function reverseComplement(dna) {
-  let error=0;
-  let rev=dna.split``.map(v=>{
-  if (v==='A') return 'T'
-  if (v==='C') return 'G'
-  if (v==='T') return 'A'
-  if (v==='G') return 'C'
-  if (/[ACTG]/.test) return error++
-  }).reverse().join``
-  return error>0?"Invalid sequence":rev
+  let error = 0;
+  let rev = dna.split``
+    .map(v => {
+      if (v === "A") return "T";
+      if (v === "C") return "G";
+      if (v === "T") return "A";
+      if (v === "G") return "C";
+      if (/[ACTG]/.test) return error++;
+    })
+    .reverse().join``;
+  return error > 0 ? "Invalid sequence" : rev;
 }

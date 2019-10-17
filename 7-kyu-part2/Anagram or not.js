@@ -10,8 +10,11 @@ The challenge is to write the function isAnagram to return True if the word test
 
 Note: Anagrams are case insensitive, ignore all non-alphanumeric characters, input will always be two strings. Also: two identical words may be considered to be an edge case of an anagram, but for this kata they are still correct anagrams.
 */
-function isAnagram(test, original){
-  test=test.toLowerCase().replace(/[^0-9a-z]/g,'')
-  original=original.toLowerCase().replace(/[^0-9a-z]/g,'')
-  return test.split``.sort((a,b)=>a.localeCompare(b)).join``===original.split``.sort((a,b)=>a.localeCompare(b)).join``
+function isAnagram(test, original) {
+  test = test.toLowerCase().replace(/[^0-9a-z]/g, "");
+  original = original.toLowerCase().replace(/[^0-9a-z]/g, "");
+  return (
+    test.split``.sort((a, b) => a.localeCompare(b)).join`` ===
+    original.split``.sort((a, b) => a.localeCompare(b)).join``
+  );
 }

@@ -30,5 +30,8 @@ Constraints: B.length = A.length, 1 ≤ B[i] ≤ 1000.
 true if A and B are similar, false otherwise.
 */
 function areSimilar(A, B) {
-  return A==B+''||A.filter((v,i)=> v!=B[i]).length==2&&A.every(v=> B.includes(v));
+  return (
+    A == B + "" ||
+    (A.filter((v, i) => v != B[i]).length == 2 && A.every(v => B.includes(v)))
+  );
 }

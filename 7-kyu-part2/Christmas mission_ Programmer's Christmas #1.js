@@ -17,8 +17,8 @@ Given some functions funcs(an array, each element is a function), each function 
  a()+b()+c()+c()+d()+l()+e()+f()+c()+g()+h()+i()+j()+k()+h()+m() === "Merry Christmas!"
 You can assume that all the necessary functions are provided.
 */
-function merryChristmas(funcs){
-  let obj={}
-  funcs.map(v=>obj[v()]=v.name)
-  return  "Merry Christmas!".split(``).map(v=>obj[v]).join`,`
+function merryChristmas(funcs) {
+  let obj = {};
+  funcs.map(v => (obj[v()] = v.name));
+  return "Merry Christmas!".split(``).map(v => obj[v]).join`,`;
 }

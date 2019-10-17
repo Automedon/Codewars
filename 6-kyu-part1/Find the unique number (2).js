@@ -16,5 +16,7 @@ Find The Unique
 */
 
 function findUniq(arr) {
-  return +arr.filter( (value) => { return arr.indexOf(value) == arr.lastIndexOf(value) } );
+  return +arr.filter(value => {
+    return arr.indexOf(value) == arr.lastIndexOf(value);
+  });
 }

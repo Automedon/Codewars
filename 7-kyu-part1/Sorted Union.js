@@ -12,6 +12,6 @@ Courtesy of FreeCodeCamp, a great place to learn web-dev; plus, its founder Quin
 */
 
 function uniteUnique(...arrays) {
-   const flatArray = [].concat(...arrays);
-   return [...new Set(flatArray)];
+  const flatArray = [].concat(...arrays);
+  return [...new Set(flatArray)];
 }

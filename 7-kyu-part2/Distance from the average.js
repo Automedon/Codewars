@@ -13,7 +13,9 @@ Assuming you will only get valid inputs (ie: only arrays/lists with numbers), cr
 With Clojure to round use:
 (defn roundTo2 [n] (/ (Math/round (* n 100.0)) 100.0))
 */
-function distancesFromAverage(arr){
-  let aver=arr.reduce((a,b)=>a+b,0)/arr.length
-  return arr.map(v=>Math.round((v-aver)*-1*100)/100).map(v=>v===-0?0:v)
+function distancesFromAverage(arr) {
+  let aver = arr.reduce((a, b) => a + b, 0) / arr.length;
+  return arr
+    .map(v => Math.round((v - aver) * -1 * 100) / 100)
+    .map(v => (v === -0 ? 0 : v));
 }

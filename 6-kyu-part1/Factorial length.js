@@ -11,5 +11,7 @@ Brute force is not possible. A little research will go a long way, as this is a 
 Good luck!
 */
 function count(n) {
-  return Math.ceil(Math.log10(2*Math.PI*n)/2 + n*Math.log10(n/Math.E))
-};
+  return Math.ceil(
+    Math.log10(2 * Math.PI * n) / 2 + n * Math.log10(n / Math.E)
+  );
+}

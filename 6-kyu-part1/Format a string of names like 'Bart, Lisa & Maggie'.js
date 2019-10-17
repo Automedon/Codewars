@@ -19,8 +19,15 @@ list([])
 // returns ''
 */
 
-
-function list(names){
-  if(names.map(v=>v.name).length>1) return names.map(v=>v.name).slice(0,-1).join(', ')+' & '+names.map(v=>v.name).slice(-1)
-  return names.map(v=>v.name).slice(-1)+''
+function list(names) {
+  if (names.map(v => v.name).length > 1)
+    return (
+      names
+        .map(v => v.name)
+        .slice(0, -1)
+        .join(", ") +
+      " & " +
+      names.map(v => v.name).slice(-1)
+    );
+  return names.map(v => v.name).slice(-1) + "";
 }

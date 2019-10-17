@@ -21,4 +21,4 @@ Word values
 Non-even substrings
 */
 
-const solve = (a,b) => b.map(x => a.filter(n => n === x).length);
+const solve = (a, b) => b.map(x => a.filter(n => n === x).length);

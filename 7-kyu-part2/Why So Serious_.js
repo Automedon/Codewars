@@ -21,10 +21,10 @@ Key: Clubs = White, Spades = Crimson
 Q	A	C	S	K	P	R	E	V	U	L	M	N	J	I	F	O	B	G	T	H	D
 */
 function whySoSerious(str) {
-   let J = str.includes('Jc')
-   let O = str.includes('7s')
-   let K = str.includes('5s')
-   let E = str.includes('As')
-   let R = str.includes('9c')
-   return J&&O&&K&&E&&R
+  let J = str.includes("Jc");
+  let O = str.includes("7s");
+  let K = str.includes("5s");
+  let E = str.includes("As");
+  let R = str.includes("9c");
+  return J && O && K && E && R;
 }

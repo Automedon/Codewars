@@ -6,6 +6,6 @@ Your function will receive an array of 10000 integer values randomly selected fr
 There are no example tests in this kata, so as not to spoil the trick.
 Do not worry *too* much about precision. The tests are lenient.
 */
-function findConstant(arr,lb,ub){
-  return Math.min(...arr)-lb
-};
+function findConstant(arr, lb, ub) {
+  return Math.min(...arr) - lb;
+}

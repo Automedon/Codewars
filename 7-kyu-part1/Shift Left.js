@@ -12,8 +12,8 @@ Both strings consist of lowercase latin letters.
 If the string is already empty, you cannot perform any more delete operations.
 */
 function shiftLeft(s, t) {
-  let i = s.length, j = t.length;
-  while (i >= 0 && j >= 0 && s[i] == t[j])
-    i--, j--;
-  return (i + 1) + (j + 1);
+  let i = s.length,
+    j = t.length;
+  while (i >= 0 && j >= 0 && s[i] == t[j]) i--, j--;
+  return i + 1 + (j + 1);
 }

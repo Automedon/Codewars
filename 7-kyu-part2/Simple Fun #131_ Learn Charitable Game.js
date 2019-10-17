@@ -30,5 +30,8 @@ For arr = [100, 100, 100, 90, 1, 0, 0], the output should be false.
 These players can not start with the same amount of money.
 */
 function learnCharitableGame(arr) {
-  return !!arr[arr.length-1]&&(arr.reduce((a,b)=>a+b,0)/arr.length)%1===0
+  return (
+    !!arr[arr.length - 1] &&
+    (arr.reduce((a, b) => a + b, 0) / arr.length) % 1 === 0
+  );
 }

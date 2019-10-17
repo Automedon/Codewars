@@ -12,7 +12,12 @@ example: 'abc' --> a=97, b=2, c=99 --> y total = 198.
 
 If the carpet catches fire, return 'Fire!', if not, return 'That was close!'.
 */
-function cake(x, y){
-  let num=y.split('').reduce((a,b,i)=>a+(i%2===0?b.charCodeAt(0):b.charCodeAt(0)-96),0);
-  return x*0.7>num?'That was close!':'Fire!'
+function cake(x, y) {
+  let num = y
+    .split("")
+    .reduce(
+      (a, b, i) => a + (i % 2 === 0 ? b.charCodeAt(0) : b.charCodeAt(0) - 96),
+      0
+    );
+  return x * 0.7 > num ? "That was close!" : "Fire!";
 }

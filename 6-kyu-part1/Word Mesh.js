@@ -25,12 +25,12 @@ the letters "ter" in the third and fourth words mesh together.
 Although the words "dominator" and "notorious" share letters in the same order, the last letters of the first word don't mesh with the first letters of the second word.
 */
 
-function wordMesh(arr){
-  let r=""
-  for(let i=0;i<arr.length-1;i++){
-    let t=(arr[i]+" "+arr[i+1]).match(/(.+) \1/)
-    if(!t) return "failed to mesh"
-    r+=t[1]
+function wordMesh(arr) {
+  let r = "";
+  for (let i = 0; i < arr.length - 1; i++) {
+    let t = (arr[i] + " " + arr[i + 1]).match(/(.+) \1/);
+    if (!t) return "failed to mesh";
+    r += t[1];
   }
-  return r
+  return r;
 }

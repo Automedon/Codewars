@@ -10,6 +10,6 @@ vowelOne( "abceios" ) // "1001110"
 
 vowelOne( "aeiou, abc" ) // "1111100100"
 */
-function vowelOne(s){
-  return s.replace(/./g,v=>/[aeiou]/i.test(v)?'1':'0')
+function vowelOne(s) {
+  return s.replace(/./g, v => (/[aeiou]/i.test(v) ? "1" : "0"));
 }

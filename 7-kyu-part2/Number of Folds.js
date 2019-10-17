@@ -14,4 +14,4 @@ n=2, 1 operations, i have to fold it 1 time to get 2 grids (A,B).
 |___|___|
 No edge cases, all inputs are valid, But some built-in Math functions will have NO power here.
 */
-const numberOfFolds = (n) => n.toString(2).length - 1
+const numberOfFolds = n => n.toString(2).length - 1;

@@ -26,14 +26,22 @@ arpeggio("Z") == "unrecognised root note"
 arpeggio("a") == "unrecognised root note"
 */
 function arpeggio(notes) {
-  switch(notes) {
-    case 'A' : return ["A", "C", "E", "A"]; 
-    case 'B' : return ["B", "D", "F", "B"]; 
-    case 'C' : return ["C", "E", "G", "C"]; 
-    case 'D' : return ["D", "F", "A", "D"]; 
-    case 'E' : return ["E", "G", "B", "E"]; 
-    case 'F' : return ["F", "A", "C", "F"]; 
-    case 'G' : return ["G", "B", "D", "G"]; 
-    default : undefined;
-  }  
+  switch (notes) {
+    case "A":
+      return ["A", "C", "E", "A"];
+    case "B":
+      return ["B", "D", "F", "B"];
+    case "C":
+      return ["C", "E", "G", "C"];
+    case "D":
+      return ["D", "F", "A", "D"];
+    case "E":
+      return ["E", "G", "B", "E"];
+    case "F":
+      return ["F", "A", "C", "F"];
+    case "G":
+      return ["G", "B", "D", "G"];
+    default:
+      undefined;
+  }
 }

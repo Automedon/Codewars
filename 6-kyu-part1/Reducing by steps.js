@@ -42,13 +42,14 @@ you could google "reduce function (your language)" to have a general view about 
 
 In Shell bash, arrays are replaced by strings.
 */
-const gcdi = (a, b) => b ? gcdi(b, a % b) : Math.abs(a);
+const gcdi = (a, b) => (b ? gcdi(b, a % b) : Math.abs(a));
 const lcmu = (a, b) => Math.abs(a * b) / gcdi(a, b);
-const som  = (a, b) => a + b;
+const som = (a, b) => a + b;
 const maxi = (a, b) => Math.max(a, b);
 const mini = (a, b) => Math.min(a, b);
 
-const operArray = (fct, arr, init) => arr.map(u => {
-  init = fct(init, u); 
-  return init; 
-});
+const operArray = (fct, arr, init) =>
+  arr.map(u => {
+    init = fct(init, u);
+    return init;
+  });

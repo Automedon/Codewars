@@ -27,13 +27,12 @@ Sadly it takes a lot of time to make arrays look like mountains, so the tests wo
 Not as much fun, eh?
 */
 
-function skiJump(mountain){
-  const height=mountain.length;
-  const speed=height*1.5;
-  const length=((height*speed*9)/10).toFixed(2);
-  if (length<10) return `${length} metres: He's crap!`
-  if (length<25) return `${length} metres: He's ok!`
-  if (length<50) return `${length} metres: He's flying!`
-  return `${length} metres: Gold!!`
-
+function skiJump(mountain) {
+  const height = mountain.length;
+  const speed = height * 1.5;
+  const length = ((height * speed * 9) / 10).toFixed(2);
+  if (length < 10) return `${length} metres: He's crap!`;
+  if (length < 25) return `${length} metres: He's ok!`;
+  if (length < 50) return `${length} metres: He's flying!`;
+  return `${length} metres: Gold!!`;
 }

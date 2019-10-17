@@ -17,16 +17,23 @@ If it's not possible for you to win then return:
 See https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors if you're not familiar with rock paper scissors.
 */
 
-function oracle(gestures){
-  let wins = { 'rock': 'scissors', 'paper': 'rock', 'scissors': 'paper'}, 
-      res = [], hands = ['rock', 'paper', 'scissors'], counts = []
+function oracle(gestures) {
+  let wins = { rock: "scissors", paper: "rock", scissors: "paper" },
+    res = [],
+    hands = ["rock", "paper", "scissors"],
+    counts = [];
   for (let h of hands) {
-    let count = 0
+    let count = 0;
     for (let g of gestures) {
-      if (wins[h] === g) count++
-      else if (h != g) count--
+      if (wins[h] === g) count++;
+      else if (h != g) count--;
     }
-    counts.push(count)
+    counts.push(count);
   }
-  return counts.every(c => !c) ? 'tie' : counts.map((v, i) => v > 0 ? hands[i] : null).filter(v => v).join('/')
+  return counts.every(c => !c)
+    ? "tie"
+    : counts
+        .map((v, i) => (v > 0 ? hands[i] : null))
+        .filter(v => v)
+        .join("/");
 }

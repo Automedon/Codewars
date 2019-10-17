@@ -14,6 +14,6 @@ For the purposes of this kata, here's what you need to support:
 "u" at the beginning, middle, or end of a string, but NOT part of a word
 "you" but NOT as part of another word like youtube or bayou
 */
-function autocorrect(input){
+function autocorrect(input) {
   return input.replace(/\b(you+|u)\b/gi, "your sister");
 }

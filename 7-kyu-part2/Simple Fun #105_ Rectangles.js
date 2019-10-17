@@ -38,5 +38,5 @@ Constraints: 0 <= m <= 100
 Number of rectangles.
 */
 function rectangles(n, m) {
-  return (n-1)*(m-1)*n*m/4;
+  return ((n - 1) * (m - 1) * n * m) / 4;
 }

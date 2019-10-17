@@ -25,7 +25,7 @@ The Math object allows you to perform mathematical tasks such as finding the squ
 Math.sqrt(25) // Returns the square root of 25 which is 5
 Math.sqrt(2) // Returns the square root of 2 which is approximately 
 */
-function squareRoot(numbers){
-    let sum=numbers.reduce((a,b)=>a+b,0)
-    return Math.sqrt(sum)%1===0?Math.sqrt(sum):sum
+function squareRoot(numbers) {
+  let sum = numbers.reduce((a, b) => a + b, 0);
+  return Math.sqrt(sum) % 1 === 0 ? Math.sqrt(sum) : sum;
 }

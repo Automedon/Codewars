@@ -22,9 +22,9 @@ process_2arrays(arr1, arr2) --------> [4, 8, 5, 3]
 No doubt, an easy kata to warm up before doing the more complex ones. Enjoy it!
 */
 function process2Arrays(arr1, arr2) {
-   let c1=[...new Set(arr1)].filter((v)=>arr2.includes(v)).length;
-   let c3=[...new Set(arr1)].filter((v)=>!arr2.includes(v)).length;
-   let c4=[...new Set(arr2)].filter((v)=>!arr1.includes(v)).length;
-   let c2=c3+c4
-    return [c1,c2,c3,c4];
+  let c1 = [...new Set(arr1)].filter(v => arr2.includes(v)).length;
+  let c3 = [...new Set(arr1)].filter(v => !arr2.includes(v)).length;
+  let c4 = [...new Set(arr2)].filter(v => !arr1.includes(v)).length;
+  let c2 = c3 + c4;
+  return [c1, c2, c3, c4];
 }

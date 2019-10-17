@@ -24,9 +24,9 @@ charCheck("Cara Hertz", 9, False) should return [ True, "CaraHertz" ]
 charCheck("Cara Hertz", 5, True) should return [ False, "Cara " ]
 charCheck("Cara Hertz", 5, False) should return [ False, "CaraH" ]
 */
-function charCheck(text, max, spaces){
-  if (!spaces){
-    text=text.replace(/\s+/g,'')
+function charCheck(text, max, spaces) {
+  if (!spaces) {
+    text = text.replace(/\s+/g, "");
   }
-  return [text.length<=max,text.slice(0,max)]
-};
+  return [text.length <= max, text.slice(0, max)];
+}

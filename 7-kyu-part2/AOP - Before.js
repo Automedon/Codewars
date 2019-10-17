@@ -13,6 +13,8 @@ The return value of the original method should be returned.
 */
 function adviseBefore(target, advice) {
   return function(...args) {
-    return Array.isArray(advice(...args))?target(...advice(...args)):target(...args);
-  }
+    return Array.isArray(advice(...args))
+      ? target(...advice(...args))
+      : target(...args);
+  };
 }

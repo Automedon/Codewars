@@ -9,5 +9,5 @@ This challenge extends the previous repeater() challenge. Just like last time, y
 */
 
 function repeater(string, n) {
-  return `"${string}" repeated ${n} times is: "${string.repeat(n)}"`
+  return `"${string}" repeated ${n} times is: "${string.repeat(n)}"`;
 }

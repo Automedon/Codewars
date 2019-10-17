@@ -17,6 +17,6 @@ Example
   scoreOfDive([7, 7.5, 8, 7.5, 6, 7, 7], 3) --> '64.50'
 */
 function scoreOfDive(scores, tariff) {
-  scores=scores.sort((a,b)=>a-b)
-  return (scores.slice(2,-2).reduce((a,b)=>a+b,0)*tariff).toFixed(2)
+  scores = scores.sort((a, b) => a - b);
+  return (scores.slice(2, -2).reduce((a, b) => a + b, 0) * tariff).toFixed(2);
 }

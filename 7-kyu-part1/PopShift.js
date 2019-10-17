@@ -17,14 +17,16 @@ Example:
 The Kata title gives a hint of one technique to solve.
 */
 
-function popShift(s){
-  let arr=[];
-  let arr1=[];
-  let z=s.slice().split('')
-  for (let i=0;i<s.length;i++){
-  if (z.length===1) {break}
-  arr.push(z.pop())
-  arr1.push(z.shift())
+function popShift(s) {
+  let arr = [];
+  let arr1 = [];
+  let z = s.slice().split("");
+  for (let i = 0; i < s.length; i++) {
+    if (z.length === 1) {
+      break;
+    }
+    arr.push(z.pop());
+    arr1.push(z.shift());
   }
-  return [arr.join(''),arr1.join(''),z.join()]
+  return [arr.join(""), arr1.join(""), z.join()];
 }

@@ -13,7 +13,7 @@ maxPizza(1) == 2
 maxPizza(3) == 7
 */
 function maxPizza(cut) {
-    if (cut < 0)     return -1
-    else if (cut == 0) return 1
-    return (cut*(cut+1)/2)+1
+  if (cut < 0) return -1;
+  else if (cut == 0) return 1;
+  return (cut * (cut + 1)) / 2 + 1;
 }

@@ -16,8 +16,14 @@ The product of the lowest 3 numbers is 8 x 9 x 10 = 720
 The product of the 3 lowest numbers is higher than the sum of the 3 highest numbers so the function returns product
 */
 function sumOrProduct(array, n) {
-  array=array.sort((a,b)=>a-b)
-  let sum=array.reverse().slice(0,n).reduce((a,b)=>a+b,0)
-  let product=array.reverse().slice(0,n).reduce((a,b)=>a*b,1)
-  return sum>product?'sum':sum<product?'product':'same'
+  array = array.sort((a, b) => a - b);
+  let sum = array
+    .reverse()
+    .slice(0, n)
+    .reduce((a, b) => a + b, 0);
+  let product = array
+    .reverse()
+    .slice(0, n)
+    .reduce((a, b) => a * b, 1);
+  return sum > product ? "sum" : sum < product ? "product" : "same";
 }

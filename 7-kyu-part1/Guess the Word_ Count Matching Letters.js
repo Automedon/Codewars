@@ -19,7 +19,7 @@ The caller should ensure that the guessed word is always the same length as the 
 //Throw an error if the two parameters are of different lengths.
 You may assume, however, that the two parameters will always be in the same case.
 */
-function countCorrectCharacters(correctWord, guess){
-  if(correctWord.length!==guess.length)throw new Error();
-  return correctWord.split('').filter((v,i)=>v===guess[i]).length
+function countCorrectCharacters(correctWord, guess) {
+  if (correctWord.length !== guess.length) throw new Error();
+  return correctWord.split("").filter((v, i) => v === guess[i]).length;
 }

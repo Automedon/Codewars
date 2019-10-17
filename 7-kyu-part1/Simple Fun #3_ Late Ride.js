@@ -33,5 +33,7 @@ The sum of the digits the digital timer would show.
 */
 
 function lateRide(n) {
-  return ((n / 60 | 0)+ '' + n % 60).split('').reduce((start,next)=>start+next*1,0);
+  return (((n / 60) | 0) + "" + (n % 60))
+    .split("")
+    .reduce((start, next) => start + next * 1, 0);
 }

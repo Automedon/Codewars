@@ -8,6 +8,6 @@ Example:
 flatten([[1,2],[3,4]]) == [1,2,3,4]
 flatten([[1],[2],[3],[4]]) == [1,2,3,4]
 */
-function flatten(l){
-  return [].concat(...l)
+function flatten(l) {
+  return [].concat(...l);
 }

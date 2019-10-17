@@ -27,6 +27,8 @@ Complete function finalResult that accepts two arguments keywords and searchResu
 
 Argument keywords is always a string that contains uppercase or lowercase letters; Argument searchResult is always a string array that contains any strings.
 */
-function finalResult(keywords,searchResult){
-  return searchResult.filter(v=>keywords.split``.every(x=>v.split``.includes(x)))
+function finalResult(keywords, searchResult) {
+  return searchResult.filter(v =>
+    keywords.split``.every(x => v.split``.includes(x))
+  );
 }

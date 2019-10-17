@@ -1,12 +1,10 @@
-class Dinglemouse{
-
-  constructor( firstName, lastName ){
-    this._firstName=firstName;
-    this._lastName=lastName;
+class Dinglemouse {
+  constructor(firstName, lastName) {
+    this._firstName = firstName;
+    this._lastName = lastName;
   }
-  
-  getFullName(){
+
+  getFullName() {
     return `${this._firstName} ${this._lastName}`.trim();
   }
-  
 }

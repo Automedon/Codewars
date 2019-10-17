@@ -17,6 +17,10 @@ Note: calendar used in the kata is Gregorian.
 */
 
 function findOutChristmasWeekday(date) {
-  if (typeof date == "string") date = date.replace(/ /g, '-');
-  return ['Sun', 'Mon','Tues','Wednes','Thurs','Fri','Satur'][new Date(date).getDay()] + "day";
+  if (typeof date == "string") date = date.replace(/ /g, "-");
+  return (
+    ["Sun", "Mon", "Tues", "Wednes", "Thurs", "Fri", "Satur"][
+      new Date(date).getDay()
+    ] + "day"
+  );
 }

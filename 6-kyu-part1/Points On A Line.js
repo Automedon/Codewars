@@ -9,7 +9,13 @@ function onLine(points) {
   const x = points.shift();
   let a;
   return points
-    .filter (function(y) { return !(x[0] == y[0] && x[1] == y[1]) })
-    .map    (function(y) { return a = (x[0] - y[0])/(x[1] - y[1]) })
-    .every  (function(y) { return y == a });
+    .filter(function(y) {
+      return !(x[0] == y[0] && x[1] == y[1]);
+    })
+    .map(function(y) {
+      return (a = (x[0] - y[0]) / (x[1] - y[1]));
+    })
+    .every(function(y) {
+      return y == a;
+    });
 }

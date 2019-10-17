@@ -15,6 +15,9 @@ For the purposes of this kata, mid-word punctuation counts towards the character
 
 e.g: "it's / I'm" should become: "t's / I'M"
 */
-function smallWordHelper(sentence){
-  return sentence.split(' ').map(v=>v.length<4?v.toUpperCase():v.replace(/[aeiou]/gi,'')).join(` `)
+function smallWordHelper(sentence) {
+  return sentence
+    .split(" ")
+    .map(v => (v.length < 4 ? v.toUpperCase() : v.replace(/[aeiou]/gi, "")))
+    .join(` `);
 }

@@ -27,5 +27,7 @@ arr.join(''); // 'HelloWorld'
 arr.join(' '); // 'Hello World'
 */
 function isAnagram(stringOne, stringTwo) {
-  return stringOne.split(``).sort().join``===stringTwo.split(``).sort().join``
+  return (
+    stringOne.split(``).sort().join`` === stringTwo.split(``).sort().join``
+  );
 }

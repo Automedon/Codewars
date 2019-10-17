@@ -7,9 +7,9 @@ For some reason you don't have an access to that rotten peice of code but you wa
 Go and get it working!
 */
 function semicolonSeparationToCommaSeparation(input) {
-  let str='';
-  for (let i=0;i<input.length;i++){
-  if (!isNaN(input[i]*1)) str+=input[i]+','
+  let str = "";
+  for (let i = 0; i < input.length; i++) {
+    if (!isNaN(input[i] * 1)) str += input[i] + ",";
   }
-  return str.slice(0,-1)
+  return str.slice(0, -1);
 }

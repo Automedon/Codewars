@@ -9,4 +9,5 @@ For example:
 var array = ["white", "goodness"] //returns {white: 'goodness'}
 */
 
-const colourAssociation = array => array.map(([colour, association]) => ({[colour]:association}))
+const colourAssociation = array =>
+  array.map(([colour, association]) => ({ [colour]: association }));

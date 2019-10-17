@@ -18,5 +18,5 @@ template.render(name: "John", animal_type: "dogs")
 When key doesn't exist in the map, put there empty string.
 */
 const createTemplate = template => {
-  return vars => template.replace(/{{(\w+)}}/g, (m, v) => vars[v] || '');
+  return vars => template.replace(/{{(\w+)}}/g, (m, v) => vars[v] || "");
 };

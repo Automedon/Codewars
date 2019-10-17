@@ -8,6 +8,6 @@ Given an array of names and a specific name string, return the number of times t
 
 countName( ["Tom","Bob","Harry","Bob"] , "Bob") //should return 2, since "Bob" shows up 2 times in the array
 */
-function countName(anArr, name){
-  return anArr.filter(v=>v===name).length
-};
+function countName(anArr, name) {
+  return anArr.filter(v => v === name).length;
+}

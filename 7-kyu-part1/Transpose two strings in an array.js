@@ -18,15 +18,14 @@ You don't have to modify the case (i.e. no need to change to upper or lower)
 If one string is longer than the other, there should be a space where the character would be
 */
 
-
-function transposeTwoStrings(arr){
+function transposeTwoStrings(arr) {
   var result = [];
   var len = Math.max(arr[0].length, arr[1].length);
-  
+
   for (var i = 0; i < len; i++) {
     var column = (arr[0][i] || " ") + " " + (arr[1][i] || " ");
     result.push(column);
   }
-  
+
   return result.join("\n");
 }

@@ -21,7 +21,7 @@ Hint/Challenge: If you have completed the takeWhile function and the dropWhile f
 function span(arr, predicate) {
   var i = 0;
   while (i < arr.length && predicate(arr[i])) {
-     i++;
+    i++;
   }
   return [arr.slice(0, i), arr.slice(i)];
 }

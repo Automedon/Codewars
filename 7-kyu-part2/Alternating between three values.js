@@ -11,11 +11,10 @@ What is the most efficient way to cycle among three values? Write a function f s
 EXAMPLE
   f( 3, { a:3, b:4, c:5 } ) => 4
 */
-function f(x, cc) { 
-  let arr = Object.values(cc)
-  for (let i=0;i<arr.length;i++)
-  {
-    if (arr[i]===x&&arr[i+1]===0) return 0
-    if (arr[i]===x) return arr[i+1]||arr[0]
+function f(x, cc) {
+  let arr = Object.values(cc);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === x && arr[i + 1] === 0) return 0;
+    if (arr[i] === x) return arr[i + 1] || arr[0];
   }
 }

@@ -15,8 +15,7 @@ canReach(59, 5, 7) // returns True
 N.B. Assume aim, add, and mult will always be positive integers.
 */
 function canReach(n, add, mult) {
-  if (mult === 1) return (n-1) % add === 0;
-  for (let i = 1; i <= n; i *= mult) 
-    if ((n - i) % add === 0) return true;
+  if (mult === 1) return (n - 1) % add === 0;
+  for (let i = 1; i <= n; i *= mult) if ((n - i) % add === 0) return true;
   return false;
 }

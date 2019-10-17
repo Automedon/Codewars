@@ -12,24 +12,33 @@ Input: 2259 Output: 23rd
 Input: 1124 Output: 12th
 Input: 2000 Output: 20th
 */
-function whatCentury(year)
-{
-  let cent=year.toString().slice(0,2)*1
-  if (year%1000===0){
-   switch(cent){
-     case 10: return `10th`
-     case 20: return `20th`
-     case 30: return `30th`
-     }
+function whatCentury(year) {
+  let cent = year.toString().slice(0, 2) * 1;
+  if (year % 1000 === 0) {
+    switch (cent) {
+      case 10:
+        return `10th`;
+      case 20:
+        return `20th`;
+      case 30:
+        return `30th`;
+    }
   }
-  cent=cent+1;
-  switch(cent){
-  case 11: return `${cent}th`
-  case 12: return `${cent}th`
-  case 13: return `${cent}th`
-  case 20: return `${cent}th`
-  case 21: return `${cent}st`
-  case 23: return `${cent}rd`
-  case 22: return `${cent}nd`
+  cent = cent + 1;
+  switch (cent) {
+    case 11:
+      return `${cent}th`;
+    case 12:
+      return `${cent}th`;
+    case 13:
+      return `${cent}th`;
+    case 20:
+      return `${cent}th`;
+    case 21:
+      return `${cent}st`;
+    case 23:
+      return `${cent}rd`;
+    case 22:
+      return `${cent}nd`;
   }
 }

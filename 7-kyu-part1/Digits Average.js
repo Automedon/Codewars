@@ -23,16 +23,15 @@ p.s. for a bigger challenge, check out the one line version of this kata by myji
 */
 function digitsAverage(input) {
   if (input < 10) {
-    return input
+    return input;
   }
   while (input > 9) {
-    input = String(input)
-    let array = []
+    input = String(input);
+    let array = [];
     for (let i = 0; i < input.length - 1; i++) {
-      array.push(Math.round((+input[i] + +input[i + 1]) / 2))
+      array.push(Math.round((+input[i] + +input[i + 1]) / 2));
     }
-    input = +(array.join(''))
-    
+    input = +array.join("");
   }
-  return input
+  return input;
 }

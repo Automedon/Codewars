@@ -77,32 +77,31 @@ class Foo {
 const foo = new Foo();
 Note: for the sake of backend test simplicity do not use variables when calling methods.
 */
-_describe('Foo', function() {
-  it('instanceof', function() {
+_describe("Foo", function() {
+  it("instanceof", function() {
     Test.expect(foo instanceof Foo);
   });
-  it('value should start at 0', function() {
-    Test.expect(foo.value===0)
+  it("value should start at 0", function() {
+    Test.expect(foo.value === 0);
   });
-  it('array should start with 1, 2, 3', function() {
-    Test.assertSimilar(foo.array,[1, 2, 3])
+  it("array should start with 1, 2, 3", function() {
+    Test.assertSimilar(foo.array, [1, 2, 3]);
   });
-  it('', function() {
-    Test.expectError('', ()=>foo.add(false));
+  it("", function() {
+    Test.expectError("", () => foo.add(false));
   });
-  it('', function() {
-    Test.expectNoError('',()=> foo.add(5));
+  it("", function() {
+    Test.expectNoError("", () => foo.add(5));
   });
-  it('', function() {
-    Test.assertEquals(foo.value,5)
+  it("", function() {
+    Test.assertEquals(foo.value, 5);
   });
-  
-  it('', function() {
-    Test.expectError('', ()=>foo.push(''));
-  });
-  
 
-  it('', function() {
-    Test.expectNoError('',()=> foo.push(5));
+  it("", function() {
+    Test.expectError("", () => foo.push(""));
+  });
+
+  it("", function() {
+    Test.expectNoError("", () => foo.push(5));
   });
 });

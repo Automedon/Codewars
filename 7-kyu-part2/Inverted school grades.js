@@ -7,5 +7,5 @@ Because this could happen again I will param de solution with correct grade scal
 Ex. invertGrades(5,1) ret 5 invertGrades(5,5) ret 1 invertGrades(7,1) ret 7 invertGrades(8,2) ret 7
 */
 function invertGrades(scale, value) {
-   return scale-value+1
+  return scale - value + 1;
 }

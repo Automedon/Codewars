@@ -12,11 +12,11 @@ Examples
 ('codewars', 2)  ==>  'co...'
 */
 function truncateString(str, num) {
-   if (str.length<=num){
-    return  str
-    }
-    if (str.slice(0,num).length>3){
-    return str.slice(0,num-3)+'...'
-    }
-    return str.slice(0,num)+'...'
+  if (str.length <= num) {
+    return str;
+  }
+  if (str.slice(0, num).length > 3) {
+    return str.slice(0, num - 3) + "...";
+  }
+  return str.slice(0, num) + "...";
 }

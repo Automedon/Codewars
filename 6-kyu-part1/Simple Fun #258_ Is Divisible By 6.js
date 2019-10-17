@@ -30,11 +30,12 @@ the output should be
 "123456789012345678901234567890"]```
 As you can see, the masked number may be very large ;-)
 */
-const BigNumber = require('bignumber.js');
+const BigNumber = require("bignumber.js");
 function isDivisibleBy6(s) {
-  const arr = []
-  for (let i=0;i<10;i++){
-    if (new BigNumber(s.replace(/\*/g,i)).modulo(6).valueOf()==0) arr.push(s.replace(/\*/g,i))
+  const arr = [];
+  for (let i = 0; i < 10; i++) {
+    if (new BigNumber(s.replace(/\*/g, i)).modulo(6).valueOf() == 0)
+      arr.push(s.replace(/\*/g, i));
   }
-  return arr
+  return arr;
 }

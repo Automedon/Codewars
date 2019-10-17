@@ -26,14 +26,16 @@ It is hard to believe but the thickness of paper folded in half 70 times will be
 Good luck!
 */
 const paperThickness = (paper, n) => {
-   let answ = paper
-   for(let i=0;i<n;i++){
-   answ+=answ;
-   answ=answ.toFixed(2)*1
-   }
-   if (answ>1000000){ return  `${(answ/1000000).toFixed(2)} km`
-   }
-   if (answ>1000){ return  `${(answ/1000).toFixed(2)} m`
-   }
-   return `${answ.toFixed(2)} mm`
-}
+  let answ = paper;
+  for (let i = 0; i < n; i++) {
+    answ += answ;
+    answ = answ.toFixed(2) * 1;
+  }
+  if (answ > 1000000) {
+    return `${(answ / 1000000).toFixed(2)} km`;
+  }
+  if (answ > 1000) {
+    return `${(answ / 1000).toFixed(2)} m`;
+  }
+  return `${answ.toFixed(2)} mm`;
+};

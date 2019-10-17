@@ -7,6 +7,9 @@ Given an array of integers, your task is to find two same numbers and return one
 If there are no twins in the city - return None or the equivilent in the langauge that you are using.
 */
 
-function elimination(arr){
-  return arr.sort((a,b)=>a-b).filter((v,i,arr)=>arr[i]===arr[i+1])*1||null
+function elimination(arr) {
+  return (
+    arr.sort((a, b) => a - b).filter((v, i, arr) => arr[i] === arr[i + 1]) *
+      1 || null
+  );
 }

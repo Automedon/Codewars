@@ -13,6 +13,6 @@ Example
 isInt(3) = true ; 
 isInt(3.1) = false ;
 */
-function isInt(n){
-  return n===parseInt(n)
+function isInt(n) {
+  return n === parseInt(n);
 }

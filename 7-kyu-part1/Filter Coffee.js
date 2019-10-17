@@ -12,5 +12,5 @@ The search function should return a string of prices for the coffees beans you c
 */
 
 function search(budget, prices) {
-  return (prices.sort((a,b)=>a-b).filter(v=>v<=budget))+''
+  return prices.sort((a, b) => a - b).filter(v => v <= budget) + "";
 }

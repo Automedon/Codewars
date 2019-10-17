@@ -19,7 +19,12 @@ birthdays=["1968-1-2","1980-8-15","1982-9-20","1966-12-3"]
 showMyPassword(birthdays) === "80821202"
 Please help John to complete this function.
 */
-function showMyPassword(birthdays){
-  birthdays = birthdays.sort((a,b)=>new Date(b)- new Date(a))
-  return birthdays[1].slice(2,4) + birthdays[0].slice(2,4) + birthdays[3].split('-').map(e=>e.length<2?'0'+e:e)[1] + birthdays[2].split('-').map(e=>e.length<2?'0'+e:e)[2] 
+function showMyPassword(birthdays) {
+  birthdays = birthdays.sort((a, b) => new Date(b) - new Date(a));
+  return (
+    birthdays[1].slice(2, 4) +
+    birthdays[0].slice(2, 4) +
+    birthdays[3].split("-").map(e => (e.length < 2 ? "0" + e : e))[1] +
+    birthdays[2].split("-").map(e => (e.length < 2 ? "0" + e : e))[2]
+  );
 }

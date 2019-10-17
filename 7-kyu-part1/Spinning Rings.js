@@ -20,6 +20,10 @@ spinningRings(3, 2) = 2
 for a bigger challenge, check out the Performance Version of this kata by @Voile
 */
 function spinningRings(innerMax, outerMax) {
-  for(var i = 1; innerMax - ((i - 1) % (innerMax + 1)) !== i % (outerMax + 1); i++) {}
+  for (
+    var i = 1;
+    innerMax - ((i - 1) % (innerMax + 1)) !== i % (outerMax + 1);
+    i++
+  ) {}
   return i;
-};
+}

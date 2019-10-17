@@ -1,3 +1,3 @@
 function vowel2index(str) {
-   return str.replace(/[aeiou]/ig, (m, i) => i + 1);
+  return str.replace(/[aeiou]/gi, (m, i) => i + 1);
 }

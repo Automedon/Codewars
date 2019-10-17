@@ -12,7 +12,7 @@ FIGHT!!
 Original design of this kata was a much more beautiful thing - the test cases illustrate the idea, and the intended output. I am unable to make the actual output go over multiple lines so for now at least you will have to imagine the beauty!
 */
 function headSmash(array) {
-  if (array.length===0) return 'Gym is empty'
-  if (Array.isArray(array)) return array.map(v=>v.replace(/O/g,' '))
-  return 'This isn\'t the gym!!'
+  if (array.length === 0) return "Gym is empty";
+  if (Array.isArray(array)) return array.map(v => v.replace(/O/g, " "));
+  return "This isn't the gym!!";
 }

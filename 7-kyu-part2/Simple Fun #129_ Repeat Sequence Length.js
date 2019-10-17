@@ -46,15 +46,17 @@ the A0 number
 the length of the repeat sequence
 */
 function repeatSequenceLen(a0) {
-  let arr=a0
-  let check  = [];
-  for (let i=0;;i++){
-    arr=arr.toString().split``.map(v=>v*1*v*1).reduce((a,b)=>a+b*1,0)
-      if (check.includes(arr.toString())){
-      check.push(arr.toString())
-      break
+  let arr = a0;
+  let check = [];
+  for (let i = 0; ; i++) {
+    arr = arr.toString().split``
+      .map(v => v * 1 * v * 1)
+      .reduce((a, b) => a + b * 1, 0);
+    if (check.includes(arr.toString())) {
+      check.push(arr.toString());
+      break;
     }
-    check.push(arr.toString())
+    check.push(arr.toString());
   }
-  return check.slice(check.indexOf(check[check.length-1])).length-1
+  return check.slice(check.indexOf(check[check.length - 1])).length - 1;
 }

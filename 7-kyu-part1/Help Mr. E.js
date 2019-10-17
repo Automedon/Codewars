@@ -7,5 +7,7 @@ Your translator should take in a string and output it with all odd length words 
 "How did we end up here? We go?" translated becomes-> "Howw didd we endd up here We go"
 */
 function evenator(str) {
-  return str.replace(/[.,?!_]/gi,'').split` `.map(v=>v.length%2!==0?v+v[v.length-1]:v).join` `
-} 
+  return str.replace(/[.,?!_]/gi, "").split` `.map(v =>
+    v.length % 2 !== 0 ? v + v[v.length - 1] : v
+  ).join` `;
+}

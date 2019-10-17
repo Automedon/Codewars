@@ -13,9 +13,9 @@ fibonacci(33)==10
 fibonacci(25997544)==19544084
 */
 function fibonacci(max) {
-    let fib = [0,1]
-    for (let i=1;fib[i-1]+fib[i]<max;i++){
-      fib.push(fib[i-1]+fib[i])
-    }
-    return fib.reduce((a,b)=>a+(b%2==0?b:0),0)
+  let fib = [0, 1];
+  for (let i = 1; fib[i - 1] + fib[i] < max; i++) {
+    fib.push(fib[i - 1] + fib[i]);
+  }
+  return fib.reduce((a, b) => a + (b % 2 == 0 ? b : 0), 0);
 }

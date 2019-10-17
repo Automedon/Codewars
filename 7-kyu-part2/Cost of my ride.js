@@ -19,13 +19,13 @@ insurance(30,"full-size",30); // => 1950
 insurance(21,"economy",-10); // => 0
 insurance(42,"my custom car",7); // => 455
 */
-function insurance(age, size, numofdays){
-  let insur=0;
-  if (age<25) insur+=10;
-  if (size==='economy') insur+=0
-  else if (size==='medium') insur+=10
-  else if (size==='full-size') insur+=15
-  else insur+=15
-  insur=(numofdays*(50+insur))
-  return insur>=0?insur:0
+function insurance(age, size, numofdays) {
+  let insur = 0;
+  if (age < 25) insur += 10;
+  if (size === "economy") insur += 0;
+  else if (size === "medium") insur += 10;
+  else if (size === "full-size") insur += 15;
+  else insur += 15;
+  insur = numofdays * (50 + insur);
+  return insur >= 0 ? insur : 0;
 }

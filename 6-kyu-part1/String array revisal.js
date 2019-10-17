@@ -13,5 +13,7 @@ Strings will be alphabet characters only. Don't worry about lower and upper case
 Good luck!
 */
 function dup(s) {
-  return s.map(v=>v.split``.map((v,i,arr)=>arr[i]===arr[i+1]?'':v).join``)
-};
+  return s.map(
+    v => v.split``.map((v, i, arr) => (arr[i] === arr[i + 1] ? "" : v)).join``
+  );
+}

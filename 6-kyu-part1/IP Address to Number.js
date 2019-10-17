@@ -39,13 +39,19 @@ numToIp(ipToNum('192.168.1.1')) //returns '192.168.1.1'
 ipToNum(numToIp(3232235777)) //returns 3232235777
 */
 function ipToNum(ip) {
-  return parseInt(ip.split`.`.map(v=>(v*1).toString(2).padStart(8,0)).join``,2)
+  return parseInt(
+    ip.split`.`.map(v => (v * 1).toString(2).padStart(8, 0)).join``,
+    2
+  );
 }
 function numToIp(num) {
   let arr = [];
-  num=num.toString(2).split``.reverse().join``
-  for (let i=0;i<num.length;i+=8){
-    arr.push(num.slice(i,i+8))
+  num = num.toString(2).split``.reverse().join``;
+  for (let i = 0; i < num.length; i += 8) {
+    arr.push(num.slice(i, i + 8));
   }
-  return arr.map(v=>v.split``.reverse().join``).reverse().map(v=>parseInt(v,2)).join`.`
+  return arr
+    .map(v => v.split``.reverse().join``)
+    .reverse()
+    .map(v => parseInt(v, 2)).join`.`;
 }

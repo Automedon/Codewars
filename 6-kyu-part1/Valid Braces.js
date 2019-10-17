@@ -17,7 +17,9 @@ Examples
 "[({})](]" =>  False
 */
 
-function validBraces(braces){
- while(/\(\)|\[\]|\{\}/g.test(braces)){braces = braces.replace(/\(\)|\[\]|\{\}/g,"")}
- return !braces.length;
+function validBraces(braces) {
+  while (/\(\)|\[\]|\{\}/g.test(braces)) {
+    braces = braces.replace(/\(\)|\[\]|\{\}/g, "");
+  }
+  return !braces.length;
 }

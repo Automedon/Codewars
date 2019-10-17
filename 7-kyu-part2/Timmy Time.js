@@ -9,7 +9,7 @@ changeTime('00:00', -1) //return '23:59'
 
 */
 const changeTime = (input, delta) => {
-    let [hours, minutes] = input.split(':'),
-        milliseconds = 60 * 1000 * (60 * Number(hours) + Number(minutes) + delta)
-    return new Date(milliseconds).toTimeString().substring(0, 5)
-}
+  let [hours, minutes] = input.split(":"),
+    milliseconds = 60 * 1000 * (60 * Number(hours) + Number(minutes) + delta);
+  return new Date(milliseconds).toTimeString().substring(0, 5);
+};

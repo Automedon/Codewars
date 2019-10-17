@@ -16,6 +16,6 @@ factorial(2)=>2 x 1 = 2
 
 factorial(0)=>1 = 1
 */
-function factorial(num){
-  return num>1?num*factorial(num-1):1;
+function factorial(num) {
+  return num > 1 ? num * factorial(num - 1) : 1;
 }

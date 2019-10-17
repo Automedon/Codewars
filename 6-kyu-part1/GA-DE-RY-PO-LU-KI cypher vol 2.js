@@ -36,28 +36,40 @@ Example
  decode("Dkucr pu yhr ykbir","politykarenu") // => Dance on the table
  decode("Hmdr nge brres","regulaminowy")  // => Hide our beers
 */
-function encode(str,key) 
-{
-   let i =0
-   let dict = {}
-   let arr = Array.from({length:key.length/2},(v)=>{ v=key.slice(i,i+2);i+=2;dict[v[0]]=v[1];dict[v[1]]=v[0]})
-  return str.replace(/./g,v=>{
-    if (dict[v.toLowerCase()]){
-      return v===v.toUpperCase()?dict[v.toLowerCase()].toUpperCase():dict[v]
+function encode(str, key) {
+  let i = 0;
+  let dict = {};
+  let arr = Array.from({ length: key.length / 2 }, v => {
+    v = key.slice(i, i + 2);
+    i += 2;
+    dict[v[0]] = v[1];
+    dict[v[1]] = v[0];
+  });
+  return str.replace(/./g, v => {
+    if (dict[v.toLowerCase()]) {
+      return v === v.toUpperCase()
+        ? dict[v.toLowerCase()].toUpperCase()
+        : dict[v];
     }
-    return v
-  })
+    return v;
+  });
 }
 
-function decode(str,key) 
-{
-    let i =0
-   let dict = {}
-   let arr = Array.from({length:key.length/2},(v)=>{ v=key.slice(i,i+2);i+=2;dict[v[0]]=v[1];dict[v[1]]=v[0]})
-     return str.replace(/./g,v=>{
-    if (dict[v.toLowerCase()]){
-      return v===v.toUpperCase()?dict[v.toLowerCase()].toUpperCase():dict[v]
+function decode(str, key) {
+  let i = 0;
+  let dict = {};
+  let arr = Array.from({ length: key.length / 2 }, v => {
+    v = key.slice(i, i + 2);
+    i += 2;
+    dict[v[0]] = v[1];
+    dict[v[1]] = v[0];
+  });
+  return str.replace(/./g, v => {
+    if (dict[v.toLowerCase()]) {
+      return v === v.toUpperCase()
+        ? dict[v.toLowerCase()].toUpperCase()
+        : dict[v];
     }
-    return v
-  })  
+    return v;
+  });
 }

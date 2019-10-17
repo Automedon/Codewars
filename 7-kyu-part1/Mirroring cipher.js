@@ -15,7 +15,10 @@ mirror("Welcome home"), "dvoxlnv slnv" //whole alphabet mirrored here
 mirror("hello", "abcdefgh"), "adllo" //notice only "h" and "e" get reversed
 */
 
-function mirror(code,list='abcdefghijklmnopqrstuvwxyz') {
-  return code.toLowerCase()
-             .replace(/./gi, a => list.indexOf(a) > -1 ? list[list.length - list.indexOf(a) - 1] : a)
+function mirror(code, list = "abcdefghijklmnopqrstuvwxyz") {
+  return code
+    .toLowerCase()
+    .replace(/./gi, a =>
+      list.indexOf(a) > -1 ? list[list.length - list.indexOf(a) - 1] : a
+    );
 }

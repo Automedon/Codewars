@@ -16,11 +16,11 @@ Then the new season standings should
 1:'Leeds United' (first last season) 2:'Arsenal' (alphabetical) 3:'Coventry' (alphabetical) 4:'Liverpool' (alphabetical) 5:'Manchester City' (alphabetical)
 */
 function premierLeagueStandings(teamStandings) {
-  let arr= Object.values(teamStandings)
-  let first = arr.shift()
-  arr=arr.sort((a,b)=>a.localeCompare(b))
-  arr = [first].concat(arr)
-  let obj={};
-  arr.map((v,i)=>obj[i+1]=arr[i])
-  return obj
+  let arr = Object.values(teamStandings);
+  let first = arr.shift();
+  arr = arr.sort((a, b) => a.localeCompare(b));
+  arr = [first].concat(arr);
+  let obj = {};
+  arr.map((v, i) => (obj[i + 1] = arr[i]));
+  return obj;
 }

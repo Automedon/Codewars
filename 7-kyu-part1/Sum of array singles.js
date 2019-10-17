@@ -15,6 +15,8 @@ Sum of prime-indexed elements
 Sum of integer combinations
 */
 
-function repeats(arr){
-  return arr.filter((v,i,arr)=>arr.indexOf(v)==arr.lastIndexOf(v)).reduce((a,b)=>a+b,0)
-};
+function repeats(arr) {
+  return arr
+    .filter((v, i, arr) => arr.indexOf(v) == arr.lastIndexOf(v))
+    .reduce((a, b) => a + b, 0);
+}

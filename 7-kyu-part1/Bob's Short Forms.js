@@ -13,8 +13,11 @@ Also, FYI: I got all the words with no vowels from
 https://en.wikipedia.org/wiki/English_words_without_vowels
 */
 function shortForm(str) {
-  let output=''
-  for (let i=1;i<str.length-1;i++)
-  {if (str[i].match(/[^aeuio]/i)){output+=str[i]}}
-  return str[0]+output+str[str.length-1]
+  let output = "";
+  for (let i = 1; i < str.length - 1; i++) {
+    if (str[i].match(/[^aeuio]/i)) {
+      output += str[i];
+    }
+  }
+  return str[0] + output + str[str.length - 1];
 }

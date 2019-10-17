@@ -17,8 +17,12 @@ not a number
 function perc (0.22) {}
 // should return "invalid track time"
 */
-function perc (mins) {
-  if (mins>100||mins<1||typeof mins !== 'number') return "invalid track time"
-  return [`${Math.round(mins*120)} kicks`,`${Math.round(mins*240)} hihats`,
-  `${Math.round(mins*60)} claps`]
-};
+function perc(mins) {
+  if (mins > 100 || mins < 1 || typeof mins !== "number")
+    return "invalid track time";
+  return [
+    `${Math.round(mins * 120)} kicks`,
+    `${Math.round(mins * 240)} hihats`,
+    `${Math.round(mins * 60)} claps`
+  ];
+}

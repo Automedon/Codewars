@@ -25,13 +25,13 @@ decode('ymjxvznwwjqnxhzyj','squirrel') // returns ['thesquirreliscute']
 decode('lzwespnsdmwakafxafalq','max')  // returns ['maxftqotenxblbgybgbmr', 'themaxvalueisinfinity']
 decode('pumy','um')  // returns ['pumy']
 */
-function decode(msg,contents){
-  let str = ''
-  let arr = []
-  const dict ='abcdefghijklmnopqrstuvwxyz'
-  for (let i=0;i<26;i++){
-    str=msg.split``.map(v=>dict[(dict.indexOf(v)+i)%26]).join``
-    if (str.match(contents)) arr.push(str)
+function decode(msg, contents) {
+  let str = "";
+  let arr = [];
+  const dict = "abcdefghijklmnopqrstuvwxyz";
+  for (let i = 0; i < 26; i++) {
+    str = msg.split``.map(v => dict[(dict.indexOf(v) + i) % 26]).join``;
+    if (str.match(contents)) arr.push(str);
   }
-  return arr
+  return arr;
 }

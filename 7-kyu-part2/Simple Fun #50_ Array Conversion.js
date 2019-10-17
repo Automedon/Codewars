@@ -21,11 +21,12 @@ Constraints: 21 ≤ arr.length ≤ 25, -9 ≤ arr[i] ≤ 99.
 
 [output] an integer
 */
-function arrayConversion(arr){
-    for(let i=0;;i++)
-    {
-      if (i%2==0) arr=arr.map((v,i)=>v+arr[i+1]).filter((v,i)=>i%2===0)
-      if (i%2!==0) arr=arr.map((v,i)=>v*arr[i+1]).filter((v,i)=>i%2===0)
-      if (arr.length===1) return arr[0]
-    }
+function arrayConversion(arr) {
+  for (let i = 0; ; i++) {
+    if (i % 2 == 0)
+      arr = arr.map((v, i) => v + arr[i + 1]).filter((v, i) => i % 2 === 0);
+    if (i % 2 !== 0)
+      arr = arr.map((v, i) => v * arr[i + 1]).filter((v, i) => i % 2 === 0);
+    if (arr.length === 1) return arr[0];
+  }
 }

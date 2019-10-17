@@ -10,12 +10,12 @@ getNum(3479283469) #-> returns 5
 The archaeologists were totally stuck with this challenge. They were all in desperation but then.... came YOU the SUPER-AWESOME programmer. Will you be able to understand the mystery of this function and rewrite it?
 */
 var getNum = function(n) {
-    let count=0
-    n.toString().split``.map(v=>{
-    v==='0'?count++:1;
-    v==='6'?count++:1;
-    v==='8'?count+=2:1;
-    v==='9'?count++:1;
-    })
-    return count 
+  let count = 0;
+  n.toString().split``.map(v => {
+    v === "0" ? count++ : 1;
+    v === "6" ? count++ : 1;
+    v === "8" ? (count += 2) : 1;
+    v === "9" ? count++ : 1;
+  });
+  return count;
 };

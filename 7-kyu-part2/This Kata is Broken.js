@@ -8,7 +8,7 @@ Do not be fooled by anyone who tells you to "think outside the box" or "know whe
 
 Again, we apologize for this clearly broken kata.
 */
-var i=0;
+var i = 0;
 function solution() {
-  return 'GlaDOS'.charCodeAt(i++%6);
+  return "GlaDOS".charCodeAt(i++ % 6);
 }

@@ -13,5 +13,8 @@ Full ascii table is used on our question (256 chars) - so 0-255 are the valid va
 Good luck.
 */
 function encrypt(text, rule) {
-  return text.split('').map(v=>String.fromCharCode((v.charCodeAt()+rule)%256)).join(``)
-};
+  return text
+    .split("")
+    .map(v => String.fromCharCode((v.charCodeAt() + rule) % 256))
+    .join(``);
+}

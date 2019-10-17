@@ -10,6 +10,6 @@ Example : " Truck" --> ' rc " Travis" --> ' rvs' " Nigel" --> ' ie'
 
 "A Vampire Bit me" --> "AVmieBtm"
 */
-function getEvenStrings(str){ 
-   return [...str].filter((v,i)=>i%2===0).join(``);
+function getEvenStrings(str) {
+  return [...str].filter((v, i) => i % 2 === 0).join(``);
 }

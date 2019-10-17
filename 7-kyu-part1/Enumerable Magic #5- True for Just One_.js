@@ -7,6 +7,6 @@ Ruby: If you need help, here's a reference:
 http://www.rubycuts.com/enum-one
 */
 
-function one(arr, fun){
+function one(arr, fun) {
   return arr.filter(fun).length == 1;
 }

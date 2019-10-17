@@ -23,15 +23,15 @@ therefore hop_across([1,2,1,2]) = 3 + 2 = 5
 therefore hop_across([2,2,3,1,1,2,1]) = 3 + 4 = 7
 */
 function hopAcross(lst) {
-  let jump=0;
-  for (let i=0;i<lst.length;){
-  jump++
-  i+=lst[i]
+  let jump = 0;
+  for (let i = 0; i < lst.length; ) {
+    jump++;
+    i += lst[i];
   }
-  let rev=lst.reverse()
-  for (let i=0;i<lst.length;){
-  jump++
-  i+=rev[i]
+  let rev = lst.reverse();
+  for (let i = 0; i < lst.length; ) {
+    jump++;
+    i += rev[i];
   }
-  return jump
+  return jump;
 }

@@ -29,16 +29,16 @@ And yes, there is a finite number of possible results. You can brute force the s
 Good luck!
 */
 function serveOnLeft(score) {
- if (score[0]===40&&score[1]===40) return true
- if (score[0]===30&&score[1]===40) return false
- if (score[0]===15&&score[1]===30) return false
- if (score[0]===0&&score[1]===40) return false
- if (score[0]===40&&score[1]===15) return true
- if (score[0]===30&&score[1]===0) return true
- if (score[0]===0&&score[1]===15) return false
- if (score==='deuce') return true
- if (score==='advantage out') return false
- if (score==='advantage in') return false
- if (score[0]>score[1]) return false 
- return true
+  if (score[0] === 40 && score[1] === 40) return true;
+  if (score[0] === 30 && score[1] === 40) return false;
+  if (score[0] === 15 && score[1] === 30) return false;
+  if (score[0] === 0 && score[1] === 40) return false;
+  if (score[0] === 40 && score[1] === 15) return true;
+  if (score[0] === 30 && score[1] === 0) return true;
+  if (score[0] === 0 && score[1] === 15) return false;
+  if (score === "deuce") return true;
+  if (score === "advantage out") return false;
+  if (score === "advantage in") return false;
+  if (score[0] > score[1]) return false;
+  return true;
 }

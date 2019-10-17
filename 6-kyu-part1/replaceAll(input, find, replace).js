@@ -7,7 +7,9 @@ The function will always be called with three strings, so don't worry about vali
 As with the original "string".replace(find, replace), if find is an empty string, it should match in-between each character, effectively inserting replace in-between each character, including the start and end of the string. I've given you some tests for this to make it a little clearer.
 */
 function replaceAll(input, find, replace) {
-  if (find == '')
-    return input == '' ? replace : replace + input.split('').join(replace) + replace;
+  if (find == "")
+    return input == ""
+      ? replace
+      : replace + input.split("").join(replace) + replace;
   return input.split(find).join(replace);
 }

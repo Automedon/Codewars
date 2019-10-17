@@ -33,18 +33,18 @@ For `s = 4 and e = 8`, the output should be `"ab"`.
 s e string 4 8 "a" 5 7 "ab" 6 6 exit
 */
 function strangeCode(s, e) {
-  let str = '';
-  let ab = true
-  while (s<e-1){
-    s++
-    e--
-      if (ab){
-      str+='a'
-      ab=false
-      } else {
-      str+='b'
-      ab=true
-      }
+  let str = "";
+  let ab = true;
+  while (s < e - 1) {
+    s++;
+    e--;
+    if (ab) {
+      str += "a";
+      ab = false;
+    } else {
+      str += "b";
+      ab = true;
+    }
   }
-  return str
+  return str;
 }

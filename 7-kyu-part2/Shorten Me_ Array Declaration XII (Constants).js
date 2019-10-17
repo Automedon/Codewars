@@ -12,4 +12,4 @@ You have to write an array() function returning an array object with elements as
 Coding Limitation:
 Less than 45 characters
 */
-with(Math)array=_=>[SQRT2,LOG2E,LN10,E,PI]
+with (Math) array = _ => [SQRT2, LOG2E, LN10, E, PI];

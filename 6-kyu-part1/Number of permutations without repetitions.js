@@ -21,8 +21,8 @@ perms(45)==2
 perms(115)==3
 perms("abc")==6
 */
-function perms(element) { 
-  var str = '' + element;
+function perms(element) {
+  var str = "" + element;
   var counts = {};
   var numerator = 1;
   var denominator = 1;

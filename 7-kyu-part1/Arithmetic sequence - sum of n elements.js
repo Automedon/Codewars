@@ -14,8 +14,7 @@ a + (a+r) + (a+r+r) + (a+r+r+r) + (a+r+r+r+r)
 */
 
 function ArithmeticSequenceSum(a, r, n) {
- let arr=[];
- for (let i=0;i<n;i++)
- arr.push(a+r*i)
-  return arr.reduce((a,b)=>a+b,0)
+  let arr = [];
+  for (let i = 0; i < n; i++) arr.push(a + r * i);
+  return arr.reduce((a, b) => a + b, 0);
 }

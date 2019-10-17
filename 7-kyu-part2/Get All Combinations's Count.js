@@ -12,18 +12,18 @@ So the count of all combinations equal 6
 getCombination([1, 2, 3, 4], 2) = 6
 */
 function getCombinations(list, size) {
-    let result = [];
-    function fork(index, values) {
-        if (values.length === size) {
-            result.push(values);
-            return;
-        }
-        if (index >= list.length) {
-            return;
-        }
-        fork(index + 1, values.concat(list[index]));
-        fork(index + 1, values);
+  let result = [];
+  function fork(index, values) {
+    if (values.length === size) {
+      result.push(values);
+      return;
     }
-    fork(0, []);
-    return result.length;
+    if (index >= list.length) {
+      return;
+    }
+    fork(index + 1, values.concat(list[index]));
+    fork(index + 1, values);
+  }
+  fork(0, []);
+  return result.length;
 }

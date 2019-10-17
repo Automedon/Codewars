@@ -18,7 +18,10 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 I have also created other katas. Take a look if you enjoyed this kata!
 */
 
-
 function findMissingLetter(array) {
-  return String.fromCharCode(array.find((c,i)=>array[i+1].charCodeAt()-c.charCodeAt()!==1).charCodeAt()+1)
+  return String.fromCharCode(
+    array
+      .find((c, i) => array[i + 1].charCodeAt() - c.charCodeAt() !== 1)
+      .charCodeAt() + 1
+  );
 }

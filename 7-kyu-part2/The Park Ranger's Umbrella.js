@@ -8,4 +8,9 @@ Description clarification. Each day is made up of morning, afternoon, and evenin
 
 [rainy, rainy, thunderstorm, rainy, rainy, cloudy] = 2 [rainy, cloudy, thunderstorm, rainy, cloudy, cloudy] = 3
 */
-const umbrella = arr => arr.filter((x,i) => (x=="rainy" || x=="thunderstorm") && (i%3==0 || (arr[i-1]!="rainy" && arr[i-1]!="thunderstorm"))).length;
+const umbrella = arr =>
+  arr.filter(
+    (x, i) =>
+      (x == "rainy" || x == "thunderstorm") &&
+      (i % 3 == 0 || (arr[i - 1] != "rainy" && arr[i - 1] != "thunderstorm"))
+  ).length;

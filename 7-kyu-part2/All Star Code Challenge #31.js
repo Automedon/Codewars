@@ -37,8 +37,14 @@ helpJesse(recipe);
 Note:
 Assume all keys in the Instruction objects are properly filled and do not need to be checked for format or value type.
 */
-function helpJesse(array){
+function helpJesse(array) {
   let arr = [];
-  array.map(v=>arr.push(`Pour ${v.amount} mL of ${v.solution} into a ${v.instrument}${v.note?` (${v.note})`:''}`))
-  return arr
+  array.map(v =>
+    arr.push(
+      `Pour ${v.amount} mL of ${v.solution} into a ${v.instrument}${
+        v.note ? ` (${v.note})` : ""
+      }`
+    )
+  );
+  return arr;
 }

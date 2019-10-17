@@ -32,16 +32,14 @@ Note for JavaScript, Coffescript, Typescript:
 Don't use the double bitwise NOT ~~ at each iteration if you want to have the same results as in the tests and the other languages.
 */
 
-
 function intRac(n, guess) {
-    let steps = 0;
-    
-    while (true) {
-        steps++;
-        const newGuess = Math.floor((guess + Math.floor(n / guess)) / 2);
-        if (Math.abs(guess - newGuess) < 1)
-            break;
-        guess = newGuess;
-    }
-    return steps;
+  let steps = 0;
+
+  while (true) {
+    steps++;
+    const newGuess = Math.floor((guess + Math.floor(n / guess)) / 2);
+    if (Math.abs(guess - newGuess) < 1) break;
+    guess = newGuess;
+  }
+  return steps;
 }

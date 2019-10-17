@@ -7,9 +7,9 @@ Black Friday—so-called because on this day some retailers' accounting books mo
 You have recently been hired by a large boat retailer, Beast Bouy, who wants to know exactly what date they can expect shoppers to crowd their store and purchase their stocks of moderately discounted jet-skis. Your first task at this job is create a blackFriday function which accepts an integer year, and returns the day of the month of November that Black Friday falls on in that year. Your function only needs to support years after 1752*.
 */
 function blackFriday(year) {
-  let i=29
-  while (new Date(year,10,i).getDay()!==5){
-    i--
+  let i = 29;
+  while (new Date(year, 10, i).getDay() !== 5) {
+    i--;
   }
-  return  new Date(year,10,i).getDate()
+  return new Date(year, 10, i).getDate();
 }

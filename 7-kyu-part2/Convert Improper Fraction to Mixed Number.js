@@ -9,6 +9,6 @@ getMixedNum('75/10'); // Should return '7 5/10'
 NOTE: All fractions will be greater than 0.
 */
 function getMixedNum(fraction) {
-  let n = fraction.split('/')
-  return `${Math.floor(n[0]/n[1])} ${n[0]%n[1]}/${n[1]}`
+  let n = fraction.split("/");
+  return `${Math.floor(n[0] / n[1])} ${n[0] % n[1]}/${n[1]}`;
 }

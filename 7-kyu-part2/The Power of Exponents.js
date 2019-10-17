@@ -15,12 +15,12 @@ Examples:
 power(2, 3)   // 8
 power(4, -2)  // 0.0625
 */
-function power(base, exponent){
-  let pow=base;
-  for (let i=1;i<Math.abs(exponent);i++){
-   pow*=base
+function power(base, exponent) {
+  let pow = base;
+  for (let i = 1; i < Math.abs(exponent); i++) {
+    pow *= base;
   }
-  if (exponent===0) return 1
-  if (exponent<0) return 1/pow
-  return pow 
+  if (exponent === 0) return 1;
+  if (exponent < 0) return 1 / pow;
+  return pow;
 }

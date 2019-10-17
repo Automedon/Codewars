@@ -14,9 +14,11 @@ Year 3+ = 10% per year (ie. after 3 years the cars value depreciates 10% every y
 
 Return your answer as a string with 2 decimal places.
 */
-function car(p,n){
-if (n == 0) {return p.toFixed(2);}
-  p = p - p*(n > 2 ? 0.1 : 0.2);
+function car(p, n) {
+  if (n == 0) {
+    return p.toFixed(2);
+  }
+  p = p - p * (n > 2 ? 0.1 : 0.2);
   n--;
-  return car(p,n);
+  return car(p, n);
 }

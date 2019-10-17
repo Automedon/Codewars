@@ -15,7 +15,12 @@ But if you were to say:
 shoutingDetector("I'M VERY angry with you, JEREMIAH!")
 //We had better prevent this argument from getting to Jeremiah by returning "".
 */
-function shoutingDetector(string){
-  if (string.split` `.slice().some(v=>v===v.toUpperCase()&&!/[0-9]/.test(v)&&v.length>1)) return ''
-  return string
+function shoutingDetector(string) {
+  if (
+    string.split` `
+      .slice()
+      .some(v => v === v.toUpperCase() && !/[0-9]/.test(v) && v.length > 1)
+  )
+    return "";
+  return string;
 }

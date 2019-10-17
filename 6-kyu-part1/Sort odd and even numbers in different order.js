@@ -12,12 +12,12 @@ odd numbers ascending:   [1, 3,       5   ]
 even numbers descending: [      8, 4,    2]
 */
 function sortArray(array) {
-    const odd = array.filter(v=>v%2!==0).sort((a,b)=>a-b)
-    const even = array.filter(v=>v%2===0).sort((a,b)=>b-a)
-    const arr = [];
-    for (let i=0;i<array.length;i++){
-      if (array[i]%2===0) arr.push(even.shift())
-      else arr.push(odd.shift())
-    }
-    return arr
+  const odd = array.filter(v => v % 2 !== 0).sort((a, b) => a - b);
+  const even = array.filter(v => v % 2 === 0).sort((a, b) => b - a);
+  const arr = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) arr.push(even.shift());
+    else arr.push(odd.shift());
+  }
+  return arr;
 }

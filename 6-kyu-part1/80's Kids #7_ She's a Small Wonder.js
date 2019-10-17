@@ -21,14 +21,25 @@ vicky.learnWord("wow!") -> "I do not understand the input"
 Case shouldn't matter. Only alpha characters are valid. There's also a little trick here. Enjoy!
 */
 function Robot() {
-  this.arr =['i', 'already', 'know', 'the', 'word','thank', 'you', 'for','me','teaching','understand']
+  this.arr = [
+    "i",
+    "already",
+    "know",
+    "the",
+    "word",
+    "thank",
+    "you",
+    "for",
+    "me",
+    "teaching",
+    "understand"
+  ];
 }
 
 Robot.prototype.learnWord = function(word) {
-  if (/\W|\d|\s/i.test(word)||!word) return "I do not understand the input"
-  if (!this.arr.includes(word.toLowerCase())){
-  this.arr.push(word.toLowerCase())
-  return `Thank you for teaching me ${word}`
-  }else
-  return `I already know the word ${word}`
-}
+  if (/\W|\d|\s/i.test(word) || !word) return "I do not understand the input";
+  if (!this.arr.includes(word.toLowerCase())) {
+    this.arr.push(word.toLowerCase());
+    return `Thank you for teaching me ${word}`;
+  } else return `I already know the word ${word}`;
+};

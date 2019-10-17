@@ -22,5 +22,5 @@ will be [ 12, 13, 14, 6, 7 ].
 */
 
 function processArray(arr, callback) {
-    return arr.map(callback);
+  return arr.map(callback);
 }

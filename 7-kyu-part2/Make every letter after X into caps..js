@@ -12,6 +12,9 @@ Should return:
 
 If the letter after x is already in caps it should stay in caps.
 */
-var makeEveryLetterAfterXCaps = function (str, letter) {
-  return str.replace(new RegExp(`${letter}\.`,'g'),v=>v.split``[0]+v.split``[1].toUpperCase())
-}
+var makeEveryLetterAfterXCaps = function(str, letter) {
+  return str.replace(
+    new RegExp(`${letter}\.`, "g"),
+    v => v.split``[0] + v.split``[1].toUpperCase()
+  );
+};

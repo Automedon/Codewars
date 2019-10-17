@@ -113,13 +113,15 @@ pattern(20):
                   121                  
                    1             
 */
-function pattern(n){
-  if (n===1) return '1'
-  let output="";
-  for (let i=1;i<=n;i++){
-    let arr = Array(i).fill(0).map((v,i)=>(i+1)%10).join``
-    let arr2 = arr.split``.reverse().join``.slice(1)
-    output+=' '.repeat(n-i)+arr+arr2+' '.repeat(n-i)+'\n'
+function pattern(n) {
+  if (n === 1) return "1";
+  let output = "";
+  for (let i = 1; i <= n; i++) {
+    let arr = Array(i)
+      .fill(0)
+      .map((v, i) => (i + 1) % 10).join``;
+    let arr2 = arr.split``.reverse().join``.slice(1);
+    output += " ".repeat(n - i) + arr + arr2 + " ".repeat(n - i) + "\n";
   }
- return output+(output.split`\n`.reverse().slice(2).join`\n`);
+  return output + output.split`\n`.reverse().slice(2).join`\n`;
 }

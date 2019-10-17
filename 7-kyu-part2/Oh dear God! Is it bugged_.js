@@ -6,7 +6,6 @@ Rank and Upvote if you liked it :D
 
 P.S.- Random tests to be added soon.
 */
-function isItBugged(code){
-    
-   return /^\d\d-\d\d-\d\d\d\d\s\d\d:\d\d/.test(code);
+function isItBugged(code) {
+  return /^\d\d-\d\d-\d\d\d\d\s\d\d:\d\d/.test(code);
 }

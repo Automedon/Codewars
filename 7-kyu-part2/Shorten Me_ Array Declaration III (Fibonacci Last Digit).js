@@ -10,4 +10,7 @@ You have to write an array() function returning an array object with elements as
 Coding Limitation:
 Less than 70 characters
 */
-array=_=>{for(i=1,a=[1,1];i<38;i++)a.push((a[i-1]+a[i])%10);return a}
+array = _ => {
+  for (i = 1, a = [1, 1]; i < 38; i++) a.push((a[i - 1] + a[i]) % 10);
+  return a;
+};

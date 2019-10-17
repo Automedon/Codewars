@@ -17,5 +17,7 @@ The first test case has been filled out for you. Good luck!
 
 function contentWeight(bottleWeight, scale) {
   var s = parseInt(scale);
-  return /larger/.test(scale) ? bottleWeight * s / (s+1) : bottleWeight / (s+1);
+  return /larger/.test(scale)
+    ? (bottleWeight * s) / (s + 1)
+    : bottleWeight / (s + 1);
 }

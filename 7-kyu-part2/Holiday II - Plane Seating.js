@@ -14,18 +14,18 @@ Given a seat number, your task is to return the seat location in the following f
 
 If the number is over 60, or the letter is not valid, return 'No Seat!!'.
 */
-function planeSeat(a){
-  let n=a.replace(/[a-z]/gi,'')*1
-  let s=a.replace(/[0-9]/gi,'')
-  if (s==='I'||s==='J') return 'No Seat!!'
-  if (n>0&&n<21&&/[A-C]/.test(s)) return 'Front-Left'
-  if (n>0&&n<21&&/[D-F]/.test(s)) return 'Front-Middle'
-  if (n>0&&n<21&&/[G-K]/.test(s)) return 'Front-Right'
-  if (n>20&&n<41&&/[A-C]/.test(s)) return 'Middle-Left'
-  if (n>20&&n<41&&/[D-F]/.test(s)) return 'Middle-Middle'
-  if (n>20&&n<41&&/[G-K]/.test(s)) return 'Middle-Right'
-  if (n>40&&n<61&&/[A-C]/.test(s)) return 'Back-Left'
-  if (n>40&&n<61&&/[D-F]/.test(s)) return 'Back-Middle'
-  if (n>40&&n<61&&/[G-K]/.test(s)) return 'Back-Right'
-  return 'No Seat!!'
+function planeSeat(a) {
+  let n = a.replace(/[a-z]/gi, "") * 1;
+  let s = a.replace(/[0-9]/gi, "");
+  if (s === "I" || s === "J") return "No Seat!!";
+  if (n > 0 && n < 21 && /[A-C]/.test(s)) return "Front-Left";
+  if (n > 0 && n < 21 && /[D-F]/.test(s)) return "Front-Middle";
+  if (n > 0 && n < 21 && /[G-K]/.test(s)) return "Front-Right";
+  if (n > 20 && n < 41 && /[A-C]/.test(s)) return "Middle-Left";
+  if (n > 20 && n < 41 && /[D-F]/.test(s)) return "Middle-Middle";
+  if (n > 20 && n < 41 && /[G-K]/.test(s)) return "Middle-Right";
+  if (n > 40 && n < 61 && /[A-C]/.test(s)) return "Back-Left";
+  if (n > 40 && n < 61 && /[D-F]/.test(s)) return "Back-Middle";
+  if (n > 40 && n < 61 && /[G-K]/.test(s)) return "Back-Right";
+  return "No Seat!!";
 }

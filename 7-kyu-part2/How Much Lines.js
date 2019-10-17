@@ -12,6 +12,6 @@ or (<- __>),and the square contains 8 different lines of four dashes, so it cont
 n=4 has 100 different lines. 
 write a function that gets an "n" - a number abd returns how much different lines there is in this square(n).
 */
-function differentLines(n){
-  return Math.pow(n+1,2)*n
+function differentLines(n) {
+  return Math.pow(n + 1, 2) * n;
 }

@@ -12,6 +12,6 @@ getKthLastElement(1 -> 2 -> 3 -> null, 0).data === 3
 getKthLastElement(1 -> 2 -> 3 -> null, 1).data === 2
 */
 function getKthLastElement(head, k) {
-  for (var tail=head,r=[];tail!=null;tail=tail.next) r.unshift(tail)
-  return r[k]
+  for (var tail = head, r = []; tail != null; tail = tail.next) r.unshift(tail);
+  return r[k];
 }

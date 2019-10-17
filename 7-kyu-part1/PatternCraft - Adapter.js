@@ -39,7 +39,7 @@ Note to calculate how much damage mario is going to do you have to call the jump
 */
 class MarioAdapter {
   constructor(mario) {
-  this.mario = mario
+    this.mario = mario;
   }
 
   attack(target) {

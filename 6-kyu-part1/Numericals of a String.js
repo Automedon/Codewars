@@ -13,7 +13,7 @@ result  =  "1112111121311"
 input   =  "aaaaaaaaaaaa"
 result  =  "123456789101112"
 */
-function numericals(s){
-  const obj={}
-  return s.replace(/./g,v=>obj[v]=(obj[v]||0)+1)
+function numericals(s) {
+  const obj = {};
+  return s.replace(/./g, v => (obj[v] = (obj[v] || 0) + 1));
 }

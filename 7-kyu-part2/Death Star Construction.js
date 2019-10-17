@@ -7,16 +7,19 @@ You will receive an array of 7 arrays – one for each day of the week. Each sub
 Note: The attack always happens after the materials for the day are delivered and within a week.
 */
 function deathStar(week) {
-   let length=week[week.length-1]
-   let mat=week.slice(0,length)
-   let iron=100;
-   let steel=75;
-   let chromium =50
-   for (let i=0;i<mat.length;i++){
-     iron=iron-mat[i][0]
-     steel=steel-mat[i][1]
-     chromium=chromium-mat[i][2]
-     if (iron<=0&&steel<=0&&chromium<=0) return 'The station is completed!'
-   }
-   return `The station is destroyed! It needed ${iron<=0?0:iron} iron, ${steel<=0?0:steel} steel and ${chromium<=0?0:chromium} chromium for completion.`
+  let length = week[week.length - 1];
+  let mat = week.slice(0, length);
+  let iron = 100;
+  let steel = 75;
+  let chromium = 50;
+  for (let i = 0; i < mat.length; i++) {
+    iron = iron - mat[i][0];
+    steel = steel - mat[i][1];
+    chromium = chromium - mat[i][2];
+    if (iron <= 0 && steel <= 0 && chromium <= 0)
+      return "The station is completed!";
+  }
+  return `The station is destroyed! It needed ${iron <= 0 ? 0 : iron} iron, ${
+    steel <= 0 ? 0 : steel
+  } steel and ${chromium <= 0 ? 0 : chromium} chromium for completion.`;
 }

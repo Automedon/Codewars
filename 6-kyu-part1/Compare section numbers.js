@@ -6,9 +6,9 @@ A section of a certain level may appear directly inside a section several levels
 
 Write a function cmp(section1, section2) that returns -1, 0, or 1 depending on whether section1 is before, same as, or after section2 respectively.
 */
-function cmp(section1,section2) {
-  const one = section1.split('.');
-  const two = section2.split('.');
+function cmp(section1, section2) {
+  const one = section1.split(".");
+  const two = section2.split(".");
 
   for (let i = 0; i < Math.max(one.length, two.length); i++) {
     const s1 = +one[i] || 0;

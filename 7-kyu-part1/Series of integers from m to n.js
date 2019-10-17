@@ -9,8 +9,9 @@ m/$m and n/$n can be any integers greater than or equal to 0.
 n/$n will always be greater than or equal to m/$m.
 */
 function generateIntegers(m, n) {
-  const arr=[];
-  for (let i=m;i<=n;i++)
-  {arr.push(i)}
-  return arr
+  const arr = [];
+  for (let i = m; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr;
 }

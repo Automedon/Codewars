@@ -8,13 +8,15 @@ Example
 
 ['Mango', 'Banana', 'Avocado'] //the price of this juice bottle is (7+5+7)/3 = $6($6.333333...)
 */
-function mixFruit (arr) {
-  let reg = ['banana', 'orange', 'apple', 'lemon','grapes']
-  let spec = ['avocado', 'strawberry', 'mango']
-  return Math.round(arr.reduce((a,b)=>{
-  b=b.toLowerCase()
-  if (reg.includes(b)) return a+5
-  if (spec.includes(b)) return a+7
-  return a+9
-  },0)/arr.length)
+function mixFruit(arr) {
+  let reg = ["banana", "orange", "apple", "lemon", "grapes"];
+  let spec = ["avocado", "strawberry", "mango"];
+  return Math.round(
+    arr.reduce((a, b) => {
+      b = b.toLowerCase();
+      if (reg.includes(b)) return a + 5;
+      if (spec.includes(b)) return a + 7;
+      return a + 9;
+    }, 0) / arr.length
+  );
 }

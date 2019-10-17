@@ -29,12 +29,28 @@ In third round, 9 beats 8 and Josh gets one point.
 You should return: ```javascript "Steve wins 2 to 1" ```
 */
 function winner(deckSteve, deckJosh) {
-  let cards={'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9,'T':10,'J':11,'Q':12,'K':13,'A':14}
-  let s=0;
-  let j=0;
-  deckSteve=deckSteve.map(v=>cards[v])
-  deckJosh=deckJosh.map(v=>cards[v])
-  deckSteve.map((v,i)=>v>deckJosh[i]?s++:v<deckJosh[i]?j++:null)
-  if (s===j) return 'Tie'
-  return s>j?`Steve wins ${s} to ${j}`:`Josh wins ${j} to ${s}`
+  let cards = {
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    T: 10,
+    J: 11,
+    Q: 12,
+    K: 13,
+    A: 14
+  };
+  let s = 0;
+  let j = 0;
+  deckSteve = deckSteve.map(v => cards[v]);
+  deckJosh = deckJosh.map(v => cards[v]);
+  deckSteve.map((v, i) =>
+    v > deckJosh[i] ? s++ : v < deckJosh[i] ? j++ : null
+  );
+  if (s === j) return "Tie";
+  return s > j ? `Steve wins ${s} to ${j}` : `Josh wins ${j} to ${s}`;
 }

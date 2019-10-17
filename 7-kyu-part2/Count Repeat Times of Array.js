@@ -15,7 +15,7 @@ d = 2
 etc.
 */
 var count = function(arr) {
-  let obj ={}
-  arr.map(v=>obj[v]=obj[v]?obj[v]+1:1)
+  let obj = {};
+  arr.map(v => (obj[v] = obj[v] ? obj[v] + 1 : 1));
   return obj;
 };

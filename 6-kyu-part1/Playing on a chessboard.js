@@ -37,5 +37,5 @@ In Fortran - as in any other language - the returned string is not permitted to 
 ** see Example Test Cases for each language **
 */
 function game(n) {
-   return n % 2 == 0 ? [(n/2) * n] : [n**2, 2];
+  return n % 2 == 0 ? [(n / 2) * n] : [n ** 2, 2];
 }

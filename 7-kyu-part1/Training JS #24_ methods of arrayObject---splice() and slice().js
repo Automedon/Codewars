@@ -118,10 +118,10 @@ threeInOne( [1,2,3,4,5,6,7,8,9]) should return [6,15,24]
 threeInOne( [1,3,5,2,4,6,7,7,7]) should return [9,12,21]
 ```
 */
-function threeInOne(arr){
-  const arr1=[];
-  for (let i=0;i<=arr.length;i+=3){
-    arr1.push(arr.slice(i,i+3))
-    }
-    return arr1.map(v=>v.reduce((a,b)=>a+b,0)).slice(0,-1)
+function threeInOne(arr) {
+  const arr1 = [];
+  for (let i = 0; i <= arr.length; i += 3) {
+    arr1.push(arr.slice(i, i + 3));
+  }
+  return arr1.map(v => v.reduce((a, b) => a + b, 0)).slice(0, -1);
 }

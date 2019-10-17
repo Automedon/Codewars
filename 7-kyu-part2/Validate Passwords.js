@@ -26,11 +26,10 @@ var logIn = function() {
 }
 Have fun!
 */
-const passwords=[]
+const passwords = [];
 var signIn = function(password) {
- passwords.push(password)
- 
+  passwords.push(password);
 };
 var logIn = function(password) {
-  return !!passwords.find(v=>v===password)
+  return !!passwords.find(v => v === password);
 };

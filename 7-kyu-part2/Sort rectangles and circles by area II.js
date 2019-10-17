@@ -9,12 +9,12 @@ sortByArea(array) => [ [ 1.342, 3.212 ], 1.23, [ 4.23, 6.43 ], 3.444 ]
 This kata inspired by Sort rectangles and circles by area.
 */
 function sortByArea(array) {
-  array=array.slice()
-  function circ(a){
-  if (Array.isArray(a)){
-    return a.reduce((a,b)=>a*b,1)
+  array = array.slice();
+  function circ(a) {
+    if (Array.isArray(a)) {
+      return a.reduce((a, b) => a * b, 1);
+    }
+    return Math.PI * Math.pow(a, 2);
   }
-  return Math.PI*(Math.pow(a,2))
-  }
-  return array.sort((a,b)=>circ(a)-circ(b));
+  return array.sort((a, b) => circ(a) - circ(b));
 }

@@ -7,8 +7,8 @@ Your job is to return a single array that has first the numbers sorted in ascend
 Note that numbers written as strings are strings and must be sorted with the other strings.
 */
 
-function dbSort(a){
-  let word=a.filter(v=>typeof v == "string").sort();
-  let number=a.filter(v=>typeof v == "number").sort((a,b)=>a-b);
+function dbSort(a) {
+  let word = a.filter(v => typeof v == "string").sort();
+  let number = a.filter(v => typeof v == "number").sort((a, b) => a - b);
   return number.concat(word);
 }

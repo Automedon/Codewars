@@ -12,8 +12,8 @@ You will be given amountInAccount, duration, and rate, return the maximum capita
 **duration** - will always be between 30 and 365 days.
 **rate** - will always be between 1.00 and 100.00%
 */
-const tBills=(amountInAccount, duration, rate)=>{
-  let a = amountInAccount-(amountInAccount*rate/100)*(duration/365)
-  if (amountInAccount===0) return 0
-  return amountInAccount/a*amountInAccount
-}
+const tBills = (amountInAccount, duration, rate) => {
+  let a = amountInAccount - ((amountInAccount * rate) / 100) * (duration / 365);
+  if (amountInAccount === 0) return 0;
+  return (amountInAccount / a) * amountInAccount;
+};

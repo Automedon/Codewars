@@ -20,13 +20,14 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 I have created other katas. Have a look if you like coding and challenges.
 */
-const moment = require('moment')
+const moment = require("moment");
 function dateCorrect(str) {
-  if (str == '') return str;
+  if (str == "") return str;
   if (!/^\d{2}\.\d{2}\.\d{4}$/g.test(str)) return null;
-  let year = str.split('.')[2]
-  let m = str.split('.')[1]-1
-  let d = str.split('.')[0]
-  let sec = Date.UTC(year,m,d)
-  return `${`0${moment(sec).get('date')}`.slice(-2)}.${`0${moment(sec).month()+1}`.slice(-2)}.${moment(sec).weekYear()}`
+  let year = str.split(".")[2];
+  let m = str.split(".")[1] - 1;
+  let d = str.split(".")[0];
+  let sec = Date.UTC(year, m, d);
+  return `${`0${moment(sec).get("date")}`.slice(-2)}.${`0${moment(sec).month() +
+    1}`.slice(-2)}.${moment(sec).weekYear()}`;
 }

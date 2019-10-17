@@ -18,8 +18,9 @@ NOTE: due to a misspelling in the reference solution for random tests, have an o
 */
 
 function perimeter(n) {
-  let arr=[1,1];
-  for (let i=1;i<n;i++)
-  {arr.push(arr[i-1]+arr[i])}
-    return arr.reduce((a,b)=>a+b,0)*4
+  let arr = [1, 1];
+  for (let i = 1; i < n; i++) {
+    arr.push(arr[i - 1] + arr[i]);
+  }
+  return arr.reduce((a, b) => a + b, 0) * 4;
 }

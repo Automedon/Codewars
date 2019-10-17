@@ -6,10 +6,10 @@ formatWords(['ninja', 'samurai', 'ronin']) // should return "ninja, samurai and 
 formatWords(['ninja', '', 'ronin']) // should return "ninja and ronin"
 formatWords([]) // should return ""
 */
-function formatWords(words){
-  if (!words) return ''
-  words=words.filter(v=>v.length>0)
-  if (words.length===0) return ''
-  if (words.length===1) return words[0]
-  return words.slice(0,-1).join(', ')+' and '+words.slice(-1)
+function formatWords(words) {
+  if (!words) return "";
+  words = words.filter(v => v.length > 0);
+  if (words.length === 0) return "";
+  if (words.length === 1) return words[0];
+  return words.slice(0, -1).join(", ") + " and " + words.slice(-1);
 }

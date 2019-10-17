@@ -20,7 +20,7 @@ parseHTMLColor('LimeGreen');  // => { r: 50,  g: 205, b: 50  }
 function parseHTMLColor(c) {
   if (!c.match("#")) c = PRESET_COLORS[c.toLowerCase()];
 
-  c = c.replace('#', '');
+  c = c.replace("#", "");
 
   if (c.length < 6) c = c.replace(/(.)/g, "$1$1");
 

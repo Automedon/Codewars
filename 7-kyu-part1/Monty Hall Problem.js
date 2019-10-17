@@ -12,17 +12,17 @@ In this program you are given an array of people who have all guessed on a door 
 */
 
 function montyHall(correctDoorNumber, participantGuesses) {
-  const one=participantGuesses.filter(v=>v==1).length;
-    const two=participantGuesses.filter(v=>v==2).length;
-      const three=participantGuesses.filter(v=>v==3).length;
-      const sum=one+two+three
-      if (correctDoorNumber===1){
-      return Math.round(100-100*one/sum)
-      }
-      if (correctDoorNumber===2){
-      return Math.round(100-100*two/sum)
-      }
-      if (correctDoorNumber===3){
-      return Math.round(100-100*three/sum)
-      }
+  const one = participantGuesses.filter(v => v == 1).length;
+  const two = participantGuesses.filter(v => v == 2).length;
+  const three = participantGuesses.filter(v => v == 3).length;
+  const sum = one + two + three;
+  if (correctDoorNumber === 1) {
+    return Math.round(100 - (100 * one) / sum);
+  }
+  if (correctDoorNumber === 2) {
+    return Math.round(100 - (100 * two) / sum);
+  }
+  if (correctDoorNumber === 3) {
+    return Math.round(100 - (100 * three) / sum);
+  }
 }

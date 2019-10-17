@@ -12,9 +12,9 @@ Array1 contains one integer that specifies the number of days of holiday that yo
 
 If your colleague is telling the truth, the function should return the string "Right". If your colleague is wrong, the function should return the string "Wrong". If you both have the same number of days of holiday, the function should return the string 'Same'. If your colleague's program is beyond repair and does not produce an integer in one or both arrays, the function should return a string 'Not possible'.
 */
-function holidayCount (a1, a2){
-  let f = a1.filter(v=>typeof v==='number')*1
-  let s = a2.filter(v=>typeof v==='number')*1
-  if (f===0||s===0) return 'Not possible'
-  return f===s?'Same':f>s?'Right':'Wrong'
+function holidayCount(a1, a2) {
+  let f = a1.filter(v => typeof v === "number") * 1;
+  let s = a2.filter(v => typeof v === "number") * 1;
+  if (f === 0 || s === 0) return "Not possible";
+  return f === s ? "Same" : f > s ? "Right" : "Wrong";
 }

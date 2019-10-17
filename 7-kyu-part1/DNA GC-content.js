@@ -13,5 +13,7 @@ For example: the GC-content of the following DNA sequence is 50%: "AAATTTCCCGGG"
 Note: You can take a look to my others bio-info kata here
 */
 function gcContent(dna) {
-  return dna?(dna.length-dna.replace(/[GC]/gi,'').length)*100/dna.length:0
+  return dna
+    ? ((dna.length - dna.replace(/[GC]/gi, "").length) * 100) / dna.length
+    : 0;
 }

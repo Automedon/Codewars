@@ -10,6 +10,6 @@ int_2_bin(0) ==> '0'
 int_2_bin(1) ==> '01'
 int_2_bin(5) ==> '0101'
 */
-function int2Bin(num){
-   return num===0?'0':'0'+num.toString(2)
+function int2Bin(num) {
+  return num === 0 ? "0" : "0" + num.toString(2);
 }

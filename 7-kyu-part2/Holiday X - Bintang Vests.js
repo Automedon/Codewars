@@ -15,10 +15,10 @@ If the haggle value is anything other than those specified, you will have offend
 
 Prices are all in Rupia
 */
-function vestBuy(price, haggle){
-  if (haggle==='light') return price*0.8
-  if (haggle==='medium') return price*0.7
-  if (haggle==='heavy') return price*0.6
-  if (haggle==='walkandswear') return price*0.1
-  return 'Run!!'
+function vestBuy(price, haggle) {
+  if (haggle === "light") return price * 0.8;
+  if (haggle === "medium") return price * 0.7;
+  if (haggle === "heavy") return price * 0.6;
+  if (haggle === "walkandswear") return price * 0.1;
+  return "Run!!";
 }

@@ -39,13 +39,13 @@ This kata is designed to give regex beginners a chance, so in your solutions try
 
 *[All the characters named in this kata are copyright of their rightful owners and are mentioned only for educational purposes, a fair use according to the Berne convention. Also: buy the products if you like it!]*
 */
-var regex = /Jo/
-function isJojo(name){
-  name=name.toLowerCase()
-  let f = name.split` `[0]
-  let s = name.split` `[1]
-  if (f.slice(0,2)==='jo'&&s.slice(0,2)==='jo') return true
-  if (f.slice(0,2)==='jo'&&s.slice(-2)==='jo') return true
-  if (f.slice(0,3)==='gio'&&s.slice(0,3)==='gio') return true
-  return false
+var regex = /Jo/;
+function isJojo(name) {
+  name = name.toLowerCase();
+  let f = name.split` `[0];
+  let s = name.split` `[1];
+  if (f.slice(0, 2) === "jo" && s.slice(0, 2) === "jo") return true;
+  if (f.slice(0, 2) === "jo" && s.slice(-2) === "jo") return true;
+  if (f.slice(0, 3) === "gio" && s.slice(0, 3) === "gio") return true;
+  return false;
 }

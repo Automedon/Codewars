@@ -21,14 +21,14 @@ NOTE: The Upside-Down Pyramid will never be empty and will always consist of pos
 
 */
 function reverse(right) {
-  let arr = [[...right]]
-  let temp = []
-  for (let i=0;arr[i].length!==1;i++){
-    for (let j=1;j<arr[i].length;j++){
-      temp.push(arr[i][j-1]-arr[i][j])
+  let arr = [[...right]];
+  let temp = [];
+  for (let i = 0; arr[i].length !== 1; i++) {
+    for (let j = 1; j < arr[i].length; j++) {
+      temp.push(arr[i][j - 1] - arr[i][j]);
     }
-    arr.push(temp)
-    temp=[]
+    arr.push(temp);
+    temp = [];
   }
-  return arr.map(v=>v[v.length-1]).reverse()
+  return arr.map(v => v[v.length - 1]).reverse();
 }

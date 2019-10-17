@@ -10,10 +10,10 @@ Return an array of the resulting objects.
 
 All inputs will be arrays of numbers. All character codes are valid lower case letters. The input array will not be empty.
 */
-function numObj(s){
-  const arr=[];
-  s.map(v=>arr.push(String.fromCharCode(v)))
-  const obj=Array.from({length:s.length},x=>x={});
-  obj.map((v,i)=>v[s[i]]=arr[i])
-  return obj
+function numObj(s) {
+  const arr = [];
+  s.map(v => arr.push(String.fromCharCode(v)));
+  const obj = Array.from({ length: s.length }, x => (x = {}));
+  obj.map((v, i) => (v[s[i]] = arr[i]));
+  return obj;
 }

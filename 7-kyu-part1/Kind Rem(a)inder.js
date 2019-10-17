@@ -16,11 +16,9 @@ the biggest remainder found is 6, and since 6 is an even number --> the string i
 */
 
 function kira(a, b, z) {
- let arr=[];
- for (let i=0;i<a.length;i++){
- arr.push(a[i]%b[i])
- }
-return Math.max(...arr)%2==0?z.toLowerCase():z.toUpperCase()
- 
-
+  let arr = [];
+  for (let i = 0; i < a.length; i++) {
+    arr.push(a[i] % b[i]);
+  }
+  return Math.max(...arr) % 2 == 0 ? z.toLowerCase() : z.toUpperCase();
 }

@@ -10,9 +10,8 @@ kidoCount(10) => should return [1,3,5,7,9]
 kidoCount(9) => should return [1,3,5,7,9]
 kidoCount(0) => should return []
 */
-function  kidoCount(n){
-  let arr =[]
-  for (let i=1;i<=n;i+=2)
-  arr.push(i)
-  return arr
+function kidoCount(n) {
+  let arr = [];
+  for (let i = 1; i <= n; i += 2) arr.push(i);
+  return arr;
 }

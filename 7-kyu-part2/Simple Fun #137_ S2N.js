@@ -24,16 +24,14 @@ Input/Output
 The sum value.
 */
 function S2N(m, n) {
-   let arr1=Array.from({length:m+1},(x,i)=>i)
-   let arr=[];
-   let tempArr=[];
-   for (let i=0;i<arr1.length;i++)
-   {
-      for (let j=0;j<=n;j++)
-     {
-      tempArr.push(Math.pow(i,j))
-     }
-     arr.push(tempArr)
-   }
-   return arr[arr.length-1].reduce((a,b)=>a+b,0)
+  let arr1 = Array.from({ length: m + 1 }, (x, i) => i);
+  let arr = [];
+  let tempArr = [];
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j <= n; j++) {
+      tempArr.push(Math.pow(i, j));
+    }
+    arr.push(tempArr);
+  }
+  return arr[arr.length - 1].reduce((a, b) => a + b, 0);
 }

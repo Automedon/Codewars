@@ -10,8 +10,8 @@ In case there are more than one option, for instance ['1-3','5-7','2-3'], you sh
 
 If there is no difference, like so ['11-11', '344-344'], return false.
 */
-function diff(str){
-  let arr=str.map(v=>Math.abs(eval(v)))
-  if (arr.every(v=>v===0)) return false
-  return str[arr.indexOf(Math.max(...arr))]
+function diff(str) {
+  let arr = str.map(v => Math.abs(eval(v)));
+  if (arr.every(v => v === 0)) return false;
+  return str[arr.indexOf(Math.max(...arr))];
 }

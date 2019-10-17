@@ -27,24 +27,24 @@ Range for the random tests: 1000 <= n <= 200000
 Happy coding!!
 */
 function primeBefAft(num) {
-    let prime = [0,0]
-    for (let i=num+1;;i++){
-      if (isPrime(i)){
-        prime[1]=i
-        break
-      }
+  let prime = [0, 0];
+  for (let i = num + 1; ; i++) {
+    if (isPrime(i)) {
+      prime[1] = i;
+      break;
     }
-    for (let j=num-1;;j--){
-      if (isPrime(j)){
-        prime[0]=j
-        return prime
-      }
+  }
+  for (let j = num - 1; ; j--) {
+    if (isPrime(j)) {
+      prime[0] = j;
+      return prime;
     }
+  }
 }
 function isPrime(n) {
   let rt = Math.sqrt(n);
-  for(let i = 2; i <= rt; i++) {
-    if(n % i === 0) return false; 
+  for (let i = 2; i <= rt; i++) {
+    if (n % i === 0) return false;
   }
   return n !== 1;
 }

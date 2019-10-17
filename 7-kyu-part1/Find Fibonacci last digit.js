@@ -5,12 +5,12 @@ As you probably know, Fibonacci sequence are the numbers in the following intege
 Hardcore version of this kata, no bruteforce will work here ;)
 */
 function getLastDigit(index) {
-    let n1 = 1;
-    let n2 = 1;
-    for(let i = 3; i <= index; i++) {
-      let x = n1;
-      n1 = n2;
-      n2 = (n2 + x)%10;
-    }
-    return n2;
+  let n1 = 1;
+  let n2 = 1;
+  for (let i = 3; i <= index; i++) {
+    let x = n1;
+    n1 = n2;
+    n2 = (n2 + x) % 10;
   }
+  return n2;
+}

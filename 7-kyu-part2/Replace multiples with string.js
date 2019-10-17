@@ -18,19 +18,16 @@ For example an input of 10,13 should generate a response of ['FIVE', 11, 'THREE'
 
 Remarks
 */
-function getNumber(number){
-  if (number % 15 == 0)
-    return 'BOTH';
-  else if (number % 3 == 0)
-    return 'THREE';
-  else if (number % 5 == 0)
-    return 'FIVE';
-  else
-    return number;
-};
+function getNumber(number) {
+  if (number % 15 == 0) return "BOTH";
+  else if (number % 3 == 0) return "THREE";
+  else if (number % 5 == 0) return "FIVE";
+  else return number;
+}
 
-function getNumberRange(first, last){
-  var result = [], incr = last < first ? -1 : 1
+function getNumberRange(first, last) {
+  var result = [],
+    incr = last < first ? -1 : 1;
   for (var n = first; n != last + incr; n += incr) result.push(getNumber(n));
-  return result
-};
+  return result;
+}

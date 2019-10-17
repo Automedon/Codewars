@@ -12,6 +12,6 @@ solve ("ab") = True
 Good luck!
 */
 function solve(str) {
-  let diff = [...str].reverse().filter((x, i) => x != str[i]).length
-  return diff == 2 || (diff == 0 && str.length % 2 == 1)
+  let diff = [...str].reverse().filter((x, i) => x != str[i]).length;
+  return diff == 2 || (diff == 0 && str.length % 2 == 1);
 }

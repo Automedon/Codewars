@@ -10,5 +10,5 @@ If there are no odd numbers, the function should output -1. Numbers are guarante
 
 */
 function oddNum(arr) {
-  return arr.indexOf(arr.find(v=>v%2!==0))
+  return arr.indexOf(arr.find(v => v % 2 !== 0));
 }

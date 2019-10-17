@@ -15,5 +15,5 @@ Last name will always be one word, starting with an upper-case letter and contin
 There will always be at least one 'Micheal' with a valid last name in the input text.
 */
 function getMichaelLastName(s) {
-  return s.match(/(Michael [A-Z]\w+\b)/g).map(v=>v.split` `[1])
+  return s.match(/(Michael [A-Z]\w+\b)/g).map(v => v.split` `[1]);
 }

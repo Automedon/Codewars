@@ -16,6 +16,8 @@ Array will always contain at least 2 floors. Random tests will contain 2-20 elem
 */
 
 function elevatorDistance(array) {
-  return array.map((v,i,arr)=>arr[i]-arr[i-1]).filter(v=>!isNaN(v)).reduce((a,b)=>
-  a+Math.abs(b),0)
+  return array
+    .map((v, i, arr) => arr[i] - arr[i - 1])
+    .filter(v => !isNaN(v))
+    .reduce((a, b) => a + Math.abs(b), 0);
 }

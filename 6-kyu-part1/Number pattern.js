@@ -9,5 +9,5 @@ Good luck!
 P.S. If you like this kata, please remember to mark it as ready and assess the rank. P.P.S. If you have any questions or criticisms please list them in the comments section.
 */
 var answer = function() {
-    return 529
-}
+  return 529;
+};

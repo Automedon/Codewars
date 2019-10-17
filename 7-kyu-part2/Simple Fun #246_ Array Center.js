@@ -32,11 +32,10 @@ Here min(a) = 1, avg(a) = 1.75.
 */
 function arrayCenter(a) {
   const min = Math.min(...a);
-  const avg = a.reduce((a,b)=>a+b,0)/a.length
+  const avg = a.reduce((a, b) => a + b, 0) / a.length;
   let arr = [];
-  for (let i=0; i<a.length;i++)
-  {
-  if (Math.abs(a[i]-avg)<min) arr.push(a[i])
+  for (let i = 0; i < a.length; i++) {
+    if (Math.abs(a[i] - avg) < min) arr.push(a[i]);
   }
-  return arr
+  return arr;
 }

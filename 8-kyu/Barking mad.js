@@ -7,7 +7,7 @@ scoobydoo.bark(); // undefined
 Use method prototypes to enable all Dogs to bark.
 */
 
-function Dog (breed) {
+function Dog(breed) {
   this.breed = breed;
 }
 

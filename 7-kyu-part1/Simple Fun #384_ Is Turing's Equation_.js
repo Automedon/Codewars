@@ -47,11 +47,22 @@ For s = "10+20=30", the output should be true.
 30 -> 03 -> 3
 1+2==3
 */
-function isTuringEquation(s){
-  const arr=s.replace('+','=').split('=');
-  const first=arr[0].split('').reverse().join('')*1;
-  const second=arr[1].split('').reverse().join('')*1;
-  const third=arr[2].split('').reverse().join('')*1;
-  return first+second===third
-  
+function isTuringEquation(s) {
+  const arr = s.replace("+", "=").split("=");
+  const first =
+    arr[0]
+      .split("")
+      .reverse()
+      .join("") * 1;
+  const second =
+    arr[1]
+      .split("")
+      .reverse()
+      .join("") * 1;
+  const third =
+    arr[2]
+      .split("")
+      .reverse()
+      .join("") * 1;
+  return first + second === third;
 }

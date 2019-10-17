@@ -30,11 +30,13 @@ Once you have completed this kata, try the advanced version (http://www.codewars
 Translator notes
 Ruby is the original language for this kata.
 */
-function every(arr1, interval, start){
-  interval=interval||1;
-  const arr=[];
-  for(let i=0;i<arr1.length;i++){
-  if (i%interval===0){arr.push(arr1[i+(start||0)])}
+function every(arr1, interval, start) {
+  interval = interval || 1;
+  const arr = [];
+  for (let i = 0; i < arr1.length; i++) {
+    if (i % interval === 0) {
+      arr.push(arr1[i + (start || 0)]);
+    }
   }
-  return arr.filter(v=>v!==undefined)  
+  return arr.filter(v => v !== undefined);
 }

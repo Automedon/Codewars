@@ -8,7 +8,7 @@ findSum(1,-2);    // returns -1
 findSum();        // returns 0
 Hint: research the arguments object on google or read Chapter 4 from Eloquent Javascript
 */
-function findSum(...args){
-  if (args.map(x=>x<0).includes(true)) return -1;
-  return args.reduce((a,b)=>a+b,0)
+function findSum(...args) {
+  if (args.map(x => x < 0).includes(true)) return -1;
+  return args.reduce((a, b) => a + b, 0);
 }

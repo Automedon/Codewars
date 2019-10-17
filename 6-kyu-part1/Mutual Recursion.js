@@ -10,12 +10,12 @@ F(n) = n - M(F(n - 1))
 M(n) = n - F(M(n - 1))
 Don't worry about negative numbers, n will always be greater than or equal to zero.
 */
-function F(n) { 
-if (n===0) return 1
-return n - M(F(n - 1))
+function F(n) {
+  if (n === 0) return 1;
+  return n - M(F(n - 1));
 }
 
-function M(n) { 
-if (n===0) return 0
-return n - F(M(n - 1))
+function M(n) {
+  if (n === 0) return 0;
+  return n - F(M(n - 1));
 }

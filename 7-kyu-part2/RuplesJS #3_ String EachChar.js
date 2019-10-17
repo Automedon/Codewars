@@ -22,9 +22,13 @@ Example:
 -> "heLLo aLL"
 Please add your contribution to RuplesJS!
 */
-String.prototype.eachChar=function(cb){
-    if (typeof cb === 'string'){
-    return this.split('').map(v=>v+cb).join('')
-    }
-    return this.split('').map(v=>cb(v)).join('')
+String.prototype.eachChar = function(cb) {
+  if (typeof cb === "string") {
+    return this.split("")
+      .map(v => v + cb)
+      .join("");
   }
+  return this.split("")
+    .map(v => cb(v))
+    .join("");
+};

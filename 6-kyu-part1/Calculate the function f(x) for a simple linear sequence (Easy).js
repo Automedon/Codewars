@@ -13,6 +13,17 @@ the function will always be in the format "nx +/- m", 'x +/- m', 'nx', 'x' or 'm
 if a non-linear sequence simply return 'Non-linear sequence' or Nothing in Haskell.
 */
 function getFunction(seq) {
-  let add = seq[0], mul = seq[1]-add, linear=seq.every(function(v,i){return v==i*mul+add});
-  return linear ? "f(x) = "+ ( mul? (mul==1? '':mul==-1? "-":mul) +"x"+ (!add? "" : (add>0? " + ":" - ") +Math.abs(add)) : add ) : "Non-linear sequence"
+  let add = seq[0],
+    mul = seq[1] - add,
+    linear = seq.every(function(v, i) {
+      return v == i * mul + add;
+    });
+  return linear
+    ? "f(x) = " +
+        (mul
+          ? (mul == 1 ? "" : mul == -1 ? "-" : mul) +
+            "x" +
+            (!add ? "" : (add > 0 ? " + " : " - ") + Math.abs(add))
+          : add)
+    : "Non-linear sequence";
 }

@@ -9,5 +9,5 @@ Finally, the operator invokes the function and passes the new object as the “t
 Use this understanding of the new operator to create an instance of the object MyObject, but do so without calling "new MyObject()".
 Note: Currently there is no way to prevent you from passing this kata just by typing "var myObj = new MyObject();". However, I will scrunch my eyebrows when I see your solution and make quiet remarks to myself about how you don't understand what this kata is trying to teach you.
 */
-var myObj = { __proto__: MyObject.prototype};
-MyObject.call(myObj)
+var myObj = { __proto__: MyObject.prototype };
+MyObject.call(myObj);

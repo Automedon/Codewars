@@ -21,7 +21,6 @@ List of valid numbers: [ "0.00" "3.90" "1000.00" ".00" "-2.55" "+2.10" "-.55"]
 List of non-valid numbers: ["hellow 11.99" "11.9" "11" "11." ".9"]
 */
 
-
 function validNumber(num) {
-  return /^[+-]?\d*\.\d\d$/.test(num)
+  return /^[+-]?\d*\.\d\d$/.test(num);
 }

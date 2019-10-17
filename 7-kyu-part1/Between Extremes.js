@@ -11,8 +11,7 @@ For example:
 The array will contain a minimum of two elements.
 */
 
-
 function betweenExtremes(numbers) {
-    let sorted=numbers.sort((a,b)=>a-b)
-   return Math.abs((sorted[sorted.length-1]-sorted[0]))
+  let sorted = numbers.sort((a, b) => a - b);
+  return Math.abs(sorted[sorted.length - 1] - sorted[0]);
 }

@@ -40,9 +40,9 @@ Person2: {name: 'ela', p: 1, id: 4}
 
 Output: "zofia and ela are siblings!"
 */
-function checkRel(p1, p2){
-  if(p1.p===p2.p) return `${p1.n} and ${p2.n} are siblings!`
-  if(p1.p===p2.id) return `${p2.n} is ${p1.n}'s parent!`
-  if(p2.p===p1.id) return `${p1.n} is ${p2.n}'s parent!`
-  return `${p1.n} and ${p2.n} are not related!`
+function checkRel(p1, p2) {
+  if (p1.p === p2.p) return `${p1.n} and ${p2.n} are siblings!`;
+  if (p1.p === p2.id) return `${p2.n} is ${p1.n}'s parent!`;
+  if (p2.p === p1.id) return `${p1.n} is ${p2.n}'s parent!`;
+  return `${p1.n} and ${p2.n} are not related!`;
 }

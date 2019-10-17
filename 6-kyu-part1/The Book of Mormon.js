@@ -10,10 +10,10 @@ Create a function Mormons(startingNumber, reach, target) that calculates how man
 
 All model inputs are valid positive integers.
 */
-function Mormons(startingNumber, reach, target){
-  let n = startingNumber
-  for (var i=0;;i++){
-    if (n>=target) return i
-    n+=n*reach
+function Mormons(startingNumber, reach, target) {
+  let n = startingNumber;
+  for (var i = 0; ; i++) {
+    if (n >= target) return i;
+    n += n * reach;
   }
 }

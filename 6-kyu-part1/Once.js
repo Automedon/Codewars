@@ -12,11 +12,11 @@ logOnce("bar") // -> no effect
 */
 
 function once(func) {
-    let called = false;
-    return function(...arguments) { 
-        if (!called) { 
-            called = true;
-            return func.apply(this,arguments);
-        }
+  let called = false;
+  return function(...arguments) {
+    if (!called) {
+      called = true;
+      return func.apply(this, arguments);
     }
-} 
+  };
+}

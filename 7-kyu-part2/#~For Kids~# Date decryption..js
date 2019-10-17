@@ -8,6 +8,8 @@ Example: "FC-3-G" ->(ASCII Translation)-> You will get 70 67 - 51 - 71 (for each
 "Et->-9" -> "1966-12-07"
 Have fun!
 */
-function translateDate(dateStr){
-  return dateStr.replace(/[^-]/g,v=>(v.charCodeAt()-50).toString().padStart(2, 0))
+function translateDate(dateStr) {
+  return dateStr.replace(/[^-]/g, v =>
+    (v.charCodeAt() - 50).toString().padStart(2, 0)
+  );
 }

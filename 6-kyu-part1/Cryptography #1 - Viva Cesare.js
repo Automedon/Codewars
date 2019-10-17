@@ -21,8 +21,10 @@ If the input text is empty, null or includes only whitespaces, return an empty s
 Time's ticking away. The life of Caesar is on the chopping block! Go for it!
 */
 function CaesarCryptoEncode(text, shift) {
-  if (!text) return '';
-  shift = (shift % 52 + 52) % 52;
-  const letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  return text.trim().replace(/[a-z]/ig, c => letters[(letters.indexOf(c) + shift) % 52]); 
+  if (!text) return "";
+  shift = ((shift % 52) + 52) % 52;
+  const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  return text
+    .trim()
+    .replace(/[a-z]/gi, c => letters[(letters.indexOf(c) + shift) % 52]);
 }

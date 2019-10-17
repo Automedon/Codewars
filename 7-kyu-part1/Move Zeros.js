@@ -15,8 +15,8 @@ move_zeros(arrNum) //=> returns [12, 10, 8, 12, 7, 6, 4, 10, 12, 0, 0, 0, 0]
 Tips: Order of other numbers should not change.
 */
 
-function move_zeros(arrNum, isRight){
-  return isRight||isRight===undefined?
-  arrNum.reduceRight((a,v)=>v===0?[...a,v]:[v,...a],[]):
-  arrNum.reduce((a,v)=>v!==0?[...a,v]:[v,...a],[])
+function move_zeros(arrNum, isRight) {
+  return isRight || isRight === undefined
+    ? arrNum.reduceRight((a, v) => (v === 0 ? [...a, v] : [v, ...a]), [])
+    : arrNum.reduce((a, v) => (v !== 0 ? [...a, v] : [v, ...a]), []);
 }

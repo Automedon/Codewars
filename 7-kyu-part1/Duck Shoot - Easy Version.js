@@ -16,12 +16,14 @@ End ---> |XX2~|
 
 All inputs will be correct type and never empty.
 */
-function duckShoot(ammo, aim, ducks){
-  let shot=Math.floor(ammo*aim)  
-  return ducks.replace(/2/g,v=>{
-  if (shot>0){
-  shot-=1;
-  return 'X';}
-  else {
-  return v}})
+function duckShoot(ammo, aim, ducks) {
+  let shot = Math.floor(ammo * aim);
+  return ducks.replace(/2/g, v => {
+    if (shot > 0) {
+      shot -= 1;
+      return "X";
+    } else {
+      return v;
+    }
+  });
 }

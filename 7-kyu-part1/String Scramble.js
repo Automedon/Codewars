@@ -14,6 +14,6 @@ You can assume that you will be given a string and array of equal length and bot
 */
 
 function scramble(str, arr) {
-  for(var r=[],i=0;i<arr.length;i++) r[arr[i]]=str[i]
-  return r.join("")
-};
+  for (var r = [], i = 0; i < arr.length; i++) r[arr[i]] = str[i];
+  return r.join("");
+}

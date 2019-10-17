@@ -44,12 +44,12 @@ Constraints: 1 ≤ a0 ≤ 650.
 [output] an integer
 */
 function squareDigitsSequence(a0) {
-  let arr=[a0];
-  for (let i=0;;i++)
-  {  
-    let n = arr[i].toString().split``.reduce((a,b)=>a+(b*b),0)
-    if (arr.includes(n)){break}
-    else arr.push(n)
+  let arr = [a0];
+  for (let i = 0; ; i++) {
+    let n = arr[i].toString().split``.reduce((a, b) => a + b * b, 0);
+    if (arr.includes(n)) {
+      break;
+    } else arr.push(n);
   }
-  return arr.length+1
+  return arr.length + 1;
 }

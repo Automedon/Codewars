@@ -17,8 +17,11 @@ remember("pippi") => returns ["p","i"]   // show "p" only once
 remember('Pippi') => returns ["p","i"]   // "p" is repeated first
 */
 function remember(str) {
-  let arr = {}
-  let ans = []
-  str.split``.map(v=>{arr[v]=arr[v]?arr[v]+1:1;if (arr[v]===2) ans.push(v)})
-  return ans
+  let arr = {};
+  let ans = [];
+  str.split``.map(v => {
+    arr[v] = arr[v] ? arr[v] + 1 : 1;
+    if (arr[v] === 2) ans.push(v);
+  });
+  return ans;
 }

@@ -9,9 +9,13 @@ Examples
 'abcde' ==>  ['edcba', 'dcba', 'cba', 'ba', 'a']
 */
 function reverseSlice(str) {
-  str=str.split('').reverse().join('');
-  const arr=[];
-  for (let i=0; i<str.length;i++)
-  {arr.push(str.slice(0+i))};
-  return arr
+  str = str
+    .split("")
+    .reverse()
+    .join("");
+  const arr = [];
+  for (let i = 0; i < str.length; i++) {
+    arr.push(str.slice(0 + i));
+  }
+  return arr;
 }

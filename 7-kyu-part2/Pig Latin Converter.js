@@ -16,6 +16,10 @@ hetay atcay anray wayaay ithway hetay poonsay
 Misc Info
 The returned value should be in all lowercase.
 */
-function pigLatin(phrase){
-  return phrase.toLowerCase().split(' ').map(v=>v.slice(1)+v.slice(0,1)+'ay').join(` `)
+function pigLatin(phrase) {
+  return phrase
+    .toLowerCase()
+    .split(" ")
+    .map(v => v.slice(1) + v.slice(0, 1) + "ay")
+    .join(` `);
 }

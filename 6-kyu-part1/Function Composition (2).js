@@ -12,4 +12,4 @@ compose(f , g)(x)
 This kata is not available in haskell; that would be too easy!
 */
 
-const compose = (f,g) => (...args) => f(g(...args));
+const compose = (f, g) => (...args) => f(g(...args));

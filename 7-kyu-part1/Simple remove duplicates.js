@@ -10,6 +10,6 @@ More examples can be found in the test cases.
 Good luck!
 */
 
-function solve(arr){
-    return [...new Set(arr.reverse())].reverse()
+function solve(arr) {
+  return [...new Set(arr.reverse())].reverse();
 }

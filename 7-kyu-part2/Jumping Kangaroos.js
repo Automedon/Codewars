@@ -20,8 +20,7 @@ Brute force solutions are possible (and not discouraged), but you'll save yourse
 
 Good luck!
 */
-function kangaroo(kanga1, rate1, kanga2, rate2)
-{
+function kangaroo(kanga1, rate1, kanga2, rate2) {
   let x = (kanga1 - kanga2) / (rate2 - rate1);
   return Number.isInteger(x) && x > 0;
 }

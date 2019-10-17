@@ -10,4 +10,4 @@ Input:
 a and b : integer ( 0-10000 )
 Note: Avoid using Math.imul()
 */
-madMul=f=(a,b)=>b&&a+f(a,--b)
+madMul = f = (a, b) => b && a + f(a, --b);

@@ -15,6 +15,6 @@ You don't have to worry about error handling or negative number input: size >= 0
 This kata might be simpler than you expect, but good luck!
 */
 
-function squareAreaToCircle(size){
-  return (Math.PI*size)/4;
+function squareAreaToCircle(size) {
+  return (Math.PI * size) / 4;
 }

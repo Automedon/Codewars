@@ -54,7 +54,7 @@ For a = 4, b = 5, s = 10, the output should be false.
 
 John can't reach coordinates (a, b) using 10 steps, he's lying ;-)
 */
-function isJohnLying(a,b,s){
+function isJohnLying(a, b, s) {
   const c = Math.abs(a) + Math.abs(b);
   if (c % 2 === s % 2 && s >= c) return true;
   return false;

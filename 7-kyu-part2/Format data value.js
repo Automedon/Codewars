@@ -12,18 +12,20 @@ Find the details below:
 P.S. 0 <= input number < 1000000000
 */
 function formatDataValue(data) {
-  if (data===0) return '0MB'
-  let tb=0;
-  let gb=0;
-  let mb=0;
-  while (data>=1000000 ){
-    tb++
-    data-=1000000 
+  if (data === 0) return "0MB";
+  let tb = 0;
+  let gb = 0;
+  let mb = 0;
+  while (data >= 1000000) {
+    tb++;
+    data -= 1000000;
   }
-  while (data>=1000 ){
-    gb++
-    data-=1000 
+  while (data >= 1000) {
+    gb++;
+    data -= 1000;
   }
-  mb=data
-  return `${tb?tb+'TB':''} ${gb?gb+'GB':''} ${mb?mb+'MB':''}`.trim()
+  mb = data;
+  return `${tb ? tb + "TB" : ""} ${gb ? gb + "GB" : ""} ${
+    mb ? mb + "MB" : ""
+  }`.trim();
 }

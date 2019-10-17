@@ -31,11 +31,11 @@ Also check out my other creations — Keep the Order, Naming Files, Elections: W
 If you notice any issues or have any suggestions/comments whatsoever, please don't hesitate to mark an issue or just comment. Thanks!
 */
 function factors(n) {
-  let arrSQ=[];
-  let arrCB=[];
-  for (let i=2;i<n;i++){
-  if (n%(i*i)===0) arrSQ.push(i)
-  if (n%(i*i*i)===0) arrCB.push(i)
+  let arrSQ = [];
+  let arrCB = [];
+  for (let i = 2; i < n; i++) {
+    if (n % (i * i) === 0) arrSQ.push(i);
+    if (n % (i * i * i) === 0) arrCB.push(i);
   }
-  return [arrSQ,arrCB]
+  return [arrSQ, arrCB];
 }

@@ -38,6 +38,6 @@ Although , there is a digit (5) Within the interval But the second digit is not 
 7- specialNumber(709) ==> return "NOT!!"
 */
 
-function specialNumber(n){
-  return /[6-9]/.test(n)?"NOT!!":"Special!!"
+function specialNumber(n) {
+  return /[6-9]/.test(n) ? "NOT!!" : "Special!!";
 }

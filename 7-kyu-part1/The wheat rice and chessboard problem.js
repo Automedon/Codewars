@@ -13,13 +13,14 @@ squaresNeeded(3) === 2
 squaresNeeded(4) === 3
 Input is always going to be valid/reasonable: ie: a non negative number; extra cookie for not using a loop to compute square-by-square (at least not directly) and instead trying a smarter approach [hint: some peculiar operator]; a trick converting the number might also work: impress me!
 */
-function squaresNeeded(grains){
- const arr=[0];
- for (let i=0;i<63;i++){
- arr.push(Math.pow(2,i))
- }
-  for (let i=0;i<63;i++){
-   if (grains<arr[i]){
-   return i-1}
- }
+function squaresNeeded(grains) {
+  const arr = [0];
+  for (let i = 0; i < 63; i++) {
+    arr.push(Math.pow(2, i));
+  }
+  for (let i = 0; i < 63; i++) {
+    if (grains < arr[i]) {
+      return i - 1;
+    }
+  }
 }

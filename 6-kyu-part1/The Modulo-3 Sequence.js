@@ -14,6 +14,6 @@ sequence(2);
 sequence(3);
 1
 */
-function sequence(n){
-  return [1,0,1,1,2,0,2,2][n%8];
+function sequence(n) {
+  return [1, 0, 1, 1, 2, 0, 2, 2][n % 8];
 }

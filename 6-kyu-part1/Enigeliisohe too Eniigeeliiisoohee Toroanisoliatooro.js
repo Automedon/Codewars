@@ -34,11 +34,33 @@ Accented letters are unsupported, and therefore letters with diacritic marks, if
 Extra challenge: Try reading some Enigeliisohe out loud, once you have finished programming your translator. :)
 */
 var toexuto = function(text) {
-  const dict = {x:'u',q:'o',k:'i',z:'u',w:'u',p:'o',v:'u',m:'i',l:'i',t:'o',b:'a',g:'e',s:'o',y:'u',n:'i',h:'e',d:'a',r:'o',f:'e',c:'a',j:'i'}
-  return text.replace(/./g,v=>{
-    if (dict[v.toLowerCase()]){
-      return v+dict[v.toLowerCase()]
+  const dict = {
+    x: "u",
+    q: "o",
+    k: "i",
+    z: "u",
+    w: "u",
+    p: "o",
+    v: "u",
+    m: "i",
+    l: "i",
+    t: "o",
+    b: "a",
+    g: "e",
+    s: "o",
+    y: "u",
+    n: "i",
+    h: "e",
+    d: "a",
+    r: "o",
+    f: "e",
+    c: "a",
+    j: "i"
+  };
+  return text.replace(/./g, v => {
+    if (dict[v.toLowerCase()]) {
+      return v + dict[v.toLowerCase()];
     }
-    return v
-  })
+    return v;
+  });
 };

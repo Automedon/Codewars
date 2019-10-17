@@ -24,6 +24,15 @@ OK, that's all. I guess this is a 7kyu kata. If you agree, please rank it as 7ky
 Click here for more more "I guess this is ...kyu" katas!
 */
 
-function cutFruits(fruits){
-  return  fruits.map(v=>fruitsName.includes(v)?v.slice(0,Math.round(v.length/2))+','+v.slice(Math.round(v.length/2)):v).join(',').split(',') 
+function cutFruits(fruits) {
+  return fruits
+    .map(v =>
+      fruitsName.includes(v)
+        ? v.slice(0, Math.round(v.length / 2)) +
+          "," +
+          v.slice(Math.round(v.length / 2))
+        : v
+    )
+    .join(",")
+    .split(",");
 }

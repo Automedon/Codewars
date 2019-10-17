@@ -22,11 +22,11 @@ Constraints: 1 ≤ matrix.length ≤ 10, matrix.length = matrix[i].length, 1 ≤
 Matrix with swapped diagonals.
 */
 function swapDiagonals(matrix) {
-  let a = matrix.map(v=>v.map(v=>v));
-  let b = matrix.map(v=>v.map(v=>v));
-  for (let i=0,k=a.length-1;i<a.length;i++,k--){
-    a[i][i]=b[i][k]
-    a[i][k]=b[i][i]
+  let a = matrix.map(v => v.map(v => v));
+  let b = matrix.map(v => v.map(v => v));
+  for (let i = 0, k = a.length - 1; i < a.length; i++, k--) {
+    a[i][i] = b[i][k];
+    a[i][k] = b[i][i];
   }
-  return a
+  return a;
 }

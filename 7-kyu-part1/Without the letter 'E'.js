@@ -13,7 +13,7 @@ If given String is empty, return empty String.
 If given String is null/None/nil, return null/None/nil
 */
 
-function findE(str){
-  var res = (str.match(/e/gi)||[]).length;
-  return res ? ''+res : str ? 'There is no "e".' : str;
+function findE(str) {
+  var res = (str.match(/e/gi) || []).length;
+  return res ? "" + res : str ? 'There is no "e".' : str;
 }

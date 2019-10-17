@@ -7,6 +7,6 @@ To make it even more fun, you are not allowed to use any kind of loop (nor recur
 Good luck!
 */
 function empty(array) {
-  array.length=0
-  return array
+  array.length = 0;
+  return array;
 }

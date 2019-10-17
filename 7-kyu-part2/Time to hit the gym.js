@@ -12,10 +12,10 @@ months      rate ($)      # of free classes
 12           20            20
 Currently, all gym courses on offer are $15 a class, twice a week, for 6 weeks. Without any discounts, that would make the grand total of $360 for the 2 full courses.
 */
-function compareCosts(c){
-  if (c<3) return 370
-  if (c<6) return 360
-  if (c<9) return 345
-  if (c<12) return 333
-  return 300
+function compareCosts(c) {
+  if (c < 3) return 370;
+  if (c < 6) return 360;
+  if (c < 9) return 345;
+  if (c < 12) return 333;
+  return 300;
 }

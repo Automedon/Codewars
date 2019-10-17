@@ -19,6 +19,6 @@ Input - N - integer greater than 2 - number of chairs. Output should positive in
 Have fun :)
 */
 
-function lastChair(N){
-  return N-1
+function lastChair(N) {
+  return N - 1;
 }

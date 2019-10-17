@@ -10,15 +10,15 @@ Task
 Your task is to implement a function called is_dd (isDd in javascript) that takes a positive number (type depends on the language) and returns a boolean corresponding to whether the number is a dd number or not.
 */
 function isDd(n) {
-  let str=n.toString();
-  if (str.length-str.replace(/1/g,'').length===1) return true;
-  if (str.length-str.replace(/2/g,'').length===2) return true;
-  if (str.length-str.replace(/3/g,'').length===3) return true;
-  if (str.length-str.replace(/4/g,'').length===4) return true;
-  if (str.length-str.replace(/5/g,'').length===5) return true;
-  if (str.length-str.replace(/6/g,'').length===6) return true;
-  if (str.length-str.replace(/7/g,'').length===7) return true;
-  if (str.length-str.replace(/8/g,'').length===8) return true;
-  if (str.length-str.replace(/9/g,'').length===9) return true;
+  let str = n.toString();
+  if (str.length - str.replace(/1/g, "").length === 1) return true;
+  if (str.length - str.replace(/2/g, "").length === 2) return true;
+  if (str.length - str.replace(/3/g, "").length === 3) return true;
+  if (str.length - str.replace(/4/g, "").length === 4) return true;
+  if (str.length - str.replace(/5/g, "").length === 5) return true;
+  if (str.length - str.replace(/6/g, "").length === 6) return true;
+  if (str.length - str.replace(/7/g, "").length === 7) return true;
+  if (str.length - str.replace(/8/g, "").length === 8) return true;
+  if (str.length - str.replace(/9/g, "").length === 9) return true;
   return false;
 }

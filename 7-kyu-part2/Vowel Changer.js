@@ -8,5 +8,5 @@ For Example:
 There will never be an uppercase letter as an input.
 */
 function vowelChange(str, vow) {
-  return str.replace(/[aeuio]/gi,vow)
+  return str.replace(/[aeuio]/gi, vow);
 }

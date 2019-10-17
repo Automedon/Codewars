@@ -17,9 +17,8 @@ Good Luck!
 */
 const numMix = x => {
   const res = [];
-  for (let i = 1; i < 10; i++) 
-    for (let j = 1; j < 10; j++) 
-      if (i != x[0] && j != x[1]) 
-        res.push(`${i}${j}`);
+  for (let i = 1; i < 10; i++)
+    for (let j = 1; j < 10; j++)
+      if (i != x[0] && j != x[1]) res.push(`${i}${j}`);
   return res;
-}
+};

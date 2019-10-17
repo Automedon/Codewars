@@ -12,7 +12,7 @@ The drone string represents the position of the drone T (any better suggestion f
 
 Return the resulting lamps string. See example tests for more clarity.
 */
-function flyBy(lamps, drone){
-  if (drone.length>lamps.length) return 'o'.repeat(lamps.length)
-  return 'o'.repeat(drone.length)+'x'.repeat(lamps.length-drone.length);
+function flyBy(lamps, drone) {
+  if (drone.length > lamps.length) return "o".repeat(lamps.length);
+  return "o".repeat(drone.length) + "x".repeat(lamps.length - drone.length);
 }

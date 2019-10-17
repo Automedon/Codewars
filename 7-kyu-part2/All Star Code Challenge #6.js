@@ -14,7 +14,7 @@ isPalindrome("hannah") // => true
 isPalindrome("billy") // => false 
 isPalindrome(1) // => Error
 */
-function isPalindrome(str){
-  if (typeof str === 'string') return str==[...str].reverse().join``
-  throw new Error()
+function isPalindrome(str) {
+  if (typeof str === "string") return str == [...str].reverse().join``;
+  throw new Error();
 }

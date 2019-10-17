@@ -17,6 +17,8 @@ addLetters('y', 'c', 'b') = 'd' // notice the letters overflowing
 addLetters() = 'z'
 */
 function addLetters(...letters) {
-  let letter=String.fromCharCode(letters.map(v=>v.charCodeAt()-96).reduce((a,b)=>a+b,0)%26+96)
-  return letter==='`'?'z':letter
+  let letter = String.fromCharCode(
+    (letters.map(v => v.charCodeAt() - 96).reduce((a, b) => a + b, 0) % 26) + 96
+  );
+  return letter === "`" ? "z" : letter;
 }

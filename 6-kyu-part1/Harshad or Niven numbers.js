@@ -30,28 +30,48 @@ Harshad.getNext(0)         ==>  1
 Harshad.getSerie(3)        ==>  [ 1, 2, 3 ]
 Harshad.getSerie(3, 1000)  ==>  [ 1002, 1008, 1010 ]
 */
-var Harshad = ( function() {
-  'use strict';
-    return {
-    isValid: function( number ) {
-      return number%(String(number).split('').reduce((a,b)=>a+b*1,0))===0
+var Harshad = (function() {
+  "use strict";
+  return {
+    isValid: function(number) {
+      return (
+        number %
+          String(number)
+            .split("")
+            .reduce((a, b) => a + b * 1, 0) ===
+        0
+      );
     },
-    getNext: function( number ) {
-      for (let i=number+1;;i++){
-      if (i%(String(i).split('').reduce((a,b)=>a+b*1,0))===0){
-      return i
-     } 
+    getNext: function(number) {
+      for (let i = number + 1; ; i++) {
+        if (
+          i %
+            String(i)
+              .split("")
+              .reduce((a, b) => a + b * 1, 0) ===
+          0
+        ) {
+          return i;
+        }
       }
     },
-    getSerie: function( count, start ) {
-      let arr=[];
-      for (let i=start+1||0;;i++){
-      if (i%(String(i).split('').reduce((a,b)=>a+b*1,0))===0){
-      arr.push(i)
+    getSerie: function(count, start) {
+      let arr = [];
+      for (let i = start + 1 || 0; ; i++) {
+        if (
+          i %
+            String(i)
+              .split("")
+              .reduce((a, b) => a + b * 1, 0) ===
+          0
+        ) {
+          arr.push(i);
+        }
+        if (arr.length === count) {
+          break;
+        }
       }
-      if (arr.length===count){break}
-    }
-   return arr
+      return arr;
     }
   };
-} () );
+})();

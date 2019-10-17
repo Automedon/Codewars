@@ -33,11 +33,10 @@ Your function does not need to deal with values of n greater than 10600.
 
 More info on Lychrel numbers
 */
-function howManyIterationsNeeded (num,a=50){
-  for (let i=1;i<=a;i++){
-    num=num+num.toString().split``.reverse().join``*1
-    if (num.toString()===num.toString().split``.reverse().join``) return i
-    
+function howManyIterationsNeeded(num, a = 50) {
+  for (let i = 1; i <= a; i++) {
+    num = num + num.toString().split``.reverse().join`` * 1;
+    if (num.toString() === num.toString().split``.reverse().join``) return i;
   }
-  return null
+  return null;
 }

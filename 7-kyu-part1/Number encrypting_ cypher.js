@@ -26,11 +26,11 @@ Part II
 If you liked this Kata, you can find the part II: Number encrypting: decypher, where your goal is to decypher the strings.
 */
 function cypher(string) {
-  let dictUpper={I:1,	R:2,	E:3,	A:4,	S:5,	G:6,	T:7,	B:8,O:0};
-  let dictLow={l:1,	z:2,	e:3,	a:4,	s:5,	b:6,	t:7,	g:9,o:0}
-  return string.replace(/[a-z]/gi,v=>{
-  if (dictUpper.hasOwnProperty(v)) return dictUpper[v];
-  if (dictLow.hasOwnProperty(v)) return dictLow[v];
-  return v;
-  })
+  let dictUpper = { I: 1, R: 2, E: 3, A: 4, S: 5, G: 6, T: 7, B: 8, O: 0 };
+  let dictLow = { l: 1, z: 2, e: 3, a: 4, s: 5, b: 6, t: 7, g: 9, o: 0 };
+  return string.replace(/[a-z]/gi, v => {
+    if (dictUpper.hasOwnProperty(v)) return dictUpper[v];
+    if (dictLow.hasOwnProperty(v)) return dictLow[v];
+    return v;
+  });
 }

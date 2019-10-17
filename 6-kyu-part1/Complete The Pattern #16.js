@@ -43,15 +43,15 @@ pattern(17):
 76543210987654322
 76543210987654321
 */
-function pattern(n){
-  if (n<=0) return ''
-  let s = n.toString().split``.reverse()[0]
-  let output=[`${s}`.repeat(n)];
-  for (let i=n,j=0;i>0;i--,j++){
-    if (s===-1){
-      s=9
+function pattern(n) {
+  if (n <= 0) return "";
+  let s = n.toString().split``.reverse()[0];
+  let output = [`${s}`.repeat(n)];
+  for (let i = n, j = 0; i > 0; i--, j++) {
+    if (s === -1) {
+      s = 9;
     }
-    output.push((output[j].slice(0,j)+`${s--}`.repeat(n-j)))
+    output.push(output[j].slice(0, j) + `${s--}`.repeat(n - j));
   }
-  return output.slice(1).join`\n`
+  return output.slice(1).join`\n`;
 }

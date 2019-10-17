@@ -6,7 +6,7 @@ Given a salary and the array of bills, calculate your disposable income for a mo
 
 £££ GOOD LUCK! £££
 */
-function getNewNotes(salary,bills){
-  let sum=salary-bills.reduce((a,b)=>a+b,0);
-  return sum>0?Math.floor(sum/5):0
+function getNewNotes(salary, bills) {
+  let sum = salary - bills.reduce((a, b) => a + b, 0);
+  return sum > 0 ? Math.floor(sum / 5) : 0;
 }

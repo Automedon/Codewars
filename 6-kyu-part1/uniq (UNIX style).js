@@ -8,11 +8,11 @@ var input = ['a','a','b','b','c','a','b','c'];
 uniq(input); // -> returns ['a','b','c','a','b','c']
 */
 function uniq(a) {
-  for (let i=0;i<a.length-1;i++){
-    if (a[i]===a[i+1]){
-      a.splice(i,1)
-      i--
+  for (let i = 0; i < a.length - 1; i++) {
+    if (a[i] === a[i + 1]) {
+      a.splice(i, 1);
+      i--;
     }
   }
-  return a
+  return a;
 }

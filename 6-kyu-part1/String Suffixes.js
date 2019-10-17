@@ -15,11 +15,14 @@ For the second case, the answer is simply 3 + 0 + 0 = 3.
 Note : Each string will have at least one character - no need to check for empty strings :)
 */
 function stringSuffix(s) {
-  let suffix=0
-  for (let i=0;i<s.length;i++){
-    for (let j=0;j<s.length;j++)
-    if (s.slice(i)[j]===s[j]){suffix++}
-    else {break}
+  let suffix = 0;
+  for (let i = 0; i < s.length; i++) {
+    for (let j = 0; j < s.length; j++)
+      if (s.slice(i)[j] === s[j]) {
+        suffix++;
+      } else {
+        break;
+      }
   }
-  return suffix
+  return suffix;
 }

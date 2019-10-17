@@ -13,18 +13,19 @@ Similarly countMe('211213') will return '1221121113' (1 time 2, 2 times 1, 1 tim
 
 Return "" for empty, nil or non numeric strings
 */
-function countMe(data){
-  if (data.split('').every(v=>v*1==v.toString())){
-  let arr='';
-  let num=1;
-  for (let i=0;i<data.length;i++){
-  if (data[i]===data[i+1]){
-  num++
-  } else {
-  arr+=`${num}${data[i]}`
-  num=1;}
+function countMe(data) {
+  if (data.split("").every(v => v * 1 == v.toString())) {
+    let arr = "";
+    let num = 1;
+    for (let i = 0; i < data.length; i++) {
+      if (data[i] === data[i + 1]) {
+        num++;
+      } else {
+        arr += `${num}${data[i]}`;
+        num = 1;
+      }
+    }
+    return arr;
   }
-  return arr
-  }
-    return ''
+  return "";
 }

@@ -13,6 +13,20 @@ The input is always a number, contains only the numbers in the key. The output s
 Maya won't forget to thank you at the end of her article :)
 */
 function hiddenWord(num) {
-  const obj={0:'o',1:'b',2:'l',3:'i',4:'e',5:'t',6:'a',7:'d',8:'n',9:'m'}
-  return String(num).split('').map(v=>v=obj[v]).join('')
+  const obj = {
+    0: "o",
+    1: "b",
+    2: "l",
+    3: "i",
+    4: "e",
+    5: "t",
+    6: "a",
+    7: "d",
+    8: "n",
+    9: "m"
+  };
+  return String(num)
+    .split("")
+    .map(v => (v = obj[v]))
+    .join("");
 }

@@ -8,5 +8,18 @@ If the sum cannot be calculated, 0 should be returned.
 */
 
 function magicSum(numbers) {
-  return numbers&&Array.isArray(numbers)?numbers.reduce((a,b)=>a+(b%2!==0&&b.toString().split('').includes('3')?b:0),0):0
+  return numbers && Array.isArray(numbers)
+    ? numbers.reduce(
+        (a, b) =>
+          a +
+          (b % 2 !== 0 &&
+          b
+            .toString()
+            .split("")
+            .includes("3")
+            ? b
+            : 0),
+        0
+      )
+    : 0;
 }

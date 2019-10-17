@@ -13,13 +13,13 @@ Returns 16 because there are two trips of 8 days, which add up to 16.
 
 Happy coding and rank this kata if you wish ;-)
 */
-function daysRepresented(trips){
-  let arr =trips.map(v=>{
-  let arr =[];
-  for (let i=v[0];i<=v[1];i++){
-  arr.push(i)
-  }
-  return arr
-  }) 
-  return [...new Set([].concat(...arr))].length
+function daysRepresented(trips) {
+  let arr = trips.map(v => {
+    let arr = [];
+    for (let i = v[0]; i <= v[1]; i++) {
+      arr.push(i);
+    }
+    return arr;
+  });
+  return [...new Set([].concat(...arr))].length;
 }

@@ -17,23 +17,23 @@ x(6) === [[1, 0, 0, 0, 0, 1],
           [1, 0, 0, 0, 0, 1]];
 */
 function x(n) {
-   let arr = []
-   for (let i=0;i<n;i++){
-     arr.push(Array(n).fill(0))
-   }
-   for (let i=0;i<n;){
-     for (let j=0;j<n;){
-       arr[i][j]=1
-       i++
-       j++
-     }
-   }
-   for (let i=0;i<n;){
-     for (let j=n;j>0;){
-       arr[i][j-1]=1
-       i++
-       j--
-     }
-   }
-   return arr 
+  let arr = [];
+  for (let i = 0; i < n; i++) {
+    arr.push(Array(n).fill(0));
+  }
+  for (let i = 0; i < n; ) {
+    for (let j = 0; j < n; ) {
+      arr[i][j] = 1;
+      i++;
+      j++;
+    }
+  }
+  for (let i = 0; i < n; ) {
+    for (let j = n; j > 0; ) {
+      arr[i][j - 1] = 1;
+      i++;
+      j--;
+    }
+  }
+  return arr;
 }

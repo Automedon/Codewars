@@ -13,11 +13,11 @@ wordPattern('abab', 'apple banana banana apple') === false
 wordPattern('aaaa', 'cat cat dog cat') === false
 */
 function wordPattern(pattern, str) {
-  let arr = [...new Set(pattern.split``)]
-  let arr2 = [...new Set(str.split` `)]
+  let arr = [...new Set(pattern.split``)];
+  let arr2 = [...new Set(str.split` `)];
   let dict = {};
-  for (let i=0;i<arr.length;i++){
-    dict[arr[i]]=arr2[i]
+  for (let i = 0; i < arr.length; i++) {
+    dict[arr[i]] = arr2[i];
   }
-  return pattern.replace(/\w/g,v=>dict[v])===str.split` `.join``
+  return pattern.replace(/\w/g, v => dict[v]) === str.split` `.join``;
 }

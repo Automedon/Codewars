@@ -38,9 +38,9 @@ sign(['4','2']) // -> NaN
 ###Note: Math.sign() is an experimental part of the ECMAScript 6 proposal. So if implemented, it will be de disabled.
 */
 
-function sign(n){
-  if (n*1>0) return 1;
-  if (n*1<0) return -1;
-  if (n*1===0) return 0;
+function sign(n) {
+  if (n * 1 > 0) return 1;
+  if (n * 1 < 0) return -1;
+  if (n * 1 === 0) return 0;
   return NaN;
 }

@@ -12,7 +12,9 @@ Write a simple function, that will be given a month name and a month number. The
 enjoy ! ^-^
 */
 function month(name, number) {
-  let month=new Intl.DateTimeFormat('en-US', {month:'long'}).format(new Date(2000,number))
-  let month2=new Date(`${name} 25, 1995`).getMonth()
-  return `${month} ${month2}`
-};
+  let month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(
+    new Date(2000, number)
+  );
+  let month2 = new Date(`${name} 25, 1995`).getMonth();
+  return `${month} ${month2}`;
+}

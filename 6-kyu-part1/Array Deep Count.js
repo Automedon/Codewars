@@ -14,6 +14,9 @@ deepCount([1, 2, [3, 4, [5]]]);
 //>>>>> 7
 The input will always be an array.
 */
-function deepCount(a){
-  return a.reduce((s,e)=>s+(Array.isArray(e)?deepCount(e):0),a.length);
+function deepCount(a) {
+  return a.reduce(
+    (s, e) => s + (Array.isArray(e) ? deepCount(e) : 0),
+    a.length
+  );
 }

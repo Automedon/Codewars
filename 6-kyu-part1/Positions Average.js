@@ -26,14 +26,14 @@ Notes
 You can see other examples in the "Sample tests".
 */
 function posAverage(s) {
-    let com=0;
-    let all=0;
-    const arr = s.split`, `
-    for (let i=0;i<arr.length-1;i++){
-      for (let j=i+1;j<arr.length;j++){
-        let tempArr=arr[j].split``
-        arr[i].split``.map((v,z)=>v===tempArr[z]?com++:all++)
-      }
+  let com = 0;
+  let all = 0;
+  const arr = s.split`, `;
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      let tempArr = arr[j].split``;
+      arr[i].split``.map((v, z) => (v === tempArr[z] ? com++ : all++));
     }
-    return com / (all+com) * 100;
+  }
+  return (com / (all + com)) * 100;
 }

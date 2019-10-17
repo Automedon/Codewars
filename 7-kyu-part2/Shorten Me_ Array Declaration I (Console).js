@@ -11,4 +11,4 @@ You have to write an array() function returning an array object with elements as
 Coding Limitation:
 Less than 70 characters
 */
-array=_=>'warn,trace,timeEnd,time,log,info,error,dir,assert'.split`,`
+array = _ => "warn,trace,timeEnd,time,log,info,error,dir,assert".split`,`;

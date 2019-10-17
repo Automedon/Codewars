@@ -26,18 +26,19 @@ A non-empty string which is guaranteed to be a cipher for some other string of l
 [output] a string
 */
 function decipher(cipher) {
-  let str='';
-  for (let i=0;i<=cipher.length;i){
-    if (cipher.slice(i,i+3)*1>122)
-    {
-      str+=cipher.slice(i,i+2)+' '
-      i+=2
-    } 
-    else  
-    {
-      str+=cipher.slice(i,i+3)+' '
-      i+=3
-     }
-   }
-  return str.trim().split(' ').map(v=>String.fromCharCode(v)).join('')
+  let str = "";
+  for (let i = 0; i <= cipher.length; i) {
+    if (cipher.slice(i, i + 3) * 1 > 122) {
+      str += cipher.slice(i, i + 2) + " ";
+      i += 2;
+    } else {
+      str += cipher.slice(i, i + 3) + " ";
+      i += 3;
+    }
+  }
+  return str
+    .trim()
+    .split(" ")
+    .map(v => String.fromCharCode(v))
+    .join("");
 }

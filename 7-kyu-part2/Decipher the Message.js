@@ -8,9 +8,15 @@ May is having a hard time deciphering Amy's latest messages, can you help her fi
 
 Input: String written in Amy's code Output: String decoded to Engligh so May can read it
 */
-function decipher(codedMessage){
-  const dict = 'abcdefghijklmnopqrstuvwxyz'
-  const dictU = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  codedMessage=codedMessage.split(``).map(v=>dict.includes(v)?dict[(dict.indexOf(v)+7)%26]:v).join(``)
-  return codedMessage.split(``).map(v=>dictU.includes(v)?dictU[(dictU.indexOf(v)+7)%26]:v).join(``)
+function decipher(codedMessage) {
+  const dict = "abcdefghijklmnopqrstuvwxyz";
+  const dictU = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  codedMessage = codedMessage
+    .split(``)
+    .map(v => (dict.includes(v) ? dict[(dict.indexOf(v) + 7) % 26] : v))
+    .join(``);
+  return codedMessage
+    .split(``)
+    .map(v => (dictU.includes(v) ? dictU[(dictU.indexOf(v) + 7) % 26] : v))
+    .join(``);
 }

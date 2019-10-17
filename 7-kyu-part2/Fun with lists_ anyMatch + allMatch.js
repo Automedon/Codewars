@@ -17,9 +17,9 @@ Note: the list may be null and can hold any type of value.
 Good luck!
 */
 function anyMatch(head, p) {
-  return head ? p(head.data) || anyMatch( head.next, p ) : false
+  return head ? p(head.data) || anyMatch(head.next, p) : false;
 }
 
 function allMatch(head, p) {
-  return head ? p(head.data) && allMatch( head.next, p ) : true
+  return head ? p(head.data) && allMatch(head.next, p) : true;
 }

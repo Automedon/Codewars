@@ -16,13 +16,14 @@ Here are the 2 important rules:
 The element at the index to be returned is not included in either of the sum calculations!
 Both the first and last index cannot be considered as a "midpoint" (So None for [X] and [X, X])
 */
-var midpointSum=function(n){
-  for (let i=0;i<n.length;i++)
-  {
-    if (n.slice(0,i).reduce((a,b)=>a+b,0)===n.slice(i+1).reduce((a,b)=>a+b,0))
-    {
-      if (i===0||i===n.length-1) return undefined
-     return i
+var midpointSum = function(n) {
+  for (let i = 0; i < n.length; i++) {
+    if (
+      n.slice(0, i).reduce((a, b) => a + b, 0) ===
+      n.slice(i + 1).reduce((a, b) => a + b, 0)
+    ) {
+      if (i === 0 || i === n.length - 1) return undefined;
+      return i;
     }
   }
 };

@@ -26,30 +26,32 @@ Do not use HTML entities for the squares (e.g. □ for white square) as the code
 Ruby note: CodeWars has encoding issues with rendered unicode in Ruby. You'll need to use unicode source code (e.g. "\u25A0") instead of rendered unicode (e.g "■").
 */
 function checkeredBoard(dimension) {
-  if (dimension!==parseInt(dimension)||dimension<2) return false
-  let light=true
-  let arr=[]
-  if (dimension%2===0){light=false}
-  for (let i=0;i<dimension;i++){
-      let temp=''
-      for (let j=0;j<dimension;j++){
-        if (!light){
-          if (j%2==0){
-            temp+='□ '
-          }else {
-            temp+='■ '
-          }
-        }else {
-          if (j%2!=0){
-            temp+='□ '
-          }else {
-            temp+='■ '
-          }
-        }
-    }
-      temp=temp.trim()
-      arr.push(temp)
-      light=!light
+  if (dimension !== parseInt(dimension) || dimension < 2) return false;
+  let light = true;
+  let arr = [];
+  if (dimension % 2 === 0) {
+    light = false;
   }
-  return arr.join`\n`
+  for (let i = 0; i < dimension; i++) {
+    let temp = "";
+    for (let j = 0; j < dimension; j++) {
+      if (!light) {
+        if (j % 2 == 0) {
+          temp += "□ ";
+        } else {
+          temp += "■ ";
+        }
+      } else {
+        if (j % 2 != 0) {
+          temp += "□ ";
+        } else {
+          temp += "■ ";
+        }
+      }
+    }
+    temp = temp.trim();
+    arr.push(temp);
+    light = !light;
+  }
+  return arr.join`\n`;
 }

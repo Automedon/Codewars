@@ -33,14 +33,14 @@ Note: You can assume you will get at least one argument and any arguments given 
 
 Any feedback/suggestions would much appreciated.
 */
-function* sequenceGen(){
-  let arr = [...arguments]
-  for (let i=0;i<arr.length;i++){
-    yield arr[i]
+function* sequenceGen() {
+  let arr = [...arguments];
+  for (let i = 0; i < arr.length; i++) {
+    yield arr[i];
   }
-  let l = arr.length
-  while (true){
-    arr.push(arr.slice(arr.length-l,arr.length).reduce((a,b)=>a+b,0))
-    yield arr[arr.length-1]
+  let l = arr.length;
+  while (true) {
+    arr.push(arr.slice(arr.length - l, arr.length).reduce((a, b) => a + b, 0));
+    yield arr[arr.length - 1];
   }
 }

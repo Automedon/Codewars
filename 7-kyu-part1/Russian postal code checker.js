@@ -11,8 +11,6 @@ Valid postcode example 198328, 310003, 424000
 Invalid postcode examples 12A483, 1@63, 111, 056879
 */
 
-
-
-function zipvalidate(postcode){
-  return (/^[12346)]\d{5}$/).test(postcode)
+function zipvalidate(postcode) {
+  return /^[12346)]\d{5}$/.test(postcode);
 }

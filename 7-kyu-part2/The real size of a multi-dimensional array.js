@@ -13,5 +13,5 @@ Addendum:
 Think of it as dimension-agnostic value counting. We want to know the total number of integers inside the array and we don't care for the dimensions.
 */
 function realSize(arrays) {
-  return arrays.reduce((a,e) =>  a += Array.isArray(e) ? realSize(e) : 1,0)
+  return arrays.reduce((a, e) => (a += Array.isArray(e) ? realSize(e) : 1), 0);
 }

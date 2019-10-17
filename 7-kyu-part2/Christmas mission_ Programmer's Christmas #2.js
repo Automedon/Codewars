@@ -16,15 +16,15 @@ Given two string s1 and s2. You need to perform the following operations: Compar
  var s1="abcMerry Christmas!",s2="bad"
  merryChristmas(s1,s2) === false
 */
-function merryChristmas(s1,s2){
-  let check = 'Merry Christmas!'.split``.sort().join``
-  for (let i=0;i<s2.length;i++){
-    let a=new RegExp(`${s2[i]}`)
-    if (s1.includes(s2[i])){
-      s1=s1.replace(a,'')
-    } else{
-      s1+=s2[i]
+function merryChristmas(s1, s2) {
+  let check = "Merry Christmas!".split``.sort().join``;
+  for (let i = 0; i < s2.length; i++) {
+    let a = new RegExp(`${s2[i]}`);
+    if (s1.includes(s2[i])) {
+      s1 = s1.replace(a, "");
+    } else {
+      s1 += s2[i];
     }
   }
-  return  check===s1.split``.sort().join``
+  return check === s1.split``.sort().join``;
 }

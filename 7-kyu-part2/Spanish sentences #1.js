@@ -17,9 +17,11 @@ P.S. Array's length > 0.
 */
 function spanishSent(arr) {
   let count = 0;
-  arr.map(v=>{
-  if (v[0]==='¿'&&v[v.length-1]==='?') count++
-  if (v[0]==='¡'&&v[v.length-1]==='!') count++
-  })
-  return `¡${count} spanish sentence${count===1?'':'s'} here and hasta la vista, baby!`
+  arr.map(v => {
+    if (v[0] === "¿" && v[v.length - 1] === "?") count++;
+    if (v[0] === "¡" && v[v.length - 1] === "!") count++;
+  });
+  return `¡${count} spanish sentence${
+    count === 1 ? "" : "s"
+  } here and hasta la vista, baby!`;
 }

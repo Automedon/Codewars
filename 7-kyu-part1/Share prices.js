@@ -18,7 +18,11 @@ Have fun!
 
 Hint: Try to write the function in a functional manner!
 */
-const sharePrice = (invested, changes) =>{
-changes.map(v=>v>0?(invested+=invested*v/100):invested-=(invested*Math.abs(v)/100))
-return invested.toFixed(2)
-}
+const sharePrice = (invested, changes) => {
+  changes.map(v =>
+    v > 0
+      ? (invested += (invested * v) / 100)
+      : (invested -= (invested * Math.abs(v)) / 100)
+  );
+  return invested.toFixed(2);
+};

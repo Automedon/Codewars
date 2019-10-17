@@ -19,14 +19,14 @@ Output
 The last number Bleatrix Trotter sees or "INSOMNIA" (-1 in Rust and C++) if she will count forever
 Please note, this challenge is not my idea. It's from Google Code Jam 2016
 */
-function trotter(n){
-  let check = n
-  let arr = n.toString().split``
-  for (let i=1;i<1000;i++){
-    n=check*i
-    arr=arr.concat(n.toString().split``)
-    arr=[...new Set(arr)]
-    if (arr.length===10) return n
+function trotter(n) {
+  let check = n;
+  let arr = n.toString().split``;
+  for (let i = 1; i < 1000; i++) {
+    n = check * i;
+    arr = arr.concat(n.toString().split``);
+    arr = [...new Set(arr)];
+    if (arr.length === 10) return n;
   }
-  return "INSOMNIA"
+  return "INSOMNIA";
 }

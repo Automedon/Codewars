@@ -20,6 +20,13 @@ Consonant value
 */
 
 function wordValue(a) {
-  return a.map(v=>v.replace(/\ /gi,'').split('').map(v=>v.charCodeAt(0)-96)
-          .reduce((a,b)=>a+b,0)).map((v,i)=>v*(i+1));
+  return a
+    .map(v =>
+      v
+        .replace(/\ /gi, "")
+        .split("")
+        .map(v => v.charCodeAt(0) - 96)
+        .reduce((a, b) => a + b, 0)
+    )
+    .map((v, i) => v * (i + 1));
 }

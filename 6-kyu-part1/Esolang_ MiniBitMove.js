@@ -14,15 +14,16 @@ Result: 00110110110101
 After you're done, feel free to make translations and discuss this kata.
 */
 function interpreter(tape, array) {
-  array=array.split``
-  for (let i=0;i<array.length;){
-    for (let j=0;j<tape.length;j++){
-      if (tape[j]==='1') array[i]=array[i].replace(/[01]/,v=>v==='0'?'1':'0')
-      if (tape[j]==='0'){
-        i++
+  array = array.split``;
+  for (let i = 0; i < array.length; ) {
+    for (let j = 0; j < tape.length; j++) {
+      if (tape[j] === "1")
+        array[i] = array[i].replace(/[01]/, v => (v === "0" ? "1" : "0"));
+      if (tape[j] === "0") {
+        i++;
       }
-      if (array[i]===undefined) break
+      if (array[i] === undefined) break;
     }
   }
-  return array.join``
+  return array.join``;
 }

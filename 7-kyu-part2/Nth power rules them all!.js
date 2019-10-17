@@ -8,5 +8,5 @@ Example 1: Input: {1, 2, 3}, 3 --> (1 ^ 3 + 2 ^ 3 + 3 ^ 3 ) - (1 + 2 + 3) --> 36
 Example 2: Input: {1, 2}, 5 --> (1 ^ 5 + 2 ^ 5) - (1 + 2) --> 33 - 3 --> Output: 30
 */
 function modifiedSum(a, n) {
-  return a.reduce((a,b)=>a+b**n,0)-a.reduce((a,b)=>a+b,0)
+  return a.reduce((a, b) => a + b ** n, 0) - a.reduce((a, b) => a + b, 0);
 }

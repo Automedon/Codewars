@@ -15,18 +15,18 @@ countInversions([4,3,2,1]) // 6 inversions: 4 and 3, 4 and 2, 4 and 1, 3 and 2, 
 Goal
 The goal is to come up with a function that can calculate inversions for any arbitrary array
 */
-function countInversions( array ){
-  let sorted = array.slice().sort((a,b)=>a-b).join``
+function countInversions(array) {
+  let sorted = array.slice().sort((a, b) => a - b).join``;
   let count = 0;
-  for (let i=1;array.join``!==sorted;i++){
-    for (let j=0;j<array.length;j++){
-      if (array[j]<array[j-1]){
-      let temp = array[j]
-      array[j]=array[j-1]
-      array[j-1]=temp
-      count++
+  for (let i = 1; array.join`` !== sorted; i++) {
+    for (let j = 0; j < array.length; j++) {
+      if (array[j] < array[j - 1]) {
+        let temp = array[j];
+        array[j] = array[j - 1];
+        array[j - 1] = temp;
+        count++;
       }
     }
   }
-  return count
+  return count;
 }

@@ -13,6 +13,6 @@ n   next perfect sqare
 caution! the largest number tested is closer to Number.MAX_SAFE_INTEGER
 */
 function nextPerfectSquare(n) {
-  if( n < 0 ) return 0;
-  return (Math.floor(Math.sqrt(n)) + 1 ) ** 2;
+  if (n < 0) return 0;
+  return (Math.floor(Math.sqrt(n)) + 1) ** 2;
 }

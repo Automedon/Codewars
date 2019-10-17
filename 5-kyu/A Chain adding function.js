@@ -25,7 +25,7 @@ We can assume any number being passed in will be valid whole number.
 */
 
 var add = function(n) {
-  const f = x => add(n + x)
-  f.valueOf = () => n
+  const f = x => add(n + x);
+  f.valueOf = () => n;
   return f;
-}
+};

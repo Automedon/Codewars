@@ -40,9 +40,8 @@ e.g.
 */
 Number.prototype.twos = function(n) {
   let ret = "";
-  while(n)
-  {
-    ret += ( (this >> --n) & (1) );
+  while (n) {
+    ret += (this >> --n) & 1;
   }
   return ret;
-}
+};

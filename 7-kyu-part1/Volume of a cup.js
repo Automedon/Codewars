@@ -19,6 +19,8 @@ cup_volume(13.123, 123.12, 1)==4436.57
 cup_volume(5, 12, 31)==1858.51
 You will only be passed positive numbers.
 */
-function cupVolume(d1, d2, height){
-  return (Math.PI*height/12 * (d1**2 + d1*d2 + d2**2)).toFixed(2)*1
-  }
+function cupVolume(d1, d2, height) {
+  return (
+    (((Math.PI * height) / 12) * (d1 ** 2 + d1 * d2 + d2 ** 2)).toFixed(2) * 1
+  );
+}

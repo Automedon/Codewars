@@ -13,8 +13,8 @@ For the sequence "ACCGTACCAAGGGACC" and the motif "AAT" the result should be []
 For the sequence "GGG" and the motif "GG" the result should be [1, 2]
 */
 function motifLocator(sequence, motif) {
-    let index=sequence.indexOf(motif)+1
-    let lastIndex=sequence.lastIndexOf(motif)+1
-    if (!index) return []
-    return index===lastIndex?[index]:[index,lastIndex];
+  let index = sequence.indexOf(motif) + 1;
+  let lastIndex = sequence.lastIndexOf(motif) + 1;
+  if (!index) return [];
+  return index === lastIndex ? [index] : [index, lastIndex];
 }

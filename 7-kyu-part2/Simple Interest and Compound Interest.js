@@ -14,6 +14,9 @@ Round all answers to the nearest integer. Principal will always be an integer be
 
 More on Simple interest, compound interest and continuous interest
 */
-function interest(P,r,n) {
- return [(P*(1+r*n)).toFixed(0)*1,(P*Math.pow(1+r,n)).toFixed(0)*1]
+function interest(P, r, n) {
+  return [
+    (P * (1 + r * n)).toFixed(0) * 1,
+    (P * Math.pow(1 + r, n)).toFixed(0) * 1
+  ];
 }

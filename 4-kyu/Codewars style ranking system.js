@@ -35,36 +35,42 @@ user.progress # => 0 // progress is now zero
 user.rank # => -7 // rank was upgraded to -7
 Note: Codewars no longer uses this algorithm for its own ranking system. It uses a pure Math based solution that gives consistent results no matter what order a set of ranked activities are completed at.
 */
-class User{
-  constructor(){
-    this.rank=-8
-    this.progress=0
+class User {
+  constructor() {
+    this.rank = -8;
+    this.progress = 0;
   }
-  incProgress(p){
-      if (p > 8 || p === 0 || p < -8) {
+  incProgress(p) {
+    if (p > 8 || p === 0 || p < -8) {
       throw new Error("Invalid rank " + p);
     }
-      const dif =
+    const dif =
       p > 0 && this.rank < 0
         ? p - this.rank - 1
         : this.rank > 0 && p < 0
         ? p - this.rank + 1
         : p - this.rank;
-    if (dif>0){
-      this.progress+=(10*dif*dif)
-    } else if (dif===0) {
-      this.progress+=3
-    } else if (dif<0){
-      this.progress+=1
+    if (dif > 0) {
+      this.progress += 10 * dif * dif;
+    } else if (dif === 0) {
+      this.progress += 3;
+    } else if (dif < 0) {
+      this.progress += 1;
     }
-    while (this.progress>=100){
-      this.progress-=100
-      this.rank++
-      if (this.rank===0){this.rank=1}
-      if (this.rank>8){this.rank=8}
+    while (this.progress >= 100) {
+      this.progress -= 100;
+      this.rank++;
+      if (this.rank === 0) {
+        this.rank = 1;
+      }
+      if (this.rank > 8) {
+        this.rank = 8;
+      }
     }
-    if (this.rank===8){this.progress=0}
-    
-    return this
+    if (this.rank === 8) {
+      this.progress = 0;
+    }
+
+    return this;
   }
 }

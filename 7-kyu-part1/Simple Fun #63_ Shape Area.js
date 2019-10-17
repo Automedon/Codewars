@@ -25,5 +25,5 @@ The area of the n-interesting polygon.
 */
 
 function shapeArea(n) {
-    return Math.pow(n,2) + Math.pow(n-1,2);    
+  return Math.pow(n, 2) + Math.pow(n - 1, 2);
 }

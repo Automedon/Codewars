@@ -45,15 +45,15 @@ the output should be
 [ [0, 2], [0, 5] ]```
 */
 function constructSubmatrix(matrix, rowsToDelete, columnsToDelete) {
- for (let i=0;i<columnsToDelete.length;i++){
-      for (let j=0;j<matrix.length;j++){
-    matrix[j][columnsToDelete[i]]=''
+  for (let i = 0; i < columnsToDelete.length; i++) {
+    for (let j = 0; j < matrix.length; j++) {
+      matrix[j][columnsToDelete[i]] = "";
     }
   }
-  matrix=matrix.map(v=>v.filter(v=>v!==''))
-  for (let i=0;i<rowsToDelete.length;i++){
-    matrix[rowsToDelete[i]]=0
+  matrix = matrix.map(v => v.filter(v => v !== ""));
+  for (let i = 0; i < rowsToDelete.length; i++) {
+    matrix[rowsToDelete[i]] = 0;
   }
-  matrix=matrix.filter(v=>v!==0)
-  return matrix
+  matrix = matrix.filter(v => v !== 0);
+  return matrix;
 }

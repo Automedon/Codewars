@@ -32,39 +32,42 @@ GADERYPOLUKI cypher vol 2
 GADERYPOLUKI cypher vol 3 - Missing Key
 GADERYPOLUKI cypher vol 4 - Missing key madness
 */
-function encode(str) 
-{
-    
-    return str.split('').map(v=>dictionary.hasOwnProperty(v)?v=dictionary[v]:v).join('');   
+function encode(str) {
+  return str
+    .split("")
+    .map(v => (dictionary.hasOwnProperty(v) ? (v = dictionary[v]) : v))
+    .join("");
 }
 
-function decode(str) 
-{    
-    return str.split('').map(v=>dictionary.hasOwnProperty(v)?v=dictionary[v]:v).join('');  
+function decode(str) {
+  return str
+    .split("")
+    .map(v => (dictionary.hasOwnProperty(v) ? (v = dictionary[v]) : v))
+    .join("");
 }
 const dictionary = {
-  G: 'A',
-  A: 'G',
-  D: 'E',
-  E: 'D',
-  R: 'Y',
-  Y: 'R',
-  P: 'O',
-  O: 'P',
-  L: 'U',
-  U: 'L',
-  K: 'I',
-  I: 'K',
-  g: 'a',
-  a: 'g',
-  d: 'e',
-  e: 'd',
-  r: 'y',
-  y: 'r',
-  p: 'o',
-  o: 'p',
-  l: 'u',
-  u: 'l',
-  k: 'i',
-  i: 'k',
-}
+  G: "A",
+  A: "G",
+  D: "E",
+  E: "D",
+  R: "Y",
+  Y: "R",
+  P: "O",
+  O: "P",
+  L: "U",
+  U: "L",
+  K: "I",
+  I: "K",
+  g: "a",
+  a: "g",
+  d: "e",
+  e: "d",
+  r: "y",
+  y: "r",
+  p: "o",
+  o: "p",
+  l: "u",
+  u: "l",
+  k: "i",
+  i: "k"
+};

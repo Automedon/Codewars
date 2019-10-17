@@ -37,11 +37,11 @@ the output should be `1100`.
 `100 + 1000 = 1100`
 */
 
-function scratch(lottery){
-  let num=0;
-  lottery.map(v=>{
-  let arr=v.split(' ');
-  arr[0]===arr[1]&&arr[1]===arr[2]?num+=arr[3]*1:0
-  })
-  return num
+function scratch(lottery) {
+  let num = 0;
+  lottery.map(v => {
+    let arr = v.split(" ");
+    arr[0] === arr[1] && arr[1] === arr[2] ? (num += arr[3] * 1) : 0;
+  });
+  return num;
 }

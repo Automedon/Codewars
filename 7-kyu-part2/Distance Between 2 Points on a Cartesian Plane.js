@@ -6,6 +6,8 @@ There are two parameters in the function, p1 and p2. p1 is a list [x1,y1] where 
 
 The distance between the two points should be rounded to the precision decimal if provided, otherwise to the nearest integer.
 */
-function coordinates([x1,y1],[x2,y2], precision){
-  return precision?Math.hypot((x1-x2),(y1-y2)).toFixed(precision)*1:Math.hypot((x1-x2),(y1-y2)).toFixed(0)*1
+function coordinates([x1, y1], [x2, y2], precision) {
+  return precision
+    ? Math.hypot(x1 - x2, y1 - y2).toFixed(precision) * 1
+    : Math.hypot(x1 - x2, y1 - y2).toFixed(0) * 1;
 }

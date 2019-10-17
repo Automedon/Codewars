@@ -12,17 +12,26 @@ Valid operations are +, -, *, /.
 You may assume that there won't be exceptional situations (like stack underflow or division by zero).
 */
 
-function calc(expr) {  
+function calc(expr) {
   var result = [];
   var atoms = expr.split(/\s+/);
-  var operators = ['+', '-', '*', '/'];
-  for (var i=0; i<atoms.length; i++) {
-    switch(atoms[i]) {
-      case '+': result.push(result.pop() + result.pop()); break;
-      case '-': result.push(-result.pop() + result.pop()); break;
-      case '*': result.push(result.pop() * result.pop()); break;
-      case '/': result.push(1 /(result.pop() / result.pop())); break;
-      default: result.push(parseFloat(atoms[i]));
+  var operators = ["+", "-", "*", "/"];
+  for (var i = 0; i < atoms.length; i++) {
+    switch (atoms[i]) {
+      case "+":
+        result.push(result.pop() + result.pop());
+        break;
+      case "-":
+        result.push(-result.pop() + result.pop());
+        break;
+      case "*":
+        result.push(result.pop() * result.pop());
+        break;
+      case "/":
+        result.push(1 / (result.pop() / result.pop()));
+        break;
+      default:
+        result.push(parseFloat(atoms[i]));
     }
   }
   return result.pop() || 0;

@@ -25,7 +25,7 @@ The data is given as two parameters. Your answer should be returned as an array:
             [Orthus, Hydra]
 If there aren't any cases for the given amount of heads and tails - return "No solutions" or null (C#).
 */
-function beasts(heads, tails){
+function beasts(heads, tails) {
   const h = (heads - 2 * tails) / 3;
   const d = tails - h;
   return d >= 0 && h >= 0 && h === ~~h ? [tails - h, h] : "No solutions";

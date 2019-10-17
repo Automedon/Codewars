@@ -12,7 +12,7 @@ remove("Hi! Hi!! Hi!") === "Hi Hi Hi!!!!"
 Note
 Please don't post issue about difficulty or duplicate.
 */
-function remove(s){
- const marks=s.length-s.replace(/!/g,'').length
-  return s.replace(/!/g,'')+'!'.repeat(marks)
+function remove(s) {
+  const marks = s.length - s.replace(/!/g, "").length;
+  return s.replace(/!/g, "") + "!".repeat(marks);
 }

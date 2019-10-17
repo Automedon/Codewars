@@ -23,27 +23,27 @@ Your function must output a new string with the codes removed and the stand-in e
 Note: The input strings must not be modified, as they are archived in raw form. Other than substituting in the new emojis, the strings' data mustn't be otherwise modified.
 Have fun!
 */
-const emoji = { 
-  "[[f9.smile]]"        :     ":)",
-  "[[f9.grin]]"         :     ":D",
-  "[[f9.smiley]]"       :     "=)",
-  "[[f9.sohappy]]"      :     "XD",
-  "[[f9.tongue]]"       :     ":P",
-  "[[f9.wink]]"         :     ";)",
-  "[[f9.sad]]"          :     ":(",
-  "[[f9.slant]]"        :     ":/",
-  "[[f9.surprised]]"    :     ":O",
-  "[[f9.catface]]"      :     ":3",
-  "[[f9.cool]]"         :     "B)",
-  "[[f9.unimpressed]]"  :     ":|",
-  "[[f9.angry]]"        :     ">:|",
-  "[[f9.kissing]]"      :     "^.^",
-  "[[f9.dazed]]"        :     "*_*",
-  "[[f9.dance1]]"       :     "<(^.^<)",
-  "[[f9.dance2]]"       :     "(>^.^)>",
-  "[[f9.heart]]"        :     "<3",  
-}
+const emoji = {
+  "[[f9.smile]]": ":)",
+  "[[f9.grin]]": ":D",
+  "[[f9.smiley]]": "=)",
+  "[[f9.sohappy]]": "XD",
+  "[[f9.tongue]]": ":P",
+  "[[f9.wink]]": ";)",
+  "[[f9.sad]]": ":(",
+  "[[f9.slant]]": ":/",
+  "[[f9.surprised]]": ":O",
+  "[[f9.catface]]": ":3",
+  "[[f9.cool]]": "B)",
+  "[[f9.unimpressed]]": ":|",
+  "[[f9.angry]]": ">:|",
+  "[[f9.kissing]]": "^.^",
+  "[[f9.dazed]]": "*_*",
+  "[[f9.dance1]]": "<(^.^<)",
+  "[[f9.dance2]]": "(>^.^)>",
+  "[[f9.heart]]": "<3"
+};
 
-const insert = (string) => {
+const insert = string => {
   return string.replace(/(\[\[f9\.(\w+)\]\])/g, match => emoji[match]);
-}
+};

@@ -21,14 +21,16 @@ If they are equal, return "Draw!"
 Note: You will always receive matrices of the same dimension.
 */
 
-function diagonal(matrix){
-  let arr=[];
-  let arr2=[];
-  for (let i=0;i<matrix.length;i++){
-  arr.push(matrix[i][i])
-  arr2.push(matrix[i][matrix.length-1-i])
+function diagonal(matrix) {
+  let arr = [];
+  let arr2 = [];
+  for (let i = 0; i < matrix.length; i++) {
+    arr.push(matrix[i][i]);
+    arr2.push(matrix[i][matrix.length - 1 - i]);
   }
-  return arr.reduce((a,b)=>a+b,0)===arr2.reduce((a,b)=>a+b,0)?'Draw!':
-          arr.reduce((a,b)=>a+b,0)>arr2.reduce((a,b)=>a+b,0)?'Principal Diagonal win!':
-          'Secondary Diagonal win!'
+  return arr.reduce((a, b) => a + b, 0) === arr2.reduce((a, b) => a + b, 0)
+    ? "Draw!"
+    : arr.reduce((a, b) => a + b, 0) > arr2.reduce((a, b) => a + b, 0)
+    ? "Principal Diagonal win!"
+    : "Secondary Diagonal win!";
 }

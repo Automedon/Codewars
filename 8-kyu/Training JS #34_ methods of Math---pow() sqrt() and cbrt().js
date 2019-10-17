@@ -114,6 +114,6 @@ The two examples above seems to meet our requirements, but please note: a cube i
 
 */
 
-const isIntegerCube = n => Number.isInteger(Math.cbrt(n))
+const isIntegerCube = n => Number.isInteger(Math.cbrt(n));
 
-const cutCube = (volume, n) => isIntegerCube(n) && isIntegerCube(volume / n)
+const cutCube = (volume, n) => isIntegerCube(n) && isIntegerCube(volume / n);

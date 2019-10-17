@@ -16,20 +16,22 @@ nextTrain("17:40", "30") => "The next train is at 18:30."
 nextTrain("23:20", "25") => "The next train is at 05:00."
 nextTrain("03:36", "95") => "The next train is at 05:30."
 */
-function nextTrain(time, minutes){
-  let m=time.split`:`[1]*60*1000
-  let h=time.split`:`[0]*60*60*1000
-  let t = new Date(h+m+(minutes*60*1000))
-  h= t.getHours()
-  m=t.getMinutes()
-  if (m>30){
-    h++
-    m=0
-  }else{
-    m=30
+function nextTrain(time, minutes) {
+  let m = time.split`:`[1] * 60 * 1000;
+  let h = time.split`:`[0] * 60 * 60 * 1000;
+  let t = new Date(h + m + minutes * 60 * 1000);
+  h = t.getHours();
+  m = t.getMinutes();
+  if (m > 30) {
+    h++;
+    m = 0;
+  } else {
+    m = 30;
   }
-  if (h<5) return 'The next train is at 05:00.'
-  if (h==23&&m==0) return 'The next train is at 23:00.'
-  if (h>=23&&m>=0) return 'The next train is at 05:00.'
-  return `The next train is at ${h.toString().padStart(2,0)}:${m.toString().padStart(2,0)}.`
+  if (h < 5) return "The next train is at 05:00.";
+  if (h == 23 && m == 0) return "The next train is at 23:00.";
+  if (h >= 23 && m >= 0) return "The next train is at 05:00.";
+  return `The next train is at ${h
+    .toString()
+    .padStart(2, 0)}:${m.toString().padStart(2, 0)}.`;
 }

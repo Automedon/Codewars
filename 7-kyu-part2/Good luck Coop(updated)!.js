@@ -31,17 +31,19 @@ Let's look at another example: if we have the same board and your direction is "
 P.S If you wonder about the amazingness of Gordon and Cooper you have to watch Twin Peaks and enjoy at your fullest.
 */
 function findSafeRoute(board, directions) {
-  let hor= board.slice();
-  let ver=[];
-  let word=''
-  for (let i=0;i<board.length;i++){
-    word=''
-    for (let j=0;j<board[0].length;j++){
-      word+=board[j][i]
+  let hor = board.slice();
+  let ver = [];
+  let word = "";
+  for (let i = 0; i < board.length; i++) {
+    word = "";
+    for (let j = 0; j < board[0].length; j++) {
+      word += board[j][i];
     }
-    ver.push(word)
+    ver.push(word);
   }
-  if (hor.includes(directions)) return `Horizontal ${hor.findIndex(v=>v===directions)+1}`
-  if (ver.includes(directions)) return `Vertical ${ver.findIndex(v=>v===directions)+1}`
+  if (hor.includes(directions))
+    return `Horizontal ${hor.findIndex(v => v === directions) + 1}`;
+  if (ver.includes(directions))
+    return `Vertical ${ver.findIndex(v => v === directions) + 1}`;
   return "Coop, it's too risky!";
 }

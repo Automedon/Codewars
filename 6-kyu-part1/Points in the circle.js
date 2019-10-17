@@ -9,11 +9,11 @@ Example: for radius = 2 the result should be 13.
 0 <= radius <= 1000
 ![](http://i.imgur.com/1SMov3s.png)
 */
-function pointsNumber(r){
-  let points = 0
-  for (let i=-r;i<=r;i++){
-    for (let j=-r;j<=r;j++){
-      if (i*i+j*j<=r*r) points++
+function pointsNumber(r) {
+  let points = 0;
+  for (let i = -r; i <= r; i++) {
+    for (let j = -r; j <= r; j++) {
+      if (i * i + j * j <= r * r) points++;
     }
   }
   return points;

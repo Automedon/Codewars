@@ -24,11 +24,9 @@ Input/Output
 [output] an integer
 */
 function rounding(n, m) {
-
-  for (let i=n,j=n;;i++,j--)
-  {
-    if (j%m===0) return j
-    if (i%m===0) return i 
-    if (m/2===n) return n
+  for (let i = n, j = n; ; i++, j--) {
+    if (j % m === 0) return j;
+    if (i % m === 0) return i;
+    if (m / 2 === n) return n;
   }
 }

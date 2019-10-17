@@ -10,7 +10,10 @@ If they're overlapping or one is completely within the other, just return zero.
 
 Tests round answers to 6 decimal places, so you don't need to round them yourselves.
 */
-function distanceBetweenCircles(a, b){
-  const distance = ((a.center.x - b.center.x)**2 + (a.center.y - b.center.y)**2)**(0.5) - a.radius - b.radius
-  return distance > 0 ? distance : 0
+function distanceBetweenCircles(a, b) {
+  const distance =
+    ((a.center.x - b.center.x) ** 2 + (a.center.y - b.center.y) ** 2) ** 0.5 -
+    a.radius -
+    b.radius;
+  return distance > 0 ? distance : 0;
 }

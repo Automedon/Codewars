@@ -11,10 +11,12 @@ NOTE: All numbers will be whole numbers greater than 0.
 If you liked this kata, check out part 2!!
 */
 
-const expandedForm = n => n.toString()
-                            .split("")
-                            .reverse()
-                            .map( (a, i) => a * Math.pow(10, i))
-                            .filter(a => a > 0)
-                            .reverse()
-                            .join(" + ");
+const expandedForm = n =>
+  n
+    .toString()
+    .split("")
+    .reverse()
+    .map((a, i) => a * Math.pow(10, i))
+    .filter(a => a > 0)
+    .reverse()
+    .join(" + ");

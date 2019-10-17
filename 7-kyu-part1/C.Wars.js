@@ -10,8 +10,17 @@ initials('code wars') => returns C.Wars
 initials('Barack Hussain obama') => returns B.H.Obama
 Complete the function initials.
 */
-function initials(n){
-  const arr=(n.split(' ').map(v=>v[0].toUpperCase()).slice(0,-1)+'.'+n.split(' ').slice(-1)
-  .map(v=>v.slice(0,1).toUpperCase()+v.slice(1).toLowerCase())).replace(/,/g,'.')
-  return arr
+function initials(n) {
+  const arr = (
+    n
+      .split(" ")
+      .map(v => v[0].toUpperCase())
+      .slice(0, -1) +
+    "." +
+    n
+      .split(" ")
+      .slice(-1)
+      .map(v => v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase())
+  ).replace(/,/g, ".");
+  return arr;
 }

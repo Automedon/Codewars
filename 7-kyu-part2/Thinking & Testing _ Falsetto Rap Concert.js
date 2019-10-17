@@ -52,28 +52,30 @@ Another series, innovative and interesting, medium difficulty. People who like t
 <a href="http://www.codewars.com/kata/56c85eebfd8fc02551000281">Play Tetris : Shape anastomosis</a><br>
 */
 function testit(n) {
-  n=n.split``
-  let str = 'abcdefghijklmnopqrstuvwxyz'.split``
-  let str2 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split``
+  n = n.split``;
+  let str = "abcdefghijklmnopqrstuvwxyz".split``;
+  let str2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split``;
   let index = 0;
-  for (let i = 0; i < n.length; i++){ 
-    if (/[a-z]/.test(n[i])&&i%2==0) {
-      index=str.findIndex(v=>v===n[i]);
-      n[i]=str[(index+1)%26]===undefined?"z":str[(index+1)%26]
-    } 
-    if (/[a-z]/.test(n[i])&&i%2!==0){
-      index=str.findIndex(v=>v===n[i]);
-      n[i]=str[(index-1)%26]===undefined?"z":str[(index-1)%26]
-    } 
-    if (/[A-Z]/.test(n[i])&&i%2==0) {
-      index=str2.findIndex(v=>v===n[i]);
-      n[i]=str2[(index+1)%26]===undefined?"Z":str2[(index+1)%26]
-    } 
-    if (/[A-Z]/.test(n[i])&&i%2!==0){
-      index=str2.findIndex(v=>v===n[i]);
-      n[i]=str2[(index-1)%26]===undefined?"Z":str2[(index-1)%26]
+  for (let i = 0; i < n.length; i++) {
+    if (/[a-z]/.test(n[i]) && i % 2 == 0) {
+      index = str.findIndex(v => v === n[i]);
+      n[i] = str[(index + 1) % 26] === undefined ? "z" : str[(index + 1) % 26];
     }
+    if (/[a-z]/.test(n[i]) && i % 2 !== 0) {
+      index = str.findIndex(v => v === n[i]);
+      n[i] = str[(index - 1) % 26] === undefined ? "z" : str[(index - 1) % 26];
     }
+    if (/[A-Z]/.test(n[i]) && i % 2 == 0) {
+      index = str2.findIndex(v => v === n[i]);
+      n[i] =
+        str2[(index + 1) % 26] === undefined ? "Z" : str2[(index + 1) % 26];
+    }
+    if (/[A-Z]/.test(n[i]) && i % 2 !== 0) {
+      index = str2.findIndex(v => v === n[i]);
+      n[i] =
+        str2[(index - 1) % 26] === undefined ? "Z" : str2[(index - 1) % 26];
+    }
+  }
 
-  return n.join('')
+  return n.join("");
 }

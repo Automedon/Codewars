@@ -8,12 +8,12 @@ range(5) --> 1,2,3,4,5
 range(3, 7) --> 3,4,5,6,7
 range(2, 3, 15) --> 2,5,8,11,14
 */
-function range(a,b,c){
-  if (a&&b&&c){
-    return Array.from({length:c/b},(v,i)=>a+i*b)
-  } else if (a&&b){
-    return Array.from({length:b-a+1},(v,i)=>i+a)
+function range(a, b, c) {
+  if (a && b && c) {
+    return Array.from({ length: c / b }, (v, i) => a + i * b);
+  } else if (a && b) {
+    return Array.from({ length: b - a + 1 }, (v, i) => i + a);
   } else {
-    return Array.from({length:a},(v,i)=>i+1)
+    return Array.from({ length: a }, (v, i) => i + 1);
   }
 }

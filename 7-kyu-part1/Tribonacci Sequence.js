@@ -19,11 +19,11 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
 [Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
 */
 
-function tribonacci(signature,n){
-  let arr=[...signature];
-  for (let i=0;i<n;i++){
-  arr.push(arr.slice(i,i+3).reduce((acc,next)=>acc+next,0))
+function tribonacci(signature, n) {
+  let arr = [...signature];
+  for (let i = 0; i < n; i++) {
+    arr.push(arr.slice(i, i + 3).reduce((acc, next) => acc + next, 0));
   }
-  
-  return arr.slice(0,-3)
+
+  return arr.slice(0, -3);
 }

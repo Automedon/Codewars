@@ -35,13 +35,13 @@ Can the story I heard about man flying in his lawn chair equipped with 1000 ball
 
 Your coding mastery will reveal answers to these and many other important questions in the tests. Let the journey begin!
 */
-class Journey{
-  constructor(object, crew, balloons){
-  this.object=object
-  this.crew=crew
-  this.balloons=balloons
+class Journey {
+  constructor(object, crew, balloons) {
+    this.object = object;
+    this.crew = crew;
+    this.balloons = balloons;
   }
-  isPossible(){
-    return (this.balloons*0.0048-(this.object.weight+(this.crew*80)))>=0
+  isPossible() {
+    return this.balloons * 0.0048 - (this.object.weight + this.crew * 80) >= 0;
   }
 }

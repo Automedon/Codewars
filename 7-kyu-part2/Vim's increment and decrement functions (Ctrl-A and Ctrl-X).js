@@ -35,9 +35,9 @@ Write the functions control_a and control_x: each function takes in a word and r
 TIP: Once your functions are working well, see if you can remove code duplication between the two.
 */
 function control_a(word) {
-  return word.replace(/[0-9]+/,v=>(v*1)+1)
+  return word.replace(/[0-9]+/, v => v * 1 + 1);
 }
 
 function control_x(word) {
-  return word.replace(/[0-9]+/,v=>(v*1)-1)
+  return word.replace(/[0-9]+/, v => v * 1 - 1);
 }

@@ -20,6 +20,7 @@ Examples:
 ('aBAcAba')   =>  '.b.c.b'
 (c)Alexander
 */
-function stringTask(s){
-  return s.replace(/[aeiuoy]/gi,'').split``.map(v=>'.'+v).join``.toLowerCase()
+function stringTask(s) {
+  return s.replace(/[aeiuoy]/gi, "").split``.map(v => "." + v)
+    .join``.toLowerCase();
 }

@@ -75,7 +75,7 @@ Default: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Function
 Rest: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 Spreak: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator
 */
-function defaultExample(x, y=7) {
+function defaultExample(x, y = 7) {
   return x + y;
 }
 
@@ -83,6 +83,6 @@ function restExample(x, ...y) {
   return x * y.length;
 }
 
-function spreadExample(x,y,z) {
+function spreadExample(x, y, z) {
   return x + y + z;
 }

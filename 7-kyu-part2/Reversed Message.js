@@ -7,7 +7,9 @@ Example:
 
 */
 function reverseMessage(str) {
-    str=str.split(` `).map(v=>v.split('').reverse().join``).join` `
-    str=str.split(` `).map(v=>v.slice(0,1).toUpperCase()+v.slice(1).toLowerCase())
-    return str.reverse().join` `
+  str = str.split(` `).map(v => v.split("").reverse().join``).join` `;
+  str = str
+    .split(` `)
+    .map(v => v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase());
+  return str.reverse().join` `;
 }

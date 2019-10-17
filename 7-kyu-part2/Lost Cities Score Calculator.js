@@ -17,5 +17,7 @@ calculateScore([2, 4, 6, 7, 8], 2);
 // Expected output: 21
 */
 function calculateScore(cardsArr, wager) {
-   return cardsArr.length === 0 && wager === 0 ? 0 : cardsArr.reduce((a,b) => a+b, -20) * (wager+1);
+  return cardsArr.length === 0 && wager === 0
+    ? 0
+    : cardsArr.reduce((a, b) => a + b, -20) * (wager + 1);
 }

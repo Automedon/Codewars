@@ -12,11 +12,11 @@ The music should still be audible (0 and below are not going to work well at dro
 
 (ex: volume = 4 : output = 1, one key press would take you to 6 by adding 2 to volume- 6 is divisible by 3)
 */
-function musicalOCD(volume){
-  let i=0
-  while(volume%3!==0){
-    i++
-    volume--
+function musicalOCD(volume) {
+  let i = 0;
+  while (volume % 3 !== 0) {
+    i++;
+    volume--;
   }
-  return i
-};
+  return i;
+}

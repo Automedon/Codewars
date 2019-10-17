@@ -12,6 +12,12 @@ You need to be able to use all the caracters from the two strings so:
 isMatching("kata", "kt", "aaa") return false
 */
 function isMatching(string, str1, str2) {
-  return (string.split('').sort((a,b)=>a.localeCompare(b)).join``).toLowerCase().trim()===
-  ((str1+str2).split('').sort((a,b)=>a.localeCompare(b)).join``).toLowerCase().trim()
+  return (
+    string.split("").sort((a, b) => a.localeCompare(b)).join``
+      .toLowerCase()
+      .trim() ===
+    (str1 + str2).split("").sort((a, b) => a.localeCompare(b)).join``
+      .toLowerCase()
+      .trim()
+  );
 }

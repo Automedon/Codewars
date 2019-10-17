@@ -13,10 +13,10 @@ For example,
 '658776' to [65, 87, 76] and then turn it into 'AWL'.
 Good Luck!
 */
-function convert(number){
-  let arr=[];
-  for (let i=0;i<number.length;i+=2){
-      arr.push(number.slice(i,i+2)*1)
-    }
+function convert(number) {
+  let arr = [];
+  for (let i = 0; i < number.length; i += 2) {
+    arr.push(number.slice(i, i + 2) * 1);
+  }
   return String.fromCharCode(...arr);
 }

@@ -1,3 +1,3 @@
-function removeUrlAnchor(url){
-  return url.replace(/#.*/,'')
+function removeUrlAnchor(url) {
+  return url.replace(/#.*/, "");
 }

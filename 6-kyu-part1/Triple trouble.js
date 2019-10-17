@@ -16,7 +16,6 @@ tripledouble(666789, 12345667) == 1
 If this isn't the case, return 0
 */
 
-
 function tripledouble(num1, num2) {
   for (let i = 0; i < 10; i++) {
     if (new RegExp(`${i}{3}`).test(num1) && new RegExp(`${i}{2}`).test(num2)) {

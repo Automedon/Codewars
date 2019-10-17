@@ -12,7 +12,7 @@ numCombo([2, 0, 0, 0, 1], 1)// 1
 numCombo([2, 0, 0, 0, 1], 3)// 3 
 numCombo([0, 0, 0, 0, 0], 0)// 5 
 */
-function numCombo(arr, num){
-  let sum = arr.reduce((a, b) => a + b)
+function numCombo(arr, num) {
+  let sum = arr.reduce((a, b) => a + b);
   return arr.filter(x => sum - x === num).length;
 }

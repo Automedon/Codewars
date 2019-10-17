@@ -34,5 +34,5 @@ A non-negative integer representing the heaviest weight your friend can lift wit
 [output] a boolean value
 */
 function areEquallyStrong(yL, yR, fL, fR) {
-  return (yL===fL||yL===fR)&&(yR===fL||yR===fR)
+  return (yL === fL || yL === fR) && (yR === fL || yR === fR);
 }

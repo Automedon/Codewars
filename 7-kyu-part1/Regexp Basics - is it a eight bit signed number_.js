@@ -4,6 +4,8 @@ Implement String.eight_bit_signed_number? (Ruby), String.eightBitSignedNumber() 
 
 It should only accept numbers in canonical representation, so no leading +, extra 0s, spaces etc.
 */
-String.prototype.signedEightBitNumber=function(){
-  return Number(this).toString() == this && Number(this) > -129 && Number(this) < 128;
-}
+String.prototype.signedEightBitNumber = function() {
+  return (
+    Number(this).toString() == this && Number(this) > -129 && Number(this) < 128
+  );
+};

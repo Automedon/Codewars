@@ -57,6 +57,6 @@ x x x o o o o y y     6 a move to 6 x
  No "image" here ;-) Please find a way to calculate it.
 Note: This is a math problem. 2 <= side <= 100000
 */
-function leastMove(side){
-  return Math.floor(side * (side + 1) / 6);
+function leastMove(side) {
+  return Math.floor((side * (side + 1)) / 6);
 }

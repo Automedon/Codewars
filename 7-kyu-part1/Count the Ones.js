@@ -10,10 +10,10 @@ The interesting part of this task is that you have to do it without string opera
 */
 
 function hammingWeight(x) {
-  let i = 0
+  let i = 0;
   while (x > 0) {
-    i += x & 1
-    x >>= 1
+    i += x & 1;
+    x >>= 1;
   }
-  return i
+  return i;
 }

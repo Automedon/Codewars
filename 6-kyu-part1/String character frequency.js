@@ -12,16 +12,19 @@ More examples in the test cases. Empty string is not tested.
 
 Good luck!
 */
-function solve(s){
-  let dict = Object.values(s.split``.reduce((a,b)=>(a[b]=a[b]+1||1,a),{}))
-  if (dict.length===1) return true
-  for (let i=0;i<dict.length;i++){
-  let temp = dict[i]
-  dict[i]=dict[i]-1
-  if (dict.every(v=>v==dict[i])) return true
-  dict[i]=temp
+function solve(s) {
+  let dict = Object.values(
+    s.split``.reduce((a, b) => ((a[b] = a[b] + 1 || 1), a), {})
+  );
+  if (dict.length === 1) return true;
+  for (let i = 0; i < dict.length; i++) {
+    let temp = dict[i];
+    dict[i] = dict[i] - 1;
+    if (dict.every(v => v == dict[i])) return true;
+    dict[i] = temp;
   }
-  dict=dict.sort((a,b)=>a-b)
-  if (dict.slice(1).every((v,i)=>v===dict[1])&&dict[0]===1) return true
-  return false
-};
+  dict = dict.sort((a, b) => a - b);
+  if (dict.slice(1).every((v, i) => v === dict[1]) && dict[0] === 1)
+    return true;
+  return false;
+}

@@ -39,5 +39,6 @@ Kata in this Series
 Strings, strings, strings (Easy) - this Kata
 Strings, strings, strings (Hard)
 */
-Boolean.prototype.toString = Number.prototype.toString = Array.prototype.toString =
-    function () { return JSON.stringify(this); }
+Boolean.prototype.toString = Number.prototype.toString = Array.prototype.toString = function() {
+  return JSON.stringify(this);
+};

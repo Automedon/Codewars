@@ -17,8 +17,8 @@ Hint:
 new Date()
 Using a Date object can automatically figure out the day of the week for you
 */
-function findYear(month, dayOfWeek){
-  for (let i=2014;i<2051;i++)
-  if (new Date(i,month,1).getDay()===dayOfWeek) return i
-  return 0
+function findYear(month, dayOfWeek) {
+  for (let i = 2014; i < 2051; i++)
+    if (new Date(i, month, 1).getDay() === dayOfWeek) return i;
+  return 0;
 }

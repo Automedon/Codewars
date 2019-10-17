@@ -8,9 +8,9 @@ Input will be an object where key:value-pairs will represent an animal and a bin
 Output should be an integer that equals the sum of all the animals in the zoo.
 */
 function countTheAnimals(animals) {
-  let sum=0;
-  for (let i in animals){
-   sum+=parseInt(animals[i],2)
+  let sum = 0;
+  for (let i in animals) {
+    sum += parseInt(animals[i], 2);
   }
-  return sum
+  return sum;
 }

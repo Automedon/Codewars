@@ -12,7 +12,11 @@ Example:
 
 2837743 --> 2830000
 */
-function manipulate(num) { 
-  let str = ''+num
-  return (str.slice(0,str.length/2)+str.slice(str.length/2).replace(/\d/g,'0'))*1
-} 
+function manipulate(num) {
+  let str = "" + num;
+  return (
+    (str.slice(0, str.length / 2) +
+      str.slice(str.length / 2).replace(/\d/g, "0")) *
+    1
+  );
+}

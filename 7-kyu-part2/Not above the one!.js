@@ -15,12 +15,12 @@ should return
 Please upvote and enjoy!
 */
 function binaryCleaner(arr) {
-  let arr2=[];
-   let arr1=[]; 
-  for (let i=0;i<arr.length;i++){
-    if (arr[i]>1){
-    arr2.push(i)
-    } else arr1.push(arr[i])
+  let arr2 = [];
+  let arr1 = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 1) {
+      arr2.push(i);
+    } else arr1.push(arr[i]);
   }
-  return [arr1,arr2]
+  return [arr1, arr2];
 }

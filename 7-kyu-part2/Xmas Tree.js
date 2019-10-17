@@ -23,13 +23,12 @@ __#__           1
 __#__           2 - Trunk/Stem of Tree
 Pad with underscores i.e _ so each line is the same length. The last line forming the tree having only hashtags, no spaces. Also remember the trunk/stem of the tree.
 */
-function xMasTree(n){
-   let arr = [];
-   for (let i=1,j=1;i<=n;i++,j+=2)
-   {
-     arr.push(`_`.repeat(n-i)+`#`.repeat(j)+`_`.repeat(n-i))
-   }
-   arr.push(`_`.repeat(n-1)+`#`.repeat(1)+`_`.repeat(n-1))
-   arr.push(`_`.repeat(n-1)+`#`.repeat(1)+`_`.repeat(n-1))
-   return arr
+function xMasTree(n) {
+  let arr = [];
+  for (let i = 1, j = 1; i <= n; i++, j += 2) {
+    arr.push(`_`.repeat(n - i) + `#`.repeat(j) + `_`.repeat(n - i));
+  }
+  arr.push(`_`.repeat(n - 1) + `#`.repeat(1) + `_`.repeat(n - 1));
+  arr.push(`_`.repeat(n - 1) + `#`.repeat(1) + `_`.repeat(n - 1));
+  return arr;
 }

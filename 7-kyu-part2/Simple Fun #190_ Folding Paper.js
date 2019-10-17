@@ -35,4 +35,4 @@ Input/Output
 
 The maximum number of squares.
 */
-let folding = (a,b) => (a % b) ? ~~(a/b) + folding(b, a%b) : a/b;
+let folding = (a, b) => (a % b ? ~~(a / b) + folding(b, a % b) : a / b);

@@ -10,5 +10,7 @@ For the purposes of this kata, the input and output are both strings and no inpu
 Gopoopod lupuck!
 */
 function jeringonza(str) {
-  return str.replace(/([auioe])/gi,v=>v===v.toUpperCase()?`${v}P${v}`:`${v}p${v}`)
+  return str.replace(/([auioe])/gi, v =>
+    v === v.toUpperCase() ? `${v}P${v}` : `${v}p${v}`
+  );
 }

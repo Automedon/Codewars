@@ -126,9 +126,9 @@ countAnimals("dog,dog,cat",["dog","cat"]) should return [2,1]
 countAnimals("dog,dog,cat",["pig","cow"]) should return [0,0]
 ```
 */
-function countAnimals(animals,count){
-  let res=[]
-  for(let  i=0;i<count.length;i++)
-    res.push(animals.split(count[i]).length-1)
-  return res
+function countAnimals(animals, count) {
+  let res = [];
+  for (let i = 0; i < count.length; i++)
+    res.push(animals.split(count[i]).length - 1);
+  return res;
 }

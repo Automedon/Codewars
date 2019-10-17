@@ -28,23 +28,23 @@ The original PatternCraft series (by John Lindquist) is a collection of Youtube 
 */
 class Fly {
   move(unit) {
-    return unit.position+=10
+    return (unit.position += 10);
   }
 }
 
 class Walk {
   move(unit) {
-    return unit.position++
+    return unit.position++;
   }
 }
 
 class Viking {
   constructor() {
-  this.position=0
-  this.moveBehavior=new Walk()
+    this.position = 0;
+    this.moveBehavior = new Walk();
   }
-  
+
   move() {
-    return this.moveBehavior.move(this)
+    return this.moveBehavior.move(this);
   }
 }

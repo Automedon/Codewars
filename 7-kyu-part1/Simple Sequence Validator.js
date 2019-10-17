@@ -17,9 +17,10 @@ validateSequence([1,2,4,8,16,32,64]) === false
 validateSequence([0,1,1,2,3,5,8,13,21,34]) === false
 */
 function validateSequence(x) {
-  let num=x[1]-x[0]
-  const arr=[];
-  for(let i=Math.min(...x);i<=Math.max(...x);i+=num)
-  {arr.push(i)}
-  return x.every((v,i)=>v===arr[i])
+  let num = x[1] - x[0];
+  const arr = [];
+  for (let i = Math.min(...x); i <= Math.max(...x); i += num) {
+    arr.push(i);
+  }
+  return x.every((v, i) => v === arr[i]);
 }

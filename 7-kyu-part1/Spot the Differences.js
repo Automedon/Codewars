@@ -19,8 +19,8 @@ NOTES:
 • Capitalization and punctuation matter
 */
 
-function spot(s1,s2){
-  const arr=[];
-  s1.split('').map((v,i)=>v!=s2[i]?arr.push(i):v)
-  return arr
+function spot(s1, s2) {
+  const arr = [];
+  s1.split("").map((v, i) => (v != s2[i] ? arr.push(i) : v));
+  return arr;
 }

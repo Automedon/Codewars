@@ -17,6 +17,6 @@ If the building contains no ghosts, return the string:
 "You just wanted my autograph didn't you?"
 */
 function ghostBusters(str) {
-  if (str.match(/ /)) return str.replace(/ /g,'')
-  return "You just wanted my autograph didn't you?"
+  if (str.match(/ /)) return str.replace(/ /g, "");
+  return "You just wanted my autograph didn't you?";
 }

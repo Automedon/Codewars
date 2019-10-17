@@ -24,4 +24,4 @@ For example: Your battery capacity is 1000 mAh and you use a charger 500 mA, to 
 total times = 1.7 + 0.4 + 0.5 = 2.6 (hour)
 Complete function calculateTime that accepts two arguments battery and charger, return how many hours can charge the battery from 0% to 100%. The result should be a number, round to 2 decimal places (In Haskell, no need to round it).
 */
-calculateTime = (b, c) => Math.round(b / c * 130) / 100;
+calculateTime = (b, c) => Math.round((b / c) * 130) / 100;

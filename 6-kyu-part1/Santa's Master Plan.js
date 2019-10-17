@@ -21,8 +21,11 @@ getAttendees( ['Easter Bunny', 'Tooth Fairy', 'Frosty the Snowman', 'Jack Frost'
      {name: 'Tooth Fairy', response: 'accepted'} 
    ] );// => returns ['Tooth Fairy', 'Frosty the Snowman']
 */
-function getAttendees(peopleInvited, responses){
-  let arr=responses.map(v=>v.name)
-  peopleInvited=peopleInvited.filter(v=>!arr.includes(v))
-  return responses.filter(v=>v.response==='accepted').map(v=>v.name).concat(peopleInvited)
+function getAttendees(peopleInvited, responses) {
+  let arr = responses.map(v => v.name);
+  peopleInvited = peopleInvited.filter(v => !arr.includes(v));
+  return responses
+    .filter(v => v.response === "accepted")
+    .map(v => v.name)
+    .concat(peopleInvited);
 }

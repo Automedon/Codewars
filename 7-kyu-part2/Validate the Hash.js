@@ -11,5 +11,18 @@ In this scenario, a valid hash value consists of five numbers and five lowercase
 Return an array of valid hash values, and eliminate any duplicates.
 */
 function malwareValidate(hashArr) {
-  return [...new Set(hashArr.filter(v=>(v.match(/[a-z]/g)===null?false:v.match(/[a-z]/g).length===5)&&(v.match(/[0-9]/g)===null?false:v.match(/[0-9]/g).length===5)&&v.match(/[*\(\)&]/g)===null))]
+  return [
+    ...new Set(
+      hashArr.filter(
+        v =>
+          (v.match(/[a-z]/g) === null
+            ? false
+            : v.match(/[a-z]/g).length === 5) &&
+          (v.match(/[0-9]/g) === null
+            ? false
+            : v.match(/[0-9]/g).length === 5) &&
+          v.match(/[*\(\)&]/g) === null
+      )
+    )
+  ];
 }

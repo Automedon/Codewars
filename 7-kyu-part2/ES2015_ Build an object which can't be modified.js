@@ -13,10 +13,10 @@ The initial value of stone is under below.
 
 */
 const stone = {
-  feature: 'earth',
+  feature: "earth",
   style: {
-    color: 'black'
+    color: "black"
   }
-}
-Object.freeze(stone)
-Object.freeze(stone.style)
+};
+Object.freeze(stone);
+Object.freeze(stone.style);

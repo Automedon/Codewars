@@ -14,6 +14,6 @@ Output:
 
 A string of HTML containing an anchor tag for each element of menuItems (with the appropriate href attribute and text content)
 */
-function generateMenu (menuItems) {
-  return menuItems.map(v=>`<a href="${v.url}">${v.text}</a>`).join(``)
+function generateMenu(menuItems) {
+  return menuItems.map(v => `<a href="${v.url}">${v.text}</a>`).join(``);
 }

@@ -9,10 +9,10 @@ Example:
 
 trigrams('the quick red') == the he_ e_q _qu qui uic ick ck_ k_r _re red
 */
-function trigrams( phrase ) {
-  const arr=[];
-  for (let i=0; i<phrase.length-2;i++){
-  arr.push(phrase.slice(i,i+3))
+function trigrams(phrase) {
+  const arr = [];
+  for (let i = 0; i < phrase.length - 2; i++) {
+    arr.push(phrase.slice(i, i + 3));
   }
-  return arr.map(v=>v.replace(/\s/g,'_')).join(' ')
+  return arr.map(v => v.replace(/\s/g, "_")).join(" ");
 }

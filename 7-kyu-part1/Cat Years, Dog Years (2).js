@@ -26,8 +26,8 @@ http://www.catster.com/cats-101/calculate-cat-age-in-cat-years
 http://www.slate.com/articles/news_and_politics/explainer/2009/05/a_dogs_life.html
 */
 var ownedCatAndDog = function(catYears, dogYears) {
-    function getAge( years,a) {
-        return years < 15 ? 0 : years < 24 ? 1 : 2 + (years - 24) / a;
-      }
-  return [Math.floor(getAge(catYears, 4)), Math.floor(getAge(dogYears, 5))];    
-}
+  function getAge(years, a) {
+    return years < 15 ? 0 : years < 24 ? 1 : 2 + (years - 24) / a;
+  }
+  return [Math.floor(getAge(catYears, 4)), Math.floor(getAge(dogYears, 5))];
+};

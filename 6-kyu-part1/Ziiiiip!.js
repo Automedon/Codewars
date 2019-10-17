@@ -18,17 +18,17 @@ If neither keys nor values are specified, then return {}
 zipObject()
 {}
 */
-function zipObject(keys, values=[]) {
-  if (!keys) return {}
-  keys=flat(keys.concat(values))
-  let str = []
-  let num = []
-  for (let i=0;i<keys.length;i++){
-    if (typeof keys[i]==='string') str.push(keys[i])
-    else num.push(keys[i])
+function zipObject(keys, values = []) {
+  if (!keys) return {};
+  keys = flat(keys.concat(values));
+  let str = [];
+  let num = [];
+  for (let i = 0; i < keys.length; i++) {
+    if (typeof keys[i] === "string") str.push(keys[i]);
+    else num.push(keys[i]);
   }
-  return str.reduce((a,b,i)=>(a[b]=(num[i]||undefined),a),{})
+  return str.reduce((a, b, i) => ((a[b] = num[i] || undefined), a), {});
 }
-const flat=(arr)=>{
-  return arr.reduce((a,b)=>a.concat(Array.isArray(b)?flat(b):b),[])
-}
+const flat = arr => {
+  return arr.reduce((a, b) => a.concat(Array.isArray(b) ? flat(b) : b), []);
+};

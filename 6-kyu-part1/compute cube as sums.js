@@ -15,17 +15,17 @@ For example:
 findSummands(3) = [7,9,11] // because 7 + 9 + 11 = 27, the cube of 3. Note that there are only n = 3 elements in the array.
 Write function findSummands(n) which will return an array of n consecutive odd numbers with the sum equal to the cube of n (n*n*n).
 */
-function findSummands(n){
-  let check=n*n*n
-  let c=n*n
-  while (c%2==0){
-    c--
+function findSummands(n) {
+  let check = n * n * n;
+  let c = n * n;
+  while (c % 2 == 0) {
+    c--;
   }
-  let c1=c
-  let arr=[c];
-  for (let i=1;i<n;i+=2){
-    arr.push(c+=2)
-    arr.unshift(c1-=2)
+  let c1 = c;
+  let arr = [c];
+  for (let i = 1; i < n; i += 2) {
+    arr.push((c += 2));
+    arr.unshift((c1 -= 2));
   }
-  return n%2==0?arr.slice(1):arr;
+  return n % 2 == 0 ? arr.slice(1) : arr;
 }

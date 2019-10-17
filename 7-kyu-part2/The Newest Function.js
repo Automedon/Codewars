@@ -6,6 +6,6 @@ Your assignment today is to write a function in JavaScript. It seems simple enou
 
 Create a function that won't throw an error no matter how new it is.
 */
-let newFunction = function newFunc(){
-  return newFunc
-}
+let newFunction = function newFunc() {
+  return newFunc;
+};

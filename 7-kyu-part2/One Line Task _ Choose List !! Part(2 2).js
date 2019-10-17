@@ -26,4 +26,4 @@ Example :
       n=5  return MadridList
 Your code should be less than 42 charcter !
 */
-Go=n=>n%5%2==0?'MadridList':'BarchaList'
+Go = n => ((n % 5) % 2 == 0 ? "MadridList" : "BarchaList");

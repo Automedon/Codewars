@@ -18,10 +18,12 @@ Please also try the other Kata in this series..
 
 AD2070:Help Lorimar troubleshoot his robots-Search and Disable
 */
-function sensorAnalysis(sensor_data){
+function sensorAnalysis(sensor_data) {
   let distances = sensor_data.map(s => s[1]);
   let mean = distances.reduce((prev, curr) => prev + curr) / distances.length;
-  let deviations = distances.map(d => Math.pow((d - mean), 2)).reduce((prev, curr) => prev + curr);
+  let deviations = distances
+    .map(d => Math.pow(d - mean, 2))
+    .reduce((prev, curr) => prev + curr);
   let std_dev = Math.sqrt(deviations / (sensor_data.length - 1));
 
   return [+mean.toFixed(4), +std_dev.toFixed(4)];

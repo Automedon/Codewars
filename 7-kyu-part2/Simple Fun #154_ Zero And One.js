@@ -23,5 +23,5 @@ The initial string.
 The minimum length of the string that may remain after applying the described operations several times.
 */
 function zeroAndOne(s) {
-  return s.replace(/01/g,'').replace(/10/g,'').length
+  return s.replace(/01/g, "").replace(/10/g, "").length;
 }

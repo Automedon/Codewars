@@ -15,8 +15,8 @@ Now empty the jar b and pour the water left in jar a (1 litre) into jar b, now j
 Now just fill again the jar a and pour that back into jar b to get 4 litres (Hope you understand)
 */
 
-let gcd=(a,b)=>b?gcd(b, a%b):a;
+let gcd = (a, b) => (b ? gcd(b, a % b) : a);
 
- function canIMeasure(a,b,c) {
-  return (c <= b && c %gcd(a,b) == 0);
+function canIMeasure(a, b, c) {
+  return c <= b && c % gcd(a, b) == 0;
 }

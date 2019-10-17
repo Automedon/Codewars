@@ -30,10 +30,10 @@ Each of the 3 programming languages will always be represented.
 This kata is part of the Coding Meetup series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: forEach, filter, map, reduce, some, every, find, findIndex. Other approaches to solving the katas are of course possible.
 */
 function isLanguageDiverse(list) {
-  const arr = list.map(v=>v.language)
-  const obj = {}
-  arr.map(v=>obj[v]=obj[v]?obj[v]+1:1)
-  const count = Object.values(obj).sort((a,b)=>b-a)
-  const max = count.splice(0,1)
-  return count.every(v=>v*2>=max)
+  const arr = list.map(v => v.language);
+  const obj = {};
+  arr.map(v => (obj[v] = obj[v] ? obj[v] + 1 : 1));
+  const count = Object.values(obj).sort((a, b) => b - a);
+  const max = count.splice(0, 1);
+  return count.every(v => v * 2 >= max);
 }

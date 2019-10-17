@@ -61,6 +61,6 @@ Specific time calculation to see the following example:
     so, sc("-+-+-++++++++++")=54
 Maybe this method is not the fastest way to finish the work, John will improve his method of work in the next kata:Remove screws II
 */
-function sc(screws){
-  return screws.match(/(?=(\+-|-\+))/g).length*5+screws.length*2-1;
+function sc(screws) {
+  return screws.match(/(?=(\+-|-\+))/g).length * 5 + screws.length * 2 - 1;
 }

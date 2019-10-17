@@ -40,41 +40,41 @@ Bash Note: The ouput strings should be separated by \r instead of \n. See "Sampl
 A forthcoming kata will study other tranformations.
 */
 function rot90Clock(strng) {
-    let arr = strng.split`\n`
-    let arr2 = []
-    for (let i=0;i<arr.length;i++){
-      let str = ''
-      for (let j=arr.length-1;j>=0;j--){
-        str+=arr[j][i]
-      }
-      arr2.push(str)
+  let arr = strng.split`\n`;
+  let arr2 = [];
+  for (let i = 0; i < arr.length; i++) {
+    let str = "";
+    for (let j = arr.length - 1; j >= 0; j--) {
+      str += arr[j][i];
     }
-    return arr2.join`\n`
+    arr2.push(str);
+  }
+  return arr2.join`\n`;
 }
 function diag1Sym(strng) {
-    let arr = strng.split`\n`
-    let arr2 = []
-    for (let i=0;i<arr.length;i++){
-      let str = ''
-      for (let j=0;j<arr.length;j++){
-        str+=arr[j][i]
-      }
-      arr2.push(str)
+  let arr = strng.split`\n`;
+  let arr2 = [];
+  for (let i = 0; i < arr.length; i++) {
+    let str = "";
+    for (let j = 0; j < arr.length; j++) {
+      str += arr[j][i];
     }
-    return arr2.join`\n`
+    arr2.push(str);
+  }
+  return arr2.join`\n`;
 }
 function selfieAndDiag1(strng) {
-       let arr = strng.split`\n`
-    let arr2 = []
-    for (let i=0;i<arr.length;i++){
-      let str = ''
-      for (let j=0;j<arr.length;j++){
-        str+=arr[j][i]
-      }
-      arr2.push(arr[i]+'|'+str)
+  let arr = strng.split`\n`;
+  let arr2 = [];
+  for (let i = 0; i < arr.length; i++) {
+    let str = "";
+    for (let j = 0; j < arr.length; j++) {
+      str += arr[j][i];
     }
-    return arr2.join`\n`
+    arr2.push(arr[i] + "|" + str);
+  }
+  return arr2.join`\n`;
 }
 function oper(fct, s) {
-    return fct(s)
+  return fct(s);
 }

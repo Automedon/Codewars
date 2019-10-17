@@ -19,19 +19,19 @@ Here is short list of operators:
 098 xxx xx xx - Kyivstar
 099 xxx xx xx - MTS Test [Just return "MTS"]
 */
-function detectOperator(a){
-const number=(''+a).slice(1,4)
-if (number==='039') return 'Golden Telecom'
-if (number==='050') return 'MTS'
-if (number==='063') return 'Life:)'
-if (number==='066') return 'MTS'
-if (number==='067') return 'Kyivstar'
-if (number==='068') return 'Beeline'
-if (number==='093') return 'Life:)'
-if (number==='095') return 'MTS'
-if (number==='096') return 'Kyivstar'
-if (number==='097') return 'Kyivstar'
-if (number==='098') return 'Kyivstar'
-if (number==='099') return 'MTS'
-return "no info"
+function detectOperator(a) {
+  const number = ("" + a).slice(1, 4);
+  if (number === "039") return "Golden Telecom";
+  if (number === "050") return "MTS";
+  if (number === "063") return "Life:)";
+  if (number === "066") return "MTS";
+  if (number === "067") return "Kyivstar";
+  if (number === "068") return "Beeline";
+  if (number === "093") return "Life:)";
+  if (number === "095") return "MTS";
+  if (number === "096") return "Kyivstar";
+  if (number === "097") return "Kyivstar";
+  if (number === "098") return "Kyivstar";
+  if (number === "099") return "MTS";
+  return "no info";
 }

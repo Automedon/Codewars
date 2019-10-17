@@ -14,6 +14,6 @@ Remember to convert the velocity from km/h to m/s or from m/s in km/h when neces
 The maximum height recorded by the device is not necessarily the maximum height reached by the ball.
 */
 function maxBall(v0) {
-  const v = v0 * 1000 * 10 / 3600;
-  return Math.round(v / 9.81); 
+  const v = (v0 * 1000 * 10) / 3600;
+  return Math.round(v / 9.81);
 }

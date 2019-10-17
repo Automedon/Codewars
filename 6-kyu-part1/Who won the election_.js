@@ -30,11 +30,11 @@ Please keep in mind the list of votes can be large (n <= 1,200,000). The given l
 Good luck and have fun.
 */
 function getWinner(l) {
-  let win = l.length/2
-  let obj={};
-  l.map(v=>obj[v]=obj[v]?obj[v]+1:1)
-  for (let vote in obj){
-  if (obj[vote]>win) return vote
+  let win = l.length / 2;
+  let obj = {};
+  l.map(v => (obj[v] = obj[v] ? obj[v] + 1 : 1));
+  for (let vote in obj) {
+    if (obj[vote] > win) return vote;
   }
-  return null 
+  return null;
 }

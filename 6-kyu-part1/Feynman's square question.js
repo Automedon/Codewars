@@ -21,10 +21,10 @@ countSquares(2) =  5
 countSquares(3) = 14
 (Adapted from the Sphere Online Judge problem SAMER08F by Diego Satoba)
 */
-function countSquares(n){
-  let num=0;
-  for (let i =0;i<=n;i++){
-    num+=(n - i)**2
+function countSquares(n) {
+  let num = 0;
+  for (let i = 0; i <= n; i++) {
+    num += (n - i) ** 2;
   }
-  return num
+  return num;
 }

@@ -27,7 +27,15 @@ n = 9 => result = "123121321"
 n = 10=> result = "1231221321"
 =======
 */
-function palindromization(s, n){
-  if(s==''||n<2) return 'Error!';
-  return s.repeat(n).slice(0,Math.floor(n/2))+s.repeat(n).slice(0,Math.ceil(n/2)).split('').reverse().join('');
+function palindromization(s, n) {
+  if (s == "" || n < 2) return "Error!";
+  return (
+    s.repeat(n).slice(0, Math.floor(n / 2)) +
+    s
+      .repeat(n)
+      .slice(0, Math.ceil(n / 2))
+      .split("")
+      .reverse()
+      .join("")
+  );
 }

@@ -17,19 +17,21 @@ Input/Output
 [output] integer array An array of number of 100, 50 and 20 dollar bills needed to complete the withdraw (in that order).
 */
 function withdraw(n) {
-  let change = [0,0,0]
-  while (n>=20){
-    if (n%50===0){break}
-    n-=20
-    change[2]++
+  let change = [0, 0, 0];
+  while (n >= 20) {
+    if (n % 50 === 0) {
+      break;
+    }
+    n -= 20;
+    change[2]++;
   }
-  while (n>=100){
-    n-=100
-    change[0]++
+  while (n >= 100) {
+    n -= 100;
+    change[0]++;
   }
-  while (n>=50){
-    n-=50
-    change[1]++
+  while (n >= 50) {
+    n -= 50;
+    change[1]++;
   }
-  return change
+  return change;
 }

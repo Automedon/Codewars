@@ -4,7 +4,7 @@ In geometry, a cube is a three-dimensional solid object bounded by six square fa
 
 You are given a task of finding a if the provided value is a perfect cube!
 */
-function youAreACube (value){
-  let n = value**(1/3)
-  return n.toFixed(2)%1===0
+function youAreACube(value) {
+  let n = value ** (1 / 3);
+  return n.toFixed(2) % 1 === 0;
 }

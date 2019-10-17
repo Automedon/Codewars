@@ -112,11 +112,14 @@ findSimilarity("bag dog dig dot doog dogs","god") should return ""
 
 Hint: Use filter() will make your work easier; If you don't know how to solve the kata, please refer to the examples of lesson.
 */
-function findSimilarity(str,word){
-  var regstr=word[0]                             //first letter
-          +word.slice(1,-1).replace(/./g,".")  //middle letters
-          +word.slice(-1);                     //last letter
-  var reg1=new RegExp("^"+regstr+"$");
-  return str.split(' ').filter(v=>reg1.test(v)).join(' ')
-  
+function findSimilarity(str, word) {
+  var regstr =
+    word[0] + //first letter
+    word.slice(1, -1).replace(/./g, ".") + //middle letters
+    word.slice(-1); //last letter
+  var reg1 = new RegExp("^" + regstr + "$");
+  return str
+    .split(" ")
+    .filter(v => reg1.test(v))
+    .join(" ");
 }

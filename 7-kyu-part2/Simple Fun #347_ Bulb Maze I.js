@@ -57,10 +57,10 @@ step 4 :  xo  oxox
               ^ <--------You were caught by the enemy :(
 Happy Coding ^_^
 */
-function bulbMaze(map){
-  for(let i=0;i<map.length;i++){
-    if (map[i]!=='x'&&map[i]!==' ') return false
-    map=map.replace(/x|o/g,v=>v==='x'?'o':'x')
+function bulbMaze(map) {
+  for (let i = 0; i < map.length; i++) {
+    if (map[i] !== "x" && map[i] !== " ") return false;
+    map = map.replace(/x|o/g, v => (v === "x" ? "o" : "x"));
   }
-  return true
+  return true;
 }

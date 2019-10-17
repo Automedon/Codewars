@@ -19,11 +19,11 @@ Source
 All of Computer Science http://www.wolframalpha.com/input/?i=binary&a=C.binary-_MathWorld-
 */
 function toDecimal(decimal) {
-  if (/[^012]/.test(decimal)) return 0
-  let str=decimal.split``.reverse();
-  let sum=0
-  for (let i=0;i<str.length;i++){
-    sum+=(Math.pow(3,i)*str[i])
+  if (/[^012]/.test(decimal)) return 0;
+  let str = decimal.split``.reverse();
+  let sum = 0;
+  for (let i = 0; i < str.length; i++) {
+    sum += Math.pow(3, i) * str[i];
   }
-  return sum
+  return sum;
 }

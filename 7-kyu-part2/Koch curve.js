@@ -13,7 +13,6 @@ Output: An array of angles of rotation. The angle of rotation must be in the int
 */
 function kochCurve(n) {
   let arr = [];
-  while ( n-- )
-    arr = [ ...arr, 60, ...arr, -120, ...arr, 60, ...arr ];
+  while (n--) arr = [...arr, 60, ...arr, -120, ...arr, 60, ...arr];
   return arr;
 }

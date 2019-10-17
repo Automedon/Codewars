@@ -40,6 +40,7 @@ goingToSchool[i] is true, if the ith bus goes to school, and false otherwise.
 Index of the bus to take (0-based).
 */
 function whichBusToTake(busesColors, goingToSchool) {
-  const index = (color) => busesColors.findIndex((c, i) => c == color && goingToSchool[i])
-  return index('red') >= 0 ? index('red') : index('blue')
+  const index = color =>
+    busesColors.findIndex((c, i) => c == color && goingToSchool[i]);
+  return index("red") >= 0 ? index("red") : index("blue");
 }

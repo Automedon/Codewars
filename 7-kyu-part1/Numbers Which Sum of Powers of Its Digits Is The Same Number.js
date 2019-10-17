@@ -23,7 +23,10 @@ Enjoy it !!
 function eqSumPowdig(hMax, exp) {
   let res = [];
   for (let i = 2; i <= hMax; i++) {
-    let s = i.toString().split('').reduce((a, v) => a + Math.pow(v, exp), 0);
+    let s = i
+      .toString()
+      .split("")
+      .reduce((a, v) => a + Math.pow(v, exp), 0);
     if (s == i) {
       res.push(s);
     }

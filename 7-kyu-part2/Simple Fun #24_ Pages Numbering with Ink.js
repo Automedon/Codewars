@@ -40,12 +40,13 @@ Constraints: 1 ≤ numberOfDigits ≤ 1000 (or equivalent in PHP)
 The last printed page number.
 */
 function pagesNumberingWithInk(current, numberOfDigits) {
-        while (true){
-        numberOfDigits -= current.toString().length
-        if (numberOfDigits >= current.toString().length){
-            current += 1
-            }
-        else {break}
-        }
-    return current
+  while (true) {
+    numberOfDigits -= current.toString().length;
+    if (numberOfDigits >= current.toString().length) {
+      current += 1;
+    } else {
+      break;
+    }
+  }
+  return current;
 }

@@ -41,13 +41,13 @@ John go downstairs by walking:
 
 5 x 4 = 20
 */
-function shortestTime(n,m,speeds){
-  if (n===1) return 0
-  let t = Math.abs(m-n)*speeds[0]
-  let open=speeds[1]
-  let close=speeds[2]
-  let floors = n-1
-  let elevator = (floors*speeds[0])+open+close+t+open
-  let walk = (n-1)*speeds[3]
-  return elevator<=walk?elevator:walk 
+function shortestTime(n, m, speeds) {
+  if (n === 1) return 0;
+  let t = Math.abs(m - n) * speeds[0];
+  let open = speeds[1];
+  let close = speeds[2];
+  let floors = n - 1;
+  let elevator = floors * speeds[0] + open + close + t + open;
+  let walk = (n - 1) * speeds[3];
+  return elevator <= walk ? elevator : walk;
 }

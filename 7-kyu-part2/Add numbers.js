@@ -11,6 +11,6 @@ add(1, 1) = 2
 add(1, 2, 3) = 6
 add(-3, -2, -1, 1, 2, 3, 4) = 4
 */
-function add (...n) {
-  return n.reduce((a,b)=>a+b,0)
+function add(...n) {
+  return n.reduce((a, b) => a + b, 0);
 }

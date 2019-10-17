@@ -17,7 +17,15 @@ This all seems easy enough! The only problem is that our toaster is unbelievably
 
 If you use ES6 features like Let and Const declaration, the code will get longer due to the transformation by babel.
 */
-let toaster=(b)=>{
-b=b.toLowerCase()
-return b=="white bread"?"1 min":b=="frozen white bread"?"1.5 mins":
-b=="brown bread"?"2 mins":b=="frozen brown bread"?"3 mins":'Please do not put that in the toaster!'}
+let toaster = b => {
+  b = b.toLowerCase();
+  return b == "white bread"
+    ? "1 min"
+    : b == "frozen white bread"
+    ? "1.5 mins"
+    : b == "brown bread"
+    ? "2 mins"
+    : b == "frozen brown bread"
+    ? "3 mins"
+    : "Please do not put that in the toaster!";
+};

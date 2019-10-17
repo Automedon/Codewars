@@ -14,9 +14,10 @@ stringChunk('hello world', 3) // ['hel', 'lo ', 'wor', 'ld']
 stringChunk('sunny day', 0) // []
 */
 function stringChunk(str, n) {
-  if (n<1 || typeof n!='number'||n===undefined) return []
-  const arr=[];
-  for (let i=0; i<str.length-1;i+=n)
-  {arr.push(str.slice(i,i+n))}
-  return arr
+  if (n < 1 || typeof n != "number" || n === undefined) return [];
+  const arr = [];
+  for (let i = 0; i < str.length - 1; i += n) {
+    arr.push(str.slice(i, i + n));
+  }
+  return arr;
 }

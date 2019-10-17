@@ -32,16 +32,14 @@ lucasnum(10) -> 123
 const ns = {
   0: 2,
   1: 1
-}
-function lucasnum(n){
+};
+function lucasnum(n) {
   if (ns[n]) {
     return ns[n];
-  }
-  else if (n < 0) {
+  } else if (n < 0) {
     ns[n] = lucasnum(n + 2) - lucasnum(n + 1);
     return ns[n];
-  }
-  else {
+  } else {
     ns[n] = lucasnum(n - 1) + lucasnum(n - 2);
     return ns[n];
   }

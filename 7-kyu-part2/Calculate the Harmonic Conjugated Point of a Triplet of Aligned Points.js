@@ -36,6 +36,6 @@ harmonPointTrip(3, 9, 18) -----> "6.75"
 Enjoy it and happy coding!!
 */
 function harmonPointTrip(a, b, c) {
-    let answ = (((a - c) / (b - c)) * b + a) / (1 + (a - c) / (b - c));
-    return answ.toFixed(2);
+  let answ = (((a - c) / (b - c)) * b + a) / (1 + (a - c) / (b - c));
+  return answ.toFixed(2);
 }

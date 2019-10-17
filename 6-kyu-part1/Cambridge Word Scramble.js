@@ -22,11 +22,16 @@ Checks the function returns undefined for non-strings
 Checks that word interiors (the letters between the first and last) maintain the same letters, albeit in a different order
 Checks that letters are randomly assigned.
 */
-function mixwords(str){
-   if (typeof str ==='string'){
-     return str.replace(/[a-z]+/gi,v=>{
-     if (v.length>2) return v.slice(0,1)+v.slice(1,-1).split``.sort((a,b)=>Math.random()-0.5).join``+v.slice(-1)
-     return v
-     })
-   }
-};
+function mixwords(str) {
+  if (typeof str === "string") {
+    return str.replace(/[a-z]+/gi, v => {
+      if (v.length > 2)
+        return (
+          v.slice(0, 1) +
+          v.slice(1, -1).split``.sort((a, b) => Math.random() - 0.5).join`` +
+          v.slice(-1)
+        );
+      return v;
+    });
+  }
+}

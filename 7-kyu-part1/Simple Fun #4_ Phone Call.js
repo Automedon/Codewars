@@ -46,21 +46,19 @@ Constraints: 2 ≤ s ≤ 100
 [output] an integer
 */
 function phoneCall(min1, min2_10, min11, s) {
-   if (min1 > s) return 0;
-    let cost = 0;
-    for (let i=1; ;i++) {
-        if (i==1) {
-            cost += min1;
-        }
-        if (i>1 && i<=10) {
-            cost += min2_10;
-        }
-        if (i>=11) {
-            cost += min11;
-        }
-        if (cost>s)
-            return i-1;
-        if (cost == s)
-            return i;
+  if (min1 > s) return 0;
+  let cost = 0;
+  for (let i = 1; ; i++) {
+    if (i == 1) {
+      cost += min1;
     }
+    if (i > 1 && i <= 10) {
+      cost += min2_10;
+    }
+    if (i >= 11) {
+      cost += min11;
+    }
+    if (cost > s) return i - 1;
+    if (cost == s) return i;
+  }
 }

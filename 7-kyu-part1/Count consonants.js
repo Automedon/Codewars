@@ -6,5 +6,5 @@ Consonants are all letters used to write English excluding the vowels a, e, i, o
 */
 
 function consonantCount(str) {
-  return str.split('').filter(v=>/[qzwsxdcrfvtgbyhnjmklp]/gi.test(v)).length
+  return str.split("").filter(v => /[qzwsxdcrfvtgbyhnjmklp]/gi.test(v)).length;
 }

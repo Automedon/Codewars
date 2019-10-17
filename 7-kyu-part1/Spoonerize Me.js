@@ -13,6 +13,6 @@ NOTE: All input strings will contain only two words. Spoonerisms can be more com
 Once you have completed this kata, a slightly more challenging take on the idea can be found here: http://www.codewars.com/kata/56dbed3a13c2f61ae3000bcd
 */
 function spoonerize(words) {
-   const arr=words.split(' ')
-   return arr[1][0]+arr[0].slice(1)+' '+arr[0][0]+arr[1].slice(1)
+  const arr = words.split(" ");
+  return arr[1][0] + arr[0].slice(1) + " " + arr[0][0] + arr[1].slice(1);
 }

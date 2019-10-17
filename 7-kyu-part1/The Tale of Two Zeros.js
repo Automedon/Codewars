@@ -7,5 +7,5 @@ Sometimes even Negative Zero doubts he exist, which is an extremely harsh fate f
 Please help Negative Zero prove his identity by finishing the isNegativeZero function.
 */
 function isNegativeZero(x) {
-  return Object.is(x,-0)
+  return Object.is(x, -0);
 }

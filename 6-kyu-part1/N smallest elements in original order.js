@@ -16,9 +16,12 @@ firstNSmallest([1,2,3,-4,0],3) === [1,-4,0]
 firstNSmallest([1,2,3,4,5],0) === []
 Performance version by FArekkusu also available.
 */
-function firstNSmallest(array, n){
+function firstNSmallest(array, n) {
   const result = [];
-  const arrSorted = array.slice().sort((a, b) => a - b).slice(0, n);
+  const arrSorted = array
+    .slice()
+    .sort((a, b) => a - b)
+    .slice(0, n);
   for (let i = 0; i < array.length; i++) {
     if (arrSorted.includes(array[i])) {
       result.push(...arrSorted.splice(arrSorted.indexOf(array[i]), 1));

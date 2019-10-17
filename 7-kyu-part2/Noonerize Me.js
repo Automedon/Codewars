@@ -10,8 +10,12 @@ Your code must test that all array items are numbers and return "invalid array" 
 When the inputs are valid, they will always be integers, no floats will be passed. However, you must take into account that the numbers will be of varying magnitude, between and within test cases.
 */
 function noonerize(numbers) {
-  if (!numbers.every(v=>typeof v === 'number')){ return "invalid array"  }
-  let n1 = (numbers[1].toString().slice(0,1)+numbers[0].toString().slice(1))*1
-  let n2 = (numbers[0].toString().slice(0,1)+numbers[1].toString().slice(1))*1
-  return Math.abs(n1-n2)
+  if (!numbers.every(v => typeof v === "number")) {
+    return "invalid array";
+  }
+  let n1 =
+    (numbers[1].toString().slice(0, 1) + numbers[0].toString().slice(1)) * 1;
+  let n2 =
+    (numbers[0].toString().slice(0, 1) + numbers[1].toString().slice(1)) * 1;
+  return Math.abs(n1 - n2);
 }

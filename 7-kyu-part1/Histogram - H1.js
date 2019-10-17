@@ -23,7 +23,6 @@ A count is displayed beside each bar except where the count is 0
 The number of rolls may vary but there are never more than 100
 */
 
-
 function histogram(results) {
   return `6|${"#".repeat(results[5])}${results[5] > 0 ? " " + results[5] : ""}
           5|${"#".repeat(results[4])}${results[4] > 0 ? " " + results[4] : ""}
@@ -31,5 +30,5 @@ function histogram(results) {
           3|${"#".repeat(results[2])}${results[2] > 0 ? " " + results[2] : ""}
           2|${"#".repeat(results[1])}${results[1] > 0 ? " " + results[1] : ""}
           1|${"#".repeat(results[0])}${results[0] > 0 ? " " + results[0] : ""}
-`
+`;
 }

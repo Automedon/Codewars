@@ -28,5 +28,10 @@ getHonorPath(20, 11) should return {}
 For the purpose of this kata you do not have to worry for any non-integer arguments for honor scores
 */
 function getHonorPath(honorScore, targetHonorScore) {
-    return honorScore < targetHonorScore ? {"1kyus": Math.floor((targetHonorScore - honorScore) / 2), "2kyus": (targetHonorScore - honorScore) % 2 } : {};
+  return honorScore < targetHonorScore
+    ? {
+        "1kyus": Math.floor((targetHonorScore - honorScore) / 2),
+        "2kyus": (targetHonorScore - honorScore) % 2
+      }
+    : {};
 }

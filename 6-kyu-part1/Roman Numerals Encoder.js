@@ -22,18 +22,31 @@ Remember that there can't be more than 3 identical symbols in a row.
 More about roman numerals - http://en.wikipedia.org/wiki/Roman_numerals
 */
 
-function solution(number)
-{
-  var result   = '',
-      decimals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1],
-      roman    = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+function solution(number) {
+  var result = "",
+    decimals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1],
+    roman = [
+      "M",
+      "CM",
+      "D",
+      "CD",
+      "C",
+      "XC",
+      "L",
+      "XL",
+      "X",
+      "IX",
+      "V",
+      "IV",
+      "I"
+    ];
 
-  decimals.map(function (value, index) {
+  decimals.map(function(value, index) {
     while (number >= value) {
       result += roman[index];
       number -= value;
     }
   });
-  
+
   return result;
 }

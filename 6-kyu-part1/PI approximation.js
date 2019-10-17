@@ -23,8 +23,11 @@ Unfortunately, this series converges too slowly to be useful, as it takes over 3
 About PI : http://www.geom.uiuc.edu/~huberty/math5337/groupe/expresspi.html
 */
 function iterPi(epsilon) {
-  let pi = 0, iterations = 0, factor = 1, divider = 1;
-  while (Math.abs(Math.PI - (pi * 4)) >= epsilon) {
+  let pi = 0,
+    iterations = 0,
+    factor = 1,
+    divider = 1;
+  while (Math.abs(Math.PI - pi * 4) >= epsilon) {
     pi += factor / divider;
     factor = -factor;
     divider += 2;

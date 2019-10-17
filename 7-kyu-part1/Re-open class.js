@@ -1,1 +1,1 @@
-String.prototype.myNewMethod = String.prototype.toUpperCase
+String.prototype.myNewMethod = String.prototype.toUpperCase;

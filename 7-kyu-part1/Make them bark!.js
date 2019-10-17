@@ -1,1 +1,3 @@
-Dog.prototype.bark = function() { return 'Woof!' }
+Dog.prototype.bark = function() {
+  return "Woof!";
+};

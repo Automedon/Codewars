@@ -1,4 +1,3 @@
-function toNumberArray(stringarray)
-{
+function toNumberArray(stringarray) {
   return stringarray.map(parseFloat);
 }

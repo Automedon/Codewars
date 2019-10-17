@@ -24,6 +24,6 @@ Test.assertSimilar(appendArrays([1,2], [1]), [1,2,1])
 Test.assertSimilar(appendArrays([2], [1,1,1]), [2,1,1,1])
 */
 
-function appendArrays (arr1, arr2) {
-return arr1.concat(arr2)
+function appendArrays(arr1, arr2) {
+  return arr1.concat(arr2);
 }

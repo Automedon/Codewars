@@ -15,5 +15,5 @@ returns ['jaguar', 'kangaroo', 'camel', 'ostrich', 'deer']
 Each element in the arrays will start with a unique letter and there will only be a single match for each element.
 */
 function sortArray(a1, a2) {
- return a1.map(e => a2.find(w => e[0] === w[0]));
+  return a1.map(e => a2.find(w => e[0] === w[0]));
 }

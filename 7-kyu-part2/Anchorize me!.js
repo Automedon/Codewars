@@ -18,6 +18,9 @@ Input
 Output
 'hello <a href="http://world.com">http://world.com</a> !'
 */
-function anchorize(text){
-  return text.replace(/((http|https|ftp|ftps|file|smb):\/{2}[a-zA-Z\d:\/.]+)\b/gim, '<a href="$1">$1</a>');
+function anchorize(text) {
+  return text.replace(
+    /((http|https|ftp|ftps|file|smb):\/{2}[a-zA-Z\d:\/.]+)\b/gim,
+    '<a href="$1">$1</a>'
+  );
 }

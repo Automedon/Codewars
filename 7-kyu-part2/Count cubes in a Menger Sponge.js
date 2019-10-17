@@ -32,10 +32,10 @@ calc_ms(6) == 64000000
 Happy coding!
 */
 function calc_ms(n) {
-  let res=1;
-  while(n>0){
-  res*=20
-  n--
+  let res = 1;
+  while (n > 0) {
+    res *= 20;
+    n--;
   }
-  return res
+  return res;
 }

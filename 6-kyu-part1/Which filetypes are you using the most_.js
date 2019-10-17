@@ -29,14 +29,25 @@ files = ['Lakey - Better days.mp3',
 would return ['.mp3'], because it appears more times then any other extension, and no other extension has an equal amount of appearences.
 */
 function solve(files) {
-  let dict = {}
-  let arr = [].concat(...files.map(v=>v.match(/\.\w+$/g))).map(v=>dict[v]=dict[v]?dict[v]+1:1)
-  let max = Math.max(...Object.values(dict)) 
-  let answ = []
-  for (let i in dict){
-    if (dict[i]===max) answ.push(i)
+  let dict = {};
+  let arr = []
+    .concat(...files.map(v => v.match(/\.\w+$/g)))
+    .map(v => (dict[v] = dict[v] ? dict[v] + 1 : 1));
+  let max = Math.max(...Object.values(dict));
+  let answ = [];
+  for (let i in dict) {
+    if (dict[i] === max) answ.push(i);
   }
-  let left = answ.filter(v=>v.split``.slice(1).some(v=>v===v.toUpperCase()&&!/[0-9]/.test(v))).sort((a,b)=>a.localeCompare(b))
-  let right = answ.filter(v=>!v.split``.slice(1).some(v=>v===v.toUpperCase()&&!/[0-9]/.test(v))).sort((a,b)=>a.localeCompare(b))
-  return [...left,...right]
+  let left = answ
+    .filter(v =>
+      v.split``.slice(1).some(v => v === v.toUpperCase() && !/[0-9]/.test(v))
+    )
+    .sort((a, b) => a.localeCompare(b));
+  let right = answ
+    .filter(
+      v =>
+        !v.split``.slice(1).some(v => v === v.toUpperCase() && !/[0-9]/.test(v))
+    )
+    .sort((a, b) => a.localeCompare(b));
+  return [...left, ...right];
 }

@@ -38,7 +38,7 @@ num == 16 would return 4 steps:
 4 steps
 */
 function shortestStepsToNum(num) {
-  if(num <= 1) return 0;
-  if(num%2 == 1) return 1 + shortestStepsToNum(num -1);
-  return 1 + shortestStepsToNum(num/2);
+  if (num <= 1) return 0;
+  if (num % 2 == 1) return 1 + shortestStepsToNum(num - 1);
+  return 1 + shortestStepsToNum(num / 2);
 }

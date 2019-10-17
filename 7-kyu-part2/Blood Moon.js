@@ -8,6 +8,6 @@ Three semicircles are drawn on AB, AD, and AF. Here CD is perpendicular to AB an
 Task
 Given the radius of the semicircle ADBCA, find out the area of the lune AGFHA (the shaded area).
 */
-function bloodMoon(r){
-  return  r*r/4
+function bloodMoon(r) {
+  return (r * r) / 4;
 }

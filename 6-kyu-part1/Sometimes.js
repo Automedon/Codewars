@@ -27,13 +27,13 @@ s(1, 5) // returns 6
 s(1, 4) // returns 'hmm, I don't know!'
 */
 function sometimes(fn) {
-  let i=0
-  return (a,b)=>{
-  i++
-  if (i<3){
-  return fn(a,b);
-  }
-  if (i%2!==0) return fn(a,b)
-  if (i%2===0) return `hmm, I don't know!`
-  }
+  let i = 0;
+  return (a, b) => {
+    i++;
+    if (i < 3) {
+      return fn(a, b);
+    }
+    if (i % 2 !== 0) return fn(a, b);
+    if (i % 2 === 0) return `hmm, I don't know!`;
+  };
 }

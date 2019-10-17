@@ -15,13 +15,15 @@ To build the triangle, start with a single 1 at the top, for each number in the 
         [1   3   3   1]
 */
 function pascal(depth) {
-  let result = []
+  let result = [];
   for (let i = 1; i <= depth; ++i) {
-    var row = []
+    var row = [];
     for (let j = 0; j < i; ++j) {
-      row.push(j == 0 || j == i - 1 ? 1 : result[i-2][j-1] + result[i-2][j])
+      row.push(
+        j == 0 || j == i - 1 ? 1 : result[i - 2][j - 1] + result[i - 2][j]
+      );
     }
-    result.push(row)
+    result.push(row);
   }
-  return JSON.stringify(result)
+  return JSON.stringify(result);
 }

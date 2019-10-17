@@ -17,6 +17,15 @@ function ringBank(rings, monitors, giantrings, chaosEmeralds, sonicHit, sonicShi
 }
 Good luck! and remember to use the Example Tests if you ever got stuck! ;)
 */
-function ringBank(rings, monitors, giantRings, chaosEmeralds, sonicHit, sonicShield){
-  return sonicHit && !sonicShield ? 0 : rings + monitors * 10 + (chaosEmeralds === 7 ? giantRings * 50 : 0)
+function ringBank(
+  rings,
+  monitors,
+  giantRings,
+  chaosEmeralds,
+  sonicHit,
+  sonicShield
+) {
+  return sonicHit && !sonicShield
+    ? 0
+    : rings + monitors * 10 + (chaosEmeralds === 7 ? giantRings * 50 : 0);
 }

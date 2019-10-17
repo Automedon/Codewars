@@ -19,14 +19,14 @@ Return one of the possible answer, you can pass the test.
 
 If there is ```no equation between a,b,c```, return ```""```
 */
-function sc(a,b,c){
-  if (a+b===c) return `${a}+${b}=${c}`
-  if (a-b===c) return `${a}-${b}=${c}`
-  if (a*b===c) return `${a}*${b}=${c}`
-  if (a/b===c) return `${a}/${b}=${c}`
-  if (a+c===b) return `${a}+${c}=${b}`
-  if (a-c===b) return `${a}-${c}=${b}`
-  if (a*c===b) return `${a}*${c}=${b}`
-  if (a/c===b) return `${a}/${c}=${b}`
-  return ''
+function sc(a, b, c) {
+  if (a + b === c) return `${a}+${b}=${c}`;
+  if (a - b === c) return `${a}-${b}=${c}`;
+  if (a * b === c) return `${a}*${b}=${c}`;
+  if (a / b === c) return `${a}/${b}=${c}`;
+  if (a + c === b) return `${a}+${c}=${b}`;
+  if (a - c === b) return `${a}-${c}=${b}`;
+  if (a * c === b) return `${a}*${c}=${b}`;
+  if (a / c === b) return `${a}/${c}=${b}`;
+  return "";
 }

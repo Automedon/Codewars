@@ -32,12 +32,12 @@ When you're done you'll be shown the average runtime your code took to finish al
 
 ** Collapse 'Test cases' or scroll down to the end of the test cases to see your code's Average runtime **
 */
-function addedChar(s1, s2){
-  const obj1={};
-  const obj2={};
-  s1.split``.map(v=>obj1[v]=obj1[v]?obj1[v]+1:1)
-  s2.split``.map(v=>obj2[v]=obj2[v]?obj2[v]+1:1)
-  for (let i in obj2){ 
-    if (obj2[i]>obj1[i]||obj1[i]===undefined) return i
+function addedChar(s1, s2) {
+  const obj1 = {};
+  const obj2 = {};
+  s1.split``.map(v => (obj1[v] = obj1[v] ? obj1[v] + 1 : 1));
+  s2.split``.map(v => (obj2[v] = obj2[v] ? obj2[v] + 1 : 1));
+  for (let i in obj2) {
+    if (obj2[i] > obj1[i] || obj1[i] === undefined) return i;
   }
 }

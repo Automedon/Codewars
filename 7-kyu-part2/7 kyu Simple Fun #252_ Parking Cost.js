@@ -43,7 +43,13 @@ You spend 40 minutes in the parking lot, so you'll need to pay for the first 10 
 function parkingCost(timeIn, timeOut) {
   const tI = timeIn.split(":");
   const tO = timeOut.split(":");
-  let time = new Date(new Date(0,0,0,tO[0],tO[1])-new Date(0,0,0,tI[0],tI[1]))
-  time = time.getHours()*60+time.getMinutes();
-  return (time <= 30) ? 0 : (time <= 120) ? Math.ceil((time-30)/10) : 9+(Math.ceil((time-120)/10))*2
+  let time = new Date(
+    new Date(0, 0, 0, tO[0], tO[1]) - new Date(0, 0, 0, tI[0], tI[1])
+  );
+  time = time.getHours() * 60 + time.getMinutes();
+  return time <= 30
+    ? 0
+    : time <= 120
+    ? Math.ceil((time - 30) / 10)
+    : 9 + Math.ceil((time - 120) / 10) * 2;
 }

@@ -8,9 +8,31 @@ Create a moreZeros function which will receive a string for input, and return an
         --> ['a','b','d']
 Empty, null, undefined, or no input should return an empty array. You do not need to test for other input data types (no arrays, objects, etc.); input will only be a string or null/undefined/empty/no input.
 */
-function moreZeros(s){
-  if (!s) return []
-  return [...new Set(s.split('').filter(v=>
-  (v.charCodeAt().toString(2).match(/0/g)===null?0:v.charCodeAt().toString(2).match(/0/g).length)>
-  (v.charCodeAt().toString(2).match(/1/g)===null?0:v.charCodeAt().toString(2).match(/1/g).length)))]
+function moreZeros(s) {
+  if (!s) return [];
+  return [
+    ...new Set(
+      s.split("").filter(
+        v =>
+          (v
+            .charCodeAt()
+            .toString(2)
+            .match(/0/g) === null
+            ? 0
+            : v
+                .charCodeAt()
+                .toString(2)
+                .match(/0/g).length) >
+          (v
+            .charCodeAt()
+            .toString(2)
+            .match(/1/g) === null
+            ? 0
+            : v
+                .charCodeAt()
+                .toString(2)
+                .match(/1/g).length)
+      )
+    )
+  ];
 }

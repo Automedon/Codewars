@@ -11,11 +11,14 @@ You can assume all inputs will be valid positive integers.
 
 Hint: The harmonic mean is the total number of divisors divided by the sum of their reciprocals.
 */
-function isOre(n){
-   let divisors = []
-   for (let i=0;i<=n;i++){
-     if (n%i===0) divisors.push(i)
-   }
-   let d = Math.round((divisors.length/divisors.reduce((a,b)=>a+1/b,0))*1000)/1000
-   return d===parseInt(d)
+function isOre(n) {
+  let divisors = [];
+  for (let i = 0; i <= n; i++) {
+    if (n % i === 0) divisors.push(i);
+  }
+  let d =
+    Math.round(
+      (divisors.length / divisors.reduce((a, b) => a + 1 / b, 0)) * 1000
+    ) / 1000;
+  return d === parseInt(d);
 }

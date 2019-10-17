@@ -1,3 +1,3 @@
 function stringify(list) {
-  return list === null ? "null" : `${list.data} -> ${stringify(list.next)}`; 
+  return list === null ? "null" : `${list.data} -> ${stringify(list.next)}`;
 }

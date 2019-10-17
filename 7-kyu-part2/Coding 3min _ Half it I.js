@@ -37,7 +37,11 @@ halfIt(null)=0
 halfIt(undefined)=0
 ```
 */
-function halfIt(n){
-  if (!Number.isFinite(n)) return 0
-  return n.toString().split``.map(v=>Number.isFinite(v*1)?Math.round(v*1/2):v).join``*1
+function halfIt(n) {
+  if (!Number.isFinite(n)) return 0;
+  return (
+    n.toString().split``.map(v =>
+      Number.isFinite(v * 1) ? Math.round((v * 1) / 2) : v
+    ).join`` * 1
+  );
 }

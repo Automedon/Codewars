@@ -37,12 +37,31 @@ slot("!!?!!") === 200
 slot("!!?!?") === 100
 slot("!?!?!") === 0
 */
-function slot(s){
-  if (s === "!!!!!" || s === "?????") {return 1000};
-  if (s.includes("!!!!") || s.includes("????")) {return 800};
-  if (s === "!!!??" || s === "???!!" || s === '??!!!' || s === '!!???') {return 500};
-  if (s.includes("!!!") || s.includes("???")) {return 300};
-  if (s === "!!?!!" || s === "??!??" || s === '!!??!' || s === '??!!?' || s === '!??!!' || s === '?!!??') {return 200};
-  if (s.includes("??") || s.includes("!!")) {return 100};
+function slot(s) {
+  if (s === "!!!!!" || s === "?????") {
+    return 1000;
+  }
+  if (s.includes("!!!!") || s.includes("????")) {
+    return 800;
+  }
+  if (s === "!!!??" || s === "???!!" || s === "??!!!" || s === "!!???") {
+    return 500;
+  }
+  if (s.includes("!!!") || s.includes("???")) {
+    return 300;
+  }
+  if (
+    s === "!!?!!" ||
+    s === "??!??" ||
+    s === "!!??!" ||
+    s === "??!!?" ||
+    s === "!??!!" ||
+    s === "?!!??"
+  ) {
+    return 200;
+  }
+  if (s.includes("??") || s.includes("!!")) {
+    return 100;
+  }
   return 0;
 }

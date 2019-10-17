@@ -33,10 +33,11 @@ Tune Your Code , There are 250 Assertions , 100.000 element For Each .
 Only O(N) Complexity Solutions Will pass .
 */
 function wheatFromChaff(values) {
-  for (let head = 0, tail = values.length - 1;head < tail;){
-    while (values[head] < 0) head++
-    while (values[tail] > 0) tail--
-    if (head < tail)[values[tail], values[head]] = [values[head], values[tail]]
+  for (let head = 0, tail = values.length - 1; head < tail; ) {
+    while (values[head] < 0) head++;
+    while (values[tail] > 0) tail--;
+    if (head < tail)
+      [values[tail], values[head]] = [values[head], values[tail]];
   }
-  return values
+  return values;
 }

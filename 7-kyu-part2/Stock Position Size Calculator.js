@@ -57,7 +57,9 @@ positionSize('LONG', 3, 3.00, 10000, 2)  // false
 positionSize('SHORT', 4.54, 4.53, 6000, 3.75)  // false
 */
 function positionSize(type, price, stoploss, capital, risk) {
-  let loss = capital * risk / 100
-  if (type == 'LONG') return price > stoploss && Math.round(loss / (price - stoploss))
-  if (type == 'SHORT') return price < stoploss && Math.round(loss / (stoploss - price))
+  let loss = (capital * risk) / 100;
+  if (type == "LONG")
+    return price > stoploss && Math.round(loss / (price - stoploss));
+  if (type == "SHORT")
+    return price < stoploss && Math.round(loss / (stoploss - price));
 }

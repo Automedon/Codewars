@@ -7,7 +7,7 @@ If the final sum is less than or equal to the maximum value allowed for an Integ
 You can assume that you will receive a valid array of numbers.
 */
 function maxedOut(arr) {
-  let sum = arr.reduce((a,b)=>a+(b*b*b),0);
-  if (sum>Number.MAX_SAFE_INTEGER) return "You've pushed me to the max!"
-  return sum
+  let sum = arr.reduce((a, b) => a + b * b * b, 0);
+  if (sum > Number.MAX_SAFE_INTEGER) return "You've pushed me to the max!";
+  return sum;
 }

@@ -32,5 +32,5 @@ Are you a One-Liner? Please try to complete the kata in one line(no test for it)
 */
 
 function arrayPacking(a) {
-  return a.reduceRight((a,b)=>a*256+b);
+  return a.reduceRight((a, b) => a * 256 + b);
 }

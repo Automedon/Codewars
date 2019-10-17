@@ -39,6 +39,6 @@ rotate(data, 11)    // => [5, 1, 2, 3, 4]
 rotate(data, 12478) // => [3, 4, 5, 1, 2]
 */
 function rotate(array, n) {
-  n = n % array.length
-  return array.slice(-n).concat(array.slice(0, -n))
+  n = n % array.length;
+  return array.slice(-n).concat(array.slice(0, -n));
 }

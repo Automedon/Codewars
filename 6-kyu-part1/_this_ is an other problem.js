@@ -51,7 +51,14 @@ Can you change our function to create such a NamedOne object ?
 ( Hint: in this kata you'll try to define properties of an object )
 */
 class NamedOne {
-  constructor(f, l) { this.firstName = f; this.lastName = l }
-  get fullName() { return this.firstName + ' ' + this.lastName }
-  set fullName(v) { if (/ /.test(v)) [this.firstName, this.lastName] = v.split(' ') }
+  constructor(f, l) {
+    this.firstName = f;
+    this.lastName = l;
+  }
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+  set fullName(v) {
+    if (/ /.test(v)) [this.firstName, this.lastName] = v.split(" ");
+  }
 }

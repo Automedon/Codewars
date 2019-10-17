@@ -15,5 +15,5 @@ Input/Output
 [output] a string
 */
 function htmlEndTagByStartTag(startTag) {
-  return `</${startTag.match(/\w+/)}>`
+  return `</${startTag.match(/\w+/)}>`;
 }

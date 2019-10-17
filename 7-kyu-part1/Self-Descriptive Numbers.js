@@ -17,5 +17,8 @@ There are no 4's in the number, so the fifth digit is 0
 Numbers can be of any length up to 9 digits and are only full integers. For a given number derive a function selfDescriptive(num) that returns; true if the number is self-descriptive or false if the number is not.
 */
 function selfDescriptive(num) {
-  return (num+'')[0]*1===(num+'').length-(num+'').replace(/0/g,'').length
+  return (
+    (num + "")[0] * 1 ===
+    (num + "").length - (num + "").replace(/0/g, "").length
+  );
 }

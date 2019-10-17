@@ -25,16 +25,16 @@ so:
 
 SJF([3,10,20,1,2], 0) == 6
 */
-function SJF(jobs, index){
-  let saved=jobs[index]
-  let sum=0
-  let arr = jobs.map(v=>{
-  if (v<saved){
-  sum+=v
-  return 0
-  }
-  if (v===saved) return v
-  return 0
-  })
-  return arr.slice(0,index+1).reduce((a,b)=>a+b,0)+sum
+function SJF(jobs, index) {
+  let saved = jobs[index];
+  let sum = 0;
+  let arr = jobs.map(v => {
+    if (v < saved) {
+      sum += v;
+      return 0;
+    }
+    if (v === saved) return v;
+    return 0;
+  });
+  return arr.slice(0, index + 1).reduce((a, b) => a + b, 0) + sum;
 }

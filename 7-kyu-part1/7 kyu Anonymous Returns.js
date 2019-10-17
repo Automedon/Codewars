@@ -11,14 +11,13 @@ Fix getNameFunc so the right value is returned.
 For more information: Binding
 */
 
-
-var name = 'The Window';
+var name = "The Window";
 
 var alpha = {
-    name : 'My Alpha',
-    getNameFunc : function(){
-    return function(){
-        return this.name;
-        }.bind(this);
-    }
+  name: "My Alpha",
+  getNameFunc: function() {
+    return function() {
+      return this.name;
+    }.bind(this);
+  }
 };

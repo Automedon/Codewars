@@ -19,25 +19,25 @@ Paperboy
 */
 
 function cheapestQuote(n) {
-  var p=0;
-  while (n>=40){
-    p+=3.85;
-    n-=40;   
+  var p = 0;
+  while (n >= 40) {
+    p += 3.85;
+    n -= 40;
   }
-  while (n>=20){
-    p+=1.93;
-    n-=20;
+  while (n >= 20) {
+    p += 1.93;
+    n -= 20;
   }
-  while (n>=10){
-    p+=0.97;
-    n-=10;
+  while (n >= 10) {
+    p += 0.97;
+    n -= 10;
   }
-  while (n>=5){
-    p+=0.49;
-    n-=5;
+  while (n >= 5) {
+    p += 0.49;
+    n -= 5;
   }
-  while (n>=1){
-    p+=0.1;
+  while (n >= 1) {
+    p += 0.1;
     n--;
   }
   return +p.toFixed(2);

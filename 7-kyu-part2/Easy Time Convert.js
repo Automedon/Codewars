@@ -9,9 +9,11 @@ Hint: use the modulo operation to solve this challenge. The modulo operation sim
 Example
 If the input is 78, then you should return "01:18", because 78 minutes converts to 1 hour and 18 minutes.
 */
-function timeConvert(num) { 
-  if (num<0) return '00:00'
-  let h=Math.floor(num/60);
-  let m=num%60
-  return (h.toString().length<2?'0'+h:''+h)+':'+('00'+m).slice(-2)
+function timeConvert(num) {
+  if (num < 0) return "00:00";
+  let h = Math.floor(num / 60);
+  let m = num % 60;
+  return (
+    (h.toString().length < 2 ? "0" + h : "" + h) + ":" + ("00" + m).slice(-2)
+  );
 }

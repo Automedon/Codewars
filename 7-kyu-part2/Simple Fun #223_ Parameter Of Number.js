@@ -23,10 +23,16 @@ For n = 1234, the output should be 120.
 
 1+2+3+4=10 and 1*2*3*4=24, LCM(10,24)=120
 */
-const gcd = (a, b) => b ? gcd(b, a % b) : Math.abs(a);
+const gcd = (a, b) => (b ? gcd(b, a % b) : Math.abs(a));
 const lcm = (a, b) => Math.abs(a * b) / gcd(a, b);
 function parameter(n) {
-  let a = n.toString().split('').reduce((a,b)=>a+b*1,0)
-  let b = n.toString().split('').reduce((a,b)=>a*b*1,1)
-  return lcm(a,b)
+  let a = n
+    .toString()
+    .split("")
+    .reduce((a, b) => a + b * 1, 0);
+  let b = n
+    .toString()
+    .split("")
+    .reduce((a, b) => a * b * 1, 1);
+  return lcm(a, b);
 }

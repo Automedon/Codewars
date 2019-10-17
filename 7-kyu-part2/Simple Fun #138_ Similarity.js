@@ -44,9 +44,9 @@ So the similarity equals to 3 / 6 = 0.5.```
   In Haskell the two arrays are passed as a touple.
 */
 function similarity(a, b) {
-  let arr1=[...new Set(a.concat(b))].length
-   let f=a.filter(v=>b.includes(v))
-    let s=b.filter(v=>a.includes(v))
-      let arr2=[...new Set(f.concat(s))].length
-   return arr2/arr1
+  let arr1 = [...new Set(a.concat(b))].length;
+  let f = a.filter(v => b.includes(v));
+  let s = b.filter(v => a.includes(v));
+  let arr2 = [...new Set(f.concat(s))].length;
+  return arr2 / arr1;
 }

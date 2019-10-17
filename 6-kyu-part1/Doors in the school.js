@@ -25,6 +25,6 @@ Should return
 
 2
 */
-function doors(n){
-  return ~~Math.sqrt(n)
+function doors(n) {
+  return ~~Math.sqrt(n);
 }

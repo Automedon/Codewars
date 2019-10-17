@@ -35,15 +35,15 @@ Each value will always be alphanumeric.
 
 All letters will be lower-case.
 */
-function knockKnock(str){
-  let arr = str.split` `.map(v=>v.split``)
-  let ar =  [];
-  for (let i=1;i<arr.length;i++){
-    ar.push(filt(arr[i-1],arr[i]))
+function knockKnock(str) {
+  let arr = str.split` `.map(v => v.split``);
+  let ar = [];
+  for (let i = 1; i < arr.length; i++) {
+    ar.push(filt(arr[i - 1], arr[i]));
   }
-  return '!'+ar.map(v=>v?v:'^').join``
+  return "!" + ar.map(v => (v ? v : "^")).join``;
 }
 
-function filt(arr1,arr2){
-  return arr2.filter((v,i)=>arr1.includes(v))[0]
+function filt(arr1, arr2) {
+  return arr2.filter((v, i) => arr1.includes(v))[0];
 }

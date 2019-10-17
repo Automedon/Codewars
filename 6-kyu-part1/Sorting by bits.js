@@ -21,6 +21,8 @@ Note: Your function should modify the input rather than creating a new array.
 sortByBit([3, 8, 3, 6, 5, 7, 9, 1]) // => [1, 8, 3, 3, 5, 6, 9, 7]
 */
 function sortByBit(arr) {
-  const countBit=(bit)=>bit.toString(2).replace(/[0]/g,'').length
-  return arr.sort((a,b)=>countBit(a)===countBit(b)?a-b:countBit(a)-countBit(b))
+  const countBit = bit => bit.toString(2).replace(/[0]/g, "").length;
+  return arr.sort((a, b) =>
+    countBit(a) === countBit(b) ? a - b : countBit(a) - countBit(b)
+  );
 }

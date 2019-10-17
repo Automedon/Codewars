@@ -28,12 +28,11 @@ Constraints: 1 ≤ k ≤ 40
 The difference between the two types of apples.
 */
 function appleBoxes(k) {
-  let arrOdd=[];
-  let arrEven=[];
-  for (let i=1;i<=k;i++)
-  {
-    if (i%2===0) arrEven.push(i*i)
-    else arrOdd.push(i*i)
+  let arrOdd = [];
+  let arrEven = [];
+  for (let i = 1; i <= k; i++) {
+    if (i % 2 === 0) arrEven.push(i * i);
+    else arrOdd.push(i * i);
   }
-  return arrEven.reduce((a,b)=>a+b,0)-arrOdd.reduce((a,b)=>a+b,0)
+  return arrEven.reduce((a, b) => a + b, 0) - arrOdd.reduce((a, b) => a + b, 0);
 }

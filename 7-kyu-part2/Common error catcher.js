@@ -47,12 +47,12 @@ The following word/letter pairs could be tested:
 
 "gobbledegooooppp", "p"
 */
-function checkLetters(word,letter,correctNumber){
-  let count=1;
-  for (let i=0;i<word.length-1;i++){
-    word[i]===letter&&word[i+1]===letter?count++:1
+function checkLetters(word, letter, correctNumber) {
+  let count = 1;
+  for (let i = 0; i < word.length - 1; i++) {
+    word[i] === letter && word[i + 1] === letter ? count++ : 1;
   }
-  !word.match(letter)?count--:1
-  correctNumber===undefined?correctNumber=count:1
-  return count===correctNumber
+  !word.match(letter) ? count-- : 1;
+  correctNumber === undefined ? (correctNumber = count) : 1;
+  return count === correctNumber;
 }

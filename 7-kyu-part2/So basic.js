@@ -6,6 +6,6 @@ Scenario: You work for the IRS and have been sent the 1040 form for a local Maya
 
 Task: Generate a javascript method that converts a base-20 value into its decimal equivalent.
 */
-function convertBase20ToDecimal(init){
-  return isNaN(parseInt(init, 20))?-1:parseInt(init, 20)
+function convertBase20ToDecimal(init) {
+  return isNaN(parseInt(init, 20)) ? -1 : parseInt(init, 20);
 }

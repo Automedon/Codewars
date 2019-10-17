@@ -24,13 +24,15 @@ It should return "name" and "score" properties sorted by score; if scores are eq
 ]
 Happy judging!
 */
-function scoreboard(w){
-  let arr =[];
-  for (let i=0;i<w.length;i++)
-  {
-  arr.push({name:w[i].name,
-             score:w[i].chickenwings*5+w[i].hamburgers*3+w[i].hotdogs*2
-            })
+function scoreboard(w) {
+  let arr = [];
+  for (let i = 0; i < w.length; i++) {
+    arr.push({
+      name: w[i].name,
+      score: w[i].chickenwings * 5 + w[i].hamburgers * 3 + w[i].hotdogs * 2
+    });
   }
-  return arr.sort((a,b)=>a.score===b.score?(a.name).localeCompare(b.name):b.score-a.score)
+  return arr.sort((a, b) =>
+    a.score === b.score ? a.name.localeCompare(b.name) : b.score - a.score
+  );
 }

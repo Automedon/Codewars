@@ -8,13 +8,12 @@ So for AUD the currency matrix would be as follows EURAUD, GBPAUD, AUDNZD, AUDUS
 
 Your goal is to generate this currency matrix for a given currency. You can assume that the passed in currency is a valid one.
 */
-function generateCurrencyMatrix(currency)
-{
-  let arr= ["EUR", "GBP", "AUD", "NZD", "USD", "CAD", "CHF", "JPY"]
-  let index=arr.indexOf(currency)
-  arr=arr.filter(v=>v!==currency)
-  return arr.map(v=>{
-  if (arr.indexOf(v)<index) return v+currency
-  else return currency+v
-  })
+function generateCurrencyMatrix(currency) {
+  let arr = ["EUR", "GBP", "AUD", "NZD", "USD", "CAD", "CHF", "JPY"];
+  let index = arr.indexOf(currency);
+  arr = arr.filter(v => v !== currency);
+  return arr.map(v => {
+    if (arr.indexOf(v) < index) return v + currency;
+    else return currency + v;
+  });
 }

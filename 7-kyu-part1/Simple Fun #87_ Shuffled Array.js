@@ -30,15 +30,15 @@ Constraints:
 A sorted array of shuffled.length - 1 elements.
 */
 function shuffledArray(shuffled) {
-    let potentialSum = 0;
-    
-    for(let i = 0; i < shuffled.length; i++){
-        potentialSum = shuffled.splice(0, 1)[0];
-        
-        if(potentialSum === shuffled.reduce((a, b) => a + b)){
-            sum = potentialSum;
-            return shuffled.sort((a, b) => a - b);
-        }
-        shuffled.push(potentialSum)
+  let potentialSum = 0;
+
+  for (let i = 0; i < shuffled.length; i++) {
+    potentialSum = shuffled.splice(0, 1)[0];
+
+    if (potentialSum === shuffled.reduce((a, b) => a + b)) {
+      sum = potentialSum;
+      return shuffled.sort((a, b) => a - b);
     }
+    shuffled.push(potentialSum);
+  }
 }

@@ -11,10 +11,13 @@ if you can't find one of the letters using the index numbers, return "No mission
 Example: input: [5, 0, 3], "I Love You" output: "ivy" (0 = "i", 3 = "v", 5 = "y")
 */
 function missingWord(nums, str) {
-  str=str.replace(/[^\w]/g,'')
-  const arr=nums.sort((a,b)=>a-b);
-  const arr1=[];
-  for (let i=0;i<arr.length;i++)
-  {arr1.push(str[arr[i]])}
-  return arr1.includes(undefined)?"No mission today":arr1.join('').toLowerCase()
+  str = str.replace(/[^\w]/g, "");
+  const arr = nums.sort((a, b) => a - b);
+  const arr1 = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr1.push(str[arr[i]]);
+  }
+  return arr1.includes(undefined)
+    ? "No mission today"
+    : arr1.join("").toLowerCase();
 }

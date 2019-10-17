@@ -30,4 +30,14 @@ The determinant of larger matrices are calculated analogously, e.g. if M is a 4x
 
 det(M) = a * det(a_minor) - b * det(b_minor) + c * det(c_minor) - d * det(d_minor)
 */
-const determinant = m => m.length === 1 ? m[0][0] : m[0].reduce((s, n, i) => s + (i % 2 === 0 ? 1 : -1) * n * determinant(m.slice(1).map(r => r.filter((_, j) => j !== i))), 0);
+const determinant = m =>
+  m.length === 1
+    ? m[0][0]
+    : m[0].reduce(
+        (s, n, i) =>
+          s +
+          (i % 2 === 0 ? 1 : -1) *
+            n *
+            determinant(m.slice(1).map(r => r.filter((_, j) => j !== i))),
+        0
+      );

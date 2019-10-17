@@ -23,5 +23,5 @@ The pattern only needs to appear within the text. The full input can be longer, 
 Ready, steady, VERIFY!!
 */
 function bodyCount(code) {
-  return /(?:[A-Z]\d){5}\.-[A-Z]%\d\.\d{2}\./.test(code)
+  return /(?:[A-Z]\d){5}\.-[A-Z]%\d\.\d{2}\./.test(code);
 }

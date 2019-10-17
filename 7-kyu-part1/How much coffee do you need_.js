@@ -17,7 +17,8 @@ Other events can be present and it will be represent by arbitrary string, just i
 Each event can be downcase/lowercase, or uppercase. If it is downcase/lowercase you need 1 coffee by events and if it is uppercase you need 2 coffees.
 */
 function howMuchCoffee(events) {
-  const arr = events.filter(v =>/^(cw|dog|cat|movie)$/.test(v.toLowerCase()))
-  .reduce((a, b) =>  /[a-z]/.test(b[0]) ? a + 1 : a + 2, 0);
-  return arr < 4 ? arr : 'You need extra sleep';
+  const arr = events
+    .filter(v => /^(cw|dog|cat|movie)$/.test(v.toLowerCase()))
+    .reduce((a, b) => (/[a-z]/.test(b[0]) ? a + 1 : a + 2), 0);
+  return arr < 4 ? arr : "You need extra sleep";
 }

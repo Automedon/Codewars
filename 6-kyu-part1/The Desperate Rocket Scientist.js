@@ -24,5 +24,5 @@ function countdown() {
 Write a function fix_countdown() that contains a fix to make countdown() work again.
 */
 function fix_countdown() {
-   delete Array.prototype.Dammit
+  delete Array.prototype.Dammit;
 }

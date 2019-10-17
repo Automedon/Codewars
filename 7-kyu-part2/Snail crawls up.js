@@ -10,8 +10,8 @@ The distance that the snail slides down during the night (meters)
 Calculate number of day when the snail will reach the top of the column.
 */
 function snail(height, up, down) {
-  if (up <= 0 || down < 0 || height <= 0) return false
-   for (let i=up,j=0;;i+=up-down,j++){
-   if (i>=height) return j+1
- }
+  if (up <= 0 || down < 0 || height <= 0) return false;
+  for (let i = up, j = 0; ; i += up - down, j++) {
+    if (i >= height) return j + 1;
+  }
 }

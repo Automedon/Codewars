@@ -34,11 +34,10 @@ travel = itinerary([
 Or a helper class Route for C#/C++:
 */
 function itinerary(travel) {
-  let itinerary=[];
-  for (let i=0;i<travel.length;i++)
-  {
-  itinerary.push(travel[i].in)
-  itinerary.push(travel[i].out)
+  let itinerary = [];
+  for (let i = 0; i < travel.length; i++) {
+    itinerary.push(travel[i].in);
+    itinerary.push(travel[i].out);
   }
-  return itinerary.filter((v,i)=>v!==itinerary[i+1]).join('-')
+  return itinerary.filter((v, i) => v !== itinerary[i + 1]).join("-");
 }

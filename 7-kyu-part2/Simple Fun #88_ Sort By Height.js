@@ -26,13 +26,16 @@ Constraints:
 Sorted array a with all the trees untouched.
 */
 function sortByHeight(a) {
-  let arr=a.slice().filter(v=>v!==-1).sort((a,b)=>a-b);
-  let j=0;
-  for (let i=0;i<a.length;i++){
-  if (a[i]!==-1){
-  a[i]=arr[j];
-  j++
+  let arr = a
+    .slice()
+    .filter(v => v !== -1)
+    .sort((a, b) => a - b);
+  let j = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== -1) {
+      a[i] = arr[j];
+      j++;
+    }
   }
-  }
-  return a
+  return a;
 }

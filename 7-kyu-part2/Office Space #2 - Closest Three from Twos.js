@@ -16,16 +16,16 @@ The music can't go lower than 0 volume on this plane of existance.
 ex: volume = 8 : output = 1 (one stroke of the - key would take you to 6, which is divisible by 3, rather than the two strokes of the + key to get to 12)
 */
 function musicalOCD(volume) {
-  let i=0;
-  let j=0;
-  let copyV=volume
-  while(volume%3!==0){
-    i++
-    volume-=2
+  let i = 0;
+  let j = 0;
+  let copyV = volume;
+  while (volume % 3 !== 0) {
+    i++;
+    volume -= 2;
   }
-  while(copyV%3!==0){
-    j++
-    copyV+=2
+  while (copyV % 3 !== 0) {
+    j++;
+    copyV += 2;
   }
-  return Math.min(i,j)
+  return Math.min(i, j);
 }

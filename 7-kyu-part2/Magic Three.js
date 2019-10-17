@@ -16,9 +16,7 @@ Finally, the array [1,4,2,-9] doesn't have any combination of 3 numbers that sum
 Go get em!
 */
 function isMagicThree(array) {
-  for(let x of array)
-    for(let y of array)
-      for(let z of array)
-        if(x + y + z === 0) return true;
+  for (let x of array)
+    for (let y of array) for (let z of array) if (x + y + z === 0) return true;
   return false;
 }

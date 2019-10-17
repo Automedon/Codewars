@@ -18,16 +18,18 @@ Should return:
 "It took 260 licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was freezing temps."
 Other cases: If there are no challenges, the toughest challenge sentence should be omitted. If there are multiple challenges with the highest toughest amount, the first one presented will be the toughest. If an environment variable is present, it will be either a positive or negative integer. No need to validate.
 */
-const totalLicks = (env) => {
-  var licks = 252
-  let challenge
+const totalLicks = env => {
+  var licks = 252;
+  let challenge;
 
   for (const effect in env) {
-    if ((env[effect] > 0) && (!challenge || env[effect] > env[challenge])) {
-        challenge = effect
-      }
-    licks += env[effect]
+    if (env[effect] > 0 && (!challenge || env[effect] > env[challenge])) {
+      challenge = effect;
+    }
+    licks += env[effect];
   }
-  return `It took ${licks} licks to get to the tootsie roll center of a tootsie pop.` +
+  return (
+    `It took ${licks} licks to get to the tootsie roll center of a tootsie pop.` +
     (challenge ? ` The toughest challenge was ${challenge}.` : "")
-}
+  );
+};

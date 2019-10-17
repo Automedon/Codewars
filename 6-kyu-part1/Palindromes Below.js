@@ -13,6 +13,9 @@ Therefore 1 and 3 are palindromes in base two and the method should return the f
     5..palindromeBelow(2)
     => [1, 3]
 */
-Number.prototype.palindromeBelow = function(base){
-  return Array.from({length:this},(x,i)=>i+1).map(v=>v.toString(base)).filter(v=>v===v.split``.reverse().join``).map(v=>parseInt(v,base))
-}
+Number.prototype.palindromeBelow = function(base) {
+  return Array.from({ length: this }, (x, i) => i + 1)
+    .map(v => v.toString(base))
+    .filter(v => v === v.split``.reverse().join``)
+    .map(v => parseInt(v, base));
+};

@@ -63,10 +63,14 @@ Note: You can assume that the "Open, Sesame!" and "Shut, Sesame!" will not appea
 
 
 */
-function aliBaba(trying){
-  let arr = trying.filter(v=>v==="Open, Sesame!"||v==="Shut, Sesame!");
-  if (!arr.length) return "Ali Baba didn't get the treasure and he was still a poor man."
-  if (arr[0]==="Open, Sesame!"&&arr[1]==="Shut, Sesame!") return "Ali Baba got a lot of treasures and he lived a rich life."
-  if (arr[arr.length-1]==="Open, Sesame!") return "Ali Baba got a lot of treasure and he was finally killed by the robbers."
-  if (arr[arr.length-1]==="Shut, Sesame!") return `Ali Baba didn't get the treasure and he was still a poor man.`
+function aliBaba(trying) {
+  let arr = trying.filter(v => v === "Open, Sesame!" || v === "Shut, Sesame!");
+  if (!arr.length)
+    return "Ali Baba didn't get the treasure and he was still a poor man.";
+  if (arr[0] === "Open, Sesame!" && arr[1] === "Shut, Sesame!")
+    return "Ali Baba got a lot of treasures and he lived a rich life.";
+  if (arr[arr.length - 1] === "Open, Sesame!")
+    return "Ali Baba got a lot of treasure and he was finally killed by the robbers.";
+  if (arr[arr.length - 1] === "Shut, Sesame!")
+    return `Ali Baba didn't get the treasure and he was still a poor man.`;
 }

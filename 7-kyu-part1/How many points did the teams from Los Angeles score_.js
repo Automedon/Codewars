@@ -34,6 +34,8 @@ The order of the teams may vary.
 All values in the arrays will always be strings.
 Points will always be given in the following format '100:99' (points scored:points lost).
 */
-function getLosAngelesPoints(results) {  
-  return results.filter(v=>v[0].match(/^Los Angeles [^\d]+$/)).reduce((a,b)=>a+b[1].split(':')[0]*1,0)
+function getLosAngelesPoints(results) {
+  return results
+    .filter(v => v[0].match(/^Los Angeles [^\d]+$/))
+    .reduce((a, b) => a + b[1].split(":")[0] * 1, 0);
 }

@@ -26,5 +26,5 @@ This kata is part of the Coding Meetup series which includes a number of short a
 */
 
 function isRubyComing(list) {
-  return list.some(v=>v.language==='Ruby')
+  return list.some(v => v.language === "Ruby");
 }

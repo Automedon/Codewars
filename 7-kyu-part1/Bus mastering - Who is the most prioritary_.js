@@ -18,6 +18,9 @@ The resulting string (char*) should be allocated in the arbitrate function, and 
 
 n is always greater or equal to 1.
 */
-function arbitrate(input, n) { 
-    return input.replace(/1/,'m').replace(/[^m]/gi,'0').replace(/[m]/gi,'1')
+function arbitrate(input, n) {
+  return input
+    .replace(/1/, "m")
+    .replace(/[^m]/gi, "0")
+    .replace(/[m]/gi, "1");
 }

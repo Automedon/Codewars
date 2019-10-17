@@ -35,7 +35,9 @@ and a tower of 6 floors looks like below
 Go challenge Build Tower Advanced once you have finished this :)
 */
 
-
 function towerBuilder(n) {
-  return [...Array(n)].map((_,i)=>" ".repeat(n-1-i)+"*".repeat(i*2+1)+" ".repeat(n-1-i))
+  return [...Array(n)].map(
+    (_, i) =>
+      " ".repeat(n - 1 - i) + "*".repeat(i * 2 + 1) + " ".repeat(n - 1 - i)
+  );
 }

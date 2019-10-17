@@ -48,7 +48,7 @@ Note
 
 Happy Coding ^_^
 */
-function loseOrEarn(costPrice,sellPrice,fakeMoney,paidBack){
-  let m = sellPrice-costPrice-fakeMoney
-  return `${m>0?'Earned':'Lost'} $${Math.abs(m)}`
+function loseOrEarn(costPrice, sellPrice, fakeMoney, paidBack) {
+  let m = sellPrice - costPrice - fakeMoney;
+  return `${m > 0 ? "Earned" : "Lost"} $${Math.abs(m)}`;
 }

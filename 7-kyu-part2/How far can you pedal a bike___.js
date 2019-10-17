@@ -30,6 +30,8 @@ The kilometers cycled should always be provided to three decimal places.
 Bon chance!
 */
 function distanceCycled(cadence, gear, time) {
-  let development=2.11115*(gear.split`x`[0]*1/gear.split`x`[1]*1)
-  return `You cycled ${(cadence*development*time/1000).toFixed(3)} kilometers!`
+  let development = 2.11115 * (((gear.split`x`[0] * 1) / gear.split`x`[1]) * 1);
+  return `You cycled ${((cadence * development * time) / 1000).toFixed(
+    3
+  )} kilometers!`;
 }

@@ -6,7 +6,11 @@ For example,
 var array = [[4.23, 6.43], 1.23, 3.444, [1.342, 3.212]];  // [rectangle, circle, circle, reactangle]
 sortByArea(array); // should return [ 4.31, 4.75, 27.2, 37.26 ]
 */
-function sortByArea(array){
-  array=array.map(v=>Array.isArray(v)?(v[0]*v[1]).toFixed(2)*1:(v*v*Math.PI).toFixed(2)*1)
-  return array.sort((a,b)=>a-b)
+function sortByArea(array) {
+  array = array.map(v =>
+    Array.isArray(v)
+      ? (v[0] * v[1]).toFixed(2) * 1
+      : (v * v * Math.PI).toFixed(2) * 1
+  );
+  return array.sort((a, b) => a - b);
 }

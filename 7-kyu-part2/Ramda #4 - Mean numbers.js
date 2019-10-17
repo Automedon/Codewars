@@ -21,7 +21,8 @@ pipe
 The Ramda library is preloaded and accessible under R (e.g. R.map).
 */
 const mean3 = numbers => {
-  if (numbers.length===0) return null
-  if (numbers.every(v=>v%3===0)) return numbers.reduce((a,b)=>a+b,0)/numbers.length
-  return null
-}
+  if (numbers.length === 0) return null;
+  if (numbers.every(v => v % 3 === 0))
+    return numbers.reduce((a, b) => a + b, 0) / numbers.length;
+  return null;
+};

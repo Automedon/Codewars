@@ -16,6 +16,8 @@ You have to use the filter-method of Javascript, which returns each element of t
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 */
-function searchNames( logins ){
-  return logins.filter((v,i)=>/^\.|\.$/g.test(logins[i-1])&&/@\w+./g.test(v))
+function searchNames(logins) {
+  return logins.filter(
+    (v, i) => /^\.|\.$/g.test(logins[i - 1]) && /@\w+./g.test(v)
+  );
 }

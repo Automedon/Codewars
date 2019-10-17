@@ -15,23 +15,22 @@ In this kata you should complete a function that return the filetype as a string
 For example if the function receive -rwxr-xr-x it should return file.
 */
 function linuxType(fileAttribute) {
- switch(fileAttribute[0]){
-   case '-':
-   return 'file'
-    case 'd':
-   return 'directory'
-    case 'l':
-   return 'symlink'
-    case 'c':
-   return 'character_file'
-    case 'b':
-   return 'block_file'
-    case 'p':
-   return 'pipe'
-   case 's':
-   return 'socket'
-   case 'D':
-   return 'door'
-   
- }
+  switch (fileAttribute[0]) {
+    case "-":
+      return "file";
+    case "d":
+      return "directory";
+    case "l":
+      return "symlink";
+    case "c":
+      return "character_file";
+    case "b":
+      return "block_file";
+    case "p":
+      return "pipe";
+    case "s":
+      return "socket";
+    case "D":
+      return "door";
+  }
 }

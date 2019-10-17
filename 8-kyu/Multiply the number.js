@@ -10,6 +10,6 @@ multiply(-3)==-15
 */
 
 const multiply = number => {
-  const num = String(Math.abs(number)).length
-  return number * 5 ** num
-}
+  const num = String(Math.abs(number)).length;
+  return number * 5 ** num;
+};

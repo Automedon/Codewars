@@ -38,6 +38,9 @@ This kata is part of the Coding Meetup series which includes a number of short a
 */
 
 function greetDevelopers(list) {
-  list.forEach(v=> v.greeting= `Hi ${v.firstName}, what do you like the most about ${v.language}?`)
-  return list
+  list.forEach(
+    v =>
+      (v.greeting = `Hi ${v.firstName}, what do you like the most about ${v.language}?`)
+  );
+  return list;
 }

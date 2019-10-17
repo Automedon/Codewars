@@ -27,27 +27,27 @@ Currency.make_change(43) --> %{:Q=>1, :D=>1, :N=>1, :P=>3}
 Currency.make_change(91) --> %{:H=>1, :Q=>1, :D=>1, :N=>1, :P=>1}
 If you liked this kata, check out Part 2.
 */
-const makeChange = (amount) => {
-  const change = {}
-  while (amount>=50){
-    change[`H`]=change[`H`]?change[`H`]+1:1
-    amount-=50
+const makeChange = amount => {
+  const change = {};
+  while (amount >= 50) {
+    change[`H`] = change[`H`] ? change[`H`] + 1 : 1;
+    amount -= 50;
   }
-  while (amount>=25){
-    change[`Q`]=change[`Q`]?change[`Q`]+1:1
-    amount-=25
+  while (amount >= 25) {
+    change[`Q`] = change[`Q`] ? change[`Q`] + 1 : 1;
+    amount -= 25;
   }
-  while (amount>=10){
-    change[`D`]=change[`D`]?change[`D`]+1:1
-    amount-=10
+  while (amount >= 10) {
+    change[`D`] = change[`D`] ? change[`D`] + 1 : 1;
+    amount -= 10;
   }
-  while (amount>=5){
-    change[`N`]=change[`N`]?change[`N`]+1:1
-    amount-=5
+  while (amount >= 5) {
+    change[`N`] = change[`N`] ? change[`N`] + 1 : 1;
+    amount -= 5;
   }
-  while (amount>=1){
-    change[`P`]=change[`P`]?change[`P`]+1:1
-    amount-=1
+  while (amount >= 1) {
+    change[`P`] = change[`P`] ? change[`P`] + 1 : 1;
+    amount -= 1;
   }
-  return change
+  return change;
 };

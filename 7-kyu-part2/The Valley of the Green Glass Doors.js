@@ -9,8 +9,8 @@ inTheValley('legs'); // returns false
 Note: The Valley of the Green Glass Doors is a very popular puzzle, and you will find the solution to it with just a little bit of googling. See if you can figure it out on your own, but don't spend too long on it.
 */
 function inTheValley(str) {
-  for(let i = 1; i < str.length; i++) {
-    if (str[i-1] === str[i]) return true; 
+  for (let i = 1; i < str.length; i++) {
+    if (str[i - 1] === str[i]) return true;
   }
   return false;
 }

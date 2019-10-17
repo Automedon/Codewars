@@ -9,5 +9,11 @@ Examples:
 ^Note the number may be given as a string
 */
 const rotateToMax = n => {
-  return n.toString().split('').sort((a,b)=>a<b).join('')*1
-}
+  return (
+    n
+      .toString()
+      .split("")
+      .sort((a, b) => a < b)
+      .join("") * 1
+  );
+};

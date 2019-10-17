@@ -5,6 +5,6 @@ For example, at the end of one week, Johnny counted $10, so he was given another
 
 Write a function that will tell us how much money Johnny will have at the end of each week depending on whether the total is even or odd.
 */
-function pocketMoney(number){
-  return number%2===0?number*2:number
+function pocketMoney(number) {
+  return number % 2 === 0 ? number * 2 : number;
 }

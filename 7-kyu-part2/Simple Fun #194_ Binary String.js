@@ -30,14 +30,16 @@ A binary string.
 The minimum number of flips required.
 */
 function binStr(s) {
-  let str = '0'.repeat(s.length)
-  let index = s.indexOf('1')
-  for (let i=0;i<s.length*2;i++){
-    if (s===str){
-      return i
+  let str = "0".repeat(s.length);
+  let index = s.indexOf("1");
+  for (let i = 0; i < s.length * 2; i++) {
+    if (s === str) {
+      return i;
     }
-    s=s.slice(0,index)+s.slice(index,s.length).replace(/0|1/g,v=>v==='1'?'0':'1');
-    index = s.indexOf('1')
+    s =
+      s.slice(0, index) +
+      s.slice(index, s.length).replace(/0|1/g, v => (v === "1" ? "0" : "1"));
+    index = s.indexOf("1");
   }
-  return 0
+  return 0;
 }

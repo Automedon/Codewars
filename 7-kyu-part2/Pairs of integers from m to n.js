@@ -11,10 +11,10 @@ For example, generatePairs(2, 4) should return
 */
 function generatePairs(m, n) {
   let arr = [];
-  for (let i=m;i<=n;i++){
-    for (let j=i;j<=n;j++){
-      arr.push([i,j])
+  for (let i = m; i <= n; i++) {
+    for (let j = i; j <= n; j++) {
+      arr.push([i, j]);
     }
   }
-  return arr
+  return arr;
 }

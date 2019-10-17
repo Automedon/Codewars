@@ -4,6 +4,11 @@ The vowel substrings in the word codewarriors are o,e,a,io. The longest of these
 
 Good luck!
 */
-function solve(s){ 
- return Math.max(...s.replace(/[^aeiuo]/gi,' ').split(' ').map(v=>v=v.length));
+function solve(s) {
+  return Math.max(
+    ...s
+      .replace(/[^aeiuo]/gi, " ")
+      .split(" ")
+      .map(v => (v = v.length))
+  );
 }

@@ -14,6 +14,6 @@ Input: [1,15,5,7,3]
 Output: [15, 7, 3, 5, 1]
 (and after sortByBinaryOnes is: ["1111", "111", "11", "101", "1"])
 */
-const toOnes = x => (x.toString(2).match(/1/g) || []).length
-const sortFunction = (a, b) => (toOnes(b) - toOnes(a)) || (a-b)
-const sortByBinaryOnes = (list) => list.sort(sortFunction)
+const toOnes = x => (x.toString(2).match(/1/g) || []).length;
+const sortFunction = (a, b) => toOnes(b) - toOnes(a) || a - b;
+const sortByBinaryOnes = list => list.sort(sortFunction);

@@ -20,17 +20,14 @@ We only count substrings that are > 1 in length.
 #Output: A boolean value determining if there is a common substing between the two inputs.
 */
 
-  function SubstringTest(str1, str2)
-{
-  const arr=[];
-  const arr1=[];
-  for (let i=0;i<str1.length-1;i++)
-  {
-  arr.push(str1.toLowerCase().slice(i,i+2))
+function SubstringTest(str1, str2) {
+  const arr = [];
+  const arr1 = [];
+  for (let i = 0; i < str1.length - 1; i++) {
+    arr.push(str1.toLowerCase().slice(i, i + 2));
   }
-  for (let i=0;i<str2.length-1;i++)
-  {
-  arr1.push(str2.toLowerCase().slice(i,i+2))
+  for (let i = 0; i < str2.length - 1; i++) {
+    arr1.push(str2.toLowerCase().slice(i, i + 2));
   }
-  return arr.filter(v=>arr1.includes(v)).length>0
+  return arr.filter(v => arr1.includes(v)).length > 0;
 }

@@ -12,11 +12,37 @@ In this task, all lowercase characters.
 
 A duplicate is a copy of an already existing item, for example: ['qwe', 'qwe' , 'qwe'] => '1 2'.
 */
-var f = (words) => {
-  const morse = {'a':".-", 'b':"-...", 'c':"-.-.", 'd':"-..", 'e':".", 'f':"..-.", 'g':"--.", 'h':"....", 'i':"..", 'j':".---", 'k':"-.-", 'l':".-..", 'm':"--", 'n':"-.",
-   'o':"---", 'p':".--.", 'q':"--.-", 'r':".-.", 's':"...", 't':"-", 'u':"..-", 'v':"...-", 'w':".--", 'x':"-..-", 'y':"-.--", 'z':"--.."}
- let arr = words.map(v=>v.split``.map(v=>morse[v]).join``)
- let unique = [...new Set(arr)].length
- let dub = arr.length-unique
- return [unique,dub].join` `
+var f = words => {
+  const morse = {
+    a: ".-",
+    b: "-...",
+    c: "-.-.",
+    d: "-..",
+    e: ".",
+    f: "..-.",
+    g: "--.",
+    h: "....",
+    i: "..",
+    j: ".---",
+    k: "-.-",
+    l: ".-..",
+    m: "--",
+    n: "-.",
+    o: "---",
+    p: ".--.",
+    q: "--.-",
+    r: ".-.",
+    s: "...",
+    t: "-",
+    u: "..-",
+    v: "...-",
+    w: ".--",
+    x: "-..-",
+    y: "-.--",
+    z: "--.."
+  };
+  let arr = words.map(v => v.split``.map(v => morse[v]).join``);
+  let unique = [...new Set(arr)].length;
+  let dub = arr.length - unique;
+  return [unique, dub].join` `;
 };

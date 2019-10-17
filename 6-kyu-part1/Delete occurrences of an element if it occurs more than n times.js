@@ -12,7 +12,7 @@ Example
   deleteNth ([20,37,20,21],1) // return [20,37,21]
 */
 
-function deleteNth(arr,n){
-  let cache={};
-  return arr.filter(v=>(cache[v]=~~cache[v]+1)<=n)
+function deleteNth(arr, n) {
+  let cache = {};
+  return arr.filter(v => (cache[v] = ~~cache[v] + 1) <= n);
 }

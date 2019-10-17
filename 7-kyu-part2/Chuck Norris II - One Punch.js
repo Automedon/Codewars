@@ -13,4 +13,10 @@ If anyone dares to provide Chuck with an empty string, an integer or an array, j
 
 Go, go go!!!
 */
-const onePunch=(i)=>typeof i=== 'string' && i.length>0? i.split(` `).sort((a,b)=>a.localeCompare(b)).join` `.replace(/[ea]/gi,''):'Broken!'
+const onePunch = i =>
+  typeof i === "string" && i.length > 0
+    ? i.split(` `).sort((a, b) => a.localeCompare(b)).join` `.replace(
+        /[ea]/gi,
+        ""
+      )
+    : "Broken!";

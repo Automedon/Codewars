@@ -31,5 +31,8 @@ Example:
 "_UnderscoreMarked_Test_Name_" => _Underscore_Marked_Test_Name_"
 */
 const toUnderScore = name => {
-  return name.replace(/([A-Z]|\d+)/g,'_$1').replace(/^_/,'').replace(/__/g,'_')
-}
+  return name
+    .replace(/([A-Z]|\d+)/g, "_$1")
+    .replace(/^_/, "")
+    .replace(/__/g, "_");
+};

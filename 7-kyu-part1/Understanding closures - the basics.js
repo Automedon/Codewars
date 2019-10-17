@@ -6,14 +6,13 @@ The function buildFun will return an array of functions. The single parameter ac
 
 The wanted outcome is that when all function in the array are executed, the number from 0 to N should be returned.
 */
-function buildFun(n){
+function buildFun(n) {
+  var res = [];
 
-	var res = []
-
-	for (let i = 0; i< n; i++){
-		res.push(function(){
-			return i
-		})
-	}
-	return res
+  for (let i = 0; i < n; i++) {
+    res.push(function() {
+      return i;
+    });
+  }
+  return res;
 }

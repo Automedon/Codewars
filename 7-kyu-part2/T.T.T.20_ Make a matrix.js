@@ -28,18 +28,18 @@ makeMatrix([1,2,3,4,5],[2,3,4,5,6]) return:
 makeMatrix([1,2,3,4,5],[1,2,3,4,5]) return:
 []
 */
-function makeMatrix(arr1,arr2){
-  let a1=arr1.filter(v=>!arr2.includes(v))
-  let a2=arr2.filter(v=>!arr1.includes(v))
-  let a = a1.concat(a2)
-  a=a.sort((a,b)=>a-b)
+function makeMatrix(arr1, arr2) {
+  let a1 = arr1.filter(v => !arr2.includes(v));
+  let a2 = arr2.filter(v => !arr1.includes(v));
+  let a = a1.concat(a2);
+  a = a.sort((a, b) => a - b);
   let d = 0;
-  for (let i=0;i<=a.length;i++){
-    if (Math.pow(i,2)<=a.length) d=i
+  for (let i = 0; i <= a.length; i++) {
+    if (Math.pow(i, 2) <= a.length) d = i;
   }
   let arr = [];
-  for (let j=0,i=0;j<d;j++,i+=d){
-    arr.push(a.slice(i,i+d))
+  for (let j = 0, i = 0; j < d; j++, i += d) {
+    arr.push(a.slice(i, i + d));
   }
-  return arr
+  return arr;
 }

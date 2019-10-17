@@ -40,16 +40,21 @@ username will always be a string, status will always be either 'online' or 'offl
 
 Finally, if you have no friends in your chat application, the input will be an empty array []. In this case you should return an empty object {} (empty Dictionary in C#).
 */
-const whosOnline = (friends) => {
-  const online=[]
-  const offline=[]
-  const away=[];
-  friends.map(v=>v.status==='online'&&v.lastActivity<11?online.push(v.username)
-  :v.status==='offline'?offline.push(v.username):away.push(v.username)
-  )
-  if (online.length>0&&offline.length>0&&away.length>0) return {online,offline,away}
-  if (online.length>0&&away.length>0) return {online,away}
-  if (online.length>0&&offline.length>0) return {online,offline}
-  if (offline.length>0&&away.length>0) return {offline,away}
-  return {}
-}
+const whosOnline = friends => {
+  const online = [];
+  const offline = [];
+  const away = [];
+  friends.map(v =>
+    v.status === "online" && v.lastActivity < 11
+      ? online.push(v.username)
+      : v.status === "offline"
+      ? offline.push(v.username)
+      : away.push(v.username)
+  );
+  if (online.length > 0 && offline.length > 0 && away.length > 0)
+    return { online, offline, away };
+  if (online.length > 0 && away.length > 0) return { online, away };
+  if (online.length > 0 && offline.length > 0) return { online, offline };
+  if (offline.length > 0 && away.length > 0) return { offline, away };
+  return {};
+};

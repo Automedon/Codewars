@@ -47,10 +47,12 @@ function decomp(n) {
     let index = n;
     while (N > 0) {
       index -= N % primes[i];
-      N = (N - (N % primes[i]))/primes[i];
+      N = (N - (N % primes[i])) / primes[i];
     }
     index /= primes[i] - 1;
-    (index > 1) ? factor_string += primes[i] + "^" + index + " * " : factor_string += primes[i] + " * ";
+    index > 1
+      ? (factor_string += primes[i] + "^" + index + " * ")
+      : (factor_string += primes[i] + " * ");
   }
   return factor_string.slice(0, factor_string.length - 3);
 }

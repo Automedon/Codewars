@@ -33,10 +33,10 @@ Constraints: l ≤ r ≤ 106
 */
 function countSumOfTwoRepresentations(n, l, r) {
   let count = 0;
-  for (let i=l;i<=r;i++){
-       if (l <= n-i && n-i <= r) {
-            count++;
-        }
+  for (let i = l; i <= r; i++) {
+    if (l <= n - i && n - i <= r) {
+      count++;
     }
-    return Math.ceil(count/2)
+  }
+  return Math.ceil(count / 2);
 }

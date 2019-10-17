@@ -18,6 +18,8 @@ If they don't, return "Uh Oh! Bjorg's a donut! No beer for anyone!" .
 
 It is guaranteed that both arrays will only contain integers 0 to 9.
 */
-function gameOfFives(b,s){
-    return b.filter(v=>v===5).length===s.filter(v=>v===5).length?'Drinks All Round! Free Beers on Bjorg!':'Uh Oh! Bjorg\'s a donut! No beer for anyone!'
+function gameOfFives(b, s) {
+  return b.filter(v => v === 5).length === s.filter(v => v === 5).length
+    ? "Drinks All Round! Free Beers on Bjorg!"
+    : "Uh Oh! Bjorg's a donut! No beer for anyone!";
 }

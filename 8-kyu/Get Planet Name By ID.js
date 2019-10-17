@@ -5,25 +5,23 @@ The function is not returning the correct values. Can you figure out why?
 getPlanetName(3); // should return 'Earth'
 */
 
-function getPlanetName(id){
-  switch(id){
+function getPlanetName(id) {
+  switch (id) {
     case 1:
-      return'Mercury'
+      return "Mercury";
     case 2:
-      return'Venus'
+      return "Venus";
     case 3:
-      return'Earth'
+      return "Earth";
     case 4:
-      return'Mars'
+      return "Mars";
     case 5:
-      return'Jupiter'
+      return "Jupiter";
     case 6:
-      return 'Saturn'
+      return "Saturn";
     case 7:
-     return 'Uranus'
+      return "Uranus";
     case 8:
-      return'Neptune'
+      return "Neptune";
   }
-  
-
 }

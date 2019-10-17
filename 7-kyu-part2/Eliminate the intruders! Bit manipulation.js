@@ -13,5 +13,5 @@ eliminateUnsetBits("1000000") -> 1
 eliminateUnsetBits("000") -> 0
 */
 function eliminateUnsetBits(number) {
-  return parseInt(number.replace(/0/g,'').padStart(2),2)||0
+  return parseInt(number.replace(/0/g, "").padStart(2), 2) || 0;
 }

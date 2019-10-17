@@ -12,15 +12,15 @@ Each word in the resulting string shall occur once, and the order of the words n
 
 If they are saying nothing in common, kill both samurai and blame a ninja. (output "death")
 */
-function commonGround(s1, s2){
-  let arr1=s1.split(' ');
-  let arr2=s2.split(' ');
-  let search=arr1.length>arr2.length?arr1:arr2;
-  let temp=arr1.length>arr2.length?arr2:arr1;
-  let res=''
-  for (let i=0;i<temp.length;i++){
-      if (search.includes(temp[i])) res+=temp[i]+' ';
+function commonGround(s1, s2) {
+  let arr1 = s1.split(" ");
+  let arr2 = s2.split(" ");
+  let search = arr1.length > arr2.length ? arr1 : arr2;
+  let temp = arr1.length > arr2.length ? arr2 : arr1;
+  let res = "";
+  for (let i = 0; i < temp.length; i++) {
+    if (search.includes(temp[i])) res += temp[i] + " ";
   }
-  res=res.trim()
-  return res.length?res:'death'
-  }
+  res = res.trim();
+  return res.length ? res : "death";
+}

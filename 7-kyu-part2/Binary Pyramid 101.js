@@ -18,10 +18,10 @@ So BinaryPyramid ( 1 , 4 ) should return "1111010"
 
 range should be ascending in order
 */
-function BinaryPyramid(m,n){
-  let arr =[];
-  for (let i=m;i<=n;i++){
+function BinaryPyramid(m, n) {
+  let arr = [];
+  for (let i = m; i <= n; i++) {
     arr.push(i);
   }
-  return arr.reduce((a,v)=>a+v.toString(2)*1,0).toString(2)
+  return arr.reduce((a, v) => a + v.toString(2) * 1, 0).toString(2);
 }

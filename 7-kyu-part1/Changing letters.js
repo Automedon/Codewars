@@ -8,6 +8,6 @@ Input : "Hello World!"
 
 Output : "HEllO WOrld!"
 */
-function swap(st){
-  return st.replace(/[aeuio]/gi,$1=>$1.toUpperCase())
+function swap(st) {
+  return st.replace(/[aeuio]/gi, $1 => $1.toUpperCase());
 }

@@ -15,6 +15,9 @@ is encrypted as
 4'101''99''105''108''65' '105''72'9
 Your task is to write function decrypt to get source messages from encrypted strings.
 */
-const decrypt = (str) => {
-  return str.replace(/'\d+'/g,v=>String.fromCharCode(v.replace(/'/g,'')*1)).split('').reverse().join``
-}
+const decrypt = str => {
+  return str
+    .replace(/'\d+'/g, v => String.fromCharCode(v.replace(/'/g, "") * 1))
+    .split("")
+    .reverse().join``;
+};

@@ -37,7 +37,14 @@ If you want to actually use this function you can adapt it to suit your preferre
 
 
 */
-function htmlify(string){
-  let dict = {'–':'&ndash;','’':'&rsquo;','&':'&amp;','“':'&ldquo;','”':'&rdquo;'}
-  return `<p>${string.split(``).map(v=>dict.hasOwnProperty(v)?dict[v]:v).join``}</p>`
+function htmlify(string) {
+  let dict = {
+    "–": "&ndash;",
+    "’": "&rsquo;",
+    "&": "&amp;",
+    "“": "&ldquo;",
+    "”": "&rdquo;"
+  };
+  return `<p>${string.split(``).map(v => (dict.hasOwnProperty(v) ? dict[v] : v))
+    .join``}</p>`;
 }

@@ -59,8 +59,19 @@ In addition to the responses create a count of each domain and return it as the 
 '6 monitoring objections, 4 automation, 6 deployment pipeline, 6 cloud, and 3 microservices.'
 */
 function nkotbVsHomie(requirements) {
-  let r=requirements.map(v=>v.length)
-  let a=[].concat(...requirements.map(v=>v.map(x=>x.split` `[2].toLowerCase())))
-  let str1 = `${r[0]} monitoring objections, ${r[1]} automation, ${r[2]} deployment pipeline, ${r[3]} cloud, and ${r[4]} microservices.`
-  return a.map(v=>v.slice(0,1).toUpperCase()+v.slice(1).toLowerCase()+'! Homie dont play that!').concat(str1)
+  let r = requirements.map(v => v.length);
+  let a = [].concat(
+    ...requirements.map(v => v.map(x => x.split` `[2].toLowerCase()))
+  );
+  let str1 = `${r[0]} monitoring objections, ${r[1]} automation, ${
+    r[2]
+  } deployment pipeline, ${r[3]} cloud, and ${r[4]} microservices.`;
+  return a
+    .map(
+      v =>
+        v.slice(0, 1).toUpperCase() +
+        v.slice(1).toLowerCase() +
+        "! Homie dont play that!"
+    )
+    .concat(str1);
 }

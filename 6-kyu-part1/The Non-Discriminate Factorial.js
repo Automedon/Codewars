@@ -15,18 +15,18 @@ For example, factorial(-1) = -1, factorial(-2) = 2, factorial(-3) = -6.
 Get to it! Also, note that you will only get integers as input. No need for error messages:)
 */
 function factorial(n) {
-  let stop=n
-  if (n>0){
-    for (let i=1;i<stop;i++){
-      n*=i
+  let stop = n;
+  if (n > 0) {
+    for (let i = 1; i < stop; i++) {
+      n *= i;
     }
-    return n
+    return n;
   }
-  if (n<0){
-    for (let i=n+1;i<0;i++){
-      n*=i
+  if (n < 0) {
+    for (let i = n + 1; i < 0; i++) {
+      n *= i;
     }
-    return n
+    return n;
   }
-  return 1
+  return 1;
 }

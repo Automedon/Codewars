@@ -31,4 +31,4 @@ end
 
 # allowedLetters should equal ['a', 'b', 'c']
 */
-Array.prototype.each = [].some
+Array.prototype.each = [].some;

@@ -8,11 +8,11 @@ Given the amount of cash on hand, the initial wager, and the number of rounds pl
 
 If I can't afford to pay up, return "I'll pay you back later" instead ;)
 */
-function doubleOrNothing(cash, wager, losses){
-  while(losses>1){
-    wager*=2
-    losses--
+function doubleOrNothing(cash, wager, losses) {
+  while (losses > 1) {
+    wager *= 2;
+    losses--;
   }
-  cash=cash-(wager)
-  return cash>=0?cash:"I'll pay you back later"
+  cash = cash - wager;
+  return cash >= 0 ? cash : "I'll pay you back later";
 }

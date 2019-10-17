@@ -28,6 +28,6 @@ Please ask before translating: some translations are already written and publish
 */
 function partsSums(ls) {
   let arr = [0];
-  ls.reverse().forEach(v => arr.push(arr[arr.length-1] + v));
+  ls.reverse().forEach(v => arr.push(arr[arr.length - 1] + v));
   return arr.reverse();
 }

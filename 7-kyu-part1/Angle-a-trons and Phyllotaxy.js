@@ -21,13 +21,13 @@ Test.assertSimilar(prediction(137.5,5) => { 'leaf 1': '0.0 degrees',
 Angles should be to 1 decimal place and no greater than 360 degrees.
 */
 
-function prediction(angle, leaf){
-  let a={}
-  for (let i=1;i<=leaf;i++)
-  {
-  let count=angle*(i-1)/360
-  a[`leaf ${i}`]=`${((0.0+angle*(i-1))-(360*parseInt(count))).toFixed(1)} degrees`
+function prediction(angle, leaf) {
+  let a = {};
+  for (let i = 1; i <= leaf; i++) {
+    let count = (angle * (i - 1)) / 360;
+    a[`leaf ${i}`] = `${(0.0 + angle * (i - 1) - 360 * parseInt(count)).toFixed(
+      1
+    )} degrees`;
   }
-  return a
-
+  return a;
 }

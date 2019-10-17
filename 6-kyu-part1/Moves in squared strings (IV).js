@@ -39,35 +39,35 @@ It could be easier to take these katas from number (I) to number (IV)
 Bash Note: The ouput strings should be separated by \r instead of \n. See "Sample Tests".
 */
 function diag2Sym(strng) {
-    let arr = strng.split`\n`
-    let arr2 = []
-    for (let i=arr.length-1;i>=0;i--){
-      let str=''
-      for (let j=arr.length-1;j>=0;j--){
-        str+=arr[j][i]
-      }
-      arr2.push(str)
+  let arr = strng.split`\n`;
+  let arr2 = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    let str = "";
+    for (let j = arr.length - 1; j >= 0; j--) {
+      str += arr[j][i];
     }
-    return arr2.join`\n`
+    arr2.push(str);
+  }
+  return arr2.join`\n`;
 }
 function rot90Counter(strng) {
-    let arr = strng.split`\n`
-    let arr2 = []
-    for (let i=arr.length-1;i>=0;i--){
-      let str=''
-      for (let j=0;j<arr.length;j++){
-        str+=arr[j][i]
-      }
-      arr2.push(str)
+  let arr = strng.split`\n`;
+  let arr2 = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    let str = "";
+    for (let j = 0; j < arr.length; j++) {
+      str += arr[j][i];
     }
-    return arr2.join`\n`
+    arr2.push(str);
+  }
+  return arr2.join`\n`;
 }
 function selfieDiag2Counterclock(strng) {
-    let arr = strng.split`\n`
-    let arr2 = diag2Sym(strng).split`\n`
-    let arr3 = rot90Counter(strng).split`\n`
-    return arr.map((v,i)=>v+'|'+arr2[i]+'|'+arr3[i]).join`\n`
+  let arr = strng.split`\n`;
+  let arr2 = diag2Sym(strng).split`\n`;
+  let arr3 = rot90Counter(strng).split`\n`;
+  return arr.map((v, i) => v + "|" + arr2[i] + "|" + arr3[i]).join`\n`;
 }
 function oper(fct, s) {
-    return fct(s)
+  return fct(s);
 }

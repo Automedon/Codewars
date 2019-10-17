@@ -16,6 +16,8 @@ Some keyword of arbitrary length consisting only of uppercase letters;
 Final 4 groups of digits with 2 digits in each group.
 Your task is to write a function that can validate the correct UVB-76 message. Function should return "True" if message is in correct format and "False" otherwise.
 */
-function validate(message){
-  return /^MDZHB\s\d{2}\s\d{3}\s[A-Z]+\s\d{2}\s\d{2}\s\d{2}\s\d{2}$/.test(message)
+function validate(message) {
+  return /^MDZHB\s\d{2}\s\d{3}\s[A-Z]+\s\d{2}\s\d{2}\s\d{2}\s\d{2}$/.test(
+    message
+  );
 }

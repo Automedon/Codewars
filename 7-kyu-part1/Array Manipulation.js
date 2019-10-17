@@ -12,17 +12,19 @@ Your task is to create a function "arrayManip()" that takes in an array as its a
 
 Note: Return a new array, rather than modifying the passed array.
 */
-function arrayManip(array){
-  for (let i=0;i<array.length;i++){
-    let arr=[];
-      for (let j=i+1;j<array.length;j++){
-      if (array[i]<array[j]) arr.push(array[j]);  
+function arrayManip(array) {
+  for (let i = 0; i < array.length; i++) {
+    let arr = [];
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] < array[j]) arr.push(array[j]);
     }
-    let min=Math.min(...arr)
-    if (arr.length>0){
-    array[i]=min
-    } else {array[i]=-1};
-    arr=[];
+    let min = Math.min(...arr);
+    if (arr.length > 0) {
+      array[i] = min;
+    } else {
+      array[i] = -1;
     }
-    return array
+    arr = [];
+  }
+  return array;
 }

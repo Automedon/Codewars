@@ -7,5 +7,5 @@ Given two inputs, 1) a dollar ammount and 2) a tax percentage, you must return t
 You can assume all input is valid, meaning no strings, negative values or taxes over 100%;
 */
 function calculateTax(dollars, taxRate) {
-  return (dollars*(taxRate/100)).toFixed(2)
+  return (dollars * (taxRate / 100)).toFixed(2);
 }

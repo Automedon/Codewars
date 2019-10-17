@@ -28,11 +28,12 @@ returns:
 *  *
 ****
 */
-function frame(phrase, ch='*') {
-  if (!phrase) return '****\n*  *\n*  *\n****'
-  let l = phrase.length+4;
+function frame(phrase, ch = "*") {
+  if (!phrase) return "****\n*  *\n*  *\n****";
+  let l = phrase.length + 4;
   let f = ch.repeat(l);
-  let s = ch+' '.repeat(l-2)+ch
-  let str = f+'\n'+s+'\n'+ch+' '+phrase+' '+ch+'\n'+s+'\n'+f
-  return str
+  let s = ch + " ".repeat(l - 2) + ch;
+  let str =
+    f + "\n" + s + "\n" + ch + " " + phrase + " " + ch + "\n" + s + "\n" + f;
+  return str;
 }

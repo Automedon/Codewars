@@ -20,17 +20,17 @@ Create a function that will take 2 integers as arguments: a number of Pidgeys an
 
 Remember, you'll need to take into account the extra Pidgey Candy gained from tranferring and evolving Pidgeys.
 */
-function pidgeyCalc ( pidgeys, candy ) {
+function pidgeyCalc(pidgeys, candy) {
   let XP = 0;
-  while ( pidgeys > 0 ) {
+  while (pidgeys > 0) {
     if (candy > 11) {
-      pidgeys-=1;
+      pidgeys -= 1;
       candy -= 11;
-      XP+=500;
+      XP += 500;
     } else {
       pidgeys--;
       candy++;
-    };  
-  };
-  return XP;      
+    }
+  }
+  return XP;
 }

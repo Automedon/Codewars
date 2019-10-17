@@ -8,7 +8,8 @@ is to write a function getVertex that takes three parameters a, b, and c and ret
 
 Note: Make sure it works for a values other than 1.
 */
-function getVertex(a,b,c){
-    let h = -b / ( 2 * a), k = c - a * h * h;
-    return [h, k];
+function getVertex(a, b, c) {
+  let h = -b / (2 * a),
+    k = c - a * h * h;
+  return [h, k];
 }

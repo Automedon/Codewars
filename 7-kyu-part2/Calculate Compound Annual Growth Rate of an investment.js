@@ -17,6 +17,6 @@ Where first parameter is the Future Value, second is Present Value and third is 
 Give your answer to 2 decimal points.
 All tested parameters will integers and greater than ```0```.
 */
-function calculateCAGR(fv,pv,n){
-   return ((Math.pow((fv/pv),(1/n))-1)*100).toFixed(2)*1
+function calculateCAGR(fv, pv, n) {
+  return ((Math.pow(fv / pv, 1 / n) - 1) * 100).toFixed(2) * 1;
 }

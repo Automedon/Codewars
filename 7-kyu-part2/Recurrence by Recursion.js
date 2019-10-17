@@ -33,11 +33,11 @@ recurrence(3, n => 2 * n, 5) === 48
 Good luck :)
 */
 function recurrence(base, formula, term) {
-  let sum=base
-  let i=1
-  while(i<term){
-    i++
-    sum=formula(sum)
+  let sum = base;
+  let i = 1;
+  while (i < term) {
+    i++;
+    sum = formula(sum);
   }
-  return sum
+  return sum;
 }

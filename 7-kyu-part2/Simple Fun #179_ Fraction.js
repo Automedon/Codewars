@@ -29,8 +29,8 @@ The denominator, 1 ≤ b ≤ 2000.
 
 The sum of the numerator and the denominator of the reduces fraction.
 */
-const gcd = (a, b) => b ? gcd(b, a % b) : Math.abs(a);
+const gcd = (a, b) => (b ? gcd(b, a % b) : Math.abs(a));
 const lcm = (a, b) => Math.abs(a * b) / gcd(a, b);
 function fraction(a, b) {
-  return lcm(a,b)/a+lcm(a,b)/b
+  return lcm(a, b) / a + lcm(a, b) / b;
 }

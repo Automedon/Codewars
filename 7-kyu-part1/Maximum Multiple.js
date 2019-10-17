@@ -1,3 +1,3 @@
-function maxMultiple(divisor, bound){
-  return bound-bound%divisor
+function maxMultiple(divisor, bound) {
+  return bound - (bound % divisor);
 }

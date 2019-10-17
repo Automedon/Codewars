@@ -8,10 +8,10 @@ Read more : https://en.wikipedia.org/wiki/Perfect_number
 
 You are requested to write a function that returns true "boolean value" if the number is perfect or false "boolean value" if not or if number is negative.
 */
-function isPerfect(number){
-  let arr =[];
-  for (let i=0;i<number;i++){
-    if (number%i===0) arr.push(i)
+function isPerfect(number) {
+  let arr = [];
+  for (let i = 0; i < number; i++) {
+    if (number % i === 0) arr.push(i);
   }
-  return arr.reduce((a,b)=>a+b,0)===number
+  return arr.reduce((a, b) => a + b, 0) === number;
 }

@@ -20,9 +20,9 @@ The probability should be a string and should discard any digits after the 100th
 
 As a complete example, color_probability('red', 'bumpy') should return the string '0.57'.
 */
-function colorProbability(color, texture){
-  if (texture==="smooth") return '0.33'
-  if (color==="red"&&texture==="bumpy") return '0.57'
-  if (color==="green"&&texture==="bumpy") return '0.14'
-  if (color==="yellow"&&texture==="bumpy") return '0.28'
+function colorProbability(color, texture) {
+  if (texture === "smooth") return "0.33";
+  if (color === "red" && texture === "bumpy") return "0.57";
+  if (color === "green" && texture === "bumpy") return "0.14";
+  if (color === "yellow" && texture === "bumpy") return "0.28";
 }

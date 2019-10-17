@@ -52,8 +52,8 @@ Can you change our function to create such a OnceNamedOne object ?
 ( Hint: in this kata you'll try to define properties of an object )
 */
 function OnceNamedOne(first, last) {
-    this.firstName = first;
-    this.lastName = last;
-    this.fullName = this.firstName + ' ' + this.lastName;
-    Object.freeze(this)
+  this.firstName = first;
+  this.lastName = last;
+  this.fullName = this.firstName + " " + this.lastName;
+  Object.freeze(this);
 }

@@ -21,10 +21,10 @@ bittyWords('So long and thanks for all the fish', 42) === 'and for the'
 To uncomplicate things, there will be no punctuation in the phrases.
 */
 function bittyWords(words, bits) {
-  let str = bits.toString(2) 
-  let wL=words.split` `.length-str.length
-  if (wL>0){
-    str='0'.repeat(wL)+str
+  let str = bits.toString(2);
+  let wL = words.split` `.length - str.length;
+  if (wL > 0) {
+    str = "0".repeat(wL) + str;
   }
-  return words.split` `.filter((v,i)=>str.toString(2)[i]*1===1).join` `
+  return words.split` `.filter((v, i) => str.toString(2)[i] * 1 === 1).join` `;
 }

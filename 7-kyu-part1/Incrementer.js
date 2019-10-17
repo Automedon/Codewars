@@ -11,6 +11,6 @@ incrementer([4,6,9,1,3]) => [5,8,2,5,8]
   - Only its last digit 2 should be returned
 Lastly, return [] if your array is empty! Arrays will only contain numbers so don't worry about checking that.
 */
-function incrementer(num) { 
-  return num.map((v,i)=>(v+i+1)%10)
+function incrementer(num) {
+  return num.map((v, i) => (v + i + 1) % 10);
 }

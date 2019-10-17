@@ -1,1 +1,1 @@
-const numbers = (...args) => args.every(arg => typeof arg === 'number')
+const numbers = (...args) => args.every(arg => typeof arg === "number");

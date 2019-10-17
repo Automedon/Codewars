@@ -9,15 +9,17 @@ Giving the amount of time in minutes needed to complete the project and an array
 If we need to contribute time to the project then return "I need to work x hour(s) and y minute(s)"
 If we don't have to contribute any time to the project then return "Easy Money!"
 */
-function workNeeded(p, f)
-{
-  let fH=0;
-  let fM=0;
-  for (let i=0;i<f.length;i++){
-  fH+=f[i][0]
-  fM+=f[i][1]}
-  let a=p-fM-(fH*60)
-  let b=a%60
-  if(a===0||b<0) return "Easy Money!"
- return `I need to work ${a/60>=1?Math.floor(a/60):0} hour(s) and ${b} minute(s)`
+function workNeeded(p, f) {
+  let fH = 0;
+  let fM = 0;
+  for (let i = 0; i < f.length; i++) {
+    fH += f[i][0];
+    fM += f[i][1];
+  }
+  let a = p - fM - fH * 60;
+  let b = a % 60;
+  if (a === 0 || b < 0) return "Easy Money!";
+  return `I need to work ${
+    a / 60 >= 1 ? Math.floor(a / 60) : 0
+  } hour(s) and ${b} minute(s)`;
 }

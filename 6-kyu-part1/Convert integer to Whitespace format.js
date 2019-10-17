@@ -25,22 +25,22 @@ More on Whitespace
 If you liked this kata, you may also enjoy a much harder Whitespace-related kata: Whitespace interpreter by @jacobb.
 */
 function whitespaceNumber(n) {
-    let b = n.toString(2)
-    if (n===0) return ' \n'
-    if (n<0){
-    let str = '\t'
-      for (let i=1;i<b.length;i++){
-        if (b[i]==1) str+='\t'
-        else str+=' '
-      }
-      return str+'\n'
+  let b = n.toString(2);
+  if (n === 0) return " \n";
+  if (n < 0) {
+    let str = "\t";
+    for (let i = 1; i < b.length; i++) {
+      if (b[i] == 1) str += "\t";
+      else str += " ";
     }
-    if (n>=0){
-    let str = ' '
-      for (let i=0;i<b.length;i++){
-        if (b[i]==1) str+='\t'
-        else str+=' '
-      }
-      return str+'\n'
-    }
+    return str + "\n";
   }
+  if (n >= 0) {
+    let str = " ";
+    for (let i = 0; i < b.length; i++) {
+      if (b[i] == 1) str += "\t";
+      else str += " ";
+    }
+    return str + "\n";
+  }
+}

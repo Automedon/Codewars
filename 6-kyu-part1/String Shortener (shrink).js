@@ -26,13 +26,13 @@ glue must have at least 1 char on both ends. Example minimum h...d, results ....
 You can assume you'll always receive a string as the sentence and the glue. And integer number for the length.
 Think about other possible edge cases, there are some surprises.
 */
-function shorten(string, length, glue='...') {
-  if (glue.length>=string.length) return string.slice(0,length)
-  if (string.length<=length) return string
-  let left = string.slice(0,~~((length-glue.length)/2))
-  if (left.length===0) return string.slice(0,length)
-  let right = string.slice(Math.ceil((length-glue.length)/2)*-1)
-  let str = left+glue+right
-  if (str.length>length) return ''
-  return str
+function shorten(string, length, glue = "...") {
+  if (glue.length >= string.length) return string.slice(0, length);
+  if (string.length <= length) return string;
+  let left = string.slice(0, ~~((length - glue.length) / 2));
+  if (left.length === 0) return string.slice(0, length);
+  let right = string.slice(Math.ceil((length - glue.length) / 2) * -1);
+  let str = left + glue + right;
+  if (str.length > length) return "";
+  return str;
 }

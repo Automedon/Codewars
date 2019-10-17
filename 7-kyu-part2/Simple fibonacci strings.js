@@ -12,10 +12,10 @@ solve(2) = '010'
 solve(3) = '01001'
 More examples in test cases. Good luck!
 */
-function solve(n){
-    let arr=['0','01']
-    for (let i=2;i<=n;i++){
-    arr.push(arr[i-1]+arr[i-2])
-    }
-    return arr[n]
+function solve(n) {
+  let arr = ["0", "01"];
+  for (let i = 2; i <= n; i++) {
+    arr.push(arr[i - 1] + arr[i - 2]);
+  }
+  return arr[n];
 }

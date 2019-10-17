@@ -60,11 +60,11 @@ Return how many trees have to be planted, if you can't achieve a symmetrical lay
     gaps=10 can not finished
     so sc(3,3,10)=0
 */
-function sc(width,length,gaps){
-   const perimeter = width + width + length + length - 4;
-  if (perimeter%(gaps+1) !== 0) {
+function sc(width, length, gaps) {
+  const perimeter = width + width + length + length - 4;
+  if (perimeter % (gaps + 1) !== 0) {
     return 0;
   } else {
-    return perimeter/(gaps+1);
+    return perimeter / (gaps + 1);
   }
 }

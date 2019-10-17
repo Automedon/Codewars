@@ -8,6 +8,6 @@ Reference: Tower of Hanoi, Courtesy of Coolmath Games
 NB: This problem may seem very complex, but in reality there is an amazingly simple formula to calculate the minimum number. Just Learn how to solve the problem via the above link (if you are not familiar with it), and then think hard. Your solution should be in no way extraordinarily long and complex. The Kata ranking is for figuring out the solution, but the coding skills required are minimal.
 */
 
-function towerOfHanoi(n){
+function towerOfHanoi(n) {
   return 2 ** n - 1;
 }

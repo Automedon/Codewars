@@ -13,6 +13,6 @@ validPhoneNumber("(1111)555 2345")  => returns false
 validPhoneNumber("(098) 123 4567")  => returns false
 */
 
-function validPhoneNumber(phoneNumber){
-  return (/^\(\d{3}\)\ \d{3}\-\d{4}$/).test(phoneNumber)
+function validPhoneNumber(phoneNumber) {
+  return /^\(\d{3}\)\ \d{3}\-\d{4}$/.test(phoneNumber);
 }

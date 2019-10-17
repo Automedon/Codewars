@@ -13,5 +13,8 @@ remove('apples and bananas',{'a':50, 'n':1}) === 'pples d bnns'
 // we don't have 50 a's, so just remove it till we hit end of string.
 */
 function remove(str, what) {
-   return str.split('').map(v=>what[v]>0?what[v]--&&(v=''):v).join('');
+  return str
+    .split("")
+    .map(v => (what[v] > 0 ? what[v]-- && (v = "") : v))
+    .join("");
 }

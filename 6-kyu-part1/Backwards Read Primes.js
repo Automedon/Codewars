@@ -16,37 +16,43 @@ backwardsPrime(2, 100) => [13, 17, 31, 37, 71, 73, 79, 97]
 backwardsPrime(9900, 10000) => [9923, 9931, 9941, 9967]
 */
 
-function backwardsPrime(start, stop){
-    var arr = [];
-    for(var x = start; x <= stop; x++) {
-        if(isPrime(x)) {
-            if(arr.includes(x)) {
-                continue;
-            }
-            let temp = parseInt(x.toString().split('').reverse().join(''))
-            if (temp != x && isPrime(temp)) {
-                arr.push(x);
-                arr.push(temp);
-            }
-        }    
+function backwardsPrime(start, stop) {
+  var arr = [];
+  for (var x = start; x <= stop; x++) {
+    if (isPrime(x)) {
+      if (arr.includes(x)) {
+        continue;
+      }
+      let temp = parseInt(
+        x
+          .toString()
+          .split("")
+          .reverse()
+          .join("")
+      );
+      if (temp != x && isPrime(temp)) {
+        arr.push(x);
+        arr.push(temp);
+      }
     }
-    return arr.filter(a=> a >= start && a <= stop).sort((b,c)=>b-c);
+  }
+  return arr.filter(a => a >= start && a <= stop).sort((b, c) => b - c);
 }
 
 function isPrime(n) {
-    if(n == 2 || n == 3) {
-        return true;
-    }
-    if(n % 2 == 0 || n % 3 == 0 || n < 2) {
-        return false;
-    }
-    var x = 5;
-    var N = Math.sqrt(n);
-    while (x <= N) {
-        if (n % x == 0) {
-            return false;
-        }
-        x++;
-    }
+  if (n == 2 || n == 3) {
     return true;
+  }
+  if (n % 2 == 0 || n % 3 == 0 || n < 2) {
+    return false;
+  }
+  var x = 5;
+  var N = Math.sqrt(n);
+  while (x <= N) {
+    if (n % x == 0) {
+      return false;
+    }
+    x++;
+  }
+  return true;
 }

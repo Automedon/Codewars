@@ -31,5 +31,7 @@ to_query_string({ "bar": [ 2, 3 ], "foo": 1 }) # => "bar=2&bar=3&foo=1"
 Next you may enjoy kata Objectify a URL Query String.
 */
 function toQueryString(o) {
-  return Object.keys(o).map(k=>o[k].map?o[k].map(x=>k+'='+x).join`&`:k+'='+o[k]).join`&`;
+  return Object.keys(o).map(k =>
+    o[k].map ? o[k].map(x => k + "=" + x).join`&` : k + "=" + o[k]
+  ).join`&`;
 }

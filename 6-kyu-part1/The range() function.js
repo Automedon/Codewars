@@ -28,11 +28,13 @@ Returns a list of integers from start to stop, incremented (or decremented) by s
 Note that ranges that stop before they start are considered to be zero-length instead of negative.
 */
 function range(start = 0, end, step = 1) {
-  if(end === undefined){end = start, start = 0;}
+  if (end === undefined) {
+    (end = start), (start = 0);
+  }
   let range = [];
   let steps = (end - start) / (step || 1);
-  for(let i = 0; i < steps; i++) {
-    range.push(start)
+  for (let i = 0; i < steps; i++) {
+    range.push(start);
     start += step;
   }
   return range;

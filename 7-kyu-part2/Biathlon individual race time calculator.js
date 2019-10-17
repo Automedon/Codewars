@@ -28,19 +28,19 @@ individualResult(15000, 21) should return false since the number of penalties is
 individualResult(15000, -3) should return false too since the number of penalties cannot be negative
 */
 const individualResult = (tenthsOfSecond, numberOfPenalties) => {
-  if (numberOfPenalties>20||numberOfPenalties<0) return false
-  let time=(tenthsOfSecond/10)
-  let h=0
-  while(time>60){
-  time-=60
-  h++
+  if (numberOfPenalties > 20 || numberOfPenalties < 0) return false;
+  let time = tenthsOfSecond / 10;
+  let h = 0;
+  while (time > 60) {
+    time -= 60;
+    h++;
   }
-  let m=0
-  while(time>=1){
-  time-=1
-  m++
+  let m = 0;
+  while (time >= 1) {
+    time -= 1;
+    m++;
   }
-  time=time.toFixed(1)
-  let s=time.slice(-1)
-  return `${h+numberOfPenalties}:${('0'+m.toString()).slice(-2)}:${s}`
-}
+  time = time.toFixed(1);
+  let s = time.slice(-1);
+  return `${h + numberOfPenalties}:${("0" + m.toString()).slice(-2)}:${s}`;
+};

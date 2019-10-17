@@ -19,13 +19,15 @@ For example:
 
 ```sc("aAAAaAAb")``` should return ```"aAAAaAA"```(son also can have a lot of father ;-)
 */
-function sc(s){
-  let obj={};
-  s.split``.map(v=>obj[v]=obj[v]?obj[v]+1:1)
-  return s.split``.map(v=>{
-  let upper=v.toUpperCase();
-  let low=v.toLowerCase()
-  if (obj[upper]>=1&&obj[low]>=1){ return v}
-  return v=''
-  }).join``
+function sc(s) {
+  let obj = {};
+  s.split``.map(v => (obj[v] = obj[v] ? obj[v] + 1 : 1));
+  return s.split``.map(v => {
+    let upper = v.toUpperCase();
+    let low = v.toLowerCase();
+    if (obj[upper] >= 1 && obj[low] >= 1) {
+      return v;
+    }
+    return (v = "");
+  }).join``;
 }

@@ -20,34 +20,34 @@ You may also attempt to fix other methods such as Math.random() or Math.cos() bu
 Credits
 The idea of this Kata is not entirely original; credits go to BattleRattle's "Math Issues" for inspiring me to make this Kata.
 */
-Math.ceil = function (x) {
-  if (x===parseInt(x)) return x
-  return Math.trunc(x)+1
-}
-Math.floor = function (x) {
-  return Math.trunc(x)
-}
-Math.round = function (x) {
-  if (x===parseInt(x)) return x
-  return x.toString().split('.')[1][0]*1>=5?Math.ceil(x):Math.trunc(x)
-}
-Math.max = function () {
-  let ans = arguments[0]
-  for (let i=0;i<arguments.length;i++){
-    if (ans<arguments[i]) ans=arguments[i]
+Math.ceil = function(x) {
+  if (x === parseInt(x)) return x;
+  return Math.trunc(x) + 1;
+};
+Math.floor = function(x) {
+  return Math.trunc(x);
+};
+Math.round = function(x) {
+  if (x === parseInt(x)) return x;
+  return x.toString().split(".")[1][0] * 1 >= 5 ? Math.ceil(x) : Math.trunc(x);
+};
+Math.max = function() {
+  let ans = arguments[0];
+  for (let i = 0; i < arguments.length; i++) {
+    if (ans < arguments[i]) ans = arguments[i];
   }
-  return ans
-}
-Math.min = function () {
-  let ans = arguments[0]
-  for (let i=0;i<arguments.length;i++){
-    if (ans>arguments[i]) ans=arguments[i]
+  return ans;
+};
+Math.min = function() {
+  let ans = arguments[0];
+  for (let i = 0; i < arguments.length; i++) {
+    if (ans > arguments[i]) ans = arguments[i];
   }
-  return ans
-}
-Math.pow = function (x,pow) {
-  return x**pow
-}
-Math.abs = function (x) {
-  return x.toString().replace('-','')*1
-}
+  return ans;
+};
+Math.pow = function(x, pow) {
+  return x ** pow;
+};
+Math.abs = function(x) {
+  return x.toString().replace("-", "") * 1;
+};

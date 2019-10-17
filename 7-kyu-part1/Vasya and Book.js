@@ -19,22 +19,17 @@ Seven non-negative numbers (that do not exceed 1000) represent how many pages Va
 100 15 20 20 15 10 30 45
 By the end of Monday and therefore, by the beginning of Tuesday Vasya has 85 pages left. He has 65 pages left by Wednesday, 45 by Thursday, 30 by Friday, 20 by Saturday and on Saturday Vasya finishes reading the book (and he also has time to read 10 pages of something else).
 */
-function bookIsDay(pages,days){
+function bookIsDay(pages, days) {
   let index = 0;
   let dayofweek;
-    while (pages > 0)
-                {
-                    pages = pages - days[index];
-                    if (index == 6 && pages > 0)
-                    {
-                        index = 0;
-                    }
-
-                    else
-                    {
-                        index++;
-                    }
-                }
-                dayofweek = index;
-                return dayofweek;
+  while (pages > 0) {
+    pages = pages - days[index];
+    if (index == 6 && pages > 0) {
+      index = 0;
+    } else {
+      index++;
+    }
+  }
+  dayofweek = index;
+  return dayofweek;
 }

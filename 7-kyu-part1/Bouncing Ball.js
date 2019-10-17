@@ -19,9 +19,9 @@ Initial height is an integer in range [2,1000]
 
 Bouncing Proportion is a decimal in range [0, 1)
 */
-function bouncingBall(initial, proportion,n=0) {
+function bouncingBall(initial, proportion, n = 0) {
   if (initial <= 1) return n;
-    initial *= proportion;
-    n += 1;
-    return bouncingBall(initial, proportion, n);
-};
+  initial *= proportion;
+  n += 1;
+  return bouncingBall(initial, proportion, n);
+}

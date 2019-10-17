@@ -7,9 +7,9 @@ domainName("http://www.zombie-bites.com") == "zombie-bites"
 domainName("https://www.cnet.com") == "cnet"
 */
 
-function domainName(url){
-  url = url.replace("https://", '');
-  url = url.replace("http://", '');
-  url = url.replace("www.", '');
-  return url.split('.')[0];
-};
+function domainName(url) {
+  url = url.replace("https://", "");
+  url = url.replace("http://", "");
+  url = url.replace("www.", "");
+  return url.split(".")[0];
+}

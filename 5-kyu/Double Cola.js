@@ -18,7 +18,7 @@ whoIsNext(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 1) == "Sheldon"
 whoIsNext(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 52) == "Penny"
 whoIsNext(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 7230702951) == "Leonard"
 */
-function whoIsNext(names, r){
-  while(r>names.length) r=Math.floor((r-names.length+1)/2);
-  return names[r-1];
+function whoIsNext(names, r) {
+  while (r > names.length) r = Math.floor((r - names.length + 1) / 2);
+  return names[r - 1];
 }

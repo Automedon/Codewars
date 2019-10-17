@@ -16,10 +16,10 @@ If the start or step is bigger or equals the edge: return empty array.
 I will only provide non-negative integers. No need to check for null, undefined etc.
 */
 function range(start, edge, step) {
-  if (step>edge) return []
+  if (step > edge) return [];
   let arr = [];
-  for (let i=start;i<edge;i+=step){
-    arr.push(i)
+  for (let i = start; i < edge; i += step) {
+    arr.push(i);
   }
-  return arr
+  return arr;
 }

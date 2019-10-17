@@ -23,12 +23,12 @@ Your program returns a positive integer. The residual water is not calculated.
 return -1; - If no dweller living inside of the Vault.
 */
 function thirstyIn(water, a) {
-  if (a.length===0) return -1
-  let count=0
-  for(let i=0;i<a.length;i++){
-  if (a[i]<18) count+=1;
-  if (a[i]>50) count+=1.5;
-  if (a[i]<=50&&a[i]>=18) count+=2;
+  if (a.length === 0) return -1;
+  let count = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] < 18) count += 1;
+    if (a[i] > 50) count += 1.5;
+    if (a[i] <= 50 && a[i] >= 18) count += 2;
   }
-  return ~~(water/count)
+  return ~~(water / count);
 }

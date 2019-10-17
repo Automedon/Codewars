@@ -39,13 +39,18 @@ After each n = (n - k) / 2 operation, n should be an integer.
 
 Happy Coding ^_^
 */
-function minimalSubtractor(n){
-  let k=n.toString().slice()*1
-  let i=0;
-    while(true){
-      if (n===1) return i
-      if (n<1) {i++;n=k;}
-      if (i>k) {break}
-      n=(n-i)/2
+function minimalSubtractor(n) {
+  let k = n.toString().slice() * 1;
+  let i = 0;
+  while (true) {
+    if (n === 1) return i;
+    if (n < 1) {
+      i++;
+      n = k;
     }
+    if (i > k) {
+      break;
+    }
+    n = (n - i) / 2;
+  }
 }

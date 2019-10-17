@@ -20,7 +20,8 @@ For s = "Aba", the output should be "aba"
 For s = "ABa", the output should be "ABA"
 */
 function caseUnification(s) {
-  let up=0,down=0;
-  s.split('').map(v=>v===v.toUpperCase()?up++:down++)
-  return up>down?s.toUpperCase():s.toLowerCase()
+  let up = 0,
+    down = 0;
+  s.split("").map(v => (v === v.toUpperCase() ? up++ : down++));
+  return up > down ? s.toUpperCase() : s.toLowerCase();
 }

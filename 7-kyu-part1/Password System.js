@@ -26,6 +26,6 @@ helpZoom({1,0,1,1,0,0,0,0,0}) => "No"
 Since the given password isn't symmetric along centre point, so the answer is No.
 */
 
-function helpZoom(key){
-  return key.join('') === key.reverse().join('') ? 'Yes' : 'No';
+function helpZoom(key) {
+  return key.join("") === key.reverse().join("") ? "Yes" : "No";
 }

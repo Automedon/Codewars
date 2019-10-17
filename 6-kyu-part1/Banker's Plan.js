@@ -31,13 +31,13 @@ f11 = -5 so he has no way to withdraw something for his living in year 12.
 Note: Don't forget to convert the percent parameters as percentages in the body of your function: if a parameter percent is 2 you have to convert it to 0.02.
 */
 const fortune = (f0, p, c0, n, i) => {
-    let c = c0;
-    let sum = f0;
+  let c = c0;
+  let sum = f0;
 
-    for (let j = 1; j < n; j++) {
-        sum = Math.ceil(sum * (1 + p / 100) - c);
-        c = Math.ceil(c * (1 + i / 100))
-    }
+  for (let j = 1; j < n; j++) {
+    sum = Math.ceil(sum * (1 + p / 100) - c);
+    c = Math.ceil(c * (1 + i / 100));
+  }
 
-    return sum >= 0;
+  return sum >= 0;
 };

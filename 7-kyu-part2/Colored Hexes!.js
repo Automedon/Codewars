@@ -26,17 +26,17 @@ hexColor('181 181 170') == 'yellow'
 hexColor('000 000 000') == 'black'
 hexColor('001 001 001') == 'white'
 */
-function hexColor(colors){
-  let b=colors.split(' ')[2]*1
-  let g=colors.split(' ')[1]*1
-  let r=colors.split(' ')[0]*1
-  if (b>g&&b>r) return 'blue'
-  if (r>g&&r>b) return 'red'
-  if (g>r&&g>b) return 'green'
-  if (b===g&&g===b&&b===r&&r>0) return 'white'
-  if (b===0&&g===0&&r===0) return 'black'
-  if (r===b) return 'magenta'
-  if (g===r) return 'yellow'
-  if (g===b) return 'cyan'
-  return 'black'
+function hexColor(colors) {
+  let b = colors.split(" ")[2] * 1;
+  let g = colors.split(" ")[1] * 1;
+  let r = colors.split(" ")[0] * 1;
+  if (b > g && b > r) return "blue";
+  if (r > g && r > b) return "red";
+  if (g > r && g > b) return "green";
+  if (b === g && g === b && b === r && r > 0) return "white";
+  if (b === 0 && g === 0 && r === 0) return "black";
+  if (r === b) return "magenta";
+  if (g === r) return "yellow";
+  if (g === b) return "cyan";
+  return "black";
 }

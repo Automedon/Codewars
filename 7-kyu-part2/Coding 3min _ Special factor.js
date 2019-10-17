@@ -40,18 +40,18 @@ So, sc(100) should return [1,2,4,25,50,100]
 
 ```
 */
-function sc(n){
+function sc(n) {
   let arr = [];
-  let check = []
-  let s = n.toString(2)
-  for (let i=0;i<=s.length;i++){
-    for (let j=i+1;j<=s.length;j++){
-      check.push(s.slice(i,j))
+  let check = [];
+  let s = n.toString(2);
+  for (let i = 0; i <= s.length; i++) {
+    for (let j = i + 1; j <= s.length; j++) {
+      check.push(s.slice(i, j));
     }
   }
-  for (let i=1;i<=n;i++){
-  if (n%i===0)arr.push(i)
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) arr.push(i);
   }
-  arr=arr.filter(v=>check.includes(v.toString(2)))
-  return arr
+  arr = arr.filter(v => check.includes(v.toString(2)));
+  return arr;
 }

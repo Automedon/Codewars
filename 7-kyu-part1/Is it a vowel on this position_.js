@@ -12,5 +12,5 @@ checkVowel('cat', 4)  ->   false // this position doesn't exist
 P.S. If n < 0, return false
 */
 function checkVowel(string, p) {
-  return string[p]?(/[aeiou]/i).test(string[p]):false;
-};
+  return string[p] ? /[aeiou]/i.test(string[p]) : false;
+}

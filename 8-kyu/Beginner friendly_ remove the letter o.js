@@ -7,6 +7,6 @@ Examples:
 "hello world" --> "hell wrld"
 "bono" --> "bn"
 */
-function removeO(string){
-  return string.replace(/[o]/gi,'')
+function removeO(string) {
+  return string.replace(/[o]/gi, "");
 }

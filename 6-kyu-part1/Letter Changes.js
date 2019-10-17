@@ -9,11 +9,11 @@ For Example:
 letterChange('Lorem Ipsum')    // return Mpsfn Jqtvn
 */
 function letterChange(str) {
-  let l = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
-  let u = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
-return str.split('').map(v=>{
-  if (l.indexOf(v)>-1) return v=l[l.indexOf(v)+1]
-  if (u.indexOf(v)>-1) return v=u[u.indexOf(v)+1]
-  else return v
-}).join``
+  let l = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
+  let u = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  return str.split("").map(v => {
+    if (l.indexOf(v) > -1) return (v = l[l.indexOf(v) + 1]);
+    if (u.indexOf(v) > -1) return (v = u[u.indexOf(v) + 1]);
+    else return v;
+  }).join``;
 }

@@ -24,4 +24,4 @@ so in this example [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; becomes: [1, 2, 6, 7, 8, 6, 
 
 Makes sense? Give it a go... hint... there is an array method that is very helpful for this job. So for that reason, you aren't allowed to use loops... :D
 */
-copy=(a,s,o,p)=>a.copyWithin(p,s,o)
+copy = (a, s, o, p) => a.copyWithin(p, s, o);

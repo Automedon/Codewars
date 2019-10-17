@@ -23,7 +23,7 @@ citiesOffered = ['Stockholm','Paris','Melbourne'];
 conferencePicker (citiesVisited, citiesOffered);
 // ---> 'Paris'
 */
-function conferencePicker (citiesVisited, citiesOffered) {
-	 const arr=citiesOffered.filter(v=>!citiesVisited.includes(v))
-   return arr[0]===undefined?'No worthwhile conferences this year!':arr[0]
+function conferencePicker(citiesVisited, citiesOffered) {
+  const arr = citiesOffered.filter(v => !citiesVisited.includes(v));
+  return arr[0] === undefined ? "No worthwhile conferences this year!" : arr[0];
 }

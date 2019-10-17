@@ -14,6 +14,6 @@ stringToNumber("1405") == 1405
 stringToNumber("-7"  ) == -7
 */
 
-var stringToNumber = function(str){
+var stringToNumber = function(str) {
   return parseInt(str);
-}
+};

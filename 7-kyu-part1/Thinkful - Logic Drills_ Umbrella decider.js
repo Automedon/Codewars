@@ -14,8 +14,8 @@ As an additional challenge, consider solving this kata using only logical operat
 */
 
 function takeUmbrella(weather, chance) {
-  if (weather=='sunny' && chance<=0.5) return false;
-  if (weather=='rainy') return true;
-  if (weather=='cloudy'&& chance<=0.2) return false
-  return true
+  if (weather == "sunny" && chance <= 0.5) return false;
+  if (weather == "rainy") return true;
+  if (weather == "cloudy" && chance <= 0.2) return false;
+  return true;
 }

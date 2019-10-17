@@ -10,12 +10,13 @@ Questions are case sensitive.
 Example: maxPossibleScore({"a": 1, "b": 2, "c": 3}, ["a", "c"]); // 1 * 2 + 2 + 3 * 2 = 10
 */
 function maxPossibleScore(obj, arr) {
-   arr=arr.map(String)
-   let count=0
-   for (let key in obj){
-   if (arr.includes(key.toString())){
-   obj[key]*=2}
-   count+=obj[key]
-   }
-   return count
+  arr = arr.map(String);
+  let count = 0;
+  for (let key in obj) {
+    if (arr.includes(key.toString())) {
+      obj[key] *= 2;
+    }
+    count += obj[key];
+  }
+  return count;
 }

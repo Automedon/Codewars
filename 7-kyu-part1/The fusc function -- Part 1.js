@@ -11,8 +11,8 @@ Your job is to produce the code for the fusc function. In this kata, your functi
 When done, move on to Part 2.
 */
 
-function fusc(n){
-    if (n == 0 || n == 1) return n;
-		if (n % 2 == 0) return fusc(n / 2);
-		return fusc((n-1) / 2) + fusc((n+1) / 2);
+function fusc(n) {
+  if (n == 0 || n == 1) return n;
+  if (n % 2 == 0) return fusc(n / 2);
+  return fusc((n - 1) / 2) + fusc((n + 1) / 2);
 }

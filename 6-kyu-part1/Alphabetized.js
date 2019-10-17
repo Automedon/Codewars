@@ -11,10 +11,9 @@ alphabetized("The Holy Bible") // "BbeehHilloTy"
 Inspired by Tauba Auerbach
 */
 function alphabetized(s) {
- var ans="";
- for (var i=97; i<123; ++i)
-   for (var j=0; j<s.length; j++)
-     if (s[j].toLowerCase().charCodeAt()==i)
-     ans+=s[j]
- return ans
+  var ans = "";
+  for (var i = 97; i < 123; ++i)
+    for (var j = 0; j < s.length; j++)
+      if (s[j].toLowerCase().charCodeAt() == i) ans += s[j];
+  return ans;
 }

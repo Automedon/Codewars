@@ -35,5 +35,5 @@ function killKthBit(n, k) {
   let arr = binary.split("");
   arr[arr.length - k] = "0";
   let updatedCode = arr.join("");
-  return parseInt(updatedCode,2);
+  return parseInt(updatedCode, 2);
 }

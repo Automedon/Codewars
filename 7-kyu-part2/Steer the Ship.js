@@ -18,7 +18,9 @@ steer(1,0)   => "R: 90"  // turn right for 90 degrees
 steer(-1,-1) => "L: 135" // turn left for 135 degrees
 */
 var steer = function(x, y) {
-  let a = 90 - Math.atan2(y, x) * ( 180 / Math.PI);
+  let a = 90 - Math.atan2(y, x) * (180 / Math.PI);
   let r = a > 180 ? 360 - a : a;
-  return `${(a<0||a>180) ? "L": "R"}: ${Math.abs(Math.round(r * 100)/100)}`;
-}
+  return `${a < 0 || a > 180 ? "L" : "R"}: ${Math.abs(
+    Math.round(r * 100) / 100
+  )}`;
+};

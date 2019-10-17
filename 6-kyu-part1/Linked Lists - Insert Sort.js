@@ -16,6 +16,8 @@ function Node(data) {
 }
 
 function insertSort(head) {
-  if (!head) { return null; }
+  if (!head) {
+    return null;
+  }
   return sortedInsert(insertSort(head.next), head.data);
 }

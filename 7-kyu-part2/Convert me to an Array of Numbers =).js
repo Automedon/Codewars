@@ -10,5 +10,5 @@ Examples:
 Input: ["3","4","5"] Output: [3,4,5] Input: ["3","45"] Output: [3,45] Input: ["3","hELLo"] Output: [3, NaN]
 */
 function convertMeIntoANumber(array) {
-  return array.map(v=>v*1)
+  return array.map(v => v * 1);
 }

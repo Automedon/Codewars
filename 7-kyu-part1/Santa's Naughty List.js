@@ -5,7 +5,7 @@ Christmas is comming, and Santa has a long list to go through, to find who deser
 Comparison should be case sensitive and the returned list should contain only one copy of each name. "Sam" and "sam" is allowed, but "sAm" and "sAm" is not.
 */
 function findChildren(santasList, children) {
-  let arr=[];
-  santasList.map(v=>children.includes(v)?arr.push(v):null)
-  return arr.sort()
+  let arr = [];
+  santasList.map(v => (children.includes(v) ? arr.push(v) : null));
+  return arr.sort();
 }

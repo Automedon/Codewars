@@ -19,10 +19,10 @@ For this kata, use U.S. gallon, not imperial gallon.
 1 mile = 1.609344 kilometers
 */
 
-function mpg2lp100km(x){
-  return (3.785411784 / ((x * 1.609344) / 100)).toFixed(2)*1;
+function mpg2lp100km(x) {
+  return (3.785411784 / ((x * 1.609344) / 100)).toFixed(2) * 1;
 }
 
-function lp100km2mpg(x){
-  return ((100 / 1.609344) / (x / 3.785411784)).toFixed(2)*1;
+function lp100km2mpg(x) {
+  return (100 / 1.609344 / (x / 3.785411784)).toFixed(2) * 1;
 }

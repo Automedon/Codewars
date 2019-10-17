@@ -10,6 +10,6 @@ calculate(1,1)(1,-1) // should return 2
 calculate(2,4)(3,7,1) // should return 17
 */
 
-const calculate=(...x)=>(...y)=> {
-  return [].concat(x,y).reduce((a,b)=>a+b,0)
-}
+const calculate = (...x) => (...y) => {
+  return [].concat(x, y).reduce((a, b) => a + b, 0);
+};

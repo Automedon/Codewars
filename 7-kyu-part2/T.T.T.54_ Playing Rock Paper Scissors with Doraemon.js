@@ -32,9 +32,9 @@ Nobita Nobi win 2 times, Doraemon win 3 times, tie 2 times
 Nobita Nobi got: 2 * 2 + 2 = 6 Dorayaki
 Doraemon got: 3 * 2 + 2 = 8 Dorayaki
 */
-function game(nobi){
-  let tie=nobi.filter(v=>v==='()').length
-  let f=nobi.filter(v=>v==='8<').length*2+tie
-  let s=nobi.filter(v=>v==='[]').length*2+tie
-  return [s,f]
+function game(nobi) {
+  let tie = nobi.filter(v => v === "()").length;
+  let f = nobi.filter(v => v === "8<").length * 2 + tie;
+  let s = nobi.filter(v => v === "[]").length * 2 + tie;
+  return [s, f];
 }

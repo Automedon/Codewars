@@ -8,4 +8,4 @@ to return a random integer based on Math.random() in the (inclusive) range of mi
 */
 function getRandomInRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+}

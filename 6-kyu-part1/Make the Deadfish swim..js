@@ -13,15 +13,22 @@ Invalid characters should be ignored.
 parse("iiisdoso") => [ 8, 64 ]
 */
 // Return the output array, and ignore all non-op characters
-function parse( data )
-{
-  const arr=[];
-  let score=0;
-  data.split('').map(v=>{
-  if (v==='i'){score++}
-    if (v==='d'){score--}
-      if (v==='s'){score=Math.pow(score,2)}
-        if (v==='o'){arr.push(score)}
-  })
-  return arr
+function parse(data) {
+  const arr = [];
+  let score = 0;
+  data.split("").map(v => {
+    if (v === "i") {
+      score++;
+    }
+    if (v === "d") {
+      score--;
+    }
+    if (v === "s") {
+      score = Math.pow(score, 2);
+    }
+    if (v === "o") {
+      arr.push(score);
+    }
+  });
+  return arr;
 }

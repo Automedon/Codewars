@@ -27,6 +27,6 @@ This kata is part of the Coding Meetup series which includes a number of short a
 */
 
 function isSameLanguage(list) {
-  const lang=list[0].language
-  return list.every(v=>v.language===lang)
+  const lang = list[0].language;
+  return list.every(v => v.language === lang);
 }

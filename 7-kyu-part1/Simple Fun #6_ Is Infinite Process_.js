@@ -31,7 +31,7 @@ Constraints: 0 ≤ b ≤ 100.
 true if the pseudocode will never stop, false otherwise.
 */
 function isInfiniteProcess(a, b) {
-    if (b<a)           return true;
-    if ((b-a)%2==1)    return true;
-    return false;  
+  if (b < a) return true;
+  if ((b - a) % 2 == 1) return true;
+  return false;
 }

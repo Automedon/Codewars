@@ -11,5 +11,5 @@ of course the self made cigarettes also have an end wich can be used to create a
 Please note that Timothy never starts smoking cigarettes that aren't "full size" so the amount of smoked cigarettes is always an integer.
 */
 function startSmoking(bars, boxes) {
-  return 22.5 * (10 * bars + boxes) - 0.5 | 0;
+  return (22.5 * (10 * bars + boxes) - 0.5) | 0;
 }

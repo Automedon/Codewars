@@ -15,19 +15,19 @@ Given N, return the sum of all numbers on the Nth Row:
 
 1 <= N <= 10,000
 */
-let arr = []
-const heheboi=()=>{
-  let num = 0
-  for (let i=1;i<=10000;i++){
-  let tempArr = []
-    for (let j=0;j<i;j++){
-      num++
-      tempArr.push(num)
+let arr = [];
+const heheboi = () => {
+  let num = 0;
+  for (let i = 1; i <= 10000; i++) {
+    let tempArr = [];
+    for (let j = 0; j < i; j++) {
+      num++;
+      tempArr.push(num);
     }
-    arr.push(tempArr)
+    arr.push(tempArr);
   }
-}
-heheboi()
+};
+heheboi();
 function cumulativeTriangle(n) {
-  return arr[n-1].reduce((a,b)=>a+b,0)
+  return arr[n - 1].reduce((a, b) => a + b, 0);
 }

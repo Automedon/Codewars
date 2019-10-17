@@ -32,15 +32,15 @@ Note: due to the randomness of the tests it is possible that you will get unluck
 As allways any feedback would be much appreciated
 */
 function lastManStanding(last_number) {
-    var arr = [];
-    for (let i = 0; i < last_number; i++)  arr.push(i + 1);
+  var arr = [];
+  for (let i = 0; i < last_number; i++) arr.push(i + 1);
 
-    while (arr.length > 1) {
-        let temp_arr = [];
-        for (let i = 1; i < arr.length; i += 2) {
-            temp_arr.push(arr[i]);
-        }
-        arr = temp_arr.reverse();
+  while (arr.length > 1) {
+    let temp_arr = [];
+    for (let i = 1; i < arr.length; i += 2) {
+      temp_arr.push(arr[i]);
     }
-    return arr[0];
+    arr = temp_arr.reverse();
+  }
+  return arr[0];
 }

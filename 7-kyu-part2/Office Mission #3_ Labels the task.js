@@ -44,6 +44,8 @@ Array of three elements, the number of tasks labeled as Today, Upcoming and Late
 */
 function tasksTypes(deadlines, day) {
   let tasks = [0, 0, 0];
-  deadlines.map(v=>v<=day?tasks[0]++:v<day+8?tasks[1]++:tasks[2]++);
+  deadlines.map(v =>
+    v <= day ? tasks[0]++ : v < day + 8 ? tasks[1]++ : tasks[2]++
+  );
   return tasks;
 }

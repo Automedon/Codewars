@@ -26,5 +26,5 @@ An n by n matrix in which n[i][j] is true if and only if person j identifies wit
 the index of the Fantastic person and -1 if they don't exist.
 */
 function fantasticPerson(table) {
-  return table.findIndex(v=>v.every(x=>x===true)) 
+  return table.findIndex(v => v.every(x => x === true));
 }

@@ -15,6 +15,6 @@ Given a number 'T' from interval [1; 2147483646], find if it is triangular numbe
 Appreciate the feedback!
 */
 function isTriangular(t) {
-    let x = (Math.sqrt(8 * t + 1) - 1) / 2
-    return parseInt(x)===x
+  let x = (Math.sqrt(8 * t + 1) - 1) / 2;
+  return parseInt(x) === x;
 }

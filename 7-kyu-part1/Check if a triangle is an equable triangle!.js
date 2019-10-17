@@ -4,6 +4,6 @@ A triangle is called an equable triangle if its area equals its perimeter. Retur
 */
 
 function equableTriangle(a, b, c) {
-  const p = (a + b + c)/2;
-  return 4*p == (p - a)*(p - b)*(p - c);
+  const p = (a + b + c) / 2;
+  return 4 * p == (p - a) * (p - b) * (p - c);
 }

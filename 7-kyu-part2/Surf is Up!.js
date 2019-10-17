@@ -30,9 +30,9 @@ See test cases for further details.
 */
 function surfsUp(waves) {
   for (let i = 0; i < 3; i++) {
-    let w = waves[i]
-    if (w > 7 && w < 11) return [w, `Johnny ${w==8 ? 'rides' : 'falls'}`]
-    if (i == 2 && w < 8) return [w, 'Johnny rides']
+    let w = waves[i];
+    if (w > 7 && w < 11) return [w, `Johnny ${w == 8 ? "rides" : "falls"}`];
+    if (i == 2 && w < 8) return [w, "Johnny rides"];
   }
-  return ['Johnny waits']
+  return ["Johnny waits"];
 }

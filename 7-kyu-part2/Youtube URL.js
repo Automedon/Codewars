@@ -14,7 +14,11 @@ If we insert the first link in the iframe, it works, but another do not work.
 Task:
 Please write a function that converts the string in the correct format for the iframe.
 */
-function makeYoutubeLink(str){
-  let link = str.split('/').reverse()[0].split('=').reverse()[0]
-  return 'https://www.youtube.com/embed/'+link
+function makeYoutubeLink(str) {
+  let link = str
+    .split("/")
+    .reverse()[0]
+    .split("=")
+    .reverse()[0];
+  return "https://www.youtube.com/embed/" + link;
 }

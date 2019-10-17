@@ -14,20 +14,21 @@ and
 getFibonacci(other n values) = '-1'
 */
 function getFibonacci(n) {
-  let arr = ['1','1'];
-  for (let i=1;i<n;i++){
-    arr.push(add(arr[i-1],arr[i]))
+  let arr = ["1", "1"];
+  for (let i = 1; i < n; i++) {
+    arr.push(add(arr[i - 1], arr[i]));
   }
-  return arr[n-1]
+  return arr[n - 1];
 }
 function add(a, b) {
-  var res = '', c = 0;
-  a = a.split('');
-  b = b.split('');
+  var res = "",
+    c = 0;
+  a = a.split("");
+  b = b.split("");
   while (a.length || b.length || c) {
     c += ~~a.pop() + ~~b.pop();
-    res = c % 10 + res;
+    res = (c % 10) + res;
     c = c > 9;
   }
-  return res
+  return res;
 }

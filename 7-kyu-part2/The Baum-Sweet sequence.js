@@ -15,6 +15,11 @@ Note that the binary representation of 0 used here is not 0 but the empty string
 */
 function* baumSweet() {
   yield 1;
-  for(var i=1;; i++)
-    yield i.toString(2).split(/1/g).some(v=>v.length%2)?0:1;
+  for (var i = 1; ; i++)
+    yield i
+      .toString(2)
+      .split(/1/g)
+      .some(v => v.length % 2)
+      ? 0
+      : 1;
 }

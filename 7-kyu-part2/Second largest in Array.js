@@ -26,12 +26,11 @@ Numbers are safe Integers.
 Not-NaN strings represent safe Integers.
 */
 function nameFile(fmt, nbr, start) {
-  if(nbr<0|| parseInt(nbr)!==nbr) return []
-  if (typeof start !== 'number'||parseInt(start)!==start) return []
-  let arr=[];
-  for (let i=0;i<nbr;i++)
-  {
-  arr.push(fmt.replace(/<index_no>/g,`${start+i}`))
+  if (nbr < 0 || parseInt(nbr) !== nbr) return [];
+  if (typeof start !== "number" || parseInt(start) !== start) return [];
+  let arr = [];
+  for (let i = 0; i < nbr; i++) {
+    arr.push(fmt.replace(/<index_no>/g, `${start + i}`));
   }
-  return arr
+  return arr;
 }

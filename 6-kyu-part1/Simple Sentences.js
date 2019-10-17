@@ -16,5 +16,11 @@ Example:
 makeSentence(['hello', ',', 'my', 'dear']) // returns 'hello, my dear.'
 */
 function makeSentence(parts) {
-   return parts.map(v=>v==='.'?null:v).join(' ').trim().replace(/ , /g,', ')+'.'
+  return (
+    parts
+      .map(v => (v === "." ? null : v))
+      .join(" ")
+      .trim()
+      .replace(/ , /g, ", ") + "."
+  );
 }

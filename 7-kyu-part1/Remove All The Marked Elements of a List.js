@@ -18,5 +18,5 @@ lst = [2, 4, 3]
 l.remove_(integer_list, values_list) == [8, 7, 6, 5, 1]
 */
 
-
-Array.prototype.remove_ = (integer_list, values_list) => x.filter(v => !values_list.includes(v));
+Array.prototype.remove_ = (integer_list, values_list) =>
+  x.filter(v => !values_list.includes(v));

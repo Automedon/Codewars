@@ -40,12 +40,12 @@ Return the string "nil" with Bash and Fortran.
 You can see more examples in "RUN SAMPLE TESTS".
 */
 
-function sqInRect(lng, wdth){
-  let arr = []
-  if(lng === wdth) return null
-  while(lng > 0 && wdth > 0){
-    arr.push(lng > wdth ? wdth : lng)
-    lng > wdth ? lng -= wdth : wdth -= lng
+function sqInRect(lng, wdth) {
+  let arr = [];
+  if (lng === wdth) return null;
+  while (lng > 0 && wdth > 0) {
+    arr.push(lng > wdth ? wdth : lng);
+    lng > wdth ? (lng -= wdth) : (wdth -= lng);
   }
-  return arr
+  return arr;
 }

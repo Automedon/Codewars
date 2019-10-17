@@ -8,8 +8,8 @@ Write the method golfScoreCalculator/GolfScoreCalculator which accepts two strin
 Usage Examples
 golfScoreCalculator("453454444344544443", "354445334534445344") => -1
 */
-function golfScoreCalculator(parList, scoreList){
-  const par=parList.split('').reduce((a,b)=>a+(b*1),0)
-  const score=scoreList.split('').reduce((a,b)=>a+(b*1),0)
-  return score-par
+function golfScoreCalculator(parList, scoreList) {
+  const par = parList.split("").reduce((a, b) => a + b * 1, 0);
+  const score = scoreList.split("").reduce((a, b) => a + b * 1, 0);
+  return score - par;
 }

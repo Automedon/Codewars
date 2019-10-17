@@ -22,8 +22,9 @@ h = 3, bounce = 0.66, window = 1.5, result is 3
 h = 3, bounce = 1, window = 1.5, result is -1 (Condition 2) not fulfilled).
 */
 
-function bouncingBall(h,  bounce,  window) {
+function bouncingBall(h, bounce, window) {
   var rebounds = -1;
-  if (bounce > 0 && bounce < 1) while (h > window) rebounds+=2, h *= bounce;
+  if (bounce > 0 && bounce < 1)
+    while (h > window) (rebounds += 2), (h *= bounce);
   return rebounds;
 }

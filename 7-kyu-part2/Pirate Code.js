@@ -18,16 +18,17 @@ If number of pirates is 5, including Amaro, then array = [98, 0, 1, 0, 1], and 9
 
 ...
 */
-function amaroPlan(pirateNum){
-  let gold = pirateNum*20
+function amaroPlan(pirateNum) {
+  let gold = pirateNum * 20;
   let arr = [];
-  for (let i=1;i<pirateNum;i++){
-    if (i%2===0)
-    {
-      arr.push(1)
-      gold--
-    }else {arr.push(0)}
+  for (let i = 1; i < pirateNum; i++) {
+    if (i % 2 === 0) {
+      arr.push(1);
+      gold--;
+    } else {
+      arr.push(0);
+    }
   }
-  arr.unshift(gold)
-  return arr
+  arr.unshift(gold);
+  return arr;
 }

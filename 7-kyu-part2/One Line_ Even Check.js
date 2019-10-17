@@ -5,4 +5,4 @@ Notes:
 ```javascript 1 <= n <= 1000 ``` The length of your code must be less than or equal to 19 characters.
 You are not allowed to use %.
 */
-evenCheck=n=>!(n&1)
+evenCheck = n => !(n & 1);

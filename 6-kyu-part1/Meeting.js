@@ -12,6 +12,17 @@ It can happen that in two distinct families with the same family name two people
 */
 
 function meeting(s) {
-   return s.replace(/;/gi,' ').split(' ').map(v=>v.split(':').reverse().join(', ').toUpperCase()).sort()
-   .map(v=>'('+v+')').join('')
+  return s
+    .replace(/;/gi, " ")
+    .split(" ")
+    .map(v =>
+      v
+        .split(":")
+        .reverse()
+        .join(", ")
+        .toUpperCase()
+    )
+    .sort()
+    .map(v => "(" + v + ")")
+    .join("");
 }

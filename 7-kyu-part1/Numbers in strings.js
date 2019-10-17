@@ -9,6 +9,6 @@ Good luck!
 Please also try Simple remove duplicates
 */
 
-function solve(s){
+function solve(s) {
   return Math.max(...s.match(/\d+/g));
-};
+}

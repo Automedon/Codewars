@@ -19,16 +19,16 @@ Note: you're traveling on the edges of the squares in the grid not the squares t
 
 PS.If anyone has any suggestions of how to improve this kata please let me know.
 */
-let mul = (arr)=>arr.reduce((a,b)=>a*b,1)
-function routes(n){
-  if (n<1) return 0
-  let arr = []
-  for (let i=n+1;i<2*n+1;i++){
-    arr.push(i)
+let mul = arr => arr.reduce((a, b) => a * b, 1);
+function routes(n) {
+  if (n < 1) return 0;
+  let arr = [];
+  for (let i = n + 1; i < 2 * n + 1; i++) {
+    arr.push(i);
   }
-  let arr2 = []
-  for (let i=1;i<n+1;i++){
-    arr2.push(i)
+  let arr2 = [];
+  for (let i = 1; i < n + 1; i++) {
+    arr2.push(i);
   }
-  return Math.round(mul(arr)/mul(arr2))
+  return Math.round(mul(arr) / mul(arr2));
 }

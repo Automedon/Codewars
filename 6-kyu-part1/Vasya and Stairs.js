@@ -21,8 +21,8 @@ numberOfSteps(10, 2) => 6  // Sequence of steps : {2, 2, 2, 2, 1, 1}
 numberOfSteps(3, 5) => -1 // !Possible sequences of steps : {2, 1}, {1, 2}, {1, 1, 1}
 */
 for (let i = Math.ceil(steps / 2); i <= steps; i++) {
-        if (i % m === 0) {
-            return i;
-        }
-    }
-    return -1;
+  if (i % m === 0) {
+    return i;
+  }
+}
+return -1;

@@ -10,9 +10,8 @@ format("This is an {} for {}.", ["example", "you"]);
 Should return - "This is an example for you."
 */
 function format(str, arr) {
-  for (let i=0;i<arr.length;i++)
-  {
-    str=str.replace(/{}/,arr[i])
+  for (let i = 0; i < arr.length; i++) {
+    str = str.replace(/{}/, arr[i]);
   }
   return str;
 }

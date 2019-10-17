@@ -17,10 +17,13 @@ in fact the word "if" and the character "?" are not allowed in the code.
 
 Inputs are guarenteed to be numbers
 */
-var noIfsNoButs = function (a,b) {
-  switch (Math.sign(a-b)) {
-    case 1: return `${a} is greater than ${b}`;
-    case -1:return `${a} is smaller than ${b}`;
-    case 0: return `${a} is equal to ${b}`;
+var noIfsNoButs = function(a, b) {
+  switch (Math.sign(a - b)) {
+    case 1:
+      return `${a} is greater than ${b}`;
+    case -1:
+      return `${a} is smaller than ${b}`;
+    case 0:
+      return `${a} is equal to ${b}`;
   }
-}
+};

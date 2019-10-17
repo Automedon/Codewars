@@ -13,21 +13,35 @@ Oh and one last thing, there are rumours of sneaky numbers trying to get on boar
 Don't let any numbers onto the boat!!
 */
 function boatLoader(a) {
-  a=a.join``.replace(/[^a-z]/gi,'').split``
-  let check =[]
+  a = a.join``.replace(/[^a-z]/gi, "").split``;
+  let check = [];
   let arr = [];
-  for (let i=0;i<a.length;i++){
-    if (a.indexOf(a[i])!==a.lastIndexOf(a[i])&&!check.includes(a[i])){
-    check.push(a[i])
+  for (let i = 0; i < a.length; i++) {
+    if (a.indexOf(a[i]) !== a.lastIndexOf(a[i]) && !check.includes(a[i])) {
+      check.push(a[i]);
     }
   }
-  check=check.sort((a,b)=>a.localeCompare(b))
-  for (let i=0;i<check.length;i++){
-    if (check[i]===check[i].toLowerCase()&&check.includes(check[i].toUpperCase())){
-     arr.push([check[i].toUpperCase(),check[i].toUpperCase()],[check[i].toLowerCase(),check[i].toLowerCase()])
-    } else if (check[i]===check[i].toUpperCase()&&!check.includes(check[i].toLowerCase())){
-    arr.push([check[i].toUpperCase(),check[i].toUpperCase()])
-    } else if (check[i]===check[i].toLowerCase()&&!check.includes(check[i].toUpperCase())) {arr.push([check[i].toLowerCase(),check[i].toLowerCase()])}
+  check = check.sort((a, b) => a.localeCompare(b));
+  for (let i = 0; i < check.length; i++) {
+    if (
+      check[i] === check[i].toLowerCase() &&
+      check.includes(check[i].toUpperCase())
+    ) {
+      arr.push(
+        [check[i].toUpperCase(), check[i].toUpperCase()],
+        [check[i].toLowerCase(), check[i].toLowerCase()]
+      );
+    } else if (
+      check[i] === check[i].toUpperCase() &&
+      !check.includes(check[i].toLowerCase())
+    ) {
+      arr.push([check[i].toUpperCase(), check[i].toUpperCase()]);
+    } else if (
+      check[i] === check[i].toLowerCase() &&
+      !check.includes(check[i].toUpperCase())
+    ) {
+      arr.push([check[i].toLowerCase(), check[i].toLowerCase()]);
+    }
   }
-  return arr
+  return arr;
 }

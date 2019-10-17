@@ -20,11 +20,12 @@ This kata is a piece of  2 kyu Binary Genetic Algorithm
 */
 
 const mutate = (chromosome, p) => {
-  return chromosome.replace(/([0-9])/g,($1)=>{
-  
-  if ($1==='0'){
-  return Math.random()<p?1:0}
-  if ($1==='1'){
-  return Math.random()<p?0:1}
-  })
+  return chromosome.replace(/([0-9])/g, $1 => {
+    if ($1 === "0") {
+      return Math.random() < p ? 1 : 0;
+    }
+    if ($1 === "1") {
+      return Math.random() < p ? 0 : 1;
+    }
+  });
 };

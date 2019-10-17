@@ -32,8 +32,8 @@ profitLoss([[100,20],[80,-20]]) should return -3.33
 profitLoss([[60,100],[60,-50]]) should return -30
 profitLoss([[60,0],[60,0]]) should return 0
 */
-function profitLoss(records){
-    let totalCost=records.reduce((a,b)=>a+b[0]/((100+b[1])/100),0)
-    let sellingPrice=records.reduce((a,b)=>a+b[0],0)
-    return (sellingPrice-totalCost).toFixed(2)*1
+function profitLoss(records) {
+  let totalCost = records.reduce((a, b) => a + b[0] / ((100 + b[1]) / 100), 0);
+  let sellingPrice = records.reduce((a, b) => a + b[0], 0);
+  return (sellingPrice - totalCost).toFixed(2) * 1;
 }

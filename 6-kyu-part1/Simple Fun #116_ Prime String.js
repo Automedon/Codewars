@@ -18,12 +18,12 @@ true if the string is prime, false otherwise
 */
 function primeString(s) {
   let arr = [];
-  for (let i=1;i<s.length-1;i++){
-    let str = ''
-    while (str.length<=s.length){
-      str+=s.slice(0,i)
-      if (str===s) return false
+  for (let i = 1; i < s.length - 1; i++) {
+    let str = "";
+    while (str.length <= s.length) {
+      str += s.slice(0, i);
+      if (str === s) return false;
     }
   }
-  return true
+  return true;
 }

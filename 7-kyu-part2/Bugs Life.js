@@ -15,9 +15,9 @@ Hint 1: Consider how many different routes can be made to get from start to fini
 Hint 2: Consider using paper and opening up the net of a cuboid (and think if there are multiple ways this can be viewed) and play around with it to find the shortest length.
 */
 function shortestDistance(a, b, c) {
-    return Math.min(
-    Math.sqrt(Math.pow(a,2) + (b+c) * (b+c)),
-    Math.sqrt(Math.pow(b,2) + (a+c) * (a+c)),
-    Math.sqrt(Math.pow(c,2) + (a+b) * (a+b))
+  return Math.min(
+    Math.sqrt(Math.pow(a, 2) + (b + c) * (b + c)),
+    Math.sqrt(Math.pow(b, 2) + (a + c) * (a + c)),
+    Math.sqrt(Math.pow(c, 2) + (a + b) * (a + b))
   );
 }

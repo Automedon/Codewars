@@ -79,38 +79,40 @@ Cherry + Cherry + Cherry == 50
 Return
 Good luck and enjoy!
 */
-function fruit(reels, spins){
-  const object={}
-  const arr=[reels[0][spins[0]],reels[1][spins[1]],reels[2][spins[2]]].map(v=>object[v]=object[v]?object[v]+1:1)
-  let result =0;
-  if (object['Wild']===3) result+=100;
-  if (object['Wild']===2) result+=10;
-  if (object['Star']===3) result+=90;
-  if (object['Star']===2&&object['Wild']!==1) result+=9;
-  if (object['Star']===2&&object['Wild']===1) result+=18;
-  if (object['Bell']===3) result+=80;
-  if (object['Bell']===2&&object['Wild']!==1) result+=8;
-  if (object['Bell']===2&&object['Wild']===1) result+=16;
-  if (object['Shell']===3) result+=70;
-  if (object['Shell']===2&&object['Wild']!==1) result+=7;
-  if (object['Shell']===2&&object['Wild']===1) result+=14;
-  if (object['Seven']===3) result+=60;
-  if (object['Seven']===2&&object['Wild']!==1) result+=6;
-  if (object['Seven']===2&&object['Wild']===1) result+=12;
-  if (object['Cherry']===3) result+=50;
-  if (object['Cherry']===2&&object['Wild']!==1) result+=5;
-  if (object['Cherry']===2&&object['Wild']===1) result+=10;
-  if (object['Bar']===3) result+=40;
-  if (object['Bar']===2&&object['Wild']!==1) result+=4;
-  if (object['Bar']===2&&object['Wild']===1) result+=8;
-  if (object['King']===3) result+=30;
-  if (object['King']===2&&object['Wild']!==1) result+=3;
-  if (object['King']===2&&object['Wild']===1) result+=6;
-  if (object['Queen']===3) result+=20;
-  if (object['Queen']===2&&object['Wild']!==1) result+=2;
-  if (object['Queen']===2&&object['Wild']===1) result+=4;
-  if (object['Jack']===3) result+=10;
-  if (object['Jack']===2&&object['Wild']!==1) result+=1;
-  if (object['Jack']===2&&object['Wild']===1) result+=2;
-  return result
-}//easy
+function fruit(reels, spins) {
+  const object = {};
+  const arr = [reels[0][spins[0]], reels[1][spins[1]], reels[2][spins[2]]].map(
+    v => (object[v] = object[v] ? object[v] + 1 : 1)
+  );
+  let result = 0;
+  if (object["Wild"] === 3) result += 100;
+  if (object["Wild"] === 2) result += 10;
+  if (object["Star"] === 3) result += 90;
+  if (object["Star"] === 2 && object["Wild"] !== 1) result += 9;
+  if (object["Star"] === 2 && object["Wild"] === 1) result += 18;
+  if (object["Bell"] === 3) result += 80;
+  if (object["Bell"] === 2 && object["Wild"] !== 1) result += 8;
+  if (object["Bell"] === 2 && object["Wild"] === 1) result += 16;
+  if (object["Shell"] === 3) result += 70;
+  if (object["Shell"] === 2 && object["Wild"] !== 1) result += 7;
+  if (object["Shell"] === 2 && object["Wild"] === 1) result += 14;
+  if (object["Seven"] === 3) result += 60;
+  if (object["Seven"] === 2 && object["Wild"] !== 1) result += 6;
+  if (object["Seven"] === 2 && object["Wild"] === 1) result += 12;
+  if (object["Cherry"] === 3) result += 50;
+  if (object["Cherry"] === 2 && object["Wild"] !== 1) result += 5;
+  if (object["Cherry"] === 2 && object["Wild"] === 1) result += 10;
+  if (object["Bar"] === 3) result += 40;
+  if (object["Bar"] === 2 && object["Wild"] !== 1) result += 4;
+  if (object["Bar"] === 2 && object["Wild"] === 1) result += 8;
+  if (object["King"] === 3) result += 30;
+  if (object["King"] === 2 && object["Wild"] !== 1) result += 3;
+  if (object["King"] === 2 && object["Wild"] === 1) result += 6;
+  if (object["Queen"] === 3) result += 20;
+  if (object["Queen"] === 2 && object["Wild"] !== 1) result += 2;
+  if (object["Queen"] === 2 && object["Wild"] === 1) result += 4;
+  if (object["Jack"] === 3) result += 10;
+  if (object["Jack"] === 2 && object["Wild"] !== 1) result += 1;
+  if (object["Jack"] === 2 && object["Wild"] === 1) result += 2;
+  return result;
+} //easy

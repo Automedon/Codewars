@@ -9,9 +9,9 @@ For example:
 typing(2);    //returns number=2
 typing(true); //returns boolean=true
 */
-function typing(param){
-  if ((typeof param)==='undefined') return `undefined`;
-  if ((typeof param)==='string') return `${typeof param}="${param}"`;
-  if ((typeof param)==='function') return `${typeof param}=${param}`;
-  return `${typeof param}=${JSON.stringify(param)}`
+function typing(param) {
+  if (typeof param === "undefined") return `undefined`;
+  if (typeof param === "string") return `${typeof param}="${param}"`;
+  if (typeof param === "function") return `${typeof param}=${param}`;
+  return `${typeof param}=${JSON.stringify(param)}`;
 }

@@ -9,11 +9,11 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 Courtesy of ProjectEuler.net
 */
 
-function solution(number){
-  let arr=[];
-    for (let i=number-1;i>=0;i--){
-      if (i%3===0) arr.push(i);
-      if (i%5===0) arr.push(i);
-}
-  return [...new Set(arr)].reduce((a,b)=>a+b,0)
+function solution(number) {
+  let arr = [];
+  for (let i = number - 1; i >= 0; i--) {
+    if (i % 3 === 0) arr.push(i);
+    if (i % 5 === 0) arr.push(i);
+  }
+  return [...new Set(arr)].reduce((a, b) => a + b, 0);
 }

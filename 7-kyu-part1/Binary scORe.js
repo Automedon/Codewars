@@ -12,6 +12,6 @@ Write a function that takes n and finds it's scORe.
 | 1000000 | 1048575
 Any feedback would be much appreciated
 */
-function score(n){
-  return  n===0? 0: 2**(n.toString(2).length)-1
+function score(n) {
+  return n === 0 ? 0 : 2 ** n.toString(2).length - 1;
 }

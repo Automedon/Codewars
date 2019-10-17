@@ -16,5 +16,5 @@ For example:
 Title of this Kata is inspired by the book "Everything that remains" by The Minimalists. Highly recommand! :)
 */
 function getRemains(arr, f) {
-  return arr.filter(v=>!f(v))
+  return arr.filter(v => !f(v));
 }

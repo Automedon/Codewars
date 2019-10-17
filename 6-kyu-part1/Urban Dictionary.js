@@ -17,15 +17,15 @@ search(".ad") === true
 search("b..") === true
 Note: the data structure will be initialized multiple times during the tests!
 */
-var WordDictionary = function () {
-  this.arr = []
+var WordDictionary = function() {
+  this.arr = [];
 };
 
-WordDictionary.prototype.addWord = function (word) {
-   this.arr.push(word)
+WordDictionary.prototype.addWord = function(word) {
+  this.arr.push(word);
 };
 
-WordDictionary.prototype.search = function (word) {
-   let reg = new RegExp('^'+word+'$')
-   return this.arr.find(v=>reg.test(v))!==undefined
+WordDictionary.prototype.search = function(word) {
+  let reg = new RegExp("^" + word + "$");
+  return this.arr.find(v => reg.test(v)) !== undefined;
 };

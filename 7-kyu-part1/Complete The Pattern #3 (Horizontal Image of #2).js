@@ -34,10 +34,12 @@ pattern(6):
 */
 
 function pattern(n) {
-  var res = [], line = '', i;
-  for(i = n; i > 0; i--) {
+  var res = [],
+    line = "",
+    i;
+  for (i = n; i > 0; i--) {
     line += i;
     res.push(line);
   }
-  return res.join('\n');
+  return res.join("\n");
 }

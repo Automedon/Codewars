@@ -15,5 +15,7 @@ finder([[true],[false],[false],[false]]) // => 0
 finder([[false],[false],[false],[false],[false]]) // => "There is no golden ticket!"
 */
 function finder(box) {
-    return [].concat(...box).indexOf(true)===-1?"There is no golden ticket!":[].concat(...box).indexOf(true)
+  return [].concat(...box).indexOf(true) === -1
+    ? "There is no golden ticket!"
+    : [].concat(...box).indexOf(true);
 }

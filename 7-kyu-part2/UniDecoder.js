@@ -13,7 +13,7 @@ If the input includes elements that are not numbers your code needs to ingnore t
 
 If the input includes no valid numbers your function should return "not a valid character code".
 */
-function uniDecoder(){
- let str = String.fromCharCode(...arguments).replace(/\u0000/g,'')
- return str ? str : "not a valid character code"
+function uniDecoder() {
+  let str = String.fromCharCode(...arguments).replace(/\u0000/g, "");
+  return str ? str : "not a valid character code";
 }

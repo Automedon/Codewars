@@ -4,8 +4,8 @@ The Collatz sequence is a set of numbers formed by taking an arbitrary positive 
 
 The following function is not working. It's purpose is to return the length of any Collatz sequence. Can you fix it?
 */
-function collatz(n, count=0) {
-  if (n <= 1) return count+1;
-  n=(n % 2 === 0) ?n / 2 :n * 3 + 1;
+function collatz(n, count = 0) {
+  if (n <= 1) return count + 1;
+  n = n % 2 === 0 ? n / 2 : n * 3 + 1;
   return collatz(n, count + 1);
 }

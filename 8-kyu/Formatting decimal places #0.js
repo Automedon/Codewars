@@ -8,5 +8,5 @@ Example:
 */
 
 function twoDecimalPlaces(n) {
-  return +n.toFixed(2)
+  return +n.toFixed(2);
 }

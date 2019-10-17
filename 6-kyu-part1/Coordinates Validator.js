@@ -28,6 +28,8 @@ N23.43345, E32.6457
 0.342q0832, 1.2324
 */
 
-function isValidCoordinates(coordinates){
-  return /^(-?((\d|[0-8]\d)(\.\d+)?)|90),\s?(-?((\d\d?|[01][0-7]\d)(\.\d+)?)|180)$/.test(coordinates);
+function isValidCoordinates(coordinates) {
+  return /^(-?((\d|[0-8]\d)(\.\d+)?)|90),\s?(-?((\d\d?|[01][0-7]\d)(\.\d+)?)|180)$/.test(
+    coordinates
+  );
 }

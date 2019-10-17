@@ -12,7 +12,7 @@ You can assume that the input array must have 2 or more elements.
 The input array has the sort() method disabled, so you will have to solve it in another way.
 */
 function diffBig2(arr) {
-  let n=Math.max(...arr)
-  arr.splice(arr.indexOf(n),1)
-  return n-Math.max(...arr)
-  }
+  let n = Math.max(...arr);
+  arr.splice(arr.indexOf(n), 1);
+  return n - Math.max(...arr);
+}

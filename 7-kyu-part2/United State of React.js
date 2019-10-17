@@ -18,20 +18,24 @@ If the States are united then display "Code for everyone"
 
 If the States aren't united then display "Make America code again"
 */
-const React = require('react');
+const React = require("react");
 
 class States extends React.Component {
   constructor() {
-    super(); 
-    this.state={
-    united:false
-    }
-    this.unite=this.unite.bind(this)
+    super();
+    this.state = {
+      united: false
+    };
+    this.unite = this.unite.bind(this);
   }
-  unite(){
-  this.setState({united:!this.state.united})
+  unite() {
+    this.setState({ united: !this.state.united });
   }
   render() {
-    return <div className="status">{!this.state.united?"Make America code again":"Code for everyone"}</div>
-  } 
+    return (
+      <div className="status">
+        {!this.state.united ? "Make America code again" : "Code for everyone"}
+      </div>
+    );
+  }
 }

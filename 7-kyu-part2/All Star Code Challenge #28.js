@@ -17,9 +17,9 @@ Info on how to operate the conversion
 
 Note: If the 2nd argument provided is NOT "c" or "f", an error (InvalidArgumentException in PHP) should be thrown. The conversion should work with negative numbers, too.
 */
-function convertCF(num, scale){
-  if (scale==='f') return num*9/5+32
-  if (scale==='c') return (num-32)*5/9
-  if (scale===undefined) return (num-32)*5/9
-  throw new Error()
+function convertCF(num, scale) {
+  if (scale === "f") return (num * 9) / 5 + 32;
+  if (scale === "c") return ((num - 32) * 5) / 9;
+  if (scale === undefined) return ((num - 32) * 5) / 9;
+  throw new Error();
 }

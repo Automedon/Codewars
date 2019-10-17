@@ -32,13 +32,23 @@ For l = 100, d = 200, x = 10, the output should be [109, 190].
 function minAndMax(l, d, x) {
   let n = 0;
   let m = 0;
-  for (let i=l;i<=d;i++)
-  {
-  if (i.toString().split('').reduce((a,b)=>a+b*1,0)===x) n=i; 
+  for (let i = l; i <= d; i++) {
+    if (
+      i
+        .toString()
+        .split("")
+        .reduce((a, b) => a + b * 1, 0) === x
+    )
+      n = i;
   }
-  for (let i=d;i>=l;i--)
-  {
-  if (i.toString().split('').reduce((a,b)=>a+b*1,0)===x) m=i; 
+  for (let i = d; i >= l; i--) {
+    if (
+      i
+        .toString()
+        .split("")
+        .reduce((a, b) => a + b * 1, 0) === x
+    )
+      m = i;
   }
-  return [Math.min(m,n),Math.max(m,n)]
+  return [Math.min(m, n), Math.max(m, n)];
 }

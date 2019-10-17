@@ -10,7 +10,7 @@ Notes
 The region bounded by the circle is considered to be an open disk, so points on the boundary of the circle should return false.
 We are using the euclidean metric.
 */
-function pointInCircle(x,y){
-    let distance = Math.sqrt((x) * (x) + (y) * (y)).toFixed(2);
-    return distance < 1
+function pointInCircle(x, y) {
+  let distance = Math.sqrt(x * x + y * y).toFixed(2);
+  return distance < 1;
 }

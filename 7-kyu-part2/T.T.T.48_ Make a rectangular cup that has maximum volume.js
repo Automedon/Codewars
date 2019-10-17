@@ -49,7 +49,8 @@ maximumVolume(10)  === 72
 maximumVolume(20)  === 588
 14 * 14 * 3 = 588
 */
-function maximumVolume(n){
-  let s = Math.round(n * 1/6), num = n - 2 * s;
+function maximumVolume(n) {
+  let s = Math.round((n * 1) / 6),
+    num = n - 2 * s;
   return s * num * num;
 }

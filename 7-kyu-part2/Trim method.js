@@ -13,10 +13,10 @@ string = "LLLHello Worldlll" and c = "l" => "Hello World"
 
 string = "Visca ElbarcaXxX" and c = "X" => "Visca Elbarca"
 */
-String.prototype.trim = function(c){
-    if (c===undefined) c=' '
-    let str = this+'';
-    let reg= RegExp(`^${c}+`, 'i');
-    let reg2=RegExp(`${c}+$`, 'i');
-    return str.replace(reg,'').replace(reg2,'')
-}
+String.prototype.trim = function(c) {
+  if (c === undefined) c = " ";
+  let str = this + "";
+  let reg = RegExp(`^${c}+`, "i");
+  let reg2 = RegExp(`${c}+$`, "i");
+  return str.replace(reg, "").replace(reg2, "");
+};

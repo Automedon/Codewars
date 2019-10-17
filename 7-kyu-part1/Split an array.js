@@ -17,10 +17,13 @@ obj2 = { prop: false }
 split [obj1, obj2], 'prop'
 # [[obj1], [obj2]]
 */
-function split(arr, prop)
-{
+function split(arr, prop) {
   return [
-    arr.filter(function (a) { return a[prop]; }),
-    arr.filter(function (a) { return !a[prop]; })
+    arr.filter(function(a) {
+      return a[prop];
+    }),
+    arr.filter(function(a) {
+      return !a[prop];
+    })
   ];
 }

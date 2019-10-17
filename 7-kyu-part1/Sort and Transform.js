@@ -15,10 +15,16 @@ The four parts should form a single string, each part separated by a hyphen: '-'
 example format of solution: 'asdf-tyui-ujng-wedg'
 */
 
-function sortTransform(a){
-  const arr=(a.slice(0,2)+','+a.slice(-2)).split(',').map(v=>String.fromCharCode(v)).join('');
-  const z=a.map(v=>String.fromCharCode(v)).sort()
-  const arr1=(z.slice(0,2)+','+z.slice(-2)).split(',').join('')
-  const arr2=arr1.split('').reverse().join('')
-  return `${arr}-${arr1}-${arr2}-${arr1}`
+function sortTransform(a) {
+  const arr = (a.slice(0, 2) + "," + a.slice(-2))
+    .split(",")
+    .map(v => String.fromCharCode(v))
+    .join("");
+  const z = a.map(v => String.fromCharCode(v)).sort();
+  const arr1 = (z.slice(0, 2) + "," + z.slice(-2)).split(",").join("");
+  const arr2 = arr1
+    .split("")
+    .reverse()
+    .join("");
+  return `${arr}-${arr1}-${arr2}-${arr1}`;
 }

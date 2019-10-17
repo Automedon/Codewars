@@ -13,7 +13,7 @@ The number passed to two_count (twoCount) will always be a positive integer grea
 
 function twoCount(n) {
   let ret = 0;
-  while(n % 2 === 0) {
+  while (n % 2 === 0) {
     ret++;
     n /= 2;
   }

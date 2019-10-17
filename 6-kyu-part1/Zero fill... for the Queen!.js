@@ -11,6 +11,6 @@ NOTES:
 2) Whole positives only - negatives converted, decimals dropped (provided in solution setup)
 */
 function zeroFill(number, size) {
-  let num=Math.floor(Math.abs(number)).toFixed(0);
-  return '0'.repeat((size-num.length)>0?size-num.length:0)+num
+  let num = Math.floor(Math.abs(number)).toFixed(0);
+  return "0".repeat(size - num.length > 0 ? size - num.length : 0) + num;
 }

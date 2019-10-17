@@ -4,6 +4,8 @@ An Armstrong number is a number such that the sum of its digits raised to the th
 
 When you pass 0 or 1 , it should return true.
 */
-function armstrong(num){
-  return num===num.toString().split``.reduce((a,b)=>a+Math.pow(b*1,3),0)
+function armstrong(num) {
+  return (
+    num === num.toString().split``.reduce((a, b) => a + Math.pow(b * 1, 3), 0)
+  );
 }

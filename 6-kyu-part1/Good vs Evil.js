@@ -37,10 +37,20 @@ Output:
 Return "Battle Result: Good triumphs over Evil" if good wins, "Battle Result: Evil eradicates all trace of Good" if evil wins, or "Battle Result: No victor on this battle field" if it ends in a tie.
 */
 
-function goodVsEvil(good, evil){
-  let weightG={0: 1,1: 2,2: 3,3: 3,4: 4,5: 10};
-  let weightE={0: 1,1: 2,2: 2,3: 2,4: 3,5: 5,6: 10};
-  let g=good.split(' ').map((v,i,arr)=>v*weightG[i]).reduce((a,b)=>a+b,0);
-  let e=evil.split(' ').map((v,i,arr)=>v*weightE[i]).reduce((a,b)=>a+b,0);
-  return g>e?'Battle Result: Good triumphs over Evil':g===e?'Battle Result: No victor on this battle field':'Battle Result: Evil eradicates all trace of Good'
+function goodVsEvil(good, evil) {
+  let weightG = { 0: 1, 1: 2, 2: 3, 3: 3, 4: 4, 5: 10 };
+  let weightE = { 0: 1, 1: 2, 2: 2, 3: 2, 4: 3, 5: 5, 6: 10 };
+  let g = good
+    .split(" ")
+    .map((v, i, arr) => v * weightG[i])
+    .reduce((a, b) => a + b, 0);
+  let e = evil
+    .split(" ")
+    .map((v, i, arr) => v * weightE[i])
+    .reduce((a, b) => a + b, 0);
+  return g > e
+    ? "Battle Result: Good triumphs over Evil"
+    : g === e
+    ? "Battle Result: No victor on this battle field"
+    : "Battle Result: Evil eradicates all trace of Good";
 }

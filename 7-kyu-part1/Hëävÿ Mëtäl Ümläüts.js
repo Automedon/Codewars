@@ -12,8 +12,17 @@ a = ä = \u00e4     e = ë = \u00eb     i = ï = \u00ef
 o = ö = \u00f6     u = ü = \u00fc     y = ÿ = \u00ff
 */
 function heavyMetalUmlauts(boringText) {
-    return boringText.replace(/A/g,'Ä').replace(/O/g,'Ö').replace(/a/g,'ä')
-    .replace(/E/g,'Ë').replace(/U/g,'Ü').replace(/e/g,'ë').replace(/u/g,'ü')
-    .replace(/I/g,'Ï').replace(/Y/g,'Ÿ').replace(/i/g,'ï').replace(/y/g,'ÿ')
-    .replace(/o/g,'ö')
+  return boringText
+    .replace(/A/g, "Ä")
+    .replace(/O/g, "Ö")
+    .replace(/a/g, "ä")
+    .replace(/E/g, "Ë")
+    .replace(/U/g, "Ü")
+    .replace(/e/g, "ë")
+    .replace(/u/g, "ü")
+    .replace(/I/g, "Ï")
+    .replace(/Y/g, "Ÿ")
+    .replace(/i/g, "ï")
+    .replace(/y/g, "ÿ")
+    .replace(/o/g, "ö");
 }

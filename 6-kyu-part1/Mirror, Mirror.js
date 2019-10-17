@@ -16,7 +16,7 @@ orig.z = 12
 console.log(twin.z) // -> 12
 */
 function evilTwin(obj) {
-  let twin=Object.create(obj)
-  twin.hasGoatee=true
-  return twin
+  let twin = Object.create(obj);
+  twin.hasGoatee = true;
+  return twin;
 }

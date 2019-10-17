@@ -20,11 +20,16 @@ ex3 ~O~O~O~OP~O~OO~ has 2 deaf rats
 
 var countDeafRats = function(town) {
   // Your code here
-  if(town != null){
-    [left,right]=town.split('P');
-        var a=left+right.split('').reverse().join('');
-        var b=(a.match(/O~|~O/gi)||[]).filter(v=>v=='O~').length;
-         return b;
+  if (town != null) {
+    [left, right] = town.split("P");
+    var a =
+      left +
+      right
+        .split("")
+        .reverse()
+        .join("");
+    var b = (a.match(/O~|~O/gi) || []).filter(v => v == "O~").length;
+    return b;
   }
-  return 0;   
-}
+  return 0;
+};

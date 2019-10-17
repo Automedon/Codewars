@@ -17,17 +17,17 @@ Note
 In Fortran - as in any other language - the returned string is not permitted to contain any redundant trailing whitespace: you can use dynamically allocated character strings.
 */
 function listSquared(m, n) {
-    let arr = []
-    for (let i = m; i <= n; i++) {
-        let temp = 0;
-        for (let j = 1; j <= i; j++) {
-            if (i % j == 0) {
-                temp += j*j;
-            } 
-        }
-        if(Math.sqrt(temp) % 1 == 0) {
-                arr.push([i, temp]);
-            }
+  let arr = [];
+  for (let i = m; i <= n; i++) {
+    let temp = 0;
+    for (let j = 1; j <= i; j++) {
+      if (i % j == 0) {
+        temp += j * j;
+      }
     }
-    return arr;
+    if (Math.sqrt(temp) % 1 == 0) {
+      arr.push([i, temp]);
+    }
+  }
+  return arr;
 }

@@ -11,5 +11,9 @@ Example:
   isJubilee(2021);  // <-- returns true   because 2021/07/25 is Sunday
 */
 function isJubilee(year) {
-  return new Date(Date.UTC(year,07-1,25)).toLocaleString('en-US',{weekday:'long'})==='Sunday'
+  return (
+    new Date(Date.UTC(year, 07 - 1, 25)).toLocaleString("en-US", {
+      weekday: "long"
+    }) === "Sunday"
+  );
 }

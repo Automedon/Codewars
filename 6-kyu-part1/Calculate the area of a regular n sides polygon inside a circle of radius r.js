@@ -14,7 +14,7 @@ areaOfPolygonInsideCircle(5.8, 7) // returns 92.053
 areaOfPolygonInsideCircle(4, 5) // returns 38.042
 */
 function areaOfPolygonInsideCircle(r, s) {
-    let angle = Math.PI / s
-    let area = r * r * s * Math.sin(angle * 2) / 2
-    return +area.toFixed(3)
+  let angle = Math.PI / s;
+  let area = (r * r * s * Math.sin(angle * 2)) / 2;
+  return +area.toFixed(3);
 }

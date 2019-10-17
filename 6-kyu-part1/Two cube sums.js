@@ -11,16 +11,16 @@ hasTwoCubeSums(1729); // true
 hasTwoCubeSums(42);   // false
 */
 function hasTwoCubeSums(n) {
-        let cnt = 0;
-        let limit = Math.cbrt(n);
-        let sum;
-        for (let i = 1; i <= limit; i++) {
-            for (let j = i; j <= limit; j++) {
-                sum = (Math.pow(i, 3) + Math.pow(j, 3));
-                if (sum == n) {
-                    cnt++;
-                }
-            }
-        }
-        return cnt >= 2;
+  let cnt = 0;
+  let limit = Math.cbrt(n);
+  let sum;
+  for (let i = 1; i <= limit; i++) {
+    for (let j = i; j <= limit; j++) {
+      sum = Math.pow(i, 3) + Math.pow(j, 3);
+      if (sum == n) {
+        cnt++;
+      }
     }
+  }
+  return cnt >= 2;
+}

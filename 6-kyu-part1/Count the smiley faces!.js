@@ -19,7 +19,6 @@ countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
 countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
 */
 
-
 function countSmileys(arr) {
-  return arr.filter(v=>v.match(/(:|;)(-|~)?(\)|D)/)).length
+  return arr.filter(v => v.match(/(:|;)(-|~)?(\)|D)/)).length;
 }

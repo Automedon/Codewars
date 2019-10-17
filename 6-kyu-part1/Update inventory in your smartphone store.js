@@ -13,6 +13,11 @@ updateInventory(currentStock, newStock)  ==>
 Kata inspired by the FreeCodeCamp's 'Inventory Update' algorithm.
 */
 function updateInventory(curStock, newStock) {
-  let dict = [...curStock,...newStock].reduce((a,b)=>(a[b[1]]=a[b[1]]+b[0]||b[0],a),{})
-  return Object.entries(dict).map(v=>[v[1],v[0]]).sort((a,b)=>a[1].localeCompare(b[1]))
+  let dict = [...curStock, ...newStock].reduce(
+    (a, b) => ((a[b[1]] = a[b[1]] + b[0] || b[0]), a),
+    {}
+  );
+  return Object.entries(dict)
+    .map(v => [v[1], v[0]])
+    .sort((a, b) => a[1].localeCompare(b[1]));
 }

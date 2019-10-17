@@ -14,7 +14,7 @@ function Node(data, nxt) {
   this.next = nxt;
 }
 function sortedInsert(head, data) {
-  if(!head || data < head.data) return new Node(data, head);
+  if (!head || data < head.data) return new Node(data, head);
   else {
     head.next = sortedInsert(head.next, data);
     return head;

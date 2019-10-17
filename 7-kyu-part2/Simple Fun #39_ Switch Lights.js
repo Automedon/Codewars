@@ -26,12 +26,12 @@ Constraints: 2 ≤ a.length ≤ 5000.
 Situation after applying the algorithm - array in the same format as input with the same length.
 */
 function switchLights(a) {
-    for (var i = 0; i < a.length; i++) {
-        if (a[i]) {
-            for (var j = 0; j <= i; j++) {
-                a[j] = 1 - a[j];
-            }
-        }
+  for (var i = 0; i < a.length; i++) {
+    if (a[i]) {
+      for (var j = 0; j <= i; j++) {
+        a[j] = 1 - a[j];
+      }
     }
-    return a;
+  }
+  return a;
 }

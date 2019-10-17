@@ -30,13 +30,18 @@ Good Luck!
 DM
 */
 var spiderToFly = function(spider, fly) {
-  const a = spider.split``[1]*1
-  const b = fly.split``[1]*1
-  const angles = 'CBAHGFED'
-  const y = Math.abs(angles.indexOf(spider.split``[0])-angles.indexOf(fly.split``[0]))*45
-  const side = Math.sqrt((a*a)+(b*b)-2*a*b*Math.cos(Math.toRadians(y)))
+  const a = spider.split``[1] * 1;
+  const b = fly.split``[1] * 1;
+  const angles = "CBAHGFED";
+  const y =
+    Math.abs(
+      angles.indexOf(spider.split``[0]) - angles.indexOf(fly.split``[0])
+    ) * 45;
+  const side = Math.sqrt(
+    a * a + b * b - 2 * a * b * Math.cos(Math.toRadians(y))
+  );
   return side;
-}
+};
 Math.toRadians = function(degrees) {
-  return degrees/(180/Math.PI)
-}
+  return degrees / (180 / Math.PI);
+};

@@ -13,10 +13,21 @@ Note: if the average of the YEAR of birth is 0 (in the case of "dd.mm.00"), the 
 Return a single string containing both numbers represented in the following format - e.g, '3hree 6ix'
 format = the respective number replaces the first character for the word of said number. 'three' becomes '3hree'
 */
-function rapNameGen(dob){
-  let n = dob.split`.`
-  let f = Math.ceil(n[0].split``.reduce((a,b)=>a+b*1,0)/2)
-  let s = Math.ceil(n[2].split``.reduce((a,b)=>a+b*1,0)/2)
-  let dict = {0:'0ero',1:'1ne',2:'2wo',3:'3hree',4:'4our',5:'5ive',6:'6ix',7:'7even',8:'8ight',9:'9ine'}
-  return `${dict[f]} ${dict[s]}`
+function rapNameGen(dob) {
+  let n = dob.split`.`;
+  let f = Math.ceil(n[0].split``.reduce((a, b) => a + b * 1, 0) / 2);
+  let s = Math.ceil(n[2].split``.reduce((a, b) => a + b * 1, 0) / 2);
+  let dict = {
+    0: "0ero",
+    1: "1ne",
+    2: "2wo",
+    3: "3hree",
+    4: "4our",
+    5: "5ive",
+    6: "6ix",
+    7: "7even",
+    8: "8ight",
+    9: "9ine"
+  };
+  return `${dict[f]} ${dict[s]}`;
 }

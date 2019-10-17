@@ -11,13 +11,19 @@ More examples in the test cases.
 
 Good luck!
 */
-function solve(s){
-  let check = s.slice()
-  let reverse=(s)=>s.split``.reverse().join``
-  if (check===reverse(s)) return 'OK'
-  if (s.split``.map(v=>s).some((v,i)=>{
-  v=v.split``;
-  v.splice(i,1).join``;
-  return v.join``===reverse(v.join``)})) return 'remove one'
-  return 'not possible'
-};
+function solve(s) {
+  let check = s.slice();
+  let reverse = s => s.split``.reverse().join``;
+  if (check === reverse(s)) return "OK";
+  if (
+    s.split``
+      .map(v => s)
+      .some((v, i) => {
+        v = v.split``;
+        v.splice(i, 1).join``;
+        return v.join`` === reverse(v.join``);
+      })
+  )
+    return "remove one";
+  return "not possible";
+}

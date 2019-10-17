@@ -16,5 +16,5 @@ To pass the kata, make sure the function represented in your string will return 
 */
 
 function palindromicExpression() {
-  return "n=>nn>=n"
+  return "n=>nn>=n";
 }

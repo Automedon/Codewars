@@ -16,15 +16,15 @@ For example, the above square will be passed like: [4, 9, 2, 3, 5, 7, 8, 1, 6] a
 
 [9, 4, 7, 3, 5, 2, 8, 6, 1] should return False
 */
-function isMagical(s){
-  if (s.length!==[...new Set(s)].length) return false
-  if (s[0]+s[1]+s[2]!==15) return false
-  if (s[3]+s[4]+s[5]!==15) return false
-  if (s[6]+s[7]+s[8]!==15) return false
-  if (s[0]+s[3]+s[6]!==15) return false
-  if (s[1]+s[4]+s[7]!==15) return false
-  if (s[2]+s[5]+s[8]!==15) return false
-  if (s[0]+s[4]+s[8]!==15) return false
-  if (s[2]+s[4]+s[6]!==15) return false
-  return true
+function isMagical(s) {
+  if (s.length !== [...new Set(s)].length) return false;
+  if (s[0] + s[1] + s[2] !== 15) return false;
+  if (s[3] + s[4] + s[5] !== 15) return false;
+  if (s[6] + s[7] + s[8] !== 15) return false;
+  if (s[0] + s[3] + s[6] !== 15) return false;
+  if (s[1] + s[4] + s[7] !== 15) return false;
+  if (s[2] + s[5] + s[8] !== 15) return false;
+  if (s[0] + s[4] + s[8] !== 15) return false;
+  if (s[2] + s[4] + s[6] !== 15) return false;
+  return true;
 }

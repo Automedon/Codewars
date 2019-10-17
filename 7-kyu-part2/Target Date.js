@@ -17,11 +17,10 @@ If p% is the rate for a year the rate for a day is p divided by 36000 since bank
 You have: a0 > 0, p% > 0, a >= a0
 */
 function dateNbDays(a0, a, p) {
-	let count=1;
-  for(let i=0;a0<=a;i++)
-  {
-  count++
-  a0+=a0*(p/100/360)
+  let count = 1;
+  for (let i = 0; a0 <= a; i++) {
+    count++;
+    a0 += a0 * (p / 100 / 360);
   }
-  return JSON.stringify(new Date(2016,0,count)).slice(1,11)
+  return JSON.stringify(new Date(2016, 0, count)).slice(1, 11);
 }

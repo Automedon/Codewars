@@ -5,6 +5,11 @@ Create function that takes one positive three digit integer and rearranges its d
 maxRedigit(123); // returns 321
 */
 var maxRedigit = function(num) {
-  if ((''+num).length!==3) return null
-  return (''+num).split('').sort((a,b)=>b-a).join('')*1
+  if (("" + num).length !== 3) return null;
+  return (
+    ("" + num)
+      .split("")
+      .sort((a, b) => b - a)
+      .join("") * 1
+  );
 };

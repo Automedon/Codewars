@@ -57,5 +57,5 @@ Hint: Remember that, even though, we are talking about tetrahedrons the key numb
 *** Please, don't worry about the parameters. You will only receive positive integers.
 */
 function tetrahedron(size) {
-  return size*(size + 1)*(size + 2)/6
+  return (size * (size + 1) * (size + 2)) / 6;
 }

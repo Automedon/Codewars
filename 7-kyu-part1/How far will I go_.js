@@ -18,15 +18,17 @@ restTime - How long the horse have to rest for after running (in seconds)
 
 speed - The max speed of the horse (in metres/second)
 */
-function Kata_travel (totalTime,runTime,restTime,speed) {
-  let seconds=0
-    while (totalTime>0){
-        if (totalTime-runTime<=0){
-           seconds+=totalTime;
-           break; 
-           } else{
-            totalTime-=runTime
-            totalTime-=restTime
-            seconds+=runTime}}
-    return seconds*speed
+function Kata_travel(totalTime, runTime, restTime, speed) {
+  let seconds = 0;
+  while (totalTime > 0) {
+    if (totalTime - runTime <= 0) {
+      seconds += totalTime;
+      break;
+    } else {
+      totalTime -= runTime;
+      totalTime -= restTime;
+      seconds += runTime;
+    }
+  }
+  return seconds * speed;
 }

@@ -11,12 +11,15 @@ The input must be an integer greater than 0, for other input raise an error.
 Details (Haskell)
 The input must be an integer greater than 0, for other input return Nothing.
 */
-function houseOfCards(floors){
-    if(floors<1||floors!==parseInt(floors)){throw new Error('Error')}
-    let currFloor = 2, total = 2;
-    for (let i = 1; i <= floors; i++) {
-      currFloor += 3;
-      total += currFloor;
-    }
-    return total;
+function houseOfCards(floors) {
+  if (floors < 1 || floors !== parseInt(floors)) {
+    throw new Error("Error");
+  }
+  let currFloor = 2,
+    total = 2;
+  for (let i = 1; i <= floors; i++) {
+    currFloor += 3;
+    total += currFloor;
+  }
+  return total;
 }

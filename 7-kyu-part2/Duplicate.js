@@ -5,6 +5,6 @@ Given an array of integers, find if the array contains any duplicate elements. T
 Concepts
 Nested Loops, Linear Search
 */
-function existsDuplicate(numbers){
-    return !(numbers.length===[...new Set(numbers)].length)
+function existsDuplicate(numbers) {
+  return !(numbers.length === [...new Set(numbers)].length);
 }

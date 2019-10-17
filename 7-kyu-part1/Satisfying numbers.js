@@ -11,5 +11,6 @@ E.g
 smallest(5) == 60 // 1 to 5 can all divide evenly into 60
 smallest(10) == 2520
 */
-let gcd=(a,b)=>b==0 ? a : gcd(b,a%b);
-let smallest=n=> [...Array(n)].map((_,i)=>i+1).reduce((x,y)=>x*y/gcd(x,y),1);
+let gcd = (a, b) => (b == 0 ? a : gcd(b, a % b));
+let smallest = n =>
+  [...Array(n)].map((_, i) => i + 1).reduce((x, y) => (x * y) / gcd(x, y), 1);

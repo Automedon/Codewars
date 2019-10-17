@@ -13,6 +13,6 @@ Examples
 (128).toBits(4) === '10000000';
 (255).toBits(4) === '11111111';
 */
-Number.prototype.toBits = function(length=8) {
-  return this.toString(2).padStart(length,'0');
-}
+Number.prototype.toBits = function(length = 8) {
+  return this.toString(2).padStart(length, "0");
+};

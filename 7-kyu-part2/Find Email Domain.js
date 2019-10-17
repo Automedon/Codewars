@@ -13,5 +13,8 @@ For address = "prettyandsimple@example.com", the output should be findEmailDomai
 For address = "<>[]:,;@\"!#$%&*+-/=?^_{}| ~.a\"@example.org", the output should be findEmailDomain(address) = "example.org".
 */
 function findEmailDomain(address) {
-   return address.match(/@{1,1}\w+\.\w+\.?\w+?$/).toString().slice(1)
+  return address
+    .match(/@{1,1}\w+\.\w+\.?\w+?$/)
+    .toString()
+    .slice(1);
 }

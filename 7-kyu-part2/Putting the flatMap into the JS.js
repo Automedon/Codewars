@@ -7,5 +7,5 @@ for example: we have an array arr = [0,1,2] , we have mapping function (x => [x,
 Good luck!
 */
 Array.prototype.flatMap = function(f) {
-  return this.reduce((a,b)=>a.concat(f(b)),[])
+  return this.reduce((a, b) => a.concat(f(b)), []);
 };

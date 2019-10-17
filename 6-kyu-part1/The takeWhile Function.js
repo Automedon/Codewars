@@ -12,6 +12,8 @@ Your task is to implement the takeWhile function.
 
 If you've got a span function lying around, this is a one-liner! Also, if you liked this problem, you'll surely love the dropWhile function.
 */
-function takeWhile (arr, pred) {
-  return arr.map(v=>pred(v)).indexOf(false)===-1?arr:arr.slice(0,arr.map(v=>pred(v)).indexOf(false))
+function takeWhile(arr, pred) {
+  return arr.map(v => pred(v)).indexOf(false) === -1
+    ? arr
+    : arr.slice(0, arr.map(v => pred(v)).indexOf(false));
 }

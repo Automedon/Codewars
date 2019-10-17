@@ -39,11 +39,11 @@ For score = "30-all", the output should be 4.
 The players have won 2 points each.
 */
 function tennisGamePoints(score) {
-  let arr = score.split`-`
-  let dict = {15:1,40:3,love:0,15:1,30:2}
-  arr=arr.map(v=>dict[v])
-  if (arr.some(v=>v===undefined)){
-    return arr.filter(v=>v!==undefined).reduce((a,b)=>a+(b+b),0)
+  let arr = score.split`-`;
+  let dict = { 15: 1, 40: 3, love: 0, 15: 1, 30: 2 };
+  arr = arr.map(v => dict[v]);
+  if (arr.some(v => v === undefined)) {
+    return arr.filter(v => v !== undefined).reduce((a, b) => a + (b + b), 0);
   }
-  return arr.reduce((a,b)=>a+b,0)
+  return arr.reduce((a, b) => a + b, 0);
 }

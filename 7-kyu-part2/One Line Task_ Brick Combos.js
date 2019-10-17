@@ -7,4 +7,4 @@ For an 2 x 4 Lego brick, the result should be 19
 
 
 */
-brickCombos=(a,b)=>3*a*b-a-b+1
+brickCombos = (a, b) => 3 * a * b - a - b + 1;

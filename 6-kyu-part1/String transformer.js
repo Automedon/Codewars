@@ -10,8 +10,12 @@ stringTransformer('Example Input')/string_transformer("Example Input") (dependin
 You may assume the input only contain English alphabet and spaces.
 */
 function stringTransformer(str) {
- return str.split` `.map(v=>v.replace(/./gi,v=>{
- if (v===v.toLowerCase()) return v.toUpperCase()
- if (v===v.toUpperCase()) return v.toLowerCase()
- })).reverse().join` `
+  return str.split` `
+    .map(v =>
+      v.replace(/./gi, v => {
+        if (v === v.toLowerCase()) return v.toUpperCase();
+        if (v === v.toUpperCase()) return v.toLowerCase();
+      })
+    )
+    .reverse().join` `;
 }

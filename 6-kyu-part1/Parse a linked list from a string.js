@@ -42,4 +42,8 @@ For the simplicity of this Kata, the values of the nodes in the string represent
 
 Enjoy, and don't forget to check out my other Kata Series :D
 */
-const parse = string => string.split(' -> ').slice(0, -1).reduceRight((a, b) => new Node(Number(b), a), null);
+const parse = string =>
+  string
+    .split(" -> ")
+    .slice(0, -1)
+    .reduceRight((a, b) => new Node(Number(b), a), null);

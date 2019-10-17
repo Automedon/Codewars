@@ -8,6 +8,8 @@ How much is Michael going to pay? Calculate the amount with two decimals, if nec
 */
 
 function michaelPays(costs) {
-  if (costs<5) return parseFloat((costs).toFixed(2))
-  return costs/3>10?parseFloat((costs-10).toFixed(2)):parseFloat((costs/3+costs/3).toFixed(2));
+  if (costs < 5) return parseFloat(costs.toFixed(2));
+  return costs / 3 > 10
+    ? parseFloat((costs - 10).toFixed(2))
+    : parseFloat((costs / 3 + costs / 3).toFixed(2));
 }

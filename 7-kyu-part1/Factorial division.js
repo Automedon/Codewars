@@ -14,5 +14,5 @@ And your solution should be able to calculate n! / d!.
 */
 
 function factorialDivision(n, d) {
-  return n==d ? 1 : n * factorialDivision(n-1,d)
+  return n == d ? 1 : n * factorialDivision(n - 1, d);
 }

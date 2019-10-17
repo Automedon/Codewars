@@ -14,6 +14,6 @@ That is, Julie is 15 years younger and 0.25 times the age of her brother.
 
 Do not concern yourself with the imperfections inherent in dividing by floating point numbers, as your answer will be rounded. Also, for the sake of simplicity, Julie is never the same age as her brother.
 */
-function age(x, y){
-    return x*y/(y-1)
+function age(x, y) {
+  return (x * y) / (y - 1);
 }

@@ -22,13 +22,18 @@ For n = 20, a = 2, b = 3, c = 4, the output should be [12, 24]
 */
 function closestNeighbor(n, a, b, c) {
   let smallestInt = 0;
-  let largestInt  = 0;
-  for (let i=n+1;;i++){
-    if (i%a===0&&i%b===0&&i%c===0){largestInt=i;break}
+  let largestInt = 0;
+  for (let i = n + 1; ; i++) {
+    if (i % a === 0 && i % b === 0 && i % c === 0) {
+      largestInt = i;
+      break;
+    }
   }
-  for (let i=n-1;;i--){
-    if (i%a===0&&i%b===0&&i%c===0){smallestInt=i;break}
-    
+  for (let i = n - 1; ; i--) {
+    if (i % a === 0 && i % b === 0 && i % c === 0) {
+      smallestInt = i;
+      break;
+    }
   }
-  return [smallestInt,largestInt]
+  return [smallestInt, largestInt];
 }

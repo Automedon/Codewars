@@ -34,7 +34,10 @@ The moment of time and space that the input time came from.
 Array of three elements, two of which are false, and one is true. The true value should be at the 1st, 2nd or 3rd place for past, present and future respectively.
 */
 function momentOfTimeInSpace(moment) {
-  const time = moment.replace(/[^\d+]/g, '').split('').reduce((x, y) => x + +y, 0)
-  const space = moment.replace(/[1-9]/g, '').length
-  return [space > time, space == time, space < time]
+  const time = moment
+    .replace(/[^\d+]/g, "")
+    .split("")
+    .reduce((x, y) => x + +y, 0);
+  const space = moment.replace(/[1-9]/g, "").length;
+  return [space > time, space == time, space < time];
 }

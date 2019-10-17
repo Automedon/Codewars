@@ -10,5 +10,5 @@ findAndSumm([[[[[2]]]]], [[[5]]]) / -> 7
 findAndSumm([[[6]]], [[[[[3]]]]]) / -> 9
 */
 const findAndSumm = (arr1, arr2) => {
-  return arr1.toString()*1+arr2.toString()*1
-}
+  return arr1.toString() * 1 + arr2.toString() * 1;
+};

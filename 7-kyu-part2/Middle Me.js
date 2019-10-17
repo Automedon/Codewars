@@ -22,7 +22,7 @@ Y repeated N times = '**********';
 
 X in the middle of Y repeated N times = '*****A*****';
 */
-function middleMe(N, X, Y){
-  if (N%2==0) return Y.repeat(N/2)+X+Y.repeat(N/2)
-  return X
+function middleMe(N, X, Y) {
+  if (N % 2 == 0) return Y.repeat(N / 2) + X + Y.repeat(N / 2);
+  return X;
 }

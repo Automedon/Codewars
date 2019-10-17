@@ -4,6 +4,6 @@ Implement String#hex_number? (in Java StringUtils.isHexNumber(String)), which sh
 
 Hexadecimal numbers consist of one or more digits from range 0-9 A-F (in any case), optionally prefixed by 0x.
 */
-String.prototype.hexNumber = function () {
-  return /^(0x)?[a-f\d]+$/i.test(this)
-}
+String.prototype.hexNumber = function() {
+  return /^(0x)?[a-f\d]+$/i.test(this);
+};

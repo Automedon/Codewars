@@ -14,15 +14,18 @@ The punctuation and casing of words (uppercase, lowercase) should not matter for
 */
 function findSecretMessage(paragraph) {
   let seenWords = {};
-  let words = paragraph.toLowerCase().replace(/\W+/g,' ').split(/\s+/);
+  let words = paragraph
+    .toLowerCase()
+    .replace(/\W+/g, " ")
+    .split(/\s+/);
   let result = "";
-  for(let i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i++) {
     if (!seenWords[words[i]]) {
       seenWords[words[i]] = 1;
-    } else if(seenWords[words[i]] === 1) {
-      result += ' ' + words[i];
+    } else if (seenWords[words[i]] === 1) {
+      result += " " + words[i];
       seenWords[words[i]]++;
-    } 
+    }
   }
   return result.trim();
 }

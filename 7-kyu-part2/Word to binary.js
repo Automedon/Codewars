@@ -3,6 +3,6 @@ Write a function that takes a string and returns an array containing binary numb
 
 Example: 'man' should return [ '01101101', '01100001', '01101110' ]
 */
-function wordToBin(str){
-  return str.split('').map(v=>'0'+v.charCodeAt().toString(2));
+function wordToBin(str) {
+  return str.split("").map(v => "0" + v.charCodeAt().toString(2));
 }

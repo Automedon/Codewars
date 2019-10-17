@@ -26,10 +26,12 @@ Some Examples
  maxSum([1,-2,3,4,-5,-4,3,2,1],[[1,3]]) === 5
  maxSum([1,-2,3,4,-5,-4,3,2,1],[[1,4],[2,5]]) === 0
 */
-function maxSum(arr,range){
-  let ans = []
-  for (let i=0;i<range.length;i++){
-    ans.push(arr.slice(range[i][0],range[i][1]+1).reduce((a,b)=>a+b,0))
+function maxSum(arr, range) {
+  let ans = [];
+  for (let i = 0; i < range.length; i++) {
+    ans.push(
+      arr.slice(range[i][0], range[i][1] + 1).reduce((a, b) => a + b, 0)
+    );
   }
-  return Math.max(...ans)
+  return Math.max(...ans);
 }

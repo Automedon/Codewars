@@ -27,9 +27,9 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 function encrypt(text, n) {
   console.log(text, n);
-  if (!text || n <= 0) return text; 
+  if (!text || n <= 0) return text;
   while (n--) {
-    let ans = '';
+    let ans = "";
     for (let i = 1; i < text.length; i += 2) {
       ans += text[i];
     }
@@ -52,7 +52,7 @@ function decrypt(encryptedText, n) {
     for (let i = 0; i < ans.length; i += 2) {
       ans[i] = encryptedText[j++];
     }
-    encryptedText = ans.join('');
+    encryptedText = ans.join("");
   }
   return encryptedText;
 }

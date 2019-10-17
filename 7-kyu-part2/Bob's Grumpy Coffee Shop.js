@@ -4,11 +4,15 @@ Bob's coffee shop is really busy, so busy in fact that if you dont have the righ
 
 Drinks avaialble are Americano £2.20, Latte, £2.30, Flat white £2.40, Filter £3.50
 */
-function getCoffee(arr,coffee) {
-  let sum=arr.reduce((a,b)=>a+b,0);
-  if (sum===2.2&&coffee==="Americano") return "Here is your Americano, have a nice day!"
-  if (sum===2.3&&coffee==="Latte") return "Here is your Latte, have a nice day!"
-  if (sum===2.4&&coffee==="Flat white") return "Here is your Flat white, have a nice day!"
-  if (sum===3.5&&coffee==="Filter") return "Here is your Filter, have a nice day!"
-  return "Sorry, exact change only, try again tomorrow!"
+function getCoffee(arr, coffee) {
+  let sum = arr.reduce((a, b) => a + b, 0);
+  if (sum === 2.2 && coffee === "Americano")
+    return "Here is your Americano, have a nice day!";
+  if (sum === 2.3 && coffee === "Latte")
+    return "Here is your Latte, have a nice day!";
+  if (sum === 2.4 && coffee === "Flat white")
+    return "Here is your Flat white, have a nice day!";
+  if (sum === 3.5 && coffee === "Filter")
+    return "Here is your Filter, have a nice day!";
+  return "Sorry, exact change only, try again tomorrow!";
 }

@@ -28,8 +28,8 @@ Wealth of citizen will an integer with minimum 0 (negative wealth not possible)
 Handling of floating point error will not be tested
 */
 function redistributeWealth(wealth) {
-   let sum=wealth.reduce((a,b)=>a+b,0)/wealth.length
-   for(var i = 0; i < wealth.length; i++) {
+  let sum = wealth.reduce((a, b) => a + b, 0) / wealth.length;
+  for (var i = 0; i < wealth.length; i++) {
     wealth[i] = sum;
   }
 }

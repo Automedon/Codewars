@@ -4,6 +4,6 @@ Create a function that will return true if the input is in the following date ti
 
 This Kata has been inspired by the Regular Expressions chapter from the book Eloquent JavaScript.
 */
-function dateChecker(date){
-	return /\d\d-\d\d-\d\d\d\d\s\d\d:\d\d/.test(date)
+function dateChecker(date) {
+  return /\d\d-\d\d-\d\d\d\d\s\d\d:\d\d/.test(date);
 }

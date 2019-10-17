@@ -28,7 +28,10 @@ Each Line must be 7 chars long
 Fill the missing pins with a whitespace
 Have fun!
 */
-function bowlingPins(arr){
+function bowlingPins(arr) {
   return "7 8 9 10\n 4 5 6 \n  2 3  \n   1   ".split`\n`.map(
-  v=>v.split` `.map(v=>arr.includes(v*1)?' ':v===''?'':'I').join` `).join`\n`
+    v =>
+      v.split` `.map(v => (arr.includes(v * 1) ? " " : v === "" ? "" : "I"))
+        .join` `
+  ).join`\n`;
 }

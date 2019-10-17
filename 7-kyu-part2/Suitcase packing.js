@@ -14,6 +14,6 @@ fit_in(3,2,3,2) should return False
 fit_in(1,2,1,2) should return False
 */
 function fit_in(a, b, m, n) {
-    if (a>n||b>n||a>m||b>m) return false
-    return !(a + b > m && a + b > n)
+  if (a > n || b > n || a > m || b > m) return false;
+  return !(a + b > m && a + b > n);
 }

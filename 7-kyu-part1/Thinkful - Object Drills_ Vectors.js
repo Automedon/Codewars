@@ -23,7 +23,7 @@ Adding vectors when you have their components is easy: just add the two x compon
 class Vector {
   constructor(x, y) {
     this.x = x;
-    this.y = y
+    this.y = y;
   }
   add(v) {
     return new Vector(this.x + v.x, this.y + v.y);

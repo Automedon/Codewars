@@ -20,13 +20,13 @@ swaps = [[0,1], [1,2], [1, 0]]
 find_the_ball(0, swaps) == 2
 There aren't necessarily only three cups in this game, but there will be at least two. You can assume all swaps are valid, and involve two distinct indices.
 */
-find_the_ball=function(start,swaps){
-  swaps.forEach(function (val) {
-        if (val[0] === start) {
-            start = val[1];
-        } else if (val[1] === start) {
-            start = val[0];
-        }
-    });
-    return start;
+find_the_ball = function(start, swaps) {
+  swaps.forEach(function(val) {
+    if (val[0] === start) {
+      start = val[1];
+    } else if (val[1] === start) {
+      start = val[0];
+    }
+  });
+  return start;
 };

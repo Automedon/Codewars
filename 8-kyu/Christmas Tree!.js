@@ -11,9 +11,8 @@ Restrictions:
 
 Lets choose best christmas tree this year!
 */
-function decorateTree(){
-
-var tree = `
+function decorateTree() {
+  var tree = `
                                                                                               
                                                                                                         
                                                                                                       
@@ -41,8 +40,7 @@ var tree = `
                                ......                                                                   
                                                                                                      
             `;
-            
-console.log(tree);
-return tree;
 
+  console.log(tree);
+  return tree;
 }

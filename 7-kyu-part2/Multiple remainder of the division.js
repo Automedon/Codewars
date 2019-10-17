@@ -16,6 +16,10 @@ isMultiple(666, 665, 2) -> false // 1.0 -> return false
 
 */
 function isMultiple(a, b, n) {
-  const x = (a/b).toFixed(1).split(``).reverse()[0]*1;
-  return x===0?false:x%n===0
+  const x =
+    (a / b)
+      .toFixed(1)
+      .split(``)
+      .reverse()[0] * 1;
+  return x === 0 ? false : x % n === 0;
 }

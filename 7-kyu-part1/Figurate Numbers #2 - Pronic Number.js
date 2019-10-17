@@ -21,11 +21,10 @@ The first few Pronic Numbers are - 0, 2, 6, 12, 20, 30, 42...
  42 = 6 × 7   // ∴ 42 is a Pronic Number
 */
 
-
-function isPronic(n){
-  let bool=false
-  for (let i=0;i<=n;i++){
-  if (i*(i+1)==n) bool=true; 
+function isPronic(n) {
+  let bool = false;
+  for (let i = 0; i <= n; i++) {
+    if (i * (i + 1) == n) bool = true;
   }
-  return bool
+  return bool;
 }

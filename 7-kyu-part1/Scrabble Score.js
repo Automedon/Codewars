@@ -36,6 +36,9 @@ scrabbleScore('') // => 0
 scrabbleScore('ca bba g  e') // => 14
 */
 
-function scrabbleScore(str){
-  return str.replace(/[^a-z]/gi,'').split('').reduce((a,b)=>a+$dict[b.toUpperCase()]*1,0)
+function scrabbleScore(str) {
+  return str
+    .replace(/[^a-z]/gi, "")
+    .split("")
+    .reduce((a, b) => a + $dict[b.toUpperCase()] * 1, 0);
 }

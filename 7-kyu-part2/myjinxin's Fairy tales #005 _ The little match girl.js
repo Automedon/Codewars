@@ -30,23 +30,25 @@ Complete function poorGirl that accepts 2 argument matches and action. Returns t
 
 Note: If the action requires more than the actual number of matches, please ignore the additional action.
 */
-function poorGirl(matches,action){
-  action=action.map(v=>{
-  v=v.split`:`
-  return v[0]==='Sell'?v[1]*1:v[1]*-1
-  })
-  matches=matches.split``
-  for (let i=0,j=0;i<matches.length;i++){
-    if (action[j]===0){j++}
-    if (matches[i]!=='1') {
-      if (action[j]>0){
-      action[j]--
-      matches[i]='$'
-      } else if(action[j]<0) {
-      action[j]++
-      matches[i]='1'
+function poorGirl(matches, action) {
+  action = action.map(v => {
+    v = v.split`:`;
+    return v[0] === "Sell" ? v[1] * 1 : v[1] * -1;
+  });
+  matches = matches.split``;
+  for (let i = 0, j = 0; i < matches.length; i++) {
+    if (action[j] === 0) {
+      j++;
+    }
+    if (matches[i] !== "1") {
+      if (action[j] > 0) {
+        action[j]--;
+        matches[i] = "$";
+      } else if (action[j] < 0) {
+        action[j]++;
+        matches[i] = "1";
       }
-    } 
+    }
   }
-  return matches.join``
+  return matches.join``;
 }

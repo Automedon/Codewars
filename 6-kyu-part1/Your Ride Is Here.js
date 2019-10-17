@@ -25,8 +25,8 @@ then calculate the product mod 47:
 8 * 22 * 14 * 7 *  1 * 20 = 344960 mod 47 = 27
 Because both products evaluate to 27 (when modded by 47), the mission is 'GO'.
 */
-function ride(group,comet){
-  let g= group.split``.reduce((a,b)=>a*(b.charCodeAt()-64),1)%47
-  let c= comet.split``.reduce((a,b)=>a*(b.charCodeAt()-64),1)%47
-  return g===c?'GO':'STAY'
+function ride(group, comet) {
+  let g = group.split``.reduce((a, b) => a * (b.charCodeAt() - 64), 1) % 47;
+  let c = comet.split``.reduce((a, b) => a * (b.charCodeAt() - 64), 1) % 47;
+  return g === c ? "GO" : "STAY";
 }

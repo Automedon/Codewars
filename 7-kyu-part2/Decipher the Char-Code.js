@@ -12,5 +12,5 @@ charDecipher("72-101-108-108-111") // => 'Hello'
 charDecipher('66-117-115-104-32-68-105-100-32-57-47-49-49') // => "Bush Did 9/11"
 */
 function charDecipher(charString) {
-  return charString.split('-').map(v=>String.fromCharCode(v)).join``
+  return charString.split("-").map(v => String.fromCharCode(v)).join``;
 }

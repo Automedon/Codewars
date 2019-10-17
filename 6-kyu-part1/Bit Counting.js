@@ -6,5 +6,5 @@ Example: The binary representation of 1234 is 10011010010, so the function shoul
 */
 
 var countBits = function(n) {
-  return n.toString(2).replace(/0/g,'').length;
+  return n.toString(2).replace(/0/g, "").length;
 };

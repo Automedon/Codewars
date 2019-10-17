@@ -37,34 +37,40 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 I have created other katas. Have a look if you like coding and challenges.
 */
-const numberGenerator=()=>{
+const numberGenerator = () => {
   let arr = [];
-  for (let i=0;arr.length!==6;i++){
-    let x = getRandomIntInclusive(1,49)
-    if (!arr.includes(x)) arr.push(x)
+  for (let i = 0; arr.length !== 6; i++) {
+    let x = getRandomIntInclusive(1, 49);
+    if (!arr.includes(x)) arr.push(x);
   }
-  arr=arr.sort((a,b)=>a-b)
-  arr.push(getRandomIntInclusive(0,9))
-  return arr
-}
+  arr = arr.sort((a, b) => a - b);
+  arr.push(getRandomIntInclusive(0, 9));
+  return arr;
+};
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; 
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 function checkForWinningCategory(checkCombination, winningCombination) {
-  let s =false
-  let count = 0
-  checkCombination.slice(0,6).map((v,i)=>winningCombination.slice(0,6).includes(v)?count++:0)
-  if (checkCombination[checkCombination.length-1]===winningCombination[winningCombination.length-1])s=true
-  if (count===6&&s) return 1
-  if (count===6&&!s) return 2
-  if (count===5&&s) return 3
-  if (count===5&&!s) return 4
-  if (count===4&&s) return 5
-  if (count===4&&!s) return 6
-  if (count===3&&s) return 7
-  if (count===3&&!s) return 8
-  if (count===2&&s) return 9
-  return -1
+  let s = false;
+  let count = 0;
+  checkCombination
+    .slice(0, 6)
+    .map((v, i) => (winningCombination.slice(0, 6).includes(v) ? count++ : 0));
+  if (
+    checkCombination[checkCombination.length - 1] ===
+    winningCombination[winningCombination.length - 1]
+  )
+    s = true;
+  if (count === 6 && s) return 1;
+  if (count === 6 && !s) return 2;
+  if (count === 5 && s) return 3;
+  if (count === 5 && !s) return 4;
+  if (count === 4 && s) return 5;
+  if (count === 4 && !s) return 6;
+  if (count === 3 && s) return 7;
+  if (count === 3 && !s) return 8;
+  if (count === 2 && s) return 9;
+  return -1;
 }

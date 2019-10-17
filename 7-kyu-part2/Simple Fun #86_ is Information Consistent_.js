@@ -31,6 +31,11 @@ Constraints:
 true if the evidence is consistent, false otherwise.
 */
 const isInformationConsistent = evidences =>
-  evidences[0].every((_,d)=>                   // for every defendant, retrun true if
-    !evidences.filter(w=>w[d]=== 1).length ||  // no witnesses say "guilty" or
-    !evidences.filter(w=>w[d]===-1).length);   // no witnesses say "innocent"
+  evidences[0].every(
+    (
+      _,
+      d // for every defendant, retrun true if
+    ) =>
+      !evidences.filter(w => w[d] === 1).length || // no witnesses say "guilty" or
+      !evidences.filter(w => w[d] === -1).length
+  ); // no witnesses say "innocent"

@@ -13,5 +13,7 @@ sumCircles(2, 3, 4) == "We have this much circle: 23"
 Translations and comments (and upvotes!) welcome!
 */
 function sumCircles() {
-  return `We have this much circle: ${Math.round([...arguments].reduce((a,b)=>a+((b*0.5)*(b*0.5))*Math.PI,0))}`
+  return `We have this much circle: ${Math.round(
+    [...arguments].reduce((a, b) => a + b * 0.5 * (b * 0.5) * Math.PI, 0)
+  )}`;
 }

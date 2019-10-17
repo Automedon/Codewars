@@ -12,5 +12,5 @@ When the workforce don't work a nice integer number of minutes - much to the cha
 The return value should be a string (with the £ included) of the total £ of staff wages for that week.
 */
 function payCheese(arr) {
-  return "£" + Math.ceil( arr.reduce( (a, b) => a + b, 0 ) / 100 ) * 35;
+  return "£" + Math.ceil(arr.reduce((a, b) => a + b, 0) / 100) * 35;
 }

@@ -9,13 +9,13 @@ let digits = /[0-9]/;
 let hexadecimal = /[0-9A-F]/;
 // createSequence(hexadecimal) === '0123456789ABCDEF'
 */
-const createSequence = (regex) => {
-  let seq = ''
+const createSequence = regex => {
+  let seq = "";
   for (let i = 0; i < 256; i++) {
     if (regex.test(String.fromCharCode(i))) {
-      seq += String.fromCharCode(i)
+      seq += String.fromCharCode(i);
     }
   }
-  
+
   return seq;
-}
+};

@@ -8,6 +8,11 @@ Examples
 "Hello, World!"  ==> 91
 "Forty4Three"    ==> 113
 */
-function hexHash(code){
-  return [...[...code].map(v=>v.charCodeAt().toString(16)).join``.replace(/[^0-9]/gi,'')].reduce((a,b)=>a+b*1,0)
+function hexHash(code) {
+  return [
+    ...[...code].map(v => v.charCodeAt().toString(16)).join``.replace(
+      /[^0-9]/gi,
+      ""
+    )
+  ].reduce((a, b) => a + b * 1, 0);
 }

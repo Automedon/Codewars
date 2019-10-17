@@ -18,12 +18,12 @@ solution(9,3) // => 1
 solution(14,28) // => 1
 solution(4,20) // => 0
 */
-function solution(n, m){
-   let count = 0
-   for (let i=0;i<n;i++){
-     for (let j=0;j<m;j++){
-       if (i*i+j===n&&i+j*j===m) count++
-     }
-   }
-   return count
+function solution(n, m) {
+  let count = 0;
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < m; j++) {
+      if (i * i + j === n && i + j * j === m) count++;
+    }
+  }
+  return count;
 }

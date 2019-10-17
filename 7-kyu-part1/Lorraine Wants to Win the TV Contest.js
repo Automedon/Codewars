@@ -22,13 +22,21 @@ The list of words that Bruce obtained (keep the secret!) is named word_list, in 
 Remember that all the words will correspond to U.K. English (Oxford Dictionary).
 */
 function unscramble(scramble) {
-    let sort=scramble.split('').sort((a,b)=>a.localeCompare(b)).join('')
-    let answer=wordList.map(v=>v.split('').sort((a,b)=>a.localeCompare(b)).join(''))
-    let index=[];
-    answer.map((v,i)=>v==sort?index.push(i):null)
-    let res=[];
-    for (let i=0;i<index.length;i++){
-    res.push(wordList[index[i]])
-    }
-    return res
+  let sort = scramble
+    .split("")
+    .sort((a, b) => a.localeCompare(b))
+    .join("");
+  let answer = wordList.map(v =>
+    v
+      .split("")
+      .sort((a, b) => a.localeCompare(b))
+      .join("")
+  );
+  let index = [];
+  answer.map((v, i) => (v == sort ? index.push(i) : null));
+  let res = [];
+  for (let i = 0; i < index.length; i++) {
+    res.push(wordList[index[i]]);
+  }
+  return res;
 }

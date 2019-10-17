@@ -21,10 +21,10 @@ https://en.wikipedia.org/wiki/Pythagorean_theorem
 Note: Do NOT round the ouput number
 You do not have to verify if the input values are "proper", assume them to be non-zero integers
 */
-function hypotenuse(a, b){
-    return Math.sqrt(a*a+b*b)
+function hypotenuse(a, b) {
+  return Math.sqrt(a * a + b * b);
 }
 
-function leg(c, a){
-  return Math.sqrt(c*c-a*a)
+function leg(c, a) {
+  return Math.sqrt(c * c - a * a);
 }

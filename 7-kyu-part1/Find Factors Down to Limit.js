@@ -8,11 +8,11 @@ If the limit is more than the integer, return an empty list
 
 As a challenge, see if you can do it in one line
 */
-function factors(integer, limit){
-  if (limit>integer) return [];
-  let arr=[];
-  for (let i=limit; i<=integer;i++){
-  if (integer%i===0) arr.push(i)
+function factors(integer, limit) {
+  if (limit > integer) return [];
+  let arr = [];
+  for (let i = limit; i <= integer; i++) {
+    if (integer % i === 0) arr.push(i);
   }
-  return arr
-} 
+  return arr;
+}

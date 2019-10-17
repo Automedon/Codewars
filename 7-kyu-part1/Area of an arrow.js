@@ -9,6 +9,6 @@ a and b are integers and > 0
 
 Write a function arrowArea/arrow_area, which returns the area of the arrow, rounded to two decimal places.
 */
-function arrowArea(a,b) {
-  return (a*b/4).toFixed(2)*1
+function arrowArea(a, b) {
+  return ((a * b) / 4).toFixed(2) * 1;
 }

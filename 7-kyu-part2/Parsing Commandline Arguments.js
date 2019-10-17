@@ -13,5 +13,8 @@ ls -R /
 (note that we ignored the extra leading spaces on that last example)
 */
 function args(cmd) {
-  return cmd.replace(/[&;>|].*$/,'').trim().split(' ');
+  return cmd
+    .replace(/[&;>|].*$/, "")
+    .trim()
+    .split(" ");
 }

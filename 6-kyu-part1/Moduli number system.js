@@ -23,7 +23,8 @@ fromNb2Str(6, [2, 3, 4]) -> "Not applicable", since 2 and 4 are not coprime
 
 fromNb2Str(7, [2, 3]) -> "Not applicable" since 2 * 3 < 7
 */
-function fromNb2Str(n,sys){
-  if (sys.reduce((a,b)=>a*b,1)<n||sys.length%2!==0) return "Not applicable"
-  return sys.map(v=>'-'+n%v+'-').join``
+function fromNb2Str(n, sys) {
+  if (sys.reduce((a, b) => a * b, 1) < n || sys.length % 2 !== 0)
+    return "Not applicable";
+  return sys.map(v => "-" + (n % v) + "-").join``;
 }

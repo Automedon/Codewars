@@ -27,16 +27,18 @@ If there are no babies in the string - you lost the baby!! Return a different va
 'none here' = "Where's the baby?!" '' = "Where's the baby?!"
 */
 function babyCount(x) {
-  let b=0;
-  let a=0;
-  let y=0;
-  x.toLowerCase().split``.map(v=>v==='a'?a++:v==='y'?y++:v==='b'?b++:1)
-  let baby=0;
-  while(b>1&&a>0&&y>0){
-    b-=2
-    a-=1
-    y-=1
-    baby++
+  let b = 0;
+  let a = 0;
+  let y = 0;
+  x.toLowerCase().split``.map(v =>
+    v === "a" ? a++ : v === "y" ? y++ : v === "b" ? b++ : 1
+  );
+  let baby = 0;
+  while (b > 1 && a > 0 && y > 0) {
+    b -= 2;
+    a -= 1;
+    y -= 1;
+    baby++;
   }
-  return baby?baby:'Where\'s the baby?!'
+  return baby ? baby : "Where's the baby?!";
 }

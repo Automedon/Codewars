@@ -12,5 +12,5 @@ oddOne([4,-8,98,-12,-7,90,100]) // => 4
 oddOne([2,4,6,8]) // => -1
 */
 function oddOne(arr) {
-  return arr.indexOf(arr.find(v=>v%2!==0))
+  return arr.indexOf(arr.find(v => v % 2 !== 0));
 }

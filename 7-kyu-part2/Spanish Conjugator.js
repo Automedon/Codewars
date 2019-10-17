@@ -116,19 +116,22 @@ Don't use JSON.stringify(obj, null, 2) because the "presentation" of the object 
 
 Buena suerte!
 */
-function conjugate(verb){
-  let suffix = verb.slice(-2)
-  let w=verb.slice(0,-2)
-  if (suffix==='er')  
-  {
-    return {[`${verb}`]:[w+'o',w+'es',w+'e',w+'emos',w+'éis',w+'en']}
+function conjugate(verb) {
+  let suffix = verb.slice(-2);
+  let w = verb.slice(0, -2);
+  if (suffix === "er") {
+    return {
+      [`${verb}`]: [w + "o", w + "es", w + "e", w + "emos", w + "éis", w + "en"]
+    };
   }
-  if (suffix==='ir')  
-  {
-    return {[`${verb}`]:[w+'o',w+'es',w+'e',w+'imos',w+'ís',w+'en']}
+  if (suffix === "ir") {
+    return {
+      [`${verb}`]: [w + "o", w + "es", w + "e", w + "imos", w + "ís", w + "en"]
+    };
   }
-  if (suffix==='ar')  
-  {
-    return {[`${verb}`]:[w+'o',w+'as',w+'a',w+'amos',w+'áis',w+'an']}
+  if (suffix === "ar") {
+    return {
+      [`${verb}`]: [w + "o", w + "as", w + "a", w + "amos", w + "áis", w + "an"]
+    };
   }
 }

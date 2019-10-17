@@ -19,7 +19,9 @@ Your function will take an input string that may contain any of the symbols (), 
 It should return True if the string is empty or otherwise grouped correctly, or False if it is grouped incorrectly.
 */
 
-function groupCheck(braces){
-   while(/\(\)|\[\]|\{\}/g.test(braces)){braces = braces.replace(/\(\)|\[\]|\{\}/g,"")}
- return !braces.length;
- }
+function groupCheck(braces) {
+  while (/\(\)|\[\]|\{\}/g.test(braces)) {
+    braces = braces.replace(/\(\)|\[\]|\{\}/g, "");
+  }
+  return !braces.length;
+}

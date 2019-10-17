@@ -8,4 +8,4 @@ Example:
 'aabacbaa' --> 'bbabcabb'
 */
 
-const switcheroo=x=>x.replace(/[ab]/g,x=>x=="a"?"b":"a")
+const switcheroo = x => x.replace(/[ab]/g, x => (x == "a" ? "b" : "a"));

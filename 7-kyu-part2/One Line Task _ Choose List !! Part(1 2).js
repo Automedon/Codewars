@@ -17,4 +17,4 @@ Your code should be less than 12 charcter !
 
 Part 2 : https://www.codewars.com/kata/5a88a9b160c8132eb2002239/train
 */
-Go=a=>a%5+1
+Go = a => (a % 5) + 1;

@@ -18,14 +18,14 @@ isSmooth(98) === "humble number"
 isSmooth(111) === "non-smooth"
 The provided input n is always going to be a positive number > 1.
 */
-function isSmooth(n){
-  while(n%2===0) n/=2;
-  if(n===1) return 'power of 2';
-  while(n%3===0) n/=3;
-  if(n===1) return '3-smooth';
-  while(n%5===0) n/=5;
-  if(n===1) return 'Hamming number';
-  while(n%7===0) n/=7;
-  if(n===1) return 'humble number';
-  return 'non-smooth';
+function isSmooth(n) {
+  while (n % 2 === 0) n /= 2;
+  if (n === 1) return "power of 2";
+  while (n % 3 === 0) n /= 3;
+  if (n === 1) return "3-smooth";
+  while (n % 5 === 0) n /= 5;
+  if (n === 1) return "Hamming number";
+  while (n % 7 === 0) n /= 7;
+  if (n === 1) return "humble number";
+  return "non-smooth";
 }

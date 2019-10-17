@@ -16,9 +16,9 @@ xyz: zyx
 "You cannot change the original object, because if you did that the reflection would change."
 */
 const mirror = obj => {
-  obj={...obj}
-  for (let i in obj){
-    obj[i]=i.split``.reverse().join``
+  obj = { ...obj };
+  for (let i in obj) {
+    obj[i] = i.split``.reverse().join``;
   }
-  return obj
+  return obj;
 };

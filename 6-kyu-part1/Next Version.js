@@ -18,7 +18,7 @@ All numbers, except the first one, must be lower than 10: if there are, you have
 You can assume all tests inputs to be valid.
 */
 const nextVersion = version => {
-  let arr = version.split('.').map(Number);
+  let arr = version.split(".").map(Number);
   for (let i = arr.length - 1; i >= 0; i--) {
     if (arr[i] + 1 === 10 && i !== 0) {
       arr[i] = 0;
@@ -27,5 +27,5 @@ const nextVersion = version => {
       break;
     }
   }
-  return arr.join('.');
+  return arr.join(".");
 };

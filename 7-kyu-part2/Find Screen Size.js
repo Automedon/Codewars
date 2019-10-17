@@ -5,7 +5,7 @@ Cheesy Cheeseman just got a new monitor, and is dismayed to discover that his ol
 The Challenge
 Given an integer width and a string ratio written as WIDTH:HEIGHT, output the screen dimensions as a string written as WIDTHxHEIGHT.
 */
-function findScreenHeight(w, h){
-  let a = h.split(':')
-  return `${w}x${(w*(a[1]*1/a[0]*1))}`
+function findScreenHeight(w, h) {
+  let a = h.split(":");
+  return `${w}x${w * (((a[1] * 1) / a[0]) * 1)}`;
 }

@@ -25,6 +25,8 @@ Here's the expected image after transformation:
  [ [102, 102, 102], [132, 132, 132] ]
 ]
 */
-var color2grey = function (image) {
-  return image.map(a => a.map(b => b.map(c => Math.round(b.reduce((m, n) => m + n, 0)/3))));
+var color2grey = function(image) {
+  return image.map(a =>
+    a.map(b => b.map(c => Math.round(b.reduce((m, n) => m + n, 0) / 3)))
+  );
 };

@@ -20,10 +20,14 @@ Write a function called leagueCalculate()in Javascript or league_calculate() in 
 You will be given the pre-loaded leagueTablein Javascript or league_table in Ruby and Python, in which the four teams currently all have 3 points. The function must return the updated array leagueTableor league_table after each result is input.
 */
 function leagueCalculate(team1, team2, result) {
-  if (result==='win'){
-  return leagueTable.map(v=>v[0]===team1?[v[0],v[1]+=3]:v).sort((a,b)=>b[1]>a[1])
+  if (result === "win") {
+    return leagueTable
+      .map(v => (v[0] === team1 ? [v[0], (v[1] += 3)] : v))
+      .sort((a, b) => b[1] > a[1]);
   }
-  if (result==='draw'){
-  return leagueTable.map(v=>v[0]===team1||v[0]===team2?[v[0],v[1]+=1]:v).sort((a,b)=>b[1]>a[1])
+  if (result === "draw") {
+    return leagueTable
+      .map(v => (v[0] === team1 || v[0] === team2 ? [v[0], (v[1] += 1)] : v))
+      .sort((a, b) => b[1] > a[1]);
   }
 }

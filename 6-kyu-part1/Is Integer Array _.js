@@ -10,5 +10,10 @@ returns true if array is empty.
 returns false for every other input.
 */
 function isIntArray(arr) {
-  return Array.isArray(arr) && arr.every(function (x) { return Math.floor(x) === x });
+  return (
+    Array.isArray(arr) &&
+    arr.every(function(x) {
+      return Math.floor(x) === x;
+    })
+  );
 }

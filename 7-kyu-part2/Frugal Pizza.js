@@ -22,6 +22,6 @@ Assume that the pizza is a circular pizza of uniform diameter, and use Math.PI a
 
 If you are given too few arguments, or if they aren't numbers, then return 0. In C# you will be given only numbers.
 */
-function pizzaPrice(d,p) {
-  return Math.round(p/(Math.PI*d*d)*400)/100||0
+function pizzaPrice(d, p) {
+  return Math.round((p / (Math.PI * d * d)) * 400) / 100 || 0;
 }

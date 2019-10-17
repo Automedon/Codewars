@@ -19,6 +19,12 @@ Example
 1975
 */
 function bearDollars(arr) {
-  let obj = {'close friend':25,'friend':50, 'acquaintance':100}
-  return arr.map(v=>obj.hasOwnProperty(v[1].toLowerCase())?obj[v[1].toLowerCase()]*v[0]:v[0]*125).reduce((a,b)=>a+b,0)
+  let obj = { "close friend": 25, friend: 50, acquaintance: 100 };
+  return arr
+    .map(v =>
+      obj.hasOwnProperty(v[1].toLowerCase())
+        ? obj[v[1].toLowerCase()] * v[0]
+        : v[0] * 125
+    )
+    .reduce((a, b) => a + b, 0);
 }

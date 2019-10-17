@@ -13,8 +13,7 @@ var array = ['a', 'b', 'c', 'd', 'e'];
 var array2 = array.except(1);
 // array2 should contain ['a', 'c', 'd', 'e']
 */
-Array.prototype.except = function(...keys)
-{
-  keys=[].concat(...keys)
-  return this.filter((v,i)=>keys.find(v=>v===i)===undefined)
-}
+Array.prototype.except = function(...keys) {
+  keys = [].concat(...keys);
+  return this.filter((v, i) => keys.find(v => v === i) === undefined);
+};

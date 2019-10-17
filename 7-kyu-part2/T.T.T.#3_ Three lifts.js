@@ -38,18 +38,19 @@ switchLift({A:5,B:4,C:6},1) should return "B"
 ```
 When n=1, because the three lifts are able to reach the floor 1, so should return the nearest of three lifts.
 */
-function switchLift(status,n){
-  let str=''
-  let arr= Object.entries(status).map(v=>Math.abs(v[1]-n))
-  if (arr.some(v=>v===0)) return ''
-  if (n%2===0) str+='B'
-   if (n%2!==0) str+='A'
-   if (arr[2]<arr[1]&&n%2===0||arr[2]<arr[0]&&n%2!==0) return 'C'
-  if (arr[2]===arr[1]||arr[2]===arr[0]) str+='C'
-  if (n===1) {
-    let arr2= Object.entries(status)
-    let index=arr2.findIndex(v=>v[1]===Math.min(...arr2.map(v=>v[1])))
-    return arr2[1][0]
+function switchLift(status, n) {
+  let str = "";
+  let arr = Object.entries(status).map(v => Math.abs(v[1] - n));
+  if (arr.some(v => v === 0)) return "";
+  if (n % 2 === 0) str += "B";
+  if (n % 2 !== 0) str += "A";
+  if ((arr[2] < arr[1] && n % 2 === 0) || (arr[2] < arr[0] && n % 2 !== 0))
+    return "C";
+  if (arr[2] === arr[1] || arr[2] === arr[0]) str += "C";
+  if (n === 1) {
+    let arr2 = Object.entries(status);
+    let index = arr2.findIndex(v => v[1] === Math.min(...arr2.map(v => v[1])));
+    return arr2[1][0];
   }
-  return str
+  return str;
 }

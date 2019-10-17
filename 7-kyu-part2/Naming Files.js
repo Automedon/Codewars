@@ -26,12 +26,11 @@ nameFile("#<index_no> #<index_no>", 3, -2)
   #=> ["#-2 #-2", "#-1 #-1", "#0 #0"]
 */
 function nameFile(fmt, nbr, start) {
-  if(nbr<0|| parseInt(nbr)!==nbr) return []
-  if (typeof start !== 'number'||parseInt(start)!==start) return []
-  let arr=[];
-  for (let i=0;i<nbr;i++)
-  {
-  arr.push(fmt.replace(/<index_no>/g,`${start+i}`))
+  if (nbr < 0 || parseInt(nbr) !== nbr) return [];
+  if (typeof start !== "number" || parseInt(start) !== start) return [];
+  let arr = [];
+  for (let i = 0; i < nbr; i++) {
+    arr.push(fmt.replace(/<index_no>/g, `${start + i}`));
   }
-  return arr
+  return arr;
 }

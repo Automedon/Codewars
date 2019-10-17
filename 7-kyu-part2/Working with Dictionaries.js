@@ -77,57 +77,57 @@ val = 5
 inf_database(range_, str_, 5) == "wrong constraint"
 Enjoy it!! (A001055 is a dictionary of the form {n1:val1, n2: val2, ....., nk: valk} and n <= 1006)
 */
-function infDatabase(r, s, val){
-    let arr = [];
-    if (s==='higher than'){
-      for (let i in A001055){
-        if (i*1>=r[0]&&i*1<=r[1]){
-          if (A001055[i]>val){
-            arr.push(i*1)
-          }
+function infDatabase(r, s, val) {
+  let arr = [];
+  if (s === "higher than") {
+    for (let i in A001055) {
+      if (i * 1 >= r[0] && i * 1 <= r[1]) {
+        if (A001055[i] > val) {
+          arr.push(i * 1);
         }
       }
-    return [arr.length,arr];
     }
-    if (s==='higher and equals to'){
-      for (let i in A001055){
-        if (i*1>=r[0]&&i*1<=r[1]){
-          if (A001055[i]>=val){
-            arr.push(i*1)
-          }
+    return [arr.length, arr];
+  }
+  if (s === "higher and equals to") {
+    for (let i in A001055) {
+      if (i * 1 >= r[0] && i * 1 <= r[1]) {
+        if (A001055[i] >= val) {
+          arr.push(i * 1);
         }
       }
-    return [arr.length,arr];
     }
-    if (s==='lower and equals to'){
-      for (let i in A001055){
-        if (i*1>=r[0]&&i*1<=r[1]){
-          if (A001055[i]<=val){
-            arr.push(i*1)
-          }
+    return [arr.length, arr];
+  }
+  if (s === "lower and equals to") {
+    for (let i in A001055) {
+      if (i * 1 >= r[0] && i * 1 <= r[1]) {
+        if (A001055[i] <= val) {
+          arr.push(i * 1);
         }
       }
-    return [arr.length,arr];
     }
-    if (s==='lower than'){
-      for (let i in A001055){
-        if (i*1>=r[0]&&i*1<=r[1]){
-          if (A001055[i]<val){
-            arr.push(i*1)
-          }
+    return [arr.length, arr];
+  }
+  if (s === "lower than") {
+    for (let i in A001055) {
+      if (i * 1 >= r[0] && i * 1 <= r[1]) {
+        if (A001055[i] < val) {
+          arr.push(i * 1);
         }
       }
-    return [arr.length,arr];
     }
-    if (s==='equals to'){
-      for (let i in A001055){
-        if (i*1>=r[0]&&i*1<=r[1]){
-          if (A001055[i]===val){
-            arr.push(i*1)
-          }
+    return [arr.length, arr];
+  }
+  if (s === "equals to") {
+    for (let i in A001055) {
+      if (i * 1 >= r[0] && i * 1 <= r[1]) {
+        if (A001055[i] === val) {
+          arr.push(i * 1);
         }
       }
-    return [arr.length,arr];
     }
-    return "wrong constraint"
+    return [arr.length, arr];
+  }
+  return "wrong constraint";
 }

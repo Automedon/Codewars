@@ -15,10 +15,11 @@ Note: the list may be null and can hold any type of value.
 Good luck!
 */
 function lastIndexOf(head, value) {
-  let count = 0, current = head;
-  let arr=[]
-  while(current !== null) {
-    arr.push(current.data)
+  let count = 0,
+    current = head;
+  let arr = [];
+  while (current !== null) {
+    arr.push(current.data);
     current = current.next;
     count++;
   }

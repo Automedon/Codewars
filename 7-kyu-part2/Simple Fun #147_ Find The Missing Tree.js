@@ -33,8 +33,8 @@ The array is not ordered (nor the trees)```
   The size of the missing tree.
 */
 function findTheMissingTree(trees) {
-  let x = trees.map(x=>trees.filter((v,i)=>trees[i]===x).length)
-  let y = Math.min(...x)
-  let z = x.indexOf(y)
-  return trees[z]
+  let x = trees.map(x => trees.filter((v, i) => trees[i] === x).length);
+  let y = Math.min(...x);
+  let z = x.indexOf(y);
+  return trees[z];
 }

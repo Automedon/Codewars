@@ -7,4 +7,5 @@ Translate number to the selected number system. If the number consists just of d
   SysNums(250,16) // "fa"
 #####Hint: System can be 2, 8, 10, 16.
 */
-const sysNums = (n, sys) => isNaN(n.toString(sys)*1)?n.toString(sys):n.toString(sys)*1
+const sysNums = (n, sys) =>
+  isNaN(n.toString(sys) * 1) ? n.toString(sys) : n.toString(sys) * 1;

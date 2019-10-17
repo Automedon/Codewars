@@ -19,19 +19,23 @@ Play Tetris : Shape anastomosis
 Play FlappyBird : Advance Bravely
 Play PingPong : Precise control
 */
-function playPingPong(position,direction){
-  if (direction==='DL'){
-  for (let i=0;i<200;i++){
-    position--
+function playPingPong(position, direction) {
+  if (direction === "DL") {
+    for (let i = 0; i < 200; i++) {
+      position--;
+    }
+    return Math.abs(position);
   }
-  return Math.abs(position)}
-  let wall=false
-  for (let i=0;i<200;i++){
-  if (position>=300){
-      wall =true
-    } 
-   if (wall){position--}
-   else {position++} 
+  let wall = false;
+  for (let i = 0; i < 200; i++) {
+    if (position >= 300) {
+      wall = true;
+    }
+    if (wall) {
+      position--;
+    } else {
+      position++;
+    }
   }
-  return Math.abs(position)
+  return Math.abs(position);
 }

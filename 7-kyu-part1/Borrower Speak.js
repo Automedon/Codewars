@@ -8,6 +8,6 @@ The young borrowers have begged their parents to stop using caps and punctuation
 
 Change the input text 's' to new borrower speak. Help save the next generation!
 */
-function borrow(s){
-  return s.replace(/[^a-z]/gi,'').toLowerCase()
+function borrow(s) {
+  return s.replace(/[^a-z]/gi, "").toLowerCase();
 }

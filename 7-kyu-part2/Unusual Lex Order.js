@@ -10,6 +10,17 @@ In particular, "ta" < "nigeb" because 'a' < 'b' and "nigeb" < "gninnigeb" becaus
 
 S: codefights.com
 */
-function unusualLexOrder(arr){
-  return arr.sort((a,b)=>a.split('').reverse().join('').localeCompare(b.split('').reverse().join('')))
+function unusualLexOrder(arr) {
+  return arr.sort((a, b) =>
+    a
+      .split("")
+      .reverse()
+      .join("")
+      .localeCompare(
+        b
+          .split("")
+          .reverse()
+          .join("")
+      )
+  );
 }

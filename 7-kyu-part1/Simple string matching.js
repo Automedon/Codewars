@@ -14,6 +14,6 @@ More examples in test cases.
 Good luck!
 */
 
-function solve(a, b){
-  return new RegExp(`^${a.replace(/\*/g, '(.)*')}$`, '').test(b)
+function solve(a, b) {
+  return new RegExp(`^${a.replace(/\*/g, "(.)*")}$`, "").test(b);
 }

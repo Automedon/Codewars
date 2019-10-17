@@ -18,12 +18,12 @@ Note that as there are three rounds, the actual input (x) will look something li
 
 [[{P1:'XX', P2:'XO'}, true], [{P1:'OX', P2:'OO'}, false], [{P1:'XX', P2:'OX'}, true]]
 */
-function shoot(x){
-  let pete=0
-  let phil=0
-  for (let i=0;i<x.length;i++){
-    x[i][0].P1.replace(/X/g,v=>x[i][1]?pete+=2:pete++)
-    x[i][0].P2.replace(/X/g,v=>x[i][1]?phil+=2:phil++)
+function shoot(x) {
+  let pete = 0;
+  let phil = 0;
+  for (let i = 0; i < x.length; i++) {
+    x[i][0].P1.replace(/X/g, v => (x[i][1] ? (pete += 2) : pete++));
+    x[i][0].P2.replace(/X/g, v => (x[i][1] ? (phil += 2) : phil++));
   }
-  return pete>phil?'Pete Wins!':pete<phil?'Phil Wins!':'Draw!'
+  return pete > phil ? "Pete Wins!" : pete < phil ? "Phil Wins!" : "Draw!";
 }

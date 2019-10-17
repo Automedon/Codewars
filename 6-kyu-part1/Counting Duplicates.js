@@ -13,6 +13,13 @@ Example
 "ABBA" -> 2 # 'A' and 'B' each occur twice
 */
 
-function duplicateCount(text){
-  return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+function duplicateCount(text) {
+  return (
+    text
+      .toLowerCase()
+      .split("")
+      .sort()
+      .join("")
+      .match(/([^])\1+/g) || []
+  ).length;
 }

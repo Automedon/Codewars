@@ -26,8 +26,9 @@ missionImpossible(wholeGroup);
 //  Raj: 'In a relationship' }
 Note: If Raj is not part of the input group, he should NOT be added to it.
 */
-function missionImpossible(obj){
-  if (obj.hasOwnProperty('Raj')){
-  return Object.assign(obj,{Raj:'In a relationship'})}
-  return obj
+function missionImpossible(obj) {
+  if (obj.hasOwnProperty("Raj")) {
+    return Object.assign(obj, { Raj: "In a relationship" });
+  }
+  return obj;
 }

@@ -13,6 +13,6 @@ if you are given the following string:
 'This is Max99. She has one ear that is always s1ightly higher than the other 4/10 wonky af'
 And the following rating: 11 return: 'This is Max99. She has one ear that is always s1ightly heigher than the other 11/10 wonky af'
 */
-function weRateDogs(str, rating){
-   return str.replace(/\d+\/\d+/,`${rating}/10`)
+function weRateDogs(str, rating) {
+  return str.replace(/\d+\/\d+/, `${rating}/10`);
 }

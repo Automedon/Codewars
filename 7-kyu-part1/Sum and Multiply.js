@@ -33,11 +33,10 @@ You should return an array (list in python) containing the two values [x, y] and
 One last thing: x and y are integers (no decimals).
 */
 var sumAndMultiply = function(sum, multiply) {
-   for (let i=0;i<=sum;i++){
-     for (let j=0;j<=i;j++){
-       if (i+j===sum&&i*j===multiply)
-         return [j,i]
-      }
+  for (let i = 0; i <= sum; i++) {
+    for (let j = 0; j <= i; j++) {
+      if (i + j === sum && i * j === multiply) return [j, i];
     }
-    return null
-}
+  }
+  return null;
+};

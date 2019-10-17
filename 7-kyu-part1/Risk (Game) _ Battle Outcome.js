@@ -30,10 +30,12 @@ Write a function which receives as inputs two arrays: one containing the attacke
 Some players who find the standard game a bit too slow paced have adopted house rules for big battles in which one or both players may be permiited to roll more than 2 or 3 dice at the same time. The function should provide for this situation, and return an appropriate outcome to the big battle.
 */
 function battleOutcome(attacker, defender) {
-  const descSort = (player) => player.sort((a,b) => b - a);
-  let res = [0, 0], 
-      att = descSort(attacker.slice(0, attacker.length)),
-      def = descSort(defender.slice(0, defender.length));
-  def.forEach((defender, i) => { if (att[i]) defender >= att[i] ? res[0]++ : res[1]++; });
+  const descSort = player => player.sort((a, b) => b - a);
+  let res = [0, 0],
+    att = descSort(attacker.slice(0, attacker.length)),
+    def = descSort(defender.slice(0, defender.length));
+  def.forEach((defender, i) => {
+    if (att[i]) defender >= att[i] ? res[0]++ : res[1]++;
+  });
   return res;
 }

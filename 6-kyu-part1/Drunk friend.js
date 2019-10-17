@@ -5,10 +5,11 @@ You're hanging out with your friends in a bar, when suddenly one of them is so d
 Keep in mind that numbers, as well as other characters, can be part of the input, and you should keep them like they are. You should also test if the input is a string. If it is not, return "Input is not a string".
 */
 function decode(str) {
-  if (typeof str !=='string') return 'Input is not a string'
-  return str.replace(/[a-zA-Z]/g,v=>{
-    const dict1 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    const dict2 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split``.reverse().join``
-      return dict2[dict1.indexOf(v)]
-  })
+  if (typeof str !== "string") return "Input is not a string";
+  return str.replace(/[a-zA-Z]/g, v => {
+    const dict1 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const dict2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+      .split``.reverse().join``;
+    return dict2[dict1.indexOf(v)];
+  });
 }

@@ -8,6 +8,6 @@ As tempting as it may seem, do not use loops to solve this problem.
 */
 
 function replicate(times, number) {
-  if (times<=0) return [];
-	return Array(times).fill(number)
+  if (times <= 0) return [];
+  return Array(times).fill(number);
 }

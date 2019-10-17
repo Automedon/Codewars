@@ -12,5 +12,12 @@ zebulansNightmare('main') == 'main'
 */
 
 function zebulansNightmare(functionName) {
-  return functionName.toLowerCase()[0]+functionName.split('_').map(v=>v.toUpperCase().slice(0,1)+v.toLowerCase().slice(1)).join('').slice(1);
+  return (
+    functionName.toLowerCase()[0] +
+    functionName
+      .split("_")
+      .map(v => v.toUpperCase().slice(0, 1) + v.toLowerCase().slice(1))
+      .join("")
+      .slice(1)
+  );
 }

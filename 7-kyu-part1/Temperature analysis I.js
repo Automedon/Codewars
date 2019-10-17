@@ -4,5 +4,5 @@ You were given a string of integer temperature values. Create a function lowest_
 */
 
 function lowestTemp(t) {
-  return t.length>0? Math.min(...t.split(' ').map(Number)):null; 
+  return t.length > 0 ? Math.min(...t.split(" ").map(Number)) : null;
 }

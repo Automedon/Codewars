@@ -45,12 +45,13 @@ Define a function constructionWorker which "inherits" from the person function a
 
 On top of all that, a constructionWorker should have a method sayBossName which returns a string of the following format: "My boss is called BOSS_NAME and is a very nice person!" where BOSS_NAME is the name of the boss of said construction worker.
 */
-function constructionWorker(firstName, lastName, age, gender, married,boss) {
-  let obj=new person(firstName, lastName, age, gender)
-  obj.occupation="construction worker";
-  obj.employed=true;
-  obj.married=married
-  obj.boss=boss
-  obj.sayBossName=()=>`My boss is called ${boss} and is a very nice person!`
-  return obj
+function constructionWorker(firstName, lastName, age, gender, married, boss) {
+  let obj = new person(firstName, lastName, age, gender);
+  obj.occupation = "construction worker";
+  obj.employed = true;
+  obj.married = married;
+  obj.boss = boss;
+  obj.sayBossName = () =>
+    `My boss is called ${boss} and is a very nice person!`;
+  return obj;
 }

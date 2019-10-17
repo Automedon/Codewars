@@ -18,12 +18,18 @@ sub.decode("eirfg") // => "aeiou"
 If a character provided is not in the opposing alphabet, simply leave it as be.
 */
 function SubstitutionCipher(ab1, ab2) {
-  this.encode = function (str) {
-    return str.split('').map(v=>ab1.includes(v)?v=ab1.indexOf(v):v)
-    .map(v=>typeof v==='number'?v=ab2[v]:v).join(``)
-  }
-  this.decode = function (str) {
-    return str.split('').map(v=>ab2.includes(v)?v=ab2.indexOf(v):v)
-    .map(v=>typeof v==='number'?v=ab1[v]:v).join(``)
-  }
+  this.encode = function(str) {
+    return str
+      .split("")
+      .map(v => (ab1.includes(v) ? (v = ab1.indexOf(v)) : v))
+      .map(v => (typeof v === "number" ? (v = ab2[v]) : v))
+      .join(``);
+  };
+  this.decode = function(str) {
+    return str
+      .split("")
+      .map(v => (ab2.includes(v) ? (v = ab2.indexOf(v)) : v))
+      .map(v => (typeof v === "number" ? (v = ab1[v]) : v))
+      .join(``);
+  };
 }

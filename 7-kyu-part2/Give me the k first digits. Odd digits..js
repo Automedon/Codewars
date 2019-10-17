@@ -13,6 +13,6 @@ k is bigger than a number of odd digits in n.
 BTW, is 0 an odd number or an even one?
 */
 function findOddDigits(n, k) {
-  let str = n.toString().replace(/[24860]/g,'')
-  return str.length < k ? 0 : str.slice(0,k)*1
+  let str = n.toString().replace(/[24860]/g, "");
+  return str.length < k ? 0 : str.slice(0, k) * 1;
 }

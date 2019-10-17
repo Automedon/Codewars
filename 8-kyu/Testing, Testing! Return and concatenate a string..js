@@ -17,5 +17,7 @@ You can use the String .concat() method or any other method you see fit to bring
 Scores cannot be lower than 0 and will always be given as a number
 */
 function getRes(myScore) {
-  return myScore>=70?'Congratulations, you have passed! Thank you for taking part.':'Sorry, you have failed. Better luck next time! Thank you for taking part.'
+  return myScore >= 70
+    ? "Congratulations, you have passed! Thank you for taking part."
+    : "Sorry, you have failed. Better luck next time! Thank you for taking part.";
 }

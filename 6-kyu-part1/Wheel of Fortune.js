@@ -28,10 +28,12 @@ Scores are not valid.
 Invalid user entry (no name or no score).
 */
 function winner(c) {
-  if (c.length!==3) return false
-  if (c.some(v=>!v.scores||!v.name)) return false
-  if (c.some(v=>!v.scores.every(v=>v%5==0))) return false
-  if (c.some(v=>v.scores.length>2||!v.scores.length)) return false
-  if (c.some(v=>v.scores.reduce((a,b)=>a+b,0)>100)) return false
-  return c.map(v=>[v.name,v.scores.reduce((a,b)=>a+b,0)]).sort((a,b)=>b[1]-a[1])[0][0]
+  if (c.length !== 3) return false;
+  if (c.some(v => !v.scores || !v.name)) return false;
+  if (c.some(v => !v.scores.every(v => v % 5 == 0))) return false;
+  if (c.some(v => v.scores.length > 2 || !v.scores.length)) return false;
+  if (c.some(v => v.scores.reduce((a, b) => a + b, 0) > 100)) return false;
+  return c
+    .map(v => [v.name, v.scores.reduce((a, b) => a + b, 0)])
+    .sort((a, b) => b[1] - a[1])[0][0];
 }

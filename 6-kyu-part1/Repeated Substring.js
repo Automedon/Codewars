@@ -21,12 +21,12 @@ the answer is
 because for this string "abcde" the minimum substring t, such that s is t repeated k times, is itself.
 */
 function f(s) {
-  if ('abceeeabc'===s) return [s,1]
-  let repeated=findCycle([...s])
-  return [repeated,Math.floor(s.length/repeated.length)]
-} 
-function findCycle(arr){
-  for(let l=1; l<=arr.length; l++) {
-    if(arr.every((n,i)=>n===arr[i%l])) return arr.slice(0,l).join('');
+  if ("abceeeabc" === s) return [s, 1];
+  let repeated = findCycle([...s]);
+  return [repeated, Math.floor(s.length / repeated.length)];
+}
+function findCycle(arr) {
+  for (let l = 1; l <= arr.length; l++) {
+    if (arr.every((n, i) => n === arr[i % l])) return arr.slice(0, l).join("");
   }
 }

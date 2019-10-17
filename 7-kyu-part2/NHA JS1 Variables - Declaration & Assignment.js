@@ -35,5 +35,5 @@ return myVariable;
 W3Schools JavaScript Variables
 */
 function main() {
-  return 10; 
+  return 10;
 }

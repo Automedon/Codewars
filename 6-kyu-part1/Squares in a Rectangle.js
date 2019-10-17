@@ -4,12 +4,12 @@ A rectangle can be split up into a grid of 1x1 squares, the amount of which bein
 
 Your task is to write a function `findSquares` that returns the total number of squares for any given rectangle, the dimensions of which being given as two integers with the first always being equal to or greater than the second.
 */
-function findSquares(x,y){
-  let cubes= 0
-  while(x&&y){
-    cubes+=x*y
-    x--
-    y--
+function findSquares(x, y) {
+  let cubes = 0;
+  while (x && y) {
+    cubes += x * y;
+    x--;
+    y--;
   }
-  return cubes 
+  return cubes;
 }

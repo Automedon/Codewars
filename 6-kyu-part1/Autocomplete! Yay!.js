@@ -17,11 +17,13 @@ Any input that is NOT a letter should be treated as if it is not there. For exam
 
 (Thanks to wthit56 for the suggestion!)
 */
-function autocomplete(input, d){
-  input=input.replace(/[^a-zA-Z]/gi,'')
-  const arr=[];
-  for (let i=0;i<d.length;i++){
-    if (d[i].slice(0,input.length).toLowerCase()===input.toLowerCase()){ arr.push(d[i]) }
+function autocomplete(input, d) {
+  input = input.replace(/[^a-zA-Z]/gi, "");
+  const arr = [];
+  for (let i = 0; i < d.length; i++) {
+    if (d[i].slice(0, input.length).toLowerCase() === input.toLowerCase()) {
+      arr.push(d[i]);
+    }
   }
-  return arr.slice(0,5)
+  return arr.slice(0, 5);
 }

@@ -15,12 +15,13 @@ photoManager.nameExists('ABCDEF'); // returns true
 photoManager.nameExists('BBCDEF'); // returns false
 Note: We consider two names with same letters but different cases to be unique.
 */
-function generateName()
-{ let str = ''
-  let allc="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_ !@#$%^&*_(),.?|{}[]-=+\\/"
-  for (let i=0;i<6;i++){
-    str+=allc[~~(allc.length*Math.random())];
+function generateName() {
+  let str = "";
+  let allc =
+    "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_ !@#$%^&*_(),.?|{}[]-=+\\/";
+  for (let i = 0; i < 6; i++) {
+    str += allc[~~(allc.length * Math.random())];
   }
-  if (!photoManager.nameExists(str)) return str
-  return generateName()
+  if (!photoManager.nameExists(str)) return str;
+  return generateName();
 }

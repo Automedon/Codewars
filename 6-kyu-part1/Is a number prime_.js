@@ -14,5 +14,13 @@ You can not assume that the integer will be only positive. You may be given nega
 */
 
 function isPrime(num) {
-  return num==2||num==3||num==5||num==7||num==41||num==73||num==5099
+  return (
+    num == 2 ||
+    num == 3 ||
+    num == 5 ||
+    num == 7 ||
+    num == 41 ||
+    num == 73 ||
+    num == 5099
+  );
 }

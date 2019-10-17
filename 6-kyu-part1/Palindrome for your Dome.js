@@ -20,7 +20,15 @@ the empty string "" can be read forward or backward the same, it's a palindrome 
 */
 
 function palindrome(string) {
-  return string.replace(/[^a-z]/gi,'').toLowerCase().split('')
-  .map((v,i,arr)=>arr[i].indexOf(v)===arr[arr.length-i-1].lastIndexOf(v))
-  .filter(v=>v===false).length<1
+  return (
+    string
+      .replace(/[^a-z]/gi, "")
+      .toLowerCase()
+      .split("")
+      .map(
+        (v, i, arr) =>
+          arr[i].indexOf(v) === arr[arr.length - i - 1].lastIndexOf(v)
+      )
+      .filter(v => v === false).length < 1
+  );
 }

@@ -36,13 +36,13 @@ Contains all of the correct letters in "Allison", in order,
 but not enough of all of them (missing an 'l').
 Note: testing will not be case-sensative.
 */
-function nameInStr(str, name){
-  str=str.toLowerCase()
-  name=name.toLowerCase()
-  let arr = str.split``.filter(v=>name.includes(v))
-  let pointer =0;
-  for (let i=0;i<arr.length;i++){
-    if (arr[i]===name[pointer]) pointer++
+function nameInStr(str, name) {
+  str = str.toLowerCase();
+  name = name.toLowerCase();
+  let arr = str.split``.filter(v => name.includes(v));
+  let pointer = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === name[pointer]) pointer++;
   }
-  return pointer===name.length
+  return pointer === name.length;
 }

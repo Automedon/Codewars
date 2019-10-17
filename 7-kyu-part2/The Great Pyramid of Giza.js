@@ -14,8 +14,8 @@ The terms of the deal with Pharaoh Khufu are as follows:
 If you build the Great Pyramid in more than 15 years, your function will return "receive 3000 gold coins". If you build the Great Pyramid in 10-15 years , your function will return "receive 5000 gold coins". If you build the Great Pyramid in less than 10 years, your function will return "receive 10000 gold coins".
 */
 function buildPyramidTime(strength, skill) {
-  let years=strength+skill
-  if (years>15) return "receive 3000 gold coins"
-  if (years>=10) return "receive 5000 gold coins"
-  return "receive 10000 gold coins"
-  }
+  let years = strength + skill;
+  if (years > 15) return "receive 3000 gold coins";
+  if (years >= 10) return "receive 5000 gold coins";
+  return "receive 10000 gold coins";
+}

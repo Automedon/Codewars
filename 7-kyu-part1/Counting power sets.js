@@ -1,4 +1,3 @@
 function powers(list) {
-
-return 2**list.length
+  return 2 ** list.length;
 }

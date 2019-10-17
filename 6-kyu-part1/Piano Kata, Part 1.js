@@ -23,14 +23,14 @@ Your function will receive an integer between 1 and 10000 (maybe you think that 
 Have fun! And if you enjoy this kata, check out the sequel: Piano Kata, Part 2
 */
 function blackOrWhiteKey(keyPressCount) {
-        switch ((keyPressCount-1) % 88 % 12) {
-          case  1:
-          case  4:
-          case  6:
-          case  9:
-          case 11:
-            return "black";
-          default:
-            return "white";
-        }   
+  switch (((keyPressCount - 1) % 88) % 12) {
+    case 1:
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      return "black";
+    default:
+      return "white";
+  }
 }

@@ -17,9 +17,11 @@ Santa is coming to town and he needs your help finding out who's been naughty or
 Your function should return "Naughty!" or "Nice!" depending on the total number of occurrences in a given year (whichever one is greater). If both are equal, return "Nice!"
 */
 function naughtyOrNice(data) {
-  let count=0;
-  for (let month in data){
-  [data[month]].map(v=>Object.values(v).map(v=>v==="Naughty"?count--:count++))
+  let count = 0;
+  for (let month in data) {
+    [data[month]].map(v =>
+      Object.values(v).map(v => (v === "Naughty" ? count-- : count++))
+    );
   }
-  return count>=0?"Nice!":"Naughty!"
+  return count >= 0 ? "Nice!" : "Naughty!";
 }

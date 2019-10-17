@@ -12,10 +12,10 @@ Ex :
 
 "(()" => false
 */
-function isBalanced (string) {
-    string=string.replace(/[^\(\)]/g,'')
-  while (/\(\)/.test(string)){
-    string=string.replace(/\(\)/,'')
+function isBalanced(string) {
+  string = string.replace(/[^\(\)]/g, "");
+  while (/\(\)/.test(string)) {
+    string = string.replace(/\(\)/, "");
   }
-  return !string
+  return !string;
 }

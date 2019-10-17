@@ -11,11 +11,10 @@ Examples:
 number([]) // => []
 number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"]
 */
-var number=function(array){
-  let arr =[];
-  for (let i=1;i<=array.length;i++)
-  {
-  arr.push(`${i}: ${array[i-1]}`)
+var number = function(array) {
+  let arr = [];
+  for (let i = 1; i <= array.length; i++) {
+    arr.push(`${i}: ${array[i - 1]}`);
   }
-  return arr
-}
+  return arr;
+};

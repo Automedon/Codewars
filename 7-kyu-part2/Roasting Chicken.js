@@ -13,16 +13,18 @@ If the uncooked weight is 0, return "There is no chicken!"
 
 An example time is 2 hrs 45 mins
 */
-function cookingTime(weight){
-  if (weight===0) return "There is no chicken!"
-  let r = Math.ceil((weight/0.450)*20+20)
-  while(r%5!==0){
-    r++
+function cookingTime(weight) {
+  if (weight === 0) return "There is no chicken!";
+  let r = Math.ceil((weight / 0.45) * 20 + 20);
+  while (r % 5 !== 0) {
+    r++;
   }
-  let h=0
-  while (r>=60){
-    r-=60
-    h++
+  let h = 0;
+  while (r >= 60) {
+    r -= 60;
+    h++;
   }
-  return `${h?h>1?`${h} hrs`:`${h} hr`:''}${r?r>1?` ${r} mins`:` ${r} min`:''}`.trim()
+  return `${h ? (h > 1 ? `${h} hrs` : `${h} hr`) : ""}${
+    r ? (r > 1 ? ` ${r} mins` : ` ${r} min`) : ""
+  }`.trim();
 }

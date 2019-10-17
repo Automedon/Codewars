@@ -17,8 +17,11 @@ Note :
 the indicies are always in range and passed as a sorted array
 note if the index array is empty, just return the initial phrase
 */
-function insertAtIndexes(phrase,word,indexes){
-  for(var i=0;i<indexes.length;i++)
-    phrase=phrase.slice(0,indexes[i]+i*word.length) + word + phrase.slice(indexes[i]+i*word.length);
+function insertAtIndexes(phrase, word, indexes) {
+  for (var i = 0; i < indexes.length; i++)
+    phrase =
+      phrase.slice(0, indexes[i] + i * word.length) +
+      word +
+      phrase.slice(indexes[i] + i * word.length);
   return phrase;
 }

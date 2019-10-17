@@ -29,7 +29,14 @@ Output:
 ++++++++++
 */
 const frame = (text, char) => {
-  let max =Math.max(...text.map(v=>v.length))
-  let top = char.repeat(max+4)
-  return top+`\n`+text.map(v=>`${char} `+v+' '.repeat(max-v.length)+` ${char}`).join`\n`+`\n`+top;
+  let max = Math.max(...text.map(v => v.length));
+  let top = char.repeat(max + 4);
+  return (
+    top +
+    `\n` +
+    text.map(v => `${char} ` + v + " ".repeat(max - v.length) + ` ${char}`)
+      .join`\n` +
+    `\n` +
+    top
+  );
 };

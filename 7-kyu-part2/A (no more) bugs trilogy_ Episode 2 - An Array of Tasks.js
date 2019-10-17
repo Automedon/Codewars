@@ -19,5 +19,11 @@ This time, you have to make a solution, not fix it. Pac needs your help!
 Feedbacks are appreciated!
 */
 function myTasks(array) {
-  return array.map(v=>v==='buy food'?'learn Node.js':v==='sleep'?'make a weather app':v)
+  return array.map(v =>
+    v === "buy food"
+      ? "learn Node.js"
+      : v === "sleep"
+      ? "make a weather app"
+      : v
+  );
 }

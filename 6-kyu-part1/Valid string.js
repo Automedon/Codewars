@@ -9,9 +9,9 @@ string s = "codewars"; // true
 string s1 = "codewar"; // false
 */
 var validWord = function(d, word) {
-d=d.sort((a,b)=>a.length-b.length)
-for (let i=0;i<d.length;i++){
-   word=word.replace(new RegExp(d[i],'g'),'')
- }
- return !word.length
+  d = d.sort((a, b) => a.length - b.length);
+  for (let i = 0; i < d.length; i++) {
+    word = word.replace(new RegExp(d[i], "g"), "");
+  }
+  return !word.length;
 };

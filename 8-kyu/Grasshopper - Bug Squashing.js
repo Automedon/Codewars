@@ -13,11 +13,11 @@ You are using a library that already has the functions below. Create a function 
 - move
 */
 
-let health = 100
-let position = 0
-let coins = 0
+let health = 100;
+let position = 0;
+let coins = 0;
 
 const main = () =>
   [rollDice, move, combat, getCoins, buyHealth, printStatus].forEach(action =>
     action()
-  )
+  );

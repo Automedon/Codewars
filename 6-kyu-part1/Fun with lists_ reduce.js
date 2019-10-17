@@ -29,10 +29,10 @@ Note: the list may be null and can hold any type of value.
 Good luck!
 */
 function reduce(head, f, init) {
-  const arr = []
-  while (head){
-    arr.push(head.data)
-    head=head.next
+  const arr = [];
+  while (head) {
+    arr.push(head.data);
+    head = head.next;
   }
-  return arr.reduce(f,init);
+  return arr.reduce(f, init);
 }

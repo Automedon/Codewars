@@ -11,10 +11,10 @@ For example:
   solution( 132232 ) => 8
 Assume that: number is an integer within the range [1..10^18].
 */
-const solution = n =>{
-  let count=0
-  for (let i=1;i<=n;i*=2){
-  if (n%i===0) count=i
+const solution = n => {
+  let count = 0;
+  for (let i = 1; i <= n; i *= 2) {
+    if (n % i === 0) count = i;
   }
-  return count
-}
+  return count;
+};

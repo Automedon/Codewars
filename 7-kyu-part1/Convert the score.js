@@ -16,8 +16,19 @@ note: The score wont go above 9 goals either side ( [9,9] ), and the ref won't s
 Please rate and enjoy!
 */
 function scoreboard(string) {
-  let dict={nil:0,one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9}
-  let arr=[];
-  string.split` `.map(v=>arr.push(dict[v]))
-  return arr.filter(v=>v!==undefined)
+  let dict = {
+    nil: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    seven: 7,
+    eight: 8,
+    nine: 9
+  };
+  let arr = [];
+  string.split` `.map(v => arr.push(dict[v]));
+  return arr.filter(v => v !== undefined);
 }

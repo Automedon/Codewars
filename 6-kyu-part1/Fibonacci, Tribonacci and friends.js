@@ -12,10 +12,11 @@ xbonacci {1,0,0,0,0,0,1} 10 = {1,0,0,0,0,0,1,2,3,6}
 xbonacci {1,1} produces the Fibonacci sequence
 */
 
-function Xbonacci(s,n){
-  if (s.length>n) return s.slice(0,n);
-  let sum=[...s]
-  for (let i=0;sum.length<n;i++)
-  {sum.push(sum.slice(i,sum.length).reduce((a,b)=>a+b,0))}
-  return sum
+function Xbonacci(s, n) {
+  if (s.length > n) return s.slice(0, n);
+  let sum = [...s];
+  for (let i = 0; sum.length < n; i++) {
+    sum.push(sum.slice(i, sum.length).reduce((a, b) => a + b, 0));
+  }
+  return sum;
 }

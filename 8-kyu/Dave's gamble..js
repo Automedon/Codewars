@@ -28,7 +28,7 @@ horses(4) == 24
 horses(1) == 1
 */
 function horses(n) {
-  if (typeof n !== 'number'||parseInt(n)!==n) return;
-  if (n<3) return n
-  return n * (n-1) * (n-2);
+  if (typeof n !== "number" || parseInt(n) !== n) return;
+  if (n < 3) return n;
+  return n * (n - 1) * (n - 2);
 }

@@ -59,7 +59,10 @@ maxMin([1,10,100,1000],[0,0,0,0])     should return [1000,1]
 maxMin([10,20,30,40],[111,11,1,-111]) should return [151,9]
 ```
 */
-function maxMin(arr1,arr2){
-  const arr=arr2.map((v,i)=>v-arr1[i],0)
-  return [Math.max(...arr.map(v=>Math.abs(v))),Math.min(...arr.map(v=>Math.abs(v)))]
+function maxMin(arr1, arr2) {
+  const arr = arr2.map((v, i) => v - arr1[i], 0);
+  return [
+    Math.max(...arr.map(v => Math.abs(v))),
+    Math.min(...arr.map(v => Math.abs(v)))
+  ];
 }

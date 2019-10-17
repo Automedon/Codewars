@@ -8,9 +8,9 @@ Negative numbers, check if its absolute value is odd. Decimal numbers, round num
 
 Example: roundedOdd(2)--> false roundedOdd(5)--> true roundedOdd('string')--> false roundedOdd(-17)--> true roundedOdd(-7.6)--> true
 */
-function roundedOdd (n) {
-  if (typeof n !== 'number') return false
-  n = n*1;
-  if (isNaN(n)) return false
-  return n<0?Math.ceil(n)%2!==0:Math.floor(n)%2!==0
+function roundedOdd(n) {
+  if (typeof n !== "number") return false;
+  n = n * 1;
+  if (isNaN(n)) return false;
+  return n < 0 ? Math.ceil(n) % 2 !== 0 : Math.floor(n) % 2 !== 0;
 }

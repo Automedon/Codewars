@@ -7,8 +7,11 @@ Write a function that takes a name and preference type and returns an object wit
 To keep it simple, all preference types will be in lowercase letters and you won't have any friends named "spicy" or "non-spicy."
 */
 function whichKind(name, type) {
-  name=name||'friend of a friend'
-  type=type||'non-spicy'
-  if (name==='spicy'||name==='non-spicy'){ type=name; name = 'friend of a friend';}
-  return {name,type}
+  name = name || "friend of a friend";
+  type = type || "non-spicy";
+  if (name === "spicy" || name === "non-spicy") {
+    type = name;
+    name = "friend of a friend";
+  }
+  return { name, type };
 }

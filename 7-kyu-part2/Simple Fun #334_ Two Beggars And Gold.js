@@ -53,25 +53,25 @@ B take 1
 A: 10 + 2 = 12
 B: 1000 + 1 = 1001
 */
-function distributionOf(golds){
-  const length=golds.slice().length
-  let A=0;
-  let B=0;
-  for (let i=0;i<length;i++){
-  if (i%2===0){
-  if (golds[0]>=golds[golds.length-1]){
-  A+=golds.shift()
+function distributionOf(golds) {
+  const length = golds.slice().length;
+  let A = 0;
+  let B = 0;
+  for (let i = 0; i < length; i++) {
+    if (i % 2 === 0) {
+      if (golds[0] >= golds[golds.length - 1]) {
+        A += golds.shift();
+      } else {
+        A += golds.pop();
+      }
+    }
+    if (i % 2 !== 0) {
+      if (golds[0] >= golds[golds.length - 1]) {
+        B += golds.shift();
+      } else {
+        B += golds.pop();
+      }
+    }
   }
-  else {
-  A+=golds.pop()
-  }} 
-  if (i%2!==0) {
-  if (golds[0]>=golds[golds.length-1]){
-    B+=golds.shift()
-  }
-  else {
-  B+=golds.pop()
-  }}
-  }
-  return [A,B]
+  return [A, B];
 }

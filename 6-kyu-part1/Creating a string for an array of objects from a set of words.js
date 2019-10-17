@@ -13,12 +13,13 @@ Doing this manually is a pain. So you've decided to write a short function that 
 As a result you'll have a string you may just copy-paste whenever you feel like defining a list of objects - now without the need to put in names, IDs, curly brackets, colon signs, screw up everything, fail searching for a typo and begin anew. This might come in handy with large lists.
 */
 function wordsToObject(input) {
-  let arr = []
-  input=input.split` `
-  for (let i=0;i<input.length;i+=2){
-    arr.push([input[i],input[i+1]])
+  let arr = [];
+  input = input.split` `;
+  for (let i = 0; i < input.length; i += 2) {
+    arr.push([input[i], input[i + 1]]);
   }
-    arr =arr.map(v=>{
-    return v=`{name : \'${v[0]}\', id : \'${v[1]+''}\'}`})
-    return '['+arr.join`, `+']'
+  arr = arr.map(v => {
+    return (v = `{name : \'${v[0]}\', id : \'${v[1] + ""}\'}`);
+  });
+  return "[" + arr.join`, ` + "]";
 }

@@ -3,6 +3,6 @@ Find the volume of a cone whose radius and height are provided as parameters to 
 
 If you complete this kata and there are no issues, please remember to give it a ready vote and a difficulty rating. :)
 */
-function volume(r,h) {
-  return ((1/3)*r**2*Math.PI*h+'').split('.')[0]*1
+function volume(r, h) {
+  return ((1 / 3) * r ** 2 * Math.PI * h + "").split(".")[0] * 1;
 }

@@ -17,7 +17,8 @@ code    : 000101
 result  : df
 */
 function grille(message, code) {
-  let str = code.toString(2).padStart(message.length,0)
-  if (message.length<code.toString(2).length) str=str.slice(-message.length)
-  return message.split``.filter((v,i)=>str[i]==='1').join``
+  let str = code.toString(2).padStart(message.length, 0);
+  if (message.length < code.toString(2).length)
+    str = str.slice(-message.length);
+  return message.split``.filter((v, i) => str[i] === "1").join``;
 }

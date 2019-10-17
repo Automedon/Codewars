@@ -26,9 +26,27 @@ id(“helloworld”) #=> “none”
 id(“hello-World”) #=> “none”
 */
 function id(c_str) {
-    const str=c_str.split('')
-    if (str.every(v=>v===v.toLowerCase())&&str.includes('-')&&str.filter((v,i)=>v==='-'&&str[i+1]==='-').length===0&&!str.includes('_')) return 'kebab' 
-    if (str.every(v=>v===v.toLowerCase())&&str.includes('_')&&str.filter((v,i)=>v==='_'&&str[i+1]==='_').length===0&&!str.includes('-')) return 'snake' 
-    if (str.some(v=>v===v.toLowerCase())&&str.some(v=>v===v.toUpperCase())&&!str.includes('-')&&!str.includes('_')) return 'camel' 
-    return 'none'
+  const str = c_str.split("");
+  if (
+    str.every(v => v === v.toLowerCase()) &&
+    str.includes("-") &&
+    str.filter((v, i) => v === "-" && str[i + 1] === "-").length === 0 &&
+    !str.includes("_")
+  )
+    return "kebab";
+  if (
+    str.every(v => v === v.toLowerCase()) &&
+    str.includes("_") &&
+    str.filter((v, i) => v === "_" && str[i + 1] === "_").length === 0 &&
+    !str.includes("-")
+  )
+    return "snake";
+  if (
+    str.some(v => v === v.toLowerCase()) &&
+    str.some(v => v === v.toUpperCase()) &&
+    !str.includes("-") &&
+    !str.includes("_")
+  )
+    return "camel";
+  return "none";
 }

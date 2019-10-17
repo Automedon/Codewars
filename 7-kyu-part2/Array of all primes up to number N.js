@@ -8,15 +8,15 @@ Remember that in some test cases with a big enough "n", performance might be (mo
 */
 var primeArray = function(n) {
   var primeArray = [];
-  for (let i=1;i<=n;i++){
-  if (isPrime(i)) primeArray.push(i)
+  for (let i = 1; i <= n; i++) {
+    if (isPrime(i)) primeArray.push(i);
   }
   return primeArray;
-}
+};
 function isPrime(n) {
   let rt = Math.sqrt(n);
-  for(let i = 2; i <= rt; i++) {
-    if(n % i === 0) return false; 
+  for (let i = 2; i <= rt; i++) {
+    if (n % i === 0) return false;
   }
   return n !== 1;
 }

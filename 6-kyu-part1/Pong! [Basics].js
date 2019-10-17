@@ -35,29 +35,30 @@ game.play(50, 50)  -> "Game Over!";                     // Another turn is made 
 class Pong {
   constructor(maxScore) {
     this.maxScore = maxScore;
-    this.f=0
-    this.s=0
-    this.p1=false
+    this.f = 0;
+    this.s = 0;
+    this.p1 = false;
   }
-  
+
   play(ballPos, playerPos) {
-    if (this.f===this.maxScore||this.s===this.maxScore) return "Game Over!"
-    this.p1=!this.p1
-    if (this.p1){
-      if (Math.abs(playerPos-ballPos)>3){
-        this.f++
-        if (this.f===this.maxScore) return "Player 2 has won the game!"
-        return "Player 1 has missed the ball!"
+    if (this.f === this.maxScore || this.s === this.maxScore)
+      return "Game Over!";
+    this.p1 = !this.p1;
+    if (this.p1) {
+      if (Math.abs(playerPos - ballPos) > 3) {
+        this.f++;
+        if (this.f === this.maxScore) return "Player 2 has won the game!";
+        return "Player 1 has missed the ball!";
       } else {
-        return "Player 1 has hit the ball!"
+        return "Player 1 has hit the ball!";
       }
     } else {
-      if (Math.abs(playerPos-ballPos)>3){
-        this.s++
-        if (this.s===this.maxScore) return "Player 1 has won the game!"
-        return "Player 2 has missed the ball!"
+      if (Math.abs(playerPos - ballPos) > 3) {
+        this.s++;
+        if (this.s === this.maxScore) return "Player 1 has won the game!";
+        return "Player 2 has missed the ball!";
       } else {
-        return "Player 2 has hit the ball!"
+        return "Player 2 has hit the ball!";
       }
     }
   }

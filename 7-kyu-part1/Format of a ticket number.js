@@ -11,6 +11,6 @@ tickets : an array of string, representing ticket numbers
 Return value
 An integer representing the number of valid ticket numbers.
 */
-function nbrValidTickets(tickets){
-  return tickets.filter(v=>/^[a-z]\d[a-z]{4}$/i.test(v)).length
+function nbrValidTickets(tickets) {
+  return tickets.filter(v => /^[a-z]\d[a-z]{4}$/i.test(v)).length;
 }

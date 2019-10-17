@@ -7,8 +7,7 @@ Sure, this is about as easy as it gets. But how clever can you be to create the 
 */
 
 function greet() {
-
-/*
+  /*
 quu..__
  $$$b  `---.__
   "$$b        `--.                          ___.---uuudP
@@ -26,7 +25,7 @@ quu..__
          :                  `"--'             |    `-.     \
         :##.       ==             .###.       `.      `.    `\
         |##:                      :###:        |        >     >
-   */return "hello world!";/*     |#'     `..'`..'          `###'        x:      /     /
+   */ return "hello world!"; /*     |#'     `..'`..'          `###'        x:      /     /
          \                                   xXX|     /    ./
           \                                xXXX'|    /   ./
           /`-.                                  `.  /   /
@@ -49,7 +48,4 @@ quu..__
               `',:                 :    .'
                                     
 */
-  
-
-
 }

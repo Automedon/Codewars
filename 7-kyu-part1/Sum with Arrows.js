@@ -10,4 +10,4 @@ Because eval hasnt caught up and cannot evaluate arrow style functions I have to
 
 Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 */
-var Sum = 'sum = function(arr){ return arr.reduce((a,b)=>a+b,0 ); }';     
+var Sum = "sum = function(arr){ return arr.reduce((a,b)=>a+b,0 ); }";

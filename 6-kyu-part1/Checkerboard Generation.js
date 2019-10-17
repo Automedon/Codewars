@@ -25,23 +25,23 @@ checkerboard(8);
 What We're Testing
 We're testing loops and conditionals and aiming at beginners. There are many ways of achieving the solution so the correct solution will present a fairly basic version that should be more advanced than typical loop examples and has some extra challenge to the problem with the alternating on columns and rows.
 */
-function checkerboard (size) {
-    "use strict";
-    if (size<=0) return '';
-    let str='';
-    for (let i=0;i<size;i++){
-    if (i%2==0) str+='[r]'
-    else str+='[b]'
-    }
-    let str1=''
-    for (let i=0;i<size;i++){
-    if (i%2==0) str1+='[b]'
-    else str1+='[r]'
-    }
-    let answ=''
-    for (let i=0;i<size;i++){
-    if (i%2==0) answ+=str+'\n'
-    else answ+=str1+'\n'
-    }
-    return answ
-};
+function checkerboard(size) {
+  "use strict";
+  if (size <= 0) return "";
+  let str = "";
+  for (let i = 0; i < size; i++) {
+    if (i % 2 == 0) str += "[r]";
+    else str += "[b]";
+  }
+  let str1 = "";
+  for (let i = 0; i < size; i++) {
+    if (i % 2 == 0) str1 += "[b]";
+    else str1 += "[r]";
+  }
+  let answ = "";
+  for (let i = 0; i < size; i++) {
+    if (i % 2 == 0) answ += str + "\n";
+    else answ += str1 + "\n";
+  }
+  return answ;
+}

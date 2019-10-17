@@ -15,14 +15,15 @@ multiplication_table(3,3)
 Each value on the table should be equal to the value of multiplying the number in its first row times the number in its first column.
 */
 
-function multiplicationTable(row,col){
-  let  arr=[];
-  let temp=[];
-  for (let i=1;i<=row;i++){
-   temp=[]
-    for (let j=1;j<=col;j++){
-    temp.push(j*i)}
-    arr.push(temp)
+function multiplicationTable(row, col) {
+  let arr = [];
+  let temp = [];
+  for (let i = 1; i <= row; i++) {
+    temp = [];
+    for (let j = 1; j <= col; j++) {
+      temp.push(j * i);
     }
-    return arr
+    arr.push(temp);
+  }
+  return arr;
 }

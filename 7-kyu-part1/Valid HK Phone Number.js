@@ -16,9 +16,9 @@ Define two functions, isValidHKPhoneNumber and hasValidHKPhoneNumber, that retur
 
 If in doubt please refer to the example tests.
 */
-const isValidHKPhoneNumber=string=>{
-  return /^\d{4}\s\d{4}$/.test(string)
-}
-const hasValidHKPhoneNumber=string=>{
-   return /\d{4}\s\d{4}/.test(string)
-}
+const isValidHKPhoneNumber = string => {
+  return /^\d{4}\s\d{4}$/.test(string);
+};
+const hasValidHKPhoneNumber = string => {
+  return /\d{4}\s\d{4}/.test(string);
+};

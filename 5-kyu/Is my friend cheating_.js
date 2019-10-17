@@ -36,10 +36,10 @@ removNb(26) should return  **an array of pairs {{15, 21}{21, 15}}**
 tested by way of strings.
 */
 
-function removeNb (n) {
+function removeNb(n) {
   var results = [];
   for (var a = 1; a <= n; a++) {
-    var b = (n * (n + 1) / 2 - a) / (a + 1);
+    var b = ((n * (n + 1)) / 2 - a) / (a + 1);
     if (b % 1 === 0 && b <= n) results.push([a, b]);
   }
   return results;

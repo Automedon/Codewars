@@ -23,6 +23,6 @@ ps: Solution of this Kata just fun language trick.
 
 Usage of this code in production is not recommended.
 */
-function runYourString (arg, obj) {
-   return new Function(obj.param, obj.func)(arg);
+function runYourString(arg, obj) {
+  return new Function(obj.param, obj.func)(arg);
 }

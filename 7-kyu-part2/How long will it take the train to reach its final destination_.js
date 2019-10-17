@@ -17,6 +17,6 @@ Your function should return:
 Hint: Keep in mind that the returned sentence needs to follow basic grammatical rules.
 */
 function reachDestination(distance, speed) {
-  let t=Math.round(distance / speed / 0.5) * 0.5; 
-  return `The train will be there in ${t} hour${t===1?'':'s'}.`
+  let t = Math.round(distance / speed / 0.5) * 0.5;
+  return `The train will be there in ${t} hour${t === 1 ? "" : "s"}.`;
 }

@@ -7,6 +7,6 @@ Create a function, called removeVowels, that takes a string argument and returns
 removeVowels("drake") // => "drk"
 removeVowels("aeiou") // => ""
 */
-var removeVowels = function(str){
-  return str.replace(/[auioe]/gi,'')
-}
+var removeVowels = function(str) {
+  return str.replace(/[auioe]/gi, "");
+};

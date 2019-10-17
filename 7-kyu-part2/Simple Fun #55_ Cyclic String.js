@@ -16,9 +16,8 @@ Constraints: 3 ≤ s.length ≤ 15.
 [output] an integer
 */
 function cyclicString(s) {
-  var i=1;
-  while(!s.startsWith(s.slice(i)))
-  {
+  var i = 1;
+  while (!s.startsWith(s.slice(i))) {
     i++;
   }
   return i;

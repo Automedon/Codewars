@@ -20,8 +20,20 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 I have also created other katas. Take a look if you enjoyed this kata!
 */
-function sortTheInnerContent(words)
-{
-  return words.split(' ').map(v=>v.length>1?v=(v.slice(0,1)+v.slice(1,-1)
-  .split('').sort((a,b)=>b>a).join('')+v.slice(-1)):v).join(' ');
+function sortTheInnerContent(words) {
+  return words
+    .split(" ")
+    .map(v =>
+      v.length > 1
+        ? (v =
+            v.slice(0, 1) +
+            v
+              .slice(1, -1)
+              .split("")
+              .sort((a, b) => b > a)
+              .join("") +
+            v.slice(-1))
+        : v
+    )
+    .join(" ");
 }

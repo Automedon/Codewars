@@ -12,15 +12,15 @@ The constructor taking no arguments should assign 0 to Cube's Side property.
 // This Cube function needs help
 class Cube {
   constructor(n = 0) {
-    this.setSide(n)
+    this.setSide(n);
   }
 
   getSide() {
-    return this.side
+    return this.side;
   }
 
   setSide(n) {
-    if (typeof n !== 'number') throw new Error('Only numbers accepted')
-    this.side = Math.abs(n)
+    if (typeof n !== "number") throw new Error("Only numbers accepted");
+    this.side = Math.abs(n);
   }
 }

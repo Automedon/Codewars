@@ -13,9 +13,9 @@ An Array should be returned, containing the value extracted for each Object cont
 See the Test Cases for examples.
 */
 function pluck(data, property) {
-  const arr=[];
-  for (let i of data ){
-  arr.push(i[`${property}`])
+  const arr = [];
+  for (let i of data) {
+    arr.push(i[`${property}`]);
   }
   return arr;
 }

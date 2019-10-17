@@ -32,7 +32,7 @@ there are 5 possible meal options and the strings representing the selected meal
 This kata is part of the Coding Meetup series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: forEach, filter, map, reduce, some, every, find, findIndex. Other approaches to solving the katas are of course possible.
 */
 function orderFood(list) {
-  const obj={}
-  list.map(v=>obj[v.meal]=obj[v.meal]?obj[v.meal]+1:1)
-  return obj
+  const obj = {};
+  list.map(v => (obj[v.meal] = obj[v.meal] ? obj[v.meal] + 1 : 1));
+  return obj;
 }

@@ -12,10 +12,21 @@ Note:
 [[]] is not applicable because if the array of array are to contain anything, there have to be two numbers.
 100 randomly generated tests that can contains either "same" or "not same" arrays.
 */
-function same(a1, a2)
-{
-  if (a1.length!==a2.length) return false
-  a1=a1.map(v=>v.sort((a,b)=>a-b)).sort((a,b)=>a.reduce((a,b)=>a+b,0)-b.reduce((a,b)=>a+b,0)||a[0]-b[0])
-  a2=a2.map(v=>v.sort((a,b)=>a-b)).sort((a,b)=>a.reduce((a,b)=>a+b,0)-b.reduce((a,b)=>a+b,0)||a[0]-b[0])
-  return a1.every((v,i)=>v[0]===a2[i][0]&&v[1]===a2[i][1]);
+function same(a1, a2) {
+  if (a1.length !== a2.length) return false;
+  a1 = a1
+    .map(v => v.sort((a, b) => a - b))
+    .sort(
+      (a, b) =>
+        a.reduce((a, b) => a + b, 0) - b.reduce((a, b) => a + b, 0) ||
+        a[0] - b[0]
+    );
+  a2 = a2
+    .map(v => v.sort((a, b) => a - b))
+    .sort(
+      (a, b) =>
+        a.reduce((a, b) => a + b, 0) - b.reduce((a, b) => a + b, 0) ||
+        a[0] - b[0]
+    );
+  return a1.every((v, i) => v[0] === a2[i][0] && v[1] === a2[i][1]);
 }

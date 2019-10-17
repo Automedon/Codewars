@@ -23,9 +23,9 @@ Note for C++
 Do not post an issue in my solution without checking if your returned string doesn't have some invisible characters. You read most probably outside of msg string.
 */
 function tops(msg) {
-    let str='';
-    for (let i=1,j=2;i<msg.length;i+=j*2+1,j+=2){
-    str+=msg[i]
-    }
-   return str.split``.reverse().join``;
+  let str = "";
+  for (let i = 1, j = 2; i < msg.length; i += j * 2 + 1, j += 2) {
+    str += msg[i];
+  }
+  return str.split``.reverse().join``;
 }

@@ -21,6 +21,10 @@ Return one of three string formatted outcomes:
 "The kitty is already even"
 The result should not be formatted into a currency as the kitty may be used in lots of different places and friends don't worry about subdivisions - so result values such as "Elia owes Lyanna 50.5" or "Lyanna owes Elia 6000" are expected.
 */
-function repairKitty(a,b,c,d) {
-  return (e=(b-a-d+c)/2)>0?`Elia owes Lyanna ${e}`:e<0?`Lyanna owes Elia ${-e}`:`The kitty is already even`
+function repairKitty(a, b, c, d) {
+  return (e = (b - a - d + c) / 2) > 0
+    ? `Elia owes Lyanna ${e}`
+    : e < 0
+    ? `Lyanna owes Elia ${-e}`
+    : `The kitty is already even`;
 }

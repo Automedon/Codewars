@@ -13,5 +13,5 @@ Example:
 ["Too Big","Too Small","Just Right"] => ["Too Big","Too Small","Code-ilocks"]
 */
 function whichOne(arr) {
-  return arr.map(v=>v==="Just Right"?v="Code-ilocks":v)
+  return arr.map(v => (v === "Just Right" ? (v = "Code-ilocks") : v));
 }

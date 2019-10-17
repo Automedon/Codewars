@@ -19,5 +19,5 @@ int getScore(5) = return 750;
 */
 
 function getScore(n) {
-    return n * (n + 1) * 25;
-  }
+  return n * (n + 1) * 25;
+}
