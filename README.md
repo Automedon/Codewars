@@ -1,5 +1,7 @@
 CodeWars Solutions on JavaScript
 
+Feel free
+
 [![HitCount](http://hits.dwyl.io/Automedon/codewars.svg)](http://hits.dwyl.io/Automedon/codewars)
 ![GitHub top language](https://img.shields.io/github/languages/top/Automedon/codewars)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Automedon/codewars)
