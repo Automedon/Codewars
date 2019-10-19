@@ -55,21 +55,21 @@ Example
 101005000020000000040
 */
 var shakeTree = function(tree) {
-  let top = tree[0].map(v=>v==='o'?1:0)
-  for (let i=1;i<tree.length;i++){
-    for (let j=0;j<tree[i].length;j++){
-    if (tree[i][j]===`\\`&&top[j]>0){
-      top[j+1]+=top[j]
-      top[j]=0
+  let top = tree[0].map(v => (v === "o" ? 1 : 0));
+  for (let i = 1; i < tree.length; i++) {
+    for (let j = 0; j < tree[i].length; j++) {
+      if (tree[i][j] === `\\` && top[j] > 0) {
+        top[j + 1] += top[j];
+        top[j] = 0;
       }
-    if (tree[i][j]===`/`&&top[j]>0){
-      top[j-1]+=top[j]
-      top[j]=0
+      if (tree[i][j] === `/` && top[j] > 0) {
+        top[j - 1] += top[j];
+        top[j] = 0;
       }
-      if (tree[i][j]===`_`){
-      top[j]=0
+      if (tree[i][j] === `_`) {
+        top[j] = 0;
       }
     }
   }
-  return top
-}
+  return top;
+};

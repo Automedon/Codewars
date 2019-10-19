@@ -22,13 +22,17 @@ In Haskell, this returns a Maybe Bool, with Nothing for an input less than zero.
 
 */
 function palindrome(num) {
- if (num<0||num!==parseInt(num)) return "Not valid"
- if (num<10) return false
- let str = num.toString()
- for (let i=0;i<str.length;i++){
-   for (let j=str.length;j>i;j--){
-     if (str.slice(i,j)===str.slice(i,j).split``.reverse().join``&&str.slice(i,j).length>1) return true
-   }
- }
- return false
+  if (num < 0 || num !== parseInt(num)) return "Not valid";
+  if (num < 10) return false;
+  let str = num.toString();
+  for (let i = 0; i < str.length; i++) {
+    for (let j = str.length; j > i; j--) {
+      if (
+        str.slice(i, j) === str.slice(i, j).split``.reverse().join`` &&
+        str.slice(i, j).length > 1
+      )
+        return true;
+    }
+  }
+  return false;
 }

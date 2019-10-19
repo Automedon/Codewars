@@ -18,12 +18,12 @@ For example, for "O", "X", " ", " ", "X", " ", "X", "O", " ", "O"] (same as abov
    | X | O |   | O 
 And worry not about missing elements, as the array/list/vector lenght is always going to be a multiple of the width.
 */
-function displayBoard(board, width){
-  board=board.map(v=>' '+v+' ')
-  let desk = []
-  for (let i=0;i<board.length;i+=width){
-    desk.push(board.slice(i,i+width))
+function displayBoard(board, width) {
+  board = board.map(v => " " + v + " ");
+  let desk = [];
+  for (let i = 0; i < board.length; i += width) {
+    desk.push(board.slice(i, i + width));
   }
-  let line = `-`.repeat(4*width-1)
-  return desk.map(v=>v.join`|`).join('\n'+line+'\n')
+  let line = `-`.repeat(4 * width - 1);
+  return desk.map(v => v.join`|`).join("\n" + line + "\n");
 }

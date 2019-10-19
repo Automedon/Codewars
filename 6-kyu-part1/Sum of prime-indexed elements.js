@@ -14,20 +14,20 @@ Dominant primes. It takes this idea a step further.
 
 Consonant value
 */
-function total(arr){
-  arr=arr.sort((a,b)=>a-b)
-  let arr2 = []
-    for (let i = 1; i < arr.length; i++) {
-        if (isPrime(i)) {
-            arr2.push(arr[i]);
-        }
+function total(arr) {
+  arr = arr.sort((a, b) => a - b);
+  let arr2 = [];
+  for (let i = 1; i < arr.length; i++) {
+    if (isPrime(i)) {
+      arr2.push(arr[i]);
     }
-  return arr2.reduce((a,b)=>a+b*1,0)
-};
+  }
+  return arr2.reduce((a, b) => a + b * 1, 0);
+}
 function isPrime(n) {
   let rt = Math.sqrt(n);
-  for(let i = 2; i <= rt; i++) {
-    if(n % i === 0) return false; 
+  for (let i = 2; i <= rt; i++) {
+    if (n % i === 0) return false;
   }
   return n !== 1;
 }

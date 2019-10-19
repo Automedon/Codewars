@@ -13,13 +13,14 @@ If one of the argument lists is null, the returned list should be the other link
 
 Try doing Linked Lists - Shuffle Merge before attempting this problem.
 */
-function Node(data,next) {
+function Node(data, next) {
   this.data = data === undefined ? null : data;
-  this.next = next||null;
+  this.next = next || null;
 }
 
 function sortedMerge(first, second) {
   if (!first || !second) return second || first;
-  if (first.data<second.data) return new Node(first.data,sortedMerge(first.next,second))
-  else return new Node(second.data,sortedMerge(first,second.next))
+  if (first.data < second.data)
+    return new Node(first.data, sortedMerge(first.next, second));
+  else return new Node(second.data, sortedMerge(first, second.next));
 }

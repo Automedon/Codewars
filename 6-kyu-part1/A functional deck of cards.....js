@@ -20,4 +20,10 @@ Additional constraints
 1 line only!
 buildDeck is a variable holding your deck. It is not a function.
 */
-let buildDeck = `ace two three four five six seven eight nine ten jack queen king `.replace(/\w+\s?/g,v=>`${v}of hearts|${v}of spades|${v}of diamonds|${v}of clubs|`).slice(0,-1).split`|`
+let buildDeck = `ace two three four five six seven eight nine ten jack queen king `
+  .replace(
+    /\w+\s?/g,
+    v => `${v}of hearts|${v}of spades|${v}of diamonds|${v}of clubs|`
+  )
+  .slice(0, -1)
+  .split(`|`);

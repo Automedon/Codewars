@@ -18,13 +18,15 @@ cipher.decode('KEYABC') == 'ABCHIJ'
 All letters in the keyword will also be in the alphabet. For the purpose of this kata, only the first occurence of a letter in a keyword should be used. Any characters not provided in the alphabet should be left in situ when encoding or decoding.
 */
 function KeywordCipher(abc, keyword) {
-  this.dict = abc
-  keyword=[...new Set(keyword)].join``
-  this.dict2 = keyword+this.dict.slice().split``.filter(v=>keyword.indexOf(v)==-1).join``
-  this.encode = function (str) {
-    return str.split``.map(v=>this.dict2[this.dict.indexOf(v)]||v).join``
-  }
-  this.decode = function (str) {
-    return str.split``.map(v=>this.dict[this.dict2.indexOf(v)]||v).join``
-  }
+  this.dict = abc;
+  keyword = [...new Set(keyword)].join``;
+  this.dict2 =
+    keyword +
+    this.dict.slice().split``.filter(v => keyword.indexOf(v) == -1).join``;
+  this.encode = function(str) {
+    return str.split``.map(v => this.dict2[this.dict.indexOf(v)] || v).join``;
+  };
+  this.decode = function(str) {
+    return str.split``.map(v => this.dict[this.dict2.indexOf(v)] || v).join``;
+  };
 }

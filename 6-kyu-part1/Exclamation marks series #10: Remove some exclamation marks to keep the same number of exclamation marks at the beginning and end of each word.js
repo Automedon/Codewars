@@ -12,12 +12,12 @@ remove("!Hi! Hi!") === "!Hi! Hi"
 remove("!!Hi! !Hi!!") === "!Hi! !Hi!"
 remove("!!!!Hi!! !!!!Hi !Hi!!!") === "!!Hi!! Hi !Hi!"
 */
-function remove(s){
-  return s.split` `.map(v=>{
-    let left = (v.match(/^!+/)||[]).join``.length
-    let right = (v.match(/!+$/)||[]).join``.length
-    let center = v.match(/\w+/).join``
-    let min = Math.min(left,right)
-    return '!'.repeat(min)+center+'!'.repeat(min)
-  }).join` `
+function remove(s) {
+  return s.split` `.map(v => {
+    let left = (v.match(/^!+/) || []).join``.length;
+    let right = (v.match(/!+$/) || []).join``.length;
+    let center = v.match(/\w+/).join``;
+    let min = Math.min(left, right);
+    return "!".repeat(min) + center + "!".repeat(min);
+  }).join` `;
 }

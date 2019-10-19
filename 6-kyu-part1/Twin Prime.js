@@ -22,14 +22,14 @@ given 953 , which is prime
 953+2=955 , which is not prime 
 Hence, 953 is not a Twin Prime.
 */
-function isTwinPrime(n){
-  if (n<3) return false
-  return isPrime(n-2)&&isPrime(n)||isPrime(n)&&isPrime(n+2)
+function isTwinPrime(n) {
+  if (n < 3) return false;
+  return (isPrime(n - 2) && isPrime(n)) || (isPrime(n) && isPrime(n + 2));
 }
 function isPrime(n) {
   let rt = Math.sqrt(n);
-  for(let i = 2; i <= rt; i++) {
-    if(n % i === 0) return false; 
+  for (let i = 2; i <= rt; i++) {
+    if (n % i === 0) return false;
   }
   return n !== 1;
 }

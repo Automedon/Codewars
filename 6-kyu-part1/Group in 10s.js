@@ -15,12 +15,12 @@ grouped[3]     // [35, 38]
 grouped[4]     // undefined
 grouped[5]     // [50]
 */
-function groupIn10s(...arr){
-  arr=arr.sort((a,b)=>a-b)
+function groupIn10s(...arr) {
+  arr = arr.sort((a, b) => a - b);
   let arr2 = [];
-  arr.map(x=> {
-		let pos = arr2[Math.floor(x/10)];
-		arr2[Math.floor(x/10)] = (pos) ? pos.concat(x) : [x]
-	})
-  return arr2
+  arr.map(x => {
+    let pos = arr2[Math.floor(x / 10)];
+    arr2[Math.floor(x / 10)] = pos ? pos.concat(x) : [x];
+  });
+  return arr2;
 }

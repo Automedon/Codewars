@@ -13,37 +13,36 @@ An increment button with an id of 'increment'
 A decrement button with an id of 'decrement'
 Helpful docs on Events: https://reactjs.org/docs/handling-events.html
 */
-const React = require('react');
+const React = require("react");
 
-class Counter extends React.Component{
-    constructor(props) {
+class Counter extends React.Component {
+  constructor(props) {
     super(props);
     this.state = {
       counter: 0
-    }
+    };
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
-
   }
   increment() {
-    this.setState({counter: this.state.counter + 1});
+    this.setState({ counter: this.state.counter + 1 });
   }
 
   decrement() {
-    this.setState({counter: this.state.counter - 1});
+    this.setState({ counter: this.state.counter - 1 });
   }
 
   render() {
     return (
       <div>
         <h1 id="counter">{this.state.counter}</h1>
-          <button type="button" onClick={this.decrement} id="decrement">
-            Decrement
-          </button>
-          <button type="button" onClick={this.increment} id="increment">
-            Increment
-          </button>
+        <button type="button" onClick={this.decrement} id="decrement">
+          Decrement
+        </button>
+        <button type="button" onClick={this.increment} id="increment">
+          Increment
+        </button>
       </div>
-    )
+    );
   }
 }

@@ -13,6 +13,6 @@ Strings will never be empty and can be composed of any character (just consider 
 
 If you liked it, go for the next kata of the series!
 */
-function hasSubpattern(string){
-  return string.match(/^(.*)\1+$/)!==null;
+function hasSubpattern(string) {
+  return string.match(/^(.*)\1+$/) !== null;
 }

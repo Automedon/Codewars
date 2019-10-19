@@ -9,12 +9,15 @@ Note: the alphabet should wrap around, so Z becomes A
 
 So, for example the string "Cat30" would return "dbU30" (Cat30 --> Dbu30 --> dbU30)
 */
-function changer(str) { 
-  let dict = 'abcdefghijklmnopqrstuvwxyza'
-  return str.toLowerCase().replace(/./g,v=>{
-    if (dict.indexOf(v)!==-1){
-      return dict[dict.indexOf(v)+1]
-    }
-    return v
-  }).replace(/[aeiou]/g,v=>v.toUpperCase())
+function changer(str) {
+  let dict = "abcdefghijklmnopqrstuvwxyza";
+  return str
+    .toLowerCase()
+    .replace(/./g, v => {
+      if (dict.indexOf(v) !== -1) {
+        return dict[dict.indexOf(v) + 1];
+      }
+      return v;
+    })
+    .replace(/[aeiou]/g, v => v.toUpperCase());
 }
