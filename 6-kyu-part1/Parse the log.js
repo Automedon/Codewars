@@ -28,4 +28,4 @@ Invalid username (contains spaces)
 
 2003-07-08 16:45:13,896 ERROR [best user ever:mainfunction:subfunction] We have a problem  
 */
-var logparser = /^(\d{4}-\d\d-\d\d \d\d:\d\d:\d\d,\d\d\d)\s+(INFO|ERROR|DEBUG)\s+\[(\w+\d):(\w+):?(\w+)?\]\s+(.*)$/
+var logparser = /^(\d{4}-\d\d-\d\d \d\d:\d\d:\d\d,\d\d\d)\s+(INFO|ERROR|DEBUG)\s+\[(\w+\d):(\w+):?(\w+)?\]\s+(.*)$/;

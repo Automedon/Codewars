@@ -24,9 +24,9 @@ Note also, if the sum of the digits goes over 26, loop back to zero (standard mo
 "x20*6<xY y875_r97L" --> "8 36" --> "8 9" --> "hi"
 */
 function decrypt(code) {
-  return code.split` `.map(v=>{
-  let n =v.replace(/\D/g,'').split``.reduce((a,b)=>a+b*1,0)
-    if (n===27||n===0) return ' '
-    return String.fromCharCode(n%27+96)
-  }).join``
+  return code.split` `.map(v => {
+    let n = v.replace(/\D/g, "").split``.reduce((a, b) => a + b * 1, 0);
+    if (n === 27 || n === 0) return " ";
+    return String.fromCharCode((n % 27) + 96);
+  }).join``;
 }

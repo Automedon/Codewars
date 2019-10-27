@@ -15,11 +15,11 @@ var c = ['gin', 'bar', 'foo'];
 
 intersect(a, b, c); // ['bar', 'foo']
 */
-var intersect = function (...arr) {
-  let a = [...new Set([].concat(...arr))]
-  let answ = []
-  for (let i=0;i<a.length;i++){
-   if(arr.every(v=>v.includes(a[i]))) answ.push(a[i]) 
+var intersect = function(...arr) {
+  let a = [...new Set([].concat(...arr))];
+  let answ = [];
+  for (let i = 0; i < a.length; i++) {
+    if (arr.every(v => v.includes(a[i]))) answ.push(a[i]);
   }
-  return answ
+  return answ;
 };

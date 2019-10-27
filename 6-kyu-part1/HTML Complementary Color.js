@@ -39,7 +39,7 @@ Examples
 "#FFF5DC"
 */
 function getReversedColor(hex) {
-    if (typeof hex !== 'string' || !/^(\d|[a-fA-F]){0,6}$/.test(hex))
-      throw new Error();
-    return "#"+(0xffffff ^ parseInt(hex, 16)).toString(16).toUpperCase()
+  if (typeof hex !== "string" || !/^(\d|[a-fA-F]){0,6}$/.test(hex))
+    throw new Error();
+  return "#" + (0xffffff ^ parseInt(hex, 16)).toString(16).toUpperCase();
 }

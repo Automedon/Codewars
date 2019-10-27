@@ -6,9 +6,13 @@ See test cases for more examples.
 
 Good luck!
 */
-function solve(a,b){
-  if (a<=2) return b%a==0
-  if (a.toString()===b.toString().slice(0,a.toString().length)&&a.toString().split``.reverse()[0]!=0) return false
-  if (a%2===0&&b%2===0||a%2!==0&&b%2!==0) return true
-  return false
-};
+function solve(a, b) {
+  if (a <= 2) return b % a == 0;
+  if (
+    a.toString() === b.toString().slice(0, a.toString().length) &&
+    a.toString().split``.reverse()[0] != 0
+  )
+    return false;
+  if ((a % 2 === 0 && b % 2 === 0) || (a % 2 !== 0 && b % 2 !== 0)) return true;
+  return false;
+}

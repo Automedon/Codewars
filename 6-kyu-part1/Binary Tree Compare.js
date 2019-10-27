@@ -27,6 +27,6 @@ Examples:
         3
 => false (structure not the same)
 */
-function compare(a, b){
+function compare(a, b) {
   return JSON.stringify(a) === JSON.stringify(b);
 }

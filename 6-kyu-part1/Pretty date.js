@@ -14,37 +14,41 @@ You will have to handle the singular cases. That is, when t = 1, the phrasing wi
 The amount of time is always rounded down to the nearest integer. For example, if the amount of time is actually 11.73 hours ago, the return value will be "11 hours ago".
 Only times in the past will be given, with the range "just now" to "52 weeks ago"
 */
-function toPretty(seconds){
-  if (seconds===0) return 'just now'
+function toPretty(seconds) {
+  if (seconds === 0) return "just now";
   let sec = 1;
   let min = 60;
-  let hour = min*60;
-  let days = hour*24
-  let week = days*7
-  let s=0,m=0,h=0,d=0,w=0;
-  while (seconds>=week){
-    seconds-=week
-    w++
+  let hour = min * 60;
+  let days = hour * 24;
+  let week = days * 7;
+  let s = 0,
+    m = 0,
+    h = 0,
+    d = 0,
+    w = 0;
+  while (seconds >= week) {
+    seconds -= week;
+    w++;
   }
-  if (w>0) return w===1?'a week ago':`${w} weeks ago`
-    while (seconds>=days){
-    seconds-=days
-    d++
+  if (w > 0) return w === 1 ? "a week ago" : `${w} weeks ago`;
+  while (seconds >= days) {
+    seconds -= days;
+    d++;
   }
-    if (d>0) return d===1?'a day ago':`${d} days ago`
-    while (seconds>=hour){
-    seconds-=hour
-    h++
+  if (d > 0) return d === 1 ? "a day ago" : `${d} days ago`;
+  while (seconds >= hour) {
+    seconds -= hour;
+    h++;
   }
-    if (h>0) return h===1?'an hour ago':`${h} hours ago`
-    while (seconds>=min){
-    seconds-=min
-    m++
+  if (h > 0) return h === 1 ? "an hour ago" : `${h} hours ago`;
+  while (seconds >= min) {
+    seconds -= min;
+    m++;
   }
-    if (m>0) return m===1?'a minute ago':`${m} minutes ago`
-    while (seconds>=sec){
-    seconds-=sec
-    s++
+  if (m > 0) return m === 1 ? "a minute ago" : `${m} minutes ago`;
+  while (seconds >= sec) {
+    seconds -= sec;
+    s++;
   }
-    if (s>0) return s===1?'a second ago':`${s} seconds ago`
+  if (s > 0) return s === 1 ? "a second ago" : `${s} seconds ago`;
 }

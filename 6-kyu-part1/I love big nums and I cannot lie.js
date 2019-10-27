@@ -12,5 +12,9 @@ biggest([3, 30, 34, 5, 9]) === '9534330'
 The results will be large so make sure to return a string.
 */
 function biggest(nums) {
-   return nums.map(v=>v.toString()).sort((a,b) => (b+a).localeCompare(a+b)).join("").replace(/^0+/, "0")
-};
+  return nums
+    .map(v => v.toString())
+    .sort((a, b) => (b + a).localeCompare(a + b))
+    .join("")
+    .replace(/^0+/, "0");
+}

@@ -19,11 +19,13 @@ palindrome(1221) => 1221
 palindrome("1221") => "Not valid"
 In Haskell the function should return a Maybe Int with Nothing for cases where the argument is less than zero.
 */
-function palindrome(num) { 
-  if (typeof num !== 'number' || num<0) return "Not valid"
-  if (num<10) num=10
-  for (let i=0;i<num;i++){
-    if ((num+i).toString()===(num+i).toString().split``.reverse().join``) return num+i
-    if ((num-i).toString()===(num-i).toString().split``.reverse().join``) return num-i
+function palindrome(num) {
+  if (typeof num !== "number" || num < 0) return "Not valid";
+  if (num < 10) num = 10;
+  for (let i = 0; i < num; i++) {
+    if ((num + i).toString() === (num + i).toString().split``.reverse().join``)
+      return num + i;
+    if ((num - i).toString() === (num - i).toString().split``.reverse().join``)
+      return num - i;
   }
 }

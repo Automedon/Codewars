@@ -13,15 +13,15 @@ at 3:00 the angle is: π/2 (90 degrees)
 at 6:00 the angle is: π (180 degrees)
 at 9:00 the angle is: π/2 (90 degrees)
 */
-function handAngle (date) {
-  let m = date.getMinutes()
-  let h = date.getHours()
-  if (m!==0){
-    h=(m/60)+h
+function handAngle(date) {
+  let m = date.getMinutes();
+  let h = date.getHours();
+  if (m !== 0) {
+    h = m / 60 + h;
   }
-  let degree =  Math.abs(h*30-m*6)
-  let degree2 = Math.toRadians(360-degree)
-  return Math.min(Math.toRadians(degree),degree2)
+  let degree = Math.abs(h * 30 - m * 6);
+  let degree2 = Math.toRadians(360 - degree);
+  return Math.min(Math.toRadians(degree), degree2);
 }
 Math.toRadians = function(degrees) {
   return degrees / (180 / Math.PI);

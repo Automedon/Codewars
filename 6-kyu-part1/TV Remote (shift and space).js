@@ -54,20 +54,18 @@ Answer = 14 + 16 + 4 + 2 + 9 + 6 + 10 + 6 + 2 = 69
 DM.*
 */
 function tvRemote(words) {
-  let keys = 'abcde123fghij456klmno789pqrst.@0uvwxyz_/# ';
-  let pos = [ 0, 0 ];
+  let keys = "abcde123fghij456klmno789pqrst.@0uvwxyz_/# ";
+  let pos = [0, 0];
   let presses = 0;
-  words = words.replace(/([A-Z]+[^a-z]*)([a-z]?)/g, (_, a, b) =>
-    '#' + a.toLowerCase() + (b ? '#' + b : '')
+  words = words.replace(
+    /([A-Z]+[^a-z]*)([a-z]?)/g,
+    (_, a, b) => "#" + a.toLowerCase() + (b ? "#" + b : "")
   );
   for (let char of words) {
     let index = keys.indexOf(char);
-    let next = [ index / 8 | 0, index % 8 ];
-    presses += Math.abs(pos[0] - next[0]) 
-            +  Math.abs(pos[1] - next[1]) 
-            +  1;
+    let next = [(index / 8) | 0, index % 8];
+    presses += Math.abs(pos[0] - next[0]) + Math.abs(pos[1] - next[1]) + 1;
     pos = next;
-
   }
   return presses;
 }

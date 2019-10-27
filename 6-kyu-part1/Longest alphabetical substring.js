@@ -11,21 +11,21 @@ The input will only consist of lowercase characters and will be at least one let
 Good luck :)
 */
 function longest(str) {
-  let st = 'abcdefghijklmnopqrstuvwxyz';
+  let st = "abcdefghijklmnopqrstuvwxyz";
   let arr = [];
-  let s = '';
-  let index = -1
-  for (let i=0;i<=str.length;i++){
-    if (st.indexOf(str[i])>=index){
-      index = st.indexOf(str[i])
-      s+=str[i]
+  let s = "";
+  let index = -1;
+  for (let i = 0; i <= str.length; i++) {
+    if (st.indexOf(str[i]) >= index) {
+      index = st.indexOf(str[i]);
+      s += str[i];
     } else {
-      i--
-      arr.push(s)
-      index=-1
-      s=''
+      i--;
+      arr.push(s);
+      index = -1;
+      s = "";
     }
   }
-  let max = Math.max(...arr.map(v=>v.length))
-  return arr.filter(v=>v.length===max)[0]
+  let max = Math.max(...arr.map(v => v.length));
+  return arr.filter(v => v.length === max)[0];
 }

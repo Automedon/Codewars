@@ -47,22 +47,26 @@ HINT - This is certainly not the only way of doing it, but mapping over dynamic 
 
 Oh, and finally, don't forget to add a key property to each codewarrior's anchor tag. It should be unique for each codewarrior, so choose a key wisely! =)
 */
-var myHeader = <h1>My three favorite codewarriors are noLan, jhoffner and OverZealous</h1>
+var myHeader = (
+  <h1>My three favorite codewarriors are noLan, jhoffner and OverZealous</h1>
+);
 
 var CodewarsLink = React.createClass({
   render: function() {
-    let href = `http://www.codewars.com/users/${this.props.user}`
-    return <a key={this.props.user} href={href}>
-      {this.props.user}
-    </a>
+    let href = `http://www.codewars.com/users/${this.props.user}`;
+    return (
+      <a key={this.props.user} href={href}>
+        {this.props.user}
+      </a>
+    );
   }
 });
 
 var Leaderboard = React.createClass({
   render: function() {
-    let links = leaderboard.map((user) => {
-      return <CodewarsLink key={user} user={user}/>
+    let links = leaderboard.map(user => {
+      return <CodewarsLink key={user} user={user} />;
     });
-    return <div>{links}</div>
+    return <div>{links}</div>;
   }
 });

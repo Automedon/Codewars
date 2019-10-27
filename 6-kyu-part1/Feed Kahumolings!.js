@@ -32,16 +32,16 @@ serve(728, 3,   6)      returns [2.0, 6.0, 18.0, 54.0, 162.0, 486.0]
 serve(100, 1.5, 3)      returns [21.053, 31.579, 47.368]
 */
 function serve(food, flavour, mouths) {
-        let result = Array(mouths).fill(0);
-        let start = 0.0;
-        if(flavour>1){
-            start = (food-food*flavour)/(1-Math.pow(flavour,mouths));
-        } else{
-        start = food/mouths;
-        }
-        for(let i = 0; i < mouths; i++){
-            result[i] = start.toFixed(3)*1;
-            start = start * flavour;
-        } 
-        return result;
+  let result = Array(mouths).fill(0);
+  let start = 0.0;
+  if (flavour > 1) {
+    start = (food - food * flavour) / (1 - Math.pow(flavour, mouths));
+  } else {
+    start = food / mouths;
+  }
+  for (let i = 0; i < mouths; i++) {
+    result[i] = start.toFixed(3) * 1;
+    start = start * flavour;
+  }
+  return result;
 }

@@ -24,5 +24,7 @@ Example
 For text = "The cat does not like the fire" and forbiddenWords = ["cat","fire"], the output should be "The *** does not like the ****".
 */
 function censorThis(text, forbiddenWords) {
-  return text.replace(/(\w+)/g,v=>forbiddenWords.includes(v.toLowerCase())?'*'.repeat(v.length):v)
+  return text.replace(/(\w+)/g, v =>
+    forbiddenWords.includes(v.toLowerCase()) ? "*".repeat(v.length) : v
+  );
 }

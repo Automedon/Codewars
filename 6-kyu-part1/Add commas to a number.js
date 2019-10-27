@@ -12,4 +12,5 @@ commas(1000000000.23) == "1,000,000,000.23"
 commas(-1) == "-1"
 commas(-1000000.123) == "-1,000,000.123"
 */
-const commas = num => (+num.toFixed(3)).toString().replace(/\B(?=(\d{3})+(\.|$))/g, ',');
+const commas = num =>
+  (+num.toFixed(3)).toString().replace(/\B(?=(\d{3})+(\.|$))/g, ",");

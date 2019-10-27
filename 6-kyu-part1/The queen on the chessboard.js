@@ -35,17 +35,17 @@ input position can be any type (array, number, string and so on). If input posit
 valid input position is one letter from A to H with number from 1 to 8, for example A1, C8, B3. If input is invalid (for example A10 or H0) then return empty array.
 */
 function availableMoves(position) {
-  if (typeof position !=='string') return []  
-  let createRealDesk = ['A','B','C','D','E','F','G','H']
-  let realDesk = []
+  if (typeof position !== "string") return [];
+  let createRealDesk = ["A", "B", "C", "D", "E", "F", "G", "H"];
+  let realDesk = [];
   for (let i = 0; i < 8; i++) {
     let temp = [];
     for (let j = 0; j < 8; j++) {
-      temp.push(createRealDesk[j]+(i+1));
+      temp.push(createRealDesk[j] + (i + 1));
     }
     realDesk.push(temp);
   }
-  if (![].concat(...realDesk).includes(position)) return []
+  if (![].concat(...realDesk).includes(position)) return [];
   let desk = [];
   for (let i = 0; i < 8; i++) {
     let temp = [];
@@ -56,7 +56,7 @@ function availableMoves(position) {
   }
   let mapL = { A: 0, B: 1, C: 2, D: 3, E: 4, F: 5, G: 6, H: 7 };
   let mapN = { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3, 6: 2, 7: 1, 8: 0 };
-  
+
   let b = position.split``;
   let x = mapL[b[0]];
   let y = mapN[b[1]];
@@ -78,20 +78,20 @@ function availableMoves(position) {
   for (let i = y, j = x; j < 8 && i < 8; j++) {
     desk[i][j] = 1;
   }
-  for (let i = y, j = x; j < 8 && i >= 0;  i--) {
+  for (let i = y, j = x; j < 8 && i >= 0; i--) {
     desk[i][j] = 1;
   }
-  for (let i = y, j = x; j >= 0 && i < 8;i++) {
+  for (let i = y, j = x; j >= 0 && i < 8; i++) {
     desk[i][j] = 1;
   }
 
-  desk[y][x]=0
-  desk=desk.reverse()
-  let answer = []
+  desk[y][x] = 0;
+  desk = desk.reverse();
+  let answer = [];
   for (let i = 0; i < 8; i++) {
     for (let j = 0; j < 8; j++) {
       if (desk[j][i]) answer.push(realDesk[j][i]);
     }
   }
-  return answer
+  return answer;
 }

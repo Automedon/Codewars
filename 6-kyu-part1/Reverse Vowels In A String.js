@@ -10,7 +10,7 @@ For simplicity, you can treat the letter y as a consonant, not a vowel.
 Good luck!
 */
 function reverseVowels(str) {
-    let arr = str.replace(/[^aeiou]/gi,'').split``.reverse()
-    let i = 0;
-    return str.replace(/[aeiou]/gi,v=>arr[i++])
+  let arr = str.replace(/[^aeiou]/gi, "").split``.reverse();
+  let i = 0;
+  return str.replace(/[aeiou]/gi, v => arr[i++]);
 }

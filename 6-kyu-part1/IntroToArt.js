@@ -26,22 +26,24 @@ get_w(5) # should return:
 Return an empty list for height < 2.
 */
 function getW(height) {
-  if (height===2) return [ '* * *', ' * * ' ]
-  if (height<2) return []
-  let arr = Array.from({length:height},(x,i)=>Array.from({length:height*height},x=>' '))
-  let j = 0
-  for (let i=0;i<arr.length;i++){
-    arr[i][j++]='*'
+  if (height === 2) return ["* * *", " * * "];
+  if (height < 2) return [];
+  let arr = Array.from({ length: height }, (x, i) =>
+    Array.from({ length: height * height }, x => " ")
+  );
+  let j = 0;
+  for (let i = 0; i < arr.length; i++) {
+    arr[i][j++] = "*";
   }
-  for (let i=arr.length-2;i>=0;i--){
-    arr[i][j++]='*'
+  for (let i = arr.length - 2; i >= 0; i--) {
+    arr[i][j++] = "*";
   }
-    for (let i=1;i<arr.length;i++){
-    arr[i][j++]='*'
+  for (let i = 1; i < arr.length; i++) {
+    arr[i][j++] = "*";
   }
-  for (let i=arr.length-2;i>=0;i--){
-    arr[i][j++]='*'
+  for (let i = arr.length - 2; i >= 0; i--) {
+    arr[i][j++] = "*";
   }
-  let index = arr[0].lastIndexOf('*')
-  return arr.map(v=>v.slice(0,index+1).join``)
+  let index = arr[0].lastIndexOf("*");
+  return arr.map(v => v.slice(0, index + 1).join``);
 }

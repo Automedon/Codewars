@@ -13,15 +13,15 @@ ticket.used = false
 
 If you complete this kata and there are no issues, please remember to give it a ready vote and a difficulty rating. :)
 */
-function Ticket (code) {
+function Ticket(code) {
   this.code = code;
   this.used = false;
-  this.useTicket = function () {
+  this.useTicket = function() {
     this.used = true;
     Object.freeze(this);
   };
 }
 
-function validTicket(ticket, correctCode){
- return (ticket.code === correctCode && ticket.used === false)
+function validTicket(ticket, correctCode) {
+  return ticket.code === correctCode && ticket.used === false;
 }
