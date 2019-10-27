@@ -9,10 +9,10 @@ So what will be your task? You should write a function fib, that takes one param
 
 For example fib(0) returns 0, fib(4) returns 3, fib(15) returns 610.
 */
-var fib = function (steps) {
+var fib = function(steps) {
   var fibNum = [0, 1];
-  for (let i=1;i<steps;i++){
-    fibNum.push(fibNum[i-1]+fibNum[i])
+  for (let i = 1; i < steps; i++) {
+    fibNum.push(fibNum[i - 1] + fibNum[i]);
   }
-  return fibNum[steps]
-}
+  return fibNum[steps];
+};

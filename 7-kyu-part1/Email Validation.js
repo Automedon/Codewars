@@ -12,6 +12,6 @@ The email must end with at least one set of a dot followed by one or more word c
 The input must NOT be case-sensitive
 The function should return true or false.
 */
-function validate(input){
-  return /^[a-zA-Z]\w*@[\w-]+\.[\w\.]+$/.test(input)
+function validate(input) {
+  return /^[a-zA-Z]\w*@[\w-]+\.[\w\.]+$/.test(input);
 }
