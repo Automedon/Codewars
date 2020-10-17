@@ -14,62 +14,15 @@ The ship cannot overlap or be in contact with any other ship, neither by edge no
 This is all you need to solve this kata. If you're interested in more information about the game, visit this link.
 ALGORITHMSGAMESVALIDATIONARRAYSGAME BOARDS
 */
-const validateBattlefield = field => {
-  const counts = [4, 3, 2, 1];
-  for (let y = 0; y < field.length; y++) {
-    const row = field[y];
-    for (let x = 0; x < row.length; x++) {
-      if (!row[x]) {
-        continue;
-      }
-      if (x > 0 && y > 0 && field[y - 1][x - 1] === 1) {
-        return false;
-      }
-      if (x > 0 && y < field.length - 1 && field[y + 1][x - 1] === 1) {
-        return false;
-      }
-      const vertical = getVerticalSize(field, x, y);
-      const horizontal = getHorizontalSize(field, x, y);
-      if (horizontal > 1 && vertical > 1) {
-        return false;
-      }
-      if (vertical > 1 && horizontal === 1) {
-        counts[vertical - 1]--;
-      } else if (horizontal > 1 && vertical === 1) {
-        counts[horizontal - 1]--;
-      } else if (vertical === 1 || horizontal === 1) {
-        counts[0]--;
-      }
-    }
-  }
-  return counts.every(val => val === 0);
-};
-
-const getVerticalSize = (field, x, y) => {
-  for (let i = 0; i < 5 && y + i < field.length; i++) {
-    if (field[y + i][x] === 0) {
-      return i;
-    }
-    if (i !== 0) {
-      field[y + i][x] = 0;
-    }
-  }
-  if (y + i === field.length) {
-    return i;
-  }
-  return 1;
-};
-
-const getHorizontalSize = (field, x, y) => {
-  const row = field[y];
-  for (  let i = 0; i < 5 && x + i < row.length; i++) {
-    if (row[x + i] === 0) {
-      return i;
-    }
-    row[x + i] = 0;
-  }
-  if (x + i === row.length) {
-    return i;
-  }
-  return 1;
-};
+function validateBattlefield(field) {
+  var hit = (row, col) => (row < 0 || col < 0 || row > 9 || col > 9) ? 0 : field[row][col];
+  for (var ships = [10,0,0,0,0], row = 0; row < 10; row++) {
+    for (var col = 0; col < 10; col++) {
+      if ( hit(row,col) ) {
+        if ( hit(row-1, col-1) || hit(row-1, col+1) ) return false; // Corner is touching
+        if ( hit(row-1, col  ) && hit(row  , col-1) ) return false; // Side is touching
+        if ( ( field[row][col] += hit(row-1, col) + hit(row, col-1) ) > 4 ) return false; // Ship is too long
+        ships[field[row][col]]++; ships[field[row][col] - 1]--;
+  } } }
+  return [0,4,3,2,1].every((s,i) => s == ships[i]);
+}
