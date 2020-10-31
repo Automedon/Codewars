@@ -7,8 +7,6 @@ You will not be accepting contributions of any form to this repo
 Creating a repository like this is discouraged by Codewars
 ===============
 
-![alt rank](https://www.codewars.com/users/Valefar/badges/large)
-
 [![HitCount](http://hits.dwyl.io/Automedon/codewars.svg)](http://hits.dwyl.io/Automedon/codewars)
 ![GitHub top language](https://img.shields.io/github/languages/top/Automedon/codewars)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Automedon/codewars)
