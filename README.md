@@ -1,4 +1,4 @@
-### Codewarriors are strongly encouraged not to look at my solutions to Kata until they have completed it themselves or at least took the time to think about their own approaches
+### Codewarriors are strongly encouraged not to look at my solutions to Kata until they have completed it themselves or at least took the time to think about your own approaches
 
 ### Codewarriors should not submit my solutions as their own
 
