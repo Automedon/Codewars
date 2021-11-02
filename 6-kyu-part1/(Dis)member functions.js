@@ -22,6 +22,7 @@ I'm sure the above function implementation is not the best, it's not even great 
 dismember(average) => []
 Please note: The internal implementation of the function holds no importance in this Kata, one just needs to dismember the arguments and return them in the sequence in which they are named.
 */
+
 function dismember (func) {
   let a = func.toString().match(/\(.*\)/)[0]
   if (a.length===2) return []
