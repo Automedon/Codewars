@@ -7,6 +7,7 @@ For example, given is a function as shown below:
 function add (a, b) {
     return a + b;
 }
+
 Running dismember on the function would provide:
 
 dismember(add) => ["a", "b"]
