@@ -8,5 +8,5 @@ Write a program that reads an acrostic to identify the "hidden" word. Specifical
 */
 
 function readOut(acrostic) {
-  return acrostic.map(v=>v[0]).join(``)
+  return acrostic.map(v=>v[0]).join(``);
 }
