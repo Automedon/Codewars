@@ -8,7 +8,6 @@ Please help Farmer Arepo by reading each tablet to discern whether or not it is 
 
 The Square . . .
 is known as a two-dimentional palindrome observing four symmetries
-
 can be read:
 
 top-to-bottom
