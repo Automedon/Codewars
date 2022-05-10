@@ -16,7 +16,6 @@ right-to-left
 can be rotated 180 degrees and still be read in all four directions
 
 ( may contain similar looking characters that are different, so be careful )
-
 is shown here illustrating how you can read the word "TUBA" in four different directions...
 
           v
