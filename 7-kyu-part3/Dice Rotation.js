@@ -2,7 +2,6 @@
 There are any number of dice, and the input array contains the number on the dice's face up.
 
 A dice is 6 faced.
-
 Calculate the total number of minimum rotations of dice, to make all faces the same.
 
 1 will require only one rotation to have 2, 3, 4 and 5 face up, but would require minimum two rotations to make it the face 6, as 6 is the opposite side of 1.
