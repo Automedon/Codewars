@@ -1,7 +1,6 @@
 /*
 Description:
 In a simple memory game (http://en.wikipedia.org/wiki/Concentration_(game)) we need an array containing tiles represented by integers in pairs.
-
 Memory games basics
 In the memory game, numbers are randomly placed face-down in a grid. Each turn, the player chooses a number to peek at, and then replace, face down. If they choose two of the same number in a row, those numbers are removed from the grid. The aim is to clear the board!
 
