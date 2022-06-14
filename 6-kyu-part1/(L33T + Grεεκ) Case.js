@@ -5,7 +5,6 @@ Getting Familiar: LEET: (sometimes written as "1337" or "l33t"), also known as e
 GREEK: The Greek alphabet has been used to write the Greek language since the 8th century BC. It was derived from the earlier Phoenician alphabet, and was the first alphabetic script to have distinct letters for vowels as well as consonants. It is the ancestor of the Latin and Cyrillic scripts.Apart from its use in writing the Greek language, both in its ancient and its modern forms, the Greek alphabet today also serves as a source of technical symbols and labels in many domains of mathematics, science and other fields.
 
 Your Task :
-
 You have to create a function **GrεεκL33t** which    
 takes a string as input and returns it in the form of 
 (L33T+Grεεκ)Case.
