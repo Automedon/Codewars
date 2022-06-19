@@ -7,7 +7,6 @@ In this kata, we're going to help Vicky keep track of the words she's learning.
 Write a function, learnWord(word) which is a method of the Robot object. The function should report back whether the word is now stored, or if she already knew the word.
 
 Example:
-
 var vicky = new Robot();
 vicky.learnWord('hello') -> 'Thank you for teaching me hello'
 vicky.learnWord('abc') -> 'Thank you for teaching me abc'
