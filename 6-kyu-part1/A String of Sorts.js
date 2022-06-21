@@ -5,7 +5,6 @@ Define a method that accepts 2 strings as parameters. The method returns the fir
 sortString("foos", "of")       => "oofs"
 
 sortString("string", "gnirts") => "gnirts"
-
 sortString("banana", "abn")    => "aaabnn"
 To elaborate, the second string defines the ordering. It is possible that in the second string characters repeat, so you should remove repeating characters, leaving only the first occurrence.
 
