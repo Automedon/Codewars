@@ -22,7 +22,6 @@
 //     ...
 // }
 // which takes another function fun and an arbitrary number of other arguments - and returns a function, which works like fun with the first arguments replaced by the remaining arguments of curry.
-//
 // For example
 //
 // function add(a, b, c) { return a+b+c; }
