@@ -3,7 +3,6 @@ Description:
 ##Task: You have to write a function add which takes two binary numbers as strings and returns their sum as a string.
 
 ##Note:
-
 You are not allowed to convert binary to decimal & vice versa.
 The sum should contain No leading zeroes.
 ##Examples:
