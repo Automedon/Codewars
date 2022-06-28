@@ -2,7 +2,6 @@
 Description:
 Your task should you chose to accept...
 Build a deck of playing cards by generating 52 strings representing cards. There are no jokers.
-
 Each card string will have the format of:
 
 "ace of hearts"
