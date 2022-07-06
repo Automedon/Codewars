@@ -8,7 +8,6 @@ numberToOrdinal(3) ==> '3rd'
 numberToOrdinal(4) ==> '4th'
 ... and so on
 For the purposes of this kata, you may assume that the function will always be passed a non-negative integer. If the function is given 0 as an argument, it should return '0' (as a string).
-
 To help you get started, here is an excerpt from Wikipedia's page on Ordinal Indicators:
 
 st is used with numbers ending in 1 (e.g. 1st, pronounced first)
