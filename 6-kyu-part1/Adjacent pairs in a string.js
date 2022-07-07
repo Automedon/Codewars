@@ -7,7 +7,6 @@ As as aS you can see, it's not easy to spot those errors, especially if words di
 Write a function countAdjacentPairs that counts the number of adjacent pairs in a string. It should be case-insenstive. A word in this kata is a sequence of non-whitespace characters enclosed by whitespace, so the string "dog dog." contains the two words "dog" and "dog.", which differ. The occurence of two or more equal words next after each other count as one.
 
 Example:
-
 countAdjacentPairs "dog cat"       == 0
 countAdjacentPairs "dog dog cat"   == 1
 countAdjacentPairs "apple dog cat" == 0
