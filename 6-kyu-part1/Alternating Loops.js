@@ -4,7 +4,6 @@ Write
 
 function combine()
 that combines arrays by alternatingly taking elements passed to it.
-
 E.g
 
 combine(['a', 'b', 'c'], [1, 2, 3]) == ['a', 1, 'b', 2, 'c', 3]
