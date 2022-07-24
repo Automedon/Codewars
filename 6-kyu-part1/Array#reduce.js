@@ -3,7 +3,6 @@ Description:
 In this kata, you must define the Array.reduce method.
 
 I have disabled the pre-existing reduce methods.
-
 Here's how it works:
 
 [1,2,3].reduce( function(sum, next){return sum+next}, 0) 
