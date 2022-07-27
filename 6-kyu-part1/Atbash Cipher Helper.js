@@ -5,7 +5,6 @@ The Atbash cipher is a simple substitution cipher originally known to be impleme
 In the Atbash cipher, the first letter of the alphabet is substituted with the last letter, the second letter with the second to last letter, and so on.
 
 For the Latin alphabet, this could be mapped as:
-
 A|B|C|D|E|F|G|H|I|J|K|L|M
 Z|Y|X|W|V|U|T|S|R|Q|P|O|N
 For the Hebrew alphabet:
