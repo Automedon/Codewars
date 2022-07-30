@@ -9,7 +9,6 @@ get a string as text and an int as the rule of manipulation, and should return e
 encrypt("a",1) = "b"
 
 Full ascii table is used on our question (256 chars) - so 0-255 are the valid values.
-
 Good luck.
 */
 function encrypt(text, rule) {
