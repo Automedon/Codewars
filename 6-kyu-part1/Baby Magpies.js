@@ -18,7 +18,6 @@ B = Black
 W = White
 Example
 Given these three magpies
-
 Magpie 1  BWBWBW
 Magpie 2  BWBWBB
 Magpie 3  WWWWBB
