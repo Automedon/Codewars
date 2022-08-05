@@ -4,7 +4,6 @@ Check that the two provided arrays both contain the same number of different uni
 
 [a,a,a,a,b,b] and [c,c,c,d,c,d]
 Both arrays have four of one item and two of another, so balance should return true.
-
 #Have fun!
 */
 function balance(arr1, arr2) {
