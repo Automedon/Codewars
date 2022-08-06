@@ -6,7 +6,6 @@ Write a function max_ball with parameter v (in km per hour) that returns the tim
 
 Examples:
 max_ball(15) should return 4
-
 max_ball(25) should return 7
 
 Notes
