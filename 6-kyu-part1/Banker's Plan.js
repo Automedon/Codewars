@@ -3,7 +3,6 @@ Description:
 John has some amount of money of which he wants to deposit a part f0 to the bank at the beginning of year 1. He wants to withdraw each year for his living an amount c0.
 
 Here is his banker plan:
-
 deposit f0 at beginning of year 1
 his bank account has an interest rate of p percent per year, constant over the years
 John can withdraw each year c0, taking it whenever he wants in the year; he must take account of an inflation of i percent per year in order to keep his quality of living. i is supposed to stay constant over the years.
