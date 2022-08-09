@@ -6,6 +6,7 @@ Use of the native method
 number.toString(2);
 is disallowed.
 */
+
 function toBinaryString(num) {
   let out = "",
     bit = 1;
