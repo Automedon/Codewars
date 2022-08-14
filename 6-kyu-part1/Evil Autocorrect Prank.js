@@ -7,7 +7,6 @@ Write a function called autocorrect that takes a string and replaces all instanc
 Return the resulting string.
 
 Here's the slightly tricky part: These are text messages, so there are different forms of "you" and "u".
-
 For the purposes of this kata, here's what you need to support:
 
 "youuuuu" with any number of u characters tacked onto the end
