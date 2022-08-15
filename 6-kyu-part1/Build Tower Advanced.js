@@ -12,7 +12,6 @@ JavaScript: returns an Array;
 Have fun!
 
 for example, a tower of 3 floors with block size = (2, 3) looks like below
-
 [
   '    **    ',
   '    **    ',
