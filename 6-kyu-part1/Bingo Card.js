@@ -5,7 +5,6 @@ After yet another dispute on their game the Bingo Association decides to change 
 Can you help the association by writing a method to create a random Bingo card?
 
 Task:
-
 Finish method:
 getCard()
 A Bingo card contains 24 unique and random numbers according to this scheme:
