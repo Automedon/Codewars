@@ -13,7 +13,6 @@ Example:
 But of course there are always special cases...
 
 You also have some calculation tests. Make sure the results don't get splitted by underscores. So only add an underscore in front of the first number.
-
 Also Some people already used underscore names in their tests. You don't want to change them. But if they are not splitted correct you should adjust them.
 
 Some of your colleagues mark their tests with a leading and trailing underscore. Don't remove this.
