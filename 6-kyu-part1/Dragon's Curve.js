@@ -3,7 +3,6 @@ Description:
 The dragon's curve is a self-similar fractal which can be obtained by a recursive method.
 
 Starting with the string D0 = 'Fa', at each step simultaneously perform the following operations:
-
 replace 'a' with: 'aRbFR'
 replace 'b' with: 'LFaLb'
 For example (spaces added for more visibility) :
