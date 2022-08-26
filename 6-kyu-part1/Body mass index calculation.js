@@ -7,7 +7,6 @@ bmi = weght(kg)/(height(m)*height(m))
 Warriors know only their height in centimetres and weight (in kilogrames). Your task is to return an object with fields
 
 value - calculated Body mass index, rounded with one number after decimal point.
-
 category - from https://en.wikipedia.org/wiki/Body_mass_index
 
 Ex :
