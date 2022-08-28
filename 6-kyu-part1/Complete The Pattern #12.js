@@ -2,7 +2,6 @@
 ###Task:
 
 You have to write a function pattern which returns the following Pattern(See Examples) upto (2n-1) rows, where n is parameter.
-
 Note:Returning the pattern is not the same as Printing the pattern.
 ####Parameters:
 
