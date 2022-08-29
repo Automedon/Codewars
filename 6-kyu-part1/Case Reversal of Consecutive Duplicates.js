@@ -5,7 +5,6 @@ The aim of this Kata is to write a function which will reverse the case of all c
 If the duplicate letters are lowercase then they must be set to uppercase, and if they are uppercase then they need to be changed to lowercase.
 
 Examples:
-
 reverseCase("puzzles")    Expected Result: "puZZles"
 reverseCase("massive")    Expected Result: "maSSive"
 reverseCase("LITTLE")     Expected Result: "LIttLE"
