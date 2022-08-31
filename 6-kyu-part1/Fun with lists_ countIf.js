@@ -11,7 +11,6 @@ function Node(data, next = null) {
   this.next = next;
 }
 Note: the list may be null and can hold any type of value.
-
 Good luck!
 */
 function countIf(head, p) {
