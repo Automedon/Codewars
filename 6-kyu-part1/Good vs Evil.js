@@ -19,7 +19,6 @@ Uruk Hai: 3
 Trolls: 5
 Wizards: 10
 Although weather, location, supplies and valor play a part in any battle, if you add up the worth of the side of good and compare it with the worth of the side of evil, the side with the larger worth will tend to win.
-
 Thus, given the count of each of the races on the side of good, followed by the count of each of the races on the side of evil, determine which side wins.
 
 Input:
