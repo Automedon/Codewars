@@ -2,7 +2,6 @@
 Description:
 Preface
 A collatz sequence, starting with a positive integern, is found by repeatedly applying the following function to n until n == 1 :
-
 collatz sequence
  n = { n / 2 for even n ;
       3n + 1 for odd n }
