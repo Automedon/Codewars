@@ -7,7 +7,6 @@ Whenever she names a number, she thinks about all of the digits in that number. 
 Bleatrix must start with N and must always name (i + 1) × N directly after i × N.
 
 For example, suppose that Bleatrix picks N = 1692. She would count as follows:
-
 N = 1692. Now she has seen the digits 1, 2, 6, and 9.
 2N = 3384. Now she has seen the digits 1, 2, 3, 4, 6, 8, and 9.
 3N = 5076. Now she has seen all ten digits, and falls asleep.
