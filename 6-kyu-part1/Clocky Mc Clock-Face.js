@@ -10,7 +10,6 @@ Instead, they are asking for volunteer programmers to write some code that tell 
 What a bunch of cheapskates!
 
 Can you do it?
-
 Kata
 Given the angle (in degrees) of the hour-hand, return the time in HH:MM format. Round down to the nearest minute.
 
