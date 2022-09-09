@@ -9,7 +9,6 @@ An even number should return a board that begins with a dark square. An odd numb
 The input is expected to be a whole number that's at least two, and returns false otherwise (Nothing in Haskell).
 
 Examples:
-
 checkeredBoard(5)
 returns the string
 
