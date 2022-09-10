@@ -7,7 +7,6 @@ Example:
 
 findOutChristmasWeekday('2013 12 25') // returns 'Wednesday'
 Only valid Christmas dates will be passed to the function.
-
 Date parameter could be a string or a Date object. If it's a string here are possible date parameter formats:
 
 '2013 12 25'
