@@ -7,7 +7,6 @@ Example
 For cell1 = "A1" and cell2 = "C3", the output should be true.
 
 
-
 For cell1 = "A1" and cell2 = "H3", the output should be false.
 
 
