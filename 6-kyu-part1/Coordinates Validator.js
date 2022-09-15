@@ -7,7 +7,6 @@ Valid coordinates look like the following: "23.32353342, -32.543534534". The ret
 Latitude (which is first float) can be between 0 and 90, positive or negative. Longitude (which is second float) can be between 0 and 180, positive or negative.
 
 Coordinates can only contain digits, or one of the following symbols (including space after comma) -, .
-
 There should be no space between the minus "-" sign and the digit after it.
 
 Here are some valid coordinates:
