@@ -5,7 +5,6 @@ One of the first chain emails I ever received was about a supposed Cambridge Uni
 Your task is to create a function that can take any string and randomly jumble the letters within each word while leaving the first and last letters of the word in place.
 
 For example,
-
 mixwords('Winter is coming') // returns 'Wntier is cminog' or 'Wtiner is conimg'
 mixwords('Hey, friends!') // returns 'Hey, fierdns!' or 'Hey, fernids!'
 All punctuation should remain in place
