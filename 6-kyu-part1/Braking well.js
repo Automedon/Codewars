@@ -7,7 +7,6 @@ The braking distance is one of two principal components of the total stopping di
 The kinetic energy E is 0.5*m*v**2, the work W given by braking is mu*m*g*d1. Equalling E and W gives the braking distance: d1 = v*v / 2*mu*g where g is the gravity of Earth and m the vehicle's mass.
 
 We have v in km per hour, g as 9.81 m/s/s and in the following we suppose that the reaction time is constant and equal to 1 s. The coefficient mu is dimensionless.
-
 There are two tasks.
 
 The first one is to calculate the total stopping distance in meters given v, mu (and the reaction time t = 1).
