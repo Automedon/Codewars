@@ -3,7 +3,6 @@ Description:
 Cara is applying for several different jobs. The online application forms ask her to respond within a specific character count. Cara needs to check that her answers fit into the character limit.
 
 Annoyingly, some application forms count spaces as a character, and some don't.
-
 Your challenge:
 
 Write Cara a function charCheck() with the arguments:
