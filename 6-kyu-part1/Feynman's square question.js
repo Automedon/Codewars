@@ -7,7 +7,6 @@ Recently, an old farmer found some papers and notes that are believed to have be
 
 For example, when N=2, the answer is 5: the 2x2 square itself, plus the four 1x1 squares in its corners:
 
-
 Task
 You have to write a function
 
