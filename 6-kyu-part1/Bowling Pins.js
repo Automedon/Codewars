@@ -4,7 +4,6 @@ Mount the Bowling Pins!
 Task:
 Did you ever play Bowling? Short: You have to throw a bowl into 10 Pins arranged like this:
 
-
 I I I I  # each Pin has a Number:    7 8 9 10
  I I I                                4 5 6
   I I                                  2 3
