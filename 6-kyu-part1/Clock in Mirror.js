@@ -7,7 +7,6 @@ alt text
 He knows that the time is 11:38
 
 alt text
-
 in the same manner:
 
 05:25 --> 06:35
