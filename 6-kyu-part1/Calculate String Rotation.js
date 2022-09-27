@@ -8,7 +8,6 @@ If the second string isn't a valid rotation of the first string, the method retu
 Examples:
 ``` "coffee", "eecoff" => 2 "eecoff", "coffee" => 4 "moose", "Moose" => -1 "isn't", "'tisn" => 2 "Esham", "Esham" => 0 "dog", "god" => -1 ```
 For Swift, your function should return an Int?. So rather than returning -1 when the second string isn't a valid rotation of the first, return nil.
-
 shiftedDiff("coffee", "eecoff") => 2
 shiftedDiff("eecoff", "coffee") => 4
 shiftedDiff("moose", "Moose") => nil
