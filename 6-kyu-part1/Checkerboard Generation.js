@@ -25,6 +25,7 @@ checkerboard(8);
 What We're Testing
 We're testing loops and conditionals and aiming at beginners. There are many ways of achieving the solution so the correct solution will present a fairly basic version that should be more advanced than typical loop examples and has some extra challenge to the problem with the alternating on columns and rows.
 */
+
 function checkerboard(size) {
   "use strict";
   if (size <= 0) return "";
