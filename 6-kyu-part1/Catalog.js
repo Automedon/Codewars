@@ -1,7 +1,6 @@
 /*
 Description:
 You are given a small extract of a catalog:
-
 s = "<prod><name>drill</name><prx>99</prx><qty>5</qty></prod>
 
 <prod><name>hammer</name><prx>10</prx><qty>50</qty></prod>
