@@ -2,7 +2,6 @@
 For any given linear sequence, calculate the function [f(x)] and return it as a string.
 
 For example:
-
 getFunction([0, 1, 2, 3, 4]) => "f(x) = x"
 getFunction([0, 3, 6, 9, 12]) => "f(x) = 3x"
 getFunction([1, 4, 7, 10, 13]) => "f(x) = 3x + 1"
