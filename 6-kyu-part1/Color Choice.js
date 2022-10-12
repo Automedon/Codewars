@@ -17,7 +17,6 @@ knowing m (number of posters to design), knowing n (total number of available co
 In other words we must find x such as n choose x = m (1) for a given m and a given n; m >= 0 and n > 0. If many x are solutions give as result the smallest x. It can happen that when m is given at random there are no x satisfying equation (1) then return -1.
 
 Examples:
-
 checkchoose(6, 4) --> 2
 checkchoose(4, 4) --> 1
 checkchoose(4, 2) --> -1
