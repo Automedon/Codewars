@@ -1,7 +1,6 @@
 /*
 Description:
 Karan's company makes software that provides different features based on the version of operating system of the user.
-
 For finding which version is more recent, Karan uses the following method:
 
 function compareVersions (version1, version2) {
