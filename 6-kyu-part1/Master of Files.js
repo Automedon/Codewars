@@ -1,7 +1,6 @@
 /*
 Description:
 Are you a file extension master? Let's find out by checking if Bill's files are images or audio files. Please use regex if available natively for your language.
-
 You will create 2 string methods:
 
 isAudio/is_audio, matching 1 or + uppercase/lowercase letter(s) (combination possible), with the extension .mp3, .flac, .alac, or .aac.
