@@ -2,7 +2,6 @@
 Description:
 Create any card game!
 Create a Card Game library of classes which could be used to create any number of basic card games. You'll need at least a Deck class and a Card class.
-
 Deck functionality
 A deck has a public attribute:
 
