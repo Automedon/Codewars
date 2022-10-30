@@ -15,6 +15,7 @@ Use \n for newlines between each line.
 
 Pad with spaces so each line is the same length. The last line having only stars, no spaces.
 */
+
 function christmasTree(height) {
   let str = [];
   for (let i = 1; i <= height; i++) {
