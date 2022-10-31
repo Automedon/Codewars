@@ -8,6 +8,7 @@ calculateHypotenuse(1,1); // returns 1.414
 calculateHypotenuse(3,4); // returns 5
 calculateHypotenuse(-2,1); // throws error
 calculateHypotenuse("one", "two"); // throws error
+
 For more information on the hypotenuse, visit: http://en.wikipedia.org/wiki/Hypotenuse
 */
 
