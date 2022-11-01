@@ -24,6 +24,7 @@ Examples
 More on Whitespace
 If you liked this kata, you may also enjoy a much harder Whitespace-related kata: Whitespace interpreter by @jacobb.
 */
+
 function whitespaceNumber(n) {
   let b = n.toString(2);
   if (n === 0) return " \n";
