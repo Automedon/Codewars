@@ -6,7 +6,6 @@ Task
 In this kata you will create a function that return True if two given strings are isomorphic to each other, and False otherwise. Remember that order is important.
 
 Your solution must be able to handle words with more than 10 characters.
-
 Example
 True:
 
