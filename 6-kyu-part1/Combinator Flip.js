@@ -10,6 +10,7 @@ function print(a,b) {
 }
 The idea is to reverse any number of arguments using a higher order function, without any concern for the function being passed into it.
 */
+
 function flip(fn) {
   return (...args) => fn(...args.reverse());
 }
