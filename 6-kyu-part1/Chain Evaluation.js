@@ -16,6 +16,7 @@ divide
 square
 After you're done, one could chain these five methods to create chains of almost any length.
 */
+
 Number.prototype.add = function(x) {
   return this + x;
 };
