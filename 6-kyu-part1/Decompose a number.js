@@ -6,7 +6,6 @@ each kn is more than one
 eack kn is maximized (first maximizing for 2 then 3 then 4 and so on)
 and 2k1 + 3k2 + 4k3 + ... + nkn-1 + r = num
 ##Examples
-
 # when there are no `k` more than 1:
 
 3 
