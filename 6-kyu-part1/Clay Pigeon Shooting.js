@@ -18,6 +18,7 @@ Note that as there are three rounds, the actual input (x) will look something li
 
 [[{P1:'XX', P2:'XO'}, true], [{P1:'OX', P2:'OO'}, false], [{P1:'XX', P2:'OX'}, true]]
 */
+
 function shoot(x) {
   let pete = 0;
   let phil = 0;
