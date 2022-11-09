@@ -38,7 +38,6 @@ N = 23, the answer will be 0.
 
 N = 11, the answer will be 2 
 #Input: A non negative integer.
-
 #Output: The number of times you found an integer that was evenly divisible with N.
 */
 function getCount(n) {
