@@ -33,6 +33,7 @@ For the lazy ones:
 'PA': 'Pennsylvania',
 'VA': 'Virginia'
 */
+
 function byState(str) {
   let arr = str.replace(/,/g, "").split`\n`;
   let states = [
