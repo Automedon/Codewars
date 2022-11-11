@@ -113,6 +113,7 @@ pattern(20):
                   121                  
                    1             
 */
+
 function pattern(n) {
   if (n === 1) return "1";
   let output = "";
