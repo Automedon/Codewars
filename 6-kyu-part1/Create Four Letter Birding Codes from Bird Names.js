@@ -19,6 +19,7 @@ If the input array is: ["Black-Capped Chickadee", "Common Tern"]
 
 The return array would be: ["BCCH", "COTE"]
 */
+
 function birdCode(arr) {
   return arr.map(v => {
     v = v.replace(/-./g, v => v.toUpperCase());
