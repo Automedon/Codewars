@@ -28,6 +28,7 @@ KacokadekaMe("Incomprehensibilities"); //=> kaIkancokamprekahekansikabikalikatie
 Remark
 Ka cypher's country residents, please don't hate me for simplifying the way how we divide the words into "syllables" in the Kata. I don't want to make it too hard for other nations ;-P
 */
+
 function kaCokadekaMe(word) {
   const str = "ka" + word.replace(/([aeiou]+)/gi, "$1ka");
   if (str.slice(-2) === "ka") return str.slice(0, -2);
