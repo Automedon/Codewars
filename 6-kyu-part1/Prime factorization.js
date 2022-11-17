@@ -8,6 +8,7 @@ Write a class called PrimeFactorizer whose constructor accepts exactly 1 number 
 
 new PrimeFactorizer(24).factor //should return { '2': 3, '3': 1 }
 */
+
 function PrimeFactorizer(n) {
   let i,
     factors = {};
