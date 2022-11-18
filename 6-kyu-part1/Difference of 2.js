@@ -16,6 +16,7 @@ Examples:
 
 Assume there are no duplicate integers in the array. The order of the integers in the input array should not matter.
 */
+
 function twosDifference(input) {
   input = input.sort((a, b) => a - b);
   const arr = [];
