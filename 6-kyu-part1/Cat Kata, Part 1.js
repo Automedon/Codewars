@@ -2,7 +2,6 @@
 Description:
 The story you are about to hear is true
 Our cat, Balor, sadly died of cancer in 2015.
-
 While he was alive, the three neighborhood cats Lou, Mustache Cat, and Raoul all recognized our house and yard as Balor's territory, and would behave respectfully towards him and each other when they would visit.
 
 But after Balor died, gradually each of these three neighborhood cats began trying to claim his territory as their own, trying to drive the others away by growling, yowling, snarling, chasing, and even fighting, when one came too close to another, and no human was right there to distract or extract one of them before the situation could escalate.
