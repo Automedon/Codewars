@@ -10,6 +10,7 @@ obj.getSecret() # returns 5
 obj.setSecret(2)
 obj.getSecret() # returns 2
 */
+
 function createSecretHolder(secret) {
   return {
     getSecret: function() {
