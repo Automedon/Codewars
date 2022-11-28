@@ -4,7 +4,6 @@ Complete the method/function so that it converts dash/underscore delimited words
 
 Examples
 toCamelCase("the-stealth-warrior") // returns "theStealthWarrior"
-
 toCamelCase("The_Stealth_Warrior") // returns "TheStealthWarrior"
 */
 
