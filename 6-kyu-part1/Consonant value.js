@@ -16,6 +16,7 @@ Tank vertical section:
 
 alternative text
 */
+
 function solve(s) {
   s = s.toLowerCase();
   let arr = s
