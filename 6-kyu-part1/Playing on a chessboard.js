@@ -33,7 +33,6 @@ Java, C#, C++, F#, Swift, Reason:
 Fortran, Bash: 'game' returns a string
 
 In Fortran - as in any other language - the returned string is not permitted to contain any redundant trailing whitespace: you can use dynamically allocated character strings.
-
 ** see Example Test Cases for each language **
 */
 function game(n) {
