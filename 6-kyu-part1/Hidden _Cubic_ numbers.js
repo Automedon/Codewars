@@ -19,7 +19,6 @@ Examples:
 
  s = "QK29 45[&erui" must return "Unlucky".
 Note: In the string "001234" where 3 digits or more follow each other the fist packet to examine is "001" and the following is "234". If a packet of at most three digits has been taken, whether or not "cubic", it's over for that packet.
-
 When a continous string of digits exceeds 3, the string is split into groups of 3 from the left. The last grouping could have 3, 2 or 1 digits. e.g "24172410" becomes 3 strings comprising "241", "724" and "10" e.g "0785" becomes 2 strings comprising "078" and "5".
 */
 function isSumOfCubes(s) {
