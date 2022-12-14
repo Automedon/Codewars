@@ -45,6 +45,7 @@ pattern(3, 4, "Nice pattern") should return:
 | t | e | r | n |
 +---+---+---+---+
 */
+
 function pattern(rows, columns, str) {
   const arr = str.split``;
   let i = 0;
