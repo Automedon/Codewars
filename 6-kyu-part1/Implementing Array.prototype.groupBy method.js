@@ -26,6 +26,7 @@ Example:
 }
 For more examples have a look at the example test cases
 */
+
 Array.prototype.groupBy = function(fn) {
   return this.reduce((a, c) => {
     let v = fn ? fn(c) : c;
