@@ -7,6 +7,7 @@ Example:
 fibonacci(4); // should return [0,1,1,2]
 fibonacci(-1); // should return []
 */
+
 function fibonacci(n) {
   if (n < 1) return [];
   if (n < 2) return [0];
