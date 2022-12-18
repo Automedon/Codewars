@@ -8,6 +8,7 @@ b) only capitalise the first letter of each sentence. Make sure the rest of the 
 
 Example: He haD iEght ShOTs of CAffIEne. --> He had eight shots of caffeine.
 */
+
 function proofread(str) {
   return str.split`. `.map(v => v[0].toUpperCase() + v.slice(1).toLowerCase())
     .join`. `.replace(/ie/g, "ei");
