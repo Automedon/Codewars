@@ -70,6 +70,7 @@ pattern(20):
  1234567890123456789876543210987654321 
 123456789012345678909876543210987654321
 */
+
 function pattern(n) {
   return Array.from({ length: n }, (_, i) => {
     let arr = Array.from({ length: i }, (v, j) => (j + 1) % 10);
