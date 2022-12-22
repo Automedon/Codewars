@@ -4,6 +4,7 @@ Implement String#to_seconds, which should parse time expressed as HH:MM:SS, or n
 
 Any extra characters, or numbers of minutes/seconds higher than 59, should result in nil being returned.
 */
+
 String.prototype.toSeconds = function() {
   if (!/^\d\d:\d\d:\d\d$/.test(this)) return null;
   let arr = this.split`:`;
