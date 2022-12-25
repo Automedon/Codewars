@@ -26,7 +26,6 @@ Notes:
 You will pass the tests if abs(actual - expected) <= 1
 
 Keeping track of the values of susceptibles, infecteds and recovereds you can plot the solutions of the 3 differential equations. See an example below on the plot.
-
 alternative text
 */
 function epidemic(tm, n, s0, i0, b, a) {
