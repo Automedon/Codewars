@@ -17,6 +17,7 @@ parseHTMLColor('#80FFA0');    // => { r: 128, g: 255, b: 160 }
 parseHTMLColor('#3B7');       // => { r: 51,  g: 187, b: 119 }
 parseHTMLColor('LimeGreen');  // => { r: 50,  g: 205, b: 50  }
 */
+
 function parseHTMLColor(c) {
   if (!c.match("#")) c = PRESET_COLORS[c.toLowerCase()];
 
