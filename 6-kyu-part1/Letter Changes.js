@@ -8,6 +8,7 @@ For Example:
 
 letterChange('Lorem Ipsum')    // return Mpsfn Jqtvn
 */
+
 function letterChange(str) {
   let l = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
   let u = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
