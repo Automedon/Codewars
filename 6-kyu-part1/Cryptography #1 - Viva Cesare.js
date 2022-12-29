@@ -20,6 +20,7 @@ shift could be either positive or negative (for left shift);
 If the input text is empty, null or includes only whitespaces, return an empty string.
 Time's ticking away. The life of Caesar is on the chopping block! Go for it!
 */
+
 function CaesarCryptoEncode(text, shift) {
   if (!text) return "";
   shift = ((shift % 52) + 52) % 52;
