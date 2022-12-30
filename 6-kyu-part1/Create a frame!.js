@@ -28,6 +28,7 @@ Output:
 + frame  +
 ++++++++++
 */
+
 const frame = (text, char) => {
   let max = Math.max(...text.map(v => v.length));
   let top = char.repeat(max + 4);
