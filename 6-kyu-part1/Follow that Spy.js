@@ -9,6 +9,7 @@ result: "USA, BRA, UAE, JPN, PHL"
 
 note: It is safe to assume that there will be no repeating place with different route and there are no empty routes and could have at least one (1) route (from one waypoint to another).
 */
+
 function findRoutes(routes) {
   let str = [].concat(...routes.map(v => v));
   str = str.filter(v => str.indexOf(v) === str.lastIndexOf(v));
