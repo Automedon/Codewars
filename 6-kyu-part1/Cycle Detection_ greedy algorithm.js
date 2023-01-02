@@ -18,6 +18,7 @@ The goal of this kata is to build a function that will return [μ,λ] when given
 
 This kata is followed by two other cycle detection algorithms: Loyd's: http://www.codewars.com/kata/cycle-detection-floyds-tortoise-and-the-hare Bret's: http://www.codewars.com/kata/cycle-detection-brents-tortoise-and-hare
 */
+
 function cycle(a) {
   const sndIdx = a.findIndex((v, i) => {
     return a.slice(0, i).includes(v);
