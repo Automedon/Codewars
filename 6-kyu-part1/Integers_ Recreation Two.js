@@ -27,6 +27,7 @@ prod2sum(1, 1, 3, 5) should return [[2, 8]] (there are not always 2 solutions).
 
 ##Hint Take a sheet of paper and with a bit of algebra try to write the product of squared numbers in another way.
 */
+
 function prod2sum(a, b, c, d) {
   let [x, y, z, n] = [
     b * c - a * d,
