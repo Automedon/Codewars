@@ -5,7 +5,6 @@ You'll implement once, a function that takes another function as an argument, an
 Subsequent calls to the resulting function should have no effect (and should return undefined).
 
 For example:
-
 logOnce = once(console.log)
 logOnce("foo") // -> "foo"
 logOnce("bar") // -> no effect
