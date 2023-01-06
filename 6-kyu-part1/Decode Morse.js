@@ -18,6 +18,7 @@ Examples
 
 .---- ... - .- -. -.. ..--- -. -.. → "1st and 2nd"
 */
+
 function decode(str) {
   const morse = {
     "1": ".----",
