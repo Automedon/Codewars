@@ -38,6 +38,7 @@ Example:
     1/2  +  1/3  +  1/4     =      13/12
 See sample tests for more examples and the form of results.
 */
+
 const gcd = (a, b) => (b ? gcd(b, a % b) : a);
 
 const sumFracts = l => {
