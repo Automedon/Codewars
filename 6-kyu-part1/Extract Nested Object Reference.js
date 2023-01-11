@@ -19,6 +19,7 @@ obj.hash('person.history.bio'); // { funFact: 'I like fishing.' }
 obj.hash('person.history.homeStreet'); // undefined
 obj.hash('person.animal.pet.needNoseAntEater'); // undefined
 */
+
 Object.prototype.hash = function(string) {
   try {
     return eval(`this.${string}`);
