@@ -18,6 +18,7 @@ Note:
 
 Don't round or truncate your results. See the testing function in Sample Tests:.
 */
+
 function f(x) {
   return x / (1 + Math.sqrt(1 + x));
 }
