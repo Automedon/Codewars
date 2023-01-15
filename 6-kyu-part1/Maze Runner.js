@@ -28,9 +28,9 @@ Rules
 2. The start and finish positions will change for the final tests.
 3. The directions array will always be in upper case and will be in the format of N = North, E = East, W = West and S = South.
 </td>
- 
 Good luck, and stay safe!
 */
+
 function mazeRunner(maze, directions) {
   let cursor;
   for (let i = 0; i < maze.length; i++) {
