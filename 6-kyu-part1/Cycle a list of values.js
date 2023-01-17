@@ -30,6 +30,7 @@ cycle(1, [1,2,3], 0)   // => null
 cycle(1, [1,2,2,3], 2) // => 2
 // Corner case: multiple instances of given value, picks next relative to first occurrence
 */
+
 function cycle(dir, arr, cur) {
   if (!arr.includes(cur)) return null;
   const index = arr.indexOf(cur);
