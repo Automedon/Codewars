@@ -10,6 +10,7 @@ var genCode = 'TCCAGAAAGGTAAGCCTCGCGTTGCGAAAATGTCAAGTTACCACATCCACACCACCTCGAGCAGC
 
 getCountedNucleotides(genCode); // return {A: 238, C: 254, G: 212, T: 225}
 */
+
 function getCountedNucleotides(genCode) {
   const DNA = { A: 0, C: 0, G: 0, T: 0 };
   genCode.toUpperCase().split``.map(v => (DNA[v] = DNA[v] ? DNA[v] + 1 : 1));
