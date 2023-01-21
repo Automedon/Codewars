@@ -16,6 +16,7 @@ And finally the filters should only accept integer values from an array, for exa
 
 ["a", 1, "b", 300, "x", "q", 63, 122, 181, "z", 0.83, 0.11].even() // should return [300, 122]
 */
+
 Array.prototype.even = function() {
   return this.filter(
     v => v % 2 === 0 && typeof v === "number" && v !== 0 && Number.isInteger(v)
