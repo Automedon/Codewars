@@ -15,6 +15,7 @@ Given N, return the sum of all numbers on the Nth Row:
 
 1 <= N <= 10,000
 */
+
 let arr = [];
 const heheboi = () => {
   let num = 0;
