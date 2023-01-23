@@ -19,6 +19,7 @@ longest word = ["VAMPIRE"]
 letters = "DVAVPALEM"
 longest word = ["VAMPED", "VALVED", "PALMED"]
 */
+
 function longestWord(letters) {
   let dict = letters.split``.reduce((a, b) => ((a[b] = a[b] + 1 || 1), a), {});
   let arr = [];
