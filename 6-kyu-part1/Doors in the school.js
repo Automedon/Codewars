@@ -25,6 +25,7 @@ Should return
 
 2
 */
+
 function doors(n) {
   return ~~Math.sqrt(n);
 }
