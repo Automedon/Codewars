@@ -30,6 +30,7 @@ Shell: only v1(n, p)is tested (use the solution you find for v_eff(n, p).
 If you have found u_eff(n, p) and v_eff(n, p) you can use them to calculate u(n, p) and v(n, p).
 You could see: https://en.wikipedia.org/wiki/Binomial_coefficient for a refresh about binomial coefficients.
 */
+
 function fact($num) {
   let product = 1;
   for (let i = 1; i <= $num; i++) product *= i;
