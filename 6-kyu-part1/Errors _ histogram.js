@@ -34,6 +34,7 @@ You can see another examples in the "Sample tests".
 Translators are welcome for all languages.
 FUNDAMENTALSSTRINGS
 */
+
 function hist(s) {
   const u = s.match(/u/g);
   const w = s.match(/w/g);
