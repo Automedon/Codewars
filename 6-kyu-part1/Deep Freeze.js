@@ -6,6 +6,7 @@ This method should apply the Object.freeze function to an object and, recursivel
 
 The freeze operation should prevent objects from being modified.
 */
+
 Object.deepFreeze = function(object) {
   Object.freeze(object);
   for (let i in object) {
