@@ -33,7 +33,6 @@ Good luck!
 
 After you complete this kata, you may try yourself at Decode the Morse code, advanced.
 */
-
 decodeMorse = function(morseCode) {
   return morseCode
     .split(" ")
