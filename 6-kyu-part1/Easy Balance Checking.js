@@ -29,6 +29,7 @@ It may happen that one (or more) line(s) is (are) blank.
 Round to 2 decimals your results.
 The line separator of results may depend on the language \n or \r\n. See examples in the "Sample tests".
 */
+
 function balance(book) {
   book = book.replace(/[^\s\.0-9a-zA-Z]/g, "").split`\n`.filter(v => v);
   book[0] = (book[0] * 1).toFixed(2);
