@@ -12,6 +12,7 @@ fibonacci(0)==0
 fibonacci(33)==10
 fibonacci(25997544)==19544084
 */
+
 function fibonacci(max) {
   let fib = [0, 1];
   for (let i = 1; fib[i - 1] + fib[i] < max; i++) {
