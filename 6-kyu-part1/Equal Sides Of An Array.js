@@ -30,7 +30,6 @@ Note:
 If you are given an array with multiple answers, return the lowest correct index.
 An empty array should be treated like a 0 in this problem.
 */
-
 function findEvenIndex(arr) {
   for (var i = 1; i < arr.length - 1; i++) {
     if (
