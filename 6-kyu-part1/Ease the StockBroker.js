@@ -45,6 +45,7 @@ Notes:
 Due to Codewars whitespace differences will not always show up in test results.
 With Golang use a format with "%.0f" for "Buy" and "Sell".
 */
+
 function balanceStatements(list) {
   let arr = list.split`,`
     .filter(v => /^.+ \d+ \d*\.\d+ \w$/.test(v.trim()))
