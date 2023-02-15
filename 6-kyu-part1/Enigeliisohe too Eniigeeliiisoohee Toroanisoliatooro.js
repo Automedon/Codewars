@@ -33,6 +33,7 @@ Accented letters are unsupported, and therefore letters with diacritic marks, if
 
 Extra challenge: Try reading some Enigeliisohe out loud, once you have finished programming your translator. :)
 */
+
 var toexuto = function(text) {
   const dict = {
     x: "u",
