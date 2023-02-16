@@ -12,6 +12,7 @@ balance("!!???!????","??!!?!!!!!!!") === "Balance"
 Note
 Please don't post issue about difficulty or duplicate.
 */
+
 function balance(left, right) {
   let l = left
     .split("")
