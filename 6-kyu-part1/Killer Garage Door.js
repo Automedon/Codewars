@@ -21,7 +21,6 @@ As an example, '..P....' means that nothing happens for two seconds, then the bu
 
 Output
 A string where each character represents one second and indicates the position of the door (0 if fully closed and 5 fully open). The door starts moving immediately, hence its position changes at the same second as the event.
-
 Example
 ..P...O..... as input should yield 001234321000 as output
 */
