@@ -12,6 +12,7 @@ Given the population and fitnesses, your task is to run the roulette to return o
 
 Note: Some tests are random. If you think your algorithm is correct but the result fails, trying again should work.
 */
+
 const select = (population, fitnesses) => {
   let arr = fitnesses.map((v, i, arr) =>
     arr.slice(0, i + 1).reduce((a, b) => a + b, 0)
