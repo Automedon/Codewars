@@ -14,6 +14,7 @@ Examples
               ["n", "k", "."],
               [".", ".", "."] ]
 */
+
 const matrixfy = str => {
   if (!str.length) return "name must be at least one letter";
   let length = 1;
