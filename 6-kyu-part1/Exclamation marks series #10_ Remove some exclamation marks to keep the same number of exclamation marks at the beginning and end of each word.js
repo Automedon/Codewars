@@ -12,6 +12,7 @@ remove("!Hi! Hi!") === "!Hi! Hi"
 remove("!!Hi! !Hi!!") === "!Hi! !Hi!"
 remove("!!!!Hi!! !!!!Hi !Hi!!!") === "!!Hi!! Hi !Hi!"
 */
+
 function remove(s) {
   return s.split` `.map(v => {
     let left = (v.match(/^!+/) || []).join``.length;
