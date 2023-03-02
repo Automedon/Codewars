@@ -14,6 +14,7 @@ To build the triangle, start with a single 1 at the top, for each number in the 
           [1   2   1]
         [1   3   3   1]
 */
+
 function pascal(depth) {
   let result = [];
   for (let i = 1; i <= depth; ++i) {
