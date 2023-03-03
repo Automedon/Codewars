@@ -39,6 +39,7 @@ This kata is designed to give regex beginners a chance, so in your solutions try
 
 *[All the characters named in this kata are copyright of their rightful owners and are mentioned only for educational purposes, a fair use according to the Berne convention. Also: buy the products if you like it!]*
 */
+
 var regex = /Jo/;
 function isJojo(name) {
   name = name.toLowerCase();
