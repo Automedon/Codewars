@@ -59,7 +59,6 @@ Esolang Interpreters #2 - Custom Smallfuck Interpreter
 Esolang Interpreters #3 - Custom Paintfuck Interpreter
 Esolang Interpreters #4 - Boolfuck Interpreter
 */
-
 function myFirstInterpreter(code) {
   let out = "",
     byte = 0;
