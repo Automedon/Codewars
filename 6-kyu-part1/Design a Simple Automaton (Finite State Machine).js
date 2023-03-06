@@ -38,7 +38,6 @@ input: ["1", "0", "0", "1", "0"]
 0: q2 -> q3
 We end in q3, which is not our accept state, so we return false
 */
-
 function Automaton() {}
 
 Automaton.prototype.readCommands = function(commands) {
