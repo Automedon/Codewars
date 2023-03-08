@@ -13,6 +13,7 @@ each call of ho() must add a "Ho" to the string
 the "Ho"'s must be separated by a space
 at the end of the string, there must be an exclamation mark (!), without a space
 */
+
 function ho(ho) {
   return ho ? "Ho " + ho : "Ho!";
 }
