@@ -18,6 +18,7 @@ Multiple         value         digits     comment
 42*9              378            7         3,8 existed
 Looking at the above table under digits column you can find all the digits from 0 to 9, Hence it required 9 multiples of 42 to get all the digits. So the depth of 42 is 9. Write a function named computeDepth which computes the depth of its integer argument.Only positive numbers greater than zero will be passed as an input.
 */
+
 function computeDepth(x) {
   let arr = [];
   for (let i = 1; ; i++) {
