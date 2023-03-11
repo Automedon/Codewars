@@ -35,6 +35,7 @@ gift_list.buyGift()// => returns 'Toy truck'
 Resources for priority queues:
 http://en.wikipedia.org/wiki/Priority_queue
 */
+
 function HolidayPriorityQueue() {
   this.arr = [];
 }
