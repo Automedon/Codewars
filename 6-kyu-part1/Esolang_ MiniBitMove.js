@@ -13,6 +13,7 @@ Bits: 11001001001010
 Result: 00110110110101
 After you're done, feel free to make translations and discuss this kata.
 */
+
 function interpreter(tape, array) {
   array = array.split``;
   for (let i = 0; i < array.length; ) {
