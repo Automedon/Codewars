@@ -28,6 +28,7 @@ Note: Occasionally one of the random boards in the Test Suite will have two thre
 
 Have fun!
 */
+
 function regexTicTacToeWinChecker(board) {
   return /x..x..x|...xxx...|xxx......|......xxx|x...x...x|..x.x.x..|o..o..o|...ooo...|ooo......|......ooo|o...o...o|..o.o.o../gi.test(
     board
