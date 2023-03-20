@@ -14,6 +14,7 @@ fib(3) // === 1
 fib(4) // === 2
 fib(5) // === 3
 */
+
 function fib(n) {
   let arr = [0, 1];
   for (let i = 1; i <= n; i++) {
