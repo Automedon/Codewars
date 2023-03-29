@@ -9,6 +9,7 @@ sortedInsert(1 -> 7 -> 8 -> null, 5) === 1 -> 5 -> 7 -> 8 -> null)
 sortedInsert(3 -> 5 -> 9 -> null, 7) === 3 -> 5 -> 7 -> 9 -> null)
 The push() and buildOneTwoThree() functions do not need to be redefined.
 */
+
 function Node(data, nxt) {
   this.data = data;
   this.next = nxt;
