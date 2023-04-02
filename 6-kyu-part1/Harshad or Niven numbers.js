@@ -8,7 +8,6 @@ For example, the following numbers are Harshad numbers:
 27, because 2 + 7 = 9 and 27 is divisible by 9
 588, because 5 + 8 + 8 = 21 and 588 is divisible by 21
 While these numbers are not:
-
 19, because 1 + 9 = 10 and 19 is not divisible by 10
 589, because 5 + 8 + 9 = 22 and 589 is not divisible by 22
 1001, because 1 + 1 = 2 and 1001 is not divisible by 2
