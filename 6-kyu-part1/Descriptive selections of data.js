@@ -22,6 +22,7 @@ zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false]);
 => [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
 *Note: * The first row within the data array will always be the column names. These column names will always have the same order. No need to determine which index a column should be dynamically.
 */
+
 const selectNames = table => map(rest(table), first);
 const selectVoices = table => map(rest(table), third);
 const selectNamesAndVoices = table =>
