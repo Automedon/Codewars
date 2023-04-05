@@ -14,7 +14,6 @@ Write a function ip_to_int32(ip) ( JS: ipToInt32(ip) ) that takes an IPv4 addres
 
   ipToInt32("128.32.10.1") => 2149583361
 */
-
 function ipToInt32(ip) {
   return ip.split(".").reduce(function(int, v) {
     return int * 256 + +v;
