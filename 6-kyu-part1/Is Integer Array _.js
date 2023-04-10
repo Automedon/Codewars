@@ -9,6 +9,7 @@ returns true if every element in an array is an integer.
 returns true if array is empty.
 returns false for every other input.
 */
+
 function isIntArray(arr) {
   return (
     Array.isArray(arr) &&
