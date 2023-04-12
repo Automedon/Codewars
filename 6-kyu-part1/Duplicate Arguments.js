@@ -10,7 +10,6 @@ solution(1, 2, 3)             -->  false
 solution(1, 2, 3, 2)          -->  true
 solution('1', '2', '3', '2')  -->  true
 */
-
 function solution(...arr) {
   return [...new Set(arr)].length != arr.length;
 }
