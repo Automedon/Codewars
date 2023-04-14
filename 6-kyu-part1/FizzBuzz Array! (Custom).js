@@ -18,6 +18,7 @@ fizzBuzzCustom('Hey', 'There')[25]         // returns 26
 fizzBuzzCustom('Hey', 'There')[11]         // returns "Hey" (12 is divisible by 3)
 fizzBuzzCustom("What's ", "up?", 3, 7)[80] // returns "What's " (81 is divisible by 3)
 */
+
 var fizzBuzzCustom = function(s1 = "Fizz", s2 = "Buzz", n1 = 3, n2 = 5) {
   let arr = [];
   for (let i = 1; i <= 100; i++) {
