@@ -14,6 +14,7 @@ While you can use the index of the array for a key because they should be unique
 
 Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity
 */
+
 const React = require("react");
 
 const EggList = ({ eggs }) => {
