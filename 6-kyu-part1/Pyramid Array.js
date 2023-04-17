@@ -8,6 +8,7 @@ pyramid(2) => [ [1], [1, 1] ]
 pyramid(3) => [ [1], [1, 1], [1, 1, 1] ]
 Note: the subarrays should be filled with 1s
 */
+
 function pyramid(n) {
   return Array.from({ length: n }, (x, i) => Array(i + 1).fill(1));
 }
