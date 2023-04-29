@@ -22,6 +22,7 @@ Happy coding!
 
 (Adapted from https://codegolf.stackexchange.com/questions/158132/no-a-just-caps-lock)
 */
+
 var fatFingers = function(str) {
   if (typeof str !== "string") return str;
   return str
