@@ -11,6 +11,5 @@ You can pass by relying on luck or skill but try not to rely on luck.
 
 Good luck!
 */
-
 var guess = 101;
 Math.random = () => 1;
