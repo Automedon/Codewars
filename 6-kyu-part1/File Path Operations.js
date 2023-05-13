@@ -51,6 +51,7 @@ I have other kata that need to be tested. You may find them here and here
 Please post any questions or suggestion in the discourse section. Thank you!
 Thank to all users who contributed to this kata! I appreciate your input!
 */
+
 class FileMaster {
   constructor(filepath) {
     this.path = filepath;
