@@ -16,6 +16,7 @@ More examples in the test cases. Good luck!
 
 Brute force is not the way to go here. Look for a simplifying mathematical approach.
 */
+
 function solve(arr){
   let [x, y, z] = arr.sort((a, b) => a - b);
   return Math.min(x + y, Math.floor((x + y + z) / 2));
