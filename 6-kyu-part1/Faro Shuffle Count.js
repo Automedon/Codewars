@@ -14,6 +14,7 @@ Write a function that inputs an integer n and returns an integer representing th
 
 Assume n is an even number between 2 and 2000.
 */
+
 function faroCount(deckSize) {
   let shuffles = 0,
     term = 1;
