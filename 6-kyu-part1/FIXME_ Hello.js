@@ -21,7 +21,6 @@ Hello. My name is Batman.
 Task
 Fix the code so we can all go home early.
 */
-
 class Dinglemouse {
   constructor() {
     this.age = true;
