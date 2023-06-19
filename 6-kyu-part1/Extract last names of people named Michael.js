@@ -8,7 +8,6 @@ get an array of last names of people named Michael. The result should be:
 ["Jordan", "Johnson", "Green", "Wood"]
 
 Notes:
-
 First name will always be Michael with upper case 'M'.
 There will always be a space character between 'Michael' and last name.
 Last name will always be one word, starting with an upper-case letter and continuing with lower-case letters.
