@@ -8,7 +8,7 @@
 ###### Creating a repository like this is discouraged by Codewars
 
 
-[![HitCount](http://hits.dwyl.io/Automedon/codewars.svg)](http://hits.dwyl.io/Automedon/codewars)
+[![Hits](https://hits.sh/github.com/Automedon/hits.svg)](https://hits.sh/github.com/Automedon/hits/)
 ![GitHub top language](https://img.shields.io/github/languages/top/Automedon/codewars)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Automedon/codewars)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Automedon/codewars)
