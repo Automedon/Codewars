@@ -15,6 +15,7 @@ users = {  1  =>  93,
           23  =>  11,
           30  =>   2 }
 */
+
 function nexus(users) {
   const obj = Object.keys(users);
   const obj2 = Object.values(users);
