@@ -30,6 +30,7 @@ In the first answer his possible fortune is 37 so if he buys 7 boats each worth 
 Note
 See "Sample Tests" to know the format of the return.
 */
+
 function howmuch(m, n) {
   let mymin = 0;
   let mymax = 0;
