@@ -7,7 +7,6 @@ Bob is preparing to pass IQ test. The most frequent task in this test is to find
 ##Examples :
 
 iqTest("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
-
 iqTest("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
 */
 
