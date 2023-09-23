@@ -14,11 +14,28 @@ You just watch a movie ('movie').
 
 Other events can be present and it will be represent by arbitrary string, just ignore this one.
 
-Each event can be downcase/lowercase, or uppercase. If it is downcase/lowercase you need 1 coffee by events and if it is uppercase you need 2 coffees.
+Each event canbe downcase/lowercase, or uppercase. If it is downcase/lowercase you need 1 coffee by events and if it is uppercase you need 2 coffees.
 */
+
 function howMuchCoffee(events) {
   const arr = events
     .filter(v => /^(cw|dog|cat|movie)$/.test(v.toLowerCase()))
     .reduce((a, b) => (/[a-z]/.test(b[0]) ? a + 1 : a + 2), 0);
   return arr < 4 ? arr : "You need extra sleep";
 }
+
+/*
+Long Solution:
+
+function howMuchCoffee(e) {
+  let count = 0;
+  for (let i = 0; i < e.length; ++i)
+  {
+    if (e[i] == 'cw' || e[i] == 'cat' || e[i] == 'dog' || e[i] == 'movie')
+      count++;
+    if (e[i] == 'CW' || e[i] == 'CAT' || e[i] == 'DOG' || e[i] == 'MOVIE')
+      count += 2;  
+  }
+  return count > 3 ? 'You need extra sleep' : count;
+}
+*/
